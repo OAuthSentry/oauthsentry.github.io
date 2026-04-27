@@ -1,6 +1,6 @@
 # OAuthSentry feed - one application id per line
-# generated: 2026-04-27T13:38:47.058307+00:00
-# count: 60
+# generated: 2026-04-27T15:22:30.143190+00:00
+# count: 64
 fc5d3843-d0e8-4c3f-b0ee-6d407f667751
 5037c1a6-7cfc-48b5-b887-f2a045937081
 58427324-4e5d-4441-b029-cd2d532b47d7
@@ -59,5 +59,9 @@ f73c6332-4618-4b9d-bcd4-c77726581acd
 626b6813-13dc-45d7-abfe-a7fe09fd5276
 443efa1c-8a0a-47a0-bd31-7c30fe32dee4
 3280b1dc-4b64-4f90-a16a-b0804e6ec4ca
+heroku dashboard
+heroku dashboard - classic
+heroku dashboard - preview
+travis ci
 110671459871-30f1spbu0hptbs60cb4vsmv79i7bbvqj.apps.googleusercontent.com
 1084253493764-ipb2ntp4jb4rmqc76jp7habdrhfdus3q.apps.googleusercontent.com

@@ -8,6 +8,14 @@
       "curated_source": "entra_curated_mthcht",
       "compliance_fill_source": "entra_compliance_fill_merill"
     },
+    "github": {
+      "total": 4,
+      "compliance": 0,
+      "risky": 0,
+      "malicious": 4,
+      "curated_source": "github_curated_seed",
+      "compliance_fill_source": null
+    },
     "google": {
       "total": 2,
       "compliance": 0,
@@ -20,7 +28,7 @@
   "totals": {
     "compliance": 696,
     "risky": 32,
-    "malicious": 60
+    "malicious": 64
   },
   "sources": [
     {
@@ -30,6 +38,7 @@
       "label": "mthcht/awesome-lists - Entra OAuth apps",
       "remote": "https://raw.githubusercontent.com/mthcht/awesome-lists/main/Lists/OAuth/entra_oauth_apps.csv",
       "local": "data/entra/curated_mthcht.csv",
+      "source_url": "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv",
       "schema": "appname,appid,metadata_category,metadata_severity,metadata_comment,metadata_reference",
       "credit": "mthcht/awesome-lists",
       "credit_url": "https://github.com/mthcht/awesome-lists/tree/main/Lists/OAuth",
@@ -48,18 +57,33 @@
       "loaded_rows": 12
     },
     {
+      "id": "github_curated_seed",
+      "service": "github",
+      "role": "curated",
+      "label": "OAuthSentry seed - GitHub OAuth apps",
+      "remote": null,
+      "local": "data/github/curated_seed.csv",
+      "source_url": "https://github.com/oauthsentry/oauthsentry.github.io/blob/main/data/github/curated_seed.csv",
+      "schema": "appname,appid,metadata_category,metadata_severity,metadata_comment,metadata_reference",
+      "credit": "OAuthSentry contributors",
+      "credit_url": "https://github.com/oauthsentry/oauthsentry.github.io",
+      "note": "Self-maintained seed list. No upstream curator (mthcht/awesome-lists does not yet ship a github_oauth_apps.csv). Contributions welcome - see CONTRIBUTING.md.",
+      "loaded_rows": 4
+    },
+    {
       "id": "google_curated_mthcht",
       "service": "google",
       "role": "curated",
       "label": "mthcht/awesome-lists - Google OAuth apps",
       "remote": "https://raw.githubusercontent.com/mthcht/awesome-lists/main/Lists/OAuth/google_oauth_apps.csv",
       "local": "data/google/curated_mthcht.csv",
+      "source_url": "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/google_oauth_apps.csv",
       "schema": "appname,appid,metadata_category,metadata_severity,metadata_comment,metadata_reference",
       "credit": "mthcht/awesome-lists",
       "credit_url": "https://github.com/mthcht/awesome-lists/tree/main/Lists/OAuth",
       "loaded_rows": 2
     }
   ],
-  "generated": "2026-04-27T13:38:47.070498+00:00",
-  "total_apps": 788
+  "generated": "2026-04-27T15:22:30.156343+00:00",
+  "total_apps": 792
 }

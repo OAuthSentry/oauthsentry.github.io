@@ -91,7 +91,7 @@ function showPage(pageId) {
 }
 
 function showInvestigationSub(sub) {
-  ['sub-tradecraft', 'sub-remediation', 'sub-forensics', 'sub-detections', 'sub-hunting', 'sub-hardening', 'sub-google'].forEach(id => {
+  ['sub-tradecraft', 'sub-remediation', 'sub-forensics', 'sub-detections', 'sub-hunting', 'sub-hardening', 'sub-google', 'sub-github'].forEach(id => {
     const el = document.getElementById(id);
     if (!el) return;
     el.hidden = (id !== `sub-${sub}`);

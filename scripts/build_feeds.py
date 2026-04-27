@@ -58,8 +58,14 @@ def load_sources_config():
         return json.load(fh)
 
 
-def load_curated(local_path: Path, service: str, source_id: str) -> list[dict]:
-    """mthcht's curated CSV. Returns a list of canonical rows."""
+def load_curated(local_path: Path, service: str, source_id: str, source_url: str | None = None) -> list[dict]:
+    """mthcht's curated CSV. Returns a list of canonical rows.
+
+    If source_url is given (the canonical upstream URL of this curated file),
+    it is appended to every row's metadata_reference so consumers can trace the
+    classification back to the curator. References are joined with ' | ',
+    matching the mthcht convention the site already parses.
+    """
     if not local_path.exists():
         return []
     rows = []
@@ -74,13 +80,23 @@ def load_curated(local_path: Path, service: str, source_id: str) -> list[dict]:
             # last token after " - " as the canonical bucket; fall back to risky.
             cat_token = cat_raw.rsplit(" - ", 1)[-1].strip().lower()
             cat = CATEGORY_MAP.get(cat_token, "risky" if cat_raw else "compliance")
+
+            existing_ref = (row.get("metadata_reference") or "").strip()
+            if source_url and source_url not in existing_ref:
+                if existing_ref and existing_ref.upper() not in ("N/A", "NA", "-"):
+                    merged_ref = f"{existing_ref} | {source_url}"
+                else:
+                    merged_ref = source_url
+            else:
+                merged_ref = existing_ref
+
             rows.append({
                 "appname":            (row.get("appname") or "").strip(),
                 "appid":              appid,
                 "metadata_category":  cat,
                 "metadata_severity":  (row.get("metadata_severity") or "info").strip().lower(),
                 "metadata_comment":   (row.get("metadata_comment") or "").strip(),
-                "metadata_reference": (row.get("metadata_reference") or "").strip(),
+                "metadata_reference": merged_ref,
                 "service":            service,
                 "_provenance":        source_id,
             })
@@ -186,7 +202,12 @@ def build():
         curated_rows = []
         fill_rows    = []
         if curated_src:
-            curated_rows = load_curated(ROOT / curated_src["local"], service, curated_src["id"])
+            curated_rows = load_curated(
+                ROOT / curated_src["local"],
+                service,
+                curated_src["id"],
+                source_url=curated_src.get("source_url"),
+            )
             summary["sources"].append({**curated_src, "loaded_rows": len(curated_rows)})
         if fill_src:
             fill_rows = load_compliance_fill(ROOT / fill_src["local"], service, fill_src["id"])

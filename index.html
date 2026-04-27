@@ -7,7 +7,11 @@
   <meta name="description" content="Search OAuth Application IDs across Microsoft Entra, Google Workspace and more. Three classification feeds for defenders: compliance, risky, and malicious. Includes investigation playbooks, forensic traces, and Splunk detections.">
   <meta name="theme-color" content="#0a0b10">
 
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='4' width='24' height='24' rx='4' fill='none' stroke='%235ee0c1' stroke-width='2'/%3E%3Crect x='12' y='12' width='8' height='8' fill='%235ee0c1'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon-180.png">
+  <link rel="shortcut icon" href="assets/img/favicon.ico">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -135,7 +139,8 @@
           <a href="#/investigation/detections"   data-route="/investigation/detections">Entra: Detections</a>
           <a href="#/investigation/hunting"      data-route="/investigation/hunting">Entra: Hunting</a>
           <a href="#/investigation/hardening"    data-route="/investigation/hardening">Entra: Hardening</a>
-          <a href="#/investigation/google"       data-route="/investigation/google">Google Workspace</a>
+          <a href="#/investigation/google"       data-route="/investigation/google">Google Workspace (beta)</a>
+          <a href="#/investigation/github"       data-route="/investigation/github">GitHub (beta)</a>
         </nav>
 
         <!-- ===== Tradecraft ===== -->
@@ -1732,18 +1737,21 @@ Invoke-Maester -Tag App    # OAuth/app-related tests only
         <!-- ===== Google Workspace ===== -->
         <div class="invest-section" id="sub-google" hidden>
           <div class="doc-block">
-            <h2>OAuth abuse against Google Workspace</h2>
+            <h2>OAuth abuse against Google Workspace <span style="font-family: var(--font-display); font-size: 0.55em; vertical-align: 0.4em; padding: 3px 8px; background: var(--accent); color: var(--bg); border-radius: 3px; letter-spacing: 0.04em; text-transform: uppercase; font-weight: 700;">beta</span></h2>
+            <div style="border-left: 3px solid var(--accent); padding: 12px 16px; margin: 0 0 24px; background: rgba(255,255,255,0.02); font-size: 14px; color: var(--text-dim);">
+              <strong style="color: var(--text);">Beta - field paths, command syntax and Admin Console paths in this section are based on Google's published documentation but have not been independently re-tested in a live tenant for this release.</strong> Verify the specifics (sourcetypes, exact GAM flag names, current Admin Console menu wording) in your environment before relying on them. Corrections welcome at <a href="https://github.com/oauthsentry/oauthsentry.github.io/issues">github.com/oauthsentry/oauthsentry.github.io/issues</a>.
+            </div>
             <p class="doc-lede">Google Workspace's OAuth threat surface is smaller than Entra's but the same class of attack works: a user grants a third-party app access to Gmail, Drive or Contacts, and the attacker exfiltrates from cloud-to-cloud without ever touching the endpoint. The two in-the-wild cases that drive OAuthSentry's malicious feed today (Salesloft Drift / UNC6395 in August 2025, and Context.ai / Vercel in April 2026) both followed this pattern. This subtab covers the audit trail, detection queries and revocation tooling specific to Google.</p>
 
             <h3><span class="num">1</span> Tradecraft and known-bad apps</h3>
             <p>The attack pattern Google Workspace defenders should expect:</p>
             <ul>
               <li><strong>Vendor compromise pivot.</strong> Attacker steals OAuth tokens from a SaaS integration vendor (Salesloft Drift, Context.ai, marketing automation tools) and uses those tokens to read Gmail / Drive / Contacts at scale across every customer that consented to the integration. Detection has to start at the token activity level - the user did consent legitimately, just to a now-compromised vendor.</li>
-              <li><strong>Mass-mailer phishing apps.</strong> Lookalike apps with names like "Google Docs", "Google Drive", "Office Suite Helper" that request <code>https://www.googleapis.com/auth/contacts</code> + <code>https://www.googleapis.com/auth/gmail.send</code>. Once consented, the app reads contacts, sends the same consent prompt to every contact, and propagates virally. The 2017 "Google Docs" worm is the canonical example - the attack still works because the consent prompt is generic.</li>
-              <li><strong>OAuth grant for full mailbox via IMAP.</strong> The legacy scope <code>https://mail.google.com/</code> grants full mailbox access (read, send, delete) and bypasses Gmail's API per-message audit. Apps requesting this scope are almost always either legitimate desktop mail clients (Outlook, Thunderbird, eM Client, Apple Mail) or attacker tools mimicking them. The clue is the <code>client_type</code> and the scope set.</li>
+              <li><strong>Mass-mailer phishing apps.</strong> Lookalike apps mimicking Google products that request <code>https://www.googleapis.com/auth/contacts</code> + <code>https://www.googleapis.com/auth/gmail.send</code>. Once consented, the app reads contacts, sends the same consent prompt to every contact, and propagates virally. The <a href="https://www.theverge.com/2017/5/3/15534768/google-docs-phishing-attack-share-this-document-with-you-spam">May 2017 "Google Docs" worm</a> is the canonical example - the attack still works because the consent prompt is generic.</li>
+              <li><strong>Broad-mailbox-access scope.</strong> The legacy <code>https://mail.google.com/</code> scope grants the holder full Gmail access (read, send, modify, delete) and is the scope used by IMAP/SMTP/POP clients. Apps requesting this scope are almost always either legitimate desktop mail clients (Outlook, Thunderbird, eM Client, Apple Mail) or attacker tools mimicking them. The detection clue is the combination of <code>client_type</code> and the scope set: a <code>WEB</code> client requesting <code>mail.google.com</code> is rare and worth investigating.</li>
             </ul>
 
-            <p>The two app IDs OAuthSentry currently classifies as malicious for Google Workspace:</p>
+            <p>The two app IDs OAuthSentry currently classifies as malicious for Google Workspace (curated by <a href="https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/google_oauth_apps.csv">mthcht/awesome-lists</a>):</p>
             <table class="kv-table">
               <thead><tr><th>App</th><th>Client ID</th><th>Why</th></tr></thead>
               <tbody>
@@ -1765,10 +1773,9 @@ Invoke-Maester -Tag App    # OAuth/app-related tests only
             <table class="kv-table">
               <thead><tr><th>applicationName</th><th>What it records</th></tr></thead>
               <tbody>
-                <tr><td class="mono">token</td><td>OAuth grants, revocations, token requests and per-call activity. The single highest-value source for OAuth hunting. Event names: <code>authorize</code>, <code>revoke</code>, <code>request</code>, <code>activity</code>.</td></tr>
+                <tr><td class="mono">token</td><td>OAuth grants, revocations, token requests and per-call activity. The single highest-value source for OAuth hunting. Four event names, all with <code>type=auth</code>: <code>authorize</code>, <code>revoke</code>, <code>request</code>, <code>activity</code>.</td></tr>
                 <tr><td class="mono">login</td><td>User sign-ins, including SSO via OAuth federation. Useful for correlating consent-prompt acceptance with the source IP and device.</td></tr>
                 <tr><td class="mono">admin</td><td>Admin Console actions. Pivot here to see if an admin granted domain-wide delegation, changed an OAuth app trust setting, or whitelisted a client ID.</td></tr>
-                <tr><td class="mono">oauth_token</td><td>Newer endpoint covering granular per-token activity. Overlaps with <code>token</code>; check both during investigations.</td></tr>
               </tbody>
             </table>
 
@@ -1776,7 +1783,7 @@ Invoke-Maester -Tag App    # OAuth/app-related tests only
             <div class="code-block">
               <div class="code-header">Reports API authorize event (anonymized)<button class="copy-snippet" type="button">copy</button></div>
               <pre>{
-  "kind":   "admin#reports#activity",
+  "kind":   "audit#activity",
   "id":     { "time": "2026-04-27T07:20:47.123Z", "uniqueQualifier": "...",
               "applicationName": "token", "customerId": "C0&lt;tenant&gt;" },
   "actor":  { "email": "user@yourdomain.com", "profileId": "&lt;profile-id&gt;",
@@ -1795,8 +1802,7 @@ Invoke-Maester -Tag App    # OAuth/app-related tests only
             "https://www.googleapis.com/auth/userinfo.email",
             "openid"
           ] },
-        { "name": "scope_data",  "multiMessageValue": [...] },
-        { "name": "api_name",    "value": "" }
+        { "name": "scope_data",  "multiMessageValue": [...] }
       ]
     }
   ]
@@ -1808,7 +1814,7 @@ Invoke-Maester -Tag App    # OAuth/app-related tests only
               <li><strong>OAuth client ID</strong> (the equivalent of Entra's AppId) - <code>events[].parameters[]</code> where <code>name=="client_id"</code>. Lower-case it and match against OAuthSentry's <code>feeds/google/malicious.txt</code>. Google client IDs are not GUIDs - they end in <code>.apps.googleusercontent.com</code> and the leading numeric segment is the project number.</li>
               <li><strong>Granted scopes</strong> - <code>events[].parameters[]</code> where <code>name=="scope"</code>, <code>multiValue</code> field is the array. <code>https://mail.google.com/</code>, <code>https://www.googleapis.com/auth/gmail.send</code>, <code>https://www.googleapis.com/auth/drive</code> and <code>https://www.googleapis.com/auth/contacts</code> are the four high-impact reads/writes; the <code>.readonly</code> variants matter for exfil hunts.</li>
               <li><strong>Consenting user</strong> - top-level <code>actor.email</code> + <code>actor.profileId</code>. Pair with the <code>login</code> application events on the same <code>profileId</code> to recover the IP, device and 2SV factor used at consent time.</li>
-              <li><strong>Client type</strong> - <code>events[].parameters[]</code> where <code>name=="client_type"</code>. <code>WEB</code> = browser-based OAuth flow (consent prompt). <code>NATIVE_DESKTOP</code> = installed desktop client (Outlook, eM Client, Thunderbird). <code>SERVICE_ACCOUNT</code> = domain-wide delegation impersonation (almost always admin-granted, watch closely).</li>
+              <li><strong>Client type</strong> - <code>events[].parameters[]</code> where <code>name=="client_type"</code>. Per Google's reference, possible values are <code>WEB</code> (browser-based OAuth flow with a consent prompt), <code>NATIVE_DESKTOP</code> (installed desktop client like Outlook, Thunderbird, eM Client), <code>NATIVE_ANDROID</code>, <code>NATIVE_IOS</code>, <code>NATIVE_CHROME_EXTENSION</code>, <code>NATIVE_APPLICATION</code>, <code>CONNECTED_DEVICE</code>, and a handful of platform-specific values plus <code>TYPE_UNSPECIFIED</code>. The full enum is in the <a href="https://developers.google.com/admin-sdk/reports/v1/appendix/activity/token">OAuth Token Audit Activity Events reference</a>. Domain-wide delegation impersonation does not appear here as a <code>client_type</code> value - it shows up separately in the Admin Console under API controls.</li>
             </ul>
 
             <h3><span class="num">3</span> Detection queries</h3>
@@ -1842,24 +1848,21 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" \
              { id=tolower($4); gsub(/"/, "", id); if (bad[id]) print "MALICIOUS:", $0 }'</pre>
             </div>
 
-            <p><strong>Detection 2: any consent for a high-impact scope, via GAM.</strong> GAM wraps the Reports API and is faster to iterate than raw curl. Add a daily cron that diffs against an allowlist:</p>
+            <p><strong>Detection 2: any consent for a high-impact scope, via GAM.</strong> <a href="https://github.com/GAM-team/GAM">GAM</a> wraps the Reports API and is faster to iterate than raw curl. The exact GAM <code>report token</code> flag syntax for time ranges and event filters varies between GAM 6 / GAM 7 / GAMADV-XTD3 - <strong>consult the <a href="https://github.com/GAM-team/GAM/wiki/Reports">Reports wiki</a> for your installed version</strong>. The two reliably-portable token commands across versions are showing and revoking tokens directly:</p>
             <div class="code-block">
-              <div class="code-header">GAM - high-impact scope grants in last 24h<button class="copy-snippet" type="button">copy</button></div>
-              <pre>``` Last 24h of authorize events with the dangerous scopes ```
-gam report token start -1d \
-  filters 'event_name==authorize' \
-  fields 'time,actor.email,ipAddress,parameters' \
-  | grep -E 'mail\.google\.com|gmail\.send|gmail\.modify|drive($|/)|contacts(\.|$)' \
-  | tee /var/log/oauthsentry-google-highrisk.log
-
-``` Per-user view of currently-granted tokens (run before mass revocation) ```
+              <div class="code-header">GAM - inventory and revoke tokens<button class="copy-snippet" type="button">copy</button></div>
+              <pre>``` Per-user view of currently-granted tokens (run before mass revocation) ```
 gam user user@yourdomain.com show tokens
 
-``` Tenant-wide: every token currently held by any user, machine-readable ```
-gam all users print tokens fields user,clientid,scopes,displaytext &gt; tokens.csv</pre>
-            </div>
+``` Tenant-wide token inventory: every client_id every user has authorized ```
+gam all users print tokens
 
-            <p><strong>Detection 3: SIEM-side, if you ingest Workspace logs.</strong> The Splunk Add-on for Google Workspace lands these events with sourcetype <code>gws:reports:token</code>. The pattern mirrors our Entra Detection 1:</p>
+``` Filter the inventory to a single client (e.g. an OAuthSentry malicious entry) ```
+gam all users print tokens clientid 1084253493764-ipb2ntp4jb4rmqc76jp7habdrhfdus3q.apps.googleusercontent.com</pre>
+            </div>
+            <p>For ad-hoc OAuth-token report queries against the Admin SDK, the curl approach in Detection 1 is the most stable across environments since it speaks directly to the documented API.</p>
+
+            <p><strong>Detection 3: SIEM-side, if you ingest Workspace logs.</strong> Most Workspace customers forward Reports API events into a SIEM via Pub/Sub or a vendor add-on. Field names in the SIEM mirror the Reports API JSON, so the pattern is identical to Detection 1; the example below uses Splunk syntax with the Workspace add-on's typical field naming - <strong>verify the sourcetype and exact field paths in your environment before deploying</strong>, since add-on conventions differ:</p>
             <div class="code-block">
               <div class="code-header">SPL - Workspace token authorize against malicious feed<button class="copy-snippet" type="button">copy</button></div>
               <pre>index=gws sourcetype=gws:reports:token name=authorize
@@ -1897,8 +1900,9 @@ gam user victim@yourdomain.com delete token clientid \
 gam all users delete token clientid \
   1084253493764-ipb2ntp4jb4rmqc76jp7habdrhfdus3q.apps.googleusercontent.com
 
-``` Audit trail: confirm the revocations landed ```
-gam report token start -1h filters 'event_name==revoke,parameter:client_id==1084253493764-ipb2ntp4jb4rmqc76jp7habdrhfdus3q.apps.googleusercontent.com'</pre>
+``` Audit trail: confirm the revocations landed by re-listing tokens for the client ```
+``` (a successful mass-revoke means this returns no rows for any user) ```
+gam all users print tokens clientid 1084253493764-ipb2ntp4jb4rmqc76jp7habdrhfdus3q.apps.googleusercontent.com</pre>
             </div>
 
             <p><strong>Admin Console path</strong> (one-off use; for muscle-memory or when you don't have GAM deployed):</p>
@@ -1906,16 +1910,180 @@ gam report token start -1h filters 'event_name==revoke,parameter:client_id==1084
               <li>Admin Console &rarr; <strong>Security</strong> &rarr; <strong>Access and data control</strong> &rarr; <strong>API controls</strong>.</li>
               <li><strong>Manage Third-Party App Access</strong>: search for the client ID, set Access to <strong>Blocked</strong>. This prevents future grants but does not revoke existing tokens - GAM still required for that.</li>
               <li><strong>Domain-wide delegation</strong>: if the malicious client appears here, remove the entry. DWD entries grant the app the ability to impersonate any user without per-user consent; presence here is critical-severity.</li>
-              <li>Reports &rarr; Audit and investigation &rarr; <strong>OAuth log events</strong>: confirm the <code>revoke</code> events appeared for every user that previously had a token.</li>
+              <li>Reports &rarr; Audit and investigation &rarr; <strong>Token log events</strong> (the OAuth audit view; menu name has changed across Workspace editions, look for "Token" or "OAuth"): confirm the <code>revoke</code> events appeared for every user that previously had a token.</li>
             </ol>
 
             <h3><span class="num">5</span> Hardening - the controls that prevent the next consent attack</h3>
             <ul>
-              <li><strong>Block unverified apps tenant-wide.</strong> Admin Console &rarr; Security &rarr; API controls &rarr; <strong>App access control</strong> &rarr; <strong>Settings</strong> &rarr; uncheck <em>"Allow users to access unconfigured third-party apps"</em>. With this off, a user can only consent to apps that have completed Google's OAuth verification process or that an admin has explicitly trusted.</li>
+              <li><strong>Block unverified apps tenant-wide.</strong> Admin Console &rarr; Security &rarr; Access and data control &rarr; API controls &rarr; <strong>App access control</strong>. Set the default access for unconfigured third-party apps to blocked (the exact toggle label varies between Workspace editions and has been renamed by Google over time - the <a href="https://redcanary.com/blog/threat-detection/google-workspace-oauth-attack/">Red Canary OAuth-attack writeup</a> walks through the current panel layout). With the default blocked, a user can only consent to apps that an admin has explicitly trusted.</li>
               <li><strong>Restrict access to the four high-impact services.</strong> Same screen, set <strong>Gmail</strong>, <strong>Drive and Docs</strong>, <strong>Contacts</strong> and <strong>Calendar</strong> to <em>"Restricted"</em> rather than <em>"Unrestricted"</em>. Restricted means only Trusted apps can request scopes for that service; everything else is blocked even if the user clicks accept.</li>
               <li><strong>Audit domain-wide delegation quarterly.</strong> Admin Console &rarr; Security &rarr; API controls &rarr; <strong>Domain-wide delegation</strong>. Every entry is an unconditional impersonation grant. The list should be short, named, and every entry should map to a documented service. Unknown client IDs here are an incident.</li>
-              <li><strong>Forward Workspace audit logs out of Google.</strong> Admin Console &rarr; Reporting &rarr; Audit logs are 6 months by default. Export them via Pub/Sub to a SIEM with longer retention so consent events from a year ago are still queryable when an attack surfaces.</li>
+              <li><strong>Forward Workspace audit logs out of Google.</strong> Workspace audit log retention varies by data type and edition (the OAuth Token Reports API is documented to expose 180 days; in-console audit log views may surface different windows). Forward the events out via Pub/Sub or a vendor add-on into a SIEM with longer retention so consent events from a year ago are still queryable when an attack surfaces. Confirm your edition's actual retention in the Admin Help center before relying on it.</li>
               <li><strong>Subscribe to OAuthSentry's <code>feeds/google/malicious.txt</code></strong> and run the Detection 1 curl on a 15-minute cadence. The list is small today (two entries) but every new compromise lands here within a day of public disclosure.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ===== GitHub ===== -->
+        <div class="invest-section" id="sub-github" hidden>
+          <div class="doc-block">
+            <h2>OAuth abuse against GitHub <span style="font-family: var(--font-display); font-size: 0.55em; vertical-align: 0.4em; padding: 3px 8px; background: var(--accent); color: var(--bg); border-radius: 3px; letter-spacing: 0.04em; text-transform: uppercase; font-weight: 700;">beta</span></h2>
+            <div style="border-left: 3px solid var(--accent); padding: 12px 16px; margin: 0 0 24px; background: rgba(255,255,255,0.02); font-size: 14px; color: var(--text-dim);">
+              <strong style="color: var(--text);">Beta - audit log event names, REST API paths and GitHub UI menu paths in this section are based on GitHub's published documentation.</strong> Field availability differs between GitHub Enterprise Cloud and GitHub Enterprise Server, and the audit log schema has changed across recent API versions. Verify against your GitHub edition before relying on the specifics. Corrections welcome at <a href="https://github.com/oauthsentry/oauthsentry.github.io/issues">github.com/oauthsentry/oauthsentry.github.io/issues</a>.
+            </div>
+            <p class="doc-lede">GitHub's OAuth threat surface is structurally different from Entra and Google: instead of a tenant-hosted SP that survives revocation events, GitHub OAuth Apps are owned and operated by their publisher (Heroku, Travis CI, etc.), and a single compromise of the publisher exposes every customer org that authorized that app. The April 2022 Heroku/Travis CI incident, which drives OAuthSentry's seed list for this service today, is the canonical example.</p>
+
+            <h3><span class="num">1</span> Tradecraft and known-bad apps</h3>
+            <p>Three patterns GitHub defenders should expect. The first one is the high-impact threat:</p>
+            <ul>
+              <li><strong>Publisher compromise of a popular OAuth integrator.</strong> Attacker breaches a SaaS vendor that holds OAuth user tokens for many GitHub orgs (CI/CD platform, deployment tool, code-review service, security scanner) and then enumerates and clones every private repo those tokens grant access to. The user did consent legitimately - the threat actor inherits trust from a now-compromised vendor. Detection has to start at the audit log level, looking at <em>which apps</em> have ever been authorized in your org.</li>
+              <li><strong>Stolen Personal Access Tokens (PATs).</strong> Not strictly OAuth, but adjacent: a developer commits a PAT, leaks it through an env-var dump, or has it stolen via stealer malware. The token is then used to read private repos or push malicious commits. Hunt with <code>action:personal_access_token</code> events and the <code>hashed_token</code> field in audit log entries.</li>
+              <li><strong>Malicious GitHub App installation.</strong> An attacker convinces an org owner to install a GitHub App they control. Different threat model from OAuth Apps - GitHub Apps act as themselves with installation tokens, not as the consenting user, and have fine-grained permissions. The audit signal is <code>integration_installation.create</code> for an unknown app slug.</li>
+            </ul>
+
+            <p>The four GitHub OAuth App names OAuthSentry currently classifies as malicious-historical (curated from <a href="https://github.blog/news-insights/company-news/security-alert-stolen-oauth-user-tokens/">GitHub's April 2022 disclosure</a>):</p>
+            <table class="kv-table">
+              <thead><tr><th>App name (matchable in audit logs)</th><th>Numeric OAuth App ID(s)</th><th>Status</th></tr></thead>
+              <tbody>
+                <tr><td class="mono">Heroku Dashboard</td><td class="mono">145909, 628778</td><td rowspan="3">Tokens stolen and abused April 2022. Heroku/GitHub revoked all tokens April 13-16 2022 and Heroku stopped issuing new tokens from the Heroku Dashboard integration. Active threat window is closed; remains valuable as a historical IOC for hunting pre-revocation activity in retained audit logs.</td></tr>
+                <tr><td class="mono">Heroku Dashboard - Preview</td><td class="mono">313468</td></tr>
+                <tr><td class="mono">Heroku Dashboard - Classic</td><td class="mono">363831</td></tr>
+                <tr><td class="mono">Travis CI</td><td class="mono">9216</td><td>Tokens stolen via the Heroku-side compromise; Travis CI revoked all authorization keys and tokens April 15 2022. Same hunting guidance as Heroku Dashboard variants.</td></tr>
+              </tbody>
+            </table>
+            <div style="border-left: 3px solid var(--accent); padding: 12px 16px; margin: 16px 0; background: rgba(255,255,255,0.02); font-size: 14px; color: var(--text-dim);">
+              <strong style="color: var(--text);">Why the matchable IOC is the name, not the number.</strong> Unlike Entra (which surfaces an AppId GUID on every consent event) or Google (which surfaces a <code>client_id</code> string on every <code>authorize</code> event), GitHub's audit log emits <code>oauth_application_name</code> on the <code>oauth_authorization.*</code> and <code>oauth_access.*</code> action families - <strong>and does not include the numeric OAuth App ID on those events</strong>. The numeric IDs above are the canonical identifiers from GitHub's UI (Settings &rarr; Developer settings &rarr; OAuth Apps), which GitHub itself published as IOCs in their disclosure. They are useful for absolute identification but for audit-log hunting, you match on the name. OAuthSentry's <code>feeds/github/malicious.txt</code> ships the names for that reason.
+            </div>
+
+            <h3><span class="num">2</span> Audit trail - the GitHub audit log REST API</h3>
+            <p>OAuth App authorizations, revocations and token generation events live in the <a href="https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/audit-log-events-for-your-organization">org audit log</a> (or enterprise audit log, for Enterprise Cloud customers). Two REST API endpoints expose them:</p>
+            <table class="kv-table">
+              <thead><tr><th>Scope</th><th>Endpoint</th></tr></thead>
+              <tbody>
+                <tr><td>Single org</td><td class="mono">https://api.github.com/orgs/{org}/audit-log</td></tr>
+                <tr><td>Enterprise (all orgs)</td><td class="mono">https://api.github.com/enterprises/{enterprise}/audit-log</td></tr>
+              </tbody>
+            </table>
+
+            <p>Required PAT or OAuth-app scope is <code>read:audit_log</code> (introduced December 2022 - prior to that, full <code>admin:org</code> was needed). The audit log retains most events for up to 180 days; Git events are retained for 7 days only, and the in-UI view defaults to the past 3 months.</p>
+
+            <p>The OAuth-relevant action names defenders should hunt on:</p>
+            <table class="kv-table">
+              <thead><tr><th>Action</th><th>What it records</th><th>Key fields</th></tr></thead>
+              <tbody>
+                <tr><td class="mono">oauth_authorization.create</td><td>A user authorized a third-party OAuth App against their account/org.</td><td><code>actor</code>, <code>oauth_application_name</code>, <code>created_at</code></td></tr>
+                <tr><td class="mono">oauth_authorization.update</td><td>An existing authorization was modified (typically scope expansion).</td><td><code>actor</code>, <code>oauth_application_name</code></td></tr>
+                <tr><td class="mono">oauth_authorization.destroy</td><td>An authorization was revoked.</td><td><code>actor</code>, <code>oauth_application_name</code>, <code>explanation</code></td></tr>
+                <tr><td class="mono">oauth_access.generate</td><td>A new OAuth access token was issued under an existing authorization.</td><td><code>actor</code>, <code>oauth_application_name</code>, <code>token_id</code>, <code>token_scopes</code>, <code>hashed_token</code></td></tr>
+                <tr><td class="mono">oauth_access.regenerate</td><td>An existing OAuth access token was rotated (the authorization stays, the token is reissued).</td><td><code>actor</code>, <code>oauth_application_name</code>, <code>token_id</code>, <code>token_scopes</code>, <code>hashed_token</code>, <code>actor_ip</code></td></tr>
+                <tr><td class="mono">integration_installation.create</td><td>A GitHub App (not OAuth App) was installed in the org.</td><td><code>actor</code>, integration name</td></tr>
+                <tr><td class="mono">personal_access_token.access_granted</td><td>A fine-grained PAT was granted access to org resources.</td><td><code>actor</code>, <code>token_id</code>, <code>token_scopes</code></td></tr>
+              </tbody>
+            </table>
+
+            <p>An anonymized reference event - what one of these actions actually looks like in a Cloud enterprise's audit log:</p>
+            <div class="code-block">
+              <div class="code-header">Audit log event (anonymized) - oauth_access.regenerate<button class="copy-snippet" type="button">copy</button></div>
+              <pre>{
+  "@timestamp":   1777298667221,
+  "_document_id": "&lt;document-id&gt;",
+  "action":       "oauth_access.regenerate",
+  "actor_ip":     "&lt;source-ip&gt;",
+  "actor_location": { "country_code": "&lt;cc&gt;" },
+  "business":     "&lt;enterprise-slug&gt;",
+  "business_id":  &lt;enterprise-id&gt;,
+  "created_at":   1777298667221,
+  "hashed_token": "&lt;sha256-of-token&gt;",
+  "oauth_application_name": "&lt;internal-app-name&gt;",
+  "operation_type":          "modify",
+  "request_access_security_header": null,
+  "request_id":              "&lt;request-id&gt;",
+  "token_id":                &lt;token-id&gt;,
+  "token_scopes":            "read:org,user:email",
+  "user":                    "&lt;username&gt;",
+  "user_agent":              "Go-http-client/2.0",
+  "user_id":                 &lt;user-id&gt;
+}</pre>
+            </div>
+            <p>The four fields defenders pivot on, with paths confirmed against the shape above:</p>
+            <ul>
+              <li><strong>OAuth App identifier</strong> &rarr; <code>oauth_application_name</code> at the top level. <strong>Lower-case and match against OAuthSentry's <code>feeds/github/malicious.txt</code></strong>. As noted above, the numeric OAuth App ID is <em>not</em> emitted on these events - the name is the only matchable identifier.</li>
+              <li><strong>Granted scopes</strong> &rarr; <code>token_scopes</code> as a comma-separated string (e.g. <code>read:org,user:email</code>). <code>repo</code>, <code>repo:write</code>, <code>workflow</code>, <code>admin:org</code>, <code>delete_repo</code> are the high-impact scopes; treat any new authorization that requests them as page-on-call.</li>
+              <li><strong>Acting user and source</strong> &rarr; <code>user</code> + <code>user_id</code> (top-level), pair with <code>actor_ip</code> and <code>actor_location.country_code</code> for geo / VPN / hosting-provider checks. The <code>user_agent</code> is also informative - Go and Python HTTP clients on consent-prompt actions are unusual and worth investigating.</li>
+              <li><strong>Token identity</strong> &rarr; <code>token_id</code> (numeric) and <code>hashed_token</code> (URL-safe base64 SHA-256 of the raw token). Both are stable across the lifetime of the same token and let you correlate one consent event with every subsequent <code>git.clone</code>, <code>git.fetch</code>, or repo-read action that used that token. To search for every event tied to a known-leaked token, use <a href="https://docs.github.com/en/enterprise-cloud@latest/admin/monitoring-activity-in-your-enterprise/reviewing-audit-logs-for-your-enterprise/identifying-audit-log-events-performed-by-an-access-token">GitHub's hashed-token search</a>.</li>
+            </ul>
+
+            <h3><span class="num">3</span> Detection queries</h3>
+            <p><strong>Detection 1: any authorization or token-issuance event for a known-malicious app, via REST API.</strong> Poll the org or enterprise audit log on a 5-15 minute cadence using a service-account PAT with the <code>read:audit_log</code> scope. Match the <code>oauth_application_name</code> field against OAuthSentry's malicious feed (which contains names, not numeric IDs - see the schema callout above):</p>
+            <div class="code-block">
+              <div class="code-header">curl - GitHub audit log OAuth-app hunt by name<button class="copy-snippet" type="button">copy</button></div>
+              <pre>``` Pull the last hour of OAuth-lifecycle events for an org and match by name ```
+ORG="your-org"
+PAT="ghp_..."  # PAT with read:audit_log scope
+SINCE=$(date -u -d '1 hour ago' +%Y-%m-%dT%H:%M:%SZ)
+
+``` All events whose action category is oauth_authorization or oauth_access ```
+``` (covers create, update, destroy, generate, regenerate). Note +>= URL-encoding ```
+curl -s \
+  -H "Authorization: Bearer $PAT" \
+  -H "Accept: application/vnd.github+json" \
+  -H "X-GitHub-Api-Version: 2022-11-28" \
+  "https://api.github.com/orgs/$ORG/audit-log?phrase=action:oauth_authorization+OR+action:oauth_access+created:&gt;=$SINCE&amp;per_page=100" \
+| jq -r '.[] | [
+    (.["@timestamp"] / 1000 | strftime("%Y-%m-%dT%H:%M:%SZ")),
+    .action,
+    .user,
+    .actor_ip,
+    .oauth_application_name,
+    .token_scopes
+  ] | @csv' \
+| awk -F',' 'BEGIN { while((getline n &lt; "/path/to/feeds/github/malicious.txt") &gt; 0) if (n !~ /^#/) bad[tolower(n)]=1 }
+             { name=tolower($5); gsub(/"/, "", name); if (bad[name]) print "MALICIOUS:", $0 }'</pre>
+            </div>
+            <p>The same query works against <code>/enterprises/{enterprise}/audit-log</code> if you have enterprise-level access - that gives one query that covers every org in the enterprise.</p>
+
+            <p><strong>Detection 2: gh CLI (lighter-weight version of the same hunt).</strong> The <a href="https://cli.github.com/manual/gh_api">gh api</a> command handles auth and pagination for you when running locally:</p>
+            <div class="code-block">
+              <div class="code-header">gh CLI - audit log OAuth hunt<button class="copy-snippet" type="button">copy</button></div>
+              <pre>``` Last 7 days of OAuth authorization events, paginated ```
+gh api --paginate \
+  -H "Accept: application/vnd.github+json" \
+  "/orgs/$ORG/audit-log?phrase=action:oauth_authorization+created:&gt;=$(date -u -d '7 days ago' +%Y-%m-%d)&amp;per_page=100" \
+  | jq '.[] | {ts: .["@timestamp"], actor, app: .oauth_application_name, action}'</pre>
+            </div>
+
+            <p><strong>Detection 3: SIEM-side, if you stream GitHub audit logs.</strong> GitHub Enterprise Cloud supports <a href="https://docs.github.com/en/enterprise-cloud@latest/admin/monitoring-activity-in-your-enterprise/streaming-the-audit-log-for-your-enterprise/about-audit-log-streaming-for-your-enterprise">audit log streaming</a> to S3, Azure Blob, GCS, Splunk, Datadog and others. Once landed, the field names match the REST response, so the same predicate works:</p>
+            <div class="code-block">
+              <div class="code-header">SPL - GitHub audit log OAuth authorize against malicious feed<button class="copy-snippet" type="button">copy</button></div>
+              <pre>index=github sourcetype=github:audit action="oauth_authorization.create"
+| eval app_name = lower(oauth_application_name)
+| lookup oauthsentry_github_malicious appname as app_name
+    OUTPUT category as oas_category, severity as oas_severity, comment as oas_comment
+| where oas_category = "malicious"
+| stats count
+        earliest(_time) as first_seen
+        latest(_time)   as last_seen
+        values(actor)   as users
+    by app_name, oas_severity, oas_comment
+| convert ctime(first_seen) ctime(last_seen)</pre>
+            </div>
+            <p><strong>Verify the sourcetype</strong> - <code>github:audit</code> is the typical Splunk Add-on for GitHub Enterprise sourcetype, but the field naming after parse-time depends on your specific add-on/parser configuration.</p>
+
+            <h3><span class="num">4</span> Remediation - revoking OAuth apps and tokens</h3>
+            <p>GitHub's revocation model has three layers, and you need to use the right one depending on what you're trying to revoke:</p>
+            <ul>
+              <li><strong>Org-level revocation of the OAuth App (the right answer for a known-malicious app).</strong> Org settings &rarr; <strong>Third-party access</strong> &rarr; <strong>OAuth app policy</strong>. If OAuth app access restrictions are enabled, you can deny the app outright; otherwise, click the app entry and revoke its access. This blocks future use across the entire org regardless of which user authorized it. From the REST API: <code>DELETE /orgs/{org}/credential-authorizations/{credential_id}</code> (requires SAML SSO with the <code>admin:org</code> scope).</li>
+              <li><strong>User-level revocation</strong> (for individual cleanup): the user can go to GitHub &rarr; Settings &rarr; <strong>Applications</strong> &rarr; <strong>Authorized OAuth Apps</strong> and revoke. From the REST API: <code>DELETE /applications/{client_id}/grant</code> (requires Basic auth with the OAuth App's client ID + secret - app-owner credentials, not the user's).</li>
+              <li><strong>Token-level revocation by the publisher.</strong> If the OAuth App publisher itself has been compromised (the Heroku/Travis CI scenario), only they can revoke the issued tokens via <code>DELETE /applications/{client_id}/token</code>. Defenders cannot do this from the customer side - org-level revocation (above) is what disconnects your org from the compromised publisher.</li>
+            </ul>
+
+            <h3><span class="num">5</span> Hardening - controls that prevent the next OAuth-driven incident</h3>
+            <ul>
+              <li><strong>Enable OAuth App access restrictions on every org.</strong> Org settings &rarr; <strong>Third-party access</strong> &rarr; toggle <em>Restrict OAuth app access to this organization</em>. With this on, OAuth Apps must be explicitly approved by an org owner before they can read org-level resources. Without this restriction, any member can authorize any OAuth App against their org access. <a href="https://docs.github.com/en/organizations/managing-oauth-access-to-your-organizations-data/about-oauth-app-access-restrictions">GitHub's docs</a> walk through the setup and the notification flow.</li>
+              <li><strong>Stream the audit log out of GitHub.</strong> Enterprise Cloud customers can stream to S3, Azure Blob, GCS, Splunk or Datadog. The native retention is 180 days for most events and 7 days for Git events; streaming is the only way to keep these queryable for a full year of incident response.</li>
+              <li><strong>Require SAML SSO and SCIM.</strong> Tying every authorization to a verified IdP identity makes the <code>actor</code> field in audit log events a real identity instead of a username, which dramatically improves attribution after an incident.</li>
+              <li><strong>Use fine-grained PATs and short token lifetimes.</strong> Where you have to use long-lived credentials, prefer <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens">fine-grained PATs</a> (per-resource scoping, mandatory expiry) over classic PATs with broad <code>repo</code> scope. The audit log surfaces these as <code>personal_access_token.*</code> actions with <code>token_id</code> and <code>token_scopes</code> fields.</li>
+              <li><strong>Subscribe to OAuthSentry's <code>feeds/github/malicious.txt</code></strong> and the human-readable name list to feed your audit-log hunts. The list is small today (five entries from one historical incident) but every publisher compromise added here lands within a day of public disclosure.</li>
             </ul>
           </div>
         </div>

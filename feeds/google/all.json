@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-27T13:38:47.046795+00:00",
+  "generated": "2026-04-27T15:22:30.129817+00:00",
   "count": 2,
   "items": [
     {
@@ -8,7 +8,7 @@
       "metadata_category": "malicious",
       "metadata_severity": "critical",
       "metadata_comment": "Vercel recommended Google Workspace administrators and Google Account owners check for usage immediately.",
-      "metadata_reference": "https://www.wiz.io/blog/contextai-oauth-token-compromise",
+      "metadata_reference": "https://www.wiz.io/blog/contextai-oauth-token-compromise | https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/google_oauth_apps.csv",
       "service": "google",
       "_provenance": "google_curated_mthcht"
     },
@@ -18,7 +18,7 @@
       "metadata_category": "malicious",
       "metadata_severity": "critical",
       "metadata_comment": "Astrix reported UNC6395 active operations through the Drift Email OAuth application in Google Workspace environments.",
-      "metadata_reference": "https://astrix.security/learn/blog/critical-update-astrix-research-team-discovers-unc6395-oauth-compromise-spanning-salesforce-google-workspace-and-aws/",
+      "metadata_reference": "https://astrix.security/learn/blog/critical-update-astrix-research-team-discovers-unc6395-oauth-compromise-spanning-salesforce-google-workspace-and-aws/ | https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/google_oauth_apps.csv",
       "service": "google",
       "_provenance": "google_curated_mthcht"
     }
