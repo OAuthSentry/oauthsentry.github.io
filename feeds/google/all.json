@@ -1,0 +1,26 @@
+{
+  "generated": "2026-04-27T13:38:47.046795+00:00",
+  "count": 2,
+  "items": [
+    {
+      "appname": "Context.ai / AI Office Suite OAuth app",
+      "appid": "110671459871-30f1spbu0hptbs60cb4vsmv79i7bbvqj.apps.googleusercontent.com",
+      "metadata_category": "malicious",
+      "metadata_severity": "critical",
+      "metadata_comment": "Vercel recommended Google Workspace administrators and Google Account owners check for usage immediately.",
+      "metadata_reference": "https://www.wiz.io/blog/contextai-oauth-token-compromise",
+      "service": "google",
+      "_provenance": "google_curated_mthcht"
+    },
+    {
+      "appname": "Drift Email / Salesloft Drift Google Workspace OAuth app",
+      "appid": "1084253493764-ipb2ntp4jb4rmqc76jp7habdrhfdus3q.apps.googleusercontent.com",
+      "metadata_category": "malicious",
+      "metadata_severity": "critical",
+      "metadata_comment": "Astrix reported UNC6395 active operations through the Drift Email OAuth application in Google Workspace environments.",
+      "metadata_reference": "https://astrix.security/learn/blog/critical-update-astrix-research-team-discovers-unc6395-oauth-compromise-spanning-salesforce-google-workspace-and-aws/",
+      "service": "google",
+      "_provenance": "google_curated_mthcht"
+    }
+  ]
+}

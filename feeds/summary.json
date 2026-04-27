@@ -1,0 +1,65 @@
+{
+  "services": {
+    "entra": {
+      "total": 786,
+      "compliance": 696,
+      "risky": 32,
+      "malicious": 58,
+      "curated_source": "entra_curated_mthcht",
+      "compliance_fill_source": "entra_compliance_fill_merill"
+    },
+    "google": {
+      "total": 2,
+      "compliance": 0,
+      "risky": 0,
+      "malicious": 2,
+      "curated_source": "google_curated_mthcht",
+      "compliance_fill_source": null
+    }
+  },
+  "totals": {
+    "compliance": 696,
+    "risky": 32,
+    "malicious": 60
+  },
+  "sources": [
+    {
+      "id": "entra_curated_mthcht",
+      "service": "entra",
+      "role": "curated",
+      "label": "mthcht/awesome-lists - Entra OAuth apps",
+      "remote": "https://raw.githubusercontent.com/mthcht/awesome-lists/main/Lists/OAuth/entra_oauth_apps.csv",
+      "local": "data/entra/curated_mthcht.csv",
+      "schema": "appname,appid,metadata_category,metadata_severity,metadata_comment,metadata_reference",
+      "credit": "mthcht/awesome-lists",
+      "credit_url": "https://github.com/mthcht/awesome-lists/tree/main/Lists/OAuth",
+      "loaded_rows": 784
+    },
+    {
+      "id": "entra_compliance_fill_merill",
+      "service": "entra",
+      "role": "compliance_fill",
+      "label": "merill/microsoft-info - Microsoft first-party catalogue",
+      "remote": "https://raw.githubusercontent.com/merill/microsoft-info/main/_info/MicrosoftApps.csv",
+      "local": "data/entra/compliance_fill_merill.csv",
+      "schema": "AppId,AppDisplayName,AppOwnerOrganizationId,Source",
+      "credit": "Merill Fernando - microsoft-info",
+      "credit_url": "https://github.com/merill/microsoft-info",
+      "loaded_rows": 12
+    },
+    {
+      "id": "google_curated_mthcht",
+      "service": "google",
+      "role": "curated",
+      "label": "mthcht/awesome-lists - Google OAuth apps",
+      "remote": "https://raw.githubusercontent.com/mthcht/awesome-lists/main/Lists/OAuth/google_oauth_apps.csv",
+      "local": "data/google/curated_mthcht.csv",
+      "schema": "appname,appid,metadata_category,metadata_severity,metadata_comment,metadata_reference",
+      "credit": "mthcht/awesome-lists",
+      "credit_url": "https://github.com/mthcht/awesome-lists/tree/main/Lists/OAuth",
+      "loaded_rows": 2
+    }
+  ],
+  "generated": "2026-04-27T13:38:47.070498+00:00",
+  "total_apps": 788
+}

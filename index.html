@@ -1,0 +1,2048 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OAuthSentry - OAuth application intelligence for defenders</title>
+  <meta name="description" content="Search OAuth Application IDs across Microsoft Entra, Google Workspace and more. Three classification feeds for defenders: compliance, risky, and malicious. Includes investigation playbooks, forensic traces, and Splunk detections.">
+  <meta name="theme-color" content="#0a0b10">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='4' width='24' height='24' rx='4' fill='none' stroke='%235ee0c1' stroke-width='2'/%3E%3Crect x='12' y='12' width='8' height='8' fill='%235ee0c1'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <div class="brand">
+        <a href="#/search" data-route="/search" style="display:flex;align-items:center;gap:12px;">
+          <span class="brand-mark" aria-hidden="true"></span>
+          OAuthSentry
+        </a>
+        <span class="tag">OAuth APP INTEL FOR DEFENDERS</span>
+      </div>
+      <nav class="nav" id="topnav">
+        <a href="#/search" data-route="/search">Search</a>
+        <a href="#/investigation/tradecraft" data-route="/investigation">Investigation</a>
+        <a href="#/feeds" data-route="/feeds">Feeds</a>
+        <a href="#/methodology" data-route="/methodology">Methodology</a>
+        <a href="https://github.com/oauthsentry/oauthsentry.github.io" target="_blank" rel="noopener">GitHub &#8599;</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app">
+
+    <!-- ============ SEARCH PAGE ============ -->
+    <section id="page-search">
+      <div class="hero">
+        <div class="shell">
+          <div class="pretitle">v1 - public - oauthsentry.github.io</div>
+          <h1>OAuth application <span class="accent">intelligence</span><br>for defense teams.</h1>
+          <p class="lede">
+            Search any OAuth Application ID across identity platforms. Triage in one click: legitimate references for allowlisting, OAuth apps abused by threat actors, and known-malicious applications observed in BEC, AiTM and consent-phishing campaigns.
+          </p>
+          <div class="hero-stats">
+            <div class="stat"><div class="label">Total tracked</div><div class="value" id="stat-total">...</div></div>
+            <div class="stat compliance"><div class="label">Compliance</div><div class="value" id="stat-compliance">...</div></div>
+            <div class="stat risky"><div class="label">Risky</div><div class="value" id="stat-risky">...</div></div>
+            <div class="stat malicious"><div class="label">Malicious</div><div class="value" id="stat-malicious">...</div></div>
+          </div>
+        </div>
+      </div>
+
+      <section class="search-section">
+        <div class="shell">
+          <div class="search-shell">
+            <span class="prompt" aria-hidden="true">&gt;</span>
+            <input id="search" type="search"
+                   placeholder="search by app id, app name, threat actor, or scope - press / to focus"
+                   autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">
+            <button class="share" id="share-btn" type="button" title="copy a shareable URL of this query">share</button>
+            <button class="clear" id="clear" type="button">clear</button>
+          </div>
+
+          <div class="filters">
+            <span class="filter-label">category</span>
+            <button class="chip on" data-category="all">all</button>
+            <button class="chip" data-category="compliance">compliance</button>
+            <button class="chip" data-category="risky">risky</button>
+            <button class="chip" data-category="malicious">malicious</button>
+          </div>
+
+          <div class="filters">
+            <span class="filter-label">severity</span>
+            <button class="chip on" data-severity="all">all</button>
+            <button class="chip" data-severity="critical">critical</button>
+            <button class="chip" data-severity="high">high</button>
+            <button class="chip" data-severity="medium">medium</button>
+            <button class="chip" data-severity="low">low</button>
+            <button class="chip" data-severity="info">info</button>
+          </div>
+
+          <div class="filters" id="services-bar">
+            <span class="filter-label">service</span>
+            <button class="chip on" data-service="all">all</button>
+          </div>
+
+          <div class="filters">
+            <span class="filter-label">source</span>
+            <select class="chip" id="source-filter" aria-label="filter by reference source">
+              <option value="all">all sources</option>
+            </select>
+            <span class="filter-label">last seen</span>
+            <select class="chip" id="year-filter" aria-label="filter by last-seen year">
+              <option value="all">any year</option>
+            </select>
+            <button class="chip" id="has-comment" data-toggle="off" type="button">analyst notes only</button>
+          </div>
+
+          <div class="results-meta" id="results-meta">
+            <span><strong>-</strong> results</span>
+            <span><button class="reset" id="reset-filters" type="button">reset filters</button></span>
+          </div>
+
+          <div id="results" class="results">
+            <div class="loading">loading data sources</div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ============ INVESTIGATION PAGE ============ -->
+    <section id="page-investigation" hidden>
+      <div class="shell">
+        <div style="padding-top: 48px;">
+          <div class="pretitle" style="font-family: var(--font-display); font-size: 11px; text-transform: uppercase; letter-spacing: 0.16em; color: var(--text-faint); margin-bottom: 16px; display: flex; align-items: center; gap: 10px;">
+            <span style="width: 28px; height: 1px; background: var(--accent);"></span>
+            Investigation playbooks
+          </div>
+          <h1 style="font-family: var(--font-display); font-size: clamp(30px, 4vw, 44px); font-weight: 700; letter-spacing: -0.02em; margin: 0 0 16px; line-height: 1.1;">Run an OAuth abuse case<br>from <span style="color: var(--accent);">consent</span> to closure.</h1>
+          <p style="max-width: 720px; color: var(--text-dim); font-size: 16px; margin: 0 0 36px;">
+            Three operator-grade playbooks built for SOC, IR and threat hunters: how to evict a malicious app from a tenant, where to find every forensic trace it leaves behind, and how to detect the next one before consent is granted.
+          </p>
+        </div>
+
+        <nav class="subtabs" id="invest-subtabs">
+          <a href="#/investigation/tradecraft"   data-route="/investigation/tradecraft" class="active">Entra: Tradecraft</a>
+          <a href="#/investigation/remediation"  data-route="/investigation/remediation">Entra: Remediation</a>
+          <a href="#/investigation/forensics"    data-route="/investigation/forensics">Entra: Forensic traces</a>
+          <a href="#/investigation/detections"   data-route="/investigation/detections">Entra: Detections</a>
+          <a href="#/investigation/hunting"      data-route="/investigation/hunting">Entra: Hunting</a>
+          <a href="#/investigation/hardening"    data-route="/investigation/hardening">Entra: Hardening</a>
+          <a href="#/investigation/google"       data-route="/investigation/google">Google Workspace</a>
+        </nav>
+
+        <!-- ===== Tradecraft ===== -->
+        <div class="invest-section" id="sub-tradecraft">
+          <div class="doc-block">
+            <h2>OAuth attack tradecraft against Entra ID</h2>
+            <p class="doc-lede">A field guide to how attackers actually use OAuth against Microsoft tenants in 2024-2026, organised by phase. Every technique here has been documented in public incident reports - the references are linked. Read it as the attacker's playbook so the rest of this tab (forensics, detections, hunting) makes sense in context.</p>
+
+            <div class="callout">
+              <strong>Two modern shifts to internalise</strong>
+              First: the centre of gravity has moved from "phish a password and bypass MFA" to <strong>steal or mint a token</strong>. Tokens survive password resets, expire on their own clock, and bypass MFA by design. Second: attackers prefer <strong>legitimate first-party Microsoft apps</strong> (VSCode, Authentication Broker, Azure CLI, Teams) to malicious app registrations - first-party apps are pre-consented in every tenant, can't be blocked, and don't trip "new OAuth app" alerts.
+            </div>
+
+            <h3><span class="num">1</span> Initial access - getting a token in the first place</h3>
+
+            <h4>Consent phishing (classic)</h4>
+            <p>Attacker registers a multi-tenant app in their own tenant, sends a consent URL to the victim. Victim clicks, authenticates against the real Microsoft login, accepts the consent prompt. Service principal is created in the victim's tenant; attacker now has a refresh token. Highest-volume variant; aggregated lists are the basis of OAuthSentry's malicious feed.</p>
+            <ul>
+              <li>Common scopes requested: <code>Mail.Read</code>, <code>Mail.ReadWrite</code>, <code>Files.Read.All</code>, <code>offline_access</code>, <code>User.Read</code>.</li>
+              <li>Homoglyph display names (Cyrillic <code>о</code> instead of Latin <code>o</code> in "OneDrive") are common - 9 entries in the Entra dataset are confirmed homoglyph apps, preserved verbatim as IOCs.</li>
+              <li>Real campaigns: Wiz's 2025 campaign (19 apps spoofing OneDrive/DocuSign/Adobe), RH-ISAC/Proofpoint MFA-themed phishing.</li>
+            </ul>
+
+            <h4>Device code phishing (Storm-2372 / APT29 / UTA0304 / UTA0307)</h4>
+            <p>Attacker initiates a device-code flow against any first-party client (most often <code>Microsoft Authentication Broker</code> <code>29d9ed98-a469-4536-ade2-f981bc1d605e</code>). Microsoft returns an 8-character user code and a verification URL. Attacker DMs/emails the victim with a pretext ("enter this code to join the meeting") and the victim authenticates on Microsoft's real login portal. Attacker polls the token endpoint and receives the access token + family refresh token.</p>
+            <ul>
+              <li>Sign-in log fingerprint: <code>AuthenticationProtocol = deviceCode</code> + <code>OriginalTransferMethod = deviceCodeFlow</code>.</li>
+              <li>Microsoft began rolling out blocks on device-code flow via Conditional Access in 2024; verify your tenant has the block in place unless you have a specific need.</li>
+            </ul>
+
+            <h4>OAuth code phishing via first-party apps (UTA0352)</h4>
+            <p>March 2025 onward. Attacker uses Volexity-tracked <code>aebc6443-996d-45c2-90f0-388ff96faa56</code> (Visual Studio Code) with redirect URI <code>https://insiders.vscode.dev/redirect</code> or <code>https://vscode-redirect.azurewebsites.net</code>. Victim authenticates, gets redirected to in-browser VS Code which displays the auth code; attacker extracts and exchanges for token. No malicious app, no consent prompt, no novel infrastructure - everything terminates on Microsoft domains.</p>
+
+            <h4>AiTM / token theft (Evilginx, Mamba2FA)</h4>
+            <p>Reverse-proxy phishing kits sit between the victim and the real Microsoft login, intercepting the session cookie and refresh token after MFA completes. Token theft accounted for an estimated 31% of M365 breaches in 2025. The stolen token has the same MFA claim as the legitimate sign-in, so a one-time replay from a different IP looks like a normal non-interactive sign-in.</p>
+
+            <h3><span class="num">2</span> Privilege escalation - getting more than the token grants</h3>
+
+            <h4>Service principal credential backdoor (Midnight Blizzard / Solorigate)</h4>
+            <p>The attacker enumerates application objects and service principals. For any SP they can write to (because they own the app, or have <code>Application.ReadWrite.All</code>, or the SP has the <code>microsoft.directory/servicePrincipals/credentials/update</code> right), they add their own client secret or X.509 certificate. They now authenticate via OAuth 2.0 client-credentials flow as that app, completely outside any user context, MFA, or interactive Conditional Access.</p>
+
+            <h4>App ownership abuse ("Misowned and Dangerous", Semperis 2025)</h4>
+            <p>The attack path documented in <em>EntraGoat</em>. A compromised low-privileged user discovers they own an enterprise application that has a privileged role assignment. The owner can add a client secret to the SP without any admin role. They then auth as the app, use its role to reset a Global Administrator's password, issue a Temporary Access Pass (TAP), and log in interactively as the GA. Tenant compromise, no admin role required at the start.</p>
+
+            <h4>Federated identity credential persistence</h4>
+            <p>Attackers with sufficient permissions add a <strong>federated identity credential</strong> to a high-privilege application object pointing at an attacker-controlled IdP (e.g. <code>https://attacker.example.com</code>). They then exchange tokens from the attacker's IdP for Microsoft tokens via <code>api://AzureADTokenExchange</code>. No client secret to rotate, no certificate thumbprint to spot - just a small JSON record that looks legitimate. Subtle, durable, often missed in audits.</p>
+
+            <h4>Actor Token Forgery (CVE-2025-55241)</h4>
+            <p>Disclosed September 2025 by Dirk-jan Mollema. A flaw in the legacy Access Control Service let attackers forge "actor" tokens (used for service-to-service delegation) impersonating <strong>any user in any tenant</strong>, including Global Admins. Critically, the forged-token request <strong>generates no sign-in log entry</strong> - downstream Graph activity is the only trace. Microsoft patched in September 2025 but: (a) any pre-patch abuse is largely invisible after the fact, and (b) the class of bug (S2S token tenant validation gaps) is unlikely to be the last. Hunt for actor-token usage where the SP <code>displayName</code> is a Microsoft service but the <code>userPrincipalName</code> is a real user.</p>
+
+            <h4>FOCI / family refresh token misuse</h4>
+            <p>An undocumented Entra behaviour, researched by Secureworks. ~16 first-party Microsoft client IDs are part of a "family"; a refresh token issued to any one of them can be redeemed for an access token to any other. Steal a token from <code>Azure CLI</code> and you can request tokens for Teams, Outlook, OneDrive, Office, etc. - the union of every family scope. <strong>TeamFiltration</strong> (UNK_SneakyStrike, 80,000+ targeted accounts since Dec 2024) industrialised this.</p>
+            <p>Known FOCI app IDs from Secureworks' <code>known-foci-clients.csv</code>:</p>
+            <table class="kv-table">
+              <thead><tr><th>App</th><th>App ID</th></tr></thead>
+              <tbody>
+                <tr><td>Microsoft Azure CLI</td><td class="mono">04b07795-8ddb-461a-bbee-02f9e1bf7b46</td></tr>
+                <tr><td>Microsoft Azure PowerShell</td><td class="mono">1950a258-227b-4e31-a9cf-717495945fc2</td></tr>
+                <tr><td>Microsoft Teams</td><td class="mono">1fec8e78-bce4-4aaf-ab1b-5451cc387264</td></tr>
+                <tr><td>Microsoft Office</td><td class="mono">d3590ed6-52b3-4102-aeff-aad2292ab01c</td></tr>
+                <tr><td>OneDrive SyncEngine</td><td class="mono">ab9b8c07-8f02-4f72-87fa-80105867a763</td></tr>
+                <tr><td>Outlook Mobile</td><td class="mono">27922004-5251-4030-b22d-91ecd9a37ea4</td></tr>
+                <tr><td>Microsoft Authenticator App</td><td class="mono">4813382a-8fa7-425e-ab75-3b753aab3abb</td></tr>
+                <tr><td>Visual Studio</td><td class="mono">872cd9fa-d31f-45e0-9eab-6e460a02d1f1</td></tr>
+                <tr><td>Office 365 Management</td><td class="mono">00b41c95-dab0-4487-9791-b9d2c32c80f2</td></tr>
+                <tr><td>OneDrive iOS App</td><td class="mono">af124e86-4e96-495a-b70a-90f90ab96707</td></tr>
+                <tr><td>Windows Search</td><td class="mono">26a7ee05-5602-4d76-a7ba-eae8b7b67941</td></tr>
+              </tbody>
+            </table>
+
+            <p>Adjacent to the FOCI list, but distinct: the <strong>Microsoft Authentication Broker</strong> (MAB, <code>29d9ed98-a469-4536-ade2-f981bc1d605e</code>) is not on Secureworks' canonical FOCI list, but it is the client used by Windows for Entra device-join and is the favourite vector for Primary Refresh Token (PRT) phishing per Dirk-jan Mollema's research. UTA0355 and Storm-2372 both used MAB. Hunt MAB sign-ins with <code>AuthenticationProtocol = deviceCode</code> the same way you hunt the FOCI list - the playbook is the same, the family membership is not.</p>
+
+            <h3><span class="num">3</span> Persistence - staying after credentials change</h3>
+
+            <h4>Device registration to mint a Primary Refresh Token (UTA0355)</h4>
+            <p>Once the attacker has an OAuth code, they call the Device Registration Service to register their own device against the victim's tenant. They then convince the victim to approve a 2FA prompt ("to access SharePoint for the conference"). The attacker now has a Primary Refresh Token (PRT) tied to a "compliant" device they control. PRTs survive password resets and most refresh-token revocations - the only reliable cleanup is unregistering the device.</p>
+
+            <h4>Inbox rules + transport rules</h4>
+            <p>Classic BEC. Forward-then-delete rules to hide replies during invoice fraud. Tenant-wide transport rules created via Graph after admin-consent abuse to siphon mail at the org level.</p>
+
+            <h4>Conditional Access policy exclusions</h4>
+            <p>Attacker (with admin or app-perm equivalent) modifies an existing CA policy to add an "exclusion" for a specific user or named location they control. Looks like a routine policy edit in the audit log; effect is a permanent bypass.</p>
+
+            <h4>Cross-tenant access trust</h4>
+            <p>Attacker who compromises a trusted partner tenant (B2B collaboration / cross-tenant access settings) can keep accessing the victim tenant's resources even after every credential in the victim tenant is reset.</p>
+
+            <h3><span class="num">4</span> Defense evasion - blending in</h3>
+            <ul>
+              <li><strong>Residential proxies</strong> (Spur.us-tracked): NSOCKS, 911, BrightProxies. Attacker traffic comes from IPs that also belong to legitimate users in the same neighbourhood.</li>
+              <li><strong>First-party apps</strong>: VSCode, Azure CLI, Office traffic blends into developer noise.</li>
+              <li><strong>CAE token extension</strong>: when CAE is enabled, attackers prefer to obtain CAE-aware tokens because they last 24-28h and skip mid-session re-auth - good for the attacker as long as the user/admin doesn't trigger an explicit revocation event.</li>
+              <li><strong>Throttling MailItemsAccessed</strong>: Microsoft caps MailItemsAccessed bind-event logging at 1,000 audit records per mailbox per 24 hours; once a mailbox crosses that threshold, bind events are not logged for the next 24 hours (other mailbox audit actions like <em>Send</em>, <em>SoftDelete</em>, and sync operations continue unaffected). The first 1,000 events ARE recorded - what gets silenced is follow-on bind activity in the next 24 hours, so attackers use this to hide a quiet "second pass" rather than the initial dump. Sync-based exfiltration (Outlook desktop dumping an entire folder) generates one record per folder and never trips the cap regardless of message count. Microsoft says &lt;1% of mailboxes ever hit throttling, so an event with <code>IsThrottled = True</code> is itself a high-fidelity IOC.</li>
+              <li><strong>Removing audit trail</strong>: post-compromise, deleting the added credential or the new SP after using it. Only catches if your retention is long enough to look back before the cleanup.</li>
+            </ul>
+
+            <h3><span class="num">5</span> The MITRE ATT&CK cloud mapping</h3>
+            <p>For SOC ticketing, the techniques above map to:</p>
+            <table class="kv-table">
+              <thead><tr><th>Tactic</th><th>Technique</th><th>What we covered</th></tr></thead>
+              <tbody>
+                <tr><td>Initial Access</td><td class="mono">T1566.002 - Spearphishing Link</td><td>Consent / device-code / OAuth-code phishing</td></tr>
+                <tr><td>Initial Access</td><td class="mono">T1078.004 - Cloud Accounts</td><td>AiTM / token theft replay</td></tr>
+                <tr><td>Persistence</td><td class="mono">T1098.001 - Additional Cloud Credentials</td><td>SP credential backdoor, federated credential</td></tr>
+                <tr><td>Persistence</td><td class="mono">T1098.003 - Additional Cloud Roles</td><td>App role assignment / admin consent</td></tr>
+                <tr><td>Persistence</td><td class="mono">T1098.005 - Device Registration</td><td>UTA0355 device join + PRT</td></tr>
+                <tr><td>Privilege Escalation</td><td class="mono">T1078.004 - Cloud Accounts</td><td>App ownership pivot, Actor Token Forgery</td></tr>
+                <tr><td>Defense Evasion</td><td class="mono">T1550.001 - Application Access Token</td><td>FRT replay across FOCI apps</td></tr>
+                <tr><td>Credential Access</td><td class="mono">T1528 - Steal Application Access Token</td><td>Consent phishing harvest</td></tr>
+                <tr><td>Collection</td><td class="mono">T1114.002 - Remote Email Collection</td><td>MailItemsAccessed via OAuth</td></tr>
+                <tr><td>Exfiltration</td><td class="mono">T1567 - Exfiltration Over Web Service</td><td>Microsoft Graph as exfil channel</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- ===== Remediation ===== -->
+        <div class="invest-section" id="sub-remediation" hidden>
+          <div class="doc-block">
+            <h2>Remediating a malicious OAuth consent grant</h2>
+            <p class="doc-lede">Use this playbook when a user has consented to a malicious OAuth application in Microsoft Entra ID. Order matters: revoke before you investigate, preserve evidence before you delete.</p>
+
+            <div class="callout danger">
+              <strong>Containment first - what disable does and does not do</strong>
+              Disabling the service principal blocks new sign-ins and stops Entra issuing new access tokens, but per the OAuth 2.0 spec <strong>access tokens already in the attacker's hands cannot be revoked</strong>; they remain valid until they expire. The only mechanism that can invalidate a live access token before expiry is Continuous Access Evaluation (CAE) - and CAE only applies to CAE-aware resources (Exchange Online, SharePoint Online, Teams, Microsoft Graph) and CAE-aware clients. Revoking the user's refresh tokens via <code>Revoke-MgUserSignInSession</code> forces re-authentication on the next refresh, but for non-CAE resources the attacker can keep using a still-valid access token in the meantime. Treat the window between containment and full eviction as live; assume continued read access until proven otherwise.
+            </div>
+
+            <h3><span class="num">1</span> Preserve evidence before you change anything</h3>
+            <p>The lede above says "preserve evidence before you delete" - this is the step that makes that real. Once you start disabling SPs, revoking tokens, and deleting grants, the tenant state changes. If you skip this step, you lose the ability to answer "what did the application object look like at the moment of compromise" months later when legal, insurance, or regulators ask.</p>
+            <ul>
+              <li><strong>Snapshot the SP and all its credentials.</strong> Run the discovery query in Step 2 first, but pipe the output to a file rather than just the console - keep the raw JSON of <code>Get-MgServicePrincipal</code>, <code>Get-MgOauth2PermissionGrant</code>, and <code>Get-MgServicePrincipalAppRoleAssignment</code> so you have the unmodified record of what the consent looked like.</li>
+              <li><strong>Capture the broader tenant state with EntraExporter.</strong> The <code>EntraExporter</code> PowerShell module (now <code>microsoft/EntraExporter</code>, originally by Merill Fernando): <code>Install-Module EntraExporter</code>, then <code>Export-Entra -Path .\&lt;case-id&gt; -All</code> writes the entire tenant config to disk: applications, service principals, OAuth2 grants, app role assignments, conditional access policies, role assignments, named locations. This is the cleanest way to capture "the tenant at incident time" before remediation rewrites it. Treat the export as evidence: hash it, copy it off-host, and reference the hash in your incident timeline.</li>
+              <li><strong>Pull and archive the relevant audit data.</strong> Your SIEM retention may be shorter than your investigation timeline - export the raw <code>Consent to application</code>, <code>Add OAuth2PermissionGrant</code>, <code>Add app role assignment to service principal</code>, and <code>Add service principal credentials</code> events for the malicious app id from the M365 unified audit log to a case archive. The Splunk Forensic Traces queries in the Investigation tab generate this set; pin the time range to the suspected exposure window plus 30 days on either side.</li>
+              <li><strong>Note the snapshot timestamp in the case file.</strong> Everything that follows in this playbook is dated relative to "evidence captured at T0". Reviewers in three months need this anchor.</li>
+            </ul>
+
+            <h3><span class="num">2</span> Identify scope of the consent</h3>
+            <p>Pull every consent grant for the malicious application id across the tenant. Both delegated (per-user) and application (admin-consented) grants must be enumerated.</p>
+
+            <div class="code-block">
+              <div class="code-header">PowerShell - Microsoft Graph SDK<button class="copy-snippet" type="button">copy</button></div>
+              <pre># Write scopes are required because steps 2-5 will disable, revoke, and remove
+Connect-MgGraph -Scopes `
+  "Application.ReadWrite.All", `
+  "DelegatedPermissionGrant.ReadWrite.All", `
+  "AppRoleAssignment.ReadWrite.All", `
+  "Directory.AccessAsUser.All", `
+  "User.RevokeSessions.All"
+
+$badAppId = "&lt;malicious-application-id&gt;"
+
+# 1. Locate the service principal in this tenant
+$sp = Get-MgServicePrincipal -Filter "appId eq '$badAppId'"
+$sp | Format-List Id, AppId, DisplayName, AppOwnerOrganizationId, `
+                  PublisherName, VerifiedPublisher, ServicePrincipalType, `
+                  ReplyUrls, Tags, AccountEnabled, DisabledByMicrosoftStatus
+
+# 2. List delegated grants (per-user "OAuth2PermissionGrants")
+#    consentType "Principal" = single user; "AllPrincipals" = tenant-wide admin consent
+Get-MgOauth2PermissionGrant -Filter "clientId eq '$($sp.Id)'" |
+  Select-Object Id, ClientId, ConsentType, PrincipalId, ResourceId, Scope
+
+# 3. List application-role grants (admin consent only, "AppRoleAssignments")
+Get-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $sp.Id |
+  Select-Object Id, AppRoleId, PrincipalDisplayName, ResourceDisplayName, CreatedDateTime
+
+# 4. List any client secrets / certificates the app added (post-consent persistence)
+$sp.PasswordCredentials | Select-Object KeyId, DisplayName, StartDateTime, EndDateTime
+$sp.KeyCredentials      | Select-Object KeyId, DisplayName, StartDateTime, EndDateTime, Type</pre>
+            </div>
+
+            <h3><span class="num">3</span> Disable the service principal</h3>
+            <p>This stops new sign-ins and token requests immediately. Disabling is reversible if the verdict turns out to be wrong; deletion is not, and Entra retains a tombstone for 30 days regardless.</p>
+            <div class="code-block">
+              <div class="code-header">PowerShell<button class="copy-snippet" type="button">copy</button></div>
+              <pre># Disable the service principal (single command, tenant-wide)
+Update-MgServicePrincipal -ServicePrincipalId $sp.Id -AccountEnabled:$false
+
+# Verify
+(Get-MgServicePrincipal -ServicePrincipalId $sp.Id).AccountEnabled</pre>
+            </div>
+
+            <h3><span class="num">4</span> Revoke all refresh tokens for affected users</h3>
+            <p>
+              <code>Revoke-MgUserSignInSession</code> calls Microsoft Graph <code>POST /users/{id}/revokeSignInSessions</code>, which invalidates every refresh token and session token issued to that user across every app, not just the malicious one. This is the right hammer - the attacker's refresh token was probably scoped to a different app id than the one the user thinks they revoked, and you want all of them dead. The cmdlet returns immediately; replication to resource providers (Exchange, SharePoint) takes seconds for CAE-aware services and up to one hour for non-CAE replication.
+            </p>
+            <div class="code-block">
+              <div class="code-header">PowerShell<button class="copy-snippet" type="button">copy</button></div>
+              <pre># 1. Users who consented to this specific app (delegated grants)
+$grantPrincipals = (Get-MgOauth2PermissionGrant -Filter "clientId eq '$($sp.Id)'").PrincipalId |
+                   Where-Object { $_ } | Sort-Object -Unique
+
+# 2. Anyone who signed in to the malicious app within the lookback window.
+#    Pull from sign-in logs to catch users who got tokens but were not in the grant list
+#    (e.g. AllPrincipals admin consent grants do not have a PrincipalId).
+$signInUsers = Get-MgAuditLogSignIn `
+    -Filter "appId eq '$badAppId' and createdDateTime ge 2026-04-01T00:00:00Z" `
+    -All | Select-Object -ExpandProperty UserId | Sort-Object -Unique
+
+$affectedUsers = ($grantPrincipals + $signInUsers) | Sort-Object -Unique
+
+foreach ($uid in $affectedUsers) {
+    Write-Host "Revoking sessions for $uid"
+    Revoke-MgUserSignInSession -UserId $uid
+}</pre>
+            </div>
+
+            <h3><span class="num">5</span> Remove every consent grant</h3>
+            <p>Disabling the SP blocks new tokens but leaves the consent records in place; remove them so the app cannot be re-enabled silently and so audit reporting stays accurate.</p>
+            <div class="code-block">
+              <div class="code-header">PowerShell<button class="copy-snippet" type="button">copy</button></div>
+              <pre># Remove delegated permission grants
+Get-MgOauth2PermissionGrant -Filter "clientId eq '$($sp.Id)'" |
+  ForEach-Object { Remove-MgOauth2PermissionGrant -OAuth2PermissionGrantId $_.Id }
+
+# Remove application role assignments (admin-consented permissions)
+Get-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $sp.Id |
+  ForEach-Object {
+    Remove-MgServicePrincipalAppRoleAssignment `
+      -ServicePrincipalId $sp.Id `
+      -AppRoleAssignmentId $_.Id
+  }</pre>
+            </div>
+
+            <h3><span class="num">6</span> Block the app from being re-consented</h3>
+            <p>If the app is registered in another tenant (multi-tenant, AppOwnerOrganizationId is not your tenant), tenant-wide consent restrictions and a tenant-level block prevent re-introduction.</p>
+            <div class="code-block">
+              <div class="code-header">PowerShell<button class="copy-snippet" type="button">copy</button></div>
+              <pre># Tenant-wide hard-disable of the service principal
+Update-MgServicePrincipal -ServicePrincipalId $sp.Id `
+    -AccountEnabled:$false `
+    -Tags @("HideApp","BlockedFromConsent")
+
+# Restrict end-user consent globally (do this once tenant-wide, not just for this app)
+Update-MgPolicyAuthorizationPolicy `
+    -DefaultUserRolePermissions @{ permissionGrantPoliciesAssigned = @() }</pre>
+            </div>
+
+            <div class="callout warn">
+              <strong>Multi-tenant note</strong>
+              If the malicious app is multi-tenant (registered outside your tenant), disabling it in your tenant only stops it locally. Microsoft can globally disable known-bad apps via the <code>disabledByMicrosoftStatus</code> property; report to MSRC and CISA so the app is taken down for everyone.
+            </div>
+
+            <h3><span class="num">7</span> Investigate what the app accessed</h3>
+            <p>Pivot to the Forensic traces tab. The questions you need answered: which mailboxes did it read, did it send mail, did it create inbox rules, did it modify MFA, did it register a device.</p>
+            <div class="callout">
+              <strong>Translate scopes into concrete data exposure</strong>
+              The consent event tells you the scope (e.g. <code>Mail.ReadWrite</code>, <code>Files.Read.All</code>, <code>Directory.Read.All</code>) but not what specific Graph endpoints that scope unlocks. Use Merill Fernando's <a href="https://graphpermissions.merill.net/">graphpermissions.merill.net</a> to reverse-look-up each scope into the exact list of Graph endpoints and resource types it grants - this is what you tell legal/compliance the attacker had access to. Combine that with the actual Graph activity log records (see Forensics tab section 5) to narrow "could have accessed" to "did access". Knowing the difference between "Mail.Read on one mailbox" and "Mail.ReadWrite tenant-wide" is the difference between a one-user incident and a regulatory disclosure.
+            </div>
+
+            <h3><span class="num">8</span> User communication & post-incident</h3>
+            <ul class="checklist">
+              <li><strong>Notify affected users</strong> Tell them the app was disabled, that a password reset alone would not have stopped the attacker, and that the access has been revoked.</li>
+              <li><strong>Force password reset</strong> only after revoking refresh tokens. Resetting first while tokens are still valid does not evict the attacker.</li>
+              <li><strong>Re-enroll MFA</strong> if there is any indication the attacker added their own MFA method.</li>
+              <li><strong>Review and tighten consent policy</strong> Move to admin-consent workflow for any app requesting Mail.*, Files.*, or Directory.* scopes.</li>
+              <li><strong>Add the App ID to your watchlist</strong> Push the OAuthSentry malicious feed into your SIEM so the next consent attempt alerts immediately.</li>
+            </ul>
+
+            <h4>Microsoft Graph REST equivalent (one-liner per step)</h4>
+            <table class="kv-table">
+              <thead><tr><th>Step</th><th>HTTP request</th></tr></thead>
+              <tbody>
+                <tr><td>Find SP</td><td class="mono">GET /v1.0/servicePrincipals?$filter=appId eq '&lt;guid&gt;'</td></tr>
+                <tr><td>Disable SP</td><td class="mono">PATCH /v1.0/servicePrincipals/&lt;sp-id&gt; { "accountEnabled": false }</td></tr>
+                <tr><td>List grants</td><td class="mono">GET /v1.0/oauth2PermissionGrants?$filter=clientId eq '&lt;sp-id&gt;'</td></tr>
+                <tr><td>Revoke grant</td><td class="mono">DELETE /v1.0/oauth2PermissionGrants/&lt;grant-id&gt;</td></tr>
+                <tr><td>Revoke sessions</td><td class="mono">POST /v1.0/users/&lt;user-id&gt;/revokeSignInSessions</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- ===== Forensics ===== -->
+        <div class="invest-section" id="sub-forensics" hidden>
+          <div class="doc-block">
+            <h2>Forensic traces of OAuth abuse</h2>
+            <p class="doc-lede">Every step of an OAuth consent attack leaves an artifact somewhere in Entra ID, Microsoft Graph activity logs, or the user's mailbox metadata. This is the operator's map of where to look.</p>
+
+            <h3><span class="num">1</span> Application registration & service principal creation</h3>
+            <p>The first event is creation of the service principal in your tenant - the moment the app appears as a "thing" Entra knows about. All of the operations below appear in either the <strong>M365 unified audit log</strong> (Splunk macro <code>oauthsentry_o365_audit</code>, <code>RecordType = AzureActiveDirectory</code>) or the <strong>Entra audit log</strong> streamed via Azure Monitor diagnostic settings (macro <code>oauthsentry_aad_audit</code>). The <strong>Operation</strong> field is what to filter on.</p>
+
+            <div class="callout">
+              <strong>Authoritative reference for "is this Microsoft first-party"</strong>
+              When an SP is multi-tenant, the question is always "is this a real Microsoft app or someone impersonating one". The <code>appOwnerOrganizationId</code> field gives the answer if you cross-check against Microsoft's tenant ids - and Merill Fernando's <a href="https://github.com/merill/microsoft-info">merill/microsoft-info</a> repository (<code>aka.ms/AppNames</code>) maintains a daily-refreshed CSV/JSON of every known Microsoft first-party AppId, display name, and owner tenant. Pull <a href="https://raw.githubusercontent.com/merill/microsoft-info/main/_info/MicrosoftApps.csv">MicrosoftApps.csv</a> as a Splunk lookup (<code>| inputlookup microsoft_apps.csv</code>) and join it on appid; any SP active in your tenant whose AppId is NOT in that list AND whose <code>appOwnerOrganizationId</code> matches a Microsoft tenant id is suspicious by definition. Merill also publishes <a href="https://raw.githubusercontent.com/merill/microsoft-info/main/_info/GraphAppRoles.csv">GraphAppRoles.csv</a> and <a href="https://raw.githubusercontent.com/merill/microsoft-info/main/_info/GraphDelegateRoles.csv">GraphDelegateRoles.csv</a> for translating Graph permission GUIDs (the values you see in <code>ModifiedProperties.NewValue</code>) back into human-readable scope names.
+            </div>
+            <table class="kv-table">
+              <thead><tr><th>Source</th><th>Operation / field</th><th>What it tells you</th></tr></thead>
+              <tbody>
+                <tr><td>Audit log op</td><td class="mono">Add service principal</td><td>SP appeared in your tenant. Captures app id, displayName, initiator. First event in the chain for any new app.</td></tr>
+                <tr><td>Audit log op</td><td class="mono">Add service principal credentials</td><td>Client secret or certificate added to the SP - very common attacker persistence step (e.g. Midnight Blizzard added their own creds to existing SPs).</td></tr>
+                <tr><td>Audit log op</td><td class="mono">Update application - Certificates and secrets management</td><td>Cert/secret added on the application object (vs the SP). Same intent, slightly different code path.</td></tr>
+                <tr><td>Audit log op</td><td class="mono">Consent to application</td><td>User-level consent prompt accepted. <code>ConsentContext.IsAdminConsent</code> and the scope string in <code>ConsentAction.Permissions</code> are the key fields.</td></tr>
+                <tr><td>Audit log op</td><td class="mono">Add OAuth2PermissionGrant</td><td>The actual delegated permission grant object created. Often appears alongside <code>Consent to application</code>; also fires when admin grants directly via Graph (<code>POST /oauth2PermissionGrants</code>).</td></tr>
+                <tr><td>Audit log op</td><td class="mono">Add delegated permission grant</td><td>Variant name surfaced by some log pipelines for the same underlying event. Hunt both strings.</td></tr>
+                <tr><td>Audit log op</td><td class="mono">Add app role assignment to service principal</td><td>App-level (admin-consent) permission granted - much higher impact. Anything in this stream that contains <code>.All</code>, <code>Mail.</code>, <code>Files.</code>, <code>Directory.</code> deserves immediate review.</td></tr>
+                <tr><td>SP object</td><td class="mono">appOwnerOrganizationId</td><td>Tenant that owns the app. If not your tenant id, it is multi-tenant; cross-reference with Microsoft's first-party tenants <code>f8cdef31-a31e-4b4a-93e4-5f571e91255a</code> and <code>72f988bf-86f1-41af-91ab-2d7cd011db47</code>.</td></tr>
+                <tr><td>SP object</td><td class="mono">verifiedPublisher</td><td>Empty for nearly all malicious apps. Verified publishers are a strong negative IOC.</td></tr>
+                <tr><td>SP object</td><td class="mono">disabledByMicrosoftStatus</td><td><code>DisabledDueToViolationOfServicesAgreement</code> means Microsoft has globally tombstoned the app. If you see this, treat it as confirmed malicious.</td></tr>
+                <tr><td>SP object</td><td class="mono">replyUrls / homepage</td><td>Where Entra redirects auth codes. Attacker-controlled domains here are decisive evidence; for UTA0352 watch for <code>insiders.vscode.dev</code> and <code>vscode-redirect.azurewebsites.net</code>.</td></tr>
+                <tr><td>SP object</td><td class="mono">passwordCredentials / keyCredentials</td><td>Any new entry with a recent <code>startDateTime</code> = attacker minted their own credential.</td></tr>
+                <tr><td>SP object</td><td class="mono">tags</td><td><code>WindowsAzureActiveDirectoryIntegratedApp</code> is normal; <code>HideApp</code>, unusual or attacker-script-injected values are not.</td></tr>
+              </tbody>
+            </table>
+
+            <h3><span class="num">2</span> The consent event itself</h3>
+            <p>This is the event everyone hunts for. In Entra audit logs:</p>
+            <div class="code-block">
+              <div class="code-header">Audit log shape (Entra ID)<button class="copy-snippet" type="button">copy</button></div>
+              <pre>{
+  "operationName": "Consent to application",
+  "category":      "ApplicationManagement",
+  "result":        "success",
+  "initiatedBy":   { "user": { "userPrincipalName": "victim@org.com" } },
+  "targetResources": [
+    {
+      "id": "&lt;service-principal-id&gt;",
+      "type": "ServicePrincipal",
+      "displayName": "Adobe Drive X",
+      "modifiedProperties": [
+        { "displayName": "ConsentAction.Permissions",
+          "newValue": "Scope=Mail.Read Mail.Send offline_access" },
+        { "displayName": "ConsentContext.IsAdminConsent", "newValue": "False" },
+        { "displayName": "TargetId.ServicePrincipalNames",
+          "newValue": "&lt;application-id-guid&gt;" }
+      ]
+    }
+  ]
+}</pre>
+            </div>
+            <p>Pivot fields: the application id, scopes consented, IsAdminConsent flag (admin = much higher impact), and the user principal who clicked.</p>
+
+            <div class="callout">
+              <strong>Two audit formats, two schemas</strong>
+              The example above is the <strong>Azure AD audit log</strong> shape (camelCase: <code>operationName</code>, <code>targetResources[].modifiedProperties[]</code>) - that's what you get if you stream Entra diagnostic logs to Azure Monitor or Log Analytics. The <strong>Microsoft 365 unified audit log</strong> emits the same event with a different shape (PascalCase, flatter <code>ModifiedProperties[]</code> at the top level) and different field names. The OAuthSentry SPL macros target the M365 unified shape, because that's what the Splunk Add-on for Microsoft Office 365 ingests via the Management Activity API. Below is the real M365 unified shape of a single <code>Consent to application.</code> event (anonymized) - match this against your raw logs to confirm the field paths the SPL queries pivot on.
+            </div>
+
+            <div class="code-block">
+              <div class="code-header">Audit log shape (M365 unified - what oauthsentry_o365_audit hits)<button class="copy-snippet" type="button">copy</button></div>
+              <pre>{
+  "CreationTime":   "2026-04-27T07:20:47",
+  "Id":             "&lt;event-uuid&gt;",
+  "Operation":      "Consent to application.",
+  "OrganizationId": "&lt;your-tenant-id&gt;",
+  "RecordType":     8,
+  "ResultStatus":   "Success",
+  "Workload":       "AzureActiveDirectory",
+  "AzureActiveDirectoryEventType": 1,
+  "ObjectId":       "&lt;consented-app-id&gt;",                         ``` AppId of the app being consented to ```
+  "UserId":         "admin.consenting@yourtenant.onmicrosoft.com", ``` UPN of the user who clicked ```
+  "UserKey":        "&lt;puid&gt;@yourtenant.onmicrosoft.com",
+  "ExtendedProperties": [
+    { "Name":  "additionalDetails",
+      "Value": "{\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; ...) Chrome/&lt;ver&gt; Safari/537.36\",\"AppId\":\"&lt;consented-app-id&gt;\",\"ServicePrincipalProvisioningType\":\"Other\"}" },
+    { "Name":  "extendedAuditEventCategory", "Value": "ServicePrincipal" }
+  ],
+  "ModifiedProperties": [
+    { "Name": "ConsentContext.IsAdminConsent", "NewValue": "True",  "OldValue": "" },
+    { "Name": "ConsentContext.IsAppOnly",      "NewValue": "False", "OldValue": "" },
+    { "Name": "ConsentContext.OnBehalfOfAll",  "NewValue": "True",  "OldValue": "" },
+    { "Name": "ConsentContext.Tags",           "NewValue": "",      "OldValue": "" },
+    { "Name": "ConsentAction.Permissions",
+      "NewValue": "[[Id: &lt;grant-id&gt;, ClientId: &lt;sp-objectid&gt;, PrincipalId: , ResourceId: &lt;resource-sp-id&gt;, ConsentType: AllPrincipals, Scope: User.Read, CreatedDateTime: , LastModifiedDateTime ]] =&gt; [[Id: &lt;grant-id&gt;, ClientId: &lt;sp-objectid&gt;, PrincipalId: , ResourceId: &lt;resource-sp-id&gt;, ConsentType: AllPrincipals, Scope: User.Read, CreatedDateTime: , LastModifiedDateTime ]];",
+      "OldValue": "" }
+  ],
+  "Actor": [
+    { "ID": "admin.consenting@yourtenant.onmicrosoft.com", "Type": 5 },  ``` Type 5 = UPN ```
+    { "ID": "&lt;puid&gt;",                                   "Type": 3 },  ``` Type 3 = PUID ```
+    { "ID": "Microsoft_AAD_RegisteredApps",                "Type": 1 },  ``` Type 1 = source app/portal ```
+    { "ID": "&lt;user-objectid&gt;",                          "Type": 2 }
+  ],
+  "Target": [
+    { "ID": "ServicePrincipal_&lt;sp-objectid&gt;",            "Type": 2 },
+    { "ID": "&lt;sp-objectid&gt;",                             "Type": 2 },  ``` SP ObjectId in tenant ```
+    { "ID": "ServicePrincipal",                            "Type": 2 },
+    { "ID": "&lt;App display name as it appeared at consent time&gt;", "Type": 1 },
+    { "ID": "&lt;consented-app-id&gt;",                        "Type": 4 }   ``` AppId again, Type 4 ```
+  ],
+  "ActorContextId":  "&lt;your-tenant-id&gt;",
+  "TargetContextId": "&lt;your-tenant-id&gt;"
+}</pre>
+            </div>
+            <p>The four fields the OAuthSentry SPL pivots on, with paths confirmed against the shape above:</p>
+            <ul>
+              <li><strong>AppId of the consented app</strong> → <code>ObjectId</code> at the top level (also redundantly available as <code>ExtendedProperties[].additionalDetails.AppId</code> and <code>Target[]</code> entries with <code>Type=4</code>). The <code>TargetId.ServicePrincipalNames</code> field that some older detections key on does <strong>not</strong> exist in the M365 unified shape - it lives only in the Azure AD diagnostic stream.</li>
+              <li><strong>Admin vs user consent</strong> → <code>ModifiedProperties[]</code> where <code>Name=="ConsentContext.IsAdminConsent"</code>, value is the string <code>"True"</code> / <code>"False"</code>.</li>
+              <li><strong>Granted scopes</strong> → <code>ModifiedProperties[]</code> where <code>Name=="ConsentAction.Permissions"</code>. The value is a bracket-delimited string, not JSON; one or more <code>[[Id: ..., ClientId: ..., ResourceId: ..., ConsentType: ..., Scope: SCOPE_NAME, ...]]</code> groups separated by <code>;</code>, with an <code>old =&gt; new</code> arrow showing the diff. Multi-scope consents emit multiple groups; <code>regex max_match=20</code> against <code>Scope:\s*(?&lt;scope&gt;[^,\]]+)</code> extracts each.</li>
+              <li><strong>User-Agent at consent time</strong> → <code>ExtendedProperties[]</code> where <code>Name=="additionalDetails"</code>. The <code>Value</code> field is a JSON-encoded string (escaped quotes); <code>spath input=Value</code> drills in to <code>User-Agent</code> and the redundant <code>AppId</code>. Hunt for <code>python-requests</code>, <code>curl</code>, <code>ROADtools</code>, headless browsers - they're rarely present on legitimate consent prompts.</li>
+            </ul>
+
+            <h3><span class="num">3</span> Sign-in logs - the app actually using its tokens</h3>
+            <p>Once consent is granted the app starts signing in on behalf of the user. These appear in <strong>service principal sign-in logs</strong>, not interactive sign-ins. The Splunk macro stack splits them three ways: <code>oauthsentry_aad_sp_signin</code> for the SP authenticating as itself (<code>category = ServicePrincipalSignInLogs</code> on the underlying records), <code>oauthsentry_aad_signin</code> with <code>category = SignInLogs</code> for interactive sign-ins (the user clicking the consent prompt), and the same macro with <code>category = NonInteractiveUserSignInLogs</code> for token refreshes on behalf of the user.</p>
+            <table class="kv-table">
+              <thead><tr><th>Field</th><th>What to hunt for</th></tr></thead>
+              <tbody>
+                <tr><td class="mono">AppId</td><td>Match against the OAuthSentry malicious or risky feed.</td></tr>
+                <tr><td class="mono">ResourceDisplayName / ResourceId</td><td>What was accessed. <code>00000003-0000-0000-c000-000000000000</code> = Microsoft Graph; <code>00000002-0000-0ff1-ce00-000000000000</code> = Exchange Online; <code>00000003-0000-0ff1-ce00-000000000000</code> = SharePoint.</td></tr>
+                <tr><td class="mono">IPAddress / Location</td><td>Source. Cross-check against the user's normal sign-in pattern; residential proxies (Spur.us, GreyNoise) are common in UTA0352/APT29 ops.</td></tr>
+                <tr><td class="mono">UserAgent</td><td><code>python-requests</code>, <code>curl</code>, <code>ROADtools</code>, <code>Mozilla/5.0 (X11; Linux ...)</code> against a normally-Windows mailbox = attacker tooling.</td></tr>
+                <tr><td class="mono">IncomingTokenType</td><td><code>refreshToken</code> after the first sign-in. Long sequences of refresh-token grants from one IP = active attacker session.</td></tr>
+                <tr><td class="mono">ResultType</td><td><code>0</code> = success. Filter on this when correlating with downstream activity.</td></tr>
+                <tr><td class="mono">AuthenticationProtocol</td><td><code>deviceCode</code> = device-code phishing (Storm-2372). <code>authCode</code> with first-party app id = UTA0352 pattern.</td></tr>
+                <tr><td class="mono">ConditionalAccessStatus</td><td><code>notApplied</code> = no policy matched, often an indicator the attacker found a CA gap. <code>failure</code> = blocked.</td></tr>
+                <tr><td class="mono">"Continuous access evaluation"</td><td>Field on sign-in details indicating whether the issued token is CAE-aware. <code>true</code> means revocation will work near-real-time; <code>false</code> means the token must run out the clock.</td></tr>
+              </tbody>
+            </table>
+
+            <h3><span class="num">4</span> Linkable identifiers - the cross-log correlation key</h3>
+            <p>Three identifiers are stamped on every Microsoft-issued token and propagate into every downstream log. These are how you turn "this user signed in" into "and here is every Exchange operation, every Graph call, every SharePoint hit that token authorized." Capture them from the sign-in log entry, then pivot.</p>
+            <table class="kv-table">
+              <thead><tr><th>Identifier</th><th>Aliases in logs</th><th>Granularity</th><th>What it links</th></tr></thead>
+              <tbody>
+                <tr><td class="mono">SessionId (SID)</td><td><code>SessionId</code> on Entra sign-in events; <code>AADSessionId</code> on the <code>AppAccessContext</code> object in M365 unified audit log; <code>SessionId</code> field directly in Exchange mailbox audit records since 2019</td><td>One sign-in session</td><td>Every action that token-chain authorized: mailbox reads, file accesses, Graph calls. The single most useful field for OAuth investigations.</td></tr>
+                <tr><td class="mono">UniqueTokenIdentifier (UTI)</td><td><code>uniqueTokenIdentifier</code> on Entra SP sign-in events; <code>uti</code> claim in the JWT; surfaces in Microsoft Graph activity logs via the same name</td><td>One specific access token</td><td>Pinpoints which token did exactly which action. Use this when you need to tell apart actions by the same user from two different sessions.</td></tr>
+                <tr><td class="mono">CorrelationId</td><td><code>correlationId</code> across Entra sign-in logs, Entra audit logs, and the M365 unified audit log</td><td>One request chain</td><td>Ties together the consent event, the resulting SP sign-in, and the audit-log changes that flow from it.</td></tr>
+              </tbody>
+            </table>
+            <div class="callout">
+              <strong>Note on legacy auth</strong>
+              <code>SessionId</code> is an Entra ID construct that only exists when the user authenticates via modern auth (OAuth 2.0 / ADAL / MSAL). Legacy basic-auth sessions have no SessionId. If your tenant still permits legacy auth, the absence of a SessionId on a mailbox audit event is itself a signal worth investigating.
+            </div>
+
+            <h3><span class="num">5</span> Microsoft Graph activity logs (separate stream, off by default)</h3>
+            <p>Graph activity logs are the only place that records every individual Graph API call the malicious app made. Without this, you can prove the app got a token but not what it did with it. Stream them via Azure Monitor diagnostic settings into the same destination as your Entra audit logs; in Splunk they land under the same <code>oauthsentry_aad_audit</code> macro (or a dedicated <code>oauthsentry_graph_activity</code> macro if you want to break them out, with sourcetype set to whatever your TA uses for the <code>MicrosoftGraphActivityLogs</code> category).</p>
+            <ul>
+              <li><code>RequestUri</code> - which Graph endpoint was called (<code>/v1.0/me/messages</code>, <code>/v1.0/me/drive/root/children</code>, etc).</li>
+              <li><code>RequestMethod</code> - GET for read, POST/PATCH/DELETE for modification.</li>
+              <li><code>ResponseStatusCode</code> - 200/204 = data returned, 401/403 = blocked by CA or scope.</li>
+              <li><code>UserId</code> - on whose behalf the call was made.</li>
+              <li><code>AppId</code> - the malicious application id.</li>
+              <li><code>SignInActivityId</code> - the UTI claim of the token, the link back to the originating sign-in.</li>
+              <li><code>ResponseSizeBytes</code> - large responses on <code>/messages</code> or <code>/drive/...</code> endpoints = bulk exfiltration.</li>
+            </ul>
+            <div class="callout">
+              <strong>Enable this now</strong>
+              Graph activity logs are off by default. Turn them on (Entra admin center &rarr; Monitoring &amp; health &rarr; Diagnostic settings &rarr; <code>MicrosoftGraphActivityLogs</code>) and route them to whatever destination feeds your Splunk index. Without retroactive logs, post-incident scope is largely guesswork.
+            </div>
+
+            <h3><span class="num">6</span> Mailbox &amp; artifact-level traces</h3>
+            <p>For mail-scope abuse - the most common goal of OAuth phishing - Exchange has its own audit trail. The richest event is <code>MailItemsAccessed</code>, but it has caveats every investigator must know.</p>
+
+            <div class="callout warn">
+              <strong>License and throttling caveats for MailItemsAccessed</strong>
+              Following Microsoft's response to Storm-0558 in 2023, <code>MailItemsAccessed</code> moved from Purview Audit (Premium) to Purview Audit (Standard) - rolled out from June 2024 and complete by September 2024 - so it is now generated by default for any user on an Office 365 E3/E5 or Microsoft 365 E3/E5 license. <strong>Caveat</strong>: for mailboxes whose audit configuration was customized before the rollout, the new events are not auto-added; check <code>(Get-Mailbox).DefaultAuditSet</code> and add <code>MailItemsAccessed</code> to <code>AuditOwner</code>/<code>AuditDelegate</code> via <code>Set-Mailbox</code> if missing. Throttling: bind-event logging is capped at <strong>1,000 audit records per mailbox per 24 hours</strong>; once exceeded, MailItemsAccessed bind events for that mailbox stop logging for 24 hours (sync events, <code>Send</code>, <code>SoftDelete</code>, and other audit actions continue unaffected; admin searches against other mailboxes are also exempt). The first 1,000 events ARE recorded - the silenced window is the follow-on 24 hours. Throttled mailboxes are flagged with <code>IsThrottled = True</code> on the trigger record. Microsoft says &lt;1% of mailboxes ever throttle, so an <code>IsThrottled = True</code> event is itself a strong IOC.
+            </div>
+
+            <table class="kv-table">
+              <thead><tr><th>Artifact</th><th>Where to look</th><th>What it shows</th></tr></thead>
+              <tbody>
+                <tr><td>Mailbox audit (M365 unified)</td><td class="mono">Search-UnifiedAuditLog -Operations MailItemsAccessed -FreeText &lt;appid&gt;</td><td>Every read keyed to <code>ClientAppId</code>, <code>ClientInfoString</code>, <code>SessionId</code>, <code>OperationProperties.ClientIPAddress</code>. <code>MailAccessType = Sync</code> = bulk folder pull (Outlook desktop / IMAP / EWS); <code>Bind</code> = single message access. CISA's Sparrow uses this exact query.</td></tr>
+                <tr><td>Mailbox audit</td><td class="mono">Send / SendAs / SendOnBehalf</td><td>Outbound mail by the attacker through the OAuth token. Pivot on the same <code>SessionId</code> as the read events.</td></tr>
+                <tr><td>Inbox rules</td><td class="mono">New-InboxRule / Set-InboxRule / UpdateInboxRules</td><td>Auto-forward, move-to-RSS-feeds, mark-as-read rules created during the attack window. Common pattern: forward-then-delete to hide replies.</td></tr>
+                <tr><td>Mail flow rules</td><td class="mono">New-TransportRule / Set-TransportRule</td><td>Tenant-wide forwarding rules created via Graph after admin-consent abuse.</td></tr>
+                <tr><td>Mailbox permissions</td><td class="mono">Add-MailboxPermission / Add-RecipientPermission</td><td>Send-As / Send-On-Behalf delegations added to give the attacker continued sending access after token revocation.</td></tr>
+                <tr><td>Search activity (E5)</td><td class="mono">SearchQueryInitiatedExchange / SearchQueryInitiatedSharePoint</td><td>Off by default - must be enabled per-mailbox via <code>Set-Mailbox -AuditOwner @{Add="SearchQueryInitiated"}</code>. Reveals exactly what the attacker searched for.</td></tr>
+              </tbody>
+            </table>
+
+            <p>Pivot pattern using SessionId once you have one suspicious event:</p>
+            <div class="code-block">
+              <div class="code-header">PowerShell - Exchange Online<button class="copy-snippet" type="button">copy</button></div>
+              <pre># Find candidate sessions tied to the malicious app id
+Search-UnifiedAuditLog -StartDate 2026-04-20 -EndDate 2026-04-27 `
+    -Operations MailItemsAccessed -FreeText "&lt;malicious-app-id&gt;" `
+    -ResultSize 5000 |
+  Select-Object -ExpandProperty AuditData | ConvertFrom-Json |
+  Select-Object CreationTime, UserId, ClientAppId, SessionId, ClientIPAddress, MailAccessType |
+  Sort-Object SessionId, CreationTime
+
+# Pull every record under one SessionId across all Exchange operations
+$sid = "&lt;session-id-from-above&gt;"
+Search-UnifiedAuditLog -StartDate 2026-04-20 -EndDate 2026-04-27 `
+    -RecordType ExchangeItem,ExchangeItemAggregated,ExchangeAdmin -ResultSize 5000 |
+  Select-Object -ExpandProperty AuditData | ConvertFrom-Json |
+  Where-Object { $_.SessionId -eq $sid } |
+  Select-Object CreationTime, UserId, Operation, ClientIPAddress |
+  Sort-Object CreationTime</pre>
+            </div>
+
+            <h3><span class="num">7</span> Device registration (the persistence step)</h3>
+            <p>Recent campaigns (UTA0355, Storm-2372) chain consent abuse with device registration to mint a Primary Refresh Token (PRT) - a token-granting token that survives password reset and outlasts most refresh-token revocations because it's tied to the registered device, not the user session.</p>
+            <ul>
+              <li><strong>Audit log op</strong> <code>Add device</code> or <code>Add registered owner to device</code> where the registering app id is <code>29d9ed98-a469-4536-ade2-f981bc1d605e</code> (Microsoft Authentication Broker) - the same client used by ROADtools / ROADtx in UTA0355 emulation.</li>
+              <li><strong>Sign-in logs</strong> entries where <code>DeviceDetail.DeviceId</code> is freshly created (not seen in last 7-30 days) and <code>IsCompliant = false</code>, <code>IsManaged = false</code>.</li>
+              <li><strong>Sign-in logs</strong> entries where <code>AuthenticationProtocol = deviceCode</code> = device-code flow phishing.</li>
+              <li><strong>Conditional Access bypasses</strong> where the new device satisfies "compliant device" requirement because the attacker registered it themselves and joined it.</li>
+              <li><strong>Audit log op</strong> <code>Register device</code> immediately followed by an MFA registration event (<code>Update user</code> with <code>StrongAuthenticationMethod</code> changes) for the same user is the strongest indicator of UTA0355's playbook.</li>
+            </ul>
+
+            <h3><span class="num">8</span> Reconstructing the timeline</h3>
+            <p>Pull all of the above into a single chronology keyed off the application id and the affected user principal. The complete attack chain looks like this; use <code>CorrelationId</code> to glue events 1-2 together and <code>SessionId</code> + <code>UniqueTokenIdentifier</code> to glue events 3-5 together:</p>
+            <ol>
+              <li>User clicks phishing link &#8594; first sign-in to attacker app (<code>oauthsentry_aad_signin</code> with <code>category = SignInLogs</code>, captures <code>SessionId</code>)</li>
+              <li>User accepts consent prompt &#8594; <code>Consent to application</code> + <code>Add OAuth2PermissionGrant</code> + (if new) <code>Add service principal</code> in <code>oauthsentry_o365_audit</code> (same <code>CorrelationId</code> as the sign-in)</li>
+              <li>App receives access + refresh tokens &#8594; service principal sign-ins begin (<code>oauthsentry_aad_sp_signin</code>, each with its own <code>uniqueTokenIdentifier</code>)</li>
+              <li>App calls Graph &#8594; Graph activity log entries linked by <code>SignInActivityId</code> = the UTI from step 3</li>
+              <li>App reads mail &#8594; <code>MailItemsAccessed</code> events in <code>oauthsentry_o365_audit</code> with the same <code>AppAccessContext.AADSessionId</code> from step 1</li>
+              <li>(optional persistence) <code>New-InboxRule</code>, <code>Add registered owner to device</code>, <code>Add service principal credentials</code> events in the same audit stream</li>
+              <li>Attacker uses refresh token from new IPs &#8594; service principal sign-ins from anomalous geography, but with the same <code>appId</code></li>
+            </ol>
+
+            <h3><span class="num">9</span> SPL starter pack</h3>
+            <p>Five investigator-grade SPL queries that map onto everything described in the table above. They reuse the macro stack defined in the Detections tab (<code>oauthsentry_o365_audit</code>, <code>oauthsentry_aad_signin</code>, etc.) so you only configure index/sourcetype once.</p>
+            <div class="code-block">
+              <div class="code-header">SPL<button class="copy-snippet" type="button">copy</button></div>
+              <pre>``` 1. Every consent grant or grant-creation event in the last 30 days for known-malicious app ids ```
+`oauthsentry_o365_audit` earliest=-30d
+| eval Operation = replace(Operation, "\.$", "")
+| where Operation IN (
+    "Consent to application",
+    "Add OAuth2PermissionGrant",
+    "Add delegated permission grant",
+    "Add app role assignment to service principal",
+    "Add service principal",
+    "Add service principal credentials"
+  )
+| spath path=ModifiedProperties{}.Name     output=mp_names
+| spath path=ModifiedProperties{}.NewValue output=mp_values
+| eval appid = lower(ObjectId)  ``` ObjectId is the AppId on consent events; M365 unified shape has no TargetId.ServicePrincipalNames ```
+| eval scope_idx = mvfind(mp_names, "(?i)ConsentAction\.Permissions")
+| eval scope     = lower(mvindex(mp_values, scope_idx))
+| eval admin_idx = mvfind(mp_names, "(?i)ConsentContext\.IsAdminConsent")
+| eval is_admin  = lower(mvindex(mp_values, admin_idx))
+| `oauthsentry_malicious_lookup`
+| where oas_category = "malicious"
+| table _time Operation UserId ClientIP appid scope is_admin oas_severity oas_comment
+
+``` 2. Service principal sign-ins from a known-bad app id, summarised ```
+`oauthsentry_aad_sp_signin` earliest=-30d
+| eval appid = lower(appId)
+| `oauthsentry_malicious_lookup`
+| where oas_category = "malicious" AND ResultType = "0"
+| stats earliest(_time) as first_seen
+        latest(_time)   as last_seen
+        values(ipAddress)             as ips
+        values(location)              as countries
+        values(resourceDisplayName)   as resources
+        dc(uniqueTokenIdentifier)     as tokens
+    by appid, servicePrincipalName
+
+``` 3. Pivot from one suspicious sign-in to every Exchange action in the same session. ```
+``` Replace &lt;SID&gt; with the SessionId from the sign-in record. ```
+`oauthsentry_o365_audit` earliest=-7d
+| eval session = coalesce('AppAccessContext.AADSessionId', SessionId)
+| where session = "&lt;SID&gt;"
+| eval src_ip = coalesce(ClientIPAddress, ClientIP)
+| spath path=Item.Subject output=item_subject
+| table _time UserId Operation src_ip item_subject ResultStatus
+| sort _time
+
+``` 4. Pivot from one suspicious sign-in to every other audited action by the same UTI. ```
+``` Replace &lt;UTI&gt; with the UniqueTokenIdentifier from the sign-in record. UTI surfaces both ```
+``` in Entra sign-in logs (uniqueTokenIdentifier) and in M365 audit data (AppAccessContext.UniqueTokenId). ```
+(`oauthsentry_aad_signin` uniqueTokenIdentifier="&lt;UTI&gt;") OR
+(`oauthsentry_o365_audit` "AppAccessContext.UniqueTokenId"="&lt;UTI&gt;")
+| eval src_ip = coalesce(ipAddress, ClientIPAddress, ClientIP)
+| eval who    = coalesce(UserId, userPrincipalName, servicePrincipalName)
+| table _time sourcetype Operation operationName who src_ip
+| sort _time
+
+``` 5. Newly-observed first-party app id with broad scopes (catches UTA0352-style abuse). ```
+``` Visual Studio Code is a legit app, but a non-developer principal consenting it is suspicious. ```
+`oauthsentry_aad_signin` appId="aebc6443-996d-45c2-90f0-388ff96faa56" earliest=-7d
+| eval upn = lower(userPrincipalName)
+| join type=leftanti upn [
+    search `oauthsentry_aad_signin` appId="aebc6443-996d-45c2-90f0-388ff96faa56"
+           earliest=-187d latest=-7d
+    | eval upn = lower(userPrincipalName)
+    | dedup upn
+    | fields upn
+  ]
+| table _time upn ipAddress location resourceDisplayName</pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== Detections ===== -->
+        <div class="invest-section" id="sub-detections" hidden>
+          <div class="doc-block">
+            <h2>Detections for OAuth abuse</h2>
+            <p class="doc-lede">Nine SPL detections built for teams running M365 audit and Microsoft Entra logs through Splunk. Every search uses macros so the same logic works whether you're on the <strong>Splunk Add-on for Microsoft Office 365</strong> (sourcetypes <code>o365:management:activity</code>, <code>azure:audit</code>) or the <strong>Splunk Add-on for Microsoft Cloud Services</strong> (sourcetypes prefixed <code>mscs:</code>) - define the macros once and the searches travel with you. Tradecraft references in each detection point back to the Tradecraft tab.</p>
+
+            <div class="callout">
+              <strong>Macros to define before running anything below</strong>
+              Drop these into <code>$SPLUNK_HOME/etc/apps/&lt;your-app&gt;/local/macros.conf</code>, restart, and adjust the <code>index=</code> and <code>sourcetype=</code> values to match your environment. Every detection in this tab references at least one of them, so you change five lines in one place rather than nine searches.
+            </div>
+
+            <div class="code-block">
+              <div class="code-header">macros.conf<button class="copy-snippet" type="button">copy</button></div>
+              <pre>[oauthsentry_o365_audit]
+# M365 unified audit log via the Splunk Add-on for Microsoft Cloud Services
+# (mscs:o365:management:activity) or the older Splunk Add-on for M365
+# (o365:management:activity). Adjust index= to wherever you land it.
+definition = (index=o365 (sourcetype=mscs:o365:management:activity OR sourcetype=o365:management:activity))
+iseval = 0
+
+[oauthsentry_aad_audit]
+# Microsoft Entra audit log streamed via Azure Monitor diagnostic settings.
+definition = (index=azure (sourcetype=mscs:azure:audit OR sourcetype=azure:audit))
+iseval = 0
+
+[oauthsentry_aad_signin]
+# Microsoft Entra sign-in logs (interactive, non-interactive, SP, managed identity).
+definition = (index=azure (sourcetype=mscs:azure:signin OR sourcetype=azure:signin))
+iseval = 0
+
+[oauthsentry_aad_sp_signin]
+# Service principal sign-ins only.
+definition = `oauthsentry_aad_signin` category=ServicePrincipalSignInLogs
+iseval = 0
+
+[oauthsentry_malicious_lookup]
+# Decorate results with OAuthSentry malicious-feed metadata.
+# Assumes you have a lookup definition named oauthsentry_malicious whose lookup file is
+# refreshed from https://oauthsentry.github.io/feeds/all/malicious.csv (any cadence).
+definition = lookup oauthsentry_malicious appid OUTPUT category as oas_category, severity as oas_severity, comment as oas_comment
+iseval = 0
+
+[oauthsentry_risky_lookup]
+definition = lookup oauthsentry_risky appid OUTPUT category as oas_risky_category, severity as oas_risky_severity
+iseval = 0
+
+[oauthsentry_compliance_lookup]
+definition = lookup oauthsentry_compliance appid OUTPUT category as oas_compliance_category
+iseval = 0</pre>
+            </div>
+
+            <h3><span class="num">1</span> Consent or grant created for a known-malicious application id</h3>
+            <p>Highest-fidelity OAuth detection: a user explicitly consented, or an admin created a grant, for an app OAuthSentry already classifies as malicious. Should fire as critical and page on-call. The unified audit log emits at least four operation names for the same underlying consent action; this search covers them all and normalises the trailing-period quirk the M365 Management Activity API sometimes adds (<code>"Consent to application."</code>).</p>
+            <div class="code-block">
+              <div class="code-header">SPL<button class="copy-snippet" type="button">copy</button></div>
+              <pre>`oauthsentry_o365_audit`
+| eval Operation = replace(Operation, "\.$", "")
+| where Operation IN (
+    "Consent to application",
+    "Add OAuth2PermissionGrant",
+    "Add delegated permission grant",
+    "Add app role assignment to service principal"
+  )
+
+``` AppId is the top-level ObjectId on Consent to application events.    ```
+``` TargetId.ServicePrincipalNames does NOT exist in the M365 unified     ```
+``` shape - it's an Azure AD diagnostic-stream field. Fall back to the    ```
+``` AppId nested in ExtendedProperties.additionalDetails for grant ops    ```
+``` whose ObjectId is the grant id rather than the app id.                ```
+| eval appid = lower(ObjectId)
+
+``` Pull consent context (admin vs user) and the scope payload from       ```
+``` ModifiedProperties. ConsentAction.Permissions is bracket-delimited,   ```
+``` not JSON; regex over Scope: extracts every requested permission.      ```
+| spath path=ModifiedProperties{}.Name     output=mp_names
+| spath path=ModifiedProperties{}.NewValue output=mp_values
+| eval admin_idx = mvfind(mp_names, "(?i)ConsentContext\.IsAdminConsent")
+| eval is_admin  = if(lower(mvindex(mp_values, admin_idx)) == "true", "yes", "no")
+| eval scope_idx = mvfind(mp_names, "(?i)ConsentAction\.Permissions")
+| eval permissions_raw = mvindex(mp_values, scope_idx)
+| rex field=permissions_raw max_match=20 "Scope:\s*(?&lt;_scope&gt;[^,\]]+)"
+| eval consented_scopes = mvjoin(mvdedup(_scope), ", ")
+
+``` ExtendedProperties.additionalDetails is a JSON-encoded string;        ```
+``` spath input=Value drills in for User-Agent + redundant AppId.         ```
+| spath path=ExtendedProperties{}.Name  output=ep_names
+| spath path=ExtendedProperties{}.Value output=ep_values
+| eval ad_idx = mvfind(ep_names, "(?i)additionalDetails")
+| eval ad_raw = mvindex(ep_values, ad_idx)
+| spath input=ad_raw path="User-Agent" output=user_agent
+| spath input=ad_raw path="AppId"      output=ad_appid
+| eval appid = lower(coalesce(appid, ad_appid))
+
+| `oauthsentry_malicious_lookup`
+| where oas_category = "malicious"
+
+| stats count
+        earliest(_time) as first_seen
+        latest(_time)   as last_seen
+        values(UserId)            as users
+        values(ClientIP)          as src_ips
+        values(user_agent)        as user_agents
+        values(Operation)         as operations
+        values(consented_scopes)  as scopes
+    by appid, oas_severity, is_admin, oas_comment
+
+| convert ctime(first_seen) ctime(last_seen)
+| rename oas_severity as severity, oas_comment as oauthsentry_comment</pre>
+            </div>
+
+            <h3><span class="num">2</span> Service principal sign-in from a known-malicious or risky app</h3>
+            <p>The app already has tokens and is using them. Fires every time the app authenticates as itself, regardless of which user originally consented. For risky-bucket apps, the search adds an IP-count threshold so legitimate first-party traffic does not page on-call.</p>
+            <div class="code-block">
+              <div class="code-header">SPL<button class="copy-snippet" type="button">copy</button></div>
+              <pre>`oauthsentry_aad_sp_signin`
+| eval appid = lower(appId)
+| `oauthsentry_malicious_lookup`
+| where oas_category IN ("malicious", "risky")
+
+| stats count
+        earliest(_time) as first_seen
+        latest(_time)   as last_seen
+        values(ipAddress)            as src_ips
+        dc(ipAddress)                as ip_count
+        values(resourceDisplayName)  as resources
+        values(servicePrincipalName) as sp_names
+    by appid, oas_category, oas_severity
+
+``` Risky apps may legitimately authenticate; require >1 IP to alert. ```
+``` Malicious apps page regardless. ```
+| where oas_category = "malicious" OR ip_count &gt; 1
+| convert ctime(first_seen) ctime(last_seen)
+| sort - last_seen</pre>
+            </div>
+
+            <h3><span class="num">3</span> Newly observed OAuth app with high-risk scopes</h3>
+            <p>Catches the next malicious app before OAuthSentry has tracked it. Heuristic: a consent event with mail/files/directory scopes for an AppId that has never been seen authenticating in your tenant in the prior 90 days. The historical baseline lives in the SP sign-in log, so this search needs both <code>oauthsentry_o365_audit</code> and <code>oauthsentry_aad_sp_signin</code> to be wired up.</p>
+            <div class="code-block">
+              <div class="code-header">SPL<button class="copy-snippet" type="button">copy</button></div>
+              <pre>`oauthsentry_o365_audit` earliest=-7d
+| eval Operation = replace(Operation, "\.$", "")
+| where Operation = "Consent to application"
+
+``` Extract AppId and the requested scopes ```
+| spath path=ModifiedProperties{}.Name     output=mp_names
+| spath path=ModifiedProperties{}.NewValue output=mp_values
+| eval appid = lower(ObjectId)  ``` ObjectId is the AppId on consent events; M365 unified shape has no TargetId.ServicePrincipalNames ```
+| eval scope_idx = mvfind(mp_names, "(?i)ConsentAction\.Permissions")
+| eval scope     = lower(mvindex(mp_values, scope_idx))
+
+``` Filter on high-risk scopes only ```
+| where match(scope, "(?i)mail\.read|mail\.readwrite|mail\.send|files\.(read|readwrite)\.all|sites\.read\.all|directory\.read\.all|offline_access")
+
+| stats earliest(_time) as first_seen
+        values(UserId) as users
+        values(scope)  as scopes
+        count
+    by appid
+
+``` Anti-join against the prior 90 days of SP sign-ins. ```
+``` If the AppId has signed in before, drop it; we only want first-time appearances. ```
+| join type=left appid [
+    search `oauthsentry_aad_sp_signin` earliest=-97d latest=-7d
+    | eval appid = lower(appId)
+    | stats earliest(_time) as historical_first by appid
+  ]
+| where isnull(historical_first)
+
+| `oauthsentry_malicious_lookup`
+| convert ctime(first_seen)
+| sort - first_seen</pre>
+            </div>
+
+            <h3><span class="num">4</span> Admin consent for an app not on your verified-publisher allowlist</h3>
+            <p>Admin consent is an enormous power transfer; combined with an unverified publisher it's one of the strongest single OAuth signals you can write. The cleanest production form uses your <code>oauthsentry_compliance</code> lookup as the allowlist - if an app gets admin consent and isn't in the compliance feed, it's worth a human eyeball.</p>
+            <div class="code-block">
+              <div class="code-header">SPL<button class="copy-snippet" type="button">copy</button></div>
+              <pre>`oauthsentry_o365_audit`
+| eval Operation = replace(Operation, "\.$", "")
+| where Operation = "Consent to application"
+
+| spath path=ModifiedProperties{}.Name     output=mp_names
+| spath path=ModifiedProperties{}.NewValue output=mp_values
+
+``` Restrict to admin-consent events ```
+| eval admin_idx = mvfind(mp_names, "(?i)ConsentContext\.IsAdminConsent")
+| eval is_admin  = lower(mvindex(mp_values, admin_idx))
+| where is_admin = "true"
+
+``` Pull the AppId ```
+| eval appid = lower(ObjectId)  ``` ObjectId is the AppId on consent events; M365 unified shape has no TargetId.ServicePrincipalNames ```
+
+``` Drop apps that are in our compliance allowlist ```
+| `oauthsentry_compliance_lookup`
+| where isnull(oas_compliance_category)
+
+| eval scope_idx = mvfind(mp_names, "(?i)ConsentAction\.Permissions")
+| eval scope     = lower(mvindex(mp_values, scope_idx))
+
+| stats earliest(_time) as event_time
+        values(UserId)   as approving_admin
+        values(ClientIP) as src_ips
+        values(scope)    as scopes
+    by appid
+| convert ctime(event_time)
+| sort - event_time</pre>
+            </div>
+
+            <h3><span class="num">5</span> Service principal refresh-token grants from multiple countries in a short window</h3>
+            <p>Refresh-token grants are non-interactive and ordinarily come from one place - automation has stable infrastructure. An SP redeeming refresh tokens from two or more countries inside an hour is the AiTM / token-replay signature, and is also what TeamFiltration looks like as it rotates AWS regions.</p>
+            <div class="code-block">
+              <div class="code-header">SPL<button class="copy-snippet" type="button">copy</button></div>
+              <pre>`oauthsentry_aad_sp_signin` incomingTokenType="refreshToken" earliest=-1h
+| iplocation ipAddress
+| eval appid = lower(appId)
+
+| stats dc(Country)             as country_count
+        values(Country)         as countries
+        values(ipAddress)       as src_ips
+        values(servicePrincipalName) as sp_names
+        count
+    by appid
+| where country_count &gt; 1
+
+| `oauthsentry_malicious_lookup`
+| `oauthsentry_risky_lookup`
+| sort - count</pre>
+            </div>
+
+            <h3><span class="num">6</span> Mailbox accessed by an OAuth app that is not on your allowlist</h3>
+            <p>Last line of defence. Fires when an OAuth app reads mail and the app id is not in your <code>oauthsentry_compliance</code> allowlist. <code>MailItemsAccessed</code> stores access type and throttle status inside <code>OperationProperties</code>, an array of <code>{Name, Value}</code> objects, so we extract those by name rather than relying on auto-flattening.</p>
+            <div class="code-block">
+              <div class="code-header">SPL<button class="copy-snippet" type="button">copy</button></div>
+              <pre>`oauthsentry_o365_audit` Operation=MailItemsAccessed
+| eval appid = lower(coalesce('AppAccessContext.ClientAppId', ClientAppId, AppId))
+
+``` MailAccessType and IsThrottled live in OperationProperties[] as Name/Value pairs ```
+| spath path=OperationProperties{}.Name  output=op_names
+| spath path=OperationProperties{}.Value output=op_values
+| eval mat_idx     = mvfind(op_names, "^MailAccessType$")
+| eval access_type = mvindex(op_values, mat_idx)
+| eval thr_idx     = mvfind(op_names, "^IsThrottled$")
+| eval is_throttled= mvindex(op_values, thr_idx)
+
+| `oauthsentry_compliance_lookup`
+| where isnull(oas_compliance_category)
+| `oauthsentry_malicious_lookup`
+
+| stats count
+        earliest(_time) as first_seen
+        latest(_time)   as last_seen
+        values(UserId)            as mailbox_owners
+        values(ClientInfoString)  as client_strings
+        values(ClientIPAddress)   as src_ips
+        values(access_type)       as access_types
+        values(is_throttled)      as throttled_flags
+        values('AppAccessContext.AADSessionId') as session_ids
+        dc('AppAccessContext.AADSessionId')     as session_count
+    by appid, oas_category, oas_severity
+| where count &gt; 5
+| convert ctime(first_seen) ctime(last_seen)
+| sort - count</pre>
+            </div>
+
+            <h3><span class="num">7</span> Pivot from a suspicious sign-in to every audited action in the same session</h3>
+            <p>The investigator's bread-and-butter search. Once you have a SessionId from an Entra sign-in record, this returns every audited action authorised by that token chain - reads, sends, rule changes, deletes. <code>AppAccessContext.AADSessionId</code> is set on OAuth-token-driven Exchange events; bare <code>SessionId</code> is the fallback for Exchange events that predate the AppAccessContext schema. Save this as an investigator search and pass the session id in via a token like <code>$session_id$</code>.</p>
+            <div class="code-block">
+              <div class="code-header">SPL<button class="copy-snippet" type="button">copy</button></div>
+              <pre>`oauthsentry_o365_audit`
+| eval session = coalesce('AppAccessContext.AADSessionId', SessionId)
+| where session = "$session_id$"
+
+| eval appid    = lower(coalesce('AppAccessContext.ClientAppId', ClientAppId, AppId))
+| eval src_ip   = coalesce(ClientIPAddress, ClientIP)
+| spath path=Item.Subject output=item_subject
+
+| table _time UserId Operation appid src_ip item_subject ResultStatus
+| sort _time</pre>
+            </div>
+
+            <h3><span class="num">8</span> Device registered immediately after a new consent</h3>
+            <p>Catches the UTA0355 / Storm-2372 chained pattern: consent followed by device-registration for the same user within minutes. We aggregate consent and device events per user with conditional aggregation so the timing comparison is direct - no fragile <code>mvfind</code> / <code>mvcount</code> dance.</p>
+            <div class="code-block">
+              <div class="code-header">SPL<button class="copy-snippet" type="button">copy</button></div>
+              <pre>`oauthsentry_o365_audit`
+| eval Operation = replace(Operation, "\.$", "")
+| where Operation IN (
+    "Consent to application", "Add OAuth2PermissionGrant",
+    "Add device", "Add registered owner to device", "Register device"
+  )
+| eval bucket = case(
+    Operation IN ("Consent to application","Add OAuth2PermissionGrant"),                "consent",
+    Operation IN ("Add device","Add registered owner to device","Register device"),     "device"
+  )
+
+``` Conditional aggregation: pull each user's earliest consent-time and device-time. ```
+``` min(eval(...)) is the canonical pattern; min returns numeric, ignoring null branches. ```
+| stats min(eval(if(bucket = "consent", _time, null()))) as t_consent
+        min(eval(if(bucket = "device",  _time, null()))) as t_device
+        values(Operation) as ops
+        values(ClientIP)  as src_ips
+    by UserId
+
+| where isnotnull(t_consent) AND isnotnull(t_device) AND t_device &gt; t_consent
+| eval window_minutes = round((t_device - t_consent)/60, 1)
+| where window_minutes &lt; 60
+
+| convert ctime(t_consent) ctime(t_device)
+| table UserId t_consent t_device window_minutes ops src_ips
+| sort window_minutes</pre>
+            </div>
+
+            <h3><span class="num">9</span> Credential or certificate added to an OAuth service principal</h3>
+            <p>Midnight Blizzard's signature post-consent move was to add their own client secret to an existing service principal so they could authenticate as the app from anywhere, even after user-token revocation. Any credential-add on an SP, especially one that recently appeared in your malicious or risky feed, is alert-worthy. The credential change shows up as a modification of <code>KeyDescription</code>, <code>PasswordCredentials</code>, or <code>KeyCredentials</code> inside <code>ModifiedProperties</code>.</p>
+            <div class="code-block">
+              <div class="code-header">SPL<button class="copy-snippet" type="button">copy</button></div>
+              <pre>`oauthsentry_o365_audit`
+| eval Operation = replace(Operation, "\.$", "")
+| where Operation IN (
+    "Add service principal credentials",
+    "Update application - Certificates and secrets management",
+    "Update service principal"
+  )
+
+| spath path=ModifiedProperties{}.Name     output=mp_names
+| spath path=ModifiedProperties{}.NewValue output=mp_values
+
+``` Filter to events that actually mutate credential properties. ```
+``` mvfind returns null (NOT -1) when no value matches; isnotnull() is the right check. ```
+| where isnotnull(mvfind(mp_names, "(?i)KeyDescription|PasswordCredentials|KeyCredentials"))
+
+| eval appid = lower(ObjectId)  ``` ObjectId is the AppId on consent events; M365 unified shape has no TargetId.ServicePrincipalNames ```
+
+| `oauthsentry_malicious_lookup`
+| `oauthsentry_risky_lookup`
+| eval flag = case(
+    isnotnull(oas_category),       "malicious",
+    isnotnull(oas_risky_category), "risky",
+    1==1,                          "unknown"
+  )
+
+| stats earliest(_time) as first_seen
+        latest(_time)   as last_seen
+        values(UserId)    as initiator
+        values(ClientIP)  as src_ips
+        values(Operation) as ops
+    by appid, flag
+| convert ctime(first_seen) ctime(last_seen)
+| sort - last_seen</pre>
+            </div>
+
+            <h3>Tuning notes</h3>
+            <ul>
+              <li>The macros above reference three lookup definitions: <code>oauthsentry_malicious</code>, <code>oauthsentry_risky</code>, <code>oauthsentry_compliance</code>. Each one points at a CSV with at minimum an <code>appid</code> field; populate the lookup files from the OAuthSentry CSV feeds at <code>/feeds/all/{malicious,risky,compliance}.csv</code> on whatever cadence makes sense for your tenant. Splunk's built-in <em>Lookup Editor</em> app or a scheduled <code>| outputlookup</code> from a REST search are both fine.</li>
+              <li>Detection 3 (newly observed OAuth app) is the noisiest but the most valuable. Tune by adding an extra anti-join against <code>oauthsentry_compliance</code> if you want to suppress already-vetted apps automatically.</li>
+              <li>Detections 1, 2, 8, 9 are high-fidelity enough to alert on. Detections 3, 4, 5, 6 work better as scheduled hunts with daily review. Detection 7 is investigator-driven, not an alert.</li>
+              <li>Apps in the <em>risky</em> bucket are legitimate. Trigger on context (unusual user, new IP, new geography) rather than on the app id alone - detections 2 and 5 demonstrate the pattern.</li>
+              <li>Where the unified audit log surfaces both <code>SessionId</code> directly and <code>AppAccessContext.AADSessionId</code>, prefer the latter - it is consistently populated for OAuth-token-driven activity, while bare <code>SessionId</code> is only present on Exchange events.</li>
+              <li>The M365 Management Activity API sometimes appends a trailing period to operation names (<code>"Consent to application."</code>); Azure Monitor's diagnostic stream does not. Every search above normalises with <code>eval Operation = replace(Operation, "\.$", "")</code> so the same SPL works across both pipelines.</li>
+              <li>If a search returns nothing where you expected results, <code>tail 1</code> a raw event from the relevant sourcetype and confirm the field paths match - some Splunk add-ons CIM-map <code>appId</code>, <code>ipAddress</code> and friends to flat lowercase aliases (<code>app</code>, <code>src</code>) that override the JSON-extracted versions.</li>
+            </ul>
+
+            <h3>Integrating with your existing detection stack</h3>
+            <p>The nine detections above assume you're starting from scratch. If you already run an Entra/M365 detection stack - and most teams do - OAuthSentry's three feeds plug into rules you already have. Four patterns; each one is a small surgical change that takes a hand-maintained list off your plate or sharpens an alert tier you've already tuned.</p>
+
+            <h4>Pattern 1: replace a hand-maintained "suspicious app id" lookup</h4>
+            <p>If you have a rule like "alert when a user signs in from an app id on our internal suspicious-apps lookup" or "alert on consent to an app on our blocklist", swap the lookup for the OAuthSentry malicious feed. Same logic, daily-refreshed list, community-curated rather than a spreadsheet someone updates when they remember to.</p>
+            <div class="code-block">
+              <div class="code-header">SPL - before / after<button class="copy-snippet" type="button">copy</button></div>
+              <pre>``` Before: hand-maintained lookup ```
+... | lookup my_suspicious_apps appid OUTPUT severity comment
+    | where isnotnull(severity)
+
+``` After: OAuthSentry feeds, with risky as a second tier ```
+... | `oauthsentry_malicious_lookup`
+    | `oauthsentry_risky_lookup`
+    | where oas_category="malicious" OR isnotnull(oas_risky_category)
+    | eval severity = coalesce(oas_severity, oas_risky_severity)
+    | eval bucket   = coalesce(oas_category, oas_risky_category)</pre>
+            </div>
+
+            <h4>Pattern 2: enrich an existing alert with severity / category</h4>
+            <p>For rules that already fire on a real signal (mailbox accessed by an SP with a suspicious user agent, email deleted by an SP, service-account token sign-in, etc.), don't change the trigger - stamp the OAuthSentry verdict onto the alert so triage starts with context instead of a raw GUID. The analyst opens the ticket and sees <code>appid = AzureHound (risky-bucket)</code> instead of "<code>appid = some-guid, go look it up</code>".</p>
+            <div class="code-block">
+              <div class="code-header">SPL - enrichment block<button class="copy-snippet" type="button">copy</button></div>
+              <pre>``` Add to the tail of any rule whose alert object contains an appid field. ```
+``` Doesn't change firing logic, just stamps a verdict on every alert. ```
+| `oauthsentry_malicious_lookup`
+| `oauthsentry_risky_lookup`
+| `oauthsentry_compliance_lookup`
+| eval oas_verdict = case(
+    oas_category    = "malicious",          "MALICIOUS - " . oas_comment,
+    isnotnull(oas_risky_category),          "RISKY - "     . oas_risky_category,
+    isnotnull(oas_compliance_category),     "COMPLIANCE - ". oas_compliance_category,
+    true(),                                 "UNKNOWN")
+| eval alert_priority = case(
+    oas_category="malicious",               "P1",
+    isnotnull(oas_risky_category),          "P2",
+    isnotnull(oas_compliance_category),     "P4",
+    true(),                                 "P3")</pre>
+            </div>
+
+            <h4>Pattern 3: suppress noise on "rare application consent" with the compliance feed</h4>
+            <p>The classic baseline detection - "alert when we see a new app id we haven't observed in 90 days" - is the highest-value hunt and the noisiest detection. Joining against the compliance feed as an anti-filter drops legitimate first-party and well-known third-party apps automatically; what remains is the actual signal.</p>
+            <div class="code-block">
+              <div class="code-header">SPL - rare-consent suppression<button class="copy-snippet" type="button">copy</button></div>
+              <pre>``` Your existing "rare application consent" rule, whatever it looks like ```
+your_existing_rare_consent_search
+
+``` Drop apps that are on the compliance feed - first-party + well-known SaaS ```
+| `oauthsentry_compliance_lookup`
+| where isnull(oas_compliance_category)
+
+``` Optionally: positively flag the malicious / risky tier so the alert lands ```
+``` already-tiered rather than as a flat "rare app" stream ```
+| `oauthsentry_malicious_lookup`
+| `oauthsentry_risky_lookup`
+| eval tier = case(
+    oas_category="malicious",               "confirmed-malicious",
+    isnotnull(oas_risky_category),          "legit-but-abusable",
+    true(),                                 "truly-unknown")</pre>
+            </div>
+
+            <h4>Pattern 4: correlate OAuth events with downstream attacker behavior</h4>
+            <p>Attackers who compromise an account via OAuth consent typically pivot within 24-72 hours: enumerate the directory, create inbox forwarding rules, delete mail traces, exfil files. If you have rules for those downstream behaviors, a backward-look subsearch into recent consent events lets you escalate severity when both halves of the chain are present in the same window.</p>
+            <div class="code-block">
+              <div class="code-header">SPL - downstream-behavior backward-look<button class="copy-snippet" type="button">copy</button></div>
+              <pre>``` Your existing rule for downstream behavior - inbox rule creation, ```
+``` directory enumeration, bulk file access, anything attacker-typical. ```
+your_existing_downstream_search
+| eval upn = lower(userPrincipalName)
+
+``` Look back 72h: did this same user consent to a non-compliance app? ```
+| join type=left upn [
+    search `oauthsentry_o365_audit` Operation="Consent to application" earliest=-72h
+    | spath path=ModifiedProperties{}.NewValue output=mp_values
+    | rex field=mp_values "(?&lt;recent_appid&gt;[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})"
+    | eval upn = lower(UserId)
+    | `oauthsentry_compliance_lookup`
+    | where isnull(oas_compliance_category)
+    | stats values(recent_appid) as recent_consent_appids by upn
+  ]
+
+``` If both halves chained, severity escalates ```
+| eval severity = if(isnotnull(recent_consent_appids), "P1-chained", "P3-standalone")</pre>
+            </div>
+
+            <div class="callout">
+              <strong>One pattern per rule, not all four</strong>
+              These patterns are alternatives, not a stack. Pick the one that fits each rule. Rules with a hand-maintained list of bad app ids want pattern 1. Rules that already fire on a real signal want pattern 2. Baseline-driven "rare X" rules want pattern 3. Downstream-behavior rules want pattern 4. Mixing patterns 1 and 3 on the same rule (replace lookup AND suppress with compliance) is fine and common; the others usually don't combine cleanly.
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== Hunting ===== -->
+        <div class="invest-section" id="sub-hunting" hidden>
+          <div class="doc-block">
+            <h2>Hunting playbooks</h2>
+            <p class="doc-lede">Detections fire on known-bad. Hunts find unknown-bad. These are scheduled queries that surface anomalies for triage rather than auto-page. Each is built around a baseline of "what is normal in this tenant" - run them weekly, review the deltas, promote anything actionable into the Detections tab.</p>
+
+            <h3><span class="num">1</span> Newly observed application IDs</h3>
+            <p>The single highest-value hunt. Any app id seen authenticating in your tenant for the first time in 90 days deserves a look, regardless of whether it's a malicious app, a risky-bucket app, or a legitimate one being adopted by a department.</p>
+            <div class="code-block">
+              <div class="code-header">SPL<button class="copy-snippet" type="button">copy</button></div>
+              <pre>``` Run weekly. Lookback: last 7 days vs prior 90. ```
+`oauthsentry_aad_sp_signin` resultType="0" earliest=-7d
+| eval appid = lower(appId)
+| stats earliest(_time) as first_seen
+        dc(uniqueTokenIdentifier)    as token_count
+        values(ipAddress)            as ips
+        values(location)             as countries
+        values(resourceDisplayName)  as resources
+        values(servicePrincipalName) as sp_name
+        values(appOwnerTenantId)     as owner_tenants
+    by appid
+
+``` Drop apps that have signed in in the prior 90 days. ```
+| search NOT [
+    search `oauthsentry_aad_sp_signin` resultType="0" earliest=-97d latest=-7d
+    | eval appid = lower(appId)
+    | dedup appid
+    | fields appid
+  ]
+
+``` Tag Microsoft first-party tenants so triage can focus on third-party apps. ```
+| eval owner_known = if(isnotnull(mvfind(owner_tenants,
+        "f8cdef31-a31e-4b4a-93e4-5f571e91255a|72f988bf-86f1-41af-91ab-2d7cd011db47")),
+        "microsoft", "third-party")
+| convert ctime(first_seen)
+| sort first_seen</pre>
+            </div>
+
+            <h3><span class="num">2</span> FOCI app spike from anomalous geography</h3>
+            <p>TeamFiltration / UNK_SneakyStrike abuses family refresh tokens by signing in to multiple FOCI apps in quick succession from rotating AWS regions. The signature is a non-interactive sign-in surge against several of the family client IDs from a country the user has never signed in from before. (Note: Microsoft Authentication Broker <code>29d9ed98-a469-4536-ade2-f981bc1d605e</code> is not on Secureworks' canonical FOCI list - it's a separate device-code phishing vector. The companion query at the bottom hunts that path.)</p>
+            <div class="code-block">
+              <div class="code-header">SPL<button class="copy-snippet" type="button">copy</button></div>
+              <pre>`oauthsentry_aad_signin` category=NonInteractiveUserSignInLogs resultType="0" earliest=-7d
+    appId IN (
+      "04b07795-8ddb-461a-bbee-02f9e1bf7b46",   ``` Azure CLI ```
+      "1950a258-227b-4e31-a9cf-717495945fc2",   ``` Azure PowerShell ```
+      "1fec8e78-bce4-4aaf-ab1b-5451cc387264",   ``` Microsoft Teams ```
+      "d3590ed6-52b3-4102-aeff-aad2292ab01c",   ``` Microsoft Office ```
+      "ab9b8c07-8f02-4f72-87fa-80105867a763",   ``` OneDrive SyncEngine ```
+      "27922004-5251-4030-b22d-91ecd9a37ea4",   ``` Outlook Mobile ```
+      "4813382a-8fa7-425e-ab75-3b753aab3abb",   ``` Authenticator App ```
+      "872cd9fa-d31f-45e0-9eab-6e460a02d1f1",   ``` Visual Studio ```
+      "00b41c95-dab0-4487-9791-b9d2c32c80f2",   ``` Office 365 Management ```
+      "af124e86-4e96-495a-b70a-90f90ab96707",   ``` OneDrive iOS App ```
+      "26a7ee05-5602-4d76-a7ba-eae8b7b67941"    ``` Windows Search ```
+    )
+| eval upn = lower(userPrincipalName)
+| eval country = location
+
+``` Anti-join against the prior 180 days of (user, country) pairs. ```
+| join type=leftanti upn, country [
+    search `oauthsentry_aad_signin` category=NonInteractiveUserSignInLogs resultType="0"
+           earliest=-187d latest=-7d
+    | eval upn = lower(userPrincipalName)
+    | eval country = location
+    | dedup upn, country
+    | fields upn, country
+  ]
+
+``` Group by user-and-hour, fire when 3+ FOCI apps appear in the same hour. ```
+| bin _time span=1h
+| stats dc(appId)              as foci_app_count
+        values(appDisplayName) as apps
+        values(ipAddress)      as ips
+        any(country)           as country
+        count                  as sign_ins
+    by upn, _time
+| where foci_app_count &gt;= 3
+| convert ctime(_time)
+| sort - sign_ins
+
+``` Companion hunt: device-code phishing via Microsoft Authentication Broker (UTA0355 / Storm-2372). ```
+``` MAB is not FOCI, but it's the standard PRT-issuance client and the most commonly phished one. ```
+`oauthsentry_aad_signin` appId="29d9ed98-a469-4536-ade2-f981bc1d605e"
+    authenticationProtocol=deviceCode resultType="0" earliest=-7d
+| table _time userPrincipalName ipAddress location resourceDisplayName 'deviceDetail.deviceId'
+| sort _time</pre>
+            </div>
+
+            <h3><span class="num">3</span> Service principals signing in from a single IP only</h3>
+            <p>Service principals are usually accessed by automation that has stable infrastructure: an SP that has only ever been seen from one IP in the last 30 days is unusual. Combined with low call volume, it's a candidate for an attacker-mounted credential.</p>
+            <div class="code-block">
+              <div class="code-header">SPL<button class="copy-snippet" type="button">copy</button></div>
+              <pre>`oauthsentry_aad_sp_signin` resultType="0" earliest=-30d
+| eval appid = lower(appId)
+
+``` eventstats annotates each event with the dc(ipAddress) for its appid; we then keep only events for apps with ip_count = 1. ```
+| eventstats dc(ipAddress) as ip_count by appid
+| where ip_count = 1
+
+| stats count                        as sign_ins
+        values(ipAddress)            as src_ip
+        values(servicePrincipalName) as sp_name
+        earliest(_time)              as first_seen
+        latest(_time)                as last_seen
+    by appid
+| where sign_ins &lt; 50   ``` tune to your tenant volume ```
+| convert ctime(first_seen) ctime(last_seen)
+| sort first_seen</pre>
+            </div>
+
+            <h3><span class="num">4</span> Federated identity credential added to an application</h3>
+            <p>Federated credentials are subtle persistence: there is no client secret to spot in a credential audit, the credential record is small, and to the audit log it looks like a routine application update. Run weekly across the whole tenant; the volume should be near zero in most environments. Field paths assume Azure Monitor diagnostic stream layout (<code>properties.targetResources[].modifiedProperties[]</code>); see the tuning note below if your TA flattens them differently.</p>
+            <div class="code-block">
+              <div class="code-header">SPL<button class="copy-snippet" type="button">copy</button></div>
+              <pre>`oauthsentry_aad_audit` earliest=-7d
+| eval Operation = replace(coalesce(operationName, Operation), "\.$", "")
+| where Operation IN ("Add federated identity credential",
+                       "Update federated identity credential")
+
+``` Pull modifiedProperties out of properties.targetResources[0].modifiedProperties[] ```
+| spath path="properties.targetResources{}.modifiedProperties{}.displayName" output=mp_names
+| spath path="properties.targetResources{}.modifiedProperties{}.newValue"    output=mp_values
+| spath path="properties.targetResources{}.displayName"                      output=app_names
+
+``` Initiator can be a user or another app (e.g. an automation pipeline) ```
+| spath path="properties.initiatedBy.user.userPrincipalName" output=user_init
+| spath path="properties.initiatedBy.app.displayName"        output=app_init
+| eval initiator = coalesce(user_init, app_init)
+| eval app_name  = mvindex(app_names, 0)
+
+| eval issuer_idx  = mvfind(mp_names, "(?i)^issuer$")
+| eval issuer      = mvindex(mp_values, issuer_idx)
+| eval subject_idx = mvfind(mp_names, "(?i)^subject$")
+| eval subject     = mvindex(mp_values, subject_idx)
+
+| table _time Operation initiator app_name issuer subject correlationId
+| sort - _time</pre>
+            </div>
+
+            <h3><span class="num">5</span> Actor Token Forgery retrospective hunt (CVE-2025-55241)</h3>
+            <p>Patched September 2025, but pre-patch abuse leaves few traces. The cleanest residual signal: an audit-log action where the <code>initiatedBy.user.displayName</code> matches a Microsoft service name (<em>Office 365 Exchange Online</em>, <em>Microsoft Graph</em>, etc.) but the <code>userPrincipalName</code> is a real human's UPN. Microsoft services don't sign in as humans.</p>
+            <div class="code-block">
+              <div class="code-header">SPL<button class="copy-snippet" type="button">copy</button></div>
+              <pre>``` Go back as far as your retention allows. ```
+`oauthsentry_aad_audit` earliest=-180d
+| spath path="properties.initiatedBy.user.userPrincipalName" output=upn_raw
+| spath path="properties.initiatedBy.user.displayName"       output=svc_name
+| where isnotnull(upn_raw)
+| eval upn = lower(upn_raw)
+
+``` The mismatch is the smoking gun: service-name initiator + real-looking UPN. ```
+| where svc_name IN (
+    "Office 365 Exchange Online", "Microsoft Graph",
+    "Office 365 SharePoint Online", "Skype for Business Online",
+    "Microsoft Teams Services", "Microsoft Intune",
+    "Azure Multi-Factor Auth Client", "Microsoft Office 365 Portal"
+  )
+| where match(upn, "^[^@]+@[^@]+\.[a-z]+$")
+
+``` Drop the legitimate combo of MS-tenant onmicrosoft.com UPNs running MS service ops. ```
+| where NOT (match(upn, "@onmicrosoft\.com$") AND match(svc_name, "(?i)^Microsoft"))
+
+| eval Operation = replace(coalesce(operationName, Operation), "\.$", "")
+| table _time Operation svc_name upn correlationId
+| sort _time</pre>
+            </div>
+
+            <h3><span class="num">6</span> Service principal credential added without a corresponding privileged role</h3>
+            <p>Adding a credential to a service principal is sometimes legitimate (admin rotating a secret). It is suspicious when the initiator does not currently hold a role that would justify it. Joins audit logs against role-membership audits.</p>
+            <div class="code-block">
+              <div class="code-header">SPL<button class="copy-snippet" type="button">copy</button></div>
+              <pre>`oauthsentry_aad_audit` earliest=-30d
+| eval Operation = replace(coalesce(operationName, Operation), "\.$", "")
+| where Operation IN ("Add service principal credentials",
+                       "Update application - Certificates and secrets management")
+
+| spath path="properties.targetResources{}.id"               output=tgt_ids
+| spath path="properties.targetResources{}.displayName"      output=tgt_names
+| spath path="properties.initiatedBy.user.id"                output=init_id
+| spath path="properties.initiatedBy.user.userPrincipalName" output=init_upn
+| eval sp_id   = mvindex(tgt_ids, 0)
+| eval sp_name = mvindex(tgt_names, 0)
+
+``` Anti-join: drop initiators who hold a privileged role assignment. ```
+| join type=leftanti init_id [
+    search `oauthsentry_aad_audit` earliest=-365d
+    | eval Operation = replace(coalesce(operationName, Operation), "\.$", "")
+    | where Operation = "Add member to role"
+    | spath path="properties.targetResources{}.modifiedProperties{}.newValue" output=role_changes
+    | where match(mvjoin(role_changes, " "),
+        "(?i)Application Administrator|Cloud Application Administrator|Global Administrator|Privileged Role Administrator")
+    | spath path="properties.targetResources{}.id" output=role_target_id
+    | eval init_id = mvindex(role_target_id, 0)
+    | dedup init_id
+    | fields init_id
+  ]
+
+| table _time sp_name sp_id init_upn correlationId
+| sort - _time</pre>
+            </div>
+
+            <h3><span class="num">7</span> CAE-aware token issuance to anomalous (user, IP) pairs</h3>
+            <p>From AADInternals research. CAE tokens last ~24-28h instead of ~1h - normally a security feature, but attackers prefer them when available because they survive longer between forced re-authentications. Hunt for sign-ins issuing CAE-aware tokens to (user, IP) combinations not seen in the prior 180 days.</p>
+            <div class="code-block">
+              <div class="code-header">SPL<button class="copy-snippet" type="button">copy</button></div>
+              <pre>`oauthsentry_aad_signin` (category=SignInLogs OR category=NonInteractiveUserSignInLogs) earliest=-7d
+
+``` AuthenticationProcessingDetails is an array of {key, value} pairs; pull "Is CAE Token". ```
+| spath path="properties.authenticationProcessingDetails{}.key"   output=apd_keys
+| spath path="properties.authenticationProcessingDetails{}.value" output=apd_values
+| eval cae_idx = mvfind(apd_keys, "(?i)Is CAE Token")
+| where isnotnull(cae_idx)
+| eval is_cae = lower(mvindex(apd_values, cae_idx))
+| where is_cae = "true"
+
+| eval upn = lower(userPrincipalName)
+
+``` Drop (user, IP) pairs that are already familiar in the last 180 days. ```
+| join type=leftanti upn, ipAddress [
+    search `oauthsentry_aad_signin` category=SignInLogs earliest=-187d latest=-7d
+    | eval upn = lower(userPrincipalName)
+    | dedup upn, ipAddress
+    | fields upn, ipAddress
+  ]
+
+| table _time upn appId appDisplayName resourceIdentity ipAddress location uniqueTokenIdentifier
+| sort _time</pre>
+            </div>
+
+            <h3><span class="num">8</span> Non-developer principals using developer-tool app IDs</h3>
+            <p>A senior accountant using Visual Studio Code? Possible. A senior accountant using Azure CLI for the first time ever? Almost certainly not. The ConsentFix campaign and UTA0352 both exploit pre-consented developer-tool apps that ordinary users have no business touching.</p>
+            <div class="code-block">
+              <div class="code-header">SPL<button class="copy-snippet" type="button">copy</button></div>
+              <pre>`oauthsentry_aad_signin` (category=SignInLogs OR category=NonInteractiveUserSignInLogs)
+    resultType="0" earliest=-14d
+    appId IN (
+      "04b07795-8ddb-461a-bbee-02f9e1bf7b46",   ``` Azure CLI ```
+      "1950a258-227b-4e31-a9cf-717495945fc2",   ``` Azure PowerShell ```
+      "aebc6443-996d-45c2-90f0-388ff96faa56",   ``` Visual Studio Code ```
+      "04f0c124-f2bc-4f59-8241-bf6df9866bbd",   ``` Visual Studio ```
+      "872cd9fa-d31f-45e0-9eab-6e460a02d1f1"    ``` Visual Studio (older client) ```
+    )
+| eval upn = lower(userPrincipalName)
+
+``` Drop users who already use any of these apps in the prior 180 days. ```
+| join type=leftanti upn [
+    search `oauthsentry_aad_signin` (category=SignInLogs OR category=NonInteractiveUserSignInLogs)
+           resultType="0" earliest=-194d latest=-14d
+        appId IN (
+          "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+          "1950a258-227b-4e31-a9cf-717495945fc2",
+          "aebc6443-996d-45c2-90f0-388ff96faa56",
+          "04f0c124-f2bc-4f59-8241-bf6df9866bbd",
+          "872cd9fa-d31f-45e0-9eab-6e460a02d1f1"
+        )
+    | eval upn = lower(userPrincipalName)
+    | dedup upn
+    | fields upn
+  ]
+
+| table _time upn appDisplayName appId ipAddress location userAgent authenticationProtocol
+| sort _time</pre>
+            </div>
+
+            <div class="callout">
+              <strong>Why these are hunts, not alerts</strong>
+              Each query above will produce hits in a healthy tenant - new tools get adopted, legitimate admins do rotate secrets, business travel means new geographies. The value is review cadence, not auto-paging. A weekly hunting review with 20-50 candidate entries is normal; if you can't get through that volume, raise the threshold rather than ignore the queue. Anything that fires repeatedly with the same context can graduate into the Detections tab as a high-fidelity rule.
+            </div>
+
+            <div class="callout">
+              <strong>Field-path tuning</strong>
+              Hunts 4, 5, 6, 7 use the Azure Monitor diagnostic-stream layout where audit-log properties are nested under <code>properties.</code> (e.g. <code>properties.targetResources{}.modifiedProperties{}</code>). If your TA aliases or flattens these to top-level fields, drop the <code>properties.</code> prefix in the <code>spath</code> calls. Hunts 1, 2, 3, 8 use top-level Azure sign-in fields (<code>appId</code>, <code>userPrincipalName</code>, <code>ipAddress</code>) which are stable across both the Splunk Add-on for Microsoft Cloud Services and the older Azure add-ons.
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== Hardening ===== -->
+        <div class="invest-section" id="sub-hardening" hidden>
+          <div class="doc-block">
+            <h2>Hardening - preventing the next attack</h2>
+            <p class="doc-lede">The detections and hunts in the preceding tabs find attacks in progress. These controls reduce the attack surface so they happen less often. Roughly ordered by impact-per-effort: do the first three this quarter; the rest are months-of-work, multi-team programmes.</p>
+
+            <h3><span class="num">1</span> Restrict end-user OAuth consent</h3>
+            <p>Default Entra setting until 2024 was that any user could consent to any app for any scope. Change this so users can only consent to verified-publisher apps requesting low-risk scopes; everything else routes through admin-consent workflow. Single highest-impact OAuth control.</p>
+            <div class="code-block">
+              <div class="code-header">PowerShell - Microsoft Graph SDK<button class="copy-snippet" type="button">copy</button></div>
+              <pre>Connect-MgGraph -Scopes "Policy.ReadWrite.Authorization"
+
+# Allow users to consent only to apps from verified publishers, low-risk scopes.
+# Use the canonical -BodyParameter pattern with camelCase field names.
+$params = @{
+  defaultUserRolePermissions = @{
+    permissionGrantPoliciesAssigned = @(
+      "managePermissionGrantsForSelf.microsoft-user-default-low"
+    )
+  }
+}
+Update-MgPolicyAuthorizationPolicy -BodyParameter $params
+
+# Or block end-user consent entirely (safest, but creates admin-consent backlog):
+# $params = @{
+#   defaultUserRolePermissions = @{
+#     permissionGrantPoliciesAssigned = @()
+#   }
+# }
+# Update-MgPolicyAuthorizationPolicy -BodyParameter $params
+
+# Enable the admin-consent request workflow so users can ask. Note: this cmdlet
+# expects the $reviewerSettings list of users/groups/roles - replace the placeholder.
+Update-MgPolicyAdminConsentRequestPolicy `
+  -IsEnabled:$true `
+  -NotifyReviewers:$true `
+  -RemindersEnabled:$true `
+  -RequestDurationInDays 30 `
+  -Reviewers @(
+    @{
+      Query     = "/users/&lt;reviewer-upn&gt;"
+      QueryType = "MicrosoftGraph"
+      QueryRoot = $null
+    }
+  )</pre>
+            </div>
+
+            <h3><span class="num">2</span> Apply app instance property lock to every app you own</h3>
+            <p>Enabled by default since March 2024 for new apps, but legacy apps registered before then need backfill. The lock blocks adding credentials to the service principal in any tenant once the app is provisioned, defeating the SP credential backdoor technique used in Solorigate / Midnight Blizzard / "Misowned and Dangerous".</p>
+            <div class="code-block">
+              <div class="code-header">PowerShell<button class="copy-snippet" type="button">copy</button></div>
+              <pre>Connect-MgGraph -Scopes "Application.ReadWrite.All"
+
+# All multi-tenant apps registered before March 2024 with no lock configured
+$apps = Get-MgApplication -All |
+  Where-Object {
+    $_.SignInAudience -ne "AzureADMyOrg" -and
+    -not $_.ServicePrincipalLockConfiguration.IsEnabled
+  }
+
+# Canonical Microsoft pattern: -BodyParameter with camelCase property names.
+# isEnabled + allProperties = true is the maximum-restriction shorthand;
+# it implicitly locks credentials and tokenEncryptionKeyId without naming them.
+foreach ($app in $apps) {
+  Write-Host "Locking $($app.DisplayName)"
+  $params = @{
+    servicePrincipalLockConfiguration = @{
+      isEnabled     = $true
+      allProperties = $true
+    }
+  }
+  Update-MgApplication -ApplicationId $app.Id -BodyParameter $params
+}
+
+# If you need fine-grained locking (e.g. to allow tokenEncryptionKeyId changes
+# but block credential additions), name each property explicitly instead:
+#   servicePrincipalLockConfiguration = @{
+#     isEnabled                   = $true
+#     credentialsWithUsageVerify  = $true
+#     credentialsWithUsageSign    = $true
+#     tokenEncryptionKeyId        = $false
+#   }</pre>
+            </div>
+
+            <h3><span class="num">3</span> Block device-code flow in Conditional Access</h3>
+            <p>Storm-2372 and the Russian campaigns Volexity tracked all rely on device-code phishing. Unless you have remote IoT devices that authenticate via device-code, block the flow. Note this also affects some legitimate scenarios (some printer auth, some old PowerShell modules) - test in report-only mode first.</p>
+            <div class="code-block">
+              <div class="code-header">PowerShell<button class="copy-snippet" type="button">copy</button></div>
+              <pre>Connect-MgGraph -Scopes "Policy.ReadWrite.ConditionalAccess"
+
+$params = @{
+  DisplayName = "Block device-code flow (with Helpdesk exception)"
+  State       = "enabledForReportingButNotEnforced"   # change to "enabled" after pilot
+  Conditions  = @{
+    ClientAppTypes      = @("all")
+    Applications        = @{ IncludeApplications = @("All") }
+    Users               = @{
+      IncludeUsers      = @("All")
+      ExcludeGroups     = @("&lt;helpdesk-break-glass-group-id&gt;")
+    }
+    AuthenticationFlows = @{
+      TransferMethods   = "deviceCodeFlow"
+    }
+  }
+  GrantControls = @{
+    Operator          = "OR"
+    BuiltInControls   = @("block")
+  }
+}
+
+New-MgIdentityConditionalAccessPolicy -BodyParameter $params</pre>
+            </div>
+
+            <h3><span class="num">4</span> Conditional Access for workload identities (Entra ID P1+)</h3>
+            <p>Service principals can be put under CA policies just like users. Common pattern: high-privilege SPs only authenticate from named locations (your build farm, your hosted automation tenant). Stops a stolen client secret from being usable from the open internet. Requires Entra ID Workload Identities Premium.</p>
+            <div class="code-block">
+              <div class="code-header">PowerShell<button class="copy-snippet" type="button">copy</button></div>
+              <pre>$params = @{
+  DisplayName = "SPs from corporate egress only"
+  State       = "enabled"
+  Conditions  = @{
+    ClientAppTypes = @("all")
+    Applications   = @{ IncludeApplications = @("All") }
+    ClientApplications = @{
+      IncludeServicePrincipals = @("ServicePrincipalsInMyTenant")
+    }
+    Locations = @{
+      IncludeLocations = @("All")
+      ExcludeLocations = @("&lt;named-corporate-egress-id&gt;")
+    }
+  }
+  GrantControls = @{
+    Operator        = "OR"
+    BuiltInControls = @("block")
+  }
+}
+New-MgIdentityConditionalAccessPolicy -BodyParameter $params</pre>
+            </div>
+
+            <h3><span class="num">5</span> Make Continuous Access Evaluation strict</h3>
+            <p>CAE is on by default in opportunistic mode: if the client supports it, near-real-time revocation works; if not, it falls back to one-hour tokens. <em>Strict enforcement</em> mode requires CAE-aware clients and rejects access otherwise - close to a hard guarantee that revoking a refresh token actually evicts the attacker. Trade-off: legacy clients that haven't been updated to be CAE-aware will break. Pilot first.</p>
+            <p>Configure under <strong>Conditional Access &rarr; Session controls &rarr; Customize continuous access evaluation &rarr; Strictly enforce location policies</strong>.</p>
+
+            <h3><span class="num">6</span> Review and remove unowned / unsafe app ownerships</h3>
+            <p>The "Misowned and Dangerous" attack is impossible if no standard user owns an SP that has a privileged role. Hunt for the combination, then either remove the user's ownership or remove the privileged role from the SP.</p>
+            <div class="code-block">
+              <div class="code-header">PowerShell<button class="copy-snippet" type="button">copy</button></div>
+              <pre>Connect-MgGraph -Scopes "Application.Read.All","Directory.Read.All",
+                       "RoleManagement.Read.Directory"
+
+$privilegedRoleIds = (Get-MgDirectoryRole | Where-Object {
+  $_.DisplayName -in @(
+    "Global Administrator","Privileged Role Administrator",
+    "Application Administrator","Cloud Application Administrator",
+    "Privileged Authentication Administrator","User Administrator",
+    "Exchange Administrator","SharePoint Administrator")
+}).Id
+
+$findings = @()
+foreach ($sp in Get-MgServicePrincipal -All) {
+  $assignments = Get-MgRoleManagementDirectoryRoleAssignment `
+    -Filter "principalId eq '$($sp.Id)'"
+  if (-not $assignments) { continue }
+
+  $privAssignments = $assignments | Where-Object {
+    $_.RoleDefinitionId -in $privilegedRoleIds
+  }
+  if (-not $privAssignments) { continue }
+
+  $owners = Get-MgServicePrincipalOwner -ServicePrincipalId $sp.Id
+  foreach ($o in $owners) {
+    $findings += [pscustomobject]@{
+      ServicePrincipal = $sp.DisplayName
+      AppId            = $sp.AppId
+      Roles            = ($privAssignments.RoleDefinitionId -join ", ")
+      OwnerUpn         = $o.AdditionalProperties.userPrincipalName
+      OwnerId          = $o.Id
+    }
+  }
+}
+$findings | Sort-Object ServicePrincipal | Format-Table -AutoSize</pre>
+            </div>
+
+            <h3><span class="num">7</span> Enable Microsoft Graph activity logs</h3>
+            <p>Off by default. Without them you can prove the malicious app got a token but not what it did with it. Stream <code>MicrosoftGraphActivityLogs</code> via Azure Monitor diagnostic settings to whatever destination feeds your Splunk index (typically Event Hub for the Splunk Add-on for Microsoft Cloud Services, or a Storage Account for the older HTTP Event Collector flow); budget for ~10-20% extra volume on a busy tenant.</p>
+            <div class="code-block">
+              <div class="code-header">PowerShell<button class="copy-snippet" type="button">copy</button></div>
+              <pre># Enable diagnostic setting at tenant scope. The category names below are
+# Azure Monitor diagnostic categories (not Splunk sourcetypes); they stay the
+# same regardless of which destination you ship them to.
+$diag = @{
+  name             = "GraphActivityToSplunk"
+  eventHubAuthRule = "/subscriptions/&lt;sub&gt;/resourceGroups/&lt;rg&gt;/providers/" +
+                     "Microsoft.EventHub/namespaces/&lt;ns&gt;/authorizationRules/RootManageSharedAccessKey"
+  eventHubName     = "azure-diagnostics"
+  logs             = @(
+    @{ category = "MicrosoftGraphActivityLogs";   enabled = $true }
+    @{ category = "AuditLogs";                    enabled = $true }
+    @{ category = "SignInLogs";                   enabled = $true }
+    @{ category = "NonInteractiveUserSignInLogs"; enabled = $true }
+    @{ category = "ServicePrincipalSignInLogs";   enabled = $true }
+  )
+}
+# Apply via the Entra portal: Identity &gt; Monitoring &amp; health &gt; Diagnostic settings &gt;
+# Add diagnostic setting &gt; select all categories &gt; route to your Event Hub /
+# Storage Account, then point the Splunk Add-on for Microsoft Cloud Services at it.</pre>
+            </div>
+
+            <h3><span class="num">8</span> Audit Intune / DeviceManagementConfiguration permissions</h3>
+            <p>Mandiant's 2024 research showed that an SP holding <code>DeviceManagementConfiguration.ReadWrite.All</code> can push scripts to Intune-managed Privileged Access Workstations and execute arbitrary code as SYSTEM. Treat this scope, plus <code>RoleManagement.ReadWrite.Directory</code>, <code>AppRoleAssignment.ReadWrite.All</code>, and <code>Application.ReadWrite.All</code>, as Tier-0 - inventory every SP with them.</p>
+            <div class="code-block">
+              <div class="code-header">PowerShell<button class="copy-snippet" type="button">copy</button></div>
+              <pre>$tier0Scopes = @(
+  "DeviceManagementConfiguration.ReadWrite.All",
+  "RoleManagement.ReadWrite.Directory",
+  "AppRoleAssignment.ReadWrite.All",
+  "Application.ReadWrite.All",
+  "Directory.ReadWrite.All",
+  "Mail.ReadWrite", "Files.ReadWrite.All"
+)
+$graphSp = Get-MgServicePrincipal -Filter "appId eq '00000003-0000-0000-c000-000000000000'"
+
+$tier0AppRoleIds = $graphSp.AppRoles |
+  Where-Object { $_.Value -in $tier0Scopes } |
+  Select-Object Id, Value
+
+Get-MgServicePrincipal -All | ForEach-Object {
+  $sp = $_
+  $assignments = Get-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $sp.Id |
+    Where-Object { $_.AppRoleId -in $tier0AppRoleIds.Id }
+  foreach ($a in $assignments) {
+    [pscustomobject]@{
+      Sp        = $sp.DisplayName
+      AppId     = $sp.AppId
+      Scope     = ($tier0AppRoleIds | Where-Object { $_.Id -eq $a.AppRoleId }).Value
+      Resource  = $a.ResourceDisplayName
+    }
+  }
+} | Format-Table -AutoSize</pre>
+            </div>
+
+            <h3><span class="num">9</span> Cross-tenant access settings - default to deny</h3>
+            <p>Cross-tenant access settings define which other tenants can access yours. The default is permissive (any tenant). Lock this down: explicit allow-list of partner tenants, with B2B collaboration restricted to specific groups.</p>
+            <p>Configure under <strong>Entra admin center &rarr; External Identities &rarr; Cross-tenant access settings &rarr; Default settings</strong>. Set inbound and outbound to <em>Block access</em>, then add explicit organisation entries for each legitimate partner.</p>
+
+            <h3><span class="num">10</span> Quarterly OAuth review checklist</h3>
+            <p>Cadence ritual. Block 90 minutes per quarter for the IAM team:</p>
+            <ul class="checklist">
+              <li><strong>Pull all Tier-0 SPs</strong> via the script in step 8 - do all of them still need that scope?</li>
+              <li><strong>Owner audit</strong> via step 6 - any new owners in the last 90 days?</li>
+              <li><strong>Stale credentials</strong> - any SP with a client secret older than your rotation policy? Any SP with credentials it has not used in &gt;90 days?</li>
+              <li><strong>Verified publisher gap</strong> - which non-verified-publisher apps have any user consents? Move them to admin-consent.</li>
+              <li><strong>Cross-tenant settings</strong> - new partner tenants added since last review? Decommissioned but still trusted?</li>
+              <li><strong>OAuthSentry feed</strong> - is the daily ingestion working? When was the last malicious-feed update detected by your SIEM?</li>
+            </ul>
+
+            <h3><span class="num">11</span> Continuous validation with Maester</h3>
+            <p>The quarterly checklist above is human-paced and forgets things. <a href="https://maester.dev/">Maester</a> (Merill Fernando, Fabian Bader, Thomas Naunheim, Mike Soule and contributors) is an open-source PowerShell + Pester test framework that turns each Entra security control into a daily-runnable test - currently used by 128,000+ tenants. The relevant tests for the controls in this tab ship out of the box; pin them to a CI pipeline and you get a fail-the-build signal the moment one regresses.</p>
+            <table class="kv-table">
+              <thead><tr><th>OAuthSentry control</th><th>Maester test that validates it</th></tr></thead>
+              <tbody>
+                <tr><td>1. Restrict user consent (this tab)</td><td class="mono">Test-MtCisaAppUserConsent, EIDSCA.AP08, EIDSCA.AP09, EIDSCA.CP03, EIDSCA.CP04</td></tr>
+                <tr><td>1. Admin-consent workflow enabled</td><td class="mono">EIDSCA.CR01, EIDSCA.CR02, EIDSCA.CR03, EIDSCA.CR04</td></tr>
+                <tr><td>2. App instance property lock</td><td class="mono">Test-MtServicePrincipalsForAllUsers (third-party SPs open to all users)</td></tr>
+                <tr><td>4. Workload identity Conditional Access</td><td class="mono">Test-MtSpExchangeAppAccessPolicy (SPs with Exchange permissions have ApplicationAccessPolicy)</td></tr>
+                <tr><td>6. Application ownership audit</td><td class="mono">Test-MtXspmAppRegWithPrivilegedApiAndOwners</td></tr>
+                <tr><td>3, 5. CA hygiene (block device-code, CAE strict)</td><td class="mono">Test-MtCisaBlockHighRiskSignIn, Test-MtCisaBlockHighRiskUser, plus the full <code>-Tag CA</code> suite</td></tr>
+              </tbody>
+            </table>
+            <div class="code-block">
+              <div class="code-header">PowerShell - Maester one-time setup<button class="copy-snippet" type="button">copy</button></div>
+              <pre>Install-Module Maester -Scope CurrentUser
+md ~/maester-tests; cd ~/maester-tests
+Install-MaesterTests       # pulls EIDSCA + CISA + Maester tests
+
+Connect-Maester            # interactive sign-in, requests read-only Graph scopes
+Invoke-Maester             # runs everything, writes ./test-results/TestResults.html
+Invoke-Maester -Tag App    # OAuth/app-related tests only
+
+# Production: wire it into GitHub Actions or Azure DevOps with workload identity
+# federation (no secrets) per https://maester.dev/docs/monitoring/ - daily run,
+# email/Teams notification on regression.</pre>
+            </div>
+            <p>For Conditional Access specifically, Jasper Baes' <a href="https://github.com/jasperbaes/Conditional-Access-Validator">Conditional Access Validator</a> generates Maester tests automatically from your existing CA policies - useful when you've inherited a tenant and want a baseline of what's currently enforced before changing anything.</p>
+          </div>
+        </div>
+
+        <!-- ===== Google Workspace ===== -->
+        <div class="invest-section" id="sub-google" hidden>
+          <div class="doc-block">
+            <h2>OAuth abuse against Google Workspace</h2>
+            <p class="doc-lede">Google Workspace's OAuth threat surface is smaller than Entra's but the same class of attack works: a user grants a third-party app access to Gmail, Drive or Contacts, and the attacker exfiltrates from cloud-to-cloud without ever touching the endpoint. The two in-the-wild cases that drive OAuthSentry's malicious feed today (Salesloft Drift / UNC6395 in August 2025, and Context.ai / Vercel in April 2026) both followed this pattern. This subtab covers the audit trail, detection queries and revocation tooling specific to Google.</p>
+
+            <h3><span class="num">1</span> Tradecraft and known-bad apps</h3>
+            <p>The attack pattern Google Workspace defenders should expect:</p>
+            <ul>
+              <li><strong>Vendor compromise pivot.</strong> Attacker steals OAuth tokens from a SaaS integration vendor (Salesloft Drift, Context.ai, marketing automation tools) and uses those tokens to read Gmail / Drive / Contacts at scale across every customer that consented to the integration. Detection has to start at the token activity level - the user did consent legitimately, just to a now-compromised vendor.</li>
+              <li><strong>Mass-mailer phishing apps.</strong> Lookalike apps with names like "Google Docs", "Google Drive", "Office Suite Helper" that request <code>https://www.googleapis.com/auth/contacts</code> + <code>https://www.googleapis.com/auth/gmail.send</code>. Once consented, the app reads contacts, sends the same consent prompt to every contact, and propagates virally. The 2017 "Google Docs" worm is the canonical example - the attack still works because the consent prompt is generic.</li>
+              <li><strong>OAuth grant for full mailbox via IMAP.</strong> The legacy scope <code>https://mail.google.com/</code> grants full mailbox access (read, send, delete) and bypasses Gmail's API per-message audit. Apps requesting this scope are almost always either legitimate desktop mail clients (Outlook, Thunderbird, eM Client, Apple Mail) or attacker tools mimicking them. The clue is the <code>client_type</code> and the scope set.</li>
+            </ul>
+
+            <p>The two app IDs OAuthSentry currently classifies as malicious for Google Workspace:</p>
+            <table class="kv-table">
+              <thead><tr><th>App</th><th>Client ID</th><th>Why</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td>Context.ai / AI Office Suite</td>
+                  <td class="mono">110671459871-30f1spbu0hptbs60cb4vsmv79i7bbvqj.apps.googleusercontent.com</td>
+                  <td>OAuth client behind Context.ai's deprecated AI Office Suite (consumer product). Compromised in March 2026; <a href="https://vercel.com/kb/bulletin/vercel-april-2026-security-incident">Vercel disclosed on April 19, 2026</a> that an attacker used a stolen Context.ai OAuth token to pivot into a Vercel employee's Google Workspace account and from there into Vercel's environment. <a href="https://www.wiz.io/blog/contextai-oauth-token-compromise">Wiz</a> and <a href="https://context.ai/security-update">Context.ai's own statement</a> confirmed the OAuth token leak. Vercel published this client ID as the canonical IOC.</td>
+                </tr>
+                <tr>
+                  <td>Salesloft Drift Email</td>
+                  <td class="mono">1084253493764-ipb2ntp4jb4rmqc76jp7habdrhfdus3q.apps.googleusercontent.com</td>
+                  <td>Salesloft Drift's Google Workspace OAuth integration. UNC6395 (tracked by <a href="https://cloud.google.com/blog/topics/threat-intelligence/data-theft-salesforce-instances-via-salesloft-drift">Google Threat Intelligence Group</a>) used compromised Drift OAuth tokens to access Gmail data on August 9, 2025; the broader Salesforce campaign ran August 8-18. <strong>Google revoked all Drift Email OAuth tokens on August 29, 2025</strong>, so the active-threat window is closed - hunt your historical token / login audit logs for any pre-revocation activity tied to this client ID to assess past exposure. <a href="https://astrix.security/learn/blog/critical-update-astrix-research-team-discovers-unc6395-oauth-compromise-spanning-salesforce-google-workspace-and-aws/">Astrix</a> and <a href="https://www.widefield.ai/blog/more-salesloft-drift-compromise-expanding-to-more-apps-than-salesforce">WideField</a> independently published this client ID as an IOC.</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3><span class="num">2</span> Audit trail - the Admin SDK Reports API</h3>
+            <p>Every OAuth grant, revocation and token-driven API call against a Google Workspace tenant is recorded in the <a href="https://developers.google.com/admin-sdk/reports/v1/reference/activities">Admin SDK Reports API</a>. The events live under different <code>applicationName</code> values - the OAuth ones defenders care about are:</p>
+            <table class="kv-table">
+              <thead><tr><th>applicationName</th><th>What it records</th></tr></thead>
+              <tbody>
+                <tr><td class="mono">token</td><td>OAuth grants, revocations, token requests and per-call activity. The single highest-value source for OAuth hunting. Event names: <code>authorize</code>, <code>revoke</code>, <code>request</code>, <code>activity</code>.</td></tr>
+                <tr><td class="mono">login</td><td>User sign-ins, including SSO via OAuth federation. Useful for correlating consent-prompt acceptance with the source IP and device.</td></tr>
+                <tr><td class="mono">admin</td><td>Admin Console actions. Pivot here to see if an admin granted domain-wide delegation, changed an OAuth app trust setting, or whitelisted a client ID.</td></tr>
+                <tr><td class="mono">oauth_token</td><td>Newer endpoint covering granular per-token activity. Overlaps with <code>token</code>; check both during investigations.</td></tr>
+              </tbody>
+            </table>
+
+            <p>The shape of an <code>authorize</code> event in the <code>token</code> application:</p>
+            <div class="code-block">
+              <div class="code-header">Reports API authorize event (anonymized)<button class="copy-snippet" type="button">copy</button></div>
+              <pre>{
+  "kind":   "admin#reports#activity",
+  "id":     { "time": "2026-04-27T07:20:47.123Z", "uniqueQualifier": "...",
+              "applicationName": "token", "customerId": "C0&lt;tenant&gt;" },
+  "actor":  { "email": "user@yourdomain.com", "profileId": "&lt;profile-id&gt;",
+              "callerType": "USER" },
+  "ipAddress": "203.0.113.42",
+  "events": [
+    {
+      "type": "auth",
+      "name": "authorize",
+      "parameters": [
+        { "name": "client_id",   "value": "1084253493764-ipb2ntp4jb4rmqc76jp7habdrhfdus3q.apps.googleusercontent.com" },
+        { "name": "app_name",    "value": "Drift Email" },
+        { "name": "client_type", "value": "WEB" },
+        { "name": "scope",       "multiValue": [
+            "https://www.googleapis.com/auth/gmail.readonly",
+            "https://www.googleapis.com/auth/userinfo.email",
+            "openid"
+          ] },
+        { "name": "scope_data",  "multiMessageValue": [...] },
+        { "name": "api_name",    "value": "" }
+      ]
+    }
+  ]
+}</pre>
+            </div>
+
+            <p>The four fields defenders pivot on, with paths confirmed against the shape above:</p>
+            <ul>
+              <li><strong>OAuth client ID</strong> (the equivalent of Entra's AppId) - <code>events[].parameters[]</code> where <code>name=="client_id"</code>. Lower-case it and match against OAuthSentry's <code>feeds/google/malicious.txt</code>. Google client IDs are not GUIDs - they end in <code>.apps.googleusercontent.com</code> and the leading numeric segment is the project number.</li>
+              <li><strong>Granted scopes</strong> - <code>events[].parameters[]</code> where <code>name=="scope"</code>, <code>multiValue</code> field is the array. <code>https://mail.google.com/</code>, <code>https://www.googleapis.com/auth/gmail.send</code>, <code>https://www.googleapis.com/auth/drive</code> and <code>https://www.googleapis.com/auth/contacts</code> are the four high-impact reads/writes; the <code>.readonly</code> variants matter for exfil hunts.</li>
+              <li><strong>Consenting user</strong> - top-level <code>actor.email</code> + <code>actor.profileId</code>. Pair with the <code>login</code> application events on the same <code>profileId</code> to recover the IP, device and 2SV factor used at consent time.</li>
+              <li><strong>Client type</strong> - <code>events[].parameters[]</code> where <code>name=="client_type"</code>. <code>WEB</code> = browser-based OAuth flow (consent prompt). <code>NATIVE_DESKTOP</code> = installed desktop client (Outlook, eM Client, Thunderbird). <code>SERVICE_ACCOUNT</code> = domain-wide delegation impersonation (almost always admin-granted, watch closely).</li>
+            </ul>
+
+            <h3><span class="num">3</span> Detection queries</h3>
+            <p>Google Workspace audit data can be queried three ways: directly against the Reports API, via <a href="https://github.com/GAM-team/GAM">GAM</a> (the open-source admin tool), or against your SIEM if you forward Workspace logs there (most do via <a href="https://cloud.google.com/architecture/exporting-stackdriver-logging-for-splunk">Pub/Sub - Splunk</a> or the native Workspace Splunk add-on). Examples for each:</p>
+
+            <p><strong>Detection 1: any consent grant for a known-malicious app, via Reports API directly.</strong> A read-only GCP service account with the <code>https://www.googleapis.com/auth/admin.reports.audit.readonly</code> scope can poll this on a 5-minute cadence:</p>
+            <div class="code-block">
+              <div class="code-header">curl - Reports API token authorize hunt<button class="copy-snippet" type="button">copy</button></div>
+              <pre>``` Get the last hour of authorize events across the tenant ```
+ACCESS_TOKEN=$(gcloud auth application-default print-access-token)
+START=$(date -u -d '1 hour ago' +%Y-%m-%dT%H:%M:%S.000Z)
+
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" \
+  "https://admin.googleapis.com/admin/reports/v1/activity/users/all/applications/token?eventName=authorize&startTime=$START" \
+| jq -r '
+    .items[]
+    | . as $item
+    | .events[]
+    | select(.name == "authorize")
+    | [
+        $item.id.time,
+        $item.actor.email,
+        $item.ipAddress,
+        ((.parameters[] | select(.name == "client_id") | .value)         // ""),
+        ((.parameters[] | select(.name == "app_name")  | .value)         // ""),
+        ((.parameters[] | select(.name == "scope")     | .multiValue | join(";")) // "")
+      ]
+    | @csv
+  ' \
+| awk -F',' 'BEGIN { while((getline l &lt; "/path/to/feeds/google/malicious.txt") > 0) bad[tolower(l)]=1 }
+             { id=tolower($4); gsub(/"/, "", id); if (bad[id]) print "MALICIOUS:", $0 }'</pre>
+            </div>
+
+            <p><strong>Detection 2: any consent for a high-impact scope, via GAM.</strong> GAM wraps the Reports API and is faster to iterate than raw curl. Add a daily cron that diffs against an allowlist:</p>
+            <div class="code-block">
+              <div class="code-header">GAM - high-impact scope grants in last 24h<button class="copy-snippet" type="button">copy</button></div>
+              <pre>``` Last 24h of authorize events with the dangerous scopes ```
+gam report token start -1d \
+  filters 'event_name==authorize' \
+  fields 'time,actor.email,ipAddress,parameters' \
+  | grep -E 'mail\.google\.com|gmail\.send|gmail\.modify|drive($|/)|contacts(\.|$)' \
+  | tee /var/log/oauthsentry-google-highrisk.log
+
+``` Per-user view of currently-granted tokens (run before mass revocation) ```
+gam user user@yourdomain.com show tokens
+
+``` Tenant-wide: every token currently held by any user, machine-readable ```
+gam all users print tokens fields user,clientid,scopes,displaytext &gt; tokens.csv</pre>
+            </div>
+
+            <p><strong>Detection 3: SIEM-side, if you ingest Workspace logs.</strong> The Splunk Add-on for Google Workspace lands these events with sourcetype <code>gws:reports:token</code>. The pattern mirrors our Entra Detection 1:</p>
+            <div class="code-block">
+              <div class="code-header">SPL - Workspace token authorize against malicious feed<button class="copy-snippet" type="button">copy</button></div>
+              <pre>index=gws sourcetype=gws:reports:token name=authorize
+| eval client_id   = lower(mvindex(parameters_value, mvfind(parameters_name, "client_id")))
+| eval app_name    = mvindex(parameters_value, mvfind(parameters_name, "app_name"))
+| eval client_type = mvindex(parameters_value, mvfind(parameters_name, "client_type"))
+| eval scopes      = mvjoin(json_extract(parameters, "$..multiValue[*]"), ", ")
+
+| lookup oauthsentry_google_malicious appid as client_id
+    OUTPUT category as oas_category, severity as oas_severity, comment as oas_comment
+| where oas_category = "malicious"
+
+| stats count
+        earliest(_time) as first_seen
+        latest(_time)   as last_seen
+        values(actor_email) as users
+        values(ipAddress)   as src_ips
+        values(scopes)      as scopes
+    by client_id, app_name, client_type, oas_severity, oas_comment
+
+| convert ctime(first_seen) ctime(last_seen)</pre>
+            </div>
+
+            <h3><span class="num">4</span> Remediation - revoking OAuth tokens</h3>
+            <p>Google's revocation model is per-(user, client_id). There is no tenant-wide "block this app" toggle that retroactively kills existing tokens; you must enumerate and revoke. The two paths:</p>
+
+            <p><strong>Mass revocation via GAM</strong> (the right tool when an app is on OAuthSentry's malicious list and you need to evict it from every user in the domain in one shot):</p>
+            <div class="code-block">
+              <div class="code-header">GAM - mass token revocation<button class="copy-snippet" type="button">copy</button></div>
+              <pre>``` Single user, single client - the targeted revocation ```
+gam user victim@yourdomain.com delete token clientid \
+  1084253493764-ipb2ntp4jb4rmqc76jp7habdrhfdus3q.apps.googleusercontent.com
+
+``` Tenant-wide: revoke this client across every user ```
+gam all users delete token clientid \
+  1084253493764-ipb2ntp4jb4rmqc76jp7habdrhfdus3q.apps.googleusercontent.com
+
+``` Audit trail: confirm the revocations landed ```
+gam report token start -1h filters 'event_name==revoke,parameter:client_id==1084253493764-ipb2ntp4jb4rmqc76jp7habdrhfdus3q.apps.googleusercontent.com'</pre>
+            </div>
+
+            <p><strong>Admin Console path</strong> (one-off use; for muscle-memory or when you don't have GAM deployed):</p>
+            <ol>
+              <li>Admin Console &rarr; <strong>Security</strong> &rarr; <strong>Access and data control</strong> &rarr; <strong>API controls</strong>.</li>
+              <li><strong>Manage Third-Party App Access</strong>: search for the client ID, set Access to <strong>Blocked</strong>. This prevents future grants but does not revoke existing tokens - GAM still required for that.</li>
+              <li><strong>Domain-wide delegation</strong>: if the malicious client appears here, remove the entry. DWD entries grant the app the ability to impersonate any user without per-user consent; presence here is critical-severity.</li>
+              <li>Reports &rarr; Audit and investigation &rarr; <strong>OAuth log events</strong>: confirm the <code>revoke</code> events appeared for every user that previously had a token.</li>
+            </ol>
+
+            <h3><span class="num">5</span> Hardening - the controls that prevent the next consent attack</h3>
+            <ul>
+              <li><strong>Block unverified apps tenant-wide.</strong> Admin Console &rarr; Security &rarr; API controls &rarr; <strong>App access control</strong> &rarr; <strong>Settings</strong> &rarr; uncheck <em>"Allow users to access unconfigured third-party apps"</em>. With this off, a user can only consent to apps that have completed Google's OAuth verification process or that an admin has explicitly trusted.</li>
+              <li><strong>Restrict access to the four high-impact services.</strong> Same screen, set <strong>Gmail</strong>, <strong>Drive and Docs</strong>, <strong>Contacts</strong> and <strong>Calendar</strong> to <em>"Restricted"</em> rather than <em>"Unrestricted"</em>. Restricted means only Trusted apps can request scopes for that service; everything else is blocked even if the user clicks accept.</li>
+              <li><strong>Audit domain-wide delegation quarterly.</strong> Admin Console &rarr; Security &rarr; API controls &rarr; <strong>Domain-wide delegation</strong>. Every entry is an unconditional impersonation grant. The list should be short, named, and every entry should map to a documented service. Unknown client IDs here are an incident.</li>
+              <li><strong>Forward Workspace audit logs out of Google.</strong> Admin Console &rarr; Reporting &rarr; Audit logs are 6 months by default. Export them via Pub/Sub to a SIEM with longer retention so consent events from a year ago are still queryable when an attack surfaces.</li>
+              <li><strong>Subscribe to OAuthSentry's <code>feeds/google/malicious.txt</code></strong> and run the Detection 1 curl on a 15-minute cadence. The list is small today (two entries) but every new compromise lands here within a day of public disclosure.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEEDS PAGE ============ -->
+    <section id="page-feeds" hidden>
+      <div class="shell">
+        <div class="section">
+          <h2>Feeds</h2>
+          <p class="lead">
+            Plain-text and CSV feeds for direct ingestion into SIEM, EDR allow/deny lists, KQL hunts, Splunk lookups and so on. Updated automatically from upstream sources via GitHub Actions. One App ID per line in <span class="mono">.txt</span> feeds.
+          </p>
+
+          <div class="feed-grid">
+            <div class="feed-card compliance">
+              <h3>Compliance</h3>
+              <p class="desc">Legitimate first-party and well-known third-party apps. Use as a known-good baseline for triage and allowlists.</p>
+              <div class="feed-links">
+                <a href="feeds/entra/compliance.txt"><span>entra - txt</span><span class="fmt">app ids</span></a>
+                <a href="feeds/entra/compliance.csv"><span>entra - csv</span><span class="fmt">full</span></a>
+                <a href="feeds/all/compliance.txt"><span>all services - txt</span><span class="fmt">app ids</span></a>
+              </div>
+            </div>
+
+            <div class="feed-card risky">
+              <h3>Risky</h3>
+              <p class="desc">Legitimate apps repeatedly observed in BEC, exfiltration tooling (rclone, eM Client), or first-party Microsoft apps abused via AADInternals / EvilProxy / UTA0352. Hunt context.</p>
+              <div class="feed-links">
+                <a href="feeds/entra/risky.txt"><span>entra - txt</span><span class="fmt">app ids</span></a>
+                <a href="feeds/entra/risky.csv"><span>entra - csv</span><span class="fmt">full</span></a>
+                <a href="feeds/all/risky.txt"><span>all services - txt</span><span class="fmt">app ids</span></a>
+              </div>
+            </div>
+
+            <div class="feed-card malicious">
+              <h3>Malicious</h3>
+              <p class="desc">Confirmed malicious OAuth applications: APT29 redirect apps, EvilGinx/AiTM lures, RH-ISAC tracked impersonation campaigns, and homoglyph SharePoint/OneDrive impersonators.</p>
+              <div class="feed-links">
+                <a href="feeds/entra/malicious.txt"><span>entra - txt</span><span class="fmt">app ids</span></a>
+                <a href="feeds/entra/malicious.csv"><span>entra - csv</span><span class="fmt">full</span></a>
+                <a href="feeds/all/malicious.txt"><span>all services - txt</span><span class="fmt">app ids</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Combined feeds</h2>
+          <p class="lead">Cross-service exports. The <code>index.json</code> is what the search UI uses; use it for any custom integration that needs the full record per app.</p>
+          <div class="feed-grid">
+            <div class="feed-card">
+              <h3>JSON</h3>
+              <p class="desc">Full schema, every service, ready for programmatic consumption.</p>
+              <div class="feed-links">
+                <a href="feeds/all/index.json"><span>all/index.json</span><span class="fmt">json</span></a>
+                <a href="feeds/entra/all.json"><span>entra/all.json</span><span class="fmt">json</span></a>
+                <a href="feeds/summary.json"><span>summary.json</span><span class="fmt">counts</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ METHODOLOGY PAGE ============ -->
+    <section id="page-methodology" hidden>
+      <div class="shell">
+        <div class="section">
+          <h2>Methodology</h2>
+          <p class="lead">OAuthSentry mirrors and consolidates publicly-curated OAuth threat-intel datasets. The categories follow defender intent, not vendor wording.</p>
+
+          <div class="feed-grid">
+            <div class="feed-card compliance">
+              <h3>Compliance</h3>
+              <p class="desc">An app is in <em>compliance</em> if it is a verified first-party app from the platform vendor, or a vetted third-party app with no observed abuse pattern. This bucket is reference data for hunting and allowlist tuning, not a "safe" verdict for any tenant.</p>
+            </div>
+            <div class="feed-card risky">
+              <h3>Risky</h3>
+              <p class="desc">An app is <em>risky</em> if it is legitimate but has been repeatedly observed in attacker tradecraft (mailbox sync clients, broad-scope cloud sync, first-party apps abused via offensive tooling). Detection logic should escalate based on context: tenant prevalence, scopes consented, source IP, geography.</p>
+            </div>
+            <div class="feed-card malicious">
+              <h3>Malicious</h3>
+              <p class="desc">An app is <em>malicious</em> when at least one credible public report ties the App ID to an in-the-wild attack: consent phishing, AiTM session theft, or a known threat-actor cluster. Homoglyph apps impersonating Microsoft brands (Cyrillic Sharеpoint, OneDгive, etc.) are included.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Upstream credit</h2>
+          <p class="lead">OAuthSentry stands on the shoulders of community-maintained lists. Primary sources currently mirrored:</p>
+          <ul style="font-family: var(--font-mono); font-size: 13px; color: var(--text-dim); line-height: 2;">
+            <li><a href="https://github.com/mthcht/awesome-lists/tree/main/Lists/OAuth" target="_blank" rel="noopener">mthcht/awesome-lists - OAuth lists</a></li>
+            <li><a href="https://github.com/randomaccess3/detections" target="_blank" rel="noopener">randomaccess3/detections - M365 OAuth detections</a></li>
+            <li><a href="https://github.com/Cyera-Research-Labs/m365-malicious-app-iocs" target="_blank" rel="noopener">Cyera-Research-Labs/m365-malicious-app-iocs</a></li>
+            <li><a href="https://github.com/anak0ndah/EntraHunt" target="_blank" rel="noopener">anak0ndah/EntraHunt</a></li>
+            <li><a href="https://github.com/merill/microsoft-info" target="_blank" rel="noopener">merill/microsoft-info - first-party app names</a></li>
+            <li><a href="https://www.wiz.io/blog/detecting-malicious-oauth-applications" target="_blank" rel="noopener">Wiz - Detecting malicious OAuth applications</a></li>
+            <li><a href="https://rhisac.org/threat-intelligence/microsoft-oauth-app-impersonation-leads-to-mfa-phishing/" target="_blank" rel="noopener">RH-ISAC / Proofpoint - Microsoft OAuth impersonation</a></li>
+            <li><a href="https://www.volexity.com/blog/2025/04/22/phishing-for-codes-russian-threat-actors-target-microsoft-365-oauth-workflows/" target="_blank" rel="noopener">Volexity - UTA0352/UTA0355 OAuth phishing</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="shell footer-inner">
+      <span>OAuthSentry - MIT - no warranty - use defensively</span>
+      <span>
+        <a href="https://github.com/oauthsentry/oauthsentry.github.io">github</a>
+        <span style="margin: 0 8px; color: var(--border-strong);">|</span>
+        <a href="#/search">&uarr; top</a>
+      </span>
+    </div>
+  </footer>
+
+  <!-- Detail panel -->
+  <div class="overlay" id="overlay">
+    <aside class="panel" id="panel" role="dialog" aria-modal="true" aria-label="Application detail"></aside>
+  </div>
+
+  <!-- PapaParse vendored locally - no external CDN dependency. License: MIT (mholt/PapaParse). -->
+  <script src="assets/vendor/papaparse-5.4.1.min.js"></script>
+  <script src="assets/js/app.js"></script>
+
+</body>
+</html>

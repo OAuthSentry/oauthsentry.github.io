@@ -1,0 +1,85 @@
+name: update-feeds
+
+on:
+  # daily at 04:17 UTC; offset to avoid the top-of-hour stampede on shared runners
+  schedule:
+    - cron: '17 4 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'data/sources.json'
+      - 'data/**/oauth_apps.csv'
+      - 'scripts/build_feeds.py'
+      - '.github/workflows/update.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Pull every curated and compliance_fill source listed in data/sources.json
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, sys, urllib.request, pathlib
+
+          cfg = json.load(open('data/sources.json'))
+          changed, skipped, failed = [], [], []
+
+          for src in cfg.get('sources', []):
+              role = src.get('role')
+              if role not in ('curated', 'compliance_fill'):
+                  skipped.append(src.get('id'))
+                  continue
+              remote = src.get('remote')
+              local  = src.get('local')
+              if not remote or not local:
+                  skipped.append(src.get('id'))
+                  continue
+              dest = pathlib.Path(local)
+              dest.parent.mkdir(parents=True, exist_ok=True)
+              try:
+                  req = urllib.request.Request(remote, headers={'User-Agent': 'OAuthSentry-Updater/2.0'})
+                  with urllib.request.urlopen(req, timeout=60) as r:
+                      body = r.read()
+                  prev = dest.read_bytes() if dest.exists() else b''
+                  if body != prev:
+                      dest.write_bytes(body)
+                      changed.append(src['id'])
+                      print(f"updated: {src['id']:36s} -> {dest} ({len(body):,} bytes)")
+                  else:
+                      print(f"unchanged: {src['id']}")
+              except Exception as e:
+                  failed.append(src.get('id'))
+                  print(f"WARN: {src['id']} fetch failed: {e}", file=sys.stderr)
+
+          print(f"\nchanged   = {changed}")
+          print(f"skipped   = {skipped}")
+          print(f"failed    = {failed}")
+          PY
+
+      - name: Rebuild feeds
+        run: python3 scripts/build_feeds.py
+
+      - name: Commit & push if anything changed
+        run: |
+          git config user.name  "oauthsentry-bot"
+          git config user.email "oauthsentry-bot@users.noreply.github.com"
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git add data feeds
+            git commit -m "chore: refresh upstream sources & rebuild feeds [skip ci]"
+            git push
+          else
+            echo "no changes"
+          fi
