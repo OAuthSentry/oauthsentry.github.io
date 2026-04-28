@@ -82,7 +82,7 @@ function setActiveTab(routePrefix) {
 }
 
 function showPage(pageId) {
-  ['page-search', 'page-investigation', 'page-feeds', 'page-triage', 'page-methodology'].forEach(id => {
+  ['page-search', 'page-investigation', 'page-feeds', 'page-triage', 'page-api', 'page-methodology'].forEach(id => {
     const el = document.getElementById(id);
     if (el) el.hidden = (id !== pageId);
   });
@@ -123,6 +123,12 @@ function applyHash() {
   if (top === 'triage') {
     showPage('page-triage');
     setActiveTab('/triage');
+    closeDetail();
+    return;
+  }
+  if (top === 'api') {
+    showPage('page-api');
+    setActiveTab('/api');
     closeDetail();
     return;
   }
@@ -316,11 +322,9 @@ function renderResults() {
     return;
   }
 
-  const MAX = 300;
-  const view = list.slice(0, MAX);
   const q = state.query.trim();
 
-  container.innerHTML = view.map(app => `
+  container.innerHTML = list.map(app => `
     <div class="row ${app.category}" data-id="${escapeHtml(app.appid)}">
       <span class="badge ${app.category}">${app.category}</span>
       <div class="body">
@@ -333,14 +337,6 @@ function renderResults() {
       </div>
     </div>
   `).join('');
-
-  if (list.length > MAX) {
-    container.insertAdjacentHTML('beforeend', `
-      <div class="empty" style="padding: 28px;">
-        showing first ${MAX} of ${list.length.toLocaleString()} - refine your query
-      </div>
-    `);
-  }
 
   $$('#results .row').forEach(el => {
     el.addEventListener('click', () => {
