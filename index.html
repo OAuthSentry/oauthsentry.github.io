@@ -989,7 +989,7 @@ Search-UnifiedAuditLog -StartDate 2026-04-20 -EndDate 2026-04-27 `
         <div class="invest-section" id="sub-detections" hidden>
           <div class="doc-block">
             <h2>Detections for OAuth abuse</h2>
-            <p class="doc-lede">Nine SPL detections built for teams running M365 audit and Microsoft Entra logs through Splunk. Every search uses macros so the same logic works whether you're on the <strong>Splunk Add-on for Microsoft Office 365</strong> (sourcetypes <code>o365:management:activity</code>, <code>azure:audit</code>) or the <strong>Splunk Add-on for Microsoft Cloud Services</strong> (sourcetypes prefixed <code>mscs:</code>) - define the macros once and the searches travel with you. Tradecraft references in each detection point back to the Tradecraft tab.</p>
+            <p class="doc-lede">Thirteen SPL detections built for teams running M365 audit and Microsoft Entra logs through Splunk. Every search uses macros so the same logic works whether you're on the <strong>Splunk Add-on for Microsoft Office 365</strong> (sourcetypes <code>o365:management:activity</code>, <code>azure:audit</code>) or the <strong>Splunk Add-on for Microsoft Cloud Services</strong> (sourcetypes prefixed <code>mscs:</code>) - define the macros once and the searches travel with you. Tradecraft references in each detection point back to the Tradecraft tab.</p>
 
             <div class="callout">
               <strong>Macros to define before running anything below</strong>
@@ -1053,6 +1053,60 @@ iseval = 0
 definition = ((index=o365 OR index=azure) sourcetype IN (mscs:azure:eventhub, azure:audit:graphactivity, mscs:azure:graphactivity) category=MicrosoftGraphActivityLogs)
 iseval = 0</pre>
             </div>
+
+            <h3 id="enrichment-pattern">Reusable enrichment pattern</h3>
+            <p>Most detections in this tab produce one row per (user, token) or (user, token, hour) and surface bare object IDs and app GUIDs - useful but not directly actionable. The block below appends user, role and OAuth-app-classification metadata to any such result set, and escalates the alert tier when the token came from an app OAuthSentry classifies as malicious or risky. Apply at the end of any detection that produces <code>req_userid</code> + <code>appids</code> columns:</p>
+            <div class="code-block">
+              <div class="code-header">SPL - reusable enrichment + risk-based severity escalation<button class="copy-snippet" type="button">copy</button></div>
+              <pre>``` --- 1. Resolve userId -> name + role from the directory lookup --- ```
+``` Detection 13 maintains oauthsentry_user_directory.csv. The lookup keys      ```
+``` on user_id (lowercase GUID) and outputs email, display name, jobTitle and  ```
+``` an active/dormant status flag.                                             ```
+| lookup oauthsentry_user_directory.csv user_id as req_userid
+    OUTPUT user_email, user_display_name, user_jobtitle, status as user_status
+
+``` --- 2. Resolve appId -> name + risk classification --- ```
+``` 'appids' is multi-value but virtually always single-valued for one (user,  ```
+``` token) pair; pull the first as a scalar. The three OAuthSentry catalog     ```
+``` lookups are queried in priority order (malicious wins over risky wins      ```
+``` over compliance) so a rare appid present in two CSVs resolves correctly.   ```
+``` lower() normalises case since Splunk lookups are case-sensitive by default. ```
+| eval primary_appid = lower(mvindex(appids, 0))
+| lookup oauthsentry_malicious  appid as primary_appid
+    OUTPUT appname as malicious_app_name, category as malicious_cat, severity as malicious_sev
+| lookup oauthsentry_risky      appid as primary_appid
+    OUTPUT appname as risky_app_name,     category as risky_cat,     severity as risky_sev
+| lookup oauthsentry_compliance appid as primary_appid
+    OUTPUT appname as compliance_app_name
+
+| eval app_name     = coalesce(malicious_app_name, risky_app_name,
+                               compliance_app_name, primary_appid)
+| eval app_category = coalesce(malicious_cat, risky_cat, "compliance", "uncategorized")
+| eval app_severity = coalesce(malicious_sev, risky_sev, "info")
+
+``` --- 3. Risk-based severity escalation --- ```
+``` Bytes / record-count thresholds in each detection give a baseline severity. ```
+``` Override that baseline when the underlying app is malicious or risky.       ```
+``` 'severity' must already exist on the row from the detection's own logic;    ```
+``` if it does not, this block is a no-op for the detection's tier and only    ```
+``` provides naming - which is fine.                                            ```
+| eval severity = case(
+    app_category = "malicious",                              "critical",
+    app_category = "risky" AND severity != "critical",       "high",
+    1==1,                                                     severity
+  )
+
+``` --- 4. Tidy intermediate fields out of the final result --- ```
+| fields - malicious_app_name, malicious_cat, malicious_sev,
+          risky_app_name, risky_cat, risky_sev, compliance_app_name</pre>
+            </div>
+            <p>Three things this enrichment buys you:</p>
+            <ul>
+              <li><strong>Routable alert text.</strong> Instead of "user <code>6b579021-2931-4f1b-...</code> exfiltrated 47 MB", the alert reads "user alice.example@yourdomain.com (Senior Finance Analyst) exfiltrated 47 MB via Microsoft Office (compliance)" - the on-call engineer knows immediately who to call and whether the app is in scope for normal use.</li>
+              <li><strong>Risk-context promotion.</strong> 10 MB pulled by a token issued to a <em>known-malicious</em> app deserves the same treatment as 100 MB pulled by an unknown token - byte volume alone misses the IOC context. The case() escalation handles this automatically; teams that want the original byte-derived tier preserved can simply remove the case() block.</li>
+              <li><strong>Status flag for dormant accounts.</strong> Detection 13's <code>user_status</code> column distinguishes "active user signed in today" from "user object id from a soft-deleted account". A dormant account producing OAuth events is itself an IR signal worth flagging in the alert subject.</li>
+            </ul>
+            <p>Detections that benefit (call out which ones in their tuning sections): <strong>10, 11, 12</strong> all produce the right input columns and gain both naming and risk escalation. Detections <strong>1, 2, 4, 8</strong> already filter on app classification (so the escalation is redundant) but still benefit from the user enrichment - apply only step 1 of the block above. Hunts <strong>9</strong> and <strong>10</strong> in the Hunting tab follow the same pattern.</p>
 
             <h3><span class="num">1</span> Consent or grant created for a known-malicious application id</h3>
             <p>Highest-fidelity OAuth detection: a user explicitly consented, or an admin created a grant, for an app OAuthSentry already classifies as malicious. Should fire as critical and page on-call. The unified audit log emits at least four operation names for the same underlying consent action; this search covers them all and normalises the trailing-period quirk the M365 Management Activity API sometimes adds (<code>"Consent to application."</code>).</p>
@@ -1437,6 +1491,7 @@ iseval = 0</pre>
               <li><strong>Page on-call</strong> when <code>actor_role = "yes-non-admin"</code> AND <code>max_top_requested &gt;= 50</code>. Non-admin + bulk pull is the cleanest possible signature.</li>
               <li><strong>Daily hunting review</strong> for everything else - the detection will catch some legitimate edge cases (e.g. an admin debugging a Graph integration via Azure CLI) where context determines verdict.</li>
               <li><strong>Suppress</strong> via a per-tenant lookup of trusted automation accounts that have a documented business reason to do directory enumeration via FOCI clients (rare but not zero).</li>
+              <li><strong>Apply the <a href="#enrichment-pattern" data-route="/investigation/detections">reusable enrichment pattern</a></strong> at the end of the search to translate <code>req_userid</code> into a routable email/display-name + role, and the bare <code>appids</code> GUIDs into human-readable app names. Detection 10 already filters to FOCI apps so the risk-tier escalation is redundant for this one - apply only step 1 of the pattern (user-directory lookup) for the cleanest result.</li>
             </ul>
 
             <h3><span class="num">11</span> Cumulative directory-pull volume from one token over time</h3>
@@ -1557,6 +1612,7 @@ iseval = 0</pre>
               <li><strong>The pagination-without-<code>$top</code> case</strong> is the most subtle. Default page size assumption (100) may overcount if your tenant routinely uses smaller pages, or undercount on <code>/users/$select=...</code> queries where the actual returned size depends on the response shape. Validate by sampling <code>responseSizeBytes</code> in your tenant: if average response size on no-<code>$top</code> requests is ≪ 100 records, lower the default.</li>
               <li><strong>Anti-correlate with Detection 10</strong>. A token that fires both Detection 10 (FOCI app + directory endpoint) and Detection 11 (cumulative volume) is high-confidence. Detection 11 alone, from a non-FOCI app id, is genuine admin work or third-party integration - lower confidence by itself.</li>
               <li><strong>Status-code distribution as a tell</strong>. Add <code>list(req_status) as status_seq</code> to either query and look for the <code>400 → 200, 200, 200, ...</code> pattern (failed probe followed by successful pagination). That sequence is the smoking gun for iterative probing and is essentially never seen in legitimate use.</li>
+              <li><strong>Apply the <a href="#enrichment-pattern" data-route="/investigation/detections">reusable enrichment pattern</a></strong> at the end of the search. Detection 11 doesn't filter on app classification, so the full risk-tier escalation applies: a token issued to a known-malicious app pulling 1,000 directory records (the high tier) automatically escalates to critical.</li>
             </ul>
 
             <h3><span class="num">12</span> Cumulative <code>/me/*</code> data-volume reads from one token</h3>
@@ -1592,6 +1648,10 @@ iseval = 0</pre>
 ``` Distinguish full-content reads (high data density) from index reads. ```
 | eval is_full_content = if(match(req_uri, "(?i)/\$value(\?|$)"), 1, 0)
 
+``` Bucket into 1h windows so a single token doing sustained reads across      ```
+``` multiple hours produces one row per hour rather than one giant row that    ```
+``` wrongly aggregates many hours of activity into the highest-tier severity.  ```
+| bin _time as time span=1h
 | stats sum(req_size)              as total_response_bytes
         count                       as request_count
         sum(is_full_content)        as full_content_reads
@@ -1601,7 +1661,8 @@ iseval = 0</pre>
         values(req_status)          as status_codes
         earliest(_time)             as first_seen
         latest(_time)               as last_seen
-    by req_userid, req_uti
+    by req_userid, req_uti, time
+| fields - time
 
 ``` Three-tier severity, BYTES not records:                                    ```
 ```   critical: >= 100 MB pulled in 1h via /me/* from one token              ```
@@ -1626,6 +1687,7 @@ iseval = 0</pre>
               <li><strong>Info threshold (1 MB across &ge; 50 requests)</strong>: catches the slow-and-low pattern. 50 sequential requests in an hour is consistent with paginated walks of a mailbox; combined with even modest byte volume this is automated reading.</li>
               <li><strong><code>full_content_reads</code> as a force-multiplier</strong>: any request matching <code>/$value</code> is reading raw MIME including attachments. A token that does &gt; 5 <code>/$value</code> reads in an hour is exfiltrating mailbox content even if the byte total stays under the threshold.</li>
               <li><strong>Anti-correlate with Detection 11</strong>: a delegated token that fires both Detection 11 (directory enumeration) and Detection 12 (own-mailbox bulk read) within the same hour is the textbook stolen-token IR signature: attacker enumerates the tenant to find high-value targets, then reads their own mailbox to map internal communication while they're at it. Pages on-call regardless of individual severity tier.</li>
+              <li><strong>Apply the <a href="#enrichment-pattern" data-route="/investigation/detections">reusable enrichment pattern</a></strong> at the end of the search. Detection 12 doesn't filter on app classification, so the full risk-tier escalation applies: a token issued to a malicious-bucket app pulling 10 MB (the high tier) automatically escalates to critical, and the alert renders with the user's email, role and a routable app name instead of bare GUIDs.</li>
             </ul>
 
             <h3><span class="num">13</span> Maintain a tenant directory lookup for username enrichment</h3>
@@ -1790,6 +1852,7 @@ done
             <ul>
               <li>The macros above reference three OAuthSentry catalog lookups (<code>oauthsentry_malicious</code>, <code>oauthsentry_risky</code>, <code>oauthsentry_compliance</code>) plus two optional directory lookups (<code>oauthsentry_user_directory.csv</code> and <code>oauthsentry_sp_directory.csv</code>) that Detection 13 maintains. The catalog lookups identify which app id matters; the directory lookups translate object ids into human-readable names. Both classes are CSV with at minimum a key column; populate the catalog lookups from <code>/feeds/all/{malicious,risky,compliance}.csv</code> on whatever cadence makes sense for your tenant. Splunk's built-in <em>Lookup Editor</em> app or a scheduled <code>| outputlookup</code> from a REST search are both fine.</li>
               <li>Detection 13 is not an alert in itself - it produces the <code>oauthsentry_user_directory</code> and <code>oauthsentry_sp_directory</code> lookups that every other detection above can use to enrich a bare object id into a name. Strongly recommended as a one-time setup; without it, every detection alert reads "user &lt;guid&gt;" instead of "user alice@yourdomain.com (Senior Finance Analyst)".</li>
+              <li>The <a href="#enrichment-pattern" data-route="/investigation/detections">reusable enrichment pattern</a> at the top of this tab is the canonical SPL block for adding user, role and app-name resolution + risk-tier escalation to any detection's output. Detections 10/11/12 explicitly call it out in their tuning sections; Detections 1, 2, 4, 8 already filter on app classification so they only need step 1 (user-directory lookup) appended at the end of the search. The pattern is documented once instead of being copy-pasted into thirteen SPL blocks.</li>
               <li>Detection 3 (newly observed OAuth app) is the noisiest but the most valuable. Tune by adding an extra anti-join against <code>oauthsentry_compliance</code> if you want to suppress already-vetted apps automatically.</li>
               <li>Detections 1, 2, 8, 9, 10, 11, 12 are high-fidelity enough to alert on (Detection 10 specifically when the actor is a non-admin and <code>$top</code> is &gt;= 50; Detection 11 at the critical 10,000-record/1h tier; Detection 12 at the critical 100 MB/1h tier). Detections 3, 4, 5, 6 work better as scheduled hunts with daily review. Detection 7 is investigator-driven, not an alert. Detection 13 is infrastructure - it doesn't fire alerts itself, it builds the directory lookups that the other detections enrich against.</li>
               <li>Apps in the <em>risky</em> bucket are legitimate. Trigger on context (unusual user, new IP, new geography) rather than on the app id alone - detections 2 and 5 demonstrate the pattern.</li>
@@ -2255,6 +2318,11 @@ your_existing_downstream_search
     by req_userid, ua_flag
 | convert ctime(first_seen) ctime(last_seen)
 | sort - count</pre>
+            </div>
+
+            <div class="callout">
+              <strong>Enrichment</strong>
+              Both Hunts 9 and 10 produce <code>req_userid</code> + <code>appids</code> output columns, so the <a href="#enrichment-pattern" data-route="/investigation/detections">reusable enrichment pattern</a> from the Detections tab applies unchanged. Append it at the end of either query to translate object ids and app GUIDs into routable names. The hunting-vs-alerting distinction means the risk-tier escalation in the pattern's case() block matters less here (you'll review every result anyway) - the user/role/name resolution is the main value-add for hunting workflows.
             </div>
 
             <div class="callout">
