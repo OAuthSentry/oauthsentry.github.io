@@ -1444,7 +1444,7 @@ iseval = 0</pre>
             <ul>
               <li><strong>Iterative probing</strong> - attacker tries <code>$top=2000</code> (400), retries with <code>$top=999</code> + <code>ConsistencyLevel: eventual</code> (200), then paginates. Detection 10 fires once on the first request; Detection 11 sees the full ~10k records they actually walked.</li>
               <li><strong>Slow-and-low</strong> - attacker pulls 100 records every 5 minutes for 8 hours (~9,600 records, distributed). No single request looks alarming; the cumulative shape is the IOC.</li>
-              <li><strong>Pagination without <code>$top</code></strong> - omitting <code>$top</code> defaults to 100 records per page; attacker just walks <code>@odata.nextLink</code>. Detection 10's <code>max_top_requested</code> stays at 0; Detection 11 counts each request as 100.</li>
+              <li><strong>Pagination without <code>$top</code></strong> - omitting <code>$top</code> falls back to a per-resource default page size (Microsoft documents <code>/users</code> at 100, but <code>/me/messages</code> at 10, and other resources vary; <a href="https://learn.microsoft.com/en-us/graph/paging">Graph paging docs</a> for per-resource specifics). Attackers can simply walk <code>@odata.nextLink</code> indefinitely. Detection 10's <code>max_top_requested</code> stays at 0; Detection 11 counts each request as 100 by default for the directory endpoints in scope (which is the <code>/users</code> default).</li>
             </ul>
 
             <p>The arithmetic: for each Graph request to a directory endpoint, attribute "records attempted" - if <code>$top</code> is present, that's the value; otherwise default to 100 (Graph's implicit page size). 200/206 responses contribute the full <code>$top</code>; 400/429 also contribute the full <code>$top</code> because the <em>intent</em> was that volume even if the server rejected it.</p>
@@ -1463,8 +1463,11 @@ iseval = 0</pre>
 | eval req_status = 'properties.responseStatusCode'
 | eval req_size   = 'properties.responseSizeBytes'
 
-``` Restrict to directory-enumeration endpoints. /me/* is excluded - those are ```
-``` self-service reads against the user's own data and not bulk-enum candidates. ```
+``` Restrict to directory-enumeration endpoints. /me/* is intentionally NOT included ```
+``` here - reading your own mail/drive/contacts is high-volume but not directory     ```
+``` enumeration, and a single $top alone misrepresents data volume (responses vary   ```
+``` wildly in size). Detection 12 below covers /me/* data-volume reads with a        ```
+``` byte-based threshold instead. Run both - they catch different attacker actions.  ```
 | where match(req_uri, "(?i)/v1\.0/(users|groups|directoryRoles|servicePrincipals|applications|devices)(\?|/|$)")
 | where req_method = "GET"
 
@@ -1556,11 +1559,80 @@ iseval = 0</pre>
               <li><strong>Status-code distribution as a tell</strong>. Add <code>list(req_status) as status_seq</code> to either query and look for the <code>400 → 200, 200, 200, ...</code> pattern (failed probe followed by successful pagination). That sequence is the smoking gun for iterative probing and is essentially never seen in legitimate use.</li>
             </ul>
 
+            <h3><span class="num">12</span> Cumulative <code>/me/*</code> data-volume reads from one token</h3>
+            <p>The companion to Detection 11. Detection 11 catches <em>directory enumeration</em> (listing principals); Detection 12 catches <em>data exfiltration from the acting user's own mailbox/drive/contacts</em> - the cheapest read path for an attacker holding a stolen delegated token, since <code>/me/*</code> doesn't require any extra permissions beyond what the user already has. The pattern: token holder rapidly walks <code>/me/messages</code>, <code>/me/drive/root/children</code>, <code>/me/contacts</code> with high page sizes (or pagination), pulling everything they have access to.</p>
+            <p>Why this needs its own detection rather than being merged into 11:</p>
+            <ul>
+              <li><strong>The metric is response bytes, not records.</strong> One <code>/me/messages?$top=50</code> request returns ~50 message stubs (~50 KB); one <code>/me/messages/{id}/$value</code> request returns one full email with attachments (could be many MB). Counting "records attempted" via <code>$top</code> dramatically undercounts exfil volume on the latter - a 1 MB email with attachments is the data, not the row count.</li>
+              <li><strong>The default page size differs.</strong> <code>/me/messages</code> defaults to 10 records per page (per Microsoft's <a href="https://github.com/microsoftgraph/python-sample-pagination">python-sample-pagination</a> docs), not 100 like <code>/users</code>. A pagination-only walk of a 5,000-message inbox is 500 requests with no <code>$top</code>, easy to miss with a record-count threshold.</li>
+              <li><strong>Mailbox-content reads via <code>/$value</code></strong> retrieve raw MIME including attachments - the highest-data-density read path in Graph. <code>responseSizeBytes</code> on these requests directly measures exfil volume.</li>
+            </ul>
+
+            <div class="code-block">
+              <div class="code-header">SPL - cumulative /me/* read volume per token, 1h window<button class="copy-snippet" type="button">copy</button></div>
+              <pre>`oauthsentry_graph_activity` earliest=-1h
+
+| eval req_uri    = 'properties.requestUri'
+| eval req_method = 'properties.requestMethod'
+| eval req_appid  = 'properties.appId'
+| eval req_userid = coalesce('properties.userId', 'properties.UserPrincipalObjectID')
+| eval req_uti    = 'properties.signInActivityId'
+| eval req_idtyp  = 'properties.C_Idtyp'
+| eval req_ip     = coalesce('properties.ipAddress', callerIpAddress)
+| eval req_status = 'properties.responseStatusCode'
+| eval req_size   = 'properties.responseSizeBytes'
+
+``` Delegated tokens only - app-only tokens don't have a /me context. ```
+| where req_idtyp = "user"
+| where req_method = "GET"
+
+``` Restrict to /me/* and the most exfil-heavy variants. ```
+| where match(req_uri, "(?i)/v1\.0/me/(messages|mailFolders|drive/root|drive/items|contacts|chats|joinedTeams|onenote)(\?|/|$)")
+
+``` Distinguish full-content reads (high data density) from index reads. ```
+| eval is_full_content = if(match(req_uri, "(?i)/\$value(\?|$)"), 1, 0)
+
+| stats sum(req_size)              as total_response_bytes
+        count                       as request_count
+        sum(is_full_content)        as full_content_reads
+        dc(req_uri)                 as distinct_endpoints
+        values(req_appid)           as appids
+        values(req_ip)              as src_ips
+        values(req_status)          as status_codes
+        earliest(_time)             as first_seen
+        latest(_time)               as last_seen
+    by req_userid, req_uti
+
+``` Three-tier severity, BYTES not records:                                    ```
+```   critical: >= 100 MB pulled in 1h via /me/* from one token              ```
+```   high:    >=  10 MB pulled in 1h via /me/* from one token              ```
+```   info:    >=   1 MB AND >= 50 requests (catches slow walks; daily review) ```
+| eval mb_pulled = round(total_response_bytes / 1048576, 2)
+| eval severity = case(
+    mb_pulled &gt;= 100,                          "critical",
+    mb_pulled &gt;=  10,                          "high",
+    mb_pulled &gt;=   1 AND request_count &gt;= 50,  "info",
+    1==1, null
+  )
+| where isnotnull(severity)
+| convert ctime(first_seen) ctime(last_seen)
+| sort - mb_pulled</pre>
+            </div>
+
+            <p>Tuning recommendations specific to this detection:</p>
+            <ul>
+              <li><strong>Critical threshold (100 MB / 1h)</strong>: pages on-call. A user reading 100 MB of their own mailbox content in an hour via Graph API (not the Outlook client) is almost always automation; if the automation isn't documented, it's an exfil candidate. Mailboxes with very large signature blocks or routine high-volume PST migrations are the legitimate edge cases - allowlist them by SP/user.</li>
+              <li><strong>High threshold (10 MB / 1h)</strong>: daily review. Catches eDiscovery sweeps, archiving tools running on user-delegated tokens, and any custom tooling that bulk-reads mailbox content. Most defender tenants will have a small set of expected (UTI, source-IP) combinations here within a week of running the detection - allowlist them.</li>
+              <li><strong>Info threshold (1 MB across &ge; 50 requests)</strong>: catches the slow-and-low pattern. 50 sequential requests in an hour is consistent with paginated walks of a mailbox; combined with even modest byte volume this is automated reading.</li>
+              <li><strong><code>full_content_reads</code> as a force-multiplier</strong>: any request matching <code>/$value</code> is reading raw MIME including attachments. A token that does &gt; 5 <code>/$value</code> reads in an hour is exfiltrating mailbox content even if the byte total stays under the threshold.</li>
+              <li><strong>Anti-correlate with Detection 11</strong>: a delegated token that fires both Detection 11 (directory enumeration) and Detection 12 (own-mailbox bulk read) within the same hour is the textbook stolen-token IR signature: attacker enumerates the tenant to find high-value targets, then reads their own mailbox to map internal communication while they're at it. Pages on-call regardless of individual severity tier.</li>
+            </ul>
+
             <h3>Tuning notes</h3>
             <ul>
               <li>The macros above reference three lookup definitions: <code>oauthsentry_malicious</code>, <code>oauthsentry_risky</code>, <code>oauthsentry_compliance</code>. Each one points at a CSV with at minimum an <code>appid</code> field; populate the lookup files from the OAuthSentry CSV feeds at <code>/feeds/all/{malicious,risky,compliance}.csv</code> on whatever cadence makes sense for your tenant. Splunk's built-in <em>Lookup Editor</em> app or a scheduled <code>| outputlookup</code> from a REST search are both fine.</li>
               <li>Detection 3 (newly observed OAuth app) is the noisiest but the most valuable. Tune by adding an extra anti-join against <code>oauthsentry_compliance</code> if you want to suppress already-vetted apps automatically.</li>
-              <li>Detections 1, 2, 8, 9, 10, 11 are high-fidelity enough to alert on (Detection 10 specifically when the actor is a non-admin and <code>$top</code> is &gt;= 50; Detection 11 at the critical 10,000-record/1h tier). Detections 3, 4, 5, 6 work better as scheduled hunts with daily review. Detection 7 is investigator-driven, not an alert.</li>
+              <li>Detections 1, 2, 8, 9, 10, 11, 12 are high-fidelity enough to alert on (Detection 10 specifically when the actor is a non-admin and <code>$top</code> is &gt;= 50; Detection 11 at the critical 10,000-record/1h tier; Detection 12 at the critical 100 MB/1h tier). Detections 3, 4, 5, 6 work better as scheduled hunts with daily review. Detection 7 is investigator-driven, not an alert.</li>
               <li>Apps in the <em>risky</em> bucket are legitimate. Trigger on context (unusual user, new IP, new geography) rather than on the app id alone - detections 2 and 5 demonstrate the pattern.</li>
               <li>Where the unified audit log surfaces both <code>SessionId</code> directly and <code>AppAccessContext.AADSessionId</code>, prefer the latter - it is consistently populated for OAuth-token-driven activity, while bare <code>SessionId</code> is only present on Exchange events.</li>
               <li>The M365 Management Activity API sometimes appends a trailing period to operation names (<code>"Consent to application."</code>); Azure Monitor's diagnostic stream does not. Every search above normalises with <code>eval Operation = replace(Operation, "\.$", "")</code> so the same SPL works across both pipelines.</li>
