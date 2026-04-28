@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>tag:oauthsentry.github.io,2026:changelog</id>
+  <title>OAuthSentry catalog changelog</title>
+  <subtitle>Adds, removes, category and severity changes across the OAuth app catalog</subtitle>
+  <updated>2026-01-01T00:00:00+00:00</updated>
+  <link rel="self"      href="https://oauthsentry.github.io/feeds/changelog.atom"/>
+  <link rel="alternate" href="https://oauthsentry.github.io/" type="text/html"/>
+  <author><name>OAuthSentry</name></author>
+  <generator uri="https://oauthsentry.github.io">OAuthSentry build_feeds</generator>
+</feed>

@@ -386,7 +386,252 @@ def build():
     print(f"[api] wrote {api_stats['apps_written']} per-app JSON files "
           f"(slug collisions handled: {api_stats['collisions']})")
 
+    # Diff against the previous snapshot, emit Atom + JSON changelog feeds
+    changelog_stats = write_changelog(all_rows)
+    print(f"[changelog] {changelog_stats['new_entries']} new entries this run "
+          f"({changelog_stats['total_kept']} retained in feed)")
+
     print(json.dumps({k: v for k, v in summary.items() if k != "sources"}, indent=2))
+
+
+# ----------------------------------------------------------------------
+# Changelog feed - Atom + JSON
+# ----------------------------------------------------------------------
+#
+# Diffs the current catalog against the previous build's snapshot and emits
+# one entry per detected change (added / removed / category-changed /
+# severity-raised / reference-added). Output is a static Atom feed at
+# feeds/changelog.atom (so any RSS reader can subscribe directly) and a
+# JSON twin at feeds/changelog.json (for non-RSS consumers).
+#
+# State: data/.last_build.json holds the most recent snapshot the diff is
+# computed against. data/.changelog_history.json holds the rolling 200-entry
+# history the published feeds derive from.
+
+SNAPSHOT_PATH       = DATA_DIR / ".last_build.json"
+HISTORY_PATH        = DATA_DIR / ".changelog_history.json"
+CHANGELOG_KEEP      = 200
+SEVERITY_RANK = {"info": 0, "low": 1, "medium": 2, "high": 3, "critical": 4}
+
+def _snapshot(rows: list[dict]) -> dict:
+    return {
+        r["appid"]: {
+            "appname":  r.get("appname") or "",
+            "service":  r["service"],
+            "category": r["metadata_category"],
+            "severity": (r.get("metadata_severity") or "info").lower(),
+            "ref_count": len(parse_references(r.get("metadata_reference") or "")),
+        }
+        for r in rows
+    }
+
+def _diff_snapshots(old: dict, new: dict) -> list[dict]:
+    """Returns ordered list of change entries (most significant first)."""
+    now_iso = datetime.now(timezone.utc).isoformat()
+    changes = []
+
+    for appid, cur in new.items():
+        prev = old.get(appid)
+        if prev is None:
+            changes.append({
+                "kind": "added",
+                "ts": now_iso,
+                "appid": appid,
+                "service": cur["service"],
+                "appname": cur["appname"],
+                "category": cur["category"],
+                "severity": cur["severity"],
+                "summary": f"Added to {cur['category']} ({cur['severity']})",
+            })
+            continue
+        if prev["category"] != cur["category"]:
+            changes.append({
+                "kind": "category-changed",
+                "ts": now_iso,
+                "appid": appid,
+                "service": cur["service"],
+                "appname": cur["appname"],
+                "category": cur["category"],
+                "severity": cur["severity"],
+                "previous": {"category": prev["category"]},
+                "summary": f"Category changed from {prev['category']} to {cur['category']}",
+            })
+        if SEVERITY_RANK.get(cur["severity"], 0) > SEVERITY_RANK.get(prev["severity"], 0):
+            changes.append({
+                "kind": "severity-raised",
+                "ts": now_iso,
+                "appid": appid,
+                "service": cur["service"],
+                "appname": cur["appname"],
+                "category": cur["category"],
+                "severity": cur["severity"],
+                "previous": {"severity": prev["severity"]},
+                "summary": f"Severity raised from {prev['severity']} to {cur['severity']}",
+            })
+        if cur["ref_count"] > prev["ref_count"]:
+            changes.append({
+                "kind": "reference-added",
+                "ts": now_iso,
+                "appid": appid,
+                "service": cur["service"],
+                "appname": cur["appname"],
+                "category": cur["category"],
+                "severity": cur["severity"],
+                "summary": f"{cur['ref_count'] - prev['ref_count']} new reference(s) added",
+            })
+
+    for appid, prev in old.items():
+        if appid not in new:
+            changes.append({
+                "kind": "removed",
+                "ts": now_iso,
+                "appid": appid,
+                "service": prev["service"],
+                "appname": prev["appname"],
+                "category": prev["category"],
+                "severity": prev["severity"],
+                "summary": "Removed from catalog",
+            })
+
+    # Most-significant first: malicious changes before risky before compliance,
+    # added/category-changed/severity-raised before reference-added.
+    kind_rank = {"added": 0, "category-changed": 1, "severity-raised": 2,
+                 "reference-added": 3, "removed": 4}
+    cat_rank  = {"malicious": 0, "risky": 1, "compliance": 2}
+    changes.sort(key=lambda c: (cat_rank.get(c["category"], 9), kind_rank.get(c["kind"], 9), c["appid"]))
+    return changes
+
+
+def _xml_escape(s: str) -> str:
+    return (s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+             .replace('"', "&quot;").replace("'", "&apos;"))
+
+
+def _atom_entry(entry: dict, base_url: str) -> str:
+    appid = entry["appid"]
+    slug = make_slug(appid)
+    perma = f"{base_url}/feeds/api/v1/apps/{slug}.json"
+    title = f"[{entry['kind']}] {entry['service']} / {entry['appname'] or appid}"
+    body_lines = [
+        f"App: {entry['appname'] or '(no name)'}",
+        f"App ID: {appid}",
+        f"Service: {entry['service']}",
+        f"Category: {entry['category']}",
+        f"Severity: {entry['severity']}",
+        f"Change: {entry['summary']}",
+    ]
+    if entry.get("previous"):
+        for k, v in entry["previous"].items():
+            body_lines.append(f"Previous {k}: {v}")
+    body_lines.append(f"Lookup: {perma}")
+    content = "\n".join(body_lines)
+    # Stable id per (kind, appid, ts) so a retried publish doesn't dupe in readers
+    entry_id = f"tag:oauthsentry.github.io,2026:{entry['kind']}:{appid}:{entry['ts']}"
+    return (
+        "  <entry>\n"
+        f"    <id>{_xml_escape(entry_id)}</id>\n"
+        f"    <title>{_xml_escape(title)}</title>\n"
+        f"    <updated>{_xml_escape(entry['ts'])}</updated>\n"
+        f"    <published>{_xml_escape(entry['ts'])}</published>\n"
+        f"    <link rel=\"alternate\" href=\"{_xml_escape(perma)}\"/>\n"
+        f"    <category term=\"{_xml_escape(entry['kind'])}\"/>\n"
+        f"    <category term=\"{_xml_escape(entry['service'])}\"/>\n"
+        f"    <category term=\"{_xml_escape(entry['category'])}\"/>\n"
+        f"    <summary type=\"text\">{_xml_escape(entry['summary'])}</summary>\n"
+        f"    <content type=\"text\">{_xml_escape(content)}</content>\n"
+        "    <author><name>OAuthSentry</name></author>\n"
+        "  </entry>\n"
+    )
+
+
+def write_changelog(all_rows: list[dict]) -> dict:
+    """Diff against the last snapshot and emit Atom + JSON changelogs."""
+    base_url = "https://oauthsentry.github.io"
+
+    # 1. Compute current snapshot and load previous
+    current = _snapshot(all_rows)
+    if SNAPSHOT_PATH.exists():
+        try:
+            previous = json.load(SNAPSHOT_PATH.open("r", encoding="utf-8"))
+        except Exception:
+            previous = {}
+    else:
+        previous = {}
+
+    # 2. Compute diff. On first run (no previous snapshot), emit no entries -
+    # otherwise the initial run would dump every catalog row into the changelog
+    # which is not actually a "change".
+    if previous:
+        new_entries = _diff_snapshots(previous, current)
+    else:
+        new_entries = []
+
+    # 3. Load history, prepend new entries, cap to CHANGELOG_KEEP
+    if HISTORY_PATH.exists():
+        try:
+            history = json.load(HISTORY_PATH.open("r", encoding="utf-8"))
+        except Exception:
+            history = []
+    else:
+        history = []
+
+    if new_entries:
+        history = new_entries + history
+        history = history[:CHANGELOG_KEEP]
+        with HISTORY_PATH.open("w", encoding="utf-8") as fh:
+            json.dump(history, fh, indent=2, ensure_ascii=False)
+
+    # 4. Persist current snapshot for the next run
+    with SNAPSHOT_PATH.open("w", encoding="utf-8") as fh:
+        json.dump(current, fh, indent=2, ensure_ascii=False)
+
+    # 5. Emit Atom feed - but ONLY rewrite the files when something actually
+    # changed. If there are no new entries AND the existing files exist, leave
+    # them alone so consecutive CI runs don't commit spurious "no-op" diffs.
+    atom_path = FEEDS_DIR / "changelog.atom"
+    json_path = FEEDS_DIR / "changelog.json"
+    skip_rewrite = (
+        not new_entries
+        and atom_path.exists()
+        and json_path.exists()
+    )
+    if skip_rewrite:
+        return {"new_entries": 0, "total_kept": len(history)}
+
+    # Use the most recent entry's timestamp for the feed-level <updated> so the
+    # atom file is byte-identical when the underlying history hasn't changed.
+    feed_updated = (history[0]["ts"] if history
+                    else "2026-01-01T00:00:00+00:00")
+    atom_lines = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<feed xmlns="http://www.w3.org/2005/Atom">',
+        f"  <id>tag:oauthsentry.github.io,2026:changelog</id>",
+        f"  <title>OAuthSentry catalog changelog</title>",
+        f"  <subtitle>Adds, removes, category and severity changes across the OAuth app catalog</subtitle>",
+        f"  <updated>{_xml_escape(feed_updated)}</updated>",
+        f"  <link rel=\"self\"      href=\"{base_url}/feeds/changelog.atom\"/>",
+        f"  <link rel=\"alternate\" href=\"{base_url}/\" type=\"text/html\"/>",
+        f"  <author><name>OAuthSentry</name></author>",
+        f"  <generator uri=\"{base_url}\">OAuthSentry build_feeds</generator>",
+    ]
+    for e in history:
+        atom_lines.append(_atom_entry(e, base_url))
+    atom_lines.append("</feed>\n")
+    with atom_path.open("w", encoding="utf-8") as fh:
+        fh.write("\n".join(atom_lines))
+
+    # 6. Emit JSON twin. The 'generated' field is set to the most recent entry
+    # ts (not "now") for the same byte-stability reason as Atom.
+    json_payload = {
+        "feed":      "OAuthSentry catalog changelog",
+        "generated": feed_updated,
+        "count":     len(history),
+        "entries":   history,
+    }
+    with json_path.open("w", encoding="utf-8") as fh:
+        json.dump(json_payload, fh, indent=2, ensure_ascii=False)
+
+    return {"new_entries": len(new_entries), "total_kept": len(history)}
 
 
 if __name__ == "__main__":

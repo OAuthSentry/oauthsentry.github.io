@@ -48,8 +48,7 @@
     <section id="page-search">
       <div class="hero">
         <div class="shell">
-          <div class="pretitle">v1 - public - oauthsentry.github.io</div>
-          <h1>OAuth application <span class="accent">intelligence</span><br>for defense teams.</h1>
+          <h1>OAuth application <span class="accent">intelligence</span></h1>
           <p class="lede">
             Search any OAuth Application ID across identity platforms. Triage in one click: legitimate references for allowlisting, OAuth apps abused by threat actors, and known-malicious applications observed in BEC, AiTM and consent-phishing campaigns.
           </p>
@@ -266,7 +265,7 @@
 
             <div class="callout danger">
               <strong>Containment first - what disable does and does not do</strong>
-              Disabling the service principal blocks new sign-ins and stops Entra issuing new access tokens, but per the OAuth 2.0 spec <strong>access tokens already in the attacker's hands cannot be revoked</strong>; they remain valid until they expire. The only mechanism that can invalidate a live access token before expiry is Continuous Access Evaluation (CAE) - and CAE only applies to CAE-aware resources (Exchange Online, SharePoint Online, Teams, Microsoft Graph) and CAE-aware clients. Revoking the user's refresh tokens via <code>Revoke-MgUserSignInSession</code> forces re-authentication on the next refresh, but for non-CAE resources the attacker can keep using a still-valid access token in the meantime. Treat the window between containment and full eviction as live; assume continued read access until proven otherwise.
+              Disabling the service principal blocks new sign-ins and stops Entra issuing new access tokens, but per the OAuth 2.0 spec <strong>access tokens already in the attacker's hands cannot be revoked</strong>; they remain valid until they expire. <strong>How long is "until they expire"?</strong> Microsoft's default access-token TTL is a randomized <strong>60-90 minutes (75 min average)</strong>, or <strong>2 hours flat</strong> for Microsoft Teams / Microsoft 365 clients in tenants without Conditional Access. Tenants with a Configurable Token Lifetime (CTL) policy can extend this up to <strong>24 hours</strong> - which doubles or quadruples the post-incident exposure window before the stolen token expires on its own. <strong>Refresh tokens</strong> live <strong>90 days</strong> (24h for single-page apps), so until you also revoke the refresh token (<code>Revoke-MgUserSignInSession</code>), the attacker can mint fresh access tokens for three months. The only mechanism that can invalidate a live access token before expiry is Continuous Access Evaluation (CAE) - and CAE only applies to CAE-aware resources (Exchange Online, SharePoint Online, Teams, Microsoft Graph) and CAE-aware clients. Resetting the user's password while tokens are still valid does not evict the attacker. Treat the window between containment and full eviction as live; assume continued read access until proven otherwise, and size that window using your tenant's actual CTL setting (audit via <code>Get-MgPolicyTokenLifetimePolicy</code>).
             </div>
 
             <h3><span class="num">1</span> Preserve evidence before you change anything</h3>
@@ -564,6 +563,152 @@ Update-MgPolicyAuthorizationPolicy `
               <code>SessionId</code> is an Entra ID construct that only exists when the user authenticates via modern auth (OAuth 2.0 / ADAL / MSAL). Legacy basic-auth sessions have no SessionId. If your tenant still permits legacy auth, the absence of a SessionId on a mailbox audit event is itself a signal worth investigating.
             </div>
 
+            <h4>Tracking a token when you don't have the username</h4>
+            <p>Real IR rarely starts with "user X is compromised, find their actions". It usually starts with "we have <em>this</em> indicator from somewhere - what did it touch?" The indicator is a token artifact (a UTI, a hashed token, a session id), and the username is what you're trying to <em>derive</em> from it. Five concrete workflows, ordered by how often they come up:</p>
+
+            <p><strong>1. You have a UTI from a Graph activity log entry.</strong> The UTI in <code>properties.signInActivityId</code> is the same value as the <code>uti</code> JWT claim and the <code>uniqueTokenIdentifier</code> field on Entra sign-in events. Walk it backwards to recover the user, then forward to find every other action that token authorized:</p>
+            <div class="code-block">
+              <div class="code-header">SPL - resolve UTI → user, then find every action by that token<button class="copy-snippet" type="button">copy</button></div>
+              <pre>``` Step 1: find the originating sign-in (UTI is unique per token, ~75 min lifetime). ```
+``` This recovers userPrincipalName, source IP, device, MFA factor, IdP, conditional ```
+``` access result - everything you need to scope the actor.                          ```
+`oauthsentry_aad_signin` earliest=-7d
+| where uniqueTokenIdentifier="AAAAExampleUtiXXXXXXXX"
+| table _time, userPrincipalName, userId, appDisplayName, appId, ipAddress,
+        location.city, deviceDetail.operatingSystem, authenticationDetails{}.authenticationMethod,
+        conditionalAccessStatus
+
+``` Step 2: find every Graph call made with that token. Same UTI, different stream. ```
+`oauthsentry_graph_activity` earliest=-7d
+| where 'properties.signInActivityId'="AAAAExampleUtiXXXXXXXX"
+| table _time, 'properties.requestMethod', 'properties.requestUri',
+        'properties.responseStatusCode', 'properties.responseSizeBytes'
+| sort _time
+
+``` Step 3: M365 unified audit log entries authorized by tokens that share the   ```
+``` same SESSION (a session can mint many tokens). The session lives longer than ```
+``` any one token, so this is the broader scope.                                 ```
+`oauthsentry_o365_audit` earliest=-7d
+| where like('AppAccessContext.AADSessionId', "&lt;session-id-from-step-1&gt;")
+| table _time, Operation, ObjectId, UserId, ClientIP, AppId</pre>
+            </div>
+
+            <p><strong>2. You have a GitHub <code>hashed_token</code> from one audit log event.</strong> GitHub publishes the SHA-256 hash of every issued token in the audit log. <a href="https://docs.github.com/en/enterprise-cloud@latest/admin/monitoring-activity-in-your-enterprise/reviewing-audit-logs-for-your-enterprise/identifying-audit-log-events-performed-by-an-access-token">GitHub's hashed-token search</a> takes the hash directly and returns every event - clones, fetches, API calls, repo reads - made by tokens that produced that hash:</p>
+            <div class="code-block">
+              <div class="code-header">curl - GitHub audit log hashed-token pivot<button class="copy-snippet" type="button">copy</button></div>
+              <pre>``` Take the hashed_token value from one event, find every event with the same hash. ```
+``` Returns every action that specific token took, regardless of which user owns it. ```
+HASH="ExAmPLEhAsHEdT0kEnVaLuEf0rD0cs00xx00000000="
+ENC=$(printf %s "$HASH" | jq -sRr @uri)
+
+curl -s \
+  -H "Authorization: Bearer $PAT" \
+  -H "Accept: application/vnd.github+json" \
+  "https://api.github.com/orgs/$ORG/audit-log?phrase=hashed_token:$ENC&amp;per_page=100" \
+| jq '.[] | {ts: .["@timestamp"], action, user, actor_ip, repo, oauth_application_name}'</pre>
+            </div>
+
+            <p><strong>3. You have a token captured from a phishing kit, stealer log, or beacon.</strong> Decode the JWT (it's three base64-url segments separated by dots; the middle segment is JSON). The <code>uti</code> claim is what you pivot on - same value as the audit-log fields above. The <code>oid</code> claim gives you the user object id, <code>scp</code> lists the granted scopes, <code>iat</code> / <code>exp</code> give you the validity window:</p>
+            <div class="code-block">
+              <div class="code-header">bash - decode a captured JWT and pull the linkable claims<button class="copy-snippet" type="button">copy</button></div>
+              <pre>TOKEN="eyJ0eXAiOi..."   # paste the access_token portion only
+
+``` Decode the middle segment. Bash trick: replace -_/+/= padding, base64 decode. ```
+echo "$TOKEN" | cut -d. -f2 | tr '_-' '/+' | base64 -d 2&gt;/dev/null | jq '{
+  uti, oid, tid, appid, app_displayname,
+  iat: (.iat | todate), exp: (.exp | todate),
+  scope: .scp,
+  upn: (.upn // .preferred_username // "(no upn claim)"),
+  ipaddr
+}'
+
+``` The 'uti' value plugs straight into the queries in workflow 1 above to find ```
+``` everything that token did inside your tenant.                              ```</pre>
+            </div>
+
+            <p><strong>4. You have a Splunk SessionId but no clue who it belongs to.</strong> The <code>SessionId</code> appears on Entra sign-in events, mailbox audit events, and inside the <code>AppAccessContext</code> on every M365 unified audit log entry that involved an OAuth-authorized action. One query against any of those streams resolves the user:</p>
+            <div class="code-block">
+              <div class="code-header">SPL - resolve a SessionId to a user across streams<button class="copy-snippet" type="button">copy</button></div>
+              <pre>``` Try the sign-in log first - cleanest mapping ```
+`oauthsentry_aad_signin` SessionId="&lt;session-id&gt;"
+| stats values(userPrincipalName) as upns
+        values(userId)             as user_oids
+        values(appId)               as app_ids
+        values(appDisplayName)      as apps
+        values(ipAddress)           as src_ips
+        earliest(_time) as first_seen
+        latest(_time)   as last_seen
+
+``` If no hit there, try the M365 audit log - the SessionId lives nested under   ```
+``` AppAccessContext (delegated tokens) or directly on Exchange mailbox events. ```
+`oauthsentry_o365_audit` ('AppAccessContext.AADSessionId'="&lt;session-id&gt;" OR SessionId="&lt;session-id&gt;")
+| stats values(UserId) as upns dc(Operation) as ops earliest(_time) as first_seen latest(_time) as last_seen</pre>
+            </div>
+
+            <p><strong>5. You have an OAuth Application's AppId but want all tokens issued under it.</strong> Every access token under one OAuth app shares the same <code>AppId</code>; what differs is the UTI per token and the SessionId per session. List the unique UTIs the app has minted in your tenant, and you have the full set of distinct tokens it has issued (and therefore the full set of users who consented or signed in via it):</p>
+            <div class="code-block">
+              <div class="code-header">SPL - enumerate every token issued for one app<button class="copy-snippet" type="button">copy</button></div>
+              <pre>`oauthsentry_aad_signin` appId="&lt;app-id&gt;" earliest=-30d
+| stats values(uniqueTokenIdentifier) as token_utis
+        dc(uniqueTokenIdentifier)     as distinct_tokens
+        values(userPrincipalName)     as users
+        dc(userPrincipalName)         as distinct_users
+        values(SessionId)             as sessions
+        dc(SessionId)                 as distinct_sessions
+        earliest(_time) as first_seen
+        latest(_time)   as last_seen
+   by appId</pre>
+            </div>
+
+            <p><strong>6. You have an app-only token's traces and need to follow the service principal (no user exists).</strong> App-only tokens (<code>C_Idtyp == "app"</code> in Graph activity logs) have an empty <code>userId</code>; the principal is the service principal itself. The pivot key is <code>servicePrincipalId</code>, and the cross-stream join on UTI still works the same way as for delegated flows. Common case: a vendor like Salesloft Drift discloses a compromise of one of their app registrations - you have an <code>appId</code> from the disclosure, you want every Graph call any of that app's tokens made against any user mailbox in your tenant. Two independent queries (run sequentially):</p>
+            <div class="code-block">
+              <div class="code-header">SPL - step 1: enumerate app-only Graph activity for one OAuth app<button class="copy-snippet" type="button">copy</button></div>
+              <pre>``` Returns one row per (servicePrincipalId, target user object-id) pair, with     ```
+``` the endpoints touched, distinct token count, and status codes seen.            ```
+``` Copy the targeted_user_oid values out and feed them to step 2 below.           ```
+
+`oauthsentry_graph_activity` earliest=-7d
+| eval req_appid  = 'properties.appId'
+| eval req_spid   = 'properties.servicePrincipalId'
+| eval req_uri    = 'properties.requestUri'
+| eval req_uti    = 'properties.signInActivityId'
+| eval req_idtyp  = 'properties.C_Idtyp'
+| eval req_status = 'properties.responseStatusCode'
+
+| where lower(req_appid) = "&lt;app-id-from-disclosure&gt;"
+| where req_idtyp = "app"
+
+``` Pull the target user object id out of /users/{id}/... requestUris ```
+| rex field=req_uri "(?i)/v1\.0/users/(?&lt;targeted_user_oid&gt;[0-9a-f-]{36})"
+
+| stats count
+        values(req_uri)         as endpoints
+        values(req_uti)         as token_utis
+        dc(req_uti)             as distinct_tokens
+        values(targeted_user_oid) as targeted_user_oids
+        dc(targeted_user_oid)     as distinct_users_targeted
+        values(req_status)        as status_codes
+        earliest(_time)           as first_seen
+        latest(_time)             as last_seen
+   by req_spid</pre>
+            </div>
+            <div class="code-block">
+              <div class="code-header">SPL - step 2: resolve target user object-ids to display names<button class="copy-snippet" type="button">copy</button></div>
+              <pre>``` Run after step 1. Replace &lt;oid1&gt;, &lt;oid2&gt;, ... with the targeted_user_oid     ```
+``` values from step 1's output. Pulls a single audit-log row per user that gives ```
+``` you the displayName and userPrincipalName.                                    ```
+
+`oauthsentry_aad_audit` earliest=-30d
+   targetResources{}.id IN ("&lt;oid1&gt;", "&lt;oid2&gt;", "&lt;oid3&gt;")
+| dedup targetResources{}.id
+| table targetResources{}.id, targetResources{}.displayName, targetResources{}.userPrincipalName</pre>
+            </div>
+
+            <div class="callout">
+              <strong>Why these workflows matter</strong>
+              An attacker who steals a token doesn't usually announce themselves. The first sign is often a single anomalous event surfacing an unfamiliar UTI / session id / hashed token / service-principal id - and the user (or service principal) the token belongs to is exactly what you're trying to figure out. The token identifier is the through-line; the username is downstream of the identifier, not a prerequisite, and for app-only flows there is no user at all - the service principal is the principal. The six workflows above cover the realistic distribution: most cases start from a UTI in a Graph or sign-in log; the GitHub hash and JWT cases cover external-IOC-driven IR; the SessionId case covers M365-only deployments without the Graph stream; the AppId and app-only servicePrincipalId cases are for assessing exposure scope when a vendor (Drift, Context.ai, etc.) discloses a compromise affecting one of their app registrations.
+            </div>
+
             <h3><span class="num">5</span> Microsoft Graph activity logs - the post-token-theft visibility layer</h3>
             <p>Graph activity logs are the only place that records every individual Graph API call the malicious app made. Without this stream, you can prove the app got a token but not what it did with it - which is the difference between "we were targeted" and "this is the regulator-disclosable scope of the breach". Stream them via Azure Monitor diagnostic settings (category <code>MicrosoftGraphActivityLogs</code>); in Splunk they land under the dedicated <code>oauthsentry_graph_activity</code> macro defined in the Detections tab.</p>
 
@@ -609,6 +754,68 @@ Update-MgPolicyAuthorizationPolicy `
 }</pre>
             </div>
 
+            <p>The same event shape, but for an <strong>app-only</strong> token reading another user's mailbox content - the post-vendor-compromise pattern that drives most of OAuthSentry's malicious feed (Salesloft Drift, Context.ai etc. all fall in this category):</p>
+            <div class="code-block">
+              <div class="code-header">Microsoft Graph activity log event - app-only flow (anonymized)<button class="copy-snippet" type="button">copy</button></div>
+              <pre>{
+  "time":             "2026-04-28T14:44:12.562Z",
+  "resourceId":       "/TENANTS/&lt;tenant-id&gt;/PROVIDERS/MICROSOFT.AADIAM",
+  "operationName":    "Microsoft Graph Activity",
+  "category":         "MicrosoftGraphActivityLogs",
+  "resultSignature":  "200",                                            ``` success ```
+  "callerIpAddress":  "&lt;source-ip&gt;",                                       ``` AWS eu-west-1 in this real example ```
+  "location":         "North Europe",
+  "properties": {
+    "requestMethod":      "GET",
+    "responseStatusCode": 200,
+    "responseSizeBytes":  11785,                                        ``` ~12 KB returned ```
+    "signInActivityId":   "&lt;uti&gt;",
+    "appId":              "&lt;app-id&gt;",                                   ``` custom OAuth app, not a FOCI app ```
+    "servicePrincipalId": "&lt;sp-objectid&gt;",                              ``` app-only: SP is the principal ```
+    "UserPrincipalObjectID": "&lt;sp-objectid&gt;",                           ``` same as servicePrincipalId on app-only ```
+    "userId":             "",                                           ``` empty - no user ```
+    "scopes":             "",                                           ``` empty - app-only tokens have no scopes ```
+    "roles":              "Mail.Read MailboxSettings.Read User.Read.All", ``` granted application permissions ```
+    "wids":               "0997a1d0-0d1d-4acb-b408-d5ca73121e90",       ``` Directory Readers - typical sole wid for an SP with no other roles ```
+    "C_Idtyp":            "app",                                        ``` THE single-best delegated-vs-app-only marker ```
+    "C_Sid":              "",                                           ``` empty - no user session ```
+    "C_DeviceId":         "",                                           ``` empty - no device ```
+    "userAgent":          "Python/3.11 aiohttp/3.13.4",                 ``` async Python HTTP client - tooling UA ```
+    "ipAddress":          "&lt;source-ip&gt;",
+    "requestUri":         "https://graph.microsoft.com/v1.0/users/&lt;target-user-objectid&gt;/messages/&lt;message-id&gt;/$value",
+    "policyEvaluated":    false,
+    "tokenIssuedAt":      "2026-04-28T14:18:56Z"                        ``` token 26 min old when used ```
+  },
+  "tenantId": "&lt;tenant-id&gt;"
+}</pre>
+            </div>
+
+            <p>Five things this app-only event tells a defender, contrasting with the delegated event above:</p>
+            <ul>
+              <li><strong>This is an app-only flow, not delegated.</strong> The single highest-fidelity tell is <code>properties.C_Idtyp == "app"</code> - the same JWT <code>idtyp</code> claim. Reinforced by <code>scopes</code> being empty (app-only tokens have <em>roles</em>, not scopes) and <code>roles</code> being populated with the granted application permissions instead. <strong>Every detection and pivot for app-only flows must use <code>servicePrincipalId</code> instead of <code>userId</code></strong> - the latter is empty.</li>
+              <li><strong>The app token is reading another user's specific email by object-id and message-id.</strong> <code>requestUri</code> matches <code>/v1.0/users/{user-objectid}/messages/{message-id}/$value</code>. The <code>/$value</code> suffix returns raw MIME (full email including attachments), which is the most data-bearing form of mail read in the Graph API. App-only <code>Mail.Read</code> can read <em>any</em> mailbox in the tenant - this is the threat surface that Salesloft Drift, Context.ai and similar publisher-compromise scenarios exploited.</li>
+              <li><strong>Source is in published Amazon EC2 IP space.</strong> The <code>34.x.x.x</code> blocks are unambiguously AWS - cross-check the specific region against the live <a href="https://ip-ranges.amazonaws.com/ip-ranges.json">ip-ranges.json</a> (in this real example the address resolves to <code>eu-west-1</code> / Ireland, but exact ranges shift over time so always verify against the current published list). Many legitimate enterprise mail-reading SaaS products run on AWS - eDiscovery, archiving, journaling, security-scanning vendors. The legitimacy question is whether the <em>specific</em> SP shown here has a documented business reason to read mail from AWS infrastructure. Build a per-tenant allowlist of (servicePrincipalId, source-ASN) pairs that map to known mail-reading vendors; alert on any other combination.</li>
+              <li><strong>User-agent is a Python async HTTP client.</strong> <code>Python/3.11 aiohttp/3.13.4</code> is async Python. Real enterprise mail products almost always identify themselves with a vendor-branded UA. <code>aiohttp</code> shows up in attacker tooling and in homegrown SOC scripts in roughly equal measure - context determines which.</li>
+              <li><strong>Token is fresh (~26 min old).</strong> <code>tokenIssuedAt</code> at 14:18:56, event at 14:44:12 - well within the default 60-90 minute access-token lifetime. Recent token issuance combined with mailbox-content reads is consistent with active operation rather than legacy automation that just hasn't been touched in months.</li>
+            </ul>
+
+            <p>How to tell delegated and app-only flows apart in the Graph activity log, at a glance:</p>
+            <table class="kv-table">
+              <thead><tr><th>Field</th><th>Delegated (user-on-behalf)</th><th>App-only (service principal)</th></tr></thead>
+              <tbody>
+                <tr><td class="mono">properties.C_Idtyp</td><td class="mono">user</td><td class="mono"><strong>app</strong></td></tr>
+                <tr><td class="mono">properties.scopes</td><td>populated (space-separated scope strings like <code>Mail.Read User.Read.All</code>)</td><td><strong>empty string</strong></td></tr>
+                <tr><td class="mono">properties.roles</td><td>typically empty</td><td><strong>populated</strong> with granted application permissions</td></tr>
+                <tr><td class="mono">properties.userId</td><td>the acting user's object id</td><td><strong>empty / absent</strong></td></tr>
+                <tr><td class="mono">properties.UserPrincipalObjectID</td><td>the acting user's object id</td><td>the <strong>service principal's</strong> object id (same as <code>servicePrincipalId</code>)</td></tr>
+                <tr><td class="mono">properties.servicePrincipalId</td><td>absent</td><td><strong>populated</strong> (the principal)</td></tr>
+                <tr><td class="mono">properties.C_Sid</td><td>the user's session id</td><td><strong>empty</strong> (no user session)</td></tr>
+                <tr><td class="mono">properties.C_DeviceId</td><td>often populated</td><td><strong>empty</strong></td></tr>
+                <tr><td class="mono">properties.wids</td><td>user's role list; <code>b79fbf4d-...</code> = default-user (no admin role)</td><td>SP's role list; <code>0997a1d0-...</code> = Directory Readers (the typical sole wid when the SP has no other directory roles assigned)</td></tr>
+                <tr><td class="mono">requestUri shape</td><td>often <code>/me/...</code> for the acting user's own data</td><td>almost always <code>/users/{id}/...</code> or <code>/groups/{id}/...</code> - app reads any user's data</td></tr>
+              </tbody>
+            </table>
+
             <p>Five things this single event tells a defender, in order of fidelity:</p>
             <ul>
               <li><strong>Token came from a FOCI client.</strong> <code>properties.appId == d3590ed6-52b3-4102-aeff-aad2292ab01c</code> is Microsoft Office, one of the eleven Family of Client IDs apps. Microsoft Office talking to <code>/users</code> is firmly outside its normal traffic shape - Office hits <code>/me/messages</code>, <code>/me/drive</code>, <code>/me/calendar</code>, <code>/me/joinedTeams</code>, never <code>/users</code> at scale. Off-pattern FOCI traffic is the post-token-theft signature TeamFiltration / UTA0352 / UNK_SneakyStrike rely on.</li>
@@ -630,7 +837,7 @@ Update-MgPolicyAuthorizationPolicy `
               <li><code>properties.signInActivityId</code> - the <strong>UTI</strong> claim of the token, the same identifier surfaced as <code>uniqueTokenIdentifier</code> on Entra sign-in events. The link back to the originating sign-in. Pivot via the section 4 table.</li>
               <li><code>properties.userAgent</code> - the HTTP User-Agent header. Real Microsoft client UAs are well-known and stable per-app; anything else (Trident, python-requests, curl, Go-http-client, Java, doubly-prefixed) is suspicious.</li>
               <li><code>properties.ipAddress</code> / <code>callerIpAddress</code> - source. Cross-check against the user's normal sign-in pattern.</li>
-              <li><code>properties.tokenIssuedAt</code> - when the token was originally issued. Long deltas between <code>tokenIssuedAt</code> and the event time mean the call was made with a refresh-derived token; expected for normal use, but also exactly how attackers operate after token theft.</li>
+              <li><code>properties.tokenIssuedAt</code> - when the token was originally issued. The delta between <code>tokenIssuedAt</code> and the event time tells you whether the call was made with a fresh or a refresh-derived token, which sets your window of vulnerability after compromise. <strong>Microsoft's defaults:</strong> access tokens last a randomized <strong>60-90 minutes (75 min average)</strong> for Conditional-Access-enabled tenants, or a flat <strong>2 hours</strong> for clients like Microsoft Teams and Microsoft 365 in tenants without CA; refresh tokens last <strong>90 days</strong> (24 hours for single-page apps), rolling-renewed on every use. Authorization codes (used only at the consent prompt) live exactly <strong>10 minutes</strong> and are not configurable. <strong>If your tenant has a Configurable Token Lifetime (CTL) policy that sets <code>AccessTokenLifetime</code> above the default</strong> - up to the maximum 24 hours - that is itself a security finding: it widens the window during which a stolen access token remains valid and unrevocable (per the <a href="#/investigation/remediation" data-route="/investigation/remediation">Remediation</a> note on revocation limits). Audit your CTL policies via <code>Get-MgPolicyTokenLifetimePolicy</code>; treat any policy with <code>AccessTokenLifetime</code> above two hours as worth a documented business justification.</li>
               <li><code>properties.responseSizeBytes</code> - large responses on <code>/messages</code> or <code>/drive/...</code> endpoints = bulk exfiltration.</li>
               <li><code>properties.policyEvaluated</code> - whether Conditional Access evaluated this call. Many Graph operations don't trigger CA evaluation; this is normal but worth knowing during incident reconstruction.</li>
             </ul>
@@ -1974,7 +2181,34 @@ New-MgIdentityConditionalAccessPolicy -BodyParameter $params</pre>
             <p>CAE is on by default in opportunistic mode: if the client supports it, near-real-time revocation works; if not, it falls back to one-hour tokens. <em>Strict enforcement</em> mode requires CAE-aware clients and rejects access otherwise - close to a hard guarantee that revoking a refresh token actually evicts the attacker. Trade-off: legacy clients that haven't been updated to be CAE-aware will break. Pilot first.</p>
             <p>Configure under <strong>Conditional Access &rarr; Session controls &rarr; Customize continuous access evaluation &rarr; Strictly enforce location policies</strong>.</p>
 
-            <h3><span class="num">6</span> Review and remove unowned / unsafe app ownerships</h3>
+            <h3><span class="num">6</span> Audit Configurable Token Lifetime policies</h3>
+            <p>Microsoft's default access-token TTL is a randomized 60-90 minutes (or 2 hours flat for Teams / M365 in non-CA tenants). Tenants can override this via Configurable Token Lifetime (CTL) policies, with the maximum being <strong>24 hours</strong>. Long-lived tokens improve UX for long-running scripts but directly proportionally widen the post-token-theft exposure window: a 24h CTL means a stolen token issued at 09:00 stays valid until 09:00 the next day, regardless of any password reset, account disablement, or session revocation you trigger in between (per the Remediation note - access tokens cannot be revoked, only CAE narrows this for CAE-aware resources). Audit your tenant's CTL policies and challenge any that exceed two hours:</p>
+            <div class="code-block">
+              <div class="code-header">PowerShell - inventory CTL policies<button class="copy-snippet" type="button">copy</button></div>
+              <pre>``` Connect with Policy.Read.All ```
+Connect-MgGraph -Scopes "Policy.Read.All"
+
+``` List every token-lifetime policy in the tenant and parse the AccessTokenLifetime value ```
+Get-MgPolicyTokenLifetimePolicy | ForEach-Object {
+    $def = $_.Definition[0] | ConvertFrom-Json
+    $atl = $def.TokenLifetimePolicy.AccessTokenLifetime
+    [PSCustomObject]@{
+        DisplayName            = $_.DisplayName
+        Id                     = $_.Id
+        IsOrganizationDefault  = $_.IsOrganizationDefault
+        AccessTokenLifetime    = $atl                                ``` "HH:MM:SS" or "D.HH:MM:SS" ```
+        AppliedToServicePrincipals = (Get-MgServicePrincipal -All |
+            Where-Object { (Get-MgServicePrincipalTokenLifetimePolicy -ServicePrincipalId $_.Id -ErrorAction SilentlyContinue).Id -contains $_.Id } |
+            ForEach-Object DisplayName)
+    }
+} | Format-Table -AutoSize
+
+``` Anything &gt;= 02:00:00 deserves a documented business reason. ```
+``` Anything &gt;= 23:00:00 (the ~24h max) significantly extends post-incident exposure. ```</pre>
+            </div>
+            <p>Refresh-token and session-token lifetimes have not been CTL-configurable since 30 January 2021 - those are managed exclusively via Conditional Access sign-in frequency, with the default being a 90-day rolling window. Reduce sign-in frequency for high-risk groups (privileged roles, finance, executives) to shorten the refresh-token survival window; pair with CAE strict mode (control 5) so refresh-token revocation actually evicts.</p>
+
+            <h3><span class="num">7</span> Review and remove unowned / unsafe app ownerships</h3>
             <p>The "Misowned and Dangerous" attack is impossible if no standard user owns an SP that has a privileged role. Hunt for the combination, then either remove the user's ownership or remove the privileged role from the SP.</p>
             <div class="code-block">
               <div class="code-header">PowerShell<button class="copy-snippet" type="button">copy</button></div>
@@ -2014,7 +2248,7 @@ foreach ($sp in Get-MgServicePrincipal -All) {
 $findings | Sort-Object ServicePrincipal | Format-Table -AutoSize</pre>
             </div>
 
-            <h3><span class="num">7</span> Enable Microsoft Graph activity logs</h3>
+            <h3><span class="num">8</span> Enable Microsoft Graph activity logs</h3>
             <p>Off by default. Without them you can prove the malicious app got a token but not what it did with it. Stream <code>MicrosoftGraphActivityLogs</code> via Azure Monitor diagnostic settings to whatever destination feeds your Splunk index (typically Event Hub for the Splunk Add-on for Microsoft Cloud Services, or a Storage Account for the older HTTP Event Collector flow); budget for ~10-20% extra volume on a busy tenant.</p>
             <div class="code-block">
               <div class="code-header">PowerShell<button class="copy-snippet" type="button">copy</button></div>
@@ -2039,7 +2273,7 @@ $diag = @{
 # Storage Account, then point the Splunk Add-on for Microsoft Cloud Services at it.</pre>
             </div>
 
-            <h3><span class="num">8</span> Audit Intune / DeviceManagementConfiguration permissions</h3>
+            <h3><span class="num">9</span> Audit Intune / DeviceManagementConfiguration permissions</h3>
             <p>Mandiant's 2024 research showed that an SP holding <code>DeviceManagementConfiguration.ReadWrite.All</code> can push scripts to Intune-managed Privileged Access Workstations and execute arbitrary code as SYSTEM. Treat this scope, plus <code>RoleManagement.ReadWrite.Directory</code>, <code>AppRoleAssignment.ReadWrite.All</code>, and <code>Application.ReadWrite.All</code>, as Tier-0 - inventory every SP with them.</p>
             <div class="code-block">
               <div class="code-header">PowerShell<button class="copy-snippet" type="button">copy</button></div>
@@ -2072,11 +2306,11 @@ Get-MgServicePrincipal -All | ForEach-Object {
 } | Format-Table -AutoSize</pre>
             </div>
 
-            <h3><span class="num">9</span> Cross-tenant access settings - default to deny</h3>
+            <h3><span class="num">10</span> Cross-tenant access settings - default to deny</h3>
             <p>Cross-tenant access settings define which other tenants can access yours. The default is permissive (any tenant). Lock this down: explicit allow-list of partner tenants, with B2B collaboration restricted to specific groups.</p>
             <p>Configure under <strong>Entra admin center &rarr; External Identities &rarr; Cross-tenant access settings &rarr; Default settings</strong>. Set inbound and outbound to <em>Block access</em>, then add explicit organisation entries for each legitimate partner.</p>
 
-            <h3><span class="num">10</span> Quarterly OAuth review checklist</h3>
+            <h3><span class="num">11</span> Quarterly OAuth review checklist</h3>
             <p>Cadence ritual. Block 90 minutes per quarter for the IAM team:</p>
             <ul class="checklist">
               <li><strong>Pull all Tier-0 SPs</strong> via the script in step 8 - do all of them still need that scope?</li>
@@ -2087,7 +2321,7 @@ Get-MgServicePrincipal -All | ForEach-Object {
               <li><strong>OAuthSentry feed</strong> - is the daily ingestion working? When was the last malicious-feed update detected by your SIEM?</li>
             </ul>
 
-            <h3><span class="num">11</span> Continuous validation with Maester</h3>
+            <h3><span class="num">12</span> Continuous validation with Maester</h3>
             <p>The quarterly checklist above is human-paced and forgets things. <a href="https://maester.dev/">Maester</a> (Merill Fernando, Fabian Bader, Thomas Naunheim, Mike Soule and contributors) is an open-source PowerShell + Pester test framework that turns each Entra security control into a daily-runnable test - currently used by 128,000+ tenants. The relevant tests for the controls in this tab ship out of the box; pin them to a CI pipeline and you get a fail-the-build signal the moment one regresses.</p>
             <table class="kv-table">
               <thead><tr><th>OAuthSentry control</th><th>Maester test that validates it</th></tr></thead>
@@ -2547,6 +2781,51 @@ gh api --paginate \
               </div>
             </div>
           </div>
+        </div>
+
+        <div class="section">
+          <h2>Changelog feed</h2>
+          <p class="lead">Subscribe to catalog changes - adds, removes, category shifts, severity escalations - in real time. Standard Atom feed for any RSS reader, SIEM RSS connector, or chat-bot integration; JSON twin for programmatic consumers. The changelog is the push-style counterpart to the request/response API: instead of polling <code>lookup_by_appid.json</code> daily and diffing it yourself, subscribe and let your tooling pull on update.</p>
+          <div class="feed-grid">
+            <div class="feed-card">
+              <h3>Subscribe</h3>
+              <p class="desc">Atom 1.0 standard format. Every entry covers one catalog change with the appid, service, category, severity and a human-readable summary; categorized by change kind (<code>added</code>, <code>removed</code>, <code>category-changed</code>, <code>severity-raised</code>, <code>reference-added</code>) so consumers can filter on what they care about.</p>
+              <div class="feed-links">
+                <a href="feeds/changelog.atom"><span>changelog.atom</span><span class="fmt">RSS / Atom</span></a>
+                <a href="feeds/changelog.json"><span>changelog.json</span><span class="fmt">JSON</span></a>
+              </div>
+            </div>
+
+            <div class="feed-card">
+              <h3>Use cases</h3>
+              <p class="desc">Pipe into Slack/Teams via the built-in RSS app for immediate awareness of new malicious app entries; refresh a Splunk lookup table or Sentinel watchlist on every <code>added</code>/<code>category-changed</code> event so detections stay current without manual export-import; alert on first appearance of a <code>severity-raised</code> entry that escalates a previously-known compliance app to risky/malicious.</p>
+              <div class="feed-links">
+                <a href="https://oauthsentry.github.io/feeds/changelog.atom"><span>permanent URL</span><span class="fmt">copy this</span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="code-block">
+            <div class="code-header">curl - check for changes since last poll<button class="copy-snippet" type="button">copy</button></div>
+            <pre>``` Pull and pretty-print the JSON twin (entries sorted newest first) ```
+curl -s https://oauthsentry.github.io/feeds/changelog.json | jq '.entries[:5]'
+
+``` Filter for malicious-only changes in the last 24h ```
+curl -s https://oauthsentry.github.io/feeds/changelog.json \
+  | jq --arg since "$(date -u -d '24 hours ago' +%Y-%m-%dT%H:%M:%SZ)" '
+      .entries
+      | map(select(.category == "malicious" and .ts &gt; $since))'
+
+``` Watch for any new addition to the malicious bucket and write to a SIEM lookup ```
+curl -s https://oauthsentry.github.io/feeds/changelog.json \
+  | jq -r '.entries[]
+      | select(.kind == "added" and .category == "malicious")
+      | [.ts, .service, .appid, .appname] | @csv' \
+  | tee -a /var/lib/oauthsentry/new_malicious.csv</pre>
+          </div>
+          <p style="font-size: 13px; color: var(--text-faint); margin-top: 12px;">
+            History rolling-retains the last 200 entries; older changes drop off. The <code>data/.last_build.json</code> snapshot in the repo is what each new build diffs against - it must be committed back after each CI run so consecutive runs detect changes correctly.
+          </p>
         </div>
       </div>
     </section>
