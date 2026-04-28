@@ -1222,11 +1222,123 @@ iseval = 0</pre>
               <li><strong>Suppress</strong> via a per-tenant lookup of trusted automation accounts that have a documented business reason to do directory enumeration via FOCI clients (rare but not zero).</li>
             </ul>
 
+            <h3><span class="num">11</span> Cumulative directory-pull volume from one token over time</h3>
+            <p>Detection 10 fires on the <em>shape</em> of a single request (FOCI app + directory endpoint). This detection fires on the <em>cumulative volume</em> of records one token tried to retrieve, regardless of whether each individual request succeeded. It catches three patterns Detection 10 misses:</p>
+            <ul>
+              <li><strong>Iterative probing</strong> - attacker tries <code>$top=2000</code> (400), retries with <code>$top=999</code> + <code>ConsistencyLevel: eventual</code> (200), then paginates. Detection 10 fires once on the first request; Detection 11 sees the full ~10k records they actually walked.</li>
+              <li><strong>Slow-and-low</strong> - attacker pulls 100 records every 5 minutes for 8 hours (~9,600 records, distributed). No single request looks alarming; the cumulative shape is the IOC.</li>
+              <li><strong>Pagination without <code>$top</code></strong> - omitting <code>$top</code> defaults to 100 records per page; attacker just walks <code>@odata.nextLink</code>. Detection 10's <code>max_top_requested</code> stays at 0; Detection 11 counts each request as 100.</li>
+            </ul>
+
+            <p>The arithmetic: for each Graph request to a directory endpoint, attribute "records attempted" - if <code>$top</code> is present, that's the value; otherwise default to 100 (Graph's implicit page size). 200/206 responses contribute the full <code>$top</code>; 400/429 also contribute the full <code>$top</code> because the <em>intent</em> was that volume even if the server rejected it.</p>
+
+            <div class="code-block">
+              <div class="code-header">SPL<button class="copy-snippet" type="button">copy</button></div>
+              <pre>`oauthsentry_graph_activity` earliest=-1h
+
+| eval req_uri    = coalesce('properties.requestUri',         requestUri)
+| eval req_method = coalesce('properties.requestMethod',      requestMethod)
+| eval req_appid  = coalesce('properties.appId',              appId)
+| eval req_userid = coalesce('properties.userId',             'properties.UserPrincipalObjectID', userId)
+| eval req_uti    = coalesce('properties.signInActivityId',   signInActivityId)
+| eval req_ip     = coalesce('properties.ipAddress',          ipAddress, callerIpAddress)
+| eval req_status = coalesce('properties.responseStatusCode', responseStatusCode)
+
+``` Restrict to directory-enumeration endpoints. /me/* is excluded - those are ```
+``` self-service reads against the user's own data and not bulk-enum candidates. ```
+| where match(req_uri, "(?i)/v1\.0/(users|groups|directoryRoles|servicePrincipals|applications|devices)(\?|/|$)")
+| where req_method = "GET"
+
+``` Pull $top= if present; default to 100 (Graph's implicit page size when ```
+``` $top is omitted) so pagination-only walks still count toward the total.   ```
+| rex field=req_uri "(?i)\$top=(?&lt;top_raw&gt;\d+)"
+| eval records_attempted = coalesce(tonumber(top_raw), 100)
+
+``` Aggregate per-token. The token UTI (signInActivityId) is the right key - ```
+``` it pinpoints one specific access token, so two tokens for the same user  ```
+``` from two different sessions are scored independently.                    ```
+| stats sum(records_attempted)         as total_records_attempted
+        count                           as request_count
+        dc(req_uri)                     as distinct_endpoints
+        values(req_uri)                 as endpoints
+        values(req_appid)               as appids
+        values(req_ip)                  as src_ips
+        values(req_status)              as status_codes
+        max(coalesce(tonumber(top_raw),0)) as max_top
+        earliest(_time)                 as first_seen
+        latest(_time)                   as last_seen
+    by req_userid, req_uti
+
+``` Three-tier severity:                                                       ```
+```   critical: >= 10000 records attempted in 1h   (clear bulk enum intent)    ```
+```   high:    >=  1000 records attempted in 1h   (worth daily review)        ```
+```   info:    >=   250 (drops out of this query, picked up by 24h variant)   ```
+| eval severity = case(
+    total_records_attempted &gt;= 10000, "critical",
+    total_records_attempted &gt;=  1000, "high",
+    1==1, null
+  )
+| where isnotnull(severity)
+
+| convert ctime(first_seen) ctime(last_seen)
+| sort - total_records_attempted</pre>
+            </div>
+
+            <p>Slow-and-low variant for the 24-hour window with a lower per-token threshold:</p>
+            <div class="code-block">
+              <div class="code-header">SPL - 24h slow-and-low variant<button class="copy-snippet" type="button">copy</button></div>
+              <pre>`oauthsentry_graph_activity` earliest=-24h
+
+| eval req_uri    = coalesce('properties.requestUri',     requestUri)
+| eval req_method = coalesce('properties.requestMethod',  requestMethod)
+| eval req_appid  = coalesce('properties.appId',          appId)
+| eval req_userid = coalesce('properties.userId',         'properties.UserPrincipalObjectID', userId)
+| eval req_uti    = coalesce('properties.signInActivityId', signInActivityId)
+
+| where match(req_uri, "(?i)/v1\.0/(users|groups|directoryRoles|servicePrincipals|applications|devices)(\?|/|$)")
+| where req_method = "GET"
+
+| rex field=req_uri "(?i)\$top=(?&lt;top_raw&gt;\d+)"
+| eval records_attempted = coalesce(tonumber(top_raw), 100)
+
+``` Bucket into 1h windows so we can see the rate, not just the daily total ```
+| bin _time span=1h
+| stats sum(records_attempted) as records_per_hour count as requests_per_hour by _time, req_userid, req_uti, req_appid
+
+``` Aggregate the 24 hourly buckets per token ```
+| stats sum(records_per_hour)   as total_records_24h
+        sum(requests_per_hour)  as total_requests_24h
+        max(records_per_hour)   as peak_hour
+        dc(_time)               as active_hours
+        values(req_appid)       as appids
+        earliest(_time)         as first_bucket
+        latest(_time)           as last_bucket
+    by req_userid, req_uti
+
+``` Threshold tuned for distributed enumeration: 250+ records sustained over   ```
+``` 4+ active hours, OR 5000+ total records regardless of distribution.        ```
+| where (total_records_24h &gt;= 250 AND active_hours &gt;= 4)
+     OR (total_records_24h &gt;= 5000)
+
+| convert ctime(first_bucket) ctime(last_bucket)
+| sort - total_records_24h</pre>
+            </div>
+
+            <p>Tuning recommendations specific to this detection:</p>
+            <ul>
+              <li><strong>Critical threshold (10k records / 1h)</strong> is the alert tier. Pages on-call. Almost no legitimate workflow pulls 10,000 directory records from a delegated user token in one hour - this is automation territory and automation should be using app-only tokens with documented service principals (which would be filtered out by the user-token restriction implicit in this query).</li>
+              <li><strong>High threshold (1k records / 1h)</strong> is daily review. Catches admins doing genuine work via Azure CLI / Graph Explorer / a custom script - those will appear here legitimately. Tune by adding a per-tenant allowlist of admin object IDs that are expected to read the directory at this rate.</li>
+              <li><strong>Slow-and-low (250 over 4 hours, or 5k over 24h)</strong> is daily review. The 4-hour active-hour requirement filters out legitimate one-off bulk pulls (which complete in minutes); a token that reads 250+ records every hour for 4+ hours is automated and not interactive.</li>
+              <li><strong>The pagination-without-<code>$top</code> case</strong> is the most subtle. Default page size assumption (100) may overcount if your tenant routinely uses smaller pages, or undercount on <code>/users/$select=...</code> queries where the actual returned size depends on the response shape. Validate by sampling <code>responseSizeBytes</code> in your tenant: if average response size on no-<code>$top</code> requests is ≪ 100 records, lower the default.</li>
+              <li><strong>Anti-correlate with Detection 10</strong>. A token that fires both Detection 10 (FOCI app + directory endpoint) and Detection 11 (cumulative volume) is high-confidence. Detection 11 alone, from a non-FOCI app id, is genuine admin work or third-party integration - lower confidence by itself.</li>
+              <li><strong>Status-code distribution as a tell</strong>. Add <code>list(req_status) as status_seq</code> to either query and look for the <code>400 → 200, 200, 200, ...</code> pattern (failed probe followed by successful pagination). That sequence is the smoking gun for iterative probing and is essentially never seen in legitimate use.</li>
+            </ul>
+
             <h3>Tuning notes</h3>
             <ul>
               <li>The macros above reference three lookup definitions: <code>oauthsentry_malicious</code>, <code>oauthsentry_risky</code>, <code>oauthsentry_compliance</code>. Each one points at a CSV with at minimum an <code>appid</code> field; populate the lookup files from the OAuthSentry CSV feeds at <code>/feeds/all/{malicious,risky,compliance}.csv</code> on whatever cadence makes sense for your tenant. Splunk's built-in <em>Lookup Editor</em> app or a scheduled <code>| outputlookup</code> from a REST search are both fine.</li>
               <li>Detection 3 (newly observed OAuth app) is the noisiest but the most valuable. Tune by adding an extra anti-join against <code>oauthsentry_compliance</code> if you want to suppress already-vetted apps automatically.</li>
-              <li>Detections 1, 2, 8, 9, 10 are high-fidelity enough to alert on (Detection 10 specifically when the actor is a non-admin and <code>$top</code> is &gt;= 50). Detections 3, 4, 5, 6 work better as scheduled hunts with daily review. Detection 7 is investigator-driven, not an alert.</li>
+              <li>Detections 1, 2, 8, 9, 10, 11 are high-fidelity enough to alert on (Detection 10 specifically when the actor is a non-admin and <code>$top</code> is &gt;= 50; Detection 11 at the critical 10,000-record/1h tier). Detections 3, 4, 5, 6 work better as scheduled hunts with daily review. Detection 7 is investigator-driven, not an alert.</li>
               <li>Apps in the <em>risky</em> bucket are legitimate. Trigger on context (unusual user, new IP, new geography) rather than on the app id alone - detections 2 and 5 demonstrate the pattern.</li>
               <li>Where the unified audit log surfaces both <code>SessionId</code> directly and <code>AppAccessContext.AADSessionId</code>, prefer the latter - it is consistently populated for OAuth-token-driven activity, while bare <code>SessionId</code> is only present on Exchange events.</li>
               <li>The M365 Management Activity API sometimes appends a trailing period to operation names (<code>"Consent to application."</code>); Azure Monitor's diagnostic stream does not. Every search above normalises with <code>eval Operation = replace(Operation, "\.$", "")</code> so the same SPL works across both pipelines.</li>

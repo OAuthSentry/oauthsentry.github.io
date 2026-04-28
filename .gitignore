@@ -5,17 +5,4 @@ __pycache__/
 .vscode/
 node_modules/
 .env
-feeds/entra/entra_compliance.txt
-feeds/entra/entra_malicious.txt
-feeds/entra/entra_risky.csv
-feeds/entra/entra_risky.txt
-feeds/github/github_all.json
-feeds/github/github_malicious.txt
-feeds/github/github_risky.txt
-feeds/google/google_compliance.txt
-feeds/google/google_malicious.txt
-feeds/google/google_risky.txt
-/feeds
-/feeds
-/feeds
 /feeds
