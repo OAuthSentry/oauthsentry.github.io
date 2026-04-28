@@ -1,9 +1,9 @@
 {
   "services": {
     "entra": {
-      "total": 786,
-      "compliance": 696,
-      "risky": 32,
+      "total": 4496,
+      "compliance": 4408,
+      "risky": 30,
       "malicious": 58,
       "curated_source": "entra_curated_mthcht",
       "compliance_fill_source": "entra_compliance_fill_merill"
@@ -26,8 +26,8 @@
     }
   },
   "totals": {
-    "compliance": 696,
-    "risky": 32,
+    "compliance": 4408,
+    "risky": 30,
     "malicious": 64
   },
   "sources": [
@@ -42,7 +42,7 @@
       "schema": "appname,appid,metadata_category,metadata_severity,metadata_comment,metadata_reference",
       "credit": "mthcht/awesome-lists",
       "credit_url": "https://github.com/mthcht/awesome-lists/tree/main/Lists/OAuth",
-      "loaded_rows": 784
+      "loaded_rows": 782
     },
     {
       "id": "entra_compliance_fill_merill",
@@ -54,7 +54,7 @@
       "schema": "AppId,AppDisplayName,AppOwnerOrganizationId,Source",
       "credit": "Merill Fernando - microsoft-info",
       "credit_url": "https://github.com/merill/microsoft-info",
-      "loaded_rows": 12
+      "loaded_rows": 4367
     },
     {
       "id": "github_curated_seed",
@@ -84,6 +84,6 @@
       "loaded_rows": 2
     }
   ],
-  "generated": "2026-04-27T18:59:48.122180+00:00",
-  "total_apps": 792
+  "generated": "2026-04-28T07:18:58.867007+00:00",
+  "total_apps": 4502
 }
