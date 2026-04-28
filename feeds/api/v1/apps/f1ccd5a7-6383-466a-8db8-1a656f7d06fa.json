@@ -1,0 +1,12 @@
+{
+  "appid": "f1ccd5a7-6383-466a-8db8-1a656f7d06fa",
+  "appname": "WorkforceIntegration.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f1ccd5a7-6383-466a-8db8-1a656f7d06fa"
+}

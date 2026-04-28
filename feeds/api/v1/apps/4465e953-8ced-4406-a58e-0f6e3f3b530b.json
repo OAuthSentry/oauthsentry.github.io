@@ -1,0 +1,12 @@
+{
+  "appid": "4465e953-8ced-4406-a58e-0f6e3f3b530b",
+  "appname": "FHIR Data Importer",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4465e953-8ced-4406-a58e-0f6e3f3b530b"
+}

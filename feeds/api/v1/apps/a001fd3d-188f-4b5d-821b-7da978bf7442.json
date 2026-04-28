@@ -1,0 +1,12 @@
+{
+  "appid": "a001fd3d-188f-4b5d-821b-7da978bf7442",
+  "appname": "Cognitive Services OpenAI Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a001fd3d-188f-4b5d-821b-7da978bf7442"
+}

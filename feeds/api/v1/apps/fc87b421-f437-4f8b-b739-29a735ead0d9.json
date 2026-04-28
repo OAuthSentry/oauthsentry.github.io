@@ -1,0 +1,12 @@
+{
+  "appid": "fc87b421-f437-4f8b-b739-29a735ead0d9",
+  "appname": "Purview/sit-defn-poland-regon-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "fc87b421-f437-4f8b-b739-29a735ead0d9"
+}

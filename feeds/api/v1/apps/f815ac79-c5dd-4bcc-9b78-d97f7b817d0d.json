@@ -1,0 +1,12 @@
+{
+  "appid": "f815ac79-c5dd-4bcc-9b78-d97f7b817d0d",
+  "appname": "Dynamics 365 for Talent: Attract",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f815ac79-c5dd-4bcc-9b78-d97f7b817d0d"
+}

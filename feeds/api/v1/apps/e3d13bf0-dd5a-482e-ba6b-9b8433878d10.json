@@ -1,0 +1,12 @@
+{
+  "appid": "e3d13bf0-dd5a-482e-ba6b-9b8433878d10",
+  "appname": "Security Manager (Legacy)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e3d13bf0-dd5a-482e-ba6b-9b8433878d10"
+}

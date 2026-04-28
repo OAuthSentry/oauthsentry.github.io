@@ -1,0 +1,12 @@
+{
+  "appid": "e5788282-6381-469f-84f0-3d7d4021d34d",
+  "appname": "Office 365 Extra File Storage for GCC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e5788282-6381-469f-84f0-3d7d4021d34d"
+}

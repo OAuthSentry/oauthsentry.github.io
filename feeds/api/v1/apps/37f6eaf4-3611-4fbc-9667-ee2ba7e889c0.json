@@ -1,0 +1,12 @@
+{
+  "appid": "37f6eaf4-3611-4fbc-9667-ee2ba7e889c0",
+  "appname": "SharePoint eSignature",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "37f6eaf4-3611-4fbc-9667-ee2ba7e889c0"
+}

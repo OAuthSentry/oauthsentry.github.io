@@ -1,0 +1,12 @@
+{
+  "appid": "9900a3e2-6660-4c52-9074-60c949991389",
+  "appname": "Power Virtual Agent for GCC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9900a3e2-6660-4c52-9074-60c949991389"
+}

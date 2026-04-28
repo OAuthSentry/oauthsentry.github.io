@@ -1,0 +1,12 @@
+{
+  "appid": "e823ca47-49c4-46b3-b38d-ca11d5abe3d2",
+  "appname": "Microsoft 365 G3 GCC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e823ca47-49c4-46b3-b38d-ca11d5abe3d2"
+}

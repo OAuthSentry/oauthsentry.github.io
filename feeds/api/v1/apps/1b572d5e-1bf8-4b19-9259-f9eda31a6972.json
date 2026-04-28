@@ -1,0 +1,12 @@
+{
+  "appid": "1b572d5e-1bf8-4b19-9259-f9eda31a6972",
+  "appname": "Power BI Premium Per User Add-On for GCC_2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1b572d5e-1bf8-4b19-9259-f9eda31a6972"
+}

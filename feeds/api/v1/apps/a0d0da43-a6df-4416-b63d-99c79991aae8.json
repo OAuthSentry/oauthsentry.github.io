@@ -1,0 +1,12 @@
+{
+  "appid": "a0d0da43-a6df-4416-b63d-99c79991aae8",
+  "appname": "SecurityIdentitiesHealth.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a0d0da43-a6df-4416-b63d-99c79991aae8"
+}

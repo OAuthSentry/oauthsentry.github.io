@@ -1,0 +1,12 @@
+{
+  "appid": "456b71a7-0ee0-4588-9842-c123fcc8f664",
+  "appname": "PrintTaskDefinition.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "456b71a7-0ee0-4588-9842-c123fcc8f664"
+}

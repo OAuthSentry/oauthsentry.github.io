@@ -1,0 +1,12 @@
+{
+  "appid": "25e8c47e-e6fe-4884-a211-74898f8c0196",
+  "appname": "Purview/sit-defn-denmark-passport-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "25e8c47e-e6fe-4884-a211-74898f8c0196"
+}

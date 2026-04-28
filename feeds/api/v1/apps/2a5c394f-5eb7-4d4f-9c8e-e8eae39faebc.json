@@ -1,0 +1,12 @@
+{
+  "appid": "2a5c394f-5eb7-4d4f-9c8e-e8eae39faebc",
+  "appname": "Lab Services Reader",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2a5c394f-5eb7-4d4f-9c8e-e8eae39faebc"
+}

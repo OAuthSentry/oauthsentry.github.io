@@ -1,0 +1,12 @@
+{
+  "appid": "bb038288-76ab-49d6-afc1-eaa6c222c65a",
+  "appname": "Microsoft 365 Audio Conferencing Pay-Per-Minute",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "bb038288-76ab-49d6-afc1-eaa6c222c65a"
+}

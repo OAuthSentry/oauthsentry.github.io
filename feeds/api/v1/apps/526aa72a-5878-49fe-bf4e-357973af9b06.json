@@ -1,0 +1,12 @@
+{
+  "appid": "526aa72a-5878-49fe-bf4e-357973af9b06",
+  "appname": "MultiTenantOrganization.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "526aa72a-5878-49fe-bf4e-357973af9b06"
+}

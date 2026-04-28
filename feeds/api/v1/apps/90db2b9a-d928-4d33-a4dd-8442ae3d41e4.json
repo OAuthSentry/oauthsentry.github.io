@@ -1,0 +1,12 @@
+{
+  "appid": "90db2b9a-d928-4d33-a4dd-8442ae3d41e4",
+  "appname": "IdentityProvider.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "90db2b9a-d928-4d33-a4dd-8442ae3d41e4"
+}

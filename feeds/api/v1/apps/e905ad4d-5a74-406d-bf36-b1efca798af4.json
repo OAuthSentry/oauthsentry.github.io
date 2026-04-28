@@ -1,0 +1,12 @@
+{
+  "appid": "e905ad4d-5a74-406d-bf36-b1efca798af4",
+  "appname": "Purview/sit-defn-mexico-unique-population-registry-code",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e905ad4d-5a74-406d-bf36-b1efca798af4"
+}

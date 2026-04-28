@@ -1,0 +1,12 @@
+{
+  "appid": "9188040d-6c67-4c5b-b112-36a304b66dad",
+  "appname": "Consumer user from a Microsoft account (common)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9188040d-6c67-4c5b-b112-36a304b66dad"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "e2be619b-b125-455f-8660-fb503e431a5d",
+  "appname": "Microsoft 365 GCC G5",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e2be619b-b125-455f-8660-fb503e431a5d"
+}

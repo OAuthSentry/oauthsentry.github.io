@@ -1,0 +1,12 @@
+{
+  "appid": "617d9209-3b90-4879-96e6-838c42b2701d",
+  "appname": "MCO FREE FOR MICROSOFT TEAMS (FREE)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "617d9209-3b90-4879-96e6-838c42b2701d"
+}

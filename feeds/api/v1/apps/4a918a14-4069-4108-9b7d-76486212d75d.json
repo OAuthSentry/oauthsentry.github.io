@@ -1,0 +1,12 @@
+{
+  "appid": "4a918a14-4069-4108-9b7d-76486212d75d",
+  "appname": "Windows Defender Security Intelligence Enterprise app",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4a918a14-4069-4108-9b7d-76486212d75d"
+}

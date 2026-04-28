@@ -1,0 +1,12 @@
+{
+  "appid": "5b534afd-fdc0-4b38-a77f-af25442e3149",
+  "appname": "Microsoft Support Diagnostics [Community Contributed]",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=GitHub)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5b534afd-fdc0-4b38-a77f-af25442e3149"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "d13ef257-988a-46f3-8fce-f47484dd4550",
+  "appname": "Windows 10/11 Enterprise E3 VDA",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d13ef257-988a-46f3-8fce-f47484dd4550"
+}

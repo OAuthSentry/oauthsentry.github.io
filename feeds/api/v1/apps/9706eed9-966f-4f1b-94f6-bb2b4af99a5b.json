@@ -1,0 +1,12 @@
+{
+  "appid": "9706eed9-966f-4f1b-94f6-bb2b4af99a5b",
+  "appname": "App governance add-on to Microsoft Defender for Cloud Apps",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9706eed9-966f-4f1b-94f6-bb2b4af99a5b"
+}

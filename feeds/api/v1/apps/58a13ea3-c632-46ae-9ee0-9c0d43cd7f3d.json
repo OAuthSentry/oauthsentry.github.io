@@ -1,0 +1,12 @@
+{
+  "appid": "58a13ea3-c632-46ae-9ee0-9c0d43cd7f3d",
+  "appname": "Attribute Assignment Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "58a13ea3-c632-46ae-9ee0-9c0d43cd7f3d"
+}

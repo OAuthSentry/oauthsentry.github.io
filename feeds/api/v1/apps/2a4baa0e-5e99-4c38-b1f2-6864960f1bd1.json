@@ -1,0 +1,12 @@
+{
+  "appid": "2a4baa0e-5e99-4c38-b1f2-6864960f1bd1",
+  "appname": "Intune Advanced endpoint analytics",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2a4baa0e-5e99-4c38-b1f2-6864960f1bd1"
+}

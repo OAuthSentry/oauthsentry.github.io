@@ -1,0 +1,12 @@
+{
+  "appid": "0a0a23fa-fea1-4195-bb89-b4789cb12f7f",
+  "appname": "Common Data Service for Virtual Agent Base",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "0a0a23fa-fea1-4195-bb89-b4789cb12f7f"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "834bcc1c-762f-41b0-bb91-1cdc323ee4bf",
+  "appname": "UserTeamwork.Read - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "834bcc1c-762f-41b0-bb91-1cdc323ee4bf"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "4fb214cb-a430-4a91-9c91-4976763aa78f",
+  "appname": "Teams Rooms Premium",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4fb214cb-a430-4a91-9c91-4976763aa78f"
+}

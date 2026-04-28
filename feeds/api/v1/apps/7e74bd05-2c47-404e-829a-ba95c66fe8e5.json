@@ -1,0 +1,12 @@
+{
+  "appid": "7e74bd05-2c47-404e-829a-ba95c66fe8e5",
+  "appname": "Microsoft Teams EEA",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "7e74bd05-2c47-404e-829a-ba95c66fe8e5"
+}

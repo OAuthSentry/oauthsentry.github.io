@@ -1,0 +1,12 @@
+{
+  "appid": "cfda68bd-ff94-4d80-9c36-cfd29e086a53",
+  "appname": "Microsoft Developer Network (MSDN)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "cfda68bd-ff94-4d80-9c36-cfd29e086a53"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "407f0cce-3212-441f-9f55-3bc91342cf86",
+  "appname": "Community.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "407f0cce-3212-441f-9f55-3bc91342cf86"
+}

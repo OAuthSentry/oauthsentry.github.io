@@ -1,0 +1,12 @@
+{
+  "appid": "7ed4877c-0863-4f69-9187-245487128d4f",
+  "appname": "Dynamics 365 Regulatory Service - Enterprise Edition Trial",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "7ed4877c-0863-4f69-9187-245487128d4f"
+}

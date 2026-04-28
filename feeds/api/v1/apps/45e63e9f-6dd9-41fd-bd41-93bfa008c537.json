@@ -1,0 +1,12 @@
+{
+  "appid": "45e63e9f-6dd9-41fd-bd41-93bfa008c537",
+  "appname": "Power Automate Unattended RPA for Government",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "45e63e9f-6dd9-41fd-bd41-93bfa008c537"
+}

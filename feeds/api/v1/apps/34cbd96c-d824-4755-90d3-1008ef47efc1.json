@@ -1,0 +1,12 @@
+{
+  "appid": "34cbd96c-d824-4755-90d3-1008ef47efc1",
+  "appname": "Insights-UserMetric.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "34cbd96c-d824-4755-90d3-1008ef47efc1"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "292d869f-3427-49a8-9dab-8c70152b74e9",
+  "appname": "Organization.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "292d869f-3427-49a8-9dab-8c70152b74e9"
+}

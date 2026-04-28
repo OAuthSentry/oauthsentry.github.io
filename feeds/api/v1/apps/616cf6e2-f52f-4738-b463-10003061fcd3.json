@@ -1,0 +1,12 @@
+{
+  "appid": "616cf6e2-f52f-4738-b463-10003061fcd3",
+  "appname": "Dynamics 365 Intelligent Order Management",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "616cf6e2-f52f-4738-b463-10003061fcd3"
+}

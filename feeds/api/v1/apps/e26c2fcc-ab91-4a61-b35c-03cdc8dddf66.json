@@ -1,0 +1,12 @@
+{
+  "appid": "e26c2fcc-ab91-4a61-b35c-03cdc8dddf66",
+  "appname": "Microsoft Information Governance",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e26c2fcc-ab91-4a61-b35c-03cdc8dddf66"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "8876631b-d4a0-427f-5773-0ec71c9e0279",
+  "appname": "Solo Secp256R1 FIDO2 CTAP2 Authenticator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "8876631b-d4a0-427f-5773-0ec71c9e0279"
+}

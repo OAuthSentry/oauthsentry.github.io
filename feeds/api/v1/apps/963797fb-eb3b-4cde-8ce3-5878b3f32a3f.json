@@ -1,0 +1,12 @@
+{
+  "appid": "963797fb-eb3b-4cde-8ce3-5878b3f32a3f",
+  "appname": "Dynamics 365 Business Central Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "963797fb-eb3b-4cde-8ce3-5878b3f32a3f"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "646d643f-5228-4408-acc8-f2e81a6df897",
+  "appname": "Purview/sit-defn-india-voter-id-card",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "646d643f-5228-4408-acc8-f2e81a6df897"
+}

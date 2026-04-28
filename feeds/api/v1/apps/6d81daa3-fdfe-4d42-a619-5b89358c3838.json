@@ -1,0 +1,12 @@
+{
+  "appid": "6d81daa3-fdfe-4d42-a619-5b89358c3838",
+  "appname": "Defender for Cloud Apps - Microsoft Copilot Collector",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6d81daa3-fdfe-4d42-a619-5b89358c3838"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "128ca929-1a19-45e6-a3b8-435ec44a36ba",
+  "appname": "SecurityIncident.ReadWrite.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "128ca929-1a19-45e6-a3b8-435ec44a36ba"
+}

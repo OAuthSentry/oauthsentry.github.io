@@ -1,0 +1,12 @@
+{
+  "appid": "3ba8afe5-7a6c-4929-8247-0001b6878438",
+  "appname": "Purview/sit-defn-cyprus-identity-card",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3ba8afe5-7a6c-4929-8247-0001b6878438"
+}

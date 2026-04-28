@@ -1,0 +1,12 @@
+{
+  "appid": "d9837fe0-9c31-4faa-8acb-b10874560161",
+  "appname": "OnlineMeetingNotification.Send.Chat",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d9837fe0-9c31-4faa-8acb-b10874560161"
+}

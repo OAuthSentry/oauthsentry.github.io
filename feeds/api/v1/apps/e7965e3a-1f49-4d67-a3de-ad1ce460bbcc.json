@@ -1,0 +1,12 @@
+{
+  "appid": "e7965e3a-1f49-4d67-a3de-ad1ce460bbcc",
+  "appname": "Dynamics 365 Field Service Contractor for Government",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e7965e3a-1f49-4d67-a3de-ad1ce460bbcc"
+}

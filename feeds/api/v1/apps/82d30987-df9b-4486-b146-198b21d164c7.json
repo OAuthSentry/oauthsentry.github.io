@@ -1,0 +1,12 @@
+{
+  "appid": "82d30987-df9b-4486-b146-198b21d164c7",
+  "appname": "Graph Connectors in Microsoft 365 Copilot",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "82d30987-df9b-4486-b146-198b21d164c7"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "1a2e7420-4e92-4d2b-94cb-fb2952e9ddf7",
+  "appname": "SynchronizationData-User.Upload - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1a2e7420-4e92-4d2b-94cb-fb2952e9ddf7"
+}

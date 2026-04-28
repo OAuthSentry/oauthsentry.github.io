@@ -1,0 +1,12 @@
+{
+  "appid": "6cba8790-29c5-48e5-bab1-c7541b01cb04",
+  "appname": "Azure API Center Service Reader",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6cba8790-29c5-48e5-bab1-c7541b01cb04"
+}

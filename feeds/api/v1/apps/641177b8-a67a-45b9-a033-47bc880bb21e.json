@@ -1,0 +1,12 @@
+{
+  "appid": "641177b8-a67a-45b9-a033-47bc880bb21e",
+  "appname": "Managed Application Contributor Role",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "641177b8-a67a-45b9-a033-47bc880bb21e"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "23fc2474-f741-46ce-8465-674744c5c361",
+  "appname": "Team.Create - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "23fc2474-f741-46ce-8465-674744c5c361"
+}

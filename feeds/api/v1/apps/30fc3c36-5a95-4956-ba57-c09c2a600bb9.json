@@ -1,0 +1,12 @@
+{
+  "appid": "30fc3c36-5a95-4956-ba57-c09c2a600bb9",
+  "appname": "Microsoft Entra ID P1 for Faculty",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "30fc3c36-5a95-4956-ba57-c09c2a600bb9"
+}

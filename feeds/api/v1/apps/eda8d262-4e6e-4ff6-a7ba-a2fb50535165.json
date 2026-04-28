@@ -1,0 +1,12 @@
+{
+  "appid": "eda8d262-4e6e-4ff6-a7ba-a2fb50535165",
+  "appname": "OnlineMeeting.ReadBasic.Chat",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "eda8d262-4e6e-4ff6-a7ba-a2fb50535165"
+}

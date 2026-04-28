@@ -1,0 +1,12 @@
+{
+  "appid": "98b6e773-24d4-4c0d-a968-6e787a1f8204",
+  "appname": "Office 365 A3 for students",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "98b6e773-24d4-4c0d-a968-6e787a1f8204"
+}

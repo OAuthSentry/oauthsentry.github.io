@@ -1,0 +1,12 @@
+{
+  "appid": "a0de5e3a-2500-4a19-b8f4-ec1c64692d22",
+  "appname": "Power Apps Portals page view capacity add-on",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a0de5e3a-2500-4a19-b8f4-ec1c64692d22"
+}

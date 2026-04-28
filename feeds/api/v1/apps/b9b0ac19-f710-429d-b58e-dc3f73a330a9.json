@@ -1,0 +1,12 @@
+{
+  "appid": "b9b0ac19-f710-429d-b58e-dc3f73a330a9",
+  "appname": "Environmental Credit Service (preview) app ID",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b9b0ac19-f710-429d-b58e-dc3f73a330a9"
+}

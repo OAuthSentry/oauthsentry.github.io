@@ -1,0 +1,12 @@
+{
+  "appid": "3856cd1b-8033-458e-8d0f-9909ec6e6e6d",
+  "appname": "Microsoft Dynamics CRM Online Basic for Government",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3856cd1b-8033-458e-8d0f-9909ec6e6e6d"
+}

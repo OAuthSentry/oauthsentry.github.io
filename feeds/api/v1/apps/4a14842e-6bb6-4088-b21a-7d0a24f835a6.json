@@ -1,0 +1,12 @@
+{
+  "appid": "4a14842e-6bb6-4088-b21a-7d0a24f835a6",
+  "appname": "Chat.Manage.Chat",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4a14842e-6bb6-4088-b21a-7d0a24f835a6"
+}

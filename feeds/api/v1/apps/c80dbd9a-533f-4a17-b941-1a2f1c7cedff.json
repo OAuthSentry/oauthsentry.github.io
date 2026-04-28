@@ -1,0 +1,12 @@
+{
+  "appid": "c80dbd9a-533f-4a17-b941-1a2f1c7cedff",
+  "appname": "HID Crescendo C3000",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c80dbd9a-533f-4a17-b941-1a2f1c7cedff"
+}

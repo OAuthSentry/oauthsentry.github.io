@@ -1,0 +1,12 @@
+{
+  "appid": "1b555e50-7f65-41d5-b514-5894a026d10d",
+  "appname": "Generate Temporary Access Pass and send via email to user's manager",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1b555e50-7f65-41d5-b514-5894a026d10d"
+}

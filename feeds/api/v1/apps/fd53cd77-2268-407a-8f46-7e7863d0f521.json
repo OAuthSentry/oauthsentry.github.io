@@ -1,0 +1,12 @@
+{
+  "appid": "fd53cd77-2268-407a-8f46-7e7863d0f521",
+  "appname": "SignalR REST API Owner",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "fd53cd77-2268-407a-8f46-7e7863d0f521"
+}

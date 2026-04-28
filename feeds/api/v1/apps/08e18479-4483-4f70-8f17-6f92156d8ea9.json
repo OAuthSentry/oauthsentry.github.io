@@ -1,0 +1,12 @@
+{
+  "appid": "08e18479-4483-4f70-8f17-6f92156d8ea9",
+  "appname": "Sensor Data Intelligence Additional Machines Add-in for Dynamics 365 Supply Chain Management",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "08e18479-4483-4f70-8f17-6f92156d8ea9"
+}

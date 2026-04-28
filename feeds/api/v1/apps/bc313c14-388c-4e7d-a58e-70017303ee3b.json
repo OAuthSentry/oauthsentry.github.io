@@ -1,0 +1,12 @@
+{
+  "appid": "bc313c14-388c-4e7d-a58e-70017303ee3b",
+  "appname": "Azure Arc service app ID",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "bc313c14-388c-4e7d-a58e-70017303ee3b"
+}

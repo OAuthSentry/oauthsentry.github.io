@@ -1,0 +1,12 @@
+{
+  "appid": "1f338bbc-767e-4a1e-a2d4-b73207cc5b93",
+  "appname": "Microsoft Teams Phone Standard for Students",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1f338bbc-767e-4a1e-a2d4-b73207cc5b93"
+}

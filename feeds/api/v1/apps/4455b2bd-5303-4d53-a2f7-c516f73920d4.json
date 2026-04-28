@@ -1,0 +1,12 @@
+{
+  "appid": "4455b2bd-5303-4d53-a2f7-c516f73920d4",
+  "appname": "Office Hive Fairfax",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4455b2bd-5303-4d53-a2f7-c516f73920d4"
+}

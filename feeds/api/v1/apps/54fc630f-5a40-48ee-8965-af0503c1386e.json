@@ -1,0 +1,12 @@
+{
+  "appid": "54fc630f-5a40-48ee-8965-af0503c1386e",
+  "appname": "Microsoft Kaizala Pro_2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "54fc630f-5a40-48ee-8965-af0503c1386e"
+}

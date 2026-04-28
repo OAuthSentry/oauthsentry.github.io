@@ -1,0 +1,12 @@
+{
+  "appid": "61250591-b2bc-4456-b719-0b17be90bb30",
+  "appname": "eWBM eFPA FIDO2 Authenticator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "61250591-b2bc-4456-b719-0b17be90bb30"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "4092fdb5-8d81-41d3-be76-aaba4074530b",
+  "appname": "Dynamics 365 Team Members_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4092fdb5-8d81-41d3-be76-aaba4074530b"
+}

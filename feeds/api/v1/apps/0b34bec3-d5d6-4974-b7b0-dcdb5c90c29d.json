@@ -1,0 +1,12 @@
+{
+  "appid": "0b34bec3-d5d6-4974-b7b0-dcdb5c90c29d",
+  "appname": "Purview/azure-iot-connection-string",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "0b34bec3-d5d6-4974-b7b0-dcdb5c90c29d"
+}

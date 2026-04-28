@@ -1,0 +1,12 @@
+{
+  "appid": "e95bec33-7c88-4a70-8e19-b10bd9d0c014",
+  "appname": "Office for the Web",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e95bec33-7c88-4a70-8e19-b10bd9d0c014"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "367492fc-594d-4972-a9b5-0d58c622c91c",
+  "appname": "UserTimelineActivity.Write.CreatedByApp - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "367492fc-594d-4972-a9b5-0d58c622c91c"
+}

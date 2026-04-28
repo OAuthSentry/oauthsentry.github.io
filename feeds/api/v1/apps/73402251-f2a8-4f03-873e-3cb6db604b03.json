@@ -1,0 +1,12 @@
+{
+  "appid": "73402251-f2a8-4f03-873e-3cb6db604b03",
+  "appname": "uTrust FIDO2 Security Key",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "73402251-f2a8-4f03-873e-3cb6db604b03"
+}

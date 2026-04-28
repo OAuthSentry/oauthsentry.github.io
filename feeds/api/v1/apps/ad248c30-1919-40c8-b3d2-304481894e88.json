@@ -1,0 +1,12 @@
+{
+  "appid": "ad248c30-1919-40c8-b3d2-304481894e88",
+  "appname": "EduReports-Reading.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ad248c30-1919-40c8-b3d2-304481894e88"
+}

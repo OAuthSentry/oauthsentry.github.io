@@ -1,0 +1,12 @@
+{
+  "appid": "df845ce7-05f9-4894-b5f2-11bbfbcfd2b6",
+  "appname": "Microsoft Cloud App Security_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "df845ce7-05f9-4894-b5f2-11bbfbcfd2b6"
+}

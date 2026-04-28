@@ -1,0 +1,12 @@
+{
+  "appid": "2bd3cb20-1bb6-446b-b4d0-089af3a05c52",
+  "appname": "Dynamics 365 Enterprise Edition - Additional Production Instance for Government",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2bd3cb20-1bb6-446b-b4d0-089af3a05c52"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "056cd41c-7e88-42e1-933e-88ba6a50c9c3",
+  "appname": "SQL Security Manager",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "056cd41c-7e88-42e1-933e-88ba6a50c9c3"
+}

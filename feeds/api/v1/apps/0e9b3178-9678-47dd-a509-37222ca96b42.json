@@ -1,0 +1,12 @@
+{
+  "appid": "0e9b3178-9678-47dd-a509-37222ca96b42",
+  "appname": "Purview/sit-defn-eu-debit-card-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "0e9b3178-9678-47dd-a509-37222ca96b42"
+}

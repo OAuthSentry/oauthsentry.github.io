@@ -1,0 +1,12 @@
+{
+  "appid": "d37c8bed-0711-4417-ba38-b4abe66ce4c2",
+  "appname": "Network Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d37c8bed-0711-4417-ba38-b4abe66ce4c2"
+}

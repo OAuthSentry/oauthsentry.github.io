@@ -1,0 +1,12 @@
+{
+  "appid": "3a6a908c-09c5-406a-8170-8ebb63c42882",
+  "appname": "Power BI Pro Dept",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3a6a908c-09c5-406a-8170-8ebb63c42882"
+}

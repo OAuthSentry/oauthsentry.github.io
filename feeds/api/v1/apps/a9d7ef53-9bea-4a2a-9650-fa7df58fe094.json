@@ -1,0 +1,12 @@
+{
+  "appid": "a9d7ef53-9bea-4a2a-9650-fa7df58fe094",
+  "appname": "Compliance Manager Premium Assessment Add-On for GCC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a9d7ef53-9bea-4a2a-9650-fa7df58fe094"
+}

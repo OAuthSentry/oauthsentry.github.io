@@ -1,0 +1,12 @@
+{
+  "appid": "51b6191a-b045-44cf-8277-ee37c9fb5a06",
+  "appname": "Compute Image Registry",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "51b6191a-b045-44cf-8277-ee37c9fb5a06"
+}

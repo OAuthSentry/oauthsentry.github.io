@@ -1,0 +1,12 @@
+{
+  "appid": "79909bd8-4c69-4202-939e-11bc4385b134",
+  "appname": "Dynamics 365 Commerce_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "79909bd8-4c69-4202-939e-11bc4385b134"
+}

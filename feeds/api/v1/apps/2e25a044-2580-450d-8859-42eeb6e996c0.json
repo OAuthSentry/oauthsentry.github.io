@@ -1,0 +1,12 @@
+{
+  "appid": "2e25a044-2580-450d-8859-42eeb6e996c0",
+  "appname": "TeamsAppInstallation.ReadWriteForTeam - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2e25a044-2580-450d-8859-42eeb6e996c0"
+}

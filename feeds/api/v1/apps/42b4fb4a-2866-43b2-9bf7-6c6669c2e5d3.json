@@ -1,0 +1,12 @@
+{
+  "appid": "42b4fb4a-2866-43b2-9bf7-6c6669c2e5d3",
+  "appname": "Google Titan Security Key v2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "42b4fb4a-2866-43b2-9bf7-6c6669c2e5d3"
+}

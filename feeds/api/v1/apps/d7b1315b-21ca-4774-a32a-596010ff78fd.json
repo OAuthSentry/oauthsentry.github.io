@@ -1,0 +1,12 @@
+{
+  "appid": "d7b1315b-21ca-4774-a32a-596010ff78fd",
+  "appname": "Purview/sit-defn-belgium-passport-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d7b1315b-21ca-4774-a32a-596010ff78fd"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "c0257de7-538f-415c-993a-1b87a031879d",
+  "appname": "Azure Resource Manager tenant ID - hardcoded",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c0257de7-538f-415c-993a-1b87a031879d"
+}

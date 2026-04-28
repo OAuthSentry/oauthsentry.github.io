@@ -1,0 +1,12 @@
+{
+  "appid": "a82116e5-55eb-4c41-a434-62fe8a61c773",
+  "appname": "Sites.FullControl.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a82116e5-55eb-4c41-a434-62fe8a61c773"
+}

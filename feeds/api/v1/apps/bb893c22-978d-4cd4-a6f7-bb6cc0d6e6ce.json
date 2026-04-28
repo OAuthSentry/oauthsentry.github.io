@@ -1,0 +1,12 @@
+{
+  "appid": "bb893c22-978d-4cd4-a6f7-bb6cc0d6e6ce",
+  "appname": "Olympus [Community Contributed]",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=GitHub)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "bb893c22-978d-4cd4-a6f7-bb6cc0d6e6ce"
+}

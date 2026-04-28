@@ -1,0 +1,12 @@
+{
+  "appid": "c9090d00-6101-42f0-a729-c41074260d47",
+  "appname": "Agreement.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c9090d00-6101-42f0-a729-c41074260d47"
+}

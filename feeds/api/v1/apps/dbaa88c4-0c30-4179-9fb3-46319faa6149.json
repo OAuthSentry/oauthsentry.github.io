@@ -1,0 +1,12 @@
+{
+  "appid": "dbaa88c4-0c30-4179-9fb3-46319faa6149",
+  "appname": "Site Recovery Reader",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "dbaa88c4-0c30-4179-9fb3-46319faa6149"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "f18b59c9-5926-4a65-8605-c23ec8c7e074",
+  "appname": "console-m365d",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f18b59c9-5926-4a65-8605-c23ec8c7e074"
+}

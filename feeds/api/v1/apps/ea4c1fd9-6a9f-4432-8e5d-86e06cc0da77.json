@@ -1,0 +1,12 @@
+{
+  "appid": "ea4c1fd9-6a9f-4432-8e5d-86e06cc0da77",
+  "appname": "LearningContent.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ea4c1fd9-6a9f-4432-8e5d-86e06cc0da77"
+}

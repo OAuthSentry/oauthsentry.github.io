@@ -1,0 +1,12 @@
+{
+  "appid": "a9b86446-fa4e-498f-a92a-41b447e03337",
+  "appname": "Education Analytics",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a9b86446-fa4e-498f-a92a-41b447e03337"
+}

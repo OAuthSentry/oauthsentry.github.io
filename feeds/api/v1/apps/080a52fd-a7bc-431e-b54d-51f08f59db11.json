@@ -1,0 +1,12 @@
+{
+  "appid": "080a52fd-a7bc-431e-b54d-51f08f59db11",
+  "appname": "Purview/sit-defn-portugal-passport-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "080a52fd-a7bc-431e-b54d-51f08f59db11"
+}

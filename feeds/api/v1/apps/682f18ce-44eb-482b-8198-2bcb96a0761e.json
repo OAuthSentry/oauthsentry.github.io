@@ -1,0 +1,12 @@
+{
+  "appid": "682f18ce-44eb-482b-8198-2bcb96a0761e",
+  "appname": "Purview/sit-defn-austria-drivers-license-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "682f18ce-44eb-482b-8198-2bcb96a0761e"
+}

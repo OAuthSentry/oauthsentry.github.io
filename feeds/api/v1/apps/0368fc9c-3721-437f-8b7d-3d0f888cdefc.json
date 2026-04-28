@@ -1,0 +1,12 @@
+{
+  "appid": "0368fc9c-3721-437f-8b7d-3d0f888cdefc",
+  "appname": "Power Automate for Customer Service Pro",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "0368fc9c-3721-437f-8b7d-3d0f888cdefc"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "e4654015-5daf-4a48-9b37-4f309dddd88b",
+  "appname": "Advanced Communications",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e4654015-5daf-4a48-9b37-4f309dddd88b"
+}

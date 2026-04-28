@@ -1,0 +1,12 @@
+{
+  "appid": "ab8a5872-7c88-47a6-8141-7becce939190",
+  "appname": "CustomTags.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ab8a5872-7c88-47a6-8141-7becce939190"
+}

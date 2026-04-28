@@ -1,0 +1,12 @@
+{
+  "appid": "bf6f5520-59e3-4f82-974b-7dbbc4fd27c7",
+  "appname": "Office 365 SafeDocs",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "bf6f5520-59e3-4f82-974b-7dbbc4fd27c7"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "65a14201-8f6c-4c28-bec4-12619c5a9aaa",
+  "appname": "Connected Cluster Managed Identity CheckAccess Reader",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "65a14201-8f6c-4c28-bec4-12619c5a9aaa"
+}

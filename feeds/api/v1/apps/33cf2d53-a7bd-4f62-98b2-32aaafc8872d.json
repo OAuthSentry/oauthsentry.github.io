@@ -1,0 +1,12 @@
+{
+  "appid": "33cf2d53-a7bd-4f62-98b2-32aaafc8872d",
+  "appname": "Data Security Investigation App",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "33cf2d53-a7bd-4f62-98b2-32aaafc8872d"
+}

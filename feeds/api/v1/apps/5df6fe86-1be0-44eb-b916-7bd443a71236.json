@@ -1,0 +1,12 @@
+{
+  "appid": "5df6fe86-1be0-44eb-b916-7bd443a71236",
+  "appname": "PrivilegedAccess.Read.AzureResources - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5df6fe86-1be0-44eb-b916-7bd443a71236"
+}

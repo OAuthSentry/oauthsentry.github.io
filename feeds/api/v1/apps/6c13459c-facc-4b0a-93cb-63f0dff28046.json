@@ -1,0 +1,12 @@
+{
+  "appid": "6c13459c-facc-4b0a-93cb-63f0dff28046",
+  "appname": "ChannelMeeting.ReadBasic.Group",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6c13459c-facc-4b0a-93cb-63f0dff28046"
+}

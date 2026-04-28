@@ -1,0 +1,12 @@
+{
+  "appid": "6be147d2-ea4f-4b5a-a3fa-3eab6f3c140a",
+  "appname": "Mail.ReadBasic - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6be147d2-ea4f-4b5a-a3fa-3eab6f3c140a"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "959e5dec-6522-4d44-8349-132c27c3795a",
+  "appname": "Common Data Service for Teams_8",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "959e5dec-6522-4d44-8349-132c27c3795a"
+}

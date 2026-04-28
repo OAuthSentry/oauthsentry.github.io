@@ -1,0 +1,12 @@
+{
+  "appid": "cead390a-dd83-4856-9751-fb6dc98c34da",
+  "appname": "Purview/sit-defn-singapore-national-registration-identity-card-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "cead390a-dd83-4856-9751-fb6dc98c34da"
+}

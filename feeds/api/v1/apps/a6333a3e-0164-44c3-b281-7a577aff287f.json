@@ -1,0 +1,12 @@
+{
+  "appid": "a6333a3e-0164-44c3-b281-7a577aff287f",
+  "appname": "Windows Admin Center Administrator Login",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a6333a3e-0164-44c3-b281-7a577aff287f"
+}

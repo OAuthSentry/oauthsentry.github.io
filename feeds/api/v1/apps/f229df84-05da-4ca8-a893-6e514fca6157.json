@@ -1,0 +1,12 @@
+{
+  "appid": "f229df84-05da-4ca8-a893-6e514fca6157",
+  "appname": "Walkie Talkie App",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f229df84-05da-4ca8-a893-6e514fca6157"
+}

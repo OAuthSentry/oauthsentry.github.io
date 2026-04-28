@@ -1,0 +1,12 @@
+{
+  "appid": "cc2e79a6-9a86-45cc-91c1-41c15745287e",
+  "appname": "TeamsTab.Delete.Group",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "cc2e79a6-9a86-45cc-91c1-41c15745287e"
+}

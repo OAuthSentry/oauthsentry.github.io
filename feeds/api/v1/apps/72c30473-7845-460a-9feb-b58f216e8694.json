@@ -1,0 +1,12 @@
+{
+  "appid": "72c30473-7845-460a-9feb-b58f216e8694",
+  "appname": "CDS PowerApps Portals page view capacity add-on",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "72c30473-7845-460a-9feb-b58f216e8694"
+}

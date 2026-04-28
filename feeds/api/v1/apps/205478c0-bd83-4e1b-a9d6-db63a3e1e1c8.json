@@ -1,0 +1,12 @@
+{
+  "appid": "205478c0-bd83-4e1b-a9d6-db63a3e1e1c8",
+  "appname": "Azure Front Door Standard",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "205478c0-bd83-4e1b-a9d6-db63a3e1e1c8"
+}

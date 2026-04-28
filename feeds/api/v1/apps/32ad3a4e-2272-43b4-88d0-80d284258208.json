@@ -1,0 +1,12 @@
+{
+  "appid": "32ad3a4e-2272-43b4-88d0-80d284258208",
+  "appname": "Common Data Service Power Apps Portals Login Capacity",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "32ad3a4e-2272-43b4-88d0-80d284258208"
+}

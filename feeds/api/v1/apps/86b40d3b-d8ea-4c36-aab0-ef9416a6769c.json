@@ -1,0 +1,12 @@
+{
+  "appid": "86b40d3b-d8ea-4c36-aab0-ef9416a6769c",
+  "appname": "Purview/sit-defn-czech-drivers-license-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "86b40d3b-d8ea-4c36-aab0-ef9416a6769c"
+}

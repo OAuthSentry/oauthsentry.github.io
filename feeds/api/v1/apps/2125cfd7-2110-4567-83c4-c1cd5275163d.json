@@ -1,0 +1,12 @@
+{
+  "appid": "2125cfd7-2110-4567-83c4-c1cd5275163d",
+  "appname": "Microsoft Power BI Reporting and Analytics Plan 1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2125cfd7-2110-4567-83c4-c1cd5275163d"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
+  "appname": "Conditional Access Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9"
+}

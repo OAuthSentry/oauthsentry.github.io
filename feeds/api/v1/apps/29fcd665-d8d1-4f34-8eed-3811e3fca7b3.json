@@ -1,0 +1,12 @@
+{
+  "appid": "29fcd665-d8d1-4f34-8eed-3811e3fca7b3",
+  "appname": "Dynamics 365 Field Service Viral Trial",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "29fcd665-d8d1-4f34-8eed-3811e3fca7b3"
+}

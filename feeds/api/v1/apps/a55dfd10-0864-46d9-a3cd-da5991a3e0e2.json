@@ -1,0 +1,12 @@
+{
+  "appid": "a55dfd10-0864-46d9-a3cd-da5991a3e0e2",
+  "appname": "Project for Office (Plan E1)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a55dfd10-0864-46d9-a3cd-da5991a3e0e2"
+}

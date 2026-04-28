@@ -1,0 +1,12 @@
+{
+  "appid": "d20bfa21-e9ae-43fc-93c2-20783f0840c3",
+  "appname": "Flow P2 Viral",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d20bfa21-e9ae-43fc-93c2-20783f0840c3"
+}

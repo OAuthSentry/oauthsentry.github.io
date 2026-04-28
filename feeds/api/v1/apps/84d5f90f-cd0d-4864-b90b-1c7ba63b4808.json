@@ -1,0 +1,12 @@
+{
+  "appid": "84d5f90f-cd0d-4864-b90b-1c7ba63b4808",
+  "appname": "Office 365 Cloud App Security_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "84d5f90f-cd0d-4864-b90b-1c7ba63b4808"
+}

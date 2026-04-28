@@ -1,0 +1,12 @@
+{
+  "appid": "de3312e1-c7b0-46e6-a7c3-a515ff90bc86",
+  "appname": "TELSTRA Calling for O365",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "de3312e1-c7b0-46e6-a7c3-a515ff90bc86"
+}

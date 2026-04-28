@@ -1,0 +1,12 @@
+{
+  "appid": "a7a681dc-756e-4909-b988-f160edc6655f",
+  "appname": "Calls.AccessMedia.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a7a681dc-756e-4909-b988-f160edc6655f"
+}

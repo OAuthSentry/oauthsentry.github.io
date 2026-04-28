@@ -1,0 +1,12 @@
+{
+  "appid": "c2cda955-3359-44e5-989f-852ca0cfa02f",
+  "appname": "Microsoft 365 Audio Conferencing for faculty",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c2cda955-3359-44e5-989f-852ca0cfa02f"
+}

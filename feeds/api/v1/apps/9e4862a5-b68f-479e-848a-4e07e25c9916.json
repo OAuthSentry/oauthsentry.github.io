@@ -1,0 +1,12 @@
+{
+  "appid": "9e4862a5-b68f-479e-848a-4e07e25c9916",
+  "appname": "IdentityRiskEvent.ReadWrite.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9e4862a5-b68f-479e-848a-4e07e25c9916"
+}

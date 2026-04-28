@@ -1,0 +1,12 @@
+{
+  "appid": "0b962ed2-6d56-471c-bd5f-3477d83a7ba4",
+  "appname": "Azure Resource Notifications System Topics Subscriber",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "0b962ed2-6d56-471c-bd5f-3477d83a7ba4"
+}

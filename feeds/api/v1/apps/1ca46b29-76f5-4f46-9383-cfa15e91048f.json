@@ -1,0 +1,12 @@
+{
+  "appid": "1ca46b29-76f5-4f46-9383-cfa15e91048f",
+  "appname": "Purview/sit-defn-india-unique-identification-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1ca46b29-76f5-4f46-9383-cfa15e91048f"
+}

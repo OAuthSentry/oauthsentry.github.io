@@ -1,0 +1,12 @@
+{
+  "appid": "ea71bc49-6159-422d-84d5-6c29d7287974",
+  "appname": "Cirrus Identity Bridge",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ea71bc49-6159-422d-84d5-6c29d7287974"
+}

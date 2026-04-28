@@ -1,0 +1,12 @@
+{
+  "appid": "cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46",
+  "appname": "Microsoft 365 Business Premium",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46"
+}

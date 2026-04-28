@@ -1,0 +1,12 @@
+{
+  "appid": "7ad34336-f5b1-44ce-8682-31d7dfcd9ab9",
+  "appname": "TrustFrameworkKeySet.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "7ad34336-f5b1-44ce-8682-31d7dfcd9ab9"
+}

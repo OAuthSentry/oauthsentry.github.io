@@ -1,0 +1,12 @@
+{
+  "appid": "ae73097b-cb2a-4447-b064-5d80f6093921",
+  "appname": "DirectoryRecommendations.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ae73097b-cb2a-4447-b064-5d80f6093921"
+}

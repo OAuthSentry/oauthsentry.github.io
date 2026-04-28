@@ -1,0 +1,12 @@
+{
+  "appid": "287bd98c-e865-4e8c-bade-1a85523195b9",
+  "appname": "InformationProtectionContent.Write.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "287bd98c-e865-4e8c-bade-1a85523195b9"
+}

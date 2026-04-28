@@ -1,0 +1,12 @@
+{
+  "appid": "39b5c996-467e-4e60-bd62-46066f572726",
+  "appname": "Microsoft Invoicing",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "39b5c996-467e-4e60-bd62-46066f572726"
+}

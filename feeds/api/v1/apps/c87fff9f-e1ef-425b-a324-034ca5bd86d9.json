@@ -1,0 +1,12 @@
+{
+  "appid": "c87fff9f-e1ef-425b-a324-034ca5bd86d9",
+  "appname": "CodePlex",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c87fff9f-e1ef-425b-a324-034ca5bd86d9"
+}

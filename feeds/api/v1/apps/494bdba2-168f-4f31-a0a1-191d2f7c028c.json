@@ -1,0 +1,12 @@
+{
+  "appid": "494bdba2-168f-4f31-a0a1-191d2f7c028c",
+  "appname": "IoT Hub Twin Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "494bdba2-168f-4f31-a0a1-191d2f7c028c"
+}

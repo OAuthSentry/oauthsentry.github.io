@@ -1,0 +1,12 @@
+{
+  "appid": "fe930be7-5e62-47db-91af-98c3a49a38b1",
+  "appname": "User Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "fe930be7-5e62-47db-91af-98c3a49a38b1"
+}

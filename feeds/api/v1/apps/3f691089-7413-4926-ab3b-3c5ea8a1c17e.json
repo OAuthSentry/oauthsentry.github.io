@@ -1,0 +1,12 @@
+{
+  "appid": "3f691089-7413-4926-ab3b-3c5ea8a1c17e",
+  "appname": "Purview/sit-defn-ip-address-v6",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3f691089-7413-4926-ab3b-3c5ea8a1c17e"
+}

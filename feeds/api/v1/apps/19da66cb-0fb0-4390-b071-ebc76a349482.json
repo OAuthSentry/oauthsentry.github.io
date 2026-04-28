@@ -1,0 +1,12 @@
+{
+  "appid": "19da66cb-0fb0-4390-b071-ebc76a349482",
+  "appname": "InformationProtectionPolicy.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "19da66cb-0fb0-4390-b071-ebc76a349482"
+}

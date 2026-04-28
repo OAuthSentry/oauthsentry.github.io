@@ -1,0 +1,12 @@
+{
+  "appid": "9069b91f-a128-4aa3-ad07-1a33c58e8aa9",
+  "appname": "Microsoft Forms Web in Fairfax",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9069b91f-a128-4aa3-ad07-1a33c58e8aa9"
+}

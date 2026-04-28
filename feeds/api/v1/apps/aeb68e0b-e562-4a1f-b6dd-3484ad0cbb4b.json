@@ -1,0 +1,12 @@
+{
+  "appid": "aeb68e0b-e562-4a1f-b6dd-3484ad0cbb4b",
+  "appname": "IndustryData-OutboundFlow.ReadWrite.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "aeb68e0b-e562-4a1f-b6dd-3484ad0cbb4b"
+}

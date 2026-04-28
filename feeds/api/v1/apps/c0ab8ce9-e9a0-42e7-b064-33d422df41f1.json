@@ -1,0 +1,12 @@
+{
+  "appid": "c0ab8ce9-e9a0-42e7-b064-33d422df41f1",
+  "appname": "M365 Chat Client",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c0ab8ce9-e9a0-42e7-b064-33d422df41f1"
+}

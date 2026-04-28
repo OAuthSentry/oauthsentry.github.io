@@ -1,0 +1,12 @@
+{
+  "appid": "e6778190-713e-4e4f-9119-8b8238de25df",
+  "appname": "OneDrive for Business (Plan 1)_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e6778190-713e-4e4f-9119-8b8238de25df"
+}

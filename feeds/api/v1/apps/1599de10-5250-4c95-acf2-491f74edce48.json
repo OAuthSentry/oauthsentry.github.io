@@ -1,0 +1,12 @@
+{
+  "appid": "1599de10-5250-4c95-acf2-491f74edce48",
+  "appname": "Dynamics 365 Marketing Sandbox Application AddOn",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1599de10-5250-4c95-acf2-491f74edce48"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "85cb6faf-e071-4c9b-8136-154b5a04f717",
+  "appname": "Kubernetes Extension Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "85cb6faf-e071-4c9b-8136-154b5a04f717"
+}

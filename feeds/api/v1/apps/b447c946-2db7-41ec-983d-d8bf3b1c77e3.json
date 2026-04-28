@@ -1,0 +1,12 @@
+{
+  "appid": "b447c946-2db7-41ec-983d-d8bf3b1c77e3",
+  "appname": "IoT Hub Data Reader",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b447c946-2db7-41ec-983d-d8bf3b1c77e3"
+}

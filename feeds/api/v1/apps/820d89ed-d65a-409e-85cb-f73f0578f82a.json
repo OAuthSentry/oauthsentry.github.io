@@ -1,0 +1,12 @@
+{
+  "appid": "820d89ed-d65a-409e-85cb-f73f0578f82a",
+  "appname": "IDmelon iOS Authenticator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "820d89ed-d65a-409e-85cb-f73f0578f82a"
+}

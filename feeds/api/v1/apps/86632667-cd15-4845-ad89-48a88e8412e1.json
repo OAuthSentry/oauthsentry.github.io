@@ -1,0 +1,12 @@
+{
+  "appid": "86632667-cd15-4845-ad89-48a88e8412e1",
+  "appname": "ThreatSubmission.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "86632667-cd15-4845-ad89-48a88e8412e1"
+}

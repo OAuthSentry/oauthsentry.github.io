@@ -1,0 +1,12 @@
+{
+  "appid": "664d9f67-84a2-412a-9ff7-b4f7d8ee6d05",
+  "appname": "OpenSK authenticator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "664d9f67-84a2-412a-9ff7-b4f7d8ee6d05"
+}

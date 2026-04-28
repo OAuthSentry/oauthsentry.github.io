@@ -1,0 +1,12 @@
+{
+  "appid": "a2ce32a8-f935-4bb6-8e96-2a5157672e2c",
+  "appname": "Purview/sit-defn-us-bank-account-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a2ce32a8-f935-4bb6-8e96-2a5157672e2c"
+}

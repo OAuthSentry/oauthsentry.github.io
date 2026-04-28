@@ -1,0 +1,12 @@
+{
+  "appid": "ff278e11-4a33-4d0c-83d2-d01dc58929a5",
+  "appname": "RoleEligibilitySchedule.Read.Directory - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ff278e11-4a33-4d0c-83d2-d01dc58929a5"
+}

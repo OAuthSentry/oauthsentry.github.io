@@ -1,0 +1,12 @@
+{
+  "appid": "70a8b8b1-862c-4473-80ab-4e55bae45b4f",
+  "appname": "MIM Certificate Manager modern app client",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "70a8b8b1-862c-4473-80ab-4e55bae45b4f"
+}

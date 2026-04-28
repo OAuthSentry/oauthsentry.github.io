@@ -1,0 +1,12 @@
+{
+  "appid": "9a6eeb79-0b4b-4bf0-9808-39d99a2cd5a3",
+  "appname": "Windows Autopatch",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9a6eeb79-0b4b-4bf0-9808-39d99a2cd5a3"
+}

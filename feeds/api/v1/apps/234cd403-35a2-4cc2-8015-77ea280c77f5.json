@@ -1,0 +1,12 @@
+{
+  "appid": "234cd403-35a2-4cc2-8015-77ea280c77f5",
+  "appname": "Feitian ePass FIDO2-NFC Series (CTAP2.1, CTAP2.0, U2F)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "234cd403-35a2-4cc2-8015-77ea280c77f5"
+}

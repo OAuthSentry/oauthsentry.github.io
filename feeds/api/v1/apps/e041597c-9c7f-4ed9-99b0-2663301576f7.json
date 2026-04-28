@@ -1,0 +1,12 @@
+{
+  "appid": "e041597c-9c7f-4ed9-99b0-2663301576f7",
+  "appname": "Windows 10 Enterprise E3 (Local Only)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e041597c-9c7f-4ed9-99b0-2663301576f7"
+}

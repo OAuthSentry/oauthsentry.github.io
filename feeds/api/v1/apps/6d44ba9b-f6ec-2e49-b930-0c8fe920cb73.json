@@ -1,0 +1,12 @@
+{
+  "appid": "6d44ba9b-f6ec-2e49-b930-0c8fe920cb73",
+  "appname": "Security Key by Yubico with NFC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6d44ba9b-f6ec-2e49-b930-0c8fe920cb73"
+}

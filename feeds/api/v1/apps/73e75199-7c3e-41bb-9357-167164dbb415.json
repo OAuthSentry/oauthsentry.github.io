@@ -1,0 +1,12 @@
+{
+  "appid": "73e75199-7c3e-41bb-9357-167164dbb415",
+  "appname": "UnifiedGroupMember.Read.AsGuest - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "73e75199-7c3e-41bb-9357-167164dbb415"
+}

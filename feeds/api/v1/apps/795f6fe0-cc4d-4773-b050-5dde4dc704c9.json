@@ -1,0 +1,12 @@
+{
+  "appid": "795f6fe0-cc4d-4773-b050-5dde4dc704c9",
+  "appname": "Universal Print_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "795f6fe0-cc4d-4773-b050-5dde4dc704c9"
+}

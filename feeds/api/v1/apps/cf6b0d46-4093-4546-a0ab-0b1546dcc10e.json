@@ -1,0 +1,12 @@
+{
+  "appid": "cf6b0d46-4093-4546-a0ab-0b1546dcc10e",
+  "appname": "Microsoft Entra ID Governance",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "cf6b0d46-4093-4546-a0ab-0b1546dcc10e"
+}

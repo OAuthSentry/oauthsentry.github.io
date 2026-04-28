@@ -1,0 +1,12 @@
+{
+  "appid": "486de900-db70-41b3-a886-abdf25af119c",
+  "appname": "Purview/sit-defn-brazil-national-identification-card",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "486de900-db70-41b3-a886-abdf25af119c"
+}

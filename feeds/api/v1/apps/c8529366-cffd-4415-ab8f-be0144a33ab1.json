@@ -1,0 +1,12 @@
+{
+  "appid": "c8529366-cffd-4415-ab8f-be0144a33ab1",
+  "appname": "Teams Rooms Basic",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c8529366-cffd-4415-ab8f-be0144a33ab1"
+}

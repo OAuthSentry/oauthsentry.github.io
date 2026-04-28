@@ -1,0 +1,12 @@
+{
+  "appid": "6fa57f91-314a-4561-8248-7ab921957448",
+  "appname": "Purview/sit-defn-philippines-passport-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6fa57f91-314a-4561-8248-7ab921957448"
+}

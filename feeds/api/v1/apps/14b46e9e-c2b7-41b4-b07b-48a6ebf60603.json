@@ -1,0 +1,12 @@
+{
+  "appid": "14b46e9e-c2b7-41b4-b07b-48a6ebf60603",
+  "appname": "Key Vault Crypto Officer",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "14b46e9e-c2b7-41b4-b07b-48a6ebf60603"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "9f06204d-73c1-4d4c-880a-6edb90606fd8",
+  "appname": "Azure AD Joined Device Local Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9f06204d-73c1-4d4c-880a-6edb90606fd8"
+}

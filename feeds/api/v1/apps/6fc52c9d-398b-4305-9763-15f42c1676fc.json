@@ -1,0 +1,12 @@
+{
+  "appid": "6fc52c9d-398b-4305-9763-15f42c1676fc",
+  "appname": "Enable user account",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6fc52c9d-398b-4305-9763-15f42c1676fc"
+}

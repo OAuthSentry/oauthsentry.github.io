@@ -1,0 +1,12 @@
+{
+  "appid": "10f0d113-b0e1-47dc-872a-a4f45b9376a3",
+  "appname": "Purview/sit-defn-spain-tax-identification-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "10f0d113-b0e1-47dc-872a-a4f45b9376a3"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "4f6778d8-5aef-43dc-a1ff-b073724b9495",
+  "appname": "Azure API for FHIR app ID",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4f6778d8-5aef-43dc-a1ff-b073724b9495"
+}

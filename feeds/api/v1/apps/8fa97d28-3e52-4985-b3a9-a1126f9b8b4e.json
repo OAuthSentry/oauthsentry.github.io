@@ -1,0 +1,12 @@
+{
+  "appid": "8fa97d28-3e52-4985-b3a9-a1126f9b8b4e",
+  "appname": "Remove all license assignment from user",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "8fa97d28-3e52-4985-b3a9-a1126f9b8b4e"
+}

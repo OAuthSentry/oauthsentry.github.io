@@ -1,0 +1,12 @@
+{
+  "appid": "7f480852-ebdc-47d4-87de-0d8498384a83",
+  "appname": "Access package manager",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "7f480852-ebdc-47d4-87de-0d8498384a83"
+}

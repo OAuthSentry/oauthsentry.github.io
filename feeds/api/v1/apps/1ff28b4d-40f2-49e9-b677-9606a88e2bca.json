@@ -1,0 +1,12 @@
+{
+  "appid": "1ff28b4d-40f2-49e9-b677-9606a88e2bca",
+  "appname": "Purview/sit-defn-poland-tax-identification-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1ff28b4d-40f2-49e9-b677-9606a88e2bca"
+}

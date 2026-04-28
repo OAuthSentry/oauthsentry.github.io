@@ -1,0 +1,12 @@
+{
+  "appid": "8be4df61-93ca-11d2-aa0d-00e098032b8c",
+  "appname": "EFI boot variable",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "8be4df61-93ca-11d2-aa0d-00e098032b8c"
+}

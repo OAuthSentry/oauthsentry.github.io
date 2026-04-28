@@ -1,0 +1,12 @@
+{
+  "appid": "1412cdc1-d593-4ad1-9050-40c30ad0b023",
+  "appname": "Dynamics 365 Customer Service Insights for CE Plan",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1412cdc1-d593-4ad1-9050-40c30ad0b023"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "32597670-3e15-4def-8851-614ff48c1efa",
+  "appname": "Partner Center Container Registries AppId",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "32597670-3e15-4def-8851-614ff48c1efa"
+}

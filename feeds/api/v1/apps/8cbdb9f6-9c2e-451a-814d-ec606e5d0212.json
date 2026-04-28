@@ -1,0 +1,12 @@
+{
+  "appid": "8cbdb9f6-9c2e-451a-814d-ec606e5d0212",
+  "appname": "OrgSettings-Microsoft365Install.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "8cbdb9f6-9c2e-451a-814d-ec606e5d0212"
+}

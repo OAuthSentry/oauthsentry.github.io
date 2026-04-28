@@ -1,0 +1,12 @@
+{
+  "appid": "bf95fd32-576a-4742-8d7a-6dc4940b9532",
+  "appname": "Visio Plan 2 for Faculty",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "bf95fd32-576a-4742-8d7a-6dc4940b9532"
+}

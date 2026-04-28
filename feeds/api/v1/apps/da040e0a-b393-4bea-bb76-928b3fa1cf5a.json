@@ -1,0 +1,12 @@
+{
+  "appid": "da040e0a-b393-4bea-bb76-928b3fa1cf5a",
+  "appname": "EXCHANGE ONLINE ARCHIVING FOR EXCHANGE SERVER",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "da040e0a-b393-4bea-bb76-928b3fa1cf5a"
+}

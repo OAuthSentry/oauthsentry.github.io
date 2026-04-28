@@ -1,0 +1,12 @@
+{
+  "appid": "f30db892-07e9-47e9-837c-80727f46fd3d",
+  "appname": "Microsoft Power Automate Free",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f30db892-07e9-47e9-837c-80727f46fd3d"
+}

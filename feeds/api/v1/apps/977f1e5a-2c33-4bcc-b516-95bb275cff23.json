@@ -1,0 +1,12 @@
+{
+  "appid": "977f1e5a-2c33-4bcc-b516-95bb275cff23",
+  "appname": "Purview/sit-defn-portugal-drivers-license-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "977f1e5a-2c33-4bcc-b516-95bb275cff23"
+}

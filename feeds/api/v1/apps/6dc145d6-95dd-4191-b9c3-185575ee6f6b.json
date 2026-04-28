@@ -1,0 +1,12 @@
+{
+  "appid": "6dc145d6-95dd-4191-b9c3-185575ee6f6b",
+  "appname": "Microsoft Communications DLP",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6dc145d6-95dd-4191-b9c3-185575ee6f6b"
+}

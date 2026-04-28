@@ -1,0 +1,12 @@
+{
+  "appid": "494ae006-db33-4328-bf46-533a6560a3ca",
+  "appname": "Site Recovery Operator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "494ae006-db33-4328-bf46-533a6560a3ca"
+}

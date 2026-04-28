@@ -1,0 +1,12 @@
+{
+  "appid": "523776ba-4eb2-4600-a3c8-f2dc93da4bdb",
+  "appname": "Logic Apps Standard Developer (Preview)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "523776ba-4eb2-4600-a3c8-f2dc93da4bdb"
+}

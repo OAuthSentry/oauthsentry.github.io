@@ -1,0 +1,12 @@
+{
+  "appid": "54b37829-818e-4e3c-a08a-3ea66ab9b45d",
+  "appname": "Power Apps for Dynamics 365 vTrial",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "54b37829-818e-4e3c-a08a-3ea66ab9b45d"
+}

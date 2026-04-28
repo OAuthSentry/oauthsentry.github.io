@@ -1,0 +1,12 @@
+{
+  "appid": "c84e52ae-1906-4947-ac4d-6fb3e5bf7c2e",
+  "appname": "Common data service for Flow per business process plan",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c84e52ae-1906-4947-ac4d-6fb3e5bf7c2e"
+}

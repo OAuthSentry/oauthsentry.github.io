@@ -1,0 +1,12 @@
+{
+  "appid": "eafad40c-bf7a-415a-b7f8-acdf5706b58f",
+  "appname": "ResourceSpecificPermissionGrant.ReadForTeam - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "eafad40c-bf7a-415a-b7f8-acdf5706b58f"
+}

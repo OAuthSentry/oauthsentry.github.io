@@ -1,0 +1,12 @@
+{
+  "appid": "092211d9-ca1a-427b-813e-b79c7653fe71",
+  "appname": "Goals-Export.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "092211d9-ca1a-427b-813e-b79c7653fe71"
+}

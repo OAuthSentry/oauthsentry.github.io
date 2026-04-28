@@ -1,0 +1,12 @@
+{
+  "appid": "6e98f277-b046-4193-a4f2-6bf6a78cd491",
+  "appname": "Bookings.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6e98f277-b046-4193-a4f2-6bf6a78cd491"
+}

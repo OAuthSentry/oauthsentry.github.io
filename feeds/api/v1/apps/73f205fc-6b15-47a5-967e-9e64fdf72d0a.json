@@ -1,0 +1,12 @@
+{
+  "appid": "73f205fc-6b15-47a5-967e-9e64fdf72d0a",
+  "appname": "Dynamics 365 for Sales Professional Trial_2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "73f205fc-6b15-47a5-967e-9e64fdf72d0a"
+}

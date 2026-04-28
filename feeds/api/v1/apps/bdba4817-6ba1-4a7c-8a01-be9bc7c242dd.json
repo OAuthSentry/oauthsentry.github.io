@@ -1,0 +1,12 @@
+{
+  "appid": "bdba4817-6ba1-4a7c-8a01-be9bc7c242dd",
+  "appname": "Policy.Read.DeviceConfiguration - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "bdba4817-6ba1-4a7c-8a01-be9bc7c242dd"
+}

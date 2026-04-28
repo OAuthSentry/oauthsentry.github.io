@@ -1,0 +1,12 @@
+{
+  "appid": "73c42c96-874c-492b-b04d-ab87d138a893",
+  "appname": "Log Analytics Reader",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "73c42c96-874c-492b-b04d-ab87d138a893"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "57a0746c-87b8-4405-9397-df365a9db793",
+  "appname": "Power Automate for Dynamics 365 Customer Voice",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "57a0746c-87b8-4405-9397-df365a9db793"
+}

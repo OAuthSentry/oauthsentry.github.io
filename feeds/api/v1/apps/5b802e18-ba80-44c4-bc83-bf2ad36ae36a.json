@@ -1,0 +1,12 @@
+{
+  "appid": "5b802e18-ba80-44c4-bc83-bf2ad36ae36a",
+  "appname": "Purview/sit-defn-south-korea-resident-registration-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5b802e18-ba80-44c4-bc83-bf2ad36ae36a"
+}

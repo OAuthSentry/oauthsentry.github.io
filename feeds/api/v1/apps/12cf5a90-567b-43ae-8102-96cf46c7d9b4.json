@@ -1,0 +1,12 @@
+{
+  "appid": "12cf5a90-567b-43ae-8102-96cf46c7d9b4",
+  "appname": "Web PubSub Service Owner",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "12cf5a90-567b-43ae-8102-96cf46c7d9b4"
+}

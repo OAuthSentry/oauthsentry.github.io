@@ -1,0 +1,12 @@
+{
+  "appid": "cb0774da-a605-42af-959c-32f438fb38f4",
+  "appname": "IndustryData-InboundFlow.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "cb0774da-a605-42af-959c-32f438fb38f4"
+}

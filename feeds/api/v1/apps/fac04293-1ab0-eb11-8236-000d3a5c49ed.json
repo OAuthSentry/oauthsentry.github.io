@@ -1,0 +1,12 @@
+{
+  "appid": "fac04293-1ab0-eb11-8236-000d3a5c49ed",
+  "appname": "Dynamics 365 customer service basic session template",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "fac04293-1ab0-eb11-8236-000d3a5c49ed"
+}

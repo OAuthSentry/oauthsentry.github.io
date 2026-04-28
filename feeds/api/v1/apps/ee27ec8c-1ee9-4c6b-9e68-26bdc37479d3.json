@@ -1,0 +1,12 @@
+{
+  "appid": "ee27ec8c-1ee9-4c6b-9e68-26bdc37479d3",
+  "appname": "Amazon Business",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ee27ec8c-1ee9-4c6b-9e68-26bdc37479d3"
+}

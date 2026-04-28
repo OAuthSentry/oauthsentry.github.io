@@ -1,0 +1,12 @@
+{
+  "appid": "69566ab7-960f-475b-8e7c-b3118f30c6bd",
+  "appname": "Storage File Data Privileged Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "69566ab7-960f-475b-8e7c-b3118f30c6bd"
+}

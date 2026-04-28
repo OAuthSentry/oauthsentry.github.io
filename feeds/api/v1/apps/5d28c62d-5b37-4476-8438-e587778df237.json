@@ -1,0 +1,12 @@
+{
+  "appid": "5d28c62d-5b37-4476-8438-e587778df237",
+  "appname": "New Relic APM Account Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5d28c62d-5b37-4476-8438-e587778df237"
+}

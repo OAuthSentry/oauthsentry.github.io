@@ -1,0 +1,12 @@
+{
+  "appid": "1e988bf3-8b7c-4731-bec0-4e2a2946600c",
+  "appname": "Microsoft 365 E5 EEA (no Teams) (500 seats min)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1e988bf3-8b7c-4731-bec0-4e2a2946600c"
+}

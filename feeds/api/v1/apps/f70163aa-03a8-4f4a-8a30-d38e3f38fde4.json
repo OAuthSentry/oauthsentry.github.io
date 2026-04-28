@@ -1,0 +1,12 @@
+{
+  "appid": "f70163aa-03a8-4f4a-8a30-d38e3f38fde4",
+  "appname": "Purview/sit-defn-azure-subscription-management-certificate",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f70163aa-03a8-4f4a-8a30-d38e3f38fde4"
+}

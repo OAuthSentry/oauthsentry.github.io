@@ -1,0 +1,12 @@
+{
+  "appid": "8e6251b9-47b4-40e8-a42b-0f80876be192",
+  "appname": "Purview/sit-defn-spain-dni",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "8e6251b9-47b4-40e8-a42b-0f80876be192"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "9ddd1817-af5a-4672-a2b9-3e3dd95000a9",
+  "appname": "Windows Hello for Business GUID 2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9ddd1817-af5a-4672-a2b9-3e3dd95000a9"
+}

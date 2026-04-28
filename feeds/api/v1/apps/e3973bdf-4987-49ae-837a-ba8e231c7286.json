@@ -1,0 +1,12 @@
+{
+  "appid": "e3973bdf-4987-49ae-837a-ba8e231c7286",
+  "appname": "Azure DevOps Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e3973bdf-4987-49ae-837a-ba8e231c7286"
+}

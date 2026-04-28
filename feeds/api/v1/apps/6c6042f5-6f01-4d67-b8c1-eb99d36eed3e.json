@@ -1,0 +1,12 @@
+{
+  "appid": "6c6042f5-6f01-4d67-b8c1-eb99d36eed3e",
+  "appname": "Microsoft Stream for Office 365 E5",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6c6042f5-6f01-4d67-b8c1-eb99d36eed3e"
+}

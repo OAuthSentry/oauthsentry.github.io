@@ -1,0 +1,12 @@
+{
+  "appid": "90927877-dcff-4af6-b346-2332c0b15bb7",
+  "appname": "EXCHANGE ONLINE POP",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "90927877-dcff-4af6-b346-2332c0b15bb7"
+}

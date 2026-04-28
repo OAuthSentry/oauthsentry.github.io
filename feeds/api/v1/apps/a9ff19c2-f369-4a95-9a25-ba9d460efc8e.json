@@ -1,0 +1,12 @@
+{
+  "appid": "a9ff19c2-f369-4a95-9a25-ba9d460efc8e",
+  "appname": "TeamsTab.Create - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a9ff19c2-f369-4a95-9a25-ba9d460efc8e"
+}

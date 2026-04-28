@@ -1,0 +1,12 @@
+{
+  "appid": "59d46f88-662b-457b-bceb-5c3809e5908f",
+  "appname": "Lifecycle Workflows Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "59d46f88-662b-457b-bceb-5c3809e5908f"
+}

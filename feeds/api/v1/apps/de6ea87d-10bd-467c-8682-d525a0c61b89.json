@@ -1,0 +1,12 @@
+{
+  "appid": "de6ea87d-10bd-467c-8682-d525a0c61b89",
+  "appname": "CustomTags.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "de6ea87d-10bd-467c-8682-d525a0c61b89"
+}

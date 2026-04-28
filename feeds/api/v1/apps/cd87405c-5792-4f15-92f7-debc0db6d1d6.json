@@ -1,0 +1,12 @@
+{
+  "appid": "cd87405c-5792-4f15-92f7-debc0db6d1d6",
+  "appname": "TeamTemplates.Read - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "cd87405c-5792-4f15-92f7-debc0db6d1d6"
+}

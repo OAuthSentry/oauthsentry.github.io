@@ -1,0 +1,12 @@
+{
+  "appid": "8116ae0f-55c2-452d-9944-d18420f5b2c8",
+  "appname": "ExternalItem.ReadWrite.OwnedBy - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "8116ae0f-55c2-452d-9944-d18420f5b2c8"
+}

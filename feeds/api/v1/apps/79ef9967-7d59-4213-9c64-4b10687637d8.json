@@ -1,0 +1,12 @@
+{
+  "appid": "79ef9967-7d59-4213-9c64-4b10687637d8",
+  "appname": "PrintConnector.ReadWrite.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "79ef9967-7d59-4213-9c64-4b10687637d8"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "fa2b99dc-9e39-4257-8f92-4a30d23c4118",
+  "appname": "YubiKey 5 Series with NFC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "fa2b99dc-9e39-4257-8f92-4a30d23c4118"
+}

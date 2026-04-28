@@ -1,0 +1,12 @@
+{
+  "appid": "24f8edb6-1668-4659-b5e2-40bb5f3a7d7e",
+  "appname": "Enterprise Administrator (read only)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "24f8edb6-1668-4659-b5e2-40bb5f3a7d7e"
+}

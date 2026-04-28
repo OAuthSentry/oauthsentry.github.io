@@ -1,0 +1,12 @@
+{
+  "appid": "bce09f38-1800-4a51-8d50-5486380ba84a",
+  "appname": "Windows 365 Enterprise 2 vCPU 4 GB 128 GB (Preview)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "bce09f38-1800-4a51-8d50-5486380ba84a"
+}

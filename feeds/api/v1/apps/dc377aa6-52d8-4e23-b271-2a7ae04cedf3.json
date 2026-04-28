@@ -1,0 +1,12 @@
+{
+  "appid": "dc377aa6-52d8-4e23-b271-2a7ae04cedf3",
+  "appname": "DeviceManagementConfiguration.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "dc377aa6-52d8-4e23-b271-2a7ae04cedf3"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "80558df3-64f9-4c0f-b32d-e5094b036b0b",
+  "appname": "Azure Spring Apps Connect Role",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "80558df3-64f9-4c0f-b32d-e5094b036b0b"
+}

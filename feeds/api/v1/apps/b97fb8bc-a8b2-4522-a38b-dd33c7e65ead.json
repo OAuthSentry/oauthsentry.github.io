@@ -1,0 +1,12 @@
+{
+  "appid": "b97fb8bc-a8b2-4522-a38b-dd33c7e65ead",
+  "appname": "Lab Creator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b97fb8bc-a8b2-4522-a38b-dd33c7e65ead"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "9d3df6ba-282f-11ed-a261-0242ac120002",
+  "appname": "Arculus FIDO2 U2F Key Card",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9d3df6ba-282f-11ed-a261-0242ac120002"
+}

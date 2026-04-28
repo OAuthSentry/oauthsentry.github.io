@@ -1,0 +1,12 @@
+{
+  "appid": "eac6b45b-aa89-429f-a37b-c8ce00e8367e",
+  "appname": "Microsoft Dynamics CRM Online - Portal Add-On_2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "eac6b45b-aa89-429f-a37b-c8ce00e8367e"
+}

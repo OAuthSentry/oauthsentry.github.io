@@ -1,0 +1,12 @@
+{
+  "appid": "bbf86eb8-f7b4-4cce-96e4-18cddf81d86e",
+  "appname": "Attestation Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "bbf86eb8-f7b4-4cce-96e4-18cddf81d86e"
+}

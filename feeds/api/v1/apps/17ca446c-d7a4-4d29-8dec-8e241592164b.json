@@ -1,0 +1,12 @@
+{
+  "appid": "17ca446c-d7a4-4d29-8dec-8e241592164b",
+  "appname": "Dynamics 365 Business Central Essentials Attach_2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "17ca446c-d7a4-4d29-8dec-8e241592164b"
+}

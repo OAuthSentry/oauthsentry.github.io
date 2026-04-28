@@ -1,0 +1,12 @@
+{
+  "appid": "9c6df0f2-1e7c-4dc3-b195-66dfbd24aa8f",
+  "appname": "Attack Payload Author",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9c6df0f2-1e7c-4dc3-b195-66dfbd24aa8f"
+}

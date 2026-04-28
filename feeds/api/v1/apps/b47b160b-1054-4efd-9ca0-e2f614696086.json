@@ -1,0 +1,12 @@
+{
+  "appid": "b47b160b-1054-4efd-9ca0-e2f614696086",
+  "appname": "Files.ReadWrite.AppFolder - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b47b160b-1054-4efd-9ca0-e2f614696086"
+}

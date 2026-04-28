@@ -1,0 +1,12 @@
+{
+  "appid": "d29b2b05-8046-44ba-8758-1e26182fcf32",
+  "appname": "Directory Synchronization Accounts",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d29b2b05-8046-44ba-8758-1e26182fcf32"
+}

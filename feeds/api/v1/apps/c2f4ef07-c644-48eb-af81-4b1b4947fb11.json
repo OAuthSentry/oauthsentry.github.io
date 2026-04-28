@@ -1,0 +1,12 @@
+{
+  "appid": "c2f4ef07-c644-48eb-af81-4b1b4947fb11",
+  "appname": "AcrDelete",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c2f4ef07-c644-48eb-af81-4b1b4947fb11"
+}

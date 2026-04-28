@@ -1,0 +1,12 @@
+{
+  "appid": "bc946dac-7877-4271-b2f7-99d2db13cd2c",
+  "appname": "Dynamics 365 Customer Voice Trial",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "bc946dac-7877-4271-b2f7-99d2db13cd2c"
+}

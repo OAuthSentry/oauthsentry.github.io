@@ -1,0 +1,12 @@
+{
+  "appid": "97f29a83-1a20-44ff-bf48-5e4ad11f3e51",
+  "appname": "Microsoft Dynamics 365 Customer Voice for Customer Engagement Plan",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "97f29a83-1a20-44ff-bf48-5e4ad11f3e51"
+}

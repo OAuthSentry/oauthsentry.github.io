@@ -1,0 +1,12 @@
+{
+  "appid": "ddbf3205-c6bd-46ae-8127-60eb93363864",
+  "appname": "Microsoft Azure Batch - Public cloud",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ddbf3205-c6bd-46ae-8127-60eb93363864"
+}

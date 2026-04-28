@@ -1,0 +1,12 @@
+{
+  "appid": "9b7c50ec-cd50-44f2-bf48-d72de6f90717",
+  "appname": "Project for Government (Plan E5)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9b7c50ec-cd50-44f2-bf48-d72de6f90717"
+}

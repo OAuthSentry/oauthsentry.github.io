@@ -1,0 +1,12 @@
+{
+  "appid": "ba929637-f158-4dee-927c-eb7cdefcd955",
+  "appname": "Microsoft Viva Goals",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ba929637-f158-4dee-927c-eb7cdefcd955"
+}

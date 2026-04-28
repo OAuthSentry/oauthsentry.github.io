@@ -1,0 +1,12 @@
+{
+  "appid": "d87dcbc6-a371-462e-88e3-28ad15ec4e64",
+  "appname": "Re-register Microsoft.AAD namespace (3)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d87dcbc6-a371-462e-88e3-28ad15ec4e64"
+}

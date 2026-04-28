@@ -1,0 +1,12 @@
+{
+  "appid": "297f747b-0005-475b-8fef-c890f5152b38",
+  "appname": "TermStore.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "297f747b-0005-475b-8fef-c890f5152b38"
+}

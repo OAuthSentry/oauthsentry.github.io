@@ -1,0 +1,12 @@
+{
+  "appid": "acdd72a7-3385-48ef-bd42-f606fba81ae7",
+  "appname": "Reader",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "acdd72a7-3385-48ef-bd42-f606fba81ae7"
+}

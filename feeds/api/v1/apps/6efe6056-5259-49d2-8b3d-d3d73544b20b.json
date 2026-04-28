@@ -1,0 +1,12 @@
+{
+  "appid": "6efe6056-5259-49d2-8b3d-d3d73544b20b",
+  "appname": "Managed HSM Restore",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6efe6056-5259-49d2-8b3d-d3d73544b20b"
+}

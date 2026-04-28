@@ -1,0 +1,12 @@
+{
+  "appid": "bea6aef1-f52d-4cce-ae09-bed96c4b1811",
+  "appname": "Power Apps Portals Login Capacity Add-On for Government",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "bea6aef1-f52d-4cce-ae09-bed96c4b1811"
+}

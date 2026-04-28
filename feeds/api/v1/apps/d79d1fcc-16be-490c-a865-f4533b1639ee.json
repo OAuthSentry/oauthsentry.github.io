@@ -1,0 +1,12 @@
+{
+  "appid": "d79d1fcc-16be-490c-a865-f4533b1639ee",
+  "appname": "Run a Custom Task Extension",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d79d1fcc-16be-490c-a865-f4533b1639ee"
+}

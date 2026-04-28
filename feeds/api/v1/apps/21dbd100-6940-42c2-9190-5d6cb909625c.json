@@ -1,0 +1,12 @@
+{
+  "appid": "21dbd100-6940-42c2-9190-5d6cb909625c",
+  "appname": "Managed HSM Crypto Service Release User",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "21dbd100-6940-42c2-9190-5d6cb909625c"
+}

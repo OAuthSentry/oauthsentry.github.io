@@ -1,0 +1,12 @@
+{
+  "appid": "3e150937-b8fe-4cfb-8069-0eaf05ecd056",
+  "appname": "Microsoft Sentinel Responder",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3e150937-b8fe-4cfb-8069-0eaf05ecd056"
+}

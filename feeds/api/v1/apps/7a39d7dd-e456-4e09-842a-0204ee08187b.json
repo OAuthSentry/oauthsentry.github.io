@@ -1,0 +1,12 @@
+{
+  "appid": "7a39d7dd-e456-4e09-842a-0204ee08187b",
+  "appname": "Rights Management Adhoc_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "7a39d7dd-e456-4e09-842a-0204ee08187b"
+}

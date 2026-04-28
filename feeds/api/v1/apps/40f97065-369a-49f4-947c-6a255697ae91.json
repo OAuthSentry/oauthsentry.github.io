@@ -1,0 +1,12 @@
+{
+  "appid": "40f97065-369a-49f4-947c-6a255697ae91",
+  "appname": "MailboxSettings.Read - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "40f97065-369a-49f4-947c-6a255697ae91"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "5d186531-d1bf-4f07-8cea-7c42119e1bd9",
+  "appname": "EduRoster.ReadBasic - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5d186531-d1bf-4f07-8cea-7c42119e1bd9"
+}

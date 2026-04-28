@@ -1,0 +1,12 @@
+{
+  "appid": "976349a0-683b-477a-90f8-ff0a220d5592",
+  "appname": "Purview/sit-defn-hungary-value-added-tax-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "976349a0-683b-477a-90f8-ff0a220d5592"
+}

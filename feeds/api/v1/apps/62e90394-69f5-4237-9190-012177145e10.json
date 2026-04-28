@@ -1,0 +1,12 @@
+{
+  "appid": "62e90394-69f5-4237-9190-012177145e10",
+  "appname": "Global Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "62e90394-69f5-4237-9190-012177145e10"
+}

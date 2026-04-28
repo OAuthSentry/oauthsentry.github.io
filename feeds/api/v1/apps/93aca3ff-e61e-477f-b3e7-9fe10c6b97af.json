@@ -1,0 +1,12 @@
+{
+  "appid": "93aca3ff-e61e-477f-b3e7-9fe10c6b97af",
+  "appname": "IC3 Gateway Non CAE",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "93aca3ff-e61e-477f-b3e7-9fe10c6b97af"
+}

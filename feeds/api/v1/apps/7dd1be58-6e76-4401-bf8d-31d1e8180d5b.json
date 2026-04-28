@@ -1,0 +1,12 @@
+{
+  "appid": "7dd1be58-6e76-4401-bf8d-31d1e8180d5b",
+  "appname": "WindowsUpdates.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "7dd1be58-6e76-4401-bf8d-31d1e8180d5b"
+}

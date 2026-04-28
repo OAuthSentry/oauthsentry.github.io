@@ -1,0 +1,12 @@
+{
+  "appid": "fc30e98b-8810-4501-81f5-c20a3196387b",
+  "appname": "User.RevokeSessions.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "fc30e98b-8810-4501-81f5-c20a3196387b"
+}

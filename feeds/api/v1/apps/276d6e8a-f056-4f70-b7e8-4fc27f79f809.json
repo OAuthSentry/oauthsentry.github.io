@@ -1,0 +1,12 @@
+{
+  "appid": "276d6e8a-f056-4f70-b7e8-4fc27f79f809",
+  "appname": "Office Shared Computer Activation",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "276d6e8a-f056-4f70-b7e8-4fc27f79f809"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "18500a29-7fe2-46b2-a342-b16a415e101d",
+  "appname": "Managed HSM contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "18500a29-7fe2-46b2-a342-b16a415e101d"
+}

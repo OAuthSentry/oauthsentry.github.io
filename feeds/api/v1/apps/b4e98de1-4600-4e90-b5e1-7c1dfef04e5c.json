@@ -1,0 +1,12 @@
+{
+  "appid": "b4e98de1-4600-4e90-b5e1-7c1dfef04e5c",
+  "appname": "BackupRestore-Monitor.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b4e98de1-4600-4e90-b5e1-7c1dfef04e5c"
+}

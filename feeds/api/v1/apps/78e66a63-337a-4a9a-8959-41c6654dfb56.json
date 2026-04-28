@@ -1,0 +1,12 @@
+{
+  "appid": "78e66a63-337a-4a9a-8959-41c6654dfb56",
+  "appname": "Office 365 A1 Plus for faculty",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "78e66a63-337a-4a9a-8959-41c6654dfb56"
+}

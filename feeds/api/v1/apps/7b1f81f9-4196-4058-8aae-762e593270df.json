@@ -1,0 +1,12 @@
+{
+  "appid": "7b1f81f9-4196-4058-8aae-762e593270df",
+  "appname": "Azure Resource Bridge Deployment Role",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "7b1f81f9-4196-4058-8aae-762e593270df"
+}

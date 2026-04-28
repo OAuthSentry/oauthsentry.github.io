@@ -1,0 +1,12 @@
+{
+  "appid": "e416201b-afeb-41ca-a03d-2281c28322aa",
+  "appname": "ATKey.Pro CTAP2.1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e416201b-afeb-41ca-a03d-2281c28322aa"
+}

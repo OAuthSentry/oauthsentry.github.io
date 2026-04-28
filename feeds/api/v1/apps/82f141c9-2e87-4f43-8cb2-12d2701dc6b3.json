@@ -1,0 +1,12 @@
+{
+  "appid": "82f141c9-2e87-4f43-8cb2-12d2701dc6b3",
+  "appname": "Power Automate for Virtual Agent_2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "82f141c9-2e87-4f43-8cb2-12d2701dc6b3"
+}

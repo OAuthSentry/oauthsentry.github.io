@@ -1,0 +1,12 @@
+{
+  "appid": "5c552ab6-fc09-4cb3-8e36-22fa03c798b7",
+  "appname": "IXCLRDataProcess Interface",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5c552ab6-fc09-4cb3-8e36-22fa03c798b7"
+}

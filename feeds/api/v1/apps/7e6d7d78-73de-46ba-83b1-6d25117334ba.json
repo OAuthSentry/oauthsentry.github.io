@@ -1,0 +1,12 @@
+{
+  "appid": "7e6d7d78-73de-46ba-83b1-6d25117334ba",
+  "appname": "Flow for Dynamics 365",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "7e6d7d78-73de-46ba-83b1-6d25117334ba"
+}

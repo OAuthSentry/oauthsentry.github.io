@@ -1,0 +1,12 @@
+{
+  "appid": "bd91b1a4-9f94-4ecf-b45b-3a65e5c8128a",
+  "appname": "Power Automate for Office 365 F3",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "bd91b1a4-9f94-4ecf-b45b-3a65e5c8128a"
+}

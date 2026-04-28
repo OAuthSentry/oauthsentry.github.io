@@ -1,0 +1,12 @@
+{
+  "appid": "0029d2bb-fc98-4712-9310-69dd5fcc94d5",
+  "appname": "TeamsTab.Create.Chat",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "0029d2bb-fc98-4712-9310-69dd5fcc94d5"
+}

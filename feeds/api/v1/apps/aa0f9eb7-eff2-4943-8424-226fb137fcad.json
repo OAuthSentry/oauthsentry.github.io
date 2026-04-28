@@ -1,0 +1,12 @@
+{
+  "appid": "aa0f9eb7-eff2-4943-8424-226fb137fcad",
+  "appname": "Exchange Online (Plan 1) for Alumni with Yammer",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "aa0f9eb7-eff2-4943-8424-226fb137fcad"
+}

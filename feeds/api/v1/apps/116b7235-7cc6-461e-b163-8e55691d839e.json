@@ -1,0 +1,12 @@
+{
+  "appid": "116b7235-7cc6-461e-b163-8e55691d839e",
+  "appname": "ChatMessage.Send - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "116b7235-7cc6-461e-b163-8e55691d839e"
+}

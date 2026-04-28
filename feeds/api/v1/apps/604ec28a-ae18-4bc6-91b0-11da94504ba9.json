@@ -1,0 +1,12 @@
+{
+  "appid": "604ec28a-ae18-4bc6-91b0-11da94504ba9",
+  "appname": "Microsoft 365 Advanced Communications",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "604ec28a-ae18-4bc6-91b0-11da94504ba9"
+}

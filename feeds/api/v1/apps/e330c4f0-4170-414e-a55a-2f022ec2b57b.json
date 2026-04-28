@@ -1,0 +1,12 @@
+{
+  "appid": "e330c4f0-4170-414e-a55a-2f022ec2b57b",
+  "appname": "DeviceManagementRBAC.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e330c4f0-4170-414e-a55a-2f022ec2b57b"
+}

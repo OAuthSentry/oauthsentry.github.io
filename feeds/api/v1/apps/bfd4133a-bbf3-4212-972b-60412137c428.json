@@ -1,0 +1,12 @@
+{
+  "appid": "bfd4133a-bbf3-4212-972b-60412137c428",
+  "appname": "Forms for Government (Plan F1)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "bfd4133a-bbf3-4212-972b-60412137c428"
+}

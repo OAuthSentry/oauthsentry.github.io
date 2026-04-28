@@ -1,0 +1,12 @@
+{
+  "appid": "5ca1ab1e-1337-fa57-f1d0-a117e71ca702",
+  "appname": "Allthenticator App: roaming BLE FIDO2 Allthenticator for Windows, Mac, Linux, and Allthenticate door readers",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5ca1ab1e-1337-fa57-f1d0-a117e71ca702"
+}

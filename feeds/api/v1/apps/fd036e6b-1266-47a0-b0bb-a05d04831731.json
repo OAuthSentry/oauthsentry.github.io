@@ -1,0 +1,12 @@
+{
+  "appid": "fd036e6b-1266-47a0-b0bb-a05d04831731",
+  "appname": "HDInsight on AKS Cluster Admin",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "fd036e6b-1266-47a0-b0bb-a05d04831731"
+}

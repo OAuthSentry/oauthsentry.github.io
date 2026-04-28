@@ -1,0 +1,12 @@
+{
+  "appid": "fde42873-30b6-436b-b361-21af5a6b84ae",
+  "appname": "Microsoft Teams Essentials_2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "fde42873-30b6-436b-b361-21af5a6b84ae"
+}

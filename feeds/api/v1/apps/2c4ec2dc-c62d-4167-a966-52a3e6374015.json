@@ -1,0 +1,12 @@
+{
+  "appid": "2c4ec2dc-c62d-4167-a966-52a3e6374015",
+  "appname": "MICROSOFT POWER VIDEOS BASIC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2c4ec2dc-c62d-4167-a966-52a3e6374015"
+}

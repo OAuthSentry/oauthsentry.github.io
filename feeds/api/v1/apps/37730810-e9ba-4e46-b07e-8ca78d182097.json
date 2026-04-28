@@ -1,0 +1,12 @@
+{
+  "appid": "37730810-e9ba-4e46-b07e-8ca78d182097",
+  "appname": "Policy.Read.ConditionalAccess - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "37730810-e9ba-4e46-b07e-8ca78d182097"
+}

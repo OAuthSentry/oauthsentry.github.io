@@ -1,0 +1,12 @@
+{
+  "appid": "7b1a89a9-5eb9-4cf8-9467-20c943f1122c",
+  "appname": "Windows 10/11 Enterprise A5 for faculty",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "7b1a89a9-5eb9-4cf8-9467-20c943f1122c"
+}

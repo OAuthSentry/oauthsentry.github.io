@@ -1,0 +1,12 @@
+{
+  "appid": "ede9aaa3-4627-494e-be13-4aa7c256148d",
+  "appname": "Azure API Center Compliance Manager",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ede9aaa3-4627-494e-be13-4aa7c256148d"
+}

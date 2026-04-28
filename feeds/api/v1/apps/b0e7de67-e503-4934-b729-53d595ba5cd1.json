@@ -1,0 +1,12 @@
+{
+  "appid": "b0e7de67-e503-4934-b729-53d595ba5cd1",
+  "appname": "Microsoft Teams Phone Standard_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b0e7de67-e503-4934-b729-53d595ba5cd1"
+}

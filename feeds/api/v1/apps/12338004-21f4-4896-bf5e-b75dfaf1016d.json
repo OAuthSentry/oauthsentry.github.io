@@ -1,0 +1,12 @@
+{
+  "appid": "12338004-21f4-4896-bf5e-b75dfaf1016d",
+  "appname": "CustomSecAttributeDefinition.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "12338004-21f4-4896-bf5e-b75dfaf1016d"
+}

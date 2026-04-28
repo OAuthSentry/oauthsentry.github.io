@@ -1,0 +1,12 @@
+{
+  "appid": "8458e264-4eb9-4922-abe9-768d58f13c7f",
+  "appname": "ThreatSubmission.ReadWrite.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "8458e264-4eb9-4922-abe9-768d58f13c7f"
+}

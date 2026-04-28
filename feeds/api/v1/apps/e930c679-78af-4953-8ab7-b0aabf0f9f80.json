@@ -1,0 +1,12 @@
+{
+  "appid": "e930c679-78af-4953-8ab7-b0aabf0f9f80",
+  "appname": "ICorDebugProcess4 Interface",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e930c679-78af-4953-8ab7-b0aabf0f9f80"
+}

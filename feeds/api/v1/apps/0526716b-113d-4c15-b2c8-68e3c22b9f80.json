@@ -1,0 +1,12 @@
+{
+  "appid": "0526716b-113d-4c15-b2c8-68e3c22b9f80",
+  "appname": "Authentication Policy Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "0526716b-113d-4c15-b2c8-68e3c22b9f80"
+}

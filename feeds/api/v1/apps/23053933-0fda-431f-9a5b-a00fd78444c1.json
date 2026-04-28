@@ -1,0 +1,12 @@
+{
+  "appid": "23053933-0fda-431f-9a5b-a00fd78444c1",
+  "appname": "Dynamics 365 for Marketing Addnl Contacts Tier 3",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "23053933-0fda-431f-9a5b-a00fd78444c1"
+}

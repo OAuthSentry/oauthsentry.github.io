@@ -1,0 +1,12 @@
+{
+  "appid": "e8ddcd69-c73f-4f9f-9844-4100522f16ad",
+  "appname": "Workbook Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e8ddcd69-c73f-4f9f-9844-4100522f16ad"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "fc14ec4a-4169-49a4-a51e-2c852931814b",
+  "appname": "Office 365 Small Business Premium",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "fc14ec4a-4169-49a4-a51e-2c852931814b"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "09850681-111b-4a89-9bed-3f2cae46d706",
+  "appname": "User.Invite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "09850681-111b-4a89-9bed-3f2cae46d706"
+}

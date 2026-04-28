@@ -1,0 +1,12 @@
+{
+  "appid": "b9bb2381-47a4-46cd-aafb-00cb12f68504",
+  "appname": "ChatMessage.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b9bb2381-47a4-46cd-aafb-00cb12f68504"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "1eff577d-b871-4ec2-a30f-b7d43c927d20",
+  "appname": "Natural Language Editor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1eff577d-b871-4ec2-a30f-b7d43c927d20"
+}

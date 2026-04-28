@@ -1,0 +1,12 @@
+{
+  "appid": "d2d51368-76c9-4317-ada2-a12c004c432f",
+  "appname": "Microsoft ML-Based Classification",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d2d51368-76c9-4317-ada2-a12c004c432f"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "f3a65bd4-b703-46df-8f7e-0174fea562aa",
+  "appname": "Channel.Create - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f3a65bd4-b703-46df-8f7e-0174fea562aa"
+}

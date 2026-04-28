@@ -1,0 +1,12 @@
+{
+  "appid": "e39b03f4-50ea-41ae-af7a-a4b9539596ad",
+  "appname": "Purview/sit-defn-greece-social-security-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e39b03f4-50ea-41ae-af7a-a4b9539596ad"
+}

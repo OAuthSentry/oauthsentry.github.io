@@ -1,0 +1,12 @@
+{
+  "appid": "2f442157-a11c-46b9-ae5b-6e39ff4e5849",
+  "appname": "Microsoft 365 Advanced Auditing",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2f442157-a11c-46b9-ae5b-6e39ff4e5849"
+}

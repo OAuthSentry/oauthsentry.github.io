@@ -1,0 +1,12 @@
+{
+  "appid": "30a40618-9b50-4764-b62e-b04023a8f5f3",
+  "appname": "ChannelMeetingRecording.Read.Group",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "30a40618-9b50-4764-b62e-b04023a8f5f3"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "3cccccc3-4dd4-5ee5-6ff6-7aaaaaaaaaa7",
+  "appname": "Old dummy policy ID 3",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3cccccc3-4dd4-5ee5-6ff6-7aaaaaaaaaa7"
+}

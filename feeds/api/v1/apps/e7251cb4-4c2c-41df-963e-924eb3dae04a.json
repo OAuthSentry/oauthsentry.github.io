@@ -1,0 +1,12 @@
+{
+  "appid": "e7251cb4-4c2c-41df-963e-924eb3dae04a",
+  "appname": "Purview/sit-defn-taiwan-passport-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e7251cb4-4c2c-41df-963e-924eb3dae04a"
+}

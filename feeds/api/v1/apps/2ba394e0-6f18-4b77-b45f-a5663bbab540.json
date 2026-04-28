@@ -1,0 +1,12 @@
+{
+  "appid": "2ba394e0-6f18-4b77-b45f-a5663bbab540",
+  "appname": "RETIRED - Field Service â Automated Routing Engine Add-On",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2ba394e0-6f18-4b77-b45f-a5663bbab540"
+}

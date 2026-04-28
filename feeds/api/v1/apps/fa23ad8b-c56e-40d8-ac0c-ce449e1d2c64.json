@@ -1,0 +1,12 @@
+{
+  "appid": "fa23ad8b-c56e-40d8-ac0c-ce449e1d2c64",
+  "appname": "Billing Reader",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "fa23ad8b-c56e-40d8-ac0c-ce449e1d2c64"
+}

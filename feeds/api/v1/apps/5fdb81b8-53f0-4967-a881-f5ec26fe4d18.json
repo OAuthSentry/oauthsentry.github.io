@@ -1,0 +1,12 @@
+{
+  "appid": "5fdb81b8-53f0-4967-a881-f5ec26fe4d18",
+  "appname": "VinCSS FIDO2 Authenticator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5fdb81b8-53f0-4967-a881-f5ec26fe4d18"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "9ecb7e6d-4866-4950-a4fa-8612715d528f",
+  "appname": "Enrichment Svc",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9ecb7e6d-4866-4950-a4fa-8612715d528f"
+}

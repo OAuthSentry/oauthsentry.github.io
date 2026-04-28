@@ -1,0 +1,12 @@
+{
+  "appid": "0e5f05e5-9ab9-446b-b98d-1e2157c94125",
+  "appname": "Quota Request Operator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "0e5f05e5-9ab9-446b-b98d-1e2157c94125"
+}

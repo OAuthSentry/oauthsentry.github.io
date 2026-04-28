@@ -1,0 +1,12 @@
+{
+  "appid": "f54b6d04-23c6-443e-b462-9c16ab7b4a52",
+  "appname": "Backup MUA Operator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f54b6d04-23c6-443e-b462-9c16ab7b4a52"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "515eb02d-2335-4d2d-92f2-b1cbdf9c3778",
+  "appname": "Managed HSM Crypto Officer",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "515eb02d-2335-4d2d-92f2-b1cbdf9c3778"
+}

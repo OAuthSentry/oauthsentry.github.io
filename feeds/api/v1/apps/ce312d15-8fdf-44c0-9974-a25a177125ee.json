@@ -1,0 +1,12 @@
+{
+  "appid": "ce312d15-8fdf-44c0-9974-a25a177125ee",
+  "appname": "Dynamics 365 AI for Customer Service Virtual Agents Viral",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ce312d15-8fdf-44c0-9974-a25a177125ee"
+}

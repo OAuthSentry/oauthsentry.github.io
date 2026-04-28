@@ -1,0 +1,12 @@
+{
+  "appid": "4081ae73-c4ec-405d-932c-8b36ae35b20c",
+  "appname": "Purview/sit-defn-singapore-passport-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4081ae73-c4ec-405d-932c-8b36ae35b20c"
+}

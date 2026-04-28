@@ -1,0 +1,12 @@
+{
+  "appid": "d9c48af6-9ad9-47ad-82c3-63757137b9af",
+  "appname": "Chat.Create - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d9c48af6-9ad9-47ad-82c3-63757137b9af"
+}

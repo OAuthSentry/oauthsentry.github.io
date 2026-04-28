@@ -1,0 +1,12 @@
+{
+  "appid": "92685235-50c4-4702-b2c8-36043db6fa79",
+  "appname": "IndustryData-Run.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "92685235-50c4-4702-b2c8-36043db6fa79"
+}

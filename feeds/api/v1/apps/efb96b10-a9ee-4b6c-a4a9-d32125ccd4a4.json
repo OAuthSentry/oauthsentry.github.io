@@ -1,0 +1,12 @@
+{
+  "appid": "efb96b10-a9ee-4b6c-a4a9-d32125ccd4a4",
+  "appname": "Safenet eToken FIDO",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "efb96b10-a9ee-4b6c-a4a9-d32125ccd4a4"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "a9ea8996-122f-4c74-9520-8edcd192826c",
+  "appname": "Fabric Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a9ea8996-122f-4c74-9520-8edcd192826c"
+}

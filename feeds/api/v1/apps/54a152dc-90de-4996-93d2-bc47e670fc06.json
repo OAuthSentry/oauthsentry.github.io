@@ -1,0 +1,12 @@
+{
+  "appid": "54a152dc-90de-4996-93d2-bc47e670fc06",
+  "appname": "Skype for Business PSTN Domestic Calling (120 Minutes)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "54a152dc-90de-4996-93d2-bc47e670fc06"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "aabbc5dd-1af0-458b-a942-81af88f9c138",
+  "appname": "Azure Center for SAP solutions service role",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "aabbc5dd-1af0-458b-a942-81af88f9c138"
+}

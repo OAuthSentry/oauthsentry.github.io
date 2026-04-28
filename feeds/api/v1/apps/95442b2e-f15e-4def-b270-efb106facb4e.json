@@ -1,0 +1,12 @@
+{
+  "appid": "95442b2e-f15e-4def-b270-efb106facb4e",
+  "appname": "eWBM eFA310 FIDO2 Authenticator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "95442b2e-f15e-4def-b270-efb106facb4e"
+}

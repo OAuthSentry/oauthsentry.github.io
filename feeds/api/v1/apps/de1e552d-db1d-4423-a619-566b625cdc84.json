@@ -1,0 +1,12 @@
+{
+  "appid": "de1e552d-db1d-4423-a619-566b625cdc84",
+  "appname": "Authenticator for Android",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "de1e552d-db1d-4423-a619-566b625cdc84"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "8e3eb3bd-bc99-4221-81b8-8b8bc882e128",
+  "appname": "Power Automate for Power Apps per User Plan for GCC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "8e3eb3bd-bc99-4221-81b8-8b8bc882e128"
+}

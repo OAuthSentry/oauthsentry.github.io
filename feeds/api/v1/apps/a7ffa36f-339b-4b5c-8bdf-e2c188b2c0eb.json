@@ -1,0 +1,12 @@
+{
+  "appid": "a7ffa36f-339b-4b5c-8bdf-e2c188b2c0eb",
+  "appname": "Azure Kubernetes Service RBAC Writer",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a7ffa36f-339b-4b5c-8bdf-e2c188b2c0eb"
+}

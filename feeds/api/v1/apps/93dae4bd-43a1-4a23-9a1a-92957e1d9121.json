@@ -1,0 +1,12 @@
+{
+  "appid": "93dae4bd-43a1-4a23-9a1a-92957e1d9121",
+  "appname": "Printer.FullControl.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "93dae4bd-43a1-4a23-9a1a-92957e1d9121"
+}

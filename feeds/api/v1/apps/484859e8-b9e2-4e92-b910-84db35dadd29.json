@@ -1,0 +1,12 @@
+{
+  "appid": "484859e8-b9e2-4e92-b910-84db35dadd29",
+  "appname": "EduCurricula.Read - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "484859e8-b9e2-4e92-b910-84db35dadd29"
+}

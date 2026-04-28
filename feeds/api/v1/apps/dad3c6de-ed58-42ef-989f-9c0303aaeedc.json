@@ -1,0 +1,12 @@
+{
+  "appid": "dad3c6de-ed58-42ef-989f-9c0303aaeedc",
+  "appname": "Process mining service principal",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "dad3c6de-ed58-42ef-989f-9c0303aaeedc"
+}

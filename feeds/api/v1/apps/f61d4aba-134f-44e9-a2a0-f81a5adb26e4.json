@@ -1,0 +1,12 @@
+{
+  "appid": "f61d4aba-134f-44e9-a2a0-f81a5adb26e4",
+  "appname": "SharePoint Syntex_2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f61d4aba-134f-44e9-a2a0-f81a5adb26e4"
+}

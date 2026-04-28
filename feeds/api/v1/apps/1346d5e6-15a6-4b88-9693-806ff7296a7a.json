@@ -1,0 +1,12 @@
+{
+  "appid": "1346d5e6-15a6-4b88-9693-806ff7296a7a",
+  "appname": "Microsoft 365 Domestic Calling Plan - US (120 minutes)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1346d5e6-15a6-4b88-9693-806ff7296a7a"
+}

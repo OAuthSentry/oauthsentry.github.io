@@ -1,0 +1,12 @@
+{
+  "appid": "e6e35e2d-2e7f-4e71-bc6f-2f40ed062f5d",
+  "appname": "Dynamics Customer Voice Add-On",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e6e35e2d-2e7f-4e71-bc6f-2f40ed062f5d"
+}

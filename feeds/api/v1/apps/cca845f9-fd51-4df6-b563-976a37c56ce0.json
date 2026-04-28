@@ -1,0 +1,12 @@
+{
+  "appid": "cca845f9-fd51-4df6-b563-976a37c56ce0",
+  "appname": "MICROSOFT BUSINESS CENTER",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "cca845f9-fd51-4df6-b563-976a37c56ce0"
+}

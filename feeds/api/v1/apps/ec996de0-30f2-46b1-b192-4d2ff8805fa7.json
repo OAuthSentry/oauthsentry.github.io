@@ -1,0 +1,12 @@
+{
+  "appid": "ec996de0-30f2-46b1-b192-4d2ff8805fa7",
+  "appname": "Purview/sit-defn-latvia-drivers-license-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ec996de0-30f2-46b1-b192-4d2ff8805fa7"
+}

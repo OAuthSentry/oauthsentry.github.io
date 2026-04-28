@@ -1,0 +1,12 @@
+{
+  "appid": "5dbe027f-2339-4123-9542-606e4d348a72",
+  "appname": "SharePoint Online (Plan 2)_2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5dbe027f-2339-4123-9542-606e4d348a72"
+}

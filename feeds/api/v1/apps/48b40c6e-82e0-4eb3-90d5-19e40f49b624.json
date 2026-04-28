@@ -1,0 +1,12 @@
+{
+  "appid": "48b40c6e-82e0-4eb3-90d5-19e40f49b624",
+  "appname": "Hybrid Server Resource Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "48b40c6e-82e0-4eb3-90d5-19e40f49b624"
+}

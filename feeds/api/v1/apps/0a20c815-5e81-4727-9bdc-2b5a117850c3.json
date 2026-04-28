@@ -1,0 +1,12 @@
+{
+  "appid": "0a20c815-5e81-4727-9bdc-2b5a117850c3",
+  "appname": "Power Apps for Office 365 for Government_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "0a20c815-5e81-4727-9bdc-2b5a117850c3"
+}

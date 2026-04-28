@@ -1,0 +1,12 @@
+{
+  "appid": "ebb17a6e-6002-4f65-acb0-d386480cebc1",
+  "appname": "Priva - Risk (Exchange)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ebb17a6e-6002-4f65-acb0-d386480cebc1"
+}

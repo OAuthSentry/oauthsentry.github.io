@@ -1,0 +1,12 @@
+{
+  "appid": "31ecb341-2a17-483e-9140-c473006d1e1a",
+  "appname": "Microsoft Teams Rooms Pro for GCC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "31ecb341-2a17-483e-9140-c473006d1e1a"
+}

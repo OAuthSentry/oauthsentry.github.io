@@ -1,0 +1,12 @@
+{
+  "appid": "a36cdaa2-a806-4b6e-9ae0-28dbd993c20e",
+  "appname": "Dynamics 365 for Field Service Attach to Qualifying Dynamics 365 Base Offer",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a36cdaa2-a806-4b6e-9ae0-28dbd993c20e"
+}

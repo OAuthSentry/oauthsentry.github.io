@@ -1,0 +1,12 @@
+{
+  "appid": "094e7854-93fc-4d55-b2c0-3ab5369ebdc1",
+  "appname": "OFFICE 365 BUSINESS",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "094e7854-93fc-4d55-b2c0-3ab5369ebdc1"
+}

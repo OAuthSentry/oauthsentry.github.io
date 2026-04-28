@@ -1,0 +1,12 @@
+{
+  "appid": "3498e952-d568-435e-9b2c-8d77e338d7f7",
+  "appname": "Azure Kubernetes Service RBAC Admin",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3498e952-d568-435e-9b2c-8d77e338d7f7"
+}

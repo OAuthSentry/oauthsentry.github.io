@@ -1,0 +1,12 @@
+{
+  "appid": "2cc479cb-7b4d-49a8-b449-8c00fd0f0a4b",
+  "appname": "Web Plan Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2cc479cb-7b4d-49a8-b449-8c00fd0f0a4b"
+}

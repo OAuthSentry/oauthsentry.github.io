@@ -1,0 +1,12 @@
+{
+  "appid": "3f30311c-6b1e-48a4-ab79-725b469da960",
+  "appname": "Microsoft Copilot with Graph-grounded chat",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3f30311c-6b1e-48a4-ab79-725b469da960"
+}

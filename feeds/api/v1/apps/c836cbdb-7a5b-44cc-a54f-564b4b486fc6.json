@@ -1,0 +1,12 @@
+{
+  "appid": "c836cbdb-7a5b-44cc-a54f-564b4b486fc6",
+  "appname": "US Gov Portal App Id",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c836cbdb-7a5b-44cc-a54f-564b4b486fc6"
+}

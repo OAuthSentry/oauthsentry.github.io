@@ -1,0 +1,12 @@
+{
+  "appid": "3f4439ff-e698-4d6d-84fe-09c9d574f06b",
+  "appname": "Azure Arc-enabled Kubernetes cluster client app ID",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3f4439ff-e698-4d6d-84fe-09c9d574f06b"
+}

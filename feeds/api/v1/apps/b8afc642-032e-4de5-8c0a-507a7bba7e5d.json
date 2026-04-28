@@ -1,0 +1,12 @@
+{
+  "appid": "b8afc642-032e-4de5-8c0a-507a7bba7e5d",
+  "appname": "Whiteboard (Plan 1)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b8afc642-032e-4de5-8c0a-507a7bba7e5d"
+}

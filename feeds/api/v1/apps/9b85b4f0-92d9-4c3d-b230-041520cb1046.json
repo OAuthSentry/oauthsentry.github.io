@@ -1,0 +1,12 @@
+{
+  "appid": "9b85b4f0-92d9-4c3d-b230-041520cb1046",
+  "appname": "Privacy Management - subject rights request (100) for EDU",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9b85b4f0-92d9-4c3d-b230-041520cb1046"
+}

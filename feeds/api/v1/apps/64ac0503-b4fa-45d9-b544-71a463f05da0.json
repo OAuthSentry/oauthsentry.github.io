@@ -1,0 +1,12 @@
+{
+  "appid": "64ac0503-b4fa-45d9-b544-71a463f05da0",
+  "appname": "Notes.ReadWrite.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "64ac0503-b4fa-45d9-b544-71a463f05da0"
+}

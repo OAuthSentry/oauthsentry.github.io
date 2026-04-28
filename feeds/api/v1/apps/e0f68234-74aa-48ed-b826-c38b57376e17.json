@@ -1,0 +1,12 @@
+{
+  "appid": "e0f68234-74aa-48ed-b826-c38b57376e17",
+  "appname": "Redis Cache Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e0f68234-74aa-48ed-b826-c38b57376e17"
+}

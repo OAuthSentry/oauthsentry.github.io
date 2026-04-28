@@ -1,0 +1,12 @@
+{
+  "appid": "6070a4c8-34c6-4937-8dfb-39bbc6397a60",
+  "appname": "Microsoft Teams Rooms Standard",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6070a4c8-34c6-4937-8dfb-39bbc6397a60"
+}

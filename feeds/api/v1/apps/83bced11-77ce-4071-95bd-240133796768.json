@@ -1,0 +1,12 @@
+{
+  "appid": "83bced11-77ce-4071-95bd-240133796768",
+  "appname": "Microsoft Stream Storage Add-On",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "83bced11-77ce-4071-95bd-240133796768"
+}

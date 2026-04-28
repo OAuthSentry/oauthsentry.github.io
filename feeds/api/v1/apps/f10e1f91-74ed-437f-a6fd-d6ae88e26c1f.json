@@ -1,0 +1,12 @@
+{
+  "appid": "f10e1f91-74ed-437f-a6fd-d6ae88e26c1f",
+  "appname": "Tasks.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f10e1f91-74ed-437f-a6fd-d6ae88e26c1f"
+}

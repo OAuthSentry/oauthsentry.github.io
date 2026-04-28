@@ -1,0 +1,12 @@
+{
+  "appid": "d1cbfb67-18a8-4792-b643-630b7f19aad1",
+  "appname": "Office 365 Advanced eDiscovery for Government",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d1cbfb67-18a8-4792-b643-630b7f19aad1"
+}

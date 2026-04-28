@@ -1,0 +1,12 @@
+{
+  "appid": "e0ac9e1b-cb65-4fc5-87c5-1a8bc181f648",
+  "appname": "EduRoster.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e0ac9e1b-cb65-4fc5-87c5-1a8bc181f648"
+}

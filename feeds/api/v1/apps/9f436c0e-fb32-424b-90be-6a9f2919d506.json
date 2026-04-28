@@ -1,0 +1,12 @@
+{
+  "appid": "9f436c0e-fb32-424b-90be-6a9f2919d506",
+  "appname": "Microsoft 365 F5 Compliance Add-on AR",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9f436c0e-fb32-424b-90be-6a9f2919d506"
+}

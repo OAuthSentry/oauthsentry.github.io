@@ -1,0 +1,12 @@
+{
+  "appid": "51df634f-ddb4-4901-8a2d-52f6393a796b",
+  "appname": "Azure Region Move Orchestrator Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "51df634f-ddb4-4901-8a2d-52f6393a796b"
+}

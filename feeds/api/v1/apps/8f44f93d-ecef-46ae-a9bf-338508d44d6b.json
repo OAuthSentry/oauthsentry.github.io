@@ -1,0 +1,12 @@
+{
+  "appid": "8f44f93d-ecef-46ae-a9bf-338508d44d6b",
+  "appname": "PrivilegedEligibilitySchedule.Read.AzureADGroup - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "8f44f93d-ecef-46ae-a9bf-338508d44d6b"
+}

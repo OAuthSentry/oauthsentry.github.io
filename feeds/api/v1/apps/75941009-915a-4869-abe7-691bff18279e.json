@@ -1,0 +1,12 @@
+{
+  "appid": "75941009-915a-4869-abe7-691bff18279e",
+  "appname": "Skype for Business Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "75941009-915a-4869-abe7-691bff18279e"
+}

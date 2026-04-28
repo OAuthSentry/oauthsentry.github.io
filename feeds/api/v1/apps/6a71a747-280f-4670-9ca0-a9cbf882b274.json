@@ -1,0 +1,12 @@
+{
+  "appid": "6a71a747-280f-4670-9ca0-a9cbf882b274",
+  "appname": "PrintJob.ReadBasic - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6a71a747-280f-4670-9ca0-a9cbf882b274"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "f28a1f50-f6e7-4571-818b-6a12f2af6b6c",
+  "appname": "SharePoint Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f28a1f50-f6e7-4571-818b-6a12f2af6b6c"
+}

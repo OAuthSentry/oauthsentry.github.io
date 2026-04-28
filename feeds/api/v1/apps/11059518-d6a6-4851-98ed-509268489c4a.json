@@ -1,0 +1,12 @@
+{
+  "appid": "11059518-d6a6-4851-98ed-509268489c4a",
+  "appname": "RoleManagementAlert.ReadWrite.Directory - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "11059518-d6a6-4851-98ed-509268489c4a"
+}

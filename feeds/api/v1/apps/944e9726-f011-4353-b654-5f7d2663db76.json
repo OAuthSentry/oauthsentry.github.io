@@ -1,0 +1,12 @@
+{
+  "appid": "944e9726-f011-4353-b654-5f7d2663db76",
+  "appname": "Power BI Pro for Government",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "944e9726-f011-4353-b654-5f7d2663db76"
+}

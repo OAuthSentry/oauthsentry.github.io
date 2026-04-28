@@ -1,0 +1,12 @@
+{
+  "appid": "7be8dc28-4da4-4e6d-b9b9-c60f2806df8a",
+  "appname": "Exchange Online (Plan 2) for GCC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "7be8dc28-4da4-4e6d-b9b9-c60f2806df8a"
+}

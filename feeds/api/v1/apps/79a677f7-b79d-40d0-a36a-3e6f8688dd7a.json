@@ -1,0 +1,12 @@
+{
+  "appid": "79a677f7-b79d-40d0-a36a-3e6f8688dd7a",
+  "appname": "Policy.ReadWrite.TrustFramework - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "79a677f7-b79d-40d0-a36a-3e6f8688dd7a"
+}

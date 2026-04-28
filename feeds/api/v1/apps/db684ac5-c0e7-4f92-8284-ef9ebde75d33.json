@@ -1,0 +1,12 @@
+{
+  "appid": "db684ac5-c0e7-4f92-8284-ef9ebde75d33",
+  "appname": "Microsoft 365 E5 (500 seats min)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "db684ac5-c0e7-4f92-8284-ef9ebde75d33"
+}

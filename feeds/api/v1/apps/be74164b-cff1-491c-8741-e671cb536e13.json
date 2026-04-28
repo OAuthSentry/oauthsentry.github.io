@@ -1,0 +1,12 @@
+{
+  "appid": "be74164b-cff1-491c-8741-e671cb536e13",
+  "appname": "Policy.ReadWrite.ApplicationConfiguration - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "be74164b-cff1-491c-8741-e671cb536e13"
+}

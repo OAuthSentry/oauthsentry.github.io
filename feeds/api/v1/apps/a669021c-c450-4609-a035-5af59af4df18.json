@@ -1,0 +1,12 @@
+{
+  "appid": "a669021c-c450-4609-a035-5af59af4df18",
+  "appname": "CLR rundown provider",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a669021c-c450-4609-a035-5af59af4df18"
+}

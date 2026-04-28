@@ -1,0 +1,12 @@
+{
+  "appid": "b0df437d-d341-4df0-aa3e-89ca81a1207f",
+  "appname": "ApprovalSolution.Read - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b0df437d-d341-4df0-aa3e-89ca81a1207f"
+}

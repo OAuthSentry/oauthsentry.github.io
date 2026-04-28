@@ -1,0 +1,12 @@
+{
+  "appid": "d5368ca3-357e-4acb-9c21-8495fb025d1f",
+  "appname": "PowerApps Trial",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d5368ca3-357e-4acb-9c21-8495fb025d1f"
+}

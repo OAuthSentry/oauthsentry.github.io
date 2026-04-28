@@ -1,0 +1,12 @@
+{
+  "appid": "c025889f-8102-4ebf-b32c-fc0c6f0c6bd9",
+  "appname": "Avere Operator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c025889f-8102-4ebf-b32c-fc0c6f0c6bd9"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "533b8f26-f74b-4e9c-9c59-50fc4b393b63",
+  "appname": "Minecraft Education Student",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "533b8f26-f74b-4e9c-9c59-50fc4b393b63"
+}

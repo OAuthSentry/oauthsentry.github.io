@@ -1,0 +1,12 @@
+{
+  "appid": "52b1b60e-a4be-4b5a-a67b-6f9bbb7811da",
+  "appname": "Purview/sit-defn-qatari-id-card-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "52b1b60e-a4be-4b5a-a67b-6f9bbb7811da"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "ec17f317-f4bc-451e-b2da-0167e5c260f9",
+  "appname": "Teams Rooms Test 2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ec17f317-f4bc-451e-b2da-0167e5c260f9"
+}

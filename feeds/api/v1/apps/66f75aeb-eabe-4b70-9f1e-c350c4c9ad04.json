@@ -1,0 +1,12 @@
+{
+  "appid": "66f75aeb-eabe-4b70-9f1e-c350c4c9ad04",
+  "appname": "Virtual Machine Data Access Administrator (preview)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "66f75aeb-eabe-4b70-9f1e-c350c4c9ad04"
+}

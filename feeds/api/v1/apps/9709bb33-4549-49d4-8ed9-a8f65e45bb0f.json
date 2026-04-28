@@ -1,0 +1,12 @@
+{
+  "appid": "9709bb33-4549-49d4-8ed9-a8f65e45bb0f",
+  "appname": "Printer.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9709bb33-4549-49d4-8ed9-a8f65e45bb0f"
+}

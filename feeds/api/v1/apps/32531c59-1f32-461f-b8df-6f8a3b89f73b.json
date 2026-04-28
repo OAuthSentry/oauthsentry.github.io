@@ -1,0 +1,12 @@
+{
+  "appid": "32531c59-1f32-461f-b8df-6f8a3b89f73b",
+  "appname": "PrivilegedAccess.ReadWrite.AzureADGroup - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "32531c59-1f32-461f-b8df-6f8a3b89f73b"
+}

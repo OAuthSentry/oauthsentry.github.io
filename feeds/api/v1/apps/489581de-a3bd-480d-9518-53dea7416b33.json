@@ -1,0 +1,12 @@
+{
+  "appid": "489581de-a3bd-480d-9518-53dea7416b33",
+  "appname": "Desktop Virtualization Power On Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "489581de-a3bd-480d-9518-53dea7416b33"
+}

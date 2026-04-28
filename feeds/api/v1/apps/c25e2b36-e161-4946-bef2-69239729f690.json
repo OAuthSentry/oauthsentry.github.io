@@ -1,0 +1,12 @@
+{
+  "appid": "c25e2b36-e161-4946-bef2-69239729f690",
+  "appname": "Microsoft Teams Rooms Pro for EDU",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c25e2b36-e161-4946-bef2-69239729f690"
+}

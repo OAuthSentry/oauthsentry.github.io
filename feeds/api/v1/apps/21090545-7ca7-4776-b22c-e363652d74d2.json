@@ -1,0 +1,12 @@
+{
+  "appid": "21090545-7ca7-4776-b22c-e363652d74d2",
+  "appname": "Key Vault Reader",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "21090545-7ca7-4776-b22c-e363652d74d2"
+}

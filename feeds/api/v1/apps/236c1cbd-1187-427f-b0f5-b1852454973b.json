@@ -1,0 +1,12 @@
+{
+  "appid": "236c1cbd-1187-427f-b0f5-b1852454973b",
+  "appname": "LearningAssignedCourse.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "236c1cbd-1187-427f-b0f5-b1852454973b"
+}

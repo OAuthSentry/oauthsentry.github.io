@@ -1,0 +1,12 @@
+{
+  "appid": "1c27243e-fb4d-42b1-ae8c-fe25c9616588",
+  "appname": "Microsoft Teams Audio Conferencing with dial-out to USA/CAN",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1c27243e-fb4d-42b1-ae8c-fe25c9616588"
+}

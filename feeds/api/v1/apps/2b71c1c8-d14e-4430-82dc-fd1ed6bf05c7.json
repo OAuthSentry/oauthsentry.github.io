@@ -1,0 +1,12 @@
+{
+  "appid": "2b71c1c8-d14e-4430-82dc-fd1ed6bf05c7",
+  "appname": "Purview/sit-defn-new-zealand-ministry-of-health-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2b71c1c8-d14e-4430-82dc-fd1ed6bf05c7"
+}

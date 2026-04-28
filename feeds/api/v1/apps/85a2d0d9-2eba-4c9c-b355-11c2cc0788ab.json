@@ -1,0 +1,12 @@
+{
+  "appid": "85a2d0d9-2eba-4c9c-b355-11c2cc0788ab",
+  "appname": "Compute Gallery Artifacts Publisher",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "85a2d0d9-2eba-4c9c-b355-11c2cc0788ab"
+}

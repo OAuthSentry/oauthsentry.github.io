@@ -1,0 +1,12 @@
+{
+  "appid": "b2f39ece-770e-4c25-99c5-a6048b6de974",
+  "appname": "Adobe Captivate Prime",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b2f39ece-770e-4c25-99c5-a6048b6de974"
+}

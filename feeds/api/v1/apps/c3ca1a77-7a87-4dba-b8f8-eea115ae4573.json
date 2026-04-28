@@ -1,0 +1,12 @@
+{
+  "appid": "c3ca1a77-7a87-4dba-b8f8-eea115ae4573",
+  "appname": "Azure API Center",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c3ca1a77-7a87-4dba-b8f8-eea115ae4573"
+}

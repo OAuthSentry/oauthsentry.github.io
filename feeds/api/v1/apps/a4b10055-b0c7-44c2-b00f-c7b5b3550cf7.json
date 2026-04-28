@@ -1,0 +1,12 @@
+{
+  "appid": "a4b10055-b0c7-44c2-b00f-c7b5b3550cf7",
+  "appname": "Traffic Manager Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a4b10055-b0c7-44c2-b00f-c7b5b3550cf7"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "c9d442fc-21fb-4bd7-89e0-a710d74987f6",
+  "appname": "Viva Learning_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c9d442fc-21fb-4bd7-89e0-a710d74987f6"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "ba05762f-32ff-4fac-a096-55309b3700a3",
+  "appname": "Dynamics 365 for Team Members Enterprise Edition for Government",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ba05762f-32ff-4fac-a096-55309b3700a3"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "6b534d80-e337-47c4-864f-140f5c7f593d",
+  "appname": "Advisor Recommendations Contributor (Assessments and Reviews)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6b534d80-e337-47c4-864f-140f5c7f593d"
+}

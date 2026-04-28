@@ -1,0 +1,12 @@
+{
+  "appid": "90d8b3f8-712e-4f7b-aa1e-62e7ae6cbe96",
+  "appname": "Business Apps (free)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "90d8b3f8-712e-4f7b-aa1e-62e7ae6cbe96"
+}

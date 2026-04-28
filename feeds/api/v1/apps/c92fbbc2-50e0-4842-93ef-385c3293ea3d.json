@@ -1,0 +1,12 @@
+{
+  "appid": "c92fbbc2-50e0-4842-93ef-385c3293ea3d",
+  "appname": "Group-Conversation.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c92fbbc2-50e0-4842-93ef-385c3293ea3d"
+}

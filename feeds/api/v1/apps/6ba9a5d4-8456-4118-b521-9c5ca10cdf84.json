@@ -1,0 +1,12 @@
+{
+  "appid": "6ba9a5d4-8456-4118-b521-9c5ca10cdf84",
+  "appname": "Domain Control services",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6ba9a5d4-8456-4118-b521-9c5ca10cdf84"
+}

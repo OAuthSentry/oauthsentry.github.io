@@ -1,0 +1,12 @@
+{
+  "appid": "e95d7060-d4d9-400a-a2bd-a244bf0b609e",
+  "appname": "Common Data Service for Dynamics 365 Finance",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e95d7060-d4d9-400a-a2bd-a244bf0b609e"
+}

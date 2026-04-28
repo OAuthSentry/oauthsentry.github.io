@@ -1,0 +1,12 @@
+{
+  "appid": "aa07ff41-1317-4f07-8edb-a1558e9bfc84",
+  "appname": "TeamsTab.Read.Chat",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "aa07ff41-1317-4f07-8edb-a1558e9bfc84"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "3db89e36-7fa6-4012-b281-85f3d9d9fd2e",
+  "appname": "AppCatalog.Submit - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3db89e36-7fa6-4012-b281-85f3d9d9fd2e"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "33e01921-4d64-4f8c-a055-5bdaffd5e33d",
+  "appname": "AME tenant ID",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "33e01921-4d64-4f8c-a055-5bdaffd5e33d"
+}

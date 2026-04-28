@@ -1,0 +1,12 @@
+{
+  "appid": "197ee4e9-b993-4066-898f-d6aecc55125b",
+  "appname": "ThreatIndicators.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "197ee4e9-b993-4066-898f-d6aecc55125b"
+}

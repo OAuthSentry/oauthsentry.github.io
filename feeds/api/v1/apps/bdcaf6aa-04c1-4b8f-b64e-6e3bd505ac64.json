@@ -1,0 +1,12 @@
+{
+  "appid": "bdcaf6aa-04c1-4b8f-b64e-6e3bd505ac64",
+  "appname": "Microsoft Fabric (Free) for student",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "bdcaf6aa-04c1-4b8f-b64e-6e3bd505ac64"
+}

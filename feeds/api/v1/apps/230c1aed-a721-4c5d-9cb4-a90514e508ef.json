@@ -1,0 +1,12 @@
+{
+  "appid": "230c1aed-a721-4c5d-9cb4-a90514e508ef",
+  "appname": "Reports.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "230c1aed-a721-4c5d-9cb4-a90514e508ef"
+}

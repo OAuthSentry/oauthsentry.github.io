@@ -1,0 +1,12 @@
+{
+  "appid": "87b4d06c-abc2-e811-a9b0-000d3a10e09e",
+  "appname": "Dynamics 365 Omnichanel sample payload",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "87b4d06c-abc2-e811-a9b0-000d3a10e09e"
+}

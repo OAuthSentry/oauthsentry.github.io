@@ -1,0 +1,12 @@
+{
+  "appid": "46c5ea0a-2343-49d9-ae4f-1c268b232d53",
+  "appname": "Microsoft Dynamics 365 Customer Voice for Customer Insights App",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "46c5ea0a-2343-49d9-ae4f-1c268b232d53"
+}

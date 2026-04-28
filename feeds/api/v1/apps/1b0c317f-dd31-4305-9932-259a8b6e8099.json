@@ -1,0 +1,12 @@
+{
+  "appid": "1b0c317f-dd31-4305-9932-259a8b6e8099",
+  "appname": "IdentityUserFlow.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1b0c317f-dd31-4305-9932-259a8b6e8099"
+}

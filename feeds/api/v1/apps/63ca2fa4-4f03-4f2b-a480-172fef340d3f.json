@@ -1,0 +1,12 @@
+{
+  "appid": "63ca2fa4-4f03-4f2b-a480-172fef340d3f",
+  "appname": "Business Central System Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "63ca2fa4-4f03-4f2b-a480-172fef340d3f"
+}

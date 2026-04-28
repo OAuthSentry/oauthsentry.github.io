@@ -1,0 +1,12 @@
+{
+  "appid": "dae9ab2c-0d46-41d1-969c-15f3b5005024",
+  "appname": "Microsoft Commerce Tools Authentication Service",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "dae9ab2c-0d46-41d1-969c-15f3b5005024"
+}

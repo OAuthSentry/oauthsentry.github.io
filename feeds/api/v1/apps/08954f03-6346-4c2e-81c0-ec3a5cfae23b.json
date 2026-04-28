@@ -1,0 +1,12 @@
+{
+  "appid": "08954f03-6346-4c2e-81c0-ec3a5cfae23b",
+  "appname": "Application Insights Snapshot Debugger",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "08954f03-6346-4c2e-81c0-ec3a5cfae23b"
+}

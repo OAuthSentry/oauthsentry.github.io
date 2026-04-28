@@ -1,0 +1,12 @@
+{
+  "appid": "531ee2f8-b1cb-453b-9c21-d2180d014ca5",
+  "appname": "Microsoft Excel Advanced Analytics",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "531ee2f8-b1cb-453b-9c21-d2180d014ca5"
+}

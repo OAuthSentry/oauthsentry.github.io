@@ -1,0 +1,12 @@
+{
+  "appid": "437d2ced-4a38-4302-8479-ed2bcb43d090",
+  "appname": "Blueprint Operator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "437d2ced-4a38-4302-8479-ed2bcb43d090"
+}

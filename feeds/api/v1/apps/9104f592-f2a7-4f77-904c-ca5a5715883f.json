@@ -1,0 +1,12 @@
+{
+  "appid": "9104f592-f2a7-4f77-904c-ca5a5715883f",
+  "appname": "Microsoft Teams Premium Virtual Appointment",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9104f592-f2a7-4f77-904c-ca5a5715883f"
+}

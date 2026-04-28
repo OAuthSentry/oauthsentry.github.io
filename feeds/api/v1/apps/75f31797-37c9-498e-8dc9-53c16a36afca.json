@@ -1,0 +1,12 @@
+{
+  "appid": "75f31797-37c9-498e-8dc9-53c16a36afca",
+  "appname": "Microsoft Planner Client",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "75f31797-37c9-498e-8dc9-53c16a36afca"
+}

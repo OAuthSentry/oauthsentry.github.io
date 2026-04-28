@@ -1,0 +1,12 @@
+{
+  "appid": "f5223e1a-4d50-4fda-9049-55d819fbb03e",
+  "appname": "Customer Experience Platform CDPA Provisioning TIP [Community Contributed]",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=GitHub)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f5223e1a-4d50-4fda-9049-55d819fbb03e"
+}

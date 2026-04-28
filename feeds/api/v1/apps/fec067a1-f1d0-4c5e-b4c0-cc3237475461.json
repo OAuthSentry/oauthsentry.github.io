@@ -1,0 +1,12 @@
+{
+  "appid": "fec067a1-f1d0-4c5e-b4c0-cc3237475461",
+  "appname": "KX701 SmartToken FIDO",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "fec067a1-f1d0-4c5e-b4c0-cc3237475461"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "51729bb5-7564-4927-8df8-9f5b12279cf3",
+  "appname": "PowerApps Plan 2 for Dynamics 365 for Government",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "51729bb5-7564-4927-8df8-9f5b12279cf3"
+}

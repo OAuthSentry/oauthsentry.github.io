@@ -1,0 +1,12 @@
+{
+  "appid": "e4dee41f-a5c5-457d-b7d3-c309986fdbb2",
+  "appname": "Windows 365 Shared Use 8 vCPU 32 GB 128 GB_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e4dee41f-a5c5-457d-b7d3-c309986fdbb2"
+}

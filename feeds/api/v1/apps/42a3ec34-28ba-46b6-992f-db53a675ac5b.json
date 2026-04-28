@@ -1,0 +1,12 @@
+{
+  "appid": "42a3ec34-28ba-46b6-992f-db53a675ac5b",
+  "appname": "Microsoft Teams_2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "42a3ec34-28ba-46b6-992f-db53a675ac5b"
+}

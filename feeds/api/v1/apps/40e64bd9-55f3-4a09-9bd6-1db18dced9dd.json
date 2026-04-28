@@ -1,0 +1,12 @@
+{
+  "appid": "40e64bd9-55f3-4a09-9bd6-1db18dced9dd",
+  "appname": "Purview/sit-defn-cyprus-tax-identification-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "40e64bd9-55f3-4a09-9bd6-1db18dced9dd"
+}

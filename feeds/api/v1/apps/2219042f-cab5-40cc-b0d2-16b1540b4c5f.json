@@ -1,0 +1,12 @@
+{
+  "appid": "2219042f-cab5-40cc-b0d2-16b1540b4c5f",
+  "appname": "Tasks.ReadWrite - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2219042f-cab5-40cc-b0d2-16b1540b4c5f"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "1db85bca-cd60-4bf5-ae54-641e0778a532",
+  "appname": "Power Automate for Office 365 F3 for GCCHigh",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1db85bca-cd60-4bf5-ae54-641e0778a532"
+}

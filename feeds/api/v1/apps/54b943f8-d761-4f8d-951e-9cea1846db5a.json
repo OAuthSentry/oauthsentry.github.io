@@ -1,0 +1,12 @@
+{
+  "appid": "54b943f8-d761-4f8d-951e-9cea1846db5a",
+  "appname": "Device Management - System Center Configuration Manager Co-Managed devices",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "54b943f8-d761-4f8d-951e-9cea1846db5a"
+}

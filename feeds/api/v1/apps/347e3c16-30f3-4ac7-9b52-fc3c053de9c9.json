@@ -1,0 +1,12 @@
+{
+  "appid": "347e3c16-30f3-4ac7-9b52-fc3c053de9c9",
+  "appname": "ServiceActivity-OneDrive.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "347e3c16-30f3-4ac7-9b52-fc3c053de9c9"
+}

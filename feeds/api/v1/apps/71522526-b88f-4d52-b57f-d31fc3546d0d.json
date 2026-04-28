@@ -1,0 +1,12 @@
+{
+  "appid": "71522526-b88f-4d52-b57f-d31fc3546d0d",
+  "appname": "API Management Service Reader Role",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "71522526-b88f-4d52-b57f-d31fc3546d0d"
+}

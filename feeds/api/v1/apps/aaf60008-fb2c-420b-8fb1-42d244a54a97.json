@@ -1,0 +1,12 @@
+{
+  "appid": "aaf60008-fb2c-420b-8fb1-42d244a54a97",
+  "appname": "IXCLRDataMethodDefinition Interface",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "aaf60008-fb2c-420b-8fb1-42d244a54a97"
+}

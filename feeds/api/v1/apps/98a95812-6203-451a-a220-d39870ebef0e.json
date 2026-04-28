@@ -1,0 +1,12 @@
+{
+  "appid": "98a95812-6203-451a-a220-d39870ebef0e",
+  "appname": "Purview/sit-defn-denmark-drivers-license-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "98a95812-6203-451a-a220-d39870ebef0e"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "fccf6dd8-5706-49fa-811f-69e2e1b585d0",
+  "appname": "Schedule.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "fccf6dd8-5706-49fa-811f-69e2e1b585d0"
+}

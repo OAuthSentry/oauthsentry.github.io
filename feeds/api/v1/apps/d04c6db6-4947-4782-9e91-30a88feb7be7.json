@@ -1,0 +1,12 @@
+{
+  "appid": "d04c6db6-4947-4782-9e91-30a88feb7be7",
+  "appname": "Azure Spring Cloud Config Server Reader",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d04c6db6-4947-4782-9e91-30a88feb7be7"
+}

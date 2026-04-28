@@ -1,0 +1,12 @@
+{
+  "appid": "89497502-6e42-46a2-8cb2-427fd3df970a",
+  "appname": "Notifications.ReadWrite.CreatedByApp - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "89497502-6e42-46a2-8cb2-427fd3df970a"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "338fd995-4cb5-4f87-ad35-79bd1dd926c1",
+  "appname": "Purview/sit-defn-finland-national-id",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "338fd995-4cb5-4f87-ad35-79bd1dd926c1"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "b1511558-69bd-4e1b-8270-59ca96dba0f3",
+  "appname": "Microsoft Teams Shared Devices for GCC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b1511558-69bd-4e1b-8270-59ca96dba0f3"
+}

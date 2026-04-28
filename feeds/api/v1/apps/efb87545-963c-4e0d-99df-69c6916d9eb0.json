@@ -1,0 +1,12 @@
+{
+  "appid": "efb87545-963c-4e0d-99df-69c6916d9eb0",
+  "appname": "Exchange Online (Plan 2)_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "efb87545-963c-4e0d-99df-69c6916d9eb0"
+}

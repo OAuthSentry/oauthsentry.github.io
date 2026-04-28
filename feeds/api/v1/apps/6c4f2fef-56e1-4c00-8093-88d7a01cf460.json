@@ -1,0 +1,12 @@
+{
+  "appid": "6c4f2fef-56e1-4c00-8093-88d7a01cf460",
+  "appname": "Purview/sit-defn-denmark-personal-identification-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6c4f2fef-56e1-4c00-8093-88d7a01cf460"
+}

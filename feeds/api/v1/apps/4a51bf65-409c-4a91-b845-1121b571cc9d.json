@@ -1,0 +1,12 @@
+{
+  "appid": "4a51bf65-409c-4a91-b845-1121b571cc9d",
+  "appname": "Power Automate per user plan",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4a51bf65-409c-4a91-b845-1121b571cc9d"
+}

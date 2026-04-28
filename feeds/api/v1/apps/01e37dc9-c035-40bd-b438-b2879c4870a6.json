@@ -1,0 +1,12 @@
+{
+  "appid": "01e37dc9-c035-40bd-b438-b2879c4870a6",
+  "appname": "PrivilegedAccess.Read.AzureADGroup - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "01e37dc9-c035-40bd-b438-b2879c4870a6"
+}

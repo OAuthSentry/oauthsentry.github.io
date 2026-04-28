@@ -1,0 +1,12 @@
+{
+  "appid": "71f21848-f89b-4aaa-a2dc-780c8e8aac5b",
+  "appname": "Windows 365 Business 2 vCPU 8 GB 128 GB",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "71f21848-f89b-4aaa-a2dc-780c8e8aac5b"
+}

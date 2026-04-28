@@ -1,0 +1,12 @@
+{
+  "appid": "24d51f99-ee9e-4060-a077-cae58cab1ee4",
+  "appname": "Purview/sit-defn-poland-drivers-license-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "24d51f99-ee9e-4060-a077-cae58cab1ee4"
+}

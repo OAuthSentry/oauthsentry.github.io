@@ -1,0 +1,12 @@
+{
+  "appid": "339f4def-5ad8-4430-8d12-da5fd4c769a7",
+  "appname": "Dynamics 365 AI for Market Insights - Free",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "339f4def-5ad8-4430-8d12-da5fd4c769a7"
+}

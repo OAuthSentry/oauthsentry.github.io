@@ -1,0 +1,12 @@
+{
+  "appid": "55c9148b-d5f0-4101-b5a0-b2727cfc0916",
+  "appname": "Dynamics 365 for Field Service Attach",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "55c9148b-d5f0-4101-b5a0-b2727cfc0916"
+}

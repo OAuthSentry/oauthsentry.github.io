@@ -1,0 +1,12 @@
+{
+  "appid": "6d2b5079-2f0b-48dd-ab7f-97cec514d30b",
+  "appname": "ID of the Prevhost.exe surrogate host GUID",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6d2b5079-2f0b-48dd-ab7f-97cec514d30b"
+}

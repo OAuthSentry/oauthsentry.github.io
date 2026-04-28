@@ -1,0 +1,12 @@
+{
+  "appid": "f6135c51-c766-4be1-9638-ed90c2ed2443",
+  "appname": "BackupRestore-Search.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f6135c51-c766-4be1-9638-ed90c2ed2443"
+}

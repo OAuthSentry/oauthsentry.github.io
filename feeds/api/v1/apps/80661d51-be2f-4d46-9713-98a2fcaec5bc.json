@@ -1,0 +1,12 @@
+{
+  "appid": "80661d51-be2f-4d46-9713-98a2fcaec5bc",
+  "appname": "Prohibited Names Settings",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "80661d51-be2f-4d46-9713-98a2fcaec5bc"
+}

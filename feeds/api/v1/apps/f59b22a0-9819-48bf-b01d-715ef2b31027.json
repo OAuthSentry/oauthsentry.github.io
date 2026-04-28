@@ -1,0 +1,12 @@
+{
+  "appid": "f59b22a0-9819-48bf-b01d-715ef2b31027",
+  "appname": "Power BI Premium P1 GCC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f59b22a0-9819-48bf-b01d-715ef2b31027"
+}

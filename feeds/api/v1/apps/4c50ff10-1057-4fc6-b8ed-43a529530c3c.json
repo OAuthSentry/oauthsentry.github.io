@@ -1,0 +1,12 @@
+{
+  "appid": "4c50ff10-1057-4fc6-b8ed-43a529530c3c",
+  "appname": "ImproveID Authenticator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4c50ff10-1057-4fc6-b8ed-43a529530c3c"
+}

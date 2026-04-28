@@ -1,0 +1,12 @@
+{
+  "appid": "977464c4-bfaf-4b67-b761-a9bb735a2196",
+  "appname": "Dynamics 365 Field Service, Enterprise Edition - Resource Scheduling Optimization",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "977464c4-bfaf-4b67-b761-a9bb735a2196"
+}

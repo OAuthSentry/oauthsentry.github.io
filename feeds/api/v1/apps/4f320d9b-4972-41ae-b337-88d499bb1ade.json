@@ -1,0 +1,12 @@
+{
+  "appid": "4f320d9b-4972-41ae-b337-88d499bb1ade",
+  "appname": "Purview/sit-defn-netherlands-value-added-tax-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4f320d9b-4972-41ae-b337-88d499bb1ade"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "d4539c25-0937-4095-b844-b97228dd8655",
+  "appname": "TeamsActivity.Send.Group",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d4539c25-0937-4095-b844-b97228dd8655"
+}

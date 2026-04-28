@@ -1,0 +1,12 @@
+{
+  "appid": "91da9335-1edb-45b7-a95f-5fe41a16c63c",
+  "appname": "Purview/sit-defn-germany-drivers-license-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "91da9335-1edb-45b7-a95f-5fe41a16c63c"
+}

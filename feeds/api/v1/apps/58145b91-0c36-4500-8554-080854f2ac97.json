@@ -1,0 +1,12 @@
+{
+  "appid": "58145b91-0c36-4500-8554-080854f2ac97",
+  "appname": "Azure Management app redirect URI",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "58145b91-0c36-4500-8554-080854f2ac97"
+}

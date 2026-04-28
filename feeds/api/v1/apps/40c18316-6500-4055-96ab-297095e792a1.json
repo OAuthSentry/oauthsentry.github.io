@@ -1,0 +1,12 @@
+{
+  "appid": "40c18316-6500-4055-96ab-297095e792a1",
+  "appname": "Adobe Creative Cloud - DEPRECATED",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "40c18316-6500-4055-96ab-297095e792a1"
+}

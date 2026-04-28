@@ -1,0 +1,12 @@
+{
+  "appid": "8c97a730-3f7b-41a6-87d6-1e9b62bda6f0",
+  "appname": "FT-JCOS FIDO Fingerprint Card",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "8c97a730-3f7b-41a6-87d6-1e9b62bda6f0"
+}

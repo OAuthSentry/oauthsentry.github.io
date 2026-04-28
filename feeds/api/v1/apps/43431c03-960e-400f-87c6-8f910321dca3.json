@@ -1,0 +1,12 @@
+{
+  "appid": "43431c03-960e-400f-87c6-8f910321dca3",
+  "appname": "CallEvents.Read - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "43431c03-960e-400f-87c6-8f910321dca3"
+}

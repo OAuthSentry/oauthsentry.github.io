@@ -1,0 +1,12 @@
+{
+  "appid": "f6c7c914-8db3-469d-8ca1-694a8f32e121",
+  "appname": "AzureML Data Scientist",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f6c7c914-8db3-469d-8ca1-694a8f32e121"
+}

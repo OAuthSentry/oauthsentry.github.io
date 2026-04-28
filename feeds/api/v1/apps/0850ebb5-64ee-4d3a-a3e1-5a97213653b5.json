@@ -1,0 +1,12 @@
+{
+  "appid": "0850ebb5-64ee-4d3a-a3e1-5a97213653b5",
+  "appname": "Common Data Service for Remote Assist",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "0850ebb5-64ee-4d3a-a3e1-5a97213653b5"
+}

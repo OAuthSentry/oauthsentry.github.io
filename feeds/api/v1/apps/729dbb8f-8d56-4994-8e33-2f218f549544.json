@@ -1,0 +1,12 @@
+{
+  "appid": "729dbb8f-8d56-4994-8e33-2f218f549544",
+  "appname": "Microsoft Teams Domestic Calling Plan (240 min)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "729dbb8f-8d56-4994-8e33-2f218f549544"
+}

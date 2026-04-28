@@ -1,0 +1,12 @@
+{
+  "appid": "73bb0cd4-e502-49b8-9c6f-b59445bf720b",
+  "appname": "YubiKey 5 FIPS Series",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "73bb0cd4-e502-49b8-9c6f-b59445bf720b"
+}

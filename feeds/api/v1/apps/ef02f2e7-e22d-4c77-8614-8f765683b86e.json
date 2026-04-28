@@ -1,0 +1,12 @@
+{
+  "appid": "ef02f2e7-e22d-4c77-8614-8f765683b86e",
+  "appname": "PeopleSettings.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ef02f2e7-e22d-4c77-8614-8f765683b86e"
+}

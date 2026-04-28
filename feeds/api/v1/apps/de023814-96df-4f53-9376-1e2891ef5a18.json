@@ -1,0 +1,12 @@
+{
+  "appid": "de023814-96df-4f53-9376-1e2891ef5a18",
+  "appname": "UserShiftPreferences.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "de023814-96df-4f53-9376-1e2891ef5a18"
+}

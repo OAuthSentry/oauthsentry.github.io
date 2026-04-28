@@ -1,0 +1,12 @@
+{
+  "appid": "2822a3a1-9b8f-4432-8989-e11669a60dc8",
+  "appname": "Dynamics 365 for Case Management",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2822a3a1-9b8f-4432-8989-e11669a60dc8"
+}

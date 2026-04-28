@@ -1,0 +1,12 @@
+{
+  "appid": "95de85bd-744d-4664-9dde-11430bc34793",
+  "appname": "Azure Container Storage Owner",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "95de85bd-744d-4664-9dde-11430bc34793"
+}

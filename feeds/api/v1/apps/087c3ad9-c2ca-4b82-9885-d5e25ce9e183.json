@@ -1,0 +1,12 @@
+{
+  "appid": "087c3ad9-c2ca-4b82-9885-d5e25ce9e183",
+  "appname": "SecurityIdentitiesSensors.ReadWrite.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "087c3ad9-c2ca-4b82-9885-d5e25ce9e183"
+}

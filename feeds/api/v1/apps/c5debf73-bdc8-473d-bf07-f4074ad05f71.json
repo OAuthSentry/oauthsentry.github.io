@@ -1,0 +1,12 @@
+{
+  "appid": "c5debf73-bdc8-473d-bf07-f4074ad05f71",
+  "appname": "EduReports-Reflect.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c5debf73-bdc8-473d-bf07-f4074ad05f71"
+}

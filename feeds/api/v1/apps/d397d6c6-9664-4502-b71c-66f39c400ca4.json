@@ -1,0 +1,12 @@
+{
+  "appid": "d397d6c6-9664-4502-b71c-66f39c400ca4",
+  "appname": "Dynamics 365 Business Central Additional Environment Addon_2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d397d6c6-9664-4502-b71c-66f39c400ca4"
+}

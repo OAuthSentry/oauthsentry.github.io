@@ -1,0 +1,12 @@
+{
+  "appid": "fd1bd22b-8476-40bc-a0bc-69b95687b9f3",
+  "appname": "Attestation Reader",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "fd1bd22b-8476-40bc-a0bc-69b95687b9f3"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "507f53e4-4e52-4077-abd3-d2e1558b6ea2",
+  "appname": "Organizational Messages Writer",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "507f53e4-4e52-4077-abd3-d2e1558b6ea2"
+}

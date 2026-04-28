@@ -1,0 +1,12 @@
+{
+  "appid": "472e4a4d-bb4a-4026-98d1-0b0d74cb74a5",
+  "appname": "SecurityAlert.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "472e4a4d-bb4a-4026-98d1-0b0d74cb74a5"
+}

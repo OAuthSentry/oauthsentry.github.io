@@ -1,0 +1,12 @@
+{
+  "appid": "ea126fc5-a19e-42e2-a731-da9d437bffcf",
+  "appname": "Dynamics 365 Customer Engagement Plan_2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ea126fc5-a19e-42e2-a731-da9d437bffcf"
+}

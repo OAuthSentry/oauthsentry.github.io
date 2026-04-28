@@ -1,0 +1,12 @@
+{
+  "appid": "f5aa7b45-8a36-4cd1-bc37-5d06dea98645",
+  "appname": "Dynamics",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f5aa7b45-8a36-4cd1-bc37-5d06dea98645"
+}

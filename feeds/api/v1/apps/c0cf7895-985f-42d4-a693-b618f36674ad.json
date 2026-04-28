@@ -1,0 +1,12 @@
+{
+  "appid": "c0cf7895-985f-42d4-a693-b618f36674ad",
+  "appname": "OnlineMeetingAiInsight.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c0cf7895-985f-42d4-a693-b618f36674ad"
+}

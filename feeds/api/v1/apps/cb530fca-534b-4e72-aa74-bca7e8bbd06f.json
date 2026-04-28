@@ -1,0 +1,12 @@
+{
+  "appid": "cb530fca-534b-4e72-aa74-bca7e8bbd06f",
+  "appname": "ResourceSpecificPermissionGrant.ReadForChat - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "cb530fca-534b-4e72-aa74-bca7e8bbd06f"
+}

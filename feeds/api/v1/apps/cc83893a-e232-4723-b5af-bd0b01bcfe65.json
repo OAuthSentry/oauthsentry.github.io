@@ -1,0 +1,12 @@
+{
+  "appid": "cc83893a-e232-4723-b5af-bd0b01bcfe65",
+  "appname": "Channel.Delete.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "cc83893a-e232-4723-b5af-bd0b01bcfe65"
+}

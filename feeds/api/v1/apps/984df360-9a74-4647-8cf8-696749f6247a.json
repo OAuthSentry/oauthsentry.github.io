@@ -1,0 +1,12 @@
+{
+  "appid": "984df360-9a74-4647-8cf8-696749f6247a",
+  "appname": "Minecraft Education Faculty",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "984df360-9a74-4647-8cf8-696749f6247a"
+}

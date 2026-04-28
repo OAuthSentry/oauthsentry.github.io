@@ -1,0 +1,12 @@
+{
+  "appid": "bb6f654c-d7fd-4ae3-85c3-fc380934f515",
+  "appname": "IdentityRiskyServicePrincipal.ReadWrite.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "bb6f654c-d7fd-4ae3-85c3-fc380934f515"
+}

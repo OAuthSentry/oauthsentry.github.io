@@ -1,0 +1,12 @@
+{
+  "appid": "2b26f637-35a0-4dbc-b69e-ff674782be9d",
+  "appname": "Microsoft Intune Government",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2b26f637-35a0-4dbc-b69e-ff674782be9d"
+}

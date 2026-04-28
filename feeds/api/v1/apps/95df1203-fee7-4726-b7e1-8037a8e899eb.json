@@ -1,0 +1,12 @@
+{
+  "appid": "95df1203-fee7-4726-b7e1-8037a8e899eb",
+  "appname": "Dataverse for Virtual Agent USL for GCC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "95df1203-fee7-4726-b7e1-8037a8e899eb"
+}

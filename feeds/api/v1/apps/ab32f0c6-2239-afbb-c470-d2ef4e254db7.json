@@ -1,0 +1,12 @@
+{
+  "appid": "ab32f0c6-2239-afbb-c470-d2ef4e254db7",
+  "appname": "TOKEN2 FIDO2 Security Key",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ab32f0c6-2239-afbb-c470-d2ef4e254db7"
+}

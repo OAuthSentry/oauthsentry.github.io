@@ -1,0 +1,12 @@
+{
+  "appid": "a795c7a0-d4a2-40c1-ae25-d81f01202912",
+  "appname": "Backup Reader",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a795c7a0-d4a2-40c1-ae25-d81f01202912"
+}

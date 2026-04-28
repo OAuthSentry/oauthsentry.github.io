@@ -1,0 +1,12 @@
+{
+  "appid": "c4bba371-dacd-4a26-b320-7250bca963ae",
+  "appname": "Media Services Policy Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c4bba371-dacd-4a26-b320-7250bca963ae"
+}

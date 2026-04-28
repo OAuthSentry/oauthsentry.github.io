@@ -1,0 +1,12 @@
+{
+  "appid": "65a1ebf4-6732-4f00-9dcb-3d115ffdeecd",
+  "appname": "DYNAMICS 365 FOR TALENT",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "65a1ebf4-6732-4f00-9dcb-3d115ffdeecd"
+}

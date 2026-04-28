@@ -1,0 +1,12 @@
+{
+  "appid": "db79e9a7-68ee-4b58-9aeb-b90e7c24fcba",
+  "appname": "Key Vault Certificate User",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "db79e9a7-68ee-4b58-9aeb-b90e7c24fcba"
+}

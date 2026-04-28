@@ -1,0 +1,12 @@
+{
+  "appid": "eb960402-bf75-4cc3-8d68-35b34f960f72",
+  "appname": "Deployment Environments Reader",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "eb960402-bf75-4cc3-8d68-35b34f960f72"
+}

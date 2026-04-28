@@ -1,0 +1,12 @@
+{
+  "appid": "22085229-5809-45e8-97fd-270d28d66910",
+  "appname": "Add user to groups",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "22085229-5809-45e8-97fd-270d28d66910"
+}

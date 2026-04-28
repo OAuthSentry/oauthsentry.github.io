@@ -1,0 +1,12 @@
+{
+  "appid": "420c7602-7f70-4895-9394-d3d679ea36fbâ",
+  "appname": "Microsoft Teams Shared Devices for Faculty",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "420c7602-7f70-4895-9394-d3d679ea36fb"
+}

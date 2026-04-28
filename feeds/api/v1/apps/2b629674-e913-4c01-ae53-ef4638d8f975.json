@@ -1,0 +1,12 @@
+{
+  "appid": "2b629674-e913-4c01-ae53-ef4638d8f975",
+  "appname": "Azure Event Hubs Data Sender",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2b629674-e913-4c01-ae53-ef4638d8f975"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "195e7f27-02f9-4045-9a91-cd2fa1c2af2f",
+  "appname": "Microsoft Enterprise Skills Initiative",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "195e7f27-02f9-4045-9a91-cd2fa1c2af2f"
+}

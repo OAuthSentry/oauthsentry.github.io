@@ -1,0 +1,12 @@
+{
+  "appid": "cac97e40-6730-457d-ad8d-4852fddab7ad",
+  "appname": "ThreatAssessment.ReadWrite.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "cac97e40-6730-457d-ad8d-4852fddab7ad"
+}

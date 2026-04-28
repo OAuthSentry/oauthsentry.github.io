@@ -1,0 +1,12 @@
+{
+  "appid": "2ef770a1-622a-47c4-93ee-28d6adbed3a0",
+  "appname": "EduAssignments.ReadWriteBasic - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2ef770a1-622a-47c4-93ee-28d6adbed3a0"
+}

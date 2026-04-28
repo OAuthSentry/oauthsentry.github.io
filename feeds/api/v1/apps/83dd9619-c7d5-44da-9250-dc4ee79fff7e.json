@@ -1,0 +1,12 @@
+{
+  "appid": "83dd9619-c7d5-44da-9250-dc4ee79fff7e",
+  "appname": "Iot Intelligence Add-in for D365 Supply Chain Management",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "83dd9619-c7d5-44da-9250-dc4ee79fff7e"
+}

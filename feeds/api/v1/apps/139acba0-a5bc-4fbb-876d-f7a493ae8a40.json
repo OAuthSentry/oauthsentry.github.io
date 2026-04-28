@@ -1,0 +1,12 @@
+{
+  "appid": "139acba0-a5bc-4fbb-876d-f7a493ae8a40",
+  "appname": "Purview/sit-defn-sweden-tax-identification-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "139acba0-a5bc-4fbb-876d-f7a493ae8a40"
+}

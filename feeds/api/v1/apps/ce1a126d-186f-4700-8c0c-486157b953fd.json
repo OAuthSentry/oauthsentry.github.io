@@ -1,0 +1,12 @@
+{
+  "appid": "ce1a126d-186f-4700-8c0c-486157b953fd",
+  "appname": "Purview/azure-sql-connection-string",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ce1a126d-186f-4700-8c0c-486157b953fd"
+}

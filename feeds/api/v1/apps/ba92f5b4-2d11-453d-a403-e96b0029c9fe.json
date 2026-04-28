@@ -1,0 +1,12 @@
+{
+  "appid": "ba92f5b4-2d11-453d-a403-e96b0029c9fe",
+  "appname": "Storage Blob Data Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ba92f5b4-2d11-453d-a403-e96b0029c9fe"
+}

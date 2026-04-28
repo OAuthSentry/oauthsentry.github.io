@@ -1,0 +1,12 @@
+{
+  "appid": "44ca9e86-ead7-4c5d-884a-e2eaa401515e",
+  "appname": "Purview/sit-defn-thai-population-identification-code",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "44ca9e86-ead7-4c5d-884a-e2eaa401515e"
+}

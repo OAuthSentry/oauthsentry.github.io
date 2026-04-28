@@ -1,0 +1,12 @@
+{
+  "appid": "c2fe850d-fbbb-4858-b67d-bd0c6e746da3",
+  "appname": "Microsoft 365 E3 EEA (no Teams)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c2fe850d-fbbb-4858-b67d-bd0c6e746da3"
+}

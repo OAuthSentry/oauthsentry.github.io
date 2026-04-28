@@ -1,0 +1,12 @@
+{
+  "appid": "34c0d7a0-a70f-4668-9238-47f9fc208882",
+  "appname": "Microsoft MyAnalytics (Full)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "34c0d7a0-a70f-4668-9238-47f9fc208882"
+}

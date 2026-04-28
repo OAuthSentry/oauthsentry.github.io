@@ -1,0 +1,12 @@
+{
+  "appid": "31e939ad-9672-4796-9c2e-873181342d2d",
+  "appname": "Insights Business Leader",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "31e939ad-9672-4796-9c2e-873181342d2d"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "69700f79-d1fb-472e-bd9b-a3a3b9a9eda0",
+  "appname": "Pone Biometrics OFFPAD Authenticator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "69700f79-d1fb-472e-bd9b-a3a3b9a9eda0"
+}

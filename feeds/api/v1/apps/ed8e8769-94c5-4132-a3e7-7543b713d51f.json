@@ -1,0 +1,12 @@
+{
+  "appid": "ed8e8769-94c5-4132-a3e7-7543b713d51f",
+  "appname": "Dynamics 365 Customer Insights Viral Plan",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ed8e8769-94c5-4132-a3e7-7543b713d51f"
+}

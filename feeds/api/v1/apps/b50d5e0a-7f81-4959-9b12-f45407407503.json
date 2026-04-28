@@ -1,0 +1,12 @@
+{
+  "appid": "b50d5e0a-7f81-4959-9b12-f45407407503",
+  "appname": "IDPrime 3940 FIDO",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b50d5e0a-7f81-4959-9b12-f45407407503"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "89f1c4c8-0878-40f7-804d-869c9128ab5d",
+  "appname": "Power Platform Connectors in Microsoft 365 Copilot",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "89f1c4c8-0878-40f7-804d-869c9128ab5d"
+}

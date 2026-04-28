@@ -1,0 +1,12 @@
+{
+  "appid": "08432d1b-5911-483c-86df-7980af5cdee0",
+  "appname": "OrgContact.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "08432d1b-5911-483c-86df-7980af5cdee0"
+}

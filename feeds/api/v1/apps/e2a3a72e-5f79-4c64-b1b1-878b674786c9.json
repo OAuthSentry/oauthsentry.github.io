@@ -1,0 +1,12 @@
+{
+  "appid": "e2a3a72e-5f79-4c64-b1b1-878b674786c9",
+  "appname": "Mail.ReadWrite - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e2a3a72e-5f79-4c64-b1b1-878b674786c9"
+}

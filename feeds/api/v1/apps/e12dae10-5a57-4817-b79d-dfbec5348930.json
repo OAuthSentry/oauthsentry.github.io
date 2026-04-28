@@ -1,0 +1,12 @@
+{
+  "appid": "e12dae10-5a57-4817-b79d-dfbec5348930",
+  "appname": "AppCatalog.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e12dae10-5a57-4817-b79d-dfbec5348930"
+}

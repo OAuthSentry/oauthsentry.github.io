@@ -1,0 +1,12 @@
+{
+  "appid": "e05881f5-1db1-418c-89aa-a3ac5c5277ee",
+  "appname": "Purview/sit-defn-israel-national-identification-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e05881f5-1db1-418c-89aa-a3ac5c5277ee"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "01c1209b-6389-4faf-a5f8-3f7e13899652",
+  "appname": "Purview/sit-defn-japan-resident-registration-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "01c1209b-6389-4faf-a5f8-3f7e13899652"
+}

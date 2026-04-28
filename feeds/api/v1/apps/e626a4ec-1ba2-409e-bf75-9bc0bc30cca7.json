@@ -1,0 +1,12 @@
+{
+  "appid": "e626a4ec-1ba2-409e-bf75-9bc0bc30cca7",
+  "appname": "Dynamics 365 for Marketing 50K Addnl Contacts",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e626a4ec-1ba2-409e-bf75-9bc0bc30cca7"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "7d9f353d-a7bd-4fbb-822a-26d5dd39a3ce",
+  "appname": "MailboxItem.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "7d9f353d-a7bd-4fbb-822a-26d5dd39a3ce"
+}

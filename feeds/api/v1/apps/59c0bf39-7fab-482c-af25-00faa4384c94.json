@@ -1,0 +1,12 @@
+{
+  "appid": "59c0bf39-7fab-482c-af25-00faa4384c94",
+  "appname": "Purview/sit-defn-canada-health-service-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "59c0bf39-7fab-482c-af25-00faa4384c94"
+}

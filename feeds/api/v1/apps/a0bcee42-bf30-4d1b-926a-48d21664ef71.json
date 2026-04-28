@@ -1,0 +1,12 @@
+{
+  "appid": "a0bcee42-bf30-4d1b-926a-48d21664ef71",
+  "appname": "Subscription Creator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a0bcee42-bf30-4d1b-926a-48d21664ef71"
+}

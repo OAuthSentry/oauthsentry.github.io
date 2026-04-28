@@ -1,0 +1,12 @@
+{
+  "appid": "1c086528-58d5-f211-823c-356786e36140",
+  "appname": "Atos CardOS FIDO2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1c086528-58d5-f211-823c-356786e36140"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "0883f392-0a7a-443d-8c76-16a6d39c7b63",
+  "appname": "DeviceManagementConfiguration.ReadWrite.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "0883f392-0a7a-443d-8c76-16a6d39c7b63"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "ebf0f66e-9fb1-49e4-a278-222f76911cf4",
+  "appname": "ChannelMessage.Send - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ebf0f66e-9fb1-49e4-a278-222f76911cf4"
+}

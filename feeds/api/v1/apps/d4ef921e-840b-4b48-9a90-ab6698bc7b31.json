@@ -1,0 +1,12 @@
+{
+  "appid": "d4ef921e-840b-4b48-9a90-ab6698bc7b31",
+  "appname": "Windows 10/11 Enterprise A3 for students",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d4ef921e-840b-4b48-9a90-ab6698bc7b31"
+}

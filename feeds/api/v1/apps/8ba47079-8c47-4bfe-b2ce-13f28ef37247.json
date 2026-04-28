@@ -1,0 +1,12 @@
+{
+  "appid": "8ba47079-8c47-4bfe-b2ce-13f28ef37247",
+  "appname": "SpiffeTrustDomain.ReadWrite.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "8ba47079-8c47-4bfe-b2ce-13f28ef37247"
+}

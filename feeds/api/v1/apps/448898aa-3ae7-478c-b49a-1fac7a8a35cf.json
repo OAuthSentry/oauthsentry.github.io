@@ -1,0 +1,12 @@
+{
+  "appid": "448898aa-3ae7-478c-b49a-1fac7a8a35cf",
+  "appname": "Skype Meetings",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "448898aa-3ae7-478c-b49a-1fac7a8a35cf"
+}

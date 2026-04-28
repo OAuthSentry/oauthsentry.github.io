@@ -1,0 +1,12 @@
+{
+  "appid": "8e4c6baa-f2ff-4884-9c38-93785d0d7ba1",
+  "appname": "Power Apps per user plan for Government",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "8e4c6baa-f2ff-4884-9c38-93785d0d7ba1"
+}

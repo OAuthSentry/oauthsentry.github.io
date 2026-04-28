@@ -1,0 +1,12 @@
+{
+  "appid": "eb63d611-525e-4a31-abd7-0cb33f679599",
+  "appname": "Project Synergy app ID",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "eb63d611-525e-4a31-abd7-0cb33f679599"
+}

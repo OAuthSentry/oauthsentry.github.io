@@ -1,0 +1,12 @@
+{
+  "appid": "0b4346bb-8dc3-4079-9dfc-513696f56039",
+  "appname": "LOGIC FLOWS",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "0b4346bb-8dc3-4079-9dfc-513696f56039"
+}

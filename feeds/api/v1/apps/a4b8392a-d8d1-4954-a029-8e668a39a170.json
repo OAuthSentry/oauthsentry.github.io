@@ -1,0 +1,12 @@
+{
+  "appid": "a4b8392a-d8d1-4954-a029-8e668a39a170",
+  "appname": "Mail.ReadBasic - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a4b8392a-d8d1-4954-a029-8e668a39a170"
+}

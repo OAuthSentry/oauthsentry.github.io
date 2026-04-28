@@ -1,0 +1,12 @@
+{
+  "appid": "a92aed5d-d78a-4d16-b381-09adb37eb3b0",
+  "appname": "On Premises Directory Sync Account",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a92aed5d-d78a-4d16-b381-09adb37eb3b0"
+}

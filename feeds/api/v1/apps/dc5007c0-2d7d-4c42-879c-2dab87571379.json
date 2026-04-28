@@ -1,0 +1,12 @@
+{
+  "appid": "dc5007c0-2d7d-4c42-879c-2dab87571379",
+  "appname": "IdentityRiskyUser.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "dc5007c0-2d7d-4c42-879c-2dab87571379"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "1953a66c-751c-45e5-8bfe-01462c70da3c",
+  "appname": "Remove user from selected groups",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1953a66c-751c-45e5-8bfe-01462c70da3c"
+}

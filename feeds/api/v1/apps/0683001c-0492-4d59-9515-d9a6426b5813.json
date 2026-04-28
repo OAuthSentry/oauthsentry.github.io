@@ -1,0 +1,12 @@
+{
+  "appid": "0683001c-0492-4d59-9515-d9a6426b5813",
+  "appname": "Power Virtual Agents for Office 365_3",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "0683001c-0492-4d59-9515-d9a6426b5813"
+}

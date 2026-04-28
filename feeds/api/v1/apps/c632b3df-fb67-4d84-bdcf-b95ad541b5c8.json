@@ -1,0 +1,12 @@
+{
+  "appid": "c632b3df-fb67-4d84-bdcf-b95ad541b5c8",
+  "appname": "Azure VPN client - Microsoft registered, Azure Public",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c632b3df-fb67-4d84-bdcf-b95ad541b5c8"
+}

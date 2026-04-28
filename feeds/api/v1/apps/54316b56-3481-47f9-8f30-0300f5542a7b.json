@@ -1,0 +1,12 @@
+{
+  "appid": "54316b56-3481-47f9-8f30-0300f5542a7b",
+  "appname": "Microsoft.EventGrid - Government cloud",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "54316b56-3481-47f9-8f30-0300f5542a7b"
+}

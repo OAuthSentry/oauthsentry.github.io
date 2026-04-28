@@ -1,0 +1,12 @@
+{
+  "appid": "63bb64ad-9799-4770-b5c3-24ed299a07bf",
+  "appname": "Azure Kubernetes Fleet Manager Contributor Role",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "63bb64ad-9799-4770-b5c3-24ed299a07bf"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "500b6a2a-7a50-4f40-b5f9-160e5b8c2f48",
+  "appname": "School Data Sync (Plan 2)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "500b6a2a-7a50-4f40-b5f9-160e5b8c2f48"
+}

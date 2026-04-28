@@ -1,0 +1,12 @@
+{
+  "appid": "bf7b6499-ff71-4aa2-97a4-f372087be7f0",
+  "appname": "Confidential VM Orchestrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "bf7b6499-ff71-4aa2-97a4-f372087be7f0"
+}

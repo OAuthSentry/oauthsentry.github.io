@@ -1,0 +1,12 @@
+{
+  "appid": "a99b0159-1064-4c22-a57b-c9b3caa1c054",
+  "appname": "Azure Spring Apps Remote Debugging Role",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a99b0159-1064-4c22-a57b-c9b3caa1c054"
+}

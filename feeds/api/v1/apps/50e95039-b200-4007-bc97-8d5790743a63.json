@@ -1,0 +1,12 @@
+{
+  "appid": "50e95039-b200-4007-bc97-8d5790743a63",
+  "appname": "Azure Virtual Desktop ARM Provider",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "50e95039-b200-4007-bc97-8d5790743a63"
+}

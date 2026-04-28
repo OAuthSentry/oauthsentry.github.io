@@ -1,0 +1,12 @@
+{
+  "appid": "f9c43823-deb4-46a8-aa65-8b551f0c4f8a",
+  "appname": "SharePoint Plan 1G",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f9c43823-deb4-46a8-aa65-8b551f0c4f8a"
+}

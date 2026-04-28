@@ -1,0 +1,12 @@
+{
+  "appid": "4f547b5f-c3f7-4d2c-a14f-0f8f1286d7d5",
+  "appname": "OneDriveLTI [Community Contributed]",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=GitHub)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4f547b5f-c3f7-4d2c-a14f-0f8f1286d7d5"
+}

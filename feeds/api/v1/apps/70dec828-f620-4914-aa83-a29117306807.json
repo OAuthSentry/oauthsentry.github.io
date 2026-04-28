@@ -1,0 +1,12 @@
+{
+  "appid": "70dec828-f620-4914-aa83-a29117306807",
+  "appname": "TeamsActivity.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "70dec828-f620-4914-aa83-a29117306807"
+}

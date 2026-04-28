@@ -1,0 +1,12 @@
+{
+  "appid": "fa200448-008c-4acb-abd4-ea106ed2199d",
+  "appname": "Flow for Project",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "fa200448-008c-4acb-abd4-ea106ed2199d"
+}

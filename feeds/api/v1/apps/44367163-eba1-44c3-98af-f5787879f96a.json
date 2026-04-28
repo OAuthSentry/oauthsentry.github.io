@@ -1,0 +1,12 @@
+{
+  "appid": "44367163-eba1-44c3-98af-f5787879f96a",
+  "appname": "Dynamics 365 Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "44367163-eba1-44c3-98af-f5787879f96a"
+}

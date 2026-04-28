@@ -1,0 +1,12 @@
+{
+  "appid": "6a12de16-95c8-4e42-a451-7dbbc34634cd",
+  "appname": "MDABYOKServicePrincipal - application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6a12de16-95c8-4e42-a451-7dbbc34634cd"
+}

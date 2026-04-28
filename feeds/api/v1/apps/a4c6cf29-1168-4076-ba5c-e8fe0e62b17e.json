@@ -1,0 +1,12 @@
+{
+  "appid": "a4c6cf29-1168-4076-ba5c-e8fe0e62b17e",
+  "appname": "Remote help",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a4c6cf29-1168-4076-ba5c-e8fe0e62b17e"
+}

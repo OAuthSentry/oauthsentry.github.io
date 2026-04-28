@@ -1,0 +1,12 @@
+{
+  "appid": "d01b97e9-cbc0-49fe-810a-750afd5527a3",
+  "appname": "RoleManagement.ReadWrite.Directory - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d01b97e9-cbc0-49fe-810a-750afd5527a3"
+}

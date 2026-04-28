@@ -1,0 +1,12 @@
+{
+  "appid": "5a107bfc-4f00-4e1a-b67e-66451267bc68",
+  "appname": "BitlockerKey.ReadBasic.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5a107bfc-4f00-4e1a-b67e-66451267bc68"
+}

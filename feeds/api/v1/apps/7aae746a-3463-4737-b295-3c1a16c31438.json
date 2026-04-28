@@ -1,0 +1,12 @@
+{
+  "appid": "7aae746a-3463-4737-b295-3c1a16c31438",
+  "appname": "Dataverse for Power Pages Authenticated users per site",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "7aae746a-3463-4737-b295-3c1a16c31438"
+}

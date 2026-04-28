@@ -1,0 +1,12 @@
+{
+  "appid": "0ab34830-df19-4f8c-b84e-aa85b8afa6e8",
+  "appname": "Azure Front Door Domain Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "0ab34830-df19-4f8c-b84e-aa85b8afa6e8"
+}

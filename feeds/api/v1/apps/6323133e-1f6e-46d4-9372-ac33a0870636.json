@@ -1,0 +1,12 @@
+{
+  "appid": "6323133e-1f6e-46d4-9372-ac33a0870636",
+  "appname": "TeamTemplates.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6323133e-1f6e-46d4-9372-ac33a0870636"
+}

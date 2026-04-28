@@ -1,0 +1,12 @@
+{
+  "appid": "922ba911-5694-4e99-a794-73aed9bfeec8",
+  "appname": "Exchange Foundation for Government",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "922ba911-5694-4e99-a794-73aed9bfeec8"
+}

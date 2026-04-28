@@ -1,0 +1,12 @@
+{
+  "appid": "331c37c6-af14-46d9-b9f4-e1909e1b95a0",
+  "appname": "DevCenter Project Admin",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "331c37c6-af14-46d9-b9f4-e1909e1b95a0"
+}

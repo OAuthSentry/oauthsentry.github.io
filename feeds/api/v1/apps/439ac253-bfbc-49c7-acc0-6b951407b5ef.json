@@ -1,0 +1,12 @@
+{
+  "appid": "439ac253-bfbc-49c7-acc0-6b951407b5ef",
+  "appname": "Windows 365 Business 4 vCPU 16 GB 128 GB (with Windows Hybrid Benefit)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "439ac253-bfbc-49c7-acc0-6b951407b5ef"
+}

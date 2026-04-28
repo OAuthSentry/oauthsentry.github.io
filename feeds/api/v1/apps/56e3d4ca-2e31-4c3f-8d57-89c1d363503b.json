@@ -1,0 +1,12 @@
+{
+  "appid": "56e3d4ca-2e31-4c3f-8d57-89c1d363503b",
+  "appname": "Microsoft Relationship Sales solution_2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "56e3d4ca-2e31-4c3f-8d57-89c1d363503b"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "ada977a5-b8b1-493b-9a91-66c206d76ecf",
+  "appname": "SearchConfiguration.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ada977a5-b8b1-493b-9a91-66c206d76ecf"
+}

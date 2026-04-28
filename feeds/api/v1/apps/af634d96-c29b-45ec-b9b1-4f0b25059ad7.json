@@ -1,0 +1,12 @@
+{
+  "appid": "af634d96-c29b-45ec-b9b1-4f0b25059ad7",
+  "appname": "ActionMethod",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "af634d96-c29b-45ec-b9b1-4f0b25059ad7"
+}

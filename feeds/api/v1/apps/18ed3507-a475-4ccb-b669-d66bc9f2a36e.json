@@ -1,0 +1,12 @@
+{
+  "appid": "18ed3507-a475-4ccb-b669-d66bc9f2a36e",
+  "appname": "Microsoft_AAD_RegisteredApps",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "18ed3507-a475-4ccb-b669-d66bc9f2a36e"
+}

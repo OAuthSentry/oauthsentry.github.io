@@ -1,0 +1,12 @@
+{
+  "appid": "4f6d3b9b-027b-4f4c-9142-0e5a2a2247e0",
+  "appname": "Azure Service Bus Data Receiver",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4f6d3b9b-027b-4f4c-9142-0e5a2a2247e0"
+}

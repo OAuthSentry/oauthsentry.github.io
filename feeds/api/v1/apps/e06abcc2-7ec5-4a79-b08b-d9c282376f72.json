@@ -1,0 +1,12 @@
+{
+  "appid": "e06abcc2-7ec5-4a79-b08b-d9c282376f72",
+  "appname": "Dynamics 365 - Additional Non-Production Instance (Qualified Offer)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e06abcc2-7ec5-4a79-b08b-d9c282376f72"
+}

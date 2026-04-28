@@ -1,0 +1,12 @@
+{
+  "appid": "56a59ffb-9df1-421b-9e61-8b568583474d",
+  "appname": "Microsoft Defender for Office 365 (Plan 2) GCC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "56a59ffb-9df1-421b-9e61-8b568583474d"
+}

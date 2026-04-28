@@ -1,0 +1,12 @@
+{
+  "appid": "3aeca27b-ee3a-4c2b-8ded-80376e2134a4",
+  "appname": "Notes.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3aeca27b-ee3a-4c2b-8ded-80376e2134a4"
+}

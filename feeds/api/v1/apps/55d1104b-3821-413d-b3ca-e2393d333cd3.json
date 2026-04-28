@@ -1,0 +1,12 @@
+{
+  "appid": "55d1104b-3821-413d-b3ca-e2393d333cd3",
+  "appname": "PrivilegedAssignmentSchedule.Remove.AzureADGroup - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "55d1104b-3821-413d-b3ca-e2393d333cd3"
+}

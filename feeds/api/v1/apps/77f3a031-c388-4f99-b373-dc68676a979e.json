@@ -1,0 +1,12 @@
+{
+  "appid": "77f3a031-c388-4f99-b373-dc68676a979e",
+  "appname": "User.RevokeSessions.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "77f3a031-c388-4f99-b373-dc68676a979e"
+}

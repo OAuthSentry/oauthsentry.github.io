@@ -1,0 +1,12 @@
+{
+  "appid": "2e6ffd72-52d1-4541-8f6c-938f9a8d4cdc",
+  "appname": "Microsoft Application Protection and Governance (D)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2e6ffd72-52d1-4541-8f6c-938f9a8d4cdc"
+}

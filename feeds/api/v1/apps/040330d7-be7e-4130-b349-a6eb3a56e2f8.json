@@ -1,0 +1,12 @@
+{
+  "appid": "040330d7-be7e-4130-b349-a6eb3a56e2f8",
+  "appname": "EduReports-Reading.ReadAnonymous.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "040330d7-be7e-4130-b349-a6eb3a56e2f8"
+}

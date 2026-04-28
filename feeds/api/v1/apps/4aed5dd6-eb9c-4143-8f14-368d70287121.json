@@ -1,0 +1,12 @@
+{
+  "appid": "4aed5dd6-eb9c-4143-8f14-368d70287121",
+  "appname": "Dynamics 365 Enterprise Edition - Additional Database Storage for Government",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4aed5dd6-eb9c-4143-8f14-368d70287121"
+}

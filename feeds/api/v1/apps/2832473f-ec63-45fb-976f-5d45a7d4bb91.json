@@ -1,0 +1,12 @@
+{
+  "appid": "2832473f-ec63-45fb-976f-5d45a7d4bb91",
+  "appname": "Partner Customer Delegated Administration",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2832473f-ec63-45fb-976f-5d45a7d4bb91"
+}

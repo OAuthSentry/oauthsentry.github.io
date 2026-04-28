@@ -1,0 +1,12 @@
+{
+  "appid": "175b81b9-6e0d-490a-85e4-0d422273c10c",
+  "appname": "App Configuration Reader",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "175b81b9-6e0d-490a-85e4-0d422273c10c"
+}

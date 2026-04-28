@@ -1,0 +1,12 @@
+{
+  "appid": "a70e0c2d-e793-494c-94c4-118fa0a67f42",
+  "appname": "Presence.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a70e0c2d-e793-494c-94c4-118fa0a67f42"
+}

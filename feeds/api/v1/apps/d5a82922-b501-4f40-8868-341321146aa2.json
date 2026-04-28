@@ -1,0 +1,12 @@
+{
+  "appid": "d5a82922-b501-4f40-8868-341321146aa2",
+  "appname": "Purview/sit-defn-spain-drivers-license-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d5a82922-b501-4f40-8868-341321146aa2"
+}

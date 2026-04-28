@@ -1,0 +1,12 @@
+{
+  "appid": "1ec239c2-d7c9-4623-a91a-a9775856bb36",
+  "appname": "Calendars.ReadWrite - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1ec239c2-d7c9-4623-a91a-a9775856bb36"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "70bbe301-9835-447d-afdd-19eb3167307c",
+  "appname": "Spatial Anchors Account Owner",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "70bbe301-9835-447d-afdd-19eb3167307c"
+}

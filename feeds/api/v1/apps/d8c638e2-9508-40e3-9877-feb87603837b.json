@@ -1,0 +1,12 @@
+{
+  "appid": "d8c638e2-9508-40e3-9877-feb87603837b",
+  "appname": "Common Data Service - DEV VIRAL",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d8c638e2-9508-40e3-9877-feb87603837b"
+}

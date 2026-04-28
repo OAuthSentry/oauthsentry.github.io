@@ -1,0 +1,12 @@
+{
+  "appid": "4e1f8dc5-5a42-45ce-a096-700fa485ba20",
+  "appname": "1P Microsoft Entra application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4e1f8dc5-5a42-45ce-a096-700fa485ba20"
+}

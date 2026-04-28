@@ -1,0 +1,12 @@
+{
+  "appid": "893fcc7e-8a39-4b3c-815a-773b7b982c50",
+  "appname": "Tabular Data Stream (TDS) link",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "893fcc7e-8a39-4b3c-815a-773b7b982c50"
+}

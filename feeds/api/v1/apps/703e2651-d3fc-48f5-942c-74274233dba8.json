@@ -1,0 +1,12 @@
+{
+  "appid": "703e2651-d3fc-48f5-942c-74274233dba8",
+  "appname": "Microsoft Dynamics ERP Microservices CDS [Community Contributed]",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=GitHub)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "703e2651-d3fc-48f5-942c-74274233dba8"
+}

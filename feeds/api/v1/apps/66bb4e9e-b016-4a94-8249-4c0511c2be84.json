@@ -1,0 +1,12 @@
+{
+  "appid": "66bb4e9e-b016-4a94-8249-4c0511c2be84",
+  "appname": "Policy Insights Data Writer (Preview)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "66bb4e9e-b016-4a94-8249-4c0511c2be84"
+}

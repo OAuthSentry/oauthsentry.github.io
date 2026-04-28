@@ -1,0 +1,12 @@
+{
+  "appid": "cdc5aeea-15c5-4db6-b079-fcadd2505dc2",
+  "appname": "Torus tenant ID",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "cdc5aeea-15c5-4db6-b079-fcadd2505dc2"
+}

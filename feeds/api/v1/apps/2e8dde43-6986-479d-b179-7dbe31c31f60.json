@@ -1,0 +1,12 @@
+{
+  "appid": "2e8dde43-6986-479d-b179-7dbe31c31f60",
+  "appname": "CDS Power Apps Per User Custom",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2e8dde43-6986-479d-b179-7dbe31c31f60"
+}

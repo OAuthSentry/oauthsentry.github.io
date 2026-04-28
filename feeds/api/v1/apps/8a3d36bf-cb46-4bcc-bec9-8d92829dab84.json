@@ -1,0 +1,12 @@
+{
+  "appid": "8a3d36bf-cb46-4bcc-bec9-8d92829dab84",
+  "appname": "NetworkAccessPolicy.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "8a3d36bf-cb46-4bcc-bec9-8d92829dab84"
+}

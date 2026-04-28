@@ -1,0 +1,12 @@
+{
+  "appid": "3df8b902-2a6f-47c7-8cc5-360e9b272a7e",
+  "appname": "Remote Rendering Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3df8b902-2a6f-47c7-8cc5-360e9b272a7e"
+}

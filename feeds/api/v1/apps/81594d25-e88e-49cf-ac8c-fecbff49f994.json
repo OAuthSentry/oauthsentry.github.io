@@ -1,0 +1,12 @@
+{
+  "appid": "81594d25-e88e-49cf-ac8c-fecbff49f994",
+  "appname": "CrossTenantInformation.ReadBasic.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "81594d25-e88e-49cf-ac8c-fecbff49f994"
+}

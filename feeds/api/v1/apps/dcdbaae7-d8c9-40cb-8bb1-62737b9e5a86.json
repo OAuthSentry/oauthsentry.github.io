@@ -1,0 +1,12 @@
+{
+  "appid": "dcdbaae7-d8c9-40cb-8bb1-62737b9e5a86",
+  "appname": "Privacy Management - risk for EDU",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "dcdbaae7-d8c9-40cb-8bb1-62737b9e5a86"
+}

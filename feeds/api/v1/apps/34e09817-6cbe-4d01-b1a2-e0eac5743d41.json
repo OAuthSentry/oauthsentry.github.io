@@ -1,0 +1,12 @@
+{
+  "appid": "34e09817-6cbe-4d01-b1a2-e0eac5743d41",
+  "appname": "Kubernetes Cluster - Azure Arc Onboarding",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "34e09817-6cbe-4d01-b1a2-e0eac5743d41"
+}

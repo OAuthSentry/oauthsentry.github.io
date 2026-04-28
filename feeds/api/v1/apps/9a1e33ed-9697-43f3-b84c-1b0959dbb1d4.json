@@ -1,0 +1,12 @@
+{
+  "appid": "9a1e33ed-9697-43f3-b84c-1b0959dbb1d4",
+  "appname": "Dynamics 365 Business Central External Accountant_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9a1e33ed-9697-43f3-b84c-1b0959dbb1d4"
+}

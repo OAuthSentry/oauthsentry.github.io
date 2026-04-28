@@ -1,0 +1,12 @@
+{
+  "appid": "77010bd7-212a-4fc9-b236-d2ca5e9d4084",
+  "appname": "Feitian BioPass FIDO2 Authenticator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "77010bd7-212a-4fc9-b236-d2ca5e9d4084"
+}

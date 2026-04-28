@@ -1,0 +1,12 @@
+{
+  "appid": "59231cdf-b40d-4534-a93e-14d0cd31d27e",
+  "appname": "Dataverse for PAD",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "59231cdf-b40d-4534-a93e-14d0cd31d27e"
+}

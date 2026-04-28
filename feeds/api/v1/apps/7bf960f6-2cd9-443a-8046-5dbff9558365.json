@@ -1,0 +1,12 @@
+{
+  "appid": "7bf960f6-2cd9-443a-8046-5dbff9558365",
+  "appname": "Windows Update for Business Deployment Service",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "7bf960f6-2cd9-443a-8046-5dbff9558365"
+}

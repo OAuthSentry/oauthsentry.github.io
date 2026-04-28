@@ -1,0 +1,12 @@
+{
+  "appid": "469cd065-729e-4dee-b1fa-d92e0fab6310",
+  "appname": "ProfilePhoto.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "469cd065-729e-4dee-b1fa-d92e0fab6310"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "b73a14ee-91f5-41b7-bd81-920e12466be9",
+  "appname": "DeID Batch Data Reader",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b73a14ee-91f5-41b7-bd81-920e12466be9"
+}

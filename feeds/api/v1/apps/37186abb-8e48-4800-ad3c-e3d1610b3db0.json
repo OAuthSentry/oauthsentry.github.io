@@ -1,0 +1,12 @@
+{
+  "appid": "37186abb-8e48-4800-ad3c-e3d1610b3db0",
+  "appname": "Purview/sit-defn-canada-drivers-license-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "37186abb-8e48-4800-ad3c-e3d1610b3db0"
+}

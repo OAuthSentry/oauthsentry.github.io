@@ -1,0 +1,12 @@
+{
+  "appid": "284383ee-7f6e-4e40-a2a8-e85dcb029101",
+  "appname": "Calls.Initiate.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "284383ee-7f6e-4e40-a2a8-e85dcb029101"
+}

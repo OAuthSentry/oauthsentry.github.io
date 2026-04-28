@@ -1,0 +1,12 @@
+{
+  "appid": "8d8d5a11-05d3-4bda-a417-a08778121c7c",
+  "appname": "HDInsight Domain Services Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "8d8d5a11-05d3-4bda-a417-a08778121c7c"
+}

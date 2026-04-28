@@ -1,0 +1,12 @@
+{
+  "appid": "2bb89402-51e9-4c5a-be33-e954a9dd1ba6",
+  "appname": "Dataverse for IOM",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2bb89402-51e9-4c5a-be33-e954a9dd1ba6"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "2113661c-6509-4034-98bb-9c47bd28d63c",
+  "appname": "Microsoft 365 E5 without Audio Conferencing (500 seats min)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2113661c-6509-4034-98bb-9c47bd28d63c"
+}

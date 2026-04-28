@@ -1,0 +1,12 @@
+{
+  "appid": "a1f3d0a8-84c0-4ae0-bae4-685917b8ab48",
+  "appname": "SHAREPOINTLITE",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a1f3d0a8-84c0-4ae0-bae4-685917b8ab48"
+}

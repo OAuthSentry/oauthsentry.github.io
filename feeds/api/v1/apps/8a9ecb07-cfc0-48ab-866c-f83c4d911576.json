@@ -1,0 +1,12 @@
+{
+  "appid": "8a9ecb07-cfc0-48ab-866c-f83c4d911576",
+  "appname": "VISIO WEB APP FOR GOVERNMENT",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "8a9ecb07-cfc0-48ab-866c-f83c4d911576"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "7bb27fa3-ea8f-4d67-a916-87715b6188bd",
+  "appname": "Synchronization.ReadWrite.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "7bb27fa3-ea8f-4d67-a916-87715b6188bd"
+}

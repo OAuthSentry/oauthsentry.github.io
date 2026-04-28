@@ -1,0 +1,12 @@
+{
+  "appid": "e7dc4711-11b7-4cb0-b88b-2c394a771f0e",
+  "appname": "Purview/sit-defn-international-banking-account-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e7dc4711-11b7-4cb0-b88b-2c394a771f0e"
+}

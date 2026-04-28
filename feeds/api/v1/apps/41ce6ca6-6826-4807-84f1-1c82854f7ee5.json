@@ -1,0 +1,12 @@
+{
+  "appid": "41ce6ca6-6826-4807-84f1-1c82854f7ee5",
+  "appname": "DelegatedPermissionGrant.ReadWrite.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "41ce6ca6-6826-4807-84f1-1c82854f7ee5"
+}

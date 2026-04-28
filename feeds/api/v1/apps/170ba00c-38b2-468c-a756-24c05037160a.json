@@ -1,0 +1,12 @@
+{
+  "appid": "170ba00c-38b2-468c-a756-24c05037160a",
+  "appname": "Microsoft 365 Audio Conferencing - GCCHigh Tenant (AR)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "170ba00c-38b2-468c-a756-24c05037160a"
+}

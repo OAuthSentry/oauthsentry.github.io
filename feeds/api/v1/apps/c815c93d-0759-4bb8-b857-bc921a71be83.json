@@ -1,0 +1,12 @@
+{
+  "appid": "c815c93d-0759-4bb8-b857-bc921a71be83",
+  "appname": "Viva Topics_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c815c93d-0759-4bb8-b857-bc921a71be83"
+}

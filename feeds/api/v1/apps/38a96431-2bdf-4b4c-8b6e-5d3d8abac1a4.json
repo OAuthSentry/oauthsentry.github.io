@@ -1,0 +1,12 @@
+{
+  "appid": "38a96431-2bdf-4b4c-8b6e-5d3d8abac1a4",
+  "appname": "Desktop Analytics Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "38a96431-2bdf-4b4c-8b6e-5d3d8abac1a4"
+}

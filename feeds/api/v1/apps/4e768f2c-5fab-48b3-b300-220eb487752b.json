@@ -1,0 +1,12 @@
+{
+  "appid": "4e768f2c-5fab-48b3-b300-220eb487752b",
+  "appname": "Hideez Key 4 FIDO2 SDK",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4e768f2c-5fab-48b3-b300-220eb487752b"
+}

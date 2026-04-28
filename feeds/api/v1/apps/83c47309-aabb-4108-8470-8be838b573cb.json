@@ -1,0 +1,12 @@
+{
+  "appid": "83c47309-aabb-4108-8470-8be838b573cb",
+  "appname": "YubiKey Bio Series (Enterprise Profile)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "83c47309-aabb-4108-8470-8be838b573cb"
+}

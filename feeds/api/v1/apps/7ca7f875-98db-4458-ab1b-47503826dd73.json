@@ -1,0 +1,12 @@
+{
+  "appid": "7ca7f875-98db-4458-ab1b-47503826dd73",
+  "appname": "Privacy Management - Subject Rights Request (Exchange)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "7ca7f875-98db-4458-ab1b-47503826dd73"
+}

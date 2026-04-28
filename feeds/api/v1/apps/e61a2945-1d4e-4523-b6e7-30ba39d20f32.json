@@ -1,0 +1,12 @@
+{
+  "appid": "e61a2945-1d4e-4523-b6e7-30ba39d20f32",
+  "appname": "MICROSOFT POWERAPPS",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e61a2945-1d4e-4523-b6e7-30ba39d20f32"
+}

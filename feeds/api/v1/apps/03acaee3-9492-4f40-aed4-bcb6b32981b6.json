@@ -1,0 +1,12 @@
+{
+  "appid": "03acaee3-9492-4f40-aed4-bcb6b32981b6",
+  "appname": "Retired - Microsoft Social Engagement",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "03acaee3-9492-4f40-aed4-bcb6b32981b6"
+}

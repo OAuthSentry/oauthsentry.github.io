@@ -1,0 +1,12 @@
+{
+  "appid": "e577372f-c42e-47a0-9d85-bebed1c237d4",
+  "appname": "Purview/sit-defn-germany-identity-card-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e577372f-c42e-47a0-9d85-bebed1c237d4"
+}

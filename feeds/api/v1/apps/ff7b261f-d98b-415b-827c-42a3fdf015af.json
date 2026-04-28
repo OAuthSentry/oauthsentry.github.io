@@ -1,0 +1,12 @@
+{
+  "appid": "ff7b261f-d98b-415b-827c-42a3fdf015af",
+  "appname": "Microsoft Viva Insights Backend",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ff7b261f-d98b-415b-827c-42a3fdf015af"
+}

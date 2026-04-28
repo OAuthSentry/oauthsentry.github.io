@@ -1,0 +1,12 @@
+{
+  "appid": "4d135e65-66b8-41a8-9f8b-081452c91774",
+  "appname": "Policy.ReadWrite.ConsentRequest - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4d135e65-66b8-41a8-9f8b-081452c91774"
+}

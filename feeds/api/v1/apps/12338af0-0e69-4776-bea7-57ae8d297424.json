@@ -1,0 +1,12 @@
+{
+  "appid": "12338af0-0e69-4776-bea7-57ae8d297424",
+  "appname": "Key Vault Crypto User",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "12338af0-0e69-4776-bea7-57ae8d297424"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "e29bc95f-ff70-4a37-aa01-04d17360a4c5",
+  "appname": "Purview/sit-defn-australia-tax-file-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e29bc95f-ff70-4a37-aa01-04d17360a4c5"
+}

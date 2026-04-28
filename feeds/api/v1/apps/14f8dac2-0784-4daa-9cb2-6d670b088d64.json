@@ -1,0 +1,12 @@
+{
+  "appid": "14f8dac2-0784-4daa-9cb2-6d670b088d64",
+  "appname": "Power Apps per app",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "14f8dac2-0784-4daa-9cb2-6d670b088d64"
+}

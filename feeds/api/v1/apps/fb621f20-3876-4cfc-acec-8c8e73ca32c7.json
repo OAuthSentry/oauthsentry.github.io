@@ -1,0 +1,12 @@
+{
+  "appid": "fb621f20-3876-4cfc-acec-8c8e73ca32c7",
+  "appname": "Purview/sit-defn-turkey-national-identification-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "fb621f20-3876-4cfc-acec-8c8e73ca32c7"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "e55e2a32-f92d-4985-a35d-a0b269eb687b",
+  "appname": "Purview/sit-defn-us-individual-taxpayer-identification-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e55e2a32-f92d-4985-a35d-a0b269eb687b"
+}

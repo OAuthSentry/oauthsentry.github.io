@@ -1,0 +1,12 @@
+{
+  "appid": "104a7a4b-ca76-4677-b7e7-2f4bc482f381",
+  "appname": "AttackSimulation.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "104a7a4b-ca76-4677-b7e7-2f4bc482f381"
+}

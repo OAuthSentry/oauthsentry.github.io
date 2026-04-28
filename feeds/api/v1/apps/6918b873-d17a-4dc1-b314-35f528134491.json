@@ -1,0 +1,12 @@
+{
+  "appid": "6918b873-d17a-4dc1-b314-35f528134491",
+  "appname": "Contacts.ReadWrite - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6918b873-d17a-4dc1-b314-35f528134491"
+}

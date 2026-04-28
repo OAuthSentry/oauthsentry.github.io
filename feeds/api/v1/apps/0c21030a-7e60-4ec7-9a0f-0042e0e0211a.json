@@ -1,0 +1,12 @@
+{
+  "appid": "0c21030a-7e60-4ec7-9a0f-0042e0e0211a",
+  "appname": "Microsoft 365 E3 (500 seats min)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "0c21030a-7e60-4ec7-9a0f-0042e0e0211a"
+}

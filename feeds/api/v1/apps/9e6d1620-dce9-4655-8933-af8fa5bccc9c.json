@@ -1,0 +1,12 @@
+{
+  "appid": "9e6d1620-dce9-4655-8933-af8fa5bccc9c",
+  "appname": "Data Integration for IOM with Power Automate USL",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9e6d1620-dce9-4655-8933-af8fa5bccc9c"
+}

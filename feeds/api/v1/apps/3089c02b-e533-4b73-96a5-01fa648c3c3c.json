@@ -1,0 +1,12 @@
+{
+  "appid": "3089c02b-e533-4b73-96a5-01fa648c3c3c",
+  "appname": "PowerApps for Dynamics 365 for Government",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3089c02b-e533-4b73-96a5-01fa648c3c3c"
+}

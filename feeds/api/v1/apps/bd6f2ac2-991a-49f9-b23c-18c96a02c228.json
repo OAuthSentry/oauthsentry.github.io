@@ -1,0 +1,12 @@
+{
+  "appid": "bd6f2ac2-991a-49f9-b23c-18c96a02c228",
+  "appname": "TEAMS FREE SERVICE",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "bd6f2ac2-991a-49f9-b23c-18c96a02c228"
+}

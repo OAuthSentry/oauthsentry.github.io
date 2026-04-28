@@ -1,0 +1,12 @@
+{
+  "appid": "6b340437-d6f9-4dc5-8cc2-99163f7f83d6",
+  "appname": "MCOPSTN3",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6b340437-d6f9-4dc5-8cc2-99163f7f83d6"
+}

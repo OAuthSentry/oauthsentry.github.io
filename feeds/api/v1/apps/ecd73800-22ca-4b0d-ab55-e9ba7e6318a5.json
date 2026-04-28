@@ -1,0 +1,12 @@
+{
+  "appid": "ecd73800-22ca-4b0d-ab55-e9ba7e6318a5",
+  "appname": "IXCLRDataMethodInstance Interface",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ecd73800-22ca-4b0d-ab55-e9ba7e6318a5"
+}

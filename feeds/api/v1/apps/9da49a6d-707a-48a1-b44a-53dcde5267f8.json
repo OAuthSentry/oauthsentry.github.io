@@ -1,0 +1,12 @@
+{
+  "appid": "9da49a6d-707a-48a1-b44a-53dcde5267f8",
+  "appname": "Power BI Premium P",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9da49a6d-707a-48a1-b44a-53dcde5267f8"
+}

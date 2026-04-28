@@ -1,0 +1,12 @@
+{
+  "appid": "45bc2c81-6072-436a-9b0b-3b12eefbc402",
+  "appname": "Power BI for Office 365 Add-On",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "45bc2c81-6072-436a-9b0b-3b12eefbc402"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "73fa80b5-689f-4db9-bbe4-bd414bc41e44",
+  "appname": "Workload Identities Premium",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "73fa80b5-689f-4db9-bbe4-bd414bc41e44"
+}

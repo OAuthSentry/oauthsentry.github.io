@@ -1,0 +1,12 @@
+{
+  "appid": "8835291a-918c-4fd7-a9ce-faa49f0cf7d9",
+  "appname": "Search Editor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "8835291a-918c-4fd7-a9ce-faa49f0cf7d9"
+}

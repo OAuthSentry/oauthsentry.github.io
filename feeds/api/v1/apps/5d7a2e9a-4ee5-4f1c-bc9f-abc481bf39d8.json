@@ -1,0 +1,12 @@
+{
+  "appid": "5d7a2e9a-4ee5-4f1c-bc9f-abc481bf39d8",
+  "appname": "AI Builder capacity Per App add-on",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5d7a2e9a-4ee5-4f1c-bc9f-abc481bf39d8"
+}

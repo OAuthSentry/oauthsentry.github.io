@@ -1,0 +1,12 @@
+{
+  "appid": "02a5a114-36a6-46ff-a102-954d89d9ab02",
+  "appname": "BookingsAppointment.ReadWrite.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "02a5a114-36a6-46ff-a102-954d89d9ab02"
+}

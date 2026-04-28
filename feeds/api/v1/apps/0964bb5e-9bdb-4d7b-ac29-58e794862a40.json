@@ -1,0 +1,12 @@
+{
+  "appid": "0964bb5e-9bdb-4d7b-ac29-58e794862a40",
+  "appname": "Search Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "0964bb5e-9bdb-4d7b-ac29-58e794862a40"
+}

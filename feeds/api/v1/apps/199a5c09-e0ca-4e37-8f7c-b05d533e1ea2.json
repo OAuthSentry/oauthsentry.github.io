@@ -1,0 +1,12 @@
+{
+  "appid": "199a5c09-e0ca-4e37-8f7c-b05d533e1ea2",
+  "appname": "Microsoft Bookings",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "199a5c09-e0ca-4e37-8f7c-b05d533e1ea2"
+}

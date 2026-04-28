@@ -1,0 +1,12 @@
+{
+  "appid": "fcecd1f9-a91e-488d-a918-a96cdb6ce2b0",
+  "appname": "Microsoft Dynamics AX7 User Trial",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "fcecd1f9-a91e-488d-a918-a96cdb6ce2b0"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "9d37aa61-3cc3-457c-8b54-e6f3853aa6b6",
+  "appname": "Dynamics 365 Customer Service Digital Messaging add-on for Government",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9d37aa61-3cc3-457c-8b54-e6f3853aa6b6"
+}

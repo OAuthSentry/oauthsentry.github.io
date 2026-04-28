@@ -1,0 +1,12 @@
+{
+  "appid": "44272f93-9762-48e8-af59-1b5351b1d6b3",
+  "appname": "Catalog reader",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "44272f93-9762-48e8-af59-1b5351b1d6b3"
+}

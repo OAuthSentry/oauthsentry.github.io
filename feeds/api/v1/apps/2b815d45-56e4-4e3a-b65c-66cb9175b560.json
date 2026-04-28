@@ -1,0 +1,12 @@
+{
+  "appid": "2b815d45-56e4-4e3a-b65c-66cb9175b560",
+  "appname": "Information Protection and Governance Analytics â Standard",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2b815d45-56e4-4e3a-b65c-66cb9175b560"
+}

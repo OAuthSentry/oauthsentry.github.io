@@ -1,0 +1,12 @@
+{
+  "appid": "09015f9f-377f-4538-bbb5-f75ceb09358a",
+  "appname": "Project Online Premium",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "09015f9f-377f-4538-bbb5-f75ceb09358a"
+}

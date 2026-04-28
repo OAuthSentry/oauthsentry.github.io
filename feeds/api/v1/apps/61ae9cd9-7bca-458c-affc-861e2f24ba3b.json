@@ -1,0 +1,12 @@
+{
+  "appid": "61ae9cd9-7bca-458c-affc-861e2f24ba3b",
+  "appname": "Windows Update for Business Deployment Service [Community Contributed]",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=GitHub)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "61ae9cd9-7bca-458c-affc-861e2f24ba3b"
+}

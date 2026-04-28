@@ -1,0 +1,12 @@
+{
+  "appid": "1dfe531a-24a6-4f1b-80f4-7a0dc5a0a171",
+  "appname": "APIConnectors.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1dfe531a-24a6-4f1b-80f4-7a0dc5a0a171"
+}

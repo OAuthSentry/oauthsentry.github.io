@@ -1,0 +1,12 @@
+{
+  "appid": "83a86a26-fd1f-447c-b59d-e51f44264114",
+  "appname": "Network interfaces built-in policy definition",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "83a86a26-fd1f-447c-b59d-e51f44264114"
+}

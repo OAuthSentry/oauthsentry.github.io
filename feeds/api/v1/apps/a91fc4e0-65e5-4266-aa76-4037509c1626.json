@@ -1,0 +1,12 @@
+{
+  "appid": "a91fc4e0-65e5-4266-aa76-4037509c1626",
+  "appname": "Microsoft 365 E5 with Calling Minutes",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a91fc4e0-65e5-4266-aa76-4037509c1626"
+}

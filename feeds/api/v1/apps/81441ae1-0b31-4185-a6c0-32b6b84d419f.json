@@ -1,0 +1,12 @@
+{
+  "appid": "81441ae1-0b31-4185-a6c0-32b6b84d419f",
+  "appname": "Microsoft 365 A5 without Audio Conferencing for students use benefit",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "81441ae1-0b31-4185-a6c0-32b6b84d419f"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "c12c1c16-33a1-487b-954d-41c89c60f349",
+  "appname": "Reader and Data Access",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c12c1c16-33a1-487b-954d-41c89c60f349"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "08d4c71a-cc63-4ce4-a9c8-5dd251b4d619",
+  "appname": "Azure Container Storage Operator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "08d4c71a-cc63-4ce4-a9c8-5dd251b4d619"
+}

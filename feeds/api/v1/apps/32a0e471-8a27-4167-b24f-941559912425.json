@@ -1,0 +1,12 @@
+{
+  "appid": "32a0e471-8a27-4167-b24f-941559912425",
+  "appname": "Microsoft 365 A3 Suite features for faculty",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "32a0e471-8a27-4167-b24f-941559912425"
+}

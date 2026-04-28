@@ -1,0 +1,12 @@
+{
+  "appid": "9acd699f-1e81-4958-b001-93b1d2506e19",
+  "appname": "EntitlementManagement.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9acd699f-1e81-4958-b001-93b1d2506e19"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "7eabc9a4-85f7-4f71-b8ab-75daaccc1033",
+  "appname": "Windows 365 Network User",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "7eabc9a4-85f7-4f71-b8ab-75daaccc1033"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "dfce44e4-17b7-4bd1-a6d1-04996ec95633",
+  "appname": "Device Provisioning Service Data Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "dfce44e4-17b7-4bd1-a6d1-04996ec95633"
+}

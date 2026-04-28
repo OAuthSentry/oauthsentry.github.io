@@ -1,0 +1,12 @@
+{
+  "appid": "3ff8e6ba-7dc3-4e9e-ba40-ee12b60d6d48",
+  "appname": "Microsoft To-Do Web App",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3ff8e6ba-7dc3-4e9e-ba40-ee12b60d6d48"
+}

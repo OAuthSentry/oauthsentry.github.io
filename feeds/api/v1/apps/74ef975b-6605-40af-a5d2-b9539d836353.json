@@ -1,0 +1,12 @@
+{
+  "appid": "74ef975b-6605-40af-a5d2-b9539d836353",
+  "appname": "Kaizala Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "74ef975b-6605-40af-a5d2-b9539d836353"
+}

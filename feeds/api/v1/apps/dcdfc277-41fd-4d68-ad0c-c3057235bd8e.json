@@ -1,0 +1,12 @@
+{
+  "appid": "dcdfc277-41fd-4d68-ad0c-c3057235bd8e",
+  "appname": "SpiffeTrustDomain.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "dcdfc277-41fd-4d68-ad0c-c3057235bd8e"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "fb1c8493-542b-48eb-b624-b4c8fea62acd",
+  "appname": "Security Admin",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "fb1c8493-542b-48eb-b624-b4c8fea62acd"
+}

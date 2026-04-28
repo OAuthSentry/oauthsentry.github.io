@@ -1,0 +1,12 @@
+{
+  "appid": "f0a35f91-2aa6-4a99-9d5a-5b6bcb66204e",
+  "appname": "CallEvents-Emergency.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f0a35f91-2aa6-4a99-9d5a-5b6bcb66204e"
+}

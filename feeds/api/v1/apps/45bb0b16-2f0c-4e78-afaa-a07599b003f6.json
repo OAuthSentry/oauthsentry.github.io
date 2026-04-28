@@ -1,0 +1,12 @@
+{
+  "appid": "45bb0b16-2f0c-4e78-afaa-a07599b003f6",
+  "appname": "Load Test Owner",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "45bb0b16-2f0c-4e78-afaa-a07599b003f6"
+}

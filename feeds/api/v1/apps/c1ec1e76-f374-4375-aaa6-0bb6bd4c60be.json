@@ -1,0 +1,12 @@
+{
+  "appid": "c1ec1e76-f374-4375-aaa6-0bb6bd4c60be",
+  "appname": "Request user access package assignment",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c1ec1e76-f374-4375-aaa6-0bb6bd4c60be"
+}

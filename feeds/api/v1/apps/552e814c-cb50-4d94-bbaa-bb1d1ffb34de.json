@@ -1,0 +1,12 @@
+{
+  "appid": "552e814c-cb50-4d94-bbaa-bb1d1ffb34de",
+  "appname": "Purview/sit-defn-canada-bank-account-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "552e814c-cb50-4d94-bbaa-bb1d1ffb34de"
+}

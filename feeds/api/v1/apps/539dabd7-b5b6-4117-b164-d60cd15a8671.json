@@ -1,0 +1,12 @@
+{
+  "appid": "539dabd7-b5b6-4117-b164-d60cd15a8671",
+  "appname": "TeamworkTag.ReadWrite - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "539dabd7-b5b6-4117-b164-d60cd15a8671"
+}

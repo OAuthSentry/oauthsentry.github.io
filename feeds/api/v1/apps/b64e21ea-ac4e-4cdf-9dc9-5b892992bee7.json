@@ -1,0 +1,12 @@
+{
+  "appid": "b64e21ea-ac4e-4cdf-9dc9-5b892992bee7",
+  "appname": "Azure Connected Machine Onboarding",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b64e21ea-ac4e-4cdf-9dc9-5b892992bee7"
+}

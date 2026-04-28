@@ -1,0 +1,12 @@
+{
+  "appid": "9ac8c0b3-2c30-497c-b4bc-cadfe9bd6eed",
+  "appname": "Project Work Management",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9ac8c0b3-2c30-497c-b4bc-cadfe9bd6eed"
+}

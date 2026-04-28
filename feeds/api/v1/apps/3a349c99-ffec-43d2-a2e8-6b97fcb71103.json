@@ -1,0 +1,12 @@
+{
+  "appid": "3a349c99-ffec-43d2-a2e8-6b97fcb71103",
+  "appname": "Viva Goals User-led",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3a349c99-ffec-43d2-a2e8-6b97fcb71103"
+}

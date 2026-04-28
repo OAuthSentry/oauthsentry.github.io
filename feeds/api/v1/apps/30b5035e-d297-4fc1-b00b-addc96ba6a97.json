@@ -1,0 +1,12 @@
+{
+  "appid": "30b5035e-d297-4fc1-b00b-addc96ba6a97",
+  "appname": "OneSpan FIDO Touch",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "30b5035e-d297-4fc1-b00b-addc96ba6a97"
+}

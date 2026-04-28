@@ -1,0 +1,12 @@
+{
+  "appid": "9d0c4ee5-e4a1-4625-ab39-d82b619b1a34",
+  "appname": "Microsoft Insider Risk Management_2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9d0c4ee5-e4a1-4625-ab39-d82b619b1a34"
+}

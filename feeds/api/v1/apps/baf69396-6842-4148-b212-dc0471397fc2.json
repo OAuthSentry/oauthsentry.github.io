@@ -1,0 +1,12 @@
+{
+  "appid": "baf69396-6842-4148-b212-dc0471397fc2",
+  "appname": "Office Scripts Service-INT",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "baf69396-6842-4148-b212-dc0471397fc2"
+}

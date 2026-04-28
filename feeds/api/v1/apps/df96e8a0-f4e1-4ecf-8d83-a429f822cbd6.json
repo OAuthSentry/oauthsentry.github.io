@@ -1,0 +1,12 @@
+{
+  "appid": "df96e8a0-f4e1-4ecf-8d83-a429f822cbd6",
+  "appname": "MailboxItem.ImportExport - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "df96e8a0-f4e1-4ecf-8d83-a429f822cbd6"
+}

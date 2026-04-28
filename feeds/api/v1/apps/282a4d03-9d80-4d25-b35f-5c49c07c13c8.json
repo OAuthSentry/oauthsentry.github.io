@@ -1,0 +1,12 @@
+{
+  "appid": "282a4d03-9d80-4d25-b35f-5c49c07c13c8",
+  "appname": "Smart Compose",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "282a4d03-9d80-4d25-b35f-5c49c07c13c8"
+}

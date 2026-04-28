@@ -1,0 +1,12 @@
+{
+  "appid": "a9c51c15-ffad-4c66-88c0-8771455c832d",
+  "appname": "Defender Threat Intelligence_2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a9c51c15-ffad-4c66-88c0-8771455c832d"
+}

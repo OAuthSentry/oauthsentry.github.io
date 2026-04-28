@@ -1,0 +1,12 @@
+{
+  "appid": "99045fe1-7639-4a75-9d4a-577b6ca3810f",
+  "appname": "Azure Active Directory Authentication Extensions",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "99045fe1-7639-4a75-9d4a-577b6ca3810f"
+}

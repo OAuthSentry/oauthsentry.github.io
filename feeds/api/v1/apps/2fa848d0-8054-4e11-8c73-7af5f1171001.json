@@ -1,0 +1,12 @@
+{
+  "appid": "2fa848d0-8054-4e11-8c73-7af5f1171001",
+  "appname": "Enable admin access",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2fa848d0-8054-4e11-8c73-7af5f1171001"
+}

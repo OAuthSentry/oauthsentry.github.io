@@ -1,0 +1,12 @@
+{
+  "appid": "923f58ab-fca1-46a1-92f9-89fda21238a8",
+  "appname": "Microsoft 365 Domestic Calling Plan for GCC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "923f58ab-fca1-46a1-92f9-89fda21238a8"
+}

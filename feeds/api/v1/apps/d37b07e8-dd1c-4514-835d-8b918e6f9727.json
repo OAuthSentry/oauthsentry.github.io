@@ -1,0 +1,12 @@
+{
+  "appid": "d37b07e8-dd1c-4514-835d-8b918e6f9727",
+  "appname": "Azure Service Fabric",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d37b07e8-dd1c-4514-835d-8b918e6f9727"
+}

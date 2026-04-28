@@ -1,0 +1,12 @@
+{
+  "appid": "4b74a65c-8b4a-4fc8-9f6b-5177ed11ddfa",
+  "appname": "Power Virtual Agent User License",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4b74a65c-8b4a-4fc8-9f6b-5177ed11ddfa"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "d5a2ae44-610b-4500-93be-660a0c5f5ca6",
+  "appname": "Kubernetes Agentless Operator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d5a2ae44-610b-4500-93be-660a0c5f5ca6"
+}

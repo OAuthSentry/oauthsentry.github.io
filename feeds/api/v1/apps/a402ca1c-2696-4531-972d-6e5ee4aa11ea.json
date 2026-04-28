@@ -1,0 +1,12 @@
+{
+  "appid": "a402ca1c-2696-4531-972d-6e5ee4aa11ea",
+  "appname": "Policy.ReadWrite.PermissionGrant - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a402ca1c-2696-4531-972d-6e5ee4aa11ea"
+}

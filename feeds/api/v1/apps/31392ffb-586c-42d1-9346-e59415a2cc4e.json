@@ -1,0 +1,12 @@
+{
+  "appid": "31392ffb-586c-42d1-9346-e59415a2cc4e",
+  "appname": "Exchange Recipient Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "31392ffb-586c-42d1-9346-e59415a2cc4e"
+}

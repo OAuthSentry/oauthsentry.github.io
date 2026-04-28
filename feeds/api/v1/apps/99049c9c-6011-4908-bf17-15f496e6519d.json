@@ -1,0 +1,12 @@
+{
+  "appid": "99049c9c-6011-4908-bf17-15f496e6519d",
+  "appname": "Office 365 Extra File Storage_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "99049c9c-6011-4908-bf17-15f496e6519d"
+}

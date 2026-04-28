@@ -1,0 +1,12 @@
+{
+  "appid": "ee041bce-25e5-4cdb-8f86-897fd6418464",
+  "appname": "Feitian ePass FIDO2-NFC Authenticator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ee041bce-25e5-4cdb-8f86-897fd6418464"
+}

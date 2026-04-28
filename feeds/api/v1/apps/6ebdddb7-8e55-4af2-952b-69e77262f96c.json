@@ -1,0 +1,12 @@
+{
+  "appid": "6ebdddb7-8e55-4af2-952b-69e77262f96c",
+  "appname": "Microsoft Defender for Cloud Apps for DOD",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6ebdddb7-8e55-4af2-952b-69e77262f96c"
+}

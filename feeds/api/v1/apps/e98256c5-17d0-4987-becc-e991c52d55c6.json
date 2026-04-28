@@ -1,0 +1,12 @@
+{
+  "appid": "e98256c5-17d0-4987-becc-e991c52d55c6",
+  "appname": "Microsoft Dynamics 365 Customer Voice for Project Service Automation for GCC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e98256c5-17d0-4987-becc-e991c52d55c6"
+}

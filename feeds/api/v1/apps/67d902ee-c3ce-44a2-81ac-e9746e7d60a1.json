@@ -1,0 +1,12 @@
+{
+  "appid": "67d902ee-c3ce-44a2-81ac-e9746e7d60a1",
+  "appname": "Purview/sit-defn-indonesia-drivers-license-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "67d902ee-c3ce-44a2-81ac-e9746e7d60a1"
+}

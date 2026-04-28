@@ -1,0 +1,12 @@
+{
+  "appid": "074c6829-b3a0-430a-ba3d-aca365e57065",
+  "appname": "Project Plan 3 for GCC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "074c6829-b3a0-430a-ba3d-aca365e57065"
+}

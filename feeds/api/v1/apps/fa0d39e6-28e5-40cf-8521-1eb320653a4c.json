@@ -1,0 +1,12 @@
+{
+  "appid": "fa0d39e6-28e5-40cf-8521-1eb320653a4c",
+  "appname": "Carbon Optimization Reader",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "fa0d39e6-28e5-40cf-8521-1eb320653a4c"
+}

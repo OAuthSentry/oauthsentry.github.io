@@ -1,0 +1,12 @@
+{
+  "appid": "98da3da1-9199-4571-b7c4-b6522980b507",
+  "appname": "Purview/sit-defn-argentina-unique-tax-identification-key",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "98da3da1-9199-4571-b7c4-b6522980b507"
+}

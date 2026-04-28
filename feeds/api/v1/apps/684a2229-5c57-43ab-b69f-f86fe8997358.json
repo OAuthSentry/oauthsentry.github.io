@@ -1,0 +1,12 @@
+{
+  "appid": "684a2229-5c57-43ab-b69f-f86fe8997358",
+  "appname": "Common Data Service for Project P5 for GCC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "684a2229-5c57-43ab-b69f-f86fe8997358"
+}

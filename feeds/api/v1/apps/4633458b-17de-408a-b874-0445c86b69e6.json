@@ -1,0 +1,12 @@
+{
+  "appid": "4633458b-17de-408a-b874-0445c86b69e6",
+  "appname": "Key Vault Secrets User",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4633458b-17de-408a-b874-0445c86b69e6"
+}

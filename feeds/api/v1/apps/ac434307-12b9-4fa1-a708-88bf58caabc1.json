@@ -1,0 +1,12 @@
+{
+  "appid": "ac434307-12b9-4fa1-a708-88bf58caabc1",
+  "appname": "Global Secure Access Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ac434307-12b9-4fa1-a708-88bf58caabc1"
+}

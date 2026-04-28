@@ -1,0 +1,12 @@
+{
+  "appid": "18e81cdc-4e98-4e29-a639-e7d10c5a6226",
+  "appname": "Cognitive Services LUIS Reader",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "18e81cdc-4e98-4e29-a639-e7d10c5a6226"
+}

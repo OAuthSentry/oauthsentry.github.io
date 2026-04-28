@@ -1,0 +1,12 @@
+{
+  "appid": "5daaa2af-1fe8-407c-9122-bba179798270",
+  "appname": "Lab Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5daaa2af-1fe8-407c-9122-bba179798270"
+}

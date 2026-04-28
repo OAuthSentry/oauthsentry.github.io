@@ -1,0 +1,12 @@
+{
+  "appid": "d7304df8-741f-47d3-9bc2-df0e24e2071f",
+  "appname": "Azure Machine Learning Workbench web app",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d7304df8-741f-47d3-9bc2-df0e24e2071f"
+}

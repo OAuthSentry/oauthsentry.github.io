@@ -1,0 +1,12 @@
+{
+  "appid": "ad73ce80-f3cd-40ce-b325-df12c33df713",
+  "appname": "Chat.ReadWrite.WhereInstalled - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ad73ce80-f3cd-40ce-b325-df12c33df713"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "d5bc089a-f2ee-433d-a6b1-5c253051d6f2",
+  "appname": "Purview/sit-defn-slovenia-drivers-license-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d5bc089a-f2ee-433d-a6b1-5c253051d6f2"
+}

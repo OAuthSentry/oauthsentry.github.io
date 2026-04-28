@@ -1,0 +1,12 @@
+{
+  "appid": "ee3409fe-617f-43cf-bd1e-fc8b38049e69",
+  "appname": "AuditLogsQuery-Endpoint.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ee3409fe-617f-43cf-bd1e-fc8b38049e69"
+}

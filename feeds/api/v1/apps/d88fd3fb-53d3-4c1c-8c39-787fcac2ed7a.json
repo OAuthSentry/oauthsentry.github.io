@@ -1,0 +1,12 @@
+{
+  "appid": "d88fd3fb-53d3-4c1c-8c39-787fcac2ed7a",
+  "appname": "PendingExternalUserProfile.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d88fd3fb-53d3-4c1c-8c39-787fcac2ed7a"
+}

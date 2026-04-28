@@ -1,0 +1,12 @@
+{
+  "appid": "680788a3-53b6-455a-b891-c38cd76dc917",
+  "appname": "Purview/sit-defn-india-drivers-license-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "680788a3-53b6-455a-b891-c38cd76dc917"
+}

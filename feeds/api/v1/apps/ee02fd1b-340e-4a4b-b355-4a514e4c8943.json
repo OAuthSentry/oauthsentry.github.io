@@ -1,0 +1,12 @@
+{
+  "appid": "ee02fd1b-340e-4a4b-b355-4a514e4c8943",
+  "appname": "Exchange Online Archiving for Exchange Online_2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ee02fd1b-340e-4a4b-b355-4a514e4c8943"
+}

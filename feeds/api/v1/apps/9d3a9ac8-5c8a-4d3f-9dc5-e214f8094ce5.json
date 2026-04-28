@@ -1,0 +1,12 @@
+{
+  "appid": "9d3a9ac8-5c8a-4d3f-9dc5-e214f8094ce5",
+  "appname": "Office PowerPoint SGS",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9d3a9ac8-5c8a-4d3f-9dc5-e214f8094ce5"
+}

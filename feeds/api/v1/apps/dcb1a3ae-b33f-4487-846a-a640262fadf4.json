@@ -1,0 +1,12 @@
+{
+  "appid": "dcb1a3ae-b33f-4487-846a-a640262fadf4",
+  "appname": "Microsoft Power Apps Plan 2 Trial",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "dcb1a3ae-b33f-4487-846a-a640262fadf4"
+}

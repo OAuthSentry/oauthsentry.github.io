@@ -1,0 +1,12 @@
+{
+  "appid": "3bc15058-7858-4141-b24f-ae43b4e80b52",
+  "appname": "RoleManagement.Read.Exchange - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3bc15058-7858-4141-b24f-ae43b4e80b52"
+}

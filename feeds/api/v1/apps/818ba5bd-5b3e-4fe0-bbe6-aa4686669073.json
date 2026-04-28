@@ -1,0 +1,12 @@
+{
+  "appid": "818ba5bd-5b3e-4fe0-bbe6-aa4686669073",
+  "appname": "Chat.ReadBasic.WhereInstalled - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "818ba5bd-5b3e-4fe0-bbe6-aa4686669073"
+}

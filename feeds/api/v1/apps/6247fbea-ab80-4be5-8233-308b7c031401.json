@@ -1,0 +1,12 @@
+{
+  "appid": "6247fbea-ab80-4be5-8233-308b7c031401",
+  "appname": "Purview/sit-defn-netherlands-drivers-license-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6247fbea-ab80-4be5-8233-308b7c031401"
+}

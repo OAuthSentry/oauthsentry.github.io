@@ -1,0 +1,12 @@
+{
+  "appid": "3179e48a-750b-4051-897c-87b9720928f7",
+  "appname": "phoneAuthenticationMethodId",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3179e48a-750b-4051-897c-87b9720928f7"
+}

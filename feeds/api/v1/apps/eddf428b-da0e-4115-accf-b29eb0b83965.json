@@ -1,0 +1,12 @@
+{
+  "appid": "eddf428b-da0e-4115-accf-b29eb0b83965",
+  "appname": "Common Data Service Database Capacity for Government",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "eddf428b-da0e-4115-accf-b29eb0b83965"
+}

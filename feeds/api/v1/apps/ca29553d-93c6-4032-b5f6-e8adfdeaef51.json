@@ -1,0 +1,12 @@
+{
+  "appid": "ca29553d-93c6-4032-b5f6-e8adfdeaef51",
+  "appname": "Office Scripts Service-Test",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ca29553d-93c6-4032-b5f6-e8adfdeaef51"
+}

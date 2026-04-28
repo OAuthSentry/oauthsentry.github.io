@@ -1,0 +1,12 @@
+{
+  "appid": "b1f3042b-a390-4b56-ab61-b88e7e767a97",
+  "appname": "Microsoft 365 Business Basic EEA (no Teams)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b1f3042b-a390-4b56-ab61-b88e7e767a97"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "65cc641f-cccd-4643-97e0-a17e3045e541",
+  "appname": "Microsoft Records Management",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "65cc641f-cccd-4643-97e0-a17e3045e541"
+}

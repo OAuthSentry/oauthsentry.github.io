@@ -1,0 +1,12 @@
+{
+  "appid": "0fbd6821-7888-443f-821c-36471d94fda1",
+  "appname": "M365 Auditing Public Protected Web API app",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "0fbd6821-7888-443f-821c-36471d94fda1"
+}

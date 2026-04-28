@@ -1,0 +1,12 @@
+{
+  "appid": "98709c2e-96b5-4244-95f5-a0ebe139fb8a",
+  "appname": "ONEDRIVE FOR BUSINESS BASIC FOR GOVERNMENT",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "98709c2e-96b5-4244-95f5-a0ebe139fb8a"
+}

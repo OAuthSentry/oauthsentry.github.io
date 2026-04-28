@@ -1,0 +1,12 @@
+{
+  "appid": "9bd7c846-9556-4453-a542-191d527209e8",
+  "appname": "Microsoft Stream Storage Add-On (500 GB)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9bd7c846-9556-4453-a542-191d527209e8"
+}

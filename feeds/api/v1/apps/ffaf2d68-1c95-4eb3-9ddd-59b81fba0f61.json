@@ -1,0 +1,12 @@
+{
+  "appid": "ffaf2d68-1c95-4eb3-9ddd-59b81fba0f61",
+  "appname": "Microsoft Teams Phone Standard for TELSTRA",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ffaf2d68-1c95-4eb3-9ddd-59b81fba0f61"
+}

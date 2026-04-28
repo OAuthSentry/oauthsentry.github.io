@@ -1,0 +1,12 @@
+{
+  "appid": "7078946d-fc1c-43b7-8dee-dd6e6b00d783",
+  "appname": "Configuration Manager Server App (CmgServerApp)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "7078946d-fc1c-43b7-8dee-dd6e6b00d783"
+}

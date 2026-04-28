@@ -1,0 +1,12 @@
+{
+  "appid": "eefbb00e-8282-433c-8620-8f1da3bffdb2",
+  "appname": "Purview/sit-defn-argentina-national-identity-numbers",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "eefbb00e-8282-433c-8620-8f1da3bffdb2"
+}

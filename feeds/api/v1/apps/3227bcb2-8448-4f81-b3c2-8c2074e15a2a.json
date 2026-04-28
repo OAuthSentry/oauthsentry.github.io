@@ -1,0 +1,12 @@
+{
+  "appid": "3227bcb2-8448-4f81-b3c2-8c2074e15a2a",
+  "appname": "Microsoft Sales Copilot",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3227bcb2-8448-4f81-b3c2-8c2074e15a2a"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "48269fec-05ea-46ea-b326-f5623a58c6e9",
+  "appname": "Purview/sit-defn-taiwan-resident-certificate-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "48269fec-05ea-46ea-b326-f5623a58c6e9"
+}

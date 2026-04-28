@@ -1,0 +1,12 @@
+{
+  "appid": "ec156933-b85b-4c50-84ec-c9e5603709ef",
+  "appname": "Microsoft Stream Plan 2_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ec156933-b85b-4c50-84ec-c9e5603709ef"
+}

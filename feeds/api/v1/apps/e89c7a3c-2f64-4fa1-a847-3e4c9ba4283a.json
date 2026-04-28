@@ -1,0 +1,12 @@
+{
+  "appid": "e89c7a3c-2f64-4fa1-a847-3e4c9ba4283a",
+  "appname": "DICOM Data Reader",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e89c7a3c-2f64-4fa1-a847-3e4c9ba4283a"
+}

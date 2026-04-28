@@ -1,0 +1,12 @@
+{
+  "appid": "18e55a36-a01b-4b0f-943d-dc10282a1824",
+  "appname": "Purview/sit-defn-france-drivers-license-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "18e55a36-a01b-4b0f-943d-dc10282a1824"
+}

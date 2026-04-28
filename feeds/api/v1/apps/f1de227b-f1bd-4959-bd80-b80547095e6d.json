@@ -1,0 +1,12 @@
+{
+  "appid": "f1de227b-f1bd-4959-bd80-b80547095e6d",
+  "appname": "Power Virtual Agent User License for GCC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f1de227b-f1bd-4959-bd80-b80547095e6d"
+}

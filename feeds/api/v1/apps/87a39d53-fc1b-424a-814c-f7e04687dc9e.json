@@ -1,0 +1,12 @@
+{
+  "appid": "87a39d53-fc1b-424a-814c-f7e04687dc9e",
+  "appname": "Logic App Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "87a39d53-fc1b-424a-814c-f7e04687dc9e"
+}

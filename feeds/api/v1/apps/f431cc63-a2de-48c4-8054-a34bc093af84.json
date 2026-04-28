@@ -1,0 +1,12 @@
+{
+  "appid": "f431cc63-a2de-48c4-8054-a34bc093af84",
+  "appname": "EduAssignments.ReadWriteBasic.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f431cc63-a2de-48c4-8054-a34bc093af84"
+}

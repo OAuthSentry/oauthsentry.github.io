@@ -1,0 +1,12 @@
+{
+  "appid": "b2052569-c98c-4f36-a5fb-43e5c111e6d0",
+  "appname": "CustomAuthenticationExtension.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b2052569-c98c-4f36-a5fb-43e5c111e6d0"
+}

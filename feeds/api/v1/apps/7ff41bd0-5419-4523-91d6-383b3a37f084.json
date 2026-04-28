@@ -1,0 +1,12 @@
+{
+  "appid": "7ff41bd0-5419-4523-91d6-383b3a37f084",
+  "appname": "Purview/sit-defn-azure-storage-account-key-generic",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "7ff41bd0-5419-4523-91d6-383b3a37f084"
+}

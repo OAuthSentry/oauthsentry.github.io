@@ -1,0 +1,12 @@
+{
+  "appid": "4ae99959-6b0f-43b0-b1ce-68146001bdba",
+  "appname": "Visio Plan 2 for GCC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4ae99959-6b0f-43b0-b1ce-68146001bdba"
+}

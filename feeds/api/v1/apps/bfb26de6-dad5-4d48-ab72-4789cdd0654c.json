@@ -1,0 +1,12 @@
+{
+  "appid": "bfb26de6-dad5-4d48-ab72-4789cdd0654c",
+  "appname": "Purview/sit-defn-estonia-personal-identification-code",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "bfb26de6-dad5-4d48-ab72-4789cdd0654c"
+}

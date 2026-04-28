@@ -1,0 +1,12 @@
+{
+  "appid": "a42de799-58ae-4e6a-aa1d-948e7abec726",
+  "appname": "Microsoft Teams Kiosk",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a42de799-58ae-4e6a-aa1d-948e7abec726"
+}

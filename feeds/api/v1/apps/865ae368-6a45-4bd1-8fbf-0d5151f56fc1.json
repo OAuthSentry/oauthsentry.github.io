@@ -1,0 +1,12 @@
+{
+  "appid": "865ae368-6a45-4bd1-8fbf-0d5151f56fc1",
+  "appname": "Azure Stack HCI Device Management Role",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "865ae368-6a45-4bd1-8fbf-0d5151f56fc1"
+}

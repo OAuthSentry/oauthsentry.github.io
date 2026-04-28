@@ -1,0 +1,12 @@
+{
+  "appid": "db06fb33-1953-4b7b-a2ac-f1e2c854f7ae",
+  "appname": "IdentityRiskEvent.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "db06fb33-1953-4b7b-a2ac-f1e2c854f7ae"
+}

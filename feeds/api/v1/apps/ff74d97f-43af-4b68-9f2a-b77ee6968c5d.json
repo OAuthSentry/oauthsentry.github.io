@@ -1,0 +1,12 @@
+{
+  "appid": "ff74d97f-43af-4b68-9f2a-b77ee6968c5d",
+  "appname": "Contacts.Read - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ff74d97f-43af-4b68-9f2a-b77ee6968c5d"
+}

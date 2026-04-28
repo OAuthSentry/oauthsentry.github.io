@@ -1,0 +1,12 @@
+{
+  "appid": "f353d9bd-d4a6-484e-a77a-8050b599b867",
+  "appname": "Automation Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f353d9bd-d4a6-484e-a77a-8050b599b867"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "d7b7f2d9-0f45-4ea1-9d42-e50810c06991",
+  "appname": "POP.AccessAsUser.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d7b7f2d9-0f45-4ea1-9d42-e50810c06991"
+}

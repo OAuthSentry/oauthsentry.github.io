@@ -1,0 +1,12 @@
+{
+  "appid": "7a551360-26c4-4f61-84e6-ef715673e083",
+  "appname": "Dynamics 365 Remote Assist_2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "7a551360-26c4-4f61-84e6-ef715673e083"
+}

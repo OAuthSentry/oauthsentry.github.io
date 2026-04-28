@@ -1,0 +1,12 @@
+{
+  "appid": "c7d28c4f-0d2c-49d6-a88d-a275cc5473c7",
+  "appname": "AIRS",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c7d28c4f-0d2c-49d6-a88d-a275cc5473c7"
+}

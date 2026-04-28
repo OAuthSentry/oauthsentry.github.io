@@ -1,0 +1,12 @@
+{
+  "appid": "8804798e-5934-4e30-8ce3-ef88257cecd4",
+  "appname": "PartnerBilling.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "8804798e-5934-4e30-8ce3-ef88257cecd4"
+}

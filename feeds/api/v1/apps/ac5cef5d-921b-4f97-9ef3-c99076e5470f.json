@@ -1,0 +1,12 @@
+{
+  "appid": "ac5cef5d-921b-4f97-9ef3-c99076e5470f",
+  "appname": "Microsoft 365 Business Standard - Prepaid Legacy",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ac5cef5d-921b-4f97-9ef3-c99076e5470f"
+}

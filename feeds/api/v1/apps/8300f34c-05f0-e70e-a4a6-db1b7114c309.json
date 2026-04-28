@@ -1,0 +1,12 @@
+{
+  "appid": "8300f34c-05f0-e70e-a4a6-db1b7114c309",
+  "appname": "Partner Seller docs exemption GUID",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "8300f34c-05f0-e70e-a4a6-db1b7114c309"
+}

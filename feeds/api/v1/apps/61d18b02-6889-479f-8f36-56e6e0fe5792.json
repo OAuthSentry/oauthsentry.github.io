@@ -1,0 +1,12 @@
+{
+  "appid": "61d18b02-6889-479f-8f36-56e6e0fe5792",
+  "appname": "SecOps Investigation for MDI",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "61d18b02-6889-479f-8f36-56e6e0fe5792"
+}

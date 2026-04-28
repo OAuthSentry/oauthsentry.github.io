@@ -1,0 +1,12 @@
+{
+  "appid": "3ae52229-572e-414f-937c-ff35a87d4f29",
+  "appname": "Dynamics 365 for Sales Enterprise Attach",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3ae52229-572e-414f-937c-ff35a87d4f29"
+}

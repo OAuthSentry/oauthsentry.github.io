@@ -1,0 +1,12 @@
+{
+  "appid": "617b097b-4b93-4ede-83de-5f075bb5fb2f",
+  "appname": "Premium Encryption in Office 365",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "617b097b-4b93-4ede-83de-5f075bb5fb2f"
+}

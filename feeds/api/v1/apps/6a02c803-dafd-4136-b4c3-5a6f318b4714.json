@@ -1,0 +1,12 @@
+{
+  "appid": "6a02c803-dafd-4136-b4c3-5a6f318b4714",
+  "appname": "Azure Cloud Services for Government",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6a02c803-dafd-4136-b4c3-5a6f318b4714"
+}

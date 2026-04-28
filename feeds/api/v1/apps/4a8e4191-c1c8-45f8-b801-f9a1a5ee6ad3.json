@@ -1,0 +1,12 @@
+{
+  "appid": "4a8e4191-c1c8-45f8-b801-f9a1a5ee6ad3",
+  "appname": "OrgSettings-AppsAndServices.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4a8e4191-c1c8-45f8-b801-f9a1a5ee6ad3"
+}

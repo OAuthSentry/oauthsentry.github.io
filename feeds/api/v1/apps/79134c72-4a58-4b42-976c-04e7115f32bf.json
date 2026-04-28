@@ -1,0 +1,12 @@
+{
+  "appid": "79134c72-4a58-4b42-976c-04e7115f32bf",
+  "appname": "Core research area - Azure devopes-docs-pr",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "79134c72-4a58-4b42-976c-04e7115f32bf"
+}

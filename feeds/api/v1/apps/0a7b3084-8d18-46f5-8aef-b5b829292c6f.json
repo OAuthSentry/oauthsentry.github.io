@@ -1,0 +1,12 @@
+{
+  "appid": "0a7b3084-8d18-46f5-8aef-b5b829292c6f",
+  "appname": "ChannelSettings.Read.Group",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "0a7b3084-8d18-46f5-8aef-b5b829292c6f"
+}

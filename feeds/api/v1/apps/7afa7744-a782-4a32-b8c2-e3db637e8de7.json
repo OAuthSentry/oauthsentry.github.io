@@ -1,0 +1,12 @@
+{
+  "appid": "7afa7744-a782-4a32-b8c2-e3db637e8de7",
+  "appname": "IndustryData-TimePeriod.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "7afa7744-a782-4a32-b8c2-e3db637e8de7"
+}

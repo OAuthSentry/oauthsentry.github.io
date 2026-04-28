@@ -1,0 +1,12 @@
+{
+  "appid": "37f7f235-527c-4136-accd-4a02d197296e",
+  "appname": "openid - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "37f7f235-527c-4136-accd-4a02d197296e"
+}

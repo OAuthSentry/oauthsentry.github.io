@@ -1,0 +1,12 @@
+{
+  "appid": "de376a03-6e5b-42ec-855f-093fb50b8ca5",
+  "appname": "Power BI Premium Per User Add-On",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "de376a03-6e5b-42ec-855f-093fb50b8ca5"
+}

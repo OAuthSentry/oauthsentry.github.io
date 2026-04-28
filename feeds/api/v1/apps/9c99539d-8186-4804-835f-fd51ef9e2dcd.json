@@ -1,0 +1,12 @@
+{
+  "appid": "9c99539d-8186-4804-835f-fd51ef9e2dcd",
+  "appname": "Attribute Log Reader",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9c99539d-8186-4804-835f-fd51ef9e2dcd"
+}

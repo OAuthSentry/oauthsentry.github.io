@@ -1,0 +1,12 @@
+{
+  "appid": "b955410e-7715-4a88-a940-dfd551018df3",
+  "appname": "ReportSettings.ReadWrite.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b955410e-7715-4a88-a940-dfd551018df3"
+}

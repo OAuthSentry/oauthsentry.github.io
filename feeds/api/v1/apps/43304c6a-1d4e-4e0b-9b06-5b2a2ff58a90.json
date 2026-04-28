@@ -1,0 +1,12 @@
+{
+  "appid": "43304c6a-1d4e-4e0b-9b06-5b2a2ff58a90",
+  "appname": "Viva Engage Communities and Communications",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "43304c6a-1d4e-4e0b-9b06-5b2a2ff58a90"
+}

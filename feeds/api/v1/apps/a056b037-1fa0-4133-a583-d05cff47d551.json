@@ -1,0 +1,12 @@
+{
+  "appid": "a056b037-1fa0-4133-a583-d05cff47d551",
+  "appname": "Privacy Management - subject rights request (10) GCC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a056b037-1fa0-4133-a583-d05cff47d551"
+}

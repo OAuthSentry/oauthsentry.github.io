@@ -1,0 +1,12 @@
+{
+  "appid": "06dbc45d-6708-4ef0-a797-f797ee68bf4b",
+  "appname": "PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "06dbc45d-6708-4ef0-a797-f797ee68bf4b"
+}

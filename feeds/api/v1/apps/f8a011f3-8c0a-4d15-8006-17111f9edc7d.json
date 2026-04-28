@@ -1,0 +1,12 @@
+{
+  "appid": "f8a011f3-8c0a-4d15-8006-17111f9edc7d",
+  "appname": "Security Key by Yubico",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f8a011f3-8c0a-4d15-8006-17111f9edc7d"
+}

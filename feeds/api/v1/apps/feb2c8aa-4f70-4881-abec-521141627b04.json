@@ -1,0 +1,12 @@
+{
+  "appid": "feb2c8aa-4f70-4881-abec-521141627b04",
+  "appname": "Power Apps Web GCC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "feb2c8aa-4f70-4881-abec-521141627b04"
+}

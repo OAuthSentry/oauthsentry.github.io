@@ -1,0 +1,12 @@
+{
+  "appid": "8adf8e6e-67b2-4cf2-a259-e3dc5476c621",
+  "appname": "Custom application in Microsoft Entra ID application ID",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "8adf8e6e-67b2-4cf2-a259-e3dc5476c621"
+}

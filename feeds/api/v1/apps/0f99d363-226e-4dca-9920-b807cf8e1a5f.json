@@ -1,0 +1,12 @@
+{
+  "appid": "0f99d363-226e-4dca-9920-b807cf8e1a5f",
+  "appname": "Azure Front Door Domain Reader",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "0f99d363-226e-4dca-9920-b807cf8e1a5f"
+}

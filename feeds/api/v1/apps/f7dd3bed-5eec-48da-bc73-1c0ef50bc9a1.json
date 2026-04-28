@@ -1,0 +1,12 @@
+{
+  "appid": "f7dd3bed-5eec-48da-bc73-1c0ef50bc9a1",
+  "appname": "EventListener.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f7dd3bed-5eec-48da-bc73-1c0ef50bc9a1"
+}

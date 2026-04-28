@@ -1,0 +1,12 @@
+{
+  "appid": "2d3091c7-0712-488b-b3d8-6b97bde6a1f5",
+  "appname": "Microsoft 365 Audio Conferencing for GCC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2d3091c7-0712-488b-b3d8-6b97bde6a1f5"
+}

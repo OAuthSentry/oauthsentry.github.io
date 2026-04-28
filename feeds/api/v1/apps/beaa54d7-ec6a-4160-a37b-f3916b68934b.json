@@ -1,0 +1,12 @@
+{
+  "appid": "beaa54d7-ec6a-4160-a37b-f3916b68934b",
+  "appname": "Purview/sit-defn-singapore-drivers-license-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "beaa54d7-ec6a-4160-a37b-f3916b68934b"
+}

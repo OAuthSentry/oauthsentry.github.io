@@ -1,0 +1,12 @@
+{
+  "appid": "8d289c81-5878-46d4-8554-54e1e3d8b5cb",
+  "appname": "Microsoft Sentinel Reader",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "8d289c81-5878-46d4-8554-54e1e3d8b5cb"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "e4d0b25d-e440-4ee9-aac4-1d5a5db9f3ef",
+  "appname": "Dataverse for Virtual Agent Base for GCC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e4d0b25d-e440-4ee9-aac4-1d5a5db9f3ef"
+}

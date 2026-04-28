@@ -1,0 +1,12 @@
+{
+  "appid": "967d9574-a076-4bb7-ab89-f41f64bc142e",
+  "appname": "Power Pages Authenticated Users per site monthly capacity China",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "967d9574-a076-4bb7-ab89-f41f64bc142e"
+}

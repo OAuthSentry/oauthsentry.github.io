@@ -1,0 +1,12 @@
+{
+  "appid": "b52893c8-bc2e-47fc-918b-77022b299bbc",
+  "appname": "Power BI Data Refresh",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b52893c8-bc2e-47fc-918b-77022b299bbc"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "c8d4ff99-41c3-41a8-9f60-21dfdad59608",
+  "appname": "AcrQuarantineWriter",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c8d4ff99-41c3-41a8-9f60-21dfdad59608"
+}

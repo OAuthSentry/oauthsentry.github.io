@@ -1,0 +1,12 @@
+{
+  "appid": "a3371ca5-911d-46d6-901c-42c8c7a937d8",
+  "appname": "TeamworkTag.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a3371ca5-911d-46d6-901c-42c8c7a937d8"
+}

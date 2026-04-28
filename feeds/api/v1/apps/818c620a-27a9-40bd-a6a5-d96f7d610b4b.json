@@ -1,0 +1,12 @@
+{
+  "appid": "818c620a-27a9-40bd-a6a5-d96f7d610b4b",
+  "appname": "MailboxSettings.ReadWrite - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "818c620a-27a9-40bd-a6a5-d96f7d610b4b"
+}

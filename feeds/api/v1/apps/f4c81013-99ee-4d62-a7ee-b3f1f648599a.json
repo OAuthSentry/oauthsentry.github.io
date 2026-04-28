@@ -1,0 +1,12 @@
+{
+  "appid": "f4c81013-99ee-4d62-a7ee-b3f1f648599a",
+  "appname": "Microsoft Sentinel Automation Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f4c81013-99ee-4d62-a7ee-b3f1f648599a"
+}

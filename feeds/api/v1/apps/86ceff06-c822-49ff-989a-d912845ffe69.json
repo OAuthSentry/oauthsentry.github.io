@@ -1,0 +1,12 @@
+{
+  "appid": "86ceff06-c822-49ff-989a-d912845ffe69",
+  "appname": "User-Phone.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "86ceff06-c822-49ff-989a-d912845ffe69"
+}

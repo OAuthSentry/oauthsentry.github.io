@@ -1,0 +1,12 @@
+{
+  "appid": "b5a8dcf3-09d5-43a9-a639-8e29ef291470",
+  "appname": "Knowledge Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b5a8dcf3-09d5-43a9-a639-8e29ef291470"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "717ca3a4-bc73-47f8-b613-4d43e657fa9c",
+  "appname": "TeamsTab.ReadWrite.Group",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "717ca3a4-bc73-47f8-b613-4d43e657fa9c"
+}

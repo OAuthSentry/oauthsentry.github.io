@@ -1,0 +1,12 @@
+{
+  "appid": "4f0a8235-6f6f-4ec7-9500-34b452a4a0c3",
+  "appname": "Group-Conversation.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4f0a8235-6f6f-4ec7-9500-34b452a4a0c3"
+}

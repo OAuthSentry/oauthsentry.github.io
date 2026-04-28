@@ -1,0 +1,12 @@
+{
+  "appid": "a8281131-f312-4f34-8d98-ae12be9f0d23",
+  "appname": "Elastic SAN Volume Group Owner",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a8281131-f312-4f34-8d98-ae12be9f0d23"
+}

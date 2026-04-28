@@ -1,0 +1,12 @@
+{
+  "appid": "40c5ff49-9181-41f8-ae61-143b0e78555e",
+  "appname": "Desktop Virtualization Power On Off Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "40c5ff49-9181-41f8-ae61-143b0e78555e"
+}

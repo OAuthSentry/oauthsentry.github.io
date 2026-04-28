@@ -1,0 +1,12 @@
+{
+  "appid": "090c5cfd-751d-490a-894a-3ce6f1109419",
+  "appname": "Azure Service Bus Data Owner",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "090c5cfd-751d-490a-894a-3ce6f1109419"
+}

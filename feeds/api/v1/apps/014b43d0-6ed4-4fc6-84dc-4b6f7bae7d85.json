@@ -1,0 +1,12 @@
+{
+  "appid": "014b43d0-6ed4-4fc6-84dc-4b6f7bae7d85",
+  "appname": "Policy.ReadWrite.CrossTenantAccess - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "014b43d0-6ed4-4fc6-84dc-4b6f7bae7d85"
+}

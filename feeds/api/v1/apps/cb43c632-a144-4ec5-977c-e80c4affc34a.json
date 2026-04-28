@@ -1,0 +1,12 @@
+{
+  "appid": "cb43c632-a144-4ec5-977c-e80c4affc34a",
+  "appname": "Cognitive Services Metrics Advisor Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "cb43c632-a144-4ec5-977c-e80c4affc34a"
+}

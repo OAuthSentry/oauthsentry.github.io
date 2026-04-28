@@ -1,0 +1,12 @@
+{
+  "appid": "6c38fb68-7e30-4a45-a740-df9d67833571",
+  "appname": "Info Trieve",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6c38fb68-7e30-4a45-a740-df9d67833571"
+}

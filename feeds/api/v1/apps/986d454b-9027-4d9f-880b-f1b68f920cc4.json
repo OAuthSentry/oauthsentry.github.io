@@ -1,0 +1,12 @@
+{
+  "appid": "986d454b-9027-4d9f-880b-f1b68f920cc4",
+  "appname": "Microsoft Teams Audio Conferencing with dial-out to select geographies for GCC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "986d454b-9027-4d9f-880b-f1b68f920cc4"
+}

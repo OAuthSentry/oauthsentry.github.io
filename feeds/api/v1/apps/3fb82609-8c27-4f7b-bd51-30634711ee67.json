@@ -1,0 +1,12 @@
+{
+  "appid": "3fb82609-8c27-4f7b-bd51-30634711ee67",
+  "appname": "To-Do (Plan 3)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3fb82609-8c27-4f7b-bd51-30634711ee67"
+}

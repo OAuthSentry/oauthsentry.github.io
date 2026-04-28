@@ -1,0 +1,12 @@
+{
+  "appid": "fb8d773d-7ef8-4ec0-a117-179f88add510",
+  "appname": "Enterprise Copilot Platform",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "fb8d773d-7ef8-4ec0-a117-179f88add510"
+}

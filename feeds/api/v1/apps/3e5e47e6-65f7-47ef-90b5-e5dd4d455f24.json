@@ -1,0 +1,12 @@
+{
+  "appid": "3e5e47e6-65f7-47ef-90b5-e5dd4d455f24",
+  "appname": "Disk Backup Reader",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3e5e47e6-65f7-47ef-90b5-e5dd4d455f24"
+}

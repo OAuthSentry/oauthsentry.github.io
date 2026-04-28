@@ -1,0 +1,12 @@
+{
+  "appid": "76366ba0-d230-47aa-8087-b6d55dae454f",
+  "appname": "Microsoft Dynamics 365 Customer Voice for Marketing",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "76366ba0-d230-47aa-8087-b6d55dae454f"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "2cb92fee-97a3-4034-8702-24a6f5d0d1e9",
+  "appname": "OrgSettings-Forms.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2cb92fee-97a3-4034-8702-24a6f5d0d1e9"
+}

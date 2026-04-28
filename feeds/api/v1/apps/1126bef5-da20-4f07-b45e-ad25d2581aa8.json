@@ -1,0 +1,12 @@
+{
+  "appid": "1126bef5-da20-4f07-b45e-ad25d2581aa8",
+  "appname": "EXCHANGE ESSENTIALS",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1126bef5-da20-4f07-b45e-ad25d2581aa8"
+}

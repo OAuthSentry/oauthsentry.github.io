@@ -1,0 +1,12 @@
+{
+  "appid": "1cbbc8f5-9216-4392-9eb5-5ac2298d1356",
+  "appname": "Purview/sit-defn-australia-drivers-license-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1cbbc8f5-9216-4392-9eb5-5ac2298d1356"
+}

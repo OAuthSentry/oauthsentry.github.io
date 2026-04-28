@@ -1,0 +1,12 @@
+{
+  "appid": "b152eca8-ea73-4a48-8c98-1a6742673d99",
+  "appname": "ThreatHunting.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b152eca8-ea73-4a48-8c98-1a6742673d99"
+}

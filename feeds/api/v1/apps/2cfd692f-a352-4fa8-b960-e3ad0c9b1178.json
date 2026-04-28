@@ -1,0 +1,12 @@
+{
+  "appid": "2cfd692f-a352-4fa8-b960-e3ad0c9b1178",
+  "appname": "Power Pages authenticated users T3 min 1,000 units - 100 users/per site/month capacity pack CN",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2cfd692f-a352-4fa8-b960-e3ad0c9b1178"
+}

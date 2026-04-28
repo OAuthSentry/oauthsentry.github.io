@@ -1,0 +1,12 @@
+{
+  "appid": "1707125e-0aa2-4d4d-8655-a7c786c76a25",
+  "appname": "Microsoft 365 Backup Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1707125e-0aa2-4d4d-8655-a7c786c76a25"
+}

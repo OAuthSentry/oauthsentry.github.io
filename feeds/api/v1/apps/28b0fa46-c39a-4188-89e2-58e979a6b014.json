@@ -1,0 +1,12 @@
+{
+  "appid": "28b0fa46-c39a-4188-89e2-58e979a6b014",
+  "appname": "Common Data Service_7",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "28b0fa46-c39a-4188-89e2-58e979a6b014"
+}

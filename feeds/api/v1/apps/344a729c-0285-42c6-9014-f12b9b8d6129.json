@@ -1,0 +1,12 @@
+{
+  "appid": "344a729c-0285-42c6-9014-f12b9b8d6129",
+  "appname": "RoleAssignmentSchedule.Read.Directory - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "344a729c-0285-42c6-9014-f12b9b8d6129"
+}

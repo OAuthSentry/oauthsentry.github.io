@@ -1,0 +1,12 @@
+{
+  "appid": "5a54b8b3-347c-476d-8f8e-42d5c7424d29",
+  "appname": "Sites.FullControl.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5a54b8b3-347c-476d-8f8e-42d5c7424d29"
+}

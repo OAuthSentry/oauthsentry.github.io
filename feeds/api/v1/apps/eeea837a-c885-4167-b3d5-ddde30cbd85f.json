@@ -1,0 +1,12 @@
+{
+  "appid": "eeea837a-c885-4167-b3d5-ddde30cbd85f",
+  "appname": "Microsoft Dynamics CRM Online Instance_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "eeea837a-c885-4167-b3d5-ddde30cbd85f"
+}

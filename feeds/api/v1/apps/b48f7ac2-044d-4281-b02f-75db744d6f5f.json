@@ -1,0 +1,12 @@
+{
+  "appid": "b48f7ac2-044d-4281-b02f-75db744d6f5f",
+  "appname": "SecurityAnalyzedMessage.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b48f7ac2-044d-4281-b02f-75db744d6f5f"
+}

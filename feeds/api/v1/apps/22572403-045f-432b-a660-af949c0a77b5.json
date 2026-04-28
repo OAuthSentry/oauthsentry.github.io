@@ -1,0 +1,12 @@
+{
+  "appid": "22572403-045f-432b-a660-af949c0a77b5",
+  "appname": "Project P3 for Faculty",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "22572403-045f-432b-a660-af949c0a77b5"
+}

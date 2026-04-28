@@ -1,0 +1,12 @@
+{
+  "appid": "5b4ef465-7ea1-459a-9f91-033317755a51",
+  "appname": "Office 365 Planner for Government",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5b4ef465-7ea1-459a-9f91-033317755a51"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "673afb9d-d85b-40c2-914e-7bf46cd5cd75",
+  "appname": "Dynamics 365 Asset Management Addl Assets",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "673afb9d-d85b-40c2-914e-7bf46cd5cd75"
+}

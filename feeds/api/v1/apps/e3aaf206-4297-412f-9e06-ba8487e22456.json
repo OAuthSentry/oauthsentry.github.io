@@ -1,0 +1,12 @@
+{
+  "appid": "e3aaf206-4297-412f-9e06-ba8487e22456",
+  "appname": "Purview/sit-defn-poland-national-id",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e3aaf206-4297-412f-9e06-ba8487e22456"
+}

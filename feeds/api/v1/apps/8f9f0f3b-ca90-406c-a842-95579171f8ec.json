@@ -1,0 +1,12 @@
+{
+  "appid": "8f9f0f3b-ca90-406c-a842-95579171f8ec",
+  "appname": "Office for the Web for Government",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "8f9f0f3b-ca90-406c-a842-95579171f8ec"
+}

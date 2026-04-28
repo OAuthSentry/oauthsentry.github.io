@@ -1,0 +1,12 @@
+{
+  "appid": "375cd0ad-c407-49fd-866a-0bff4f8a9a4d",
+  "appname": "Power Automate RPA Attended",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "375cd0ad-c407-49fd-866a-0bff4f8a9a4d"
+}

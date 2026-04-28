@@ -1,0 +1,12 @@
+{
+  "appid": "74039b88-bd62-4b5c-9d9c-7a92bbc0bfdf",
+  "appname": "Office 365 F3_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "74039b88-bd62-4b5c-9d9c-7a92bbc0bfdf"
+}

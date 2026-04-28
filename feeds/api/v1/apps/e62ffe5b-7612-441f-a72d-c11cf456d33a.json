@@ -1,0 +1,12 @@
+{
+  "appid": "e62ffe5b-7612-441f-a72d-c11cf456d33a",
+  "appname": "Power Automate for Sales Pro for Government",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e62ffe5b-7612-441f-a72d-c11cf456d33a"
+}

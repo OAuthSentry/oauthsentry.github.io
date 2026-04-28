@@ -1,0 +1,12 @@
+{
+  "appid": "86e8f5dc-a6e9-4c67-9d15-de283e8eac25",
+  "appname": "Classic Storage Account Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "86e8f5dc-a6e9-4c67-9d15-de283e8eac25"
+}

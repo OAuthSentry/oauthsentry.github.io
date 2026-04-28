@@ -1,0 +1,12 @@
+{
+  "appid": "708b60a6-d253-4fe0-9114-4be4c00f012c",
+  "appname": "Custom workpace Policy ID 2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "708b60a6-d253-4fe0-9114-4be4c00f012c"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "493ff600-6a2b-4db6-ad37-a7d4eb214516",
+  "appname": "Microsoft Defender for Office 365 (Plan 1) for Government",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "493ff600-6a2b-4db6-ad37-a7d4eb214516"
+}

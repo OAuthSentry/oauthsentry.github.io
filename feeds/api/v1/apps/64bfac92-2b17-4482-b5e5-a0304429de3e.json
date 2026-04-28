@@ -1,0 +1,12 @@
+{
+  "appid": "64bfac92-2b17-4482-b5e5-a0304429de3e",
+  "appname": "Microsoft Endpoint DLP",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "64bfac92-2b17-4482-b5e5-a0304429de3e"
+}

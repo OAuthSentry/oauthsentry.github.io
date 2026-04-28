@@ -1,0 +1,12 @@
+{
+  "appid": "046f7d3b-9595-4685-a2e8-a2832d2b26aa",
+  "appname": "Privacy Management - risk GCC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "046f7d3b-9595-4685-a2e8-a2832d2b26aa"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "cad9c719-36e0-43c7-9506-6886f272d4f0",
+  "appname": "Power Virtual Agents for Customer Service Voice for Government",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "cad9c719-36e0-43c7-9506-6886f272d4f0"
+}

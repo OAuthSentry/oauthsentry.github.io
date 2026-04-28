@@ -1,0 +1,12 @@
+{
+  "appid": "395dfec1-a0b9-465f-a783-8250a430cb8c",
+  "appname": "TeamsTab.ReadWriteSelfForUser - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "395dfec1-a0b9-465f-a783-8250a430cb8c"
+}

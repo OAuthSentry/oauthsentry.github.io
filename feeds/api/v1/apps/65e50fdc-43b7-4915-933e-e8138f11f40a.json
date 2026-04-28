@@ -1,0 +1,12 @@
+{
+  "appid": "65e50fdc-43b7-4915-933e-e8138f11f40a",
+  "appname": "Sites.Manage.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "65e50fdc-43b7-4915-933e-e8138f11f40a"
+}

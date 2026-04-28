@@ -1,0 +1,12 @@
+{
+  "appid": "d39065c4-c120-43c9-ab0a-63eed9795f0a",
+  "appname": "Remote Rendering Client",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d39065c4-c120-43c9-ab0a-63eed9795f0a"
+}

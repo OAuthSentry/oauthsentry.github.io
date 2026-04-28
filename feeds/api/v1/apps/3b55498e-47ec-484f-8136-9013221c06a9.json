@@ -1,0 +1,12 @@
+{
+  "appid": "3b55498e-47ec-484f-8136-9013221c06a9",
+  "appname": "ChannelMember.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3b55498e-47ec-484f-8136-9013221c06a9"
+}

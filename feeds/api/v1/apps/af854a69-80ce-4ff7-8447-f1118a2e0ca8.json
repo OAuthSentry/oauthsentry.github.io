@@ -1,0 +1,12 @@
+{
+  "appid": "af854a69-80ce-4ff7-8447-f1118a2e0ca8",
+  "appname": "Health Bot Editor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "af854a69-80ce-4ff7-8447-f1118a2e0ca8"
+}

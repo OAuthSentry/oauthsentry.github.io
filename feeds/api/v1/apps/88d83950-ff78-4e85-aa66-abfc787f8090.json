@@ -1,0 +1,12 @@
+{
+  "appid": "88d83950-ff78-4e85-aa66-abfc787f8090",
+  "appname": "Dynamics 365 for Sales Professional",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "88d83950-ff78-4e85-aa66-abfc787f8090"
+}

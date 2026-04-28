@@ -1,0 +1,12 @@
+{
+  "appid": "a460366a-ade7-4791-b581-9fbff1bdaa85",
+  "appname": "Microsoft Teams Phone Standard for GCC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a460366a-ade7-4791-b581-9fbff1bdaa85"
+}

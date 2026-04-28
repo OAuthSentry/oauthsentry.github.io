@@ -1,0 +1,12 @@
+{
+  "appid": "1105e4ed-af1d-02ff-ffff-ffffffffffff",
+  "appname": "Egomet FIDO2 Authenticator for Android",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1105e4ed-af1d-02ff-ffff-ffffffffffff"
+}

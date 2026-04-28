@@ -1,0 +1,12 @@
+{
+  "appid": "6a1a91a6-19f9-4a37-b68b-9bed3f4e6595",
+  "appname": "Outlook Browser Extension",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6a1a91a6-19f9-4a37-b68b-9bed3f4e6595"
+}

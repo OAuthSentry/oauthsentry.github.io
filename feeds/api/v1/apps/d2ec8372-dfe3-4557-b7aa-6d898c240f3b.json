@@ -1,0 +1,12 @@
+{
+  "appid": "d2ec8372-dfe3-4557-b7aa-6d898c240f3b",
+  "appname": "Office MRO Device Manager Service",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d2ec8372-dfe3-4557-b7aa-6d898c240f3b"
+}

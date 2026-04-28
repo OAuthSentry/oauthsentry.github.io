@@ -1,0 +1,12 @@
+{
+  "appid": "cb2020b1-d8f6-41c0-9acd-8ff3d6d7831b",
+  "appname": "Microsoft Azure Multi-Factor Authentication_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "cb2020b1-d8f6-41c0-9acd-8ff3d6d7831b"
+}

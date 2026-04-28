@@ -1,0 +1,12 @@
+{
+  "appid": "49c7bc16-7004-4df6-8cd5-4ec48b7e9ea0",
+  "appname": "Project P3 for GOV",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "49c7bc16-7004-4df6-8cd5-4ec48b7e9ea0"
+}

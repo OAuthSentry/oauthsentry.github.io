@@ -1,0 +1,12 @@
+{
+  "appid": "18e40d4e-8d2e-438d-97e1-9528336e149c",
+  "appname": "Deployment Environments User",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "18e40d4e-8d2e-438d-97e1-9528336e149c"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "bf46a256-f47d-448f-ab78-f226fff08d40",
+  "appname": "VirtualAppointment.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "bf46a256-f47d-448f-ab78-f226fff08d40"
+}

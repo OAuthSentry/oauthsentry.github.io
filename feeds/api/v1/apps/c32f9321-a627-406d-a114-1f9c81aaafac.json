@@ -1,0 +1,12 @@
+{
+  "appid": "c32f9321-a627-406d-a114-1f9c81aaafac",
+  "appname": "Microsoft 365 Apps for Students",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c32f9321-a627-406d-a114-1f9c81aaafac"
+}

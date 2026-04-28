@@ -1,0 +1,12 @@
+{
+  "appid": "91c1777a-f3dc-4fae-b103-61d183457e46",
+  "appname": "Managed Services Registration assignment Delete Role",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "91c1777a-f3dc-4fae-b103-61d183457e46"
+}

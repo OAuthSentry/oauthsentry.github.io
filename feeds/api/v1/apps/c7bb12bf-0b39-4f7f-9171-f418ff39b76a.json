@@ -1,0 +1,12 @@
+{
+  "appid": "c7bb12bf-0b39-4f7f-9171-f418ff39b76a",
+  "appname": "Azure Lab Services principal ID (v2)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c7bb12bf-0b39-4f7f-9171-f418ff39b76a"
+}

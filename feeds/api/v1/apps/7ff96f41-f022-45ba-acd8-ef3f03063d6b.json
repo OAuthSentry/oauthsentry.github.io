@@ -1,0 +1,12 @@
+{
+  "appid": "7ff96f41-f022-45ba-acd8-ef3f03063d6b",
+  "appname": "OrgSettings-Todo.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "7ff96f41-f022-45ba-acd8-ef3f03063d6b"
+}

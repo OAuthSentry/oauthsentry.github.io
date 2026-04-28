@@ -1,0 +1,12 @@
+{
+  "appid": "b8bb2037-6e08-44ac-a4ea-4674e010e2a4",
+  "appname": "OnlineMeetings.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b8bb2037-6e08-44ac-a4ea-4674e010e2a4"
+}

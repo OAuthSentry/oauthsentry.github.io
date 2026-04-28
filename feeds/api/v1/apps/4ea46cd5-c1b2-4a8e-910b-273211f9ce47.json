@@ -1,0 +1,12 @@
+{
+  "appid": "4ea46cd5-c1b2-4a8e-910b-273211f9ce47",
+  "appname": "IoT Hub Registry Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4ea46cd5-c1b2-4a8e-910b-273211f9ce47"
+}

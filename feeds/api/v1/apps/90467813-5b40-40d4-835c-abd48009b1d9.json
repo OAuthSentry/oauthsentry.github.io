@@ -1,0 +1,12 @@
+{
+  "appid": "90467813-5b40-40d4-835c-abd48009b1d9",
+  "appname": "Asset Maintenance Add-in",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "90467813-5b40-40d4-835c-abd48009b1d9"
+}

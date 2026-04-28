@@ -1,0 +1,12 @@
+{
+  "appid": "35122886-cef5-44a3-ab36-97134eabd9ba",
+  "appname": "PowerApps per app baseline access_2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "35122886-cef5-44a3-ab36-97134eabd9ba"
+}

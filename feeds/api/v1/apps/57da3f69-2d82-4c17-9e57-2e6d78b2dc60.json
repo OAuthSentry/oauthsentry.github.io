@@ -1,0 +1,12 @@
+{
+  "appid": "57da3f69-2d82-4c17-9e57-2e6d78b2dc60",
+  "appname": "O365 Diagnostic Service",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "57da3f69-2d82-4c17-9e57-2e6d78b2dc60"
+}

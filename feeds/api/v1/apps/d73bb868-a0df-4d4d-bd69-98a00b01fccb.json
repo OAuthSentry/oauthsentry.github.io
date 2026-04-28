@@ -1,0 +1,12 @@
+{
+  "appid": "d73bb868-a0df-4d4d-bd69-98a00b01fccb",
+  "appname": "Classic Virtual Machine Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d73bb868-a0df-4d4d-bd69-98a00b01fccb"
+}

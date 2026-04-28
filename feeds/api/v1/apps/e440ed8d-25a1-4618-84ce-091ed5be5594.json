@@ -1,0 +1,12 @@
+{
+  "appid": "e440ed8d-25a1-4618-84ce-091ed5be5594",
+  "appname": "Add user to teams",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e440ed8d-25a1-4618-84ce-091ed5be5594"
+}

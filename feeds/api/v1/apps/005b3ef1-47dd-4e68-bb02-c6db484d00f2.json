@@ -1,0 +1,12 @@
+{
+  "appid": "005b3ef1-47dd-4e68-bb02-c6db484d00f2",
+  "appname": "Purview/sit-defn-croatia-drivers-license-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "005b3ef1-47dd-4e68-bb02-c6db484d00f2"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "cf7034ed-348f-42eb-8bbd-dddeea43ee81",
+  "appname": "Common Data Service for CCI Bots",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "cf7034ed-348f-42eb-8bbd-dddeea43ee81"
+}

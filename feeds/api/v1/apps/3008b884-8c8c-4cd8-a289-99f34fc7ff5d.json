@@ -1,0 +1,12 @@
+{
+  "appid": "3008b884-8c8c-4cd8-a289-99f34fc7ff5d",
+  "appname": "Purview/sit-defn-france-passport-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3008b884-8c8c-4cd8-a289-99f34fc7ff5d"
+}

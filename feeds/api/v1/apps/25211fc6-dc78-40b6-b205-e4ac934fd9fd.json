@@ -1,0 +1,12 @@
+{
+  "appid": "25211fc6-dc78-40b6-b205-e4ac934fd9fd",
+  "appname": "Azure Spring Apps Application Configuration Service Config File Pattern Reader Role",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "25211fc6-dc78-40b6-b205-e4ac934fd9fd"
+}

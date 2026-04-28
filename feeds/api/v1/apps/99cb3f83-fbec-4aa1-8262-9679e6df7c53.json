@@ -1,0 +1,12 @@
+{
+  "appid": "99cb3f83-fbec-4aa1-8262-9679e6df7c53",
+  "appname": "Dynamics 365 Guides vTrial_2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "99cb3f83-fbec-4aa1-8262-9679e6df7c53"
+}

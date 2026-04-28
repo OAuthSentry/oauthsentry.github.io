@@ -1,0 +1,12 @@
+{
+  "appid": "c3356c37-bba6-4067-b1a1-8c66e1c203a1",
+  "appname": "Dynamics 365 customer service custom action",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c3356c37-bba6-4067-b1a1-8c66e1c203a1"
+}

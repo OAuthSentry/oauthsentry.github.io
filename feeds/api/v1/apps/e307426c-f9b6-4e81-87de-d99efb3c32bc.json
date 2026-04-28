@@ -1,0 +1,12 @@
+{
+  "appid": "e307426c-f9b6-4e81-87de-d99efb3c32bc",
+  "appname": "Desktop Virtualization Host Pool Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e307426c-f9b6-4e81-87de-d99efb3c32bc"
+}

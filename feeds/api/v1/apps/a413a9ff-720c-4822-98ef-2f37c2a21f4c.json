@@ -1,0 +1,12 @@
+{
+  "appid": "a413a9ff-720c-4822-98ef-2f37c2a21f4c",
+  "appname": "Microsoft 365 Communication Compliance",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a413a9ff-720c-4822-98ef-2f37c2a21f4c"
+}

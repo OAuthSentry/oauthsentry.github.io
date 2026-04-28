@@ -1,0 +1,12 @@
+{
+  "appid": "cf7c76d2-98a3-4358-a134-615aa78bf44d",
+  "appname": "Compute Gallery Image Reader",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "cf7c76d2-98a3-4358-a134-615aa78bf44d"
+}

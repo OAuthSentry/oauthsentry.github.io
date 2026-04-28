@@ -1,0 +1,12 @@
+{
+  "appid": "f55016cc-149c-447e-8f21-7cf3ec1d6350",
+  "appname": "LicenseAssignment.ReadWrite.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f55016cc-149c-447e-8f21-7cf3ec1d6350"
+}

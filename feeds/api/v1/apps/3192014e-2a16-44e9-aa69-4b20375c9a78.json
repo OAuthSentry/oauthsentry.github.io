@@ -1,0 +1,12 @@
+{
+  "appid": "3192014e-2a16-44e9-aa69-4b20375c9a78",
+  "appname": "Purview/sit-defn-uk-national-health-service-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3192014e-2a16-44e9-aa69-4b20375c9a78"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "b3a31406-2a15-4c9a-b25b-a658fa5f07fc",
+  "appname": "Remove users from all groups",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b3a31406-2a15-4c9a-b25b-a658fa5f07fc"
+}

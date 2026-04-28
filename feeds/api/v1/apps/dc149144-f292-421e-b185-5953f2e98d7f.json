@@ -1,0 +1,12 @@
+{
+  "appid": "dc149144-f292-421e-b185-5953f2e98d7f",
+  "appname": "AppCatalog.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "dc149144-f292-421e-b185-5953f2e98d7f"
+}

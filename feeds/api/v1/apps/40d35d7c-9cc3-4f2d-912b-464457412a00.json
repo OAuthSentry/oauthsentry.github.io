@@ -1,0 +1,12 @@
+{
+  "appid": "40d35d7c-9cc3-4f2d-912b-464457412a00",
+  "appname": "ChatSettings.Read.Chat",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "40d35d7c-9cc3-4f2d-912b-464457412a00"
+}

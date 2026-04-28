@@ -1,0 +1,12 @@
+{
+  "appid": "3b1adb99-0dfe-46fd-90b8-7f7614a4de2a",
+  "appname": "GoTrust Idem Key FIDO2 Authenticator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3b1adb99-0dfe-46fd-90b8-7f7614a4de2a"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "bc257fb8-46b4-4b15-8713-01e91bfbe4ea",
+  "appname": "SecurityAlert.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "bc257fb8-46b4-4b15-8713-01e91bfbe4ea"
+}

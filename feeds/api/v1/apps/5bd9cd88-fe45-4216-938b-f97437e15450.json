@@ -1,0 +1,12 @@
+{
+  "appid": "5bd9cd88-fe45-4216-938b-f97437e15450",
+  "appname": "DocumentDB Account Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5bd9cd88-fe45-4216-938b-f97437e15450"
+}

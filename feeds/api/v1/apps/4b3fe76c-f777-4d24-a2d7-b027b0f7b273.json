@@ -1,0 +1,12 @@
+{
+  "appid": "4b3fe76c-f777-4d24-a2d7-b027b0f7b273",
+  "appname": "Azure Stack HCI VM Reader",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4b3fe76c-f777-4d24-a2d7-b027b0f7b273"
+}

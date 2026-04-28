@@ -1,0 +1,12 @@
+{
+  "appid": "908de74d-f8b2-4d6b-a9ed-2a17b3b78179",
+  "appname": "TeamsAppInstallation.ReadWriteSelfForUser.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "908de74d-f8b2-4d6b-a9ed-2a17b3b78179"
+}

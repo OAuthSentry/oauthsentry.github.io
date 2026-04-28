@@ -1,0 +1,12 @@
+{
+  "appid": "798ee544-9d2d-430c-a058-570e29e34338",
+  "appname": "Calendars.Read - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "798ee544-9d2d-430c-a058-570e29e34338"
+}

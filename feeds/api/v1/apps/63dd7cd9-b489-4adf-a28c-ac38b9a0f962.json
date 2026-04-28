@@ -1,0 +1,12 @@
+{
+  "appid": "63dd7cd9-b489-4adf-a28c-ac38b9a0f962",
+  "appname": "User.Invite.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "63dd7cd9-b489-4adf-a28c-ac38b9a0f962"
+}

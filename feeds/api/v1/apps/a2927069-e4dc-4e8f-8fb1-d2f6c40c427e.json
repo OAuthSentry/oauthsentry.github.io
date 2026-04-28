@@ -1,0 +1,12 @@
+{
+  "appid": "a2927069-e4dc-4e8f-8fb1-d2f6c40c427e",
+  "appname": "View ID for import data in model-driven apps",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a2927069-e4dc-4e8f-8fb1-d2f6c40c427e"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "cb2ff863-7f30-4ced-ab89-a00194bcf6d9",
+  "appname": "Azure AI Studio app",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "cb2ff863-7f30-4ced-ab89-a00194bcf6d9"
+}

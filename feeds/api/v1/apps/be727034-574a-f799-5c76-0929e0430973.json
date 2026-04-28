@@ -1,0 +1,12 @@
+{
+  "appid": "be727034-574a-f799-5c76-0929e0430973",
+  "appname": "Crayonic KeyVault K1 (USB-NFC-BLE FIDO2 Authenticator)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "be727034-574a-f799-5c76-0929e0430973"
+}

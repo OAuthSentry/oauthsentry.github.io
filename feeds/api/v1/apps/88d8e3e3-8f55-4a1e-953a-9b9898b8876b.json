@@ -1,0 +1,12 @@
+{
+  "appid": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
+  "appname": "Directory Readers",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+}

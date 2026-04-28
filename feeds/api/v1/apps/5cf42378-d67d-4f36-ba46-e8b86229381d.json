@@ -1,0 +1,12 @@
+{
+  "appid": "5cf42378-d67d-4f36-ba46-e8b86229381d",
+  "appname": "Password Rule Settings",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5cf42378-d67d-4f36-ba46-e8b86229381d"
+}

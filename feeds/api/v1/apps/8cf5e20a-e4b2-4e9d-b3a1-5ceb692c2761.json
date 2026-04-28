@@ -1,0 +1,12 @@
+{
+  "appid": "8cf5e20a-e4b2-4e9d-b3a1-5ceb692c2761",
+  "appname": "SignalR/Web PubSub Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "8cf5e20a-e4b2-4e9d-b3a1-5ceb692c2761"
+}

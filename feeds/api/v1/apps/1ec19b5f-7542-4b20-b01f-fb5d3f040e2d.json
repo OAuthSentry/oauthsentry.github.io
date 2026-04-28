@@ -1,0 +1,12 @@
+{
+  "appid": "1ec19b5f-7542-4b20-b01f-fb5d3f040e2d",
+  "appname": "Dynamics 365 for Project Service Automation Enterprise Edition for Government",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1ec19b5f-7542-4b20-b01f-fb5d3f040e2d"
+}

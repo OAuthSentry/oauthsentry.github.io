@@ -1,0 +1,12 @@
+{
+  "appid": "75f4cc8a-a68e-49e5-89ce-fa8f03d286a5",
+  "appname": "Purview/azure-publish-setting-password",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "75f4cc8a-a68e-49e5-89ce-fa8f03d286a5"
+}

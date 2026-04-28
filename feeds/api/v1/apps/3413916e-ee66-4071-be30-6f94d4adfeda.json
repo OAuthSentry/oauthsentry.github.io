@@ -1,0 +1,12 @@
+{
+  "appid": "3413916e-ee66-4071-be30-6f94d4adfeda",
+  "appname": "MICROSOFT DYNAMICS MARKETING SALES COLLABORATION - ELIGIBILITY CRITERIA APPLY",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3413916e-ee66-4071-be30-6f94d4adfeda"
+}

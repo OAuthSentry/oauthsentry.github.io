@@ -1,0 +1,12 @@
+{
+  "appid": "153f85dd-d912-4762-af6c-d6e0fb4f6692",
+  "appname": "SharePoint Plan 2G",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "153f85dd-d912-4762-af6c-d6e0fb4f6692"
+}

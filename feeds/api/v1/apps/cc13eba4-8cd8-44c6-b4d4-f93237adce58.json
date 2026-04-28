@@ -1,0 +1,12 @@
+{
+  "appid": "cc13eba4-8cd8-44c6-b4d4-f93237adce58",
+  "appname": "DelegatedAdminRelationship.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "cc13eba4-8cd8-44c6-b4d4-f93237adce58"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "bf3fbf03-f35f-4e93-963e-47e4d874c37a",
+  "appname": "TeamsAppInstallation.ReadForChat - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "bf3fbf03-f35f-4e93-963e-47e4d874c37a"
+}

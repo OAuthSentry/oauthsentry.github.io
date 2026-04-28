@@ -1,0 +1,12 @@
+{
+  "appid": "882e1d05-acd1-4ccb-8708-6ee03664b117",
+  "appname": "Mobile Device Management for Office 365",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "882e1d05-acd1-4ccb-8708-6ee03664b117"
+}

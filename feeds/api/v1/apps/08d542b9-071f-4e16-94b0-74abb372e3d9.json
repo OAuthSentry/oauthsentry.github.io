@@ -1,0 +1,12 @@
+{
+  "appid": "08d542b9-071f-4e16-94b0-74abb372e3d9",
+  "appname": "Group.Unified.Guest",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "08d542b9-071f-4e16-94b0-74abb372e3d9"
+}

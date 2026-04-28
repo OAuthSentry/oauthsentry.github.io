@@ -1,0 +1,12 @@
+{
+  "appid": "6670b86e-a3f7-4917-ac9b-5d6ab1be4567",
+  "appname": "Site Recovery Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6670b86e-a3f7-4917-ac9b-5d6ab1be4567"
+}

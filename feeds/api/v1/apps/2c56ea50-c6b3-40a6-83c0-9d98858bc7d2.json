@@ -1,0 +1,12 @@
+{
+  "appid": "2c56ea50-c6b3-40a6-83c0-9d98858bc7d2",
+  "appname": "Schema Registry Reader (Preview)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2c56ea50-c6b3-40a6-83c0-9d98858bc7d2"
+}

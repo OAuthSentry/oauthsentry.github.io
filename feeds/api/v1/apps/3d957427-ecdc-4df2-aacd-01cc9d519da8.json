@@ -1,0 +1,12 @@
+{
+  "appid": "3d957427-ecdc-4df2-aacd-01cc9d519da8",
+  "appname": "Microsoft Workplace Analytics_2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3d957427-ecdc-4df2-aacd-01cc9d519da8"
+}

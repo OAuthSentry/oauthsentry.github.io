@@ -1,0 +1,12 @@
+{
+  "appid": "c9d51f28-8ccd-42b2-a836-fd8fe9ebf2ae",
+  "appname": "IndustryData-TimePeriod.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c9d51f28-8ccd-42b2-a836-fd8fe9ebf2ae"
+}

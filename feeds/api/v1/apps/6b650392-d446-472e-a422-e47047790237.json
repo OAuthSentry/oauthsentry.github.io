@@ -1,0 +1,12 @@
+{
+  "appid": "6b650392-d446-472e-a422-e47047790237",
+  "appname": "Power Platform Insights and Recommendations Prod [Community Contributed]",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=GitHub)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6b650392-d446-472e-a422-e47047790237"
+}

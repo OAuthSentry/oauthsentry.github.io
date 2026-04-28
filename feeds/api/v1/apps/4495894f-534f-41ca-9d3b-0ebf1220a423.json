@@ -1,0 +1,12 @@
+{
+  "appid": "4495894f-534f-41ca-9d3b-0ebf1220a423",
+  "appname": "OneDrive for Business (Basic 2)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4495894f-534f-41ca-9d3b-0ebf1220a423"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "ad7a56e0-6903-4d13-94f3-5ad491e78960",
+  "appname": "Microsoft Defender Vulnerability Management Add-on",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ad7a56e0-6903-4d13-94f3-5ad491e78960"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "2194b428-9397-4046-8f39-007a1605a482",
+  "appname": "IDPrime 931 Fido",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2194b428-9397-4046-8f39-007a1605a482"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "90bbca0b-227c-4cdc-8083-1c6cfb95bac6",
+  "appname": "Policy.ReadWrite.FedTokenValidation - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "90bbca0b-227c-4cdc-8083-1c6cfb95bac6"
+}

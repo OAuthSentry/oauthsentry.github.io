@@ -1,0 +1,12 @@
+{
+  "appid": "24435e4b-87d0-4d7d-8beb-63a9b1573022",
+  "appname": "Field Service â Automated Routing Engine Add-On",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "24435e4b-87d0-4d7d-8beb-63a9b1573022"
+}

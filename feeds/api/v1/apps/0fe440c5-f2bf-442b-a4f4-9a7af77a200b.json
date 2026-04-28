@@ -1,0 +1,12 @@
+{
+  "appid": "0fe440c5-f2bf-442b-a4f4-9a7af77a200b",
+  "appname": "Clipchamp Premium",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "0fe440c5-f2bf-442b-a4f4-9a7af77a200b"
+}

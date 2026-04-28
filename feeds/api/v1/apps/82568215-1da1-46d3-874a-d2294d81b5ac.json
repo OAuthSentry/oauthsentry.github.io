@@ -1,0 +1,12 @@
+{
+  "appid": "82568215-1da1-46d3-874a-d2294d81b5ac",
+  "appname": "Purview/sit-defn-greece-national-id-card",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "82568215-1da1-46d3-874a-d2294d81b5ac"
+}

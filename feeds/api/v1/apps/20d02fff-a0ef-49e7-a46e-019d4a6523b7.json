@@ -1,0 +1,12 @@
+{
+  "appid": "20d02fff-a0ef-49e7-a46e-019d4a6523b7",
+  "appname": "VirtualAppointmentNotification.Send - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "20d02fff-a0ef-49e7-a46e-019d4a6523b7"
+}

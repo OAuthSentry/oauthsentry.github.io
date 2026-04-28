@@ -1,0 +1,12 @@
+{
+  "appid": "f526a384-b230-433a-b45c-95f59c4a2dec",
+  "appname": "Azure Event Hubs Data Owner",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f526a384-b230-433a-b45c-95f59c4a2dec"
+}

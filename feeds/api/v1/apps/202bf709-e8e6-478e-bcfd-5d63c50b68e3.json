@@ -1,0 +1,12 @@
+{
+  "appid": "202bf709-e8e6-478e-bcfd-5d63c50b68e3",
+  "appname": "WorkforceIntegration.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "202bf709-e8e6-478e-bcfd-5d63c50b68e3"
+}

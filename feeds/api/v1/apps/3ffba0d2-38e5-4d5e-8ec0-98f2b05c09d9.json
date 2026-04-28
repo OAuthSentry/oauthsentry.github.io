@@ -1,0 +1,12 @@
+{
+  "appid": "3ffba0d2-38e5-4d5e-8ec0-98f2b05c09d9",
+  "appname": "Microsoft Stream for O365 K SKU",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3ffba0d2-38e5-4d5e-8ec0-98f2b05c09d9"
+}

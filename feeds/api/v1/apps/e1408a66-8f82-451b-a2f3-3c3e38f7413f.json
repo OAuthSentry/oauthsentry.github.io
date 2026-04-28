@@ -1,0 +1,12 @@
+{
+  "appid": "e1408a66-8f82-451b-a2f3-3c3e38f7413f",
+  "appname": "TeamsAppInstallation.ReadWriteAndConsentForChat - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e1408a66-8f82-451b-a2f3-3c3e38f7413f"
+}

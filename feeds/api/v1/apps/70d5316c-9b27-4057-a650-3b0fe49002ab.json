@@ -1,0 +1,12 @@
+{
+  "appid": "70d5316c-9b27-4057-a650-3b0fe49002ab",
+  "appname": "Owner.Read.Group",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "70d5316c-9b27-4057-a650-3b0fe49002ab"
+}

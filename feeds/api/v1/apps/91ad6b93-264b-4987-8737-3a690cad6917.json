@@ -1,0 +1,12 @@
+{
+  "appid": "91ad6b93-264b-4987-8737-3a690cad6917",
+  "appname": "Token Ring FIDO2 Authenticator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "91ad6b93-264b-4987-8737-3a690cad6917"
+}

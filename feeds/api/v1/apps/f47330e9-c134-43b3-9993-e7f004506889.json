@@ -1,0 +1,12 @@
+{
+  "appid": "f47330e9-c134-43b3-9993-e7f004506889",
+  "appname": "Microsoft 365 Phone Standard Resource Account",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f47330e9-c134-43b3-9993-e7f004506889"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "c880d6fb-5c66-49ef-9cf5-e53e31900be5",
+  "appname": "Azure Communication Services app ID",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c880d6fb-5c66-49ef-9cf5-e53e31900be5"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "9193e2e8-7f8c-43c1-a274-ac40d651936f",
+  "appname": "Purview/sit-defn-cyprus-passport-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9193e2e8-7f8c-43c1-a274-ac40d651936f"
+}

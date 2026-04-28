@@ -1,0 +1,12 @@
+{
+  "appid": "dcf9d2f4-772e-4434-b757-77a453cfbc02",
+  "appname": "Avatars for Teams",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "dcf9d2f4-772e-4434-b757-77a453cfbc02"
+}

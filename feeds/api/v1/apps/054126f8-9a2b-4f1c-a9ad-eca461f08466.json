@@ -1,0 +1,12 @@
+{
+  "appid": "054126f8-9a2b-4f1c-a9ad-eca461f08466",
+  "appname": "Media Services Account Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "054126f8-9a2b-4f1c-a9ad-eca461f08466"
+}

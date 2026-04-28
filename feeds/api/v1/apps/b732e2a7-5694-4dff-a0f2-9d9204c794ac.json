@@ -1,0 +1,12 @@
+{
+  "appid": "b732e2a7-5694-4dff-a0f2-9d9204c794ac",
+  "appname": "Project Plan 5 without Project Client for Faculty",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b732e2a7-5694-4dff-a0f2-9d9204c794ac"
+}

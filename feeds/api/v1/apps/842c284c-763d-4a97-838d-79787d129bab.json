@@ -1,0 +1,12 @@
+{
+  "appid": "842c284c-763d-4a97-838d-79787d129bab",
+  "appname": "ShortNotes.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "842c284c-763d-4a97-838d-79787d129bab"
+}

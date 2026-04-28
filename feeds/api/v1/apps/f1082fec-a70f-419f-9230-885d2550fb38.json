@@ -1,0 +1,12 @@
+{
+  "appid": "f1082fec-a70f-419f-9230-885d2550fb38",
+  "appname": "Health Bot Admin",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f1082fec-a70f-419f-9230-885d2550fb38"
+}

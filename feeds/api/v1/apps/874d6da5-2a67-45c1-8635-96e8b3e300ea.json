@@ -1,0 +1,12 @@
+{
+  "appid": "874d6da5-2a67-45c1-8635-96e8b3e300ea",
+  "appname": "Dynamics 365 for Retail Trial",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "874d6da5-2a67-45c1-8635-96e8b3e300ea"
+}

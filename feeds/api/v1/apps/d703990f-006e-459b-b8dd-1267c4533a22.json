@@ -1,0 +1,12 @@
+{
+  "appid": "d703990f-006e-459b-b8dd-1267c4533a22",
+  "appname": "Dynamics 365 Fraud Protection - Purchase Protection",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d703990f-006e-459b-b8dd-1267c4533a22"
+}

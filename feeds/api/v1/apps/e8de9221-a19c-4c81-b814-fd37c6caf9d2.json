@@ -1,0 +1,12 @@
+{
+  "appid": "e8de9221-a19c-4c81-b814-fd37c6caf9d2",
+  "appname": "Azure Spring Apps resource provider",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e8de9221-a19c-4c81-b814-fd37c6caf9d2"
+}

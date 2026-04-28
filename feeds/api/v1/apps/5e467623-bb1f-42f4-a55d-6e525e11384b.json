@@ -1,0 +1,12 @@
+{
+  "appid": "5e467623-bb1f-42f4-a55d-6e525e11384b",
+  "appname": "Backup Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5e467623-bb1f-42f4-a55d-6e525e11384b"
+}

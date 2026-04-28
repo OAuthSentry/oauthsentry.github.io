@@ -1,0 +1,12 @@
+{
+  "appid": "fcf91098-03e3-41a9-b5ba-6f0ec8188a12",
+  "appname": "Teams Communications Support Specialist",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "fcf91098-03e3-41a9-b5ba-6f0ec8188a12"
+}

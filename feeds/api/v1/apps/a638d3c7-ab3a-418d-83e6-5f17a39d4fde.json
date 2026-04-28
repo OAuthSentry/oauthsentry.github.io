@@ -1,0 +1,12 @@
+{
+  "appid": "a638d3c7-ab3a-418d-83e6-5f17a39d4fde",
+  "appname": "Azure Event Hubs Data Receiver",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a638d3c7-ab3a-418d-83e6-5f17a39d4fde"
+}

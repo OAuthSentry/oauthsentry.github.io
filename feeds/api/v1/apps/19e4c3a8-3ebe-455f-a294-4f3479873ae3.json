@@ -1,0 +1,12 @@
+{
+  "appid": "19e4c3a8-3ebe-455f-a294-4f3479873ae3",
+  "appname": "Power Virtual Agents for Chat",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "19e4c3a8-3ebe-455f-a294-4f3479873ae3"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "df67dcdb-c37d-46af-88e1-8b97951ca1c2",
+  "appname": "LUIS app ID",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "df67dcdb-c37d-46af-88e1-8b97951ca1c2"
+}

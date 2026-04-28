@@ -1,0 +1,12 @@
+{
+  "appid": "ff12f884-c20a-4189-b185-34c8e7258d47",
+  "appname": "Purview/sit-defn-croatia-identity-card-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ff12f884-c20a-4189-b185-34c8e7258d47"
+}

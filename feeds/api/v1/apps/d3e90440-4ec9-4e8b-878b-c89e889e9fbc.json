@@ -1,0 +1,12 @@
+{
+  "appid": "d3e90440-4ec9-4e8b-878b-c89e889e9fbc",
+  "appname": "Split Experimentation Resource Provider ID",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d3e90440-4ec9-4e8b-878b-c89e889e9fbc"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "bfc1bbd9-981b-4f71-9b82-17c35fd0e2a4",
+  "appname": "Microsoft Defender for Business",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "bfc1bbd9-981b-4f71-9b82-17c35fd0e2a4"
+}

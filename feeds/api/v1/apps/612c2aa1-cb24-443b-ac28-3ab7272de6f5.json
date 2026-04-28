@@ -1,0 +1,12 @@
+{
+  "appid": "612c2aa1-cb24-443b-ac28-3ab7272de6f5",
+  "appname": "Security Assessment Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "612c2aa1-cb24-443b-ac28-3ab7272de6f5"
+}

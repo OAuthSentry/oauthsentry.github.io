@@ -1,0 +1,12 @@
+{
+  "appid": "490f32fd-d90f-4dd7-a601-ff6cdc1a3f6c",
+  "appname": "PrintSettings.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "490f32fd-d90f-4dd7-a601-ff6cdc1a3f6c"
+}

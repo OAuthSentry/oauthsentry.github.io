@@ -1,0 +1,12 @@
+{
+  "appid": "7a2200b5-aacf-4e3c-ab36-136d3e68b7da",
+  "appname": "Purview/sit-defn-greece-drivers-license-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "7a2200b5-aacf-4e3c-ab36-136d3e68b7da"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "e53d92fc-778b-4a8b-83de-791240ebf88d",
+  "appname": "Power BI Premium Per User for Government_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e53d92fc-778b-4a8b-83de-791240ebf88d"
+}

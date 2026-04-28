@@ -1,0 +1,12 @@
+{
+  "appid": "a6e407da-7411-4397-8a2e-d9b52780849e",
+  "appname": "Microsoft Tunnel for Mobile Application Management",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a6e407da-7411-4397-8a2e-d9b52780849e"
+}

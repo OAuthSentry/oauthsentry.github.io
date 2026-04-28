@@ -1,0 +1,12 @@
+{
+  "appid": "6931bccd-447a-43d1-b442-00a195474933",
+  "appname": "MailboxSettings.ReadWrite - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6931bccd-447a-43d1-b442-00a195474933"
+}

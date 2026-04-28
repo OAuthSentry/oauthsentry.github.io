@@ -1,0 +1,12 @@
+{
+  "appid": "7d307522-aa38-4cd0-bd60-90c6f0ac50bd",
+  "appname": "SearchConfiguration.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "7d307522-aa38-4cd0-bd60-90c6f0ac50bd"
+}

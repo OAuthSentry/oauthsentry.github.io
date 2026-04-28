@@ -1,0 +1,12 @@
+{
+  "appid": "d0a58670-a05d-4f4d-936b-c7c8af7bf388",
+  "appname": "SharePoint on-premises",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d0a58670-a05d-4f4d-936b-c7c8af7bf388"
+}

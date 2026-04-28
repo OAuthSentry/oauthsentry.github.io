@@ -1,0 +1,12 @@
+{
+  "appid": "3356946c-6bb7-449b-b253-6ffa419c0ce7",
+  "appname": "Purview/sit-defn-international-classification-of-diseases-icd-10-cm",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3356946c-6bb7-449b-b253-6ffa419c0ce7"
+}

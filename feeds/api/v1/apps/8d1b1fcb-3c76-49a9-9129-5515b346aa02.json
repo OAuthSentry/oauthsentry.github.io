@@ -1,0 +1,12 @@
+{
+  "appid": "8d1b1fcb-3c76-49a9-9129-5515b346aa02",
+  "appname": "IDEMIA ID-ONE Card",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "8d1b1fcb-3c76-49a9-9129-5515b346aa02"
+}

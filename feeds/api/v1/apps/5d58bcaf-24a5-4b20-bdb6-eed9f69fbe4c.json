@@ -1,0 +1,12 @@
+{
+  "appid": "5d58bcaf-24a5-4b20-bdb6-eed9f69fbe4c",
+  "appname": "Management Group Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5d58bcaf-24a5-4b20-bdb6-eed9f69fbe4c"
+}

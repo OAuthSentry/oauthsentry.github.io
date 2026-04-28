@@ -1,0 +1,12 @@
+{
+  "appid": "eb18b715-ea9d-4290-9994-2ebf4b5042d2",
+  "appname": "Dynamics 365 for Customer Service Enterprise Attach to Qualifying Dynamics 365 Base Offer A",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "eb18b715-ea9d-4290-9994-2ebf4b5042d2"
+}

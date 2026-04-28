@@ -1,0 +1,12 @@
+{
+  "appid": "b1aeb897-3a19-46e2-8c27-a609413cf193",
+  "appname": "SharePoint KioskG",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b1aeb897-3a19-46e2-8c27-a609413cf193"
+}

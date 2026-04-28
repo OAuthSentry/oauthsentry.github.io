@@ -1,0 +1,12 @@
+{
+  "appid": "59fb5884-fdec-40bf-aa7f-89e2bae79a7a",
+  "appname": "Microsoft Forms (Plan F1) for GCCHigh",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "59fb5884-fdec-40bf-aa7f-89e2bae79a7a"
+}

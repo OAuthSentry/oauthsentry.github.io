@@ -1,0 +1,12 @@
+{
+  "appid": "a5f38206-2f48-4d83-9957-525f4e75e9c0",
+  "appname": "IoT Intelligence Add-in Additional Machines",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a5f38206-2f48-4d83-9957-525f4e75e9c0"
+}

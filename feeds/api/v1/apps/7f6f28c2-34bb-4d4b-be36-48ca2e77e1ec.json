@@ -1,0 +1,12 @@
+{
+  "appid": "7f6f28c2-34bb-4d4b-be36-48ca2e77e1ec",
+  "appname": "Project for Office (Plan F)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "7f6f28c2-34bb-4d4b-be36-48ca2e77e1ec"
+}

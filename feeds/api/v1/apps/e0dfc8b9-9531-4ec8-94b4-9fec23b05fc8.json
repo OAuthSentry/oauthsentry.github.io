@@ -1,0 +1,12 @@
+{
+  "appid": "e0dfc8b9-9531-4ec8-94b4-9fec23b05fc8",
+  "appname": "Microsoft Teams Exploratory Dept",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e0dfc8b9-9531-4ec8-94b4-9fec23b05fc8"
+}

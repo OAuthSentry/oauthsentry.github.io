@@ -1,0 +1,12 @@
+{
+  "appid": "b56e7ccc-d5c7-421f-a23b-5c18bdbad7c0",
+  "appname": "Dynamics 365 Talent: Onboard",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b56e7ccc-d5c7-421f-a23b-5c18bdbad7c0"
+}

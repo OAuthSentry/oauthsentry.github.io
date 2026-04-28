@@ -1,0 +1,12 @@
+{
+  "appid": "e425b9f6-1543-45a0-8efb-f8fdaf18cba1",
+  "appname": "Virtual Agent Base for GCC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e425b9f6-1543-45a0-8efb-f8fdaf18cba1"
+}

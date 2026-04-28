@@ -1,0 +1,12 @@
+{
+  "appid": "f85945f4-7a55-4009-bc39-6a5f14a8eac1",
+  "appname": "VISIO DESKTOP APP FOR Government",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f85945f4-7a55-4009-bc39-6a5f14a8eac1"
+}

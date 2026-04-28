@@ -1,0 +1,12 @@
+{
+  "appid": "235b7976-7bbe-4df5-bb40-08678e749d1a",
+  "appname": "Purview/sit-defn-slovenia-passport-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "235b7976-7bbe-4df5-bb40-08678e749d1a"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "26d45bd9-adf1-46cd-a9e1-51e9a5524128",
+  "appname": "Office 365 E5 Without Audio Conferencing",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "26d45bd9-adf1-46cd-a9e1-51e9a5524128"
+}

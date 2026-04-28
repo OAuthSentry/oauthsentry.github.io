@@ -1,0 +1,12 @@
+{
+  "appid": "12f4bffb-b598-413c-984b-db99728f8b54",
+  "appname": "InformationProtectionConfig.Read - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "12f4bffb-b598-413c-984b-db99728f8b54"
+}

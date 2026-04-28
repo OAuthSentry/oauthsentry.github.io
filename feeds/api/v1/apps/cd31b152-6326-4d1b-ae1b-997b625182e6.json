@@ -1,0 +1,12 @@
+{
+  "appid": "cd31b152-6326-4d1b-ae1b-997b625182e6",
+  "appname": "Data Classification in Microsoft 365",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "cd31b152-6326-4d1b-ae1b-997b625182e6"
+}

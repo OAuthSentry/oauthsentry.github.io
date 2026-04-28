@@ -1,0 +1,12 @@
+{
+  "appid": "22926164-76b3-42b3-bc55-97df8dab3e41",
+  "appname": "Grafana Admin",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "22926164-76b3-42b3-bc55-97df8dab3e41"
+}

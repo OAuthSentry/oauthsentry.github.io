@@ -1,0 +1,12 @@
+{
+  "appid": "100d58b1-0a35-4fb1-aa89-e4a86fb53fcc",
+  "appname": "Purview/sit-defn-bulgaria-uniform-civil-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "100d58b1-0a35-4fb1-aa89-e4a86fb53fcc"
+}

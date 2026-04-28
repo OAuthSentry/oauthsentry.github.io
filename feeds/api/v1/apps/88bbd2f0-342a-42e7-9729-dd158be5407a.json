@@ -1,0 +1,12 @@
+{
+  "appid": "88bbd2f0-342a-42e7-9729-dd158be5407a",
+  "appname": "Precision InnaIT Key FIDO 2 Level 2 certified",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "88bbd2f0-342a-42e7-9729-dd158be5407a"
+}

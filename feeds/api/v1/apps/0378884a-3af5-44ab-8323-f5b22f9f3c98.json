@@ -1,0 +1,12 @@
+{
+  "appid": "0378884a-3af5-44ab-8323-f5b22f9f3c98",
+  "appname": "Device Update Content Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "0378884a-3af5-44ab-8323-f5b22f9f3c98"
+}

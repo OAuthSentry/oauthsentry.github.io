@@ -1,0 +1,12 @@
+{
+  "appid": "e5bb877f-6ac9-4461-9e43-ca581543ab16",
+  "appname": "SHAREPOINTSTORAGE",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e5bb877f-6ac9-4461-9e43-ca581543ab16"
+}

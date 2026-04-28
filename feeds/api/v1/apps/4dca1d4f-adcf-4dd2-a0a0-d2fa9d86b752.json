@@ -1,0 +1,12 @@
+{
+  "appid": "4dca1d4f-adcf-4dd2-a0a0-d2fa9d86b752",
+  "appname": "O365 Suite UX",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4dca1d4f-adcf-4dd2-a0a0-d2fa9d86b752"
+}

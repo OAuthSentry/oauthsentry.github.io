@@ -1,0 +1,12 @@
+{
+  "appid": "b0f54661-2d74-4c50-afa3-1ec803f12efe",
+  "appname": "Billing Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b0f54661-2d74-4c50-afa3-1ec803f12efe"
+}

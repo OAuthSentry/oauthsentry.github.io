@@ -1,0 +1,12 @@
+{
+  "appid": "a7264617-510b-434b-a828-9731dc254ea7",
+  "appname": "Storage File Data SMB Share Elevated Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a7264617-510b-434b-a828-9731dc254ea7"
+}

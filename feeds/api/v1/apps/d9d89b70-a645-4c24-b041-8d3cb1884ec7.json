@@ -1,0 +1,12 @@
+{
+  "appid": "d9d89b70-a645-4c24-b041-8d3cb1884ec7",
+  "appname": "Intune for Education_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d9d89b70-a645-4c24-b041-8d3cb1884ec7"
+}

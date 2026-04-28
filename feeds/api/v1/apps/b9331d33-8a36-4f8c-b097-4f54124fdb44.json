@@ -1,0 +1,12 @@
+{
+  "appid": "b9331d33-8a36-4f8c-b097-4f54124fdb44",
+  "appname": "Managed Applications Reader",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b9331d33-8a36-4f8c-b097-4f54124fdb44"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "e8f81a67-bd96-4074-b108-cf193eb9433b",
+  "appname": "Exchange Online Essentials",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e8f81a67-bd96-4074-b108-cf193eb9433b"
+}

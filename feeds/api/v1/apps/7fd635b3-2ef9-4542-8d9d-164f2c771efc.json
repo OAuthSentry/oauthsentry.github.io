@@ -1,0 +1,12 @@
+{
+  "appid": "7fd635b3-2ef9-4542-8d9d-164f2c771efc",
+  "appname": "AAGUID for the macOS Platform Credential",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "7fd635b3-2ef9-4542-8d9d-164f2c771efc"
+}

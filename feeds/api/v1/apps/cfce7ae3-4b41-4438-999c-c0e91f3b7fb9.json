@@ -1,0 +1,12 @@
+{
+  "appid": "cfce7ae3-4b41-4438-999c-c0e91f3b7fb9",
+  "appname": "Specialty devices",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "cfce7ae3-4b41-4438-999c-c0e91f3b7fb9"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "5f00fd34-f302-417f-81ef-1adda179d8fd",
+  "appname": "Microsoft Forms Web",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5f00fd34-f302-417f-81ef-1adda179d8fd"
+}

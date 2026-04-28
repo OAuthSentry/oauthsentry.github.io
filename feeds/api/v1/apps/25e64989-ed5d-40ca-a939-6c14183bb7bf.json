@@ -1,0 +1,12 @@
+{
+  "appid": "25e64989-ed5d-40ca-a939-6c14183bb7bf",
+  "appname": "Purview/sit-defn-poland-identity-card",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "25e64989-ed5d-40ca-a939-6c14183bb7bf"
+}

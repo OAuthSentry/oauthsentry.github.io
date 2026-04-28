@@ -1,0 +1,12 @@
+{
+  "appid": "4c7bfc34-8dd1-421d-8fb7-6c6182c2af03",
+  "appname": "Purview/sit-defn-taiwan-national-identification-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4c7bfc34-8dd1-421d-8fb7-6c6182c2af03"
+}

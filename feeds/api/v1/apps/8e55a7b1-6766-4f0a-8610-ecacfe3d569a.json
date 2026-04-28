@@ -1,0 +1,12 @@
+{
+  "appid": "8e55a7b1-6766-4f0a-8610-ecacfe3d569a",
+  "appname": "Microsoft Teams Copilot Bot [Community Contributed]",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=GitHub)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "8e55a7b1-6766-4f0a-8610-ecacfe3d569a"
+}

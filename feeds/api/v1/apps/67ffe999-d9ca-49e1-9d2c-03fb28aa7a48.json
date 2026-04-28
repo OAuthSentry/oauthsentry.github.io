@@ -1,0 +1,12 @@
+{
+  "appid": "67ffe999-d9ca-49e1-9d2c-03fb28aa7a48",
+  "appname": "Microsoft 365 F5 Security Add-on",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "67ffe999-d9ca-49e1-9d2c-03fb28aa7a48"
+}

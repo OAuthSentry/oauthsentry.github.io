@@ -1,0 +1,12 @@
+{
+  "appid": "b83a66d4-f05f-414d-ac0f-ea1c5239c42b",
+  "appname": "Microsoft Threat Experts - Experts on Demand_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b83a66d4-f05f-414d-ac0f-ea1c5239c42b"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "3913510d-42f4-4e42-8a64-420c390055eb",
+  "appname": "Monitoring Metrics Publisher",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3913510d-42f4-4e42-8a64-420c390055eb"
+}

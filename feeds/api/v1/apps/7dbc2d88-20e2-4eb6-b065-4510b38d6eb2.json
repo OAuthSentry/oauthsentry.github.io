@@ -1,0 +1,12 @@
+{
+  "appid": "7dbc2d88-20e2-4eb6-b065-4510b38d6eb2",
+  "appname": "Nonprofit Portal_2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "7dbc2d88-20e2-4eb6-b065-4510b38d6eb2"
+}

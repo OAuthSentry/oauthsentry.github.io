@@ -1,0 +1,12 @@
+{
+  "appid": "166741d6-eeb8-46fe-91f4-817d2af7bc88",
+  "appname": "OnlineMeetingAiInsight.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "166741d6-eeb8-46fe-91f4-817d2af7bc88"
+}

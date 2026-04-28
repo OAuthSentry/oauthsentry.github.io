@@ -1,0 +1,12 @@
+{
+  "appid": "21943e3a-2429-4f83-84c1-02735cd49e78",
+  "appname": "Microsoft Teams Rooms Pro without Audio Conferencing",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "21943e3a-2429-4f83-84c1-02735cd49e78"
+}

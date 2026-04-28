@@ -1,0 +1,12 @@
+{
+  "appid": "d216f254-796f-4dab-bbfa-710686e646b9",
+  "appname": "Microsoft Intune G",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d216f254-796f-4dab-bbfa-710686e646b9"
+}

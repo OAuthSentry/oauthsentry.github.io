@@ -1,0 +1,12 @@
+{
+  "appid": "a290e904-7015-4bba-90c8-60543313cdb4",
+  "appname": "Managed HSM Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a290e904-7015-4bba-90c8-60543313cdb4"
+}

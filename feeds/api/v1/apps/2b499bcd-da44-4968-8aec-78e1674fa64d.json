@@ -1,0 +1,12 @@
+{
+  "appid": "2b499bcd-da44-4968-8aec-78e1674fa64d",
+  "appname": "Device Managers",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2b499bcd-da44-4968-8aec-78e1674fa64d"
+}

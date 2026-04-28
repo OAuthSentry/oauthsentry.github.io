@@ -1,0 +1,12 @@
+{
+  "appid": "53e51eec-2d9b-4990-97f3-c9aa5d5652c3",
+  "appname": "SecurityIdentitiesHealth.ReadWrite.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "53e51eec-2d9b-4990-97f3-c9aa5d5652c3"
+}

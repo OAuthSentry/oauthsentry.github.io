@@ -1,0 +1,12 @@
+{
+  "appid": "52ea0e27-ae73-4983-a08f-13561ebdb823",
+  "appname": "Teams Premium (for Departments)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "52ea0e27-ae73-4983-a08f-13561ebdb823"
+}

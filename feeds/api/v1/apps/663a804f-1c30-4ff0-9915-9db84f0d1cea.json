@@ -1,0 +1,12 @@
+{
+  "appid": "663a804f-1c30-4ff0-9915-9db84f0d1cea",
+  "appname": "Visio Desktop App",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "663a804f-1c30-4ff0-9915-9db84f0d1cea"
+}

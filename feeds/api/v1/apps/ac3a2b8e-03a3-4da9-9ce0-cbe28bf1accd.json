@@ -1,0 +1,12 @@
+{
+  "appid": "ac3a2b8e-03a3-4da9-9ce0-cbe28bf1accd",
+  "appname": "RecordsManagement.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ac3a2b8e-03a3-4da9-9ce0-cbe28bf1accd"
+}

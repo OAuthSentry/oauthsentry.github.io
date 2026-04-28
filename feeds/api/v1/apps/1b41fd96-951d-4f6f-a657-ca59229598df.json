@@ -1,0 +1,12 @@
+{
+  "appid": "1b41fd96-951d-4f6f-a657-ca59229598df",
+  "appname": "How to configure CPOS link",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1b41fd96-951d-4f6f-a657-ca59229598df"
+}

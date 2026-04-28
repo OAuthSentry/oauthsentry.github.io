@@ -1,0 +1,12 @@
+{
+  "appid": "57506a73-e302-42a9-b869-6f12d9ec29e9",
+  "appname": "Azure Cosmos DB principal ID - Azure Government",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "57506a73-e302-42a9-b869-6f12d9ec29e9"
+}

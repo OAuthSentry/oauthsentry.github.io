@@ -1,0 +1,12 @@
+{
+  "appid": "e03c7e47-402c-463c-ab25-949079bedb21",
+  "appname": "Office for the Web for Education",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e03c7e47-402c-463c-ab25-949079bedb21"
+}

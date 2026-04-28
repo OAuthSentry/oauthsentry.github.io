@@ -1,0 +1,12 @@
+{
+  "appid": "ba4e7456-55a9-4d89-9140-c33673553526",
+  "appname": "Purview/sit-defn-sweden-passport-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ba4e7456-55a9-4d89-9140-c33673553526"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "ad902697-1014-4ef5-81ef-2b4301988e8c",
+  "appname": "Policy.ReadWrite.ConditionalAccess - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ad902697-1014-4ef5-81ef-2b4301988e8c"
+}

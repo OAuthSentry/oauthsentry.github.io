@@ -1,0 +1,12 @@
+{
+  "appid": "0b07f429-9f4b-4714-9392-cc5e8e80c8b0",
+  "appname": "Azure Digital Twins service endpoint resource ID",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "0b07f429-9f4b-4714-9392-cc5e8e80c8b0"
+}

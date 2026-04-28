@@ -1,0 +1,12 @@
+{
+  "appid": "ffc6bbe0-e443-4c3b-bf54-26581bb2f78e",
+  "appname": "App Compliance Automation Reader",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ffc6bbe0-e443-4c3b-bf54-26581bb2f78e"
+}

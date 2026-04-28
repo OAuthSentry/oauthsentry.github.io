@@ -1,0 +1,12 @@
+{
+  "appid": "b95945de-b3bd-46db-8437-f2beb6ea2347",
+  "appname": "Microsoft 365 Copilot in Microsoft Teams",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b95945de-b3bd-46db-8437-f2beb6ea2347"
+}

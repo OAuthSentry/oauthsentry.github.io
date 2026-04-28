@@ -1,0 +1,12 @@
+{
+  "appid": "9565a273-41b9-4368-97d2-aeb0c976a9b3",
+  "appname": "API Management Service Workspace API Developer",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9565a273-41b9-4368-97d2-aeb0c976a9b3"
+}

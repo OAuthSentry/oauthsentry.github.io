@@ -1,0 +1,12 @@
+{
+  "appid": "9c0587f3-8665-4252-a8ad-b7a5ade57312",
+  "appname": "Microsoft 365 Lighthouse",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9c0587f3-8665-4252-a8ad-b7a5ade57312"
+}

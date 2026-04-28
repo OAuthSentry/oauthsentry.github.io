@@ -1,0 +1,12 @@
+{
+  "appid": "467423d3-dc5d-4c1e-b0e7-12d85ade8da8",
+  "appname": "Office Online Speech SSO",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "467423d3-dc5d-4c1e-b0e7-12d85ade8da8"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "243cded2-bd16-4fd6-a953-ff8177894c3d",
+  "appname": "ChannelSettings.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "243cded2-bd16-4fd6-a953-ff8177894c3d"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "dd199f4a-f148-40a4-a2ec-f0069cc799ec",
+  "appname": "RoleAssignmentSchedule.ReadWrite.Directory - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "dd199f4a-f148-40a4-a2ec-f0069cc799ec"
+}

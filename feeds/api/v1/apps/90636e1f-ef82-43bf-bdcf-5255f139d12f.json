@@ -1,0 +1,12 @@
+{
+  "appid": "90636e1f-ef82-43bf-bdcf-5255f139d12f",
+  "appname": "YubiKey Bio Series - Multi-protocol Edition",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "90636e1f-ef82-43bf-bdcf-5255f139d12f"
+}

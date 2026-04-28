@@ -1,0 +1,12 @@
+{
+  "appid": "9ea4bdef-a20b-4668-b4a7-73e1f7696e0a",
+  "appname": "Sensor Data Intelligence Scenario Add-in for Dynamics 365 Supply Chain Management",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9ea4bdef-a20b-4668-b4a7-73e1f7696e0a"
+}

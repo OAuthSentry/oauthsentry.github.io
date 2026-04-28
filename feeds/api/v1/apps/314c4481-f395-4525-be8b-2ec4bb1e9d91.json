@@ -1,0 +1,12 @@
+{
+  "appid": "314c4481-f395-4525-be8b-2ec4bb1e9d91",
+  "appname": "Office 365 A1 for students",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "314c4481-f395-4525-be8b-2ec4bb1e9d91"
+}

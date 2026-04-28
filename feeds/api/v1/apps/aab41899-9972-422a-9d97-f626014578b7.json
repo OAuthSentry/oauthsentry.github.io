@@ -1,0 +1,12 @@
+{
+  "appid": "aab41899-9972-422a-9d97-f626014578b7",
+  "appname": "Send email to notify manager of user move",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "aab41899-9972-422a-9d97-f626014578b7"
+}

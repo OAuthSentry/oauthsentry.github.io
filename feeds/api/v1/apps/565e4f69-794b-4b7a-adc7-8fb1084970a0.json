@@ -1,0 +1,12 @@
+{
+  "appid": "565e4f69-794b-4b7a-adc7-8fb1084970a0",
+  "appname": "Adobe Experience Manager",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "565e4f69-794b-4b7a-adc7-8fb1084970a0"
+}

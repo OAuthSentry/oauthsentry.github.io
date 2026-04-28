@@ -1,0 +1,12 @@
+{
+  "appid": "fd7ccf6b-3d28-418b-9701-cd10f5cd2fd4",
+  "appname": "Calls.JoinGroupCallAsGuest.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "fd7ccf6b-3d28-418b-9701-cd10f5cd2fd4"
+}

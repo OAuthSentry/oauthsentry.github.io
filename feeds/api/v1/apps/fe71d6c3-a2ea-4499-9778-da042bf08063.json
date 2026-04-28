@@ -1,0 +1,12 @@
+{
+  "appid": "fe71d6c3-a2ea-4499-9778-da042bf08063",
+  "appname": "Project Online Service",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "fe71d6c3-a2ea-4499-9778-da042bf08063"
+}

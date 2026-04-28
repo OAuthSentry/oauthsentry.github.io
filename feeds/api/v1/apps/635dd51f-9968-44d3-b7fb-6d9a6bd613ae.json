@@ -1,0 +1,12 @@
+{
+  "appid": "635dd51f-9968-44d3-b7fb-6d9a6bd613ae",
+  "appname": "AzureML Metrics Writer (preview)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "635dd51f-9968-44d3-b7fb-6d9a6bd613ae"
+}

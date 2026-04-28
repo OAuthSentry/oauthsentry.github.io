@@ -1,0 +1,12 @@
+{
+  "appid": "fbdf93bf-df7d-467e-a4d2-9458aa1360c8",
+  "appname": "Cosmos DB Account Reader Role",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "fbdf93bf-df7d-467e-a4d2-9458aa1360c8"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "56edfb3f-b612-4e4c-acb9-4bbd141bd535",
+  "appname": "Microsoft Defender XDR streaming API video",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "56edfb3f-b612-4e4c-acb9-4bbd141bd535"
+}

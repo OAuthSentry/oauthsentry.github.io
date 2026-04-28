@@ -1,0 +1,12 @@
+{
+  "appid": "5626bed4-e756-430b-a7ff-ca78c8b12738",
+  "appname": "VALMIDO PRO FIDO",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5626bed4-e756-430b-a7ff-ca78c8b12738"
+}

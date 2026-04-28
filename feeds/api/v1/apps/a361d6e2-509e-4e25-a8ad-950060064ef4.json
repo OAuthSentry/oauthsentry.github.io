@@ -1,0 +1,12 @@
+{
+  "appid": "a361d6e2-509e-4e25-a8ad-950060064ef4",
+  "appname": "SHAREPOINT FOR DEVELOPER",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a361d6e2-509e-4e25-a8ad-950060064ef4"
+}

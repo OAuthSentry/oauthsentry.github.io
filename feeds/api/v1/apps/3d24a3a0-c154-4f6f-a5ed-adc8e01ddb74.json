@@ -1,0 +1,12 @@
+{
+  "appid": "3d24a3a0-c154-4f6f-a5ed-adc8e01ddb74",
+  "appname": "Savings plan Purchaser",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3d24a3a0-c154-4f6f-a5ed-adc8e01ddb74"
+}

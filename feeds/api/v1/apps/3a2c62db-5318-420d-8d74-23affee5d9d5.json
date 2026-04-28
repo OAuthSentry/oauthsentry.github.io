@@ -1,0 +1,12 @@
+{
+  "appid": "3a2c62db-5318-420d-8d74-23affee5d9d5",
+  "appname": "Intune Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3a2c62db-5318-420d-8d74-23affee5d9d5"
+}

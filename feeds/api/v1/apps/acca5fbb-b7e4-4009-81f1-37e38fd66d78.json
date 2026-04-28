@@ -1,0 +1,12 @@
+{
+  "appid": "acca5fbb-b7e4-4009-81f1-37e38fd66d78",
+  "appname": "Redis client app",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "acca5fbb-b7e4-4009-81f1-37e38fd66d78"
+}

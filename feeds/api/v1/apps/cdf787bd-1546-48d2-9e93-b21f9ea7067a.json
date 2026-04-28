@@ -1,0 +1,12 @@
+{
+  "appid": "cdf787bd-1546-48d2-9e93-b21f9ea7067a",
+  "appname": "Power Pages Authenticated Users per site monthly capacity GCC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "cdf787bd-1546-48d2-9e93-b21f9ea7067a"
+}

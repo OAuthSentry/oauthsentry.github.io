@@ -1,0 +1,12 @@
+{
+  "appid": "5caf3ef4-9602-413c-964d-cf1292d6e1f5",
+  "appname": "Message Producer Azure Sender",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5caf3ef4-9602-413c-964d-cf1292d6e1f5"
+}

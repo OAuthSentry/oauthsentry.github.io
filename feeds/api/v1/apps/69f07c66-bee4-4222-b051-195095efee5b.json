@@ -1,0 +1,12 @@
+{
+  "appid": "69f07c66-bee4-4222-b051-195095efee5b",
+  "appname": "Dynamics 365 Project Operations_2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "69f07c66-bee4-4222-b051-195095efee5b"
+}

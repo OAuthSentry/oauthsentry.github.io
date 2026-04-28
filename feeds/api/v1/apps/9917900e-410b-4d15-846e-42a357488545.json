@@ -1,0 +1,12 @@
+{
+  "appid": "9917900e-410b-4d15-846e-42a357488545",
+  "appname": "DeviceLocalCredential.ReadBasic.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9917900e-410b-4d15-846e-42a357488545"
+}

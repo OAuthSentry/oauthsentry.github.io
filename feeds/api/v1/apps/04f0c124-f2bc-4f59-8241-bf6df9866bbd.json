@@ -2,13 +2,11 @@
   "appid": "04f0c124-f2bc-4f59-8241-bf6df9866bbd",
   "appname": "Visual Studio",
   "service": "entra",
-  "category": "risky",
-  "severity": "medium",
-  "comment": "First-party Microsoft Visual Studio app id observed in Storm-2372 / APT29 device code phishing waves (2025). Hunt for unexpected device code authentications using this client_id from non-developer user principals.",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
   "references": [
-    "https://www.microsoft.com/en-us/security/blog/2025/02/13/storm-2372-conducts-device-code-phishing-campaign/",
-    "https://www.volexity.com/blog/2025/02/13/multiple-russian-threat-actors-targeting-microsoft-device-code-authentication/",
-    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+    "https://github.com/merill/microsoft-info"
   ],
   "slug": "04f0c124-f2bc-4f59-8241-bf6df9866bbd"
 }

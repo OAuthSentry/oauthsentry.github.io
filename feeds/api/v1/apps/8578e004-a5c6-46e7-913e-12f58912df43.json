@@ -1,0 +1,12 @@
+{
+  "appid": "8578e004-a5c6-46e7-913e-12f58912df43",
+  "appname": "Power Platform API",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "8578e004-a5c6-46e7-913e-12f58912df43"
+}

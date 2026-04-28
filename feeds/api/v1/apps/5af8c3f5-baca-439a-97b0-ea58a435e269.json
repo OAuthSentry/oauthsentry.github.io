@@ -1,0 +1,12 @@
+{
+  "appid": "5af8c3f5-baca-439a-97b0-ea58a435e269",
+  "appname": "AccessReview.ReadWrite.Membership - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5af8c3f5-baca-439a-97b0-ea58a435e269"
+}

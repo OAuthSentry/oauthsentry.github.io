@@ -1,0 +1,12 @@
+{
+  "appid": "0bfc98ed-1dbc-4a97-b246-701754e48b17",
+  "appname": "APP CONNECT",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "0bfc98ed-1dbc-4a97-b246-701754e48b17"
+}

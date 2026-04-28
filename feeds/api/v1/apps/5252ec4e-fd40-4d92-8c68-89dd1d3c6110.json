@@ -1,0 +1,12 @@
+{
+  "appid": "5252ec4e-fd40-4d92-8c68-89dd1d3c6110",
+  "appname": "CloudPC.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5252ec4e-fd40-4d92-8c68-89dd1d3c6110"
+}

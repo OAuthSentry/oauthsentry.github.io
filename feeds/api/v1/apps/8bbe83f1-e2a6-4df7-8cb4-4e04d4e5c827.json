@@ -1,0 +1,12 @@
+{
+  "appid": "8bbe83f1-e2a6-4df7-8cb4-4e04d4e5c827",
+  "appname": "Spatial Anchors Account Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "8bbe83f1-e2a6-4df7-8cb4-4e04d4e5c827"
+}

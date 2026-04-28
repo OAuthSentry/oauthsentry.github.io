@@ -1,0 +1,12 @@
+{
+  "appid": "4bb440cd-2cf2-4f90-8004-aa2acd2537c5",
+  "appname": "User.DeleteRestore.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4bb440cd-2cf2-4f90-8004-aa2acd2537c5"
+}

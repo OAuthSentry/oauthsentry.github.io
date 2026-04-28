@@ -1,0 +1,12 @@
+{
+  "appid": "2a60023f-3219-47ad-baa4-40e17cd02a1d",
+  "appname": "ReportSettings.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2a60023f-3219-47ad-baa4-40e17cd02a1d"
+}

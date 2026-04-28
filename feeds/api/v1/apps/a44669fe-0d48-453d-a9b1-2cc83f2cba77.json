@@ -1,0 +1,12 @@
+{
+  "appid": "a44669fe-0d48-453d-a9b1-2cc83f2cba77",
+  "appname": "Purview/sit-defn-us-social-security-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a44669fe-0d48-453d-a9b1-2cc83f2cba77"
+}

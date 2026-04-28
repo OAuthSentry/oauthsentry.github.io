@@ -1,0 +1,12 @@
+{
+  "appid": "749a398d-560b-491b-bb21-08924219302e",
+  "appname": "Load Test Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "749a398d-560b-491b-bb21-08924219302e"
+}

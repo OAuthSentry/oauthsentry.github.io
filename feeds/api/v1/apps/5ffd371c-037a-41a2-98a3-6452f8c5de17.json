@@ -1,0 +1,12 @@
+{
+  "appid": "5ffd371c-037a-41a2-98a3-6452f8c5de17",
+  "appname": "Power Apps for Cloud for Sustainability USL",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5ffd371c-037a-41a2-98a3-6452f8c5de17"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "cf1c38e5-3621-4004-a7cb-879624dced7c",
+  "appname": "Application Developer",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "cf1c38e5-3621-4004-a7cb-879624dced7c"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "61d0354c-5d88-483c-b974-a37ec3395a2c",
+  "appname": "IndustryData-OutboundFlow.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "61d0354c-5d88-483c-b974-a37ec3395a2c"
+}

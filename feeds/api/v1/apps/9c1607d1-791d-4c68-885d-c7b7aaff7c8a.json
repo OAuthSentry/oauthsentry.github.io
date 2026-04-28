@@ -1,0 +1,12 @@
+{
+  "appid": "9c1607d1-791d-4c68-885d-c7b7aaff7c8a",
+  "appname": "Firmware Analysis Admin",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9c1607d1-791d-4c68-885d-c7b7aaff7c8a"
+}

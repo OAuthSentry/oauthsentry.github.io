@@ -1,0 +1,12 @@
+{
+  "appid": "3789da91-f943-46bc-95c3-50ea2012f03a",
+  "appname": "NEOWAVE Winkeo FIDO2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3789da91-f943-46bc-95c3-50ea2012f03a"
+}

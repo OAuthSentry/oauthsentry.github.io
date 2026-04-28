@@ -1,0 +1,12 @@
+{
+  "appid": "cfd33db0-3dd1-45e3-aa9d-cdbdf3b6f24e",
+  "appname": "Support Request Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "cfd33db0-3dd1-45e3-aa9d-cdbdf3b6f24e"
+}

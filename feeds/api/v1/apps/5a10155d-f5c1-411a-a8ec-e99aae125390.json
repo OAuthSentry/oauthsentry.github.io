@@ -1,0 +1,12 @@
+{
+  "appid": "5a10155d-f5c1-411a-a8ec-e99aae125390",
+  "appname": "DOMESTIC AND INTERNATIONAL CALLING PLAN",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5a10155d-f5c1-411a-a8ec-e99aae125390"
+}

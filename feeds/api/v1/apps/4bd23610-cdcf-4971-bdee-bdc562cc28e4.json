@@ -1,0 +1,12 @@
+{
+  "appid": "4bd23610-cdcf-4971-bdee-bdc562cc28e4",
+  "appname": "Managed HSM Policy Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4bd23610-cdcf-4971-bdee-bdc562cc28e4"
+}

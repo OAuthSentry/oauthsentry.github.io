@@ -1,0 +1,12 @@
+{
+  "appid": "a2130f27-9ee2-4103-84f9-a6b1ee7d0cbf",
+  "appname": "Purview/sit-defn-ireland-passport-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a2130f27-9ee2-4103-84f9-a6b1ee7d0cbf"
+}

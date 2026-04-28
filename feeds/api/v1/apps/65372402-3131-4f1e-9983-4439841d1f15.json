@@ -1,0 +1,12 @@
+{
+  "appid": "65372402-3131-4f1e-9983-4439841d1f15",
+  "appname": "Purview/sit-defn-portugal-tax-identification-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "65372402-3131-4f1e-9983-4439841d1f15"
+}

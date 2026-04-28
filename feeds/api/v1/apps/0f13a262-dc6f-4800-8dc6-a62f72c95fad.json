@@ -1,0 +1,12 @@
+{
+  "appid": "0f13a262-dc6f-4800-8dc6-a62f72c95fad",
+  "appname": "PowerApps & Flow GCC Test - O365 & Dyn365 Plans",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "0f13a262-dc6f-4800-8dc6-a62f72c95fad"
+}

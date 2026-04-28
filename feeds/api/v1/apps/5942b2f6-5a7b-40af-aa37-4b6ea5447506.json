@@ -1,0 +1,12 @@
+{
+  "appid": "5942b2f6-5a7b-40af-aa37-4b6ea5447506",
+  "appname": "ConsentRequest.Read - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5942b2f6-5a7b-40af-aa37-4b6ea5447506"
+}

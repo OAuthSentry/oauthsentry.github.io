@@ -1,0 +1,12 @@
+{
+  "appid": "91c64a47-a524-4fce-9bf3-3d569a344ecf",
+  "appname": "AuditLogsQuery-SharePoint.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "91c64a47-a524-4fce-9bf3-3d569a344ecf"
+}

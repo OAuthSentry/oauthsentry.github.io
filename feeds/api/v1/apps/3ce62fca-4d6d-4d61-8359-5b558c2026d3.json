@@ -1,0 +1,12 @@
+{
+  "appid": "3ce62fca-4d6d-4d61-8359-5b558c2026d3",
+  "appname": "Microsoft Bing Ads",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3ce62fca-4d6d-4d61-8359-5b558c2026d3"
+}

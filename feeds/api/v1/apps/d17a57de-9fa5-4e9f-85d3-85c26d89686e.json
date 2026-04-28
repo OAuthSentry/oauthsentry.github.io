@@ -1,0 +1,12 @@
+{
+  "appid": "d17a57de-9fa5-4e9f-85d3-85c26d89686e",
+  "appname": "Purview/sit-defn-spain-passport-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d17a57de-9fa5-4e9f-85d3-85c26d89686e"
+}

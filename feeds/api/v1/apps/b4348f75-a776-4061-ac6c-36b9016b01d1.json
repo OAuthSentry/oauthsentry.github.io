@@ -1,0 +1,12 @@
+{
+  "appid": "b4348f75-a776-4061-ac6c-36b9016b01d1",
+  "appname": "Microsoft Teams Rooms Standard for GCC without Audio Conferencing",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b4348f75-a776-4061-ac6c-36b9016b01d1"
+}

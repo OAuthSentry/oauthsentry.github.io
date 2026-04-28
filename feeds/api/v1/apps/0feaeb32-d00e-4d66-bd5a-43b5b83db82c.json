@@ -1,0 +1,12 @@
+{
+  "appid": "0feaeb32-d00e-4d66-bd5a-43b5b83db82c",
+  "appname": "Skype for Business Online (Plan 2)_2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "0feaeb32-d00e-4d66-bd5a-43b5b83db82c"
+}

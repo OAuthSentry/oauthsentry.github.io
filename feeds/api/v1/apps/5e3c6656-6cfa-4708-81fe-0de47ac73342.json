@@ -1,0 +1,12 @@
+{
+  "appid": "5e3c6656-6cfa-4708-81fe-0de47ac73342",
+  "appname": "BizTalk Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5e3c6656-6cfa-4708-81fe-0de47ac73342"
+}

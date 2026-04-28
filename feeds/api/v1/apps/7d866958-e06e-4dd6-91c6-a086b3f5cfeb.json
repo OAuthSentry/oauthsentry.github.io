@@ -1,0 +1,12 @@
+{
+  "appid": "7d866958-e06e-4dd6-91c6-a086b3f5cfeb",
+  "appname": "IndustryData-SourceSystem.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "7d866958-e06e-4dd6-91c6-a086b3f5cfeb"
+}

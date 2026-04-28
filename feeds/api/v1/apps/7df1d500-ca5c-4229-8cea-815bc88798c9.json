@@ -1,0 +1,12 @@
+{
+  "appid": "7df1d500-ca5c-4229-8cea-815bc88798c9",
+  "appname": "Common Data Service for Dynamics 365 Project Operations",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "7df1d500-ca5c-4229-8cea-815bc88798c9"
+}

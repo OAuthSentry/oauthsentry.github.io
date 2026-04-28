@@ -1,0 +1,12 @@
+{
+  "appid": "11776c0c-6138-4db3-a668-ee621bea2555",
+  "appname": "WindowsUpdates.ReadWrite.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "11776c0c-6138-4db3-a668-ee621bea2555"
+}

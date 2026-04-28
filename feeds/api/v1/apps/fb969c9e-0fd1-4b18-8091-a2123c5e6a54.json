@@ -1,0 +1,12 @@
+{
+  "appid": "fb969c9e-0fd1-4b18-8091-a2123c5e6a54",
+  "appname": "Purview/sit-defn-belgium-national-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "fb969c9e-0fd1-4b18-8091-a2123c5e6a54"
+}

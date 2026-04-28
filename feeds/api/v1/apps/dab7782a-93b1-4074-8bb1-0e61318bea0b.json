@@ -1,0 +1,12 @@
+{
+  "appid": "dab7782a-93b1-4074-8bb1-0e61318bea0b",
+  "appname": "Microsoft 365 Business Basic_2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "dab7782a-93b1-4074-8bb1-0e61318bea0b"
+}

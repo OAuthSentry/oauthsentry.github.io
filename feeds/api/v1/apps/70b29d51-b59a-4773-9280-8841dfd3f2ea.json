@@ -1,0 +1,12 @@
+{
+  "appid": "70b29d51-b59a-4773-9280-8841dfd3f2ea",
+  "appname": "Send welcome email to new hire",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "70b29d51-b59a-4773-9280-8841dfd3f2ea"
+}

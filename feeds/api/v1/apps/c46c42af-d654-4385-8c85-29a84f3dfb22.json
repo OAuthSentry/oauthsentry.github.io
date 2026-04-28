@@ -1,0 +1,12 @@
+{
+  "appid": "c46c42af-d654-4385-8c85-29a84f3dfb22",
+  "appname": "MCS - BizApps - Cloud for Sustainability USL",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c46c42af-d654-4385-8c85-29a84f3dfb22"
+}

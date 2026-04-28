@@ -1,0 +1,12 @@
+{
+  "appid": "77866113-0f3e-4e6e-9666-b1e25c6f99b0",
+  "appname": "Microsoft Dynamics CRM Online Storage Add-On_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "77866113-0f3e-4e6e-9666-b1e25c6f99b0"
+}

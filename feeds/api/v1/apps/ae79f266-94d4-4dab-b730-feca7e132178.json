@@ -1,0 +1,12 @@
+{
+  "appid": "ae79f266-94d4-4dab-b730-feca7e132178",
+  "appname": "Catalog owner",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ae79f266-94d4-4dab-b730-feca7e132178"
+}

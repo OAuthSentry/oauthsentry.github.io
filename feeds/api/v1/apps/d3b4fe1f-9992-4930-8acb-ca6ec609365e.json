@@ -1,0 +1,12 @@
+{
+  "appid": "d3b4fe1f-9992-4930-8acb-ca6ec609365e",
+  "appname": "Skype for Business PSTN Domestic and International Calling",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d3b4fe1f-9992-4930-8acb-ca6ec609365e"
+}

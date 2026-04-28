@@ -1,0 +1,12 @@
+{
+  "appid": "1dfdfcc7-52fa-4c2e-bf3a-e3919cc12950",
+  "appname": "Disable user account",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1dfdfcc7-52fa-4c2e-bf3a-e3919cc12950"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "ec156ff8-a8d1-4d15-830c-5b80698ca432",
+  "appname": "CDN Profile Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ec156ff8-a8d1-4d15-830c-5b80698ca432"
+}

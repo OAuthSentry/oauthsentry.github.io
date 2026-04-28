@@ -1,0 +1,12 @@
+{
+  "appid": "60921a7e-fef1-4a43-9b16-a26c52ad4769",
+  "appname": "Grafana Viewer",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "60921a7e-fef1-4a43-9b16-a26c52ad4769"
+}

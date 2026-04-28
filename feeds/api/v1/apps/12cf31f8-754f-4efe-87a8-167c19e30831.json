@@ -1,0 +1,12 @@
+{
+  "appid": "12cf31f8-754f-4efe-87a8-167c19e30831",
+  "appname": "Power Apps for Sales Pro for Government",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "12cf31f8-754f-4efe-87a8-167c19e30831"
+}

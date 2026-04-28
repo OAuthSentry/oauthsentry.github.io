@@ -1,0 +1,12 @@
+{
+  "appid": "e6025b08-2fa5-4313-bd0a-7e5ffca32958",
+  "appname": "Microsoft Intune SMB",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e6025b08-2fa5-4313-bd0a-7e5ffca32958"
+}

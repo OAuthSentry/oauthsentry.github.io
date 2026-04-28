@@ -1,0 +1,12 @@
+{
+  "appid": "54d9fee8-e621-4291-8b18-7157b99c5bec",
+  "appname": "HID Crescendo Enabled",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "54d9fee8-e621-4291-8b18-7157b99c5bec"
+}

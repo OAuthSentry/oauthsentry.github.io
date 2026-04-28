@@ -1,0 +1,12 @@
+{
+  "appid": "3afb7f49-54cb-416e-8c09-6dc049efa503",
+  "appname": "Azure AI Inference Deployment Operator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3afb7f49-54cb-416e-8c09-6dc049efa503"
+}

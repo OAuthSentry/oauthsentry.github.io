@@ -1,0 +1,12 @@
+{
+  "appid": "e86addcd-7711-47e5-b42a-c18257b0bf61",
+  "appname": "IDCore 3121 Fido",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e86addcd-7711-47e5-b42a-c18257b0bf61"
+}

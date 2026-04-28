@@ -1,0 +1,12 @@
+{
+  "appid": "60fc6e62-5479-42d4-8bf4-67625fcc2840",
+  "appname": "Disk Pool Operator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "60fc6e62-5479-42d4-8bf4-67625fcc2840"
+}

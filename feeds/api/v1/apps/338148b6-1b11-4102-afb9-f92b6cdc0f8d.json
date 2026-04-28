@@ -1,0 +1,12 @@
+{
+  "appid": "338148b6-1b11-4102-afb9-f92b6cdc0f8d",
+  "appname": "Dynamics 365 P1 Tria for Information Workers",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "338148b6-1b11-4102-afb9-f92b6cdc0f8d"
+}

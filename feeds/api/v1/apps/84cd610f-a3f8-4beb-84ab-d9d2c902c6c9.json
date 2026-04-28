@@ -1,0 +1,12 @@
+{
+  "appid": "84cd610f-a3f8-4beb-84ab-d9d2c902c6c9",
+  "appname": "Project Plan 1 (for Department)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "84cd610f-a3f8-4beb-84ab-d9d2c902c6c9"
+}

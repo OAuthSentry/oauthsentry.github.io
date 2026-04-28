@@ -1,0 +1,12 @@
+{
+  "appid": "4b3e8f46-56d3-427f-b1e2-d239b2ea6bca",
+  "appname": "Microsoft Teams-T4L Web Client",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4b3e8f46-56d3-427f-b1e2-d239b2ea6bca"
+}

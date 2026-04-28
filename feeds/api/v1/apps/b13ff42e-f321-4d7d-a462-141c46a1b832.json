@@ -1,0 +1,12 @@
+{
+  "appid": "b13ff42e-f321-4d7d-a462-141c46a1b832",
+  "appname": "CustomDetection.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b13ff42e-f321-4d7d-a462-141c46a1b832"
+}

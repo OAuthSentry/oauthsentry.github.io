@@ -1,0 +1,12 @@
+{
+  "appid": "80faf920-1908-4b52-b5ef-a8e7bedfc67a",
+  "appname": "AKS public client ID on behalf of user auth",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "80faf920-1908-4b52-b5ef-a8e7bedfc67a"
+}

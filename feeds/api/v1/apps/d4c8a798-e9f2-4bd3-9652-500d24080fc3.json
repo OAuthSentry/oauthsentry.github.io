@@ -1,0 +1,12 @@
+{
+  "appid": "d4c8a798-e9f2-4bd3-9652-500d24080fc3",
+  "appname": "Purview/sit-defn-norway-identification-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d4c8a798-e9f2-4bd3-9652-500d24080fc3"
+}

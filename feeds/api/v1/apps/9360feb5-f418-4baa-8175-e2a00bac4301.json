@@ -1,0 +1,12 @@
+{
+  "appid": "9360feb5-f418-4baa-8175-e2a00bac4301",
+  "appname": "Directory Writers",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9360feb5-f418-4baa-8175-e2a00bac4301"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "8502a0ec-c76d-412f-836c-398018e2312b",
+  "appname": "Azure Communication Gateway enterprise",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "8502a0ec-c76d-412f-836c-398018e2312b"
+}

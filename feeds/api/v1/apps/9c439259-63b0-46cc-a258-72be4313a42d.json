@@ -1,0 +1,12 @@
+{
+  "appid": "9c439259-63b0-46cc-a258-72be4313a42d",
+  "appname": "Microsoft Dynamics 365 Customer Voice for Field Service",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9c439259-63b0-46cc-a258-72be4313a42d"
+}

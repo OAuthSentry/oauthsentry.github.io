@@ -1,0 +1,12 @@
+{
+  "appid": "1224eae4-0d91-474a-8a52-27ec96a63fe7",
+  "appname": "DYNAMICS 365 FOR SUPPLY CHAIN MANAGEMENT",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1224eae4-0d91-474a-8a52-27ec96a63fe7"
+}

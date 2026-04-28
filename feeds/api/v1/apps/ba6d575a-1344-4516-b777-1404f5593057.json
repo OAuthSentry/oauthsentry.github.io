@@ -1,0 +1,12 @@
+{
+  "appid": "ba6d575a-1344-4516-b777-1404f5593057",
+  "appname": "AuthenticationContext.ReadWrite.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ba6d575a-1344-4516-b777-1404f5593057"
+}

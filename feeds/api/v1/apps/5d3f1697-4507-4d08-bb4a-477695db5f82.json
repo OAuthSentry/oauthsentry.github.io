@@ -1,0 +1,12 @@
+{
+  "appid": "5d3f1697-4507-4d08-bb4a-477695db5f82",
+  "appname": "Azure Kubernetes Service Arc Contributor Role",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5d3f1697-4507-4d08-bb4a-477695db5f82"
+}

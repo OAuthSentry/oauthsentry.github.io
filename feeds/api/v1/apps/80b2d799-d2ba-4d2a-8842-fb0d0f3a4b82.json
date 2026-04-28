@@ -1,0 +1,12 @@
+{
+  "appid": "80b2d799-d2ba-4d2a-8842-fb0d0f3a4b82",
+  "appname": "Exchange Online Kiosk_2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "80b2d799-d2ba-4d2a-8842-fb0d0f3a4b82"
+}

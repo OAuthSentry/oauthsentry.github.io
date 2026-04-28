@@ -1,0 +1,12 @@
+{
+  "appid": "e564d403-7eaf-4c91-b92f-bb0dc62026e1",
+  "appname": "Dynamics 365 Project Operations CDS Attach",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e564d403-7eaf-4c91-b92f-bb0dc62026e1"
+}

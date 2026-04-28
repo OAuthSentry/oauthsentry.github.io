@@ -1,0 +1,12 @@
+{
+  "appid": "9082f138-6f02-4f3a-9f4d-5f3c2ce5c688",
+  "appname": "OrganizationalBranding.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9082f138-6f02-4f3a-9f4d-5f3c2ce5c688"
+}

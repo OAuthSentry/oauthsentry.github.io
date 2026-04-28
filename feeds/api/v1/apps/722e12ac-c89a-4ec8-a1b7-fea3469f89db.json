@@ -1,0 +1,12 @@
+{
+  "appid": "722e12ac-c89a-4ec8-a1b7-fea3469f89db",
+  "appname": "Purview/sit-defn-canada-personal-health-identification-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "722e12ac-c89a-4ec8-a1b7-fea3469f89db"
+}

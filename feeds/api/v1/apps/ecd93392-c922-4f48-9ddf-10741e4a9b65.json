@@ -1,0 +1,12 @@
+{
+  "appid": "ecd93392-c922-4f48-9ddf-10741e4a9b65",
+  "appname": "e-Invoicing Service service principal",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ecd93392-c922-4f48-9ddf-10741e4a9b65"
+}

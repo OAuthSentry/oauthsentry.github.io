@@ -1,0 +1,12 @@
+{
+  "appid": "7251de8f-ecfb-481e-bcff-4af4f1a4573c",
+  "appname": "Data integration for Project with Power Automate for GCC_2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "7251de8f-ecfb-481e-bcff-4af4f1a4573c"
+}

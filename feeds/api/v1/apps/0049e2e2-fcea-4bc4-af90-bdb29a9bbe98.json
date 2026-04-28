@@ -1,0 +1,12 @@
+{
+  "appid": "0049e2e2-fcea-4bc4-af90-bdb29a9bbe98",
+  "appname": "Azure AD Service Principal",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "0049e2e2-fcea-4bc4-af90-bdb29a9bbe98"
+}

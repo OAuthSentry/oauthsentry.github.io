@@ -1,0 +1,12 @@
+{
+  "appid": "ee49e170-1dd1-4030-b44c-61ad6e98f743",
+  "appname": "QnA.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ee49e170-1dd1-4030-b44c-61ad6e98f743"
+}

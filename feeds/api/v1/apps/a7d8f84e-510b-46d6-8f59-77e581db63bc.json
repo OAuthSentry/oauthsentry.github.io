@@ -1,0 +1,12 @@
+{
+  "appid": "a7d8f84e-510b-46d6-8f59-77e581db63bc",
+  "appname": "Azure Static Web Apps",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a7d8f84e-510b-46d6-8f59-77e581db63bc"
+}

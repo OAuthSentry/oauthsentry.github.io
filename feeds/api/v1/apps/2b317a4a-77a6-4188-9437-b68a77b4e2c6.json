@@ -1,0 +1,12 @@
+{
+  "appid": "2b317a4a-77a6-4188-9437-b68a77b4e2c6",
+  "appname": "Microsoft Intune Device",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2b317a4a-77a6-4188-9437-b68a77b4e2c6"
+}

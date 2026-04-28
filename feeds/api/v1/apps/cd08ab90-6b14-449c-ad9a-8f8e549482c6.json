@@ -1,0 +1,12 @@
+{
+  "appid": "cd08ab90-6b14-449c-ad9a-8f8e549482c6",
+  "appname": "Scheduled Patching Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "cd08ab90-6b14-449c-ad9a-8f8e549482c6"
+}

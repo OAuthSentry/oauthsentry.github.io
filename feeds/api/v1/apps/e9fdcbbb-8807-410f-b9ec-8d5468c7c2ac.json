@@ -1,0 +1,12 @@
+{
+  "appid": "e9fdcbbb-8807-410f-b9ec-8d5468c7c2ac",
+  "appname": "EntitlementMgmt-SubjectAccess.ReadWrite - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e9fdcbbb-8807-410f-b9ec-8d5468c7c2ac"
+}

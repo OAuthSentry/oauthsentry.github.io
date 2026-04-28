@@ -1,0 +1,12 @@
+{
+  "appid": "eca22b68-b31f-4e9c-a20c-4d40287bc5dd",
+  "appname": "PowerApps Plan 1 for Government_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "eca22b68-b31f-4e9c-a20c-4d40287bc5dd"
+}

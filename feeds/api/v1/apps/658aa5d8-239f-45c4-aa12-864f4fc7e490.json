@@ -1,0 +1,12 @@
+{
+  "appid": "658aa5d8-239f-45c4-aa12-864f4fc7e490",
+  "appname": "Member.Read.Hidden - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "658aa5d8-239f-45c4-aa12-864f4fc7e490"
+}

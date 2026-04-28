@@ -1,0 +1,12 @@
+{
+  "appid": "b3891a9f-c7d9-463c-a2ec-0b2321bda6f9",
+  "appname": "Windows 365 Business 4 vCPU 16 GB 256 GB_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b3891a9f-c7d9-463c-a2ec-0b2321bda6f9"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "4cde982a-ede4-4409-9ae6-b003453c8ea6",
+  "appname": "Microsoft Teams Rooms Pro",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4cde982a-ede4-4409-9ae6-b003453c8ea6"
+}

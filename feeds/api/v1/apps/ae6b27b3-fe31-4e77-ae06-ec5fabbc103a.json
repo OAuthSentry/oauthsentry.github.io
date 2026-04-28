@@ -1,0 +1,12 @@
+{
+  "appid": "ae6b27b3-fe31-4e77-ae06-ec5fabbc103a",
+  "appname": "Dynamics 365 Business Central Database Capacity_2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ae6b27b3-fe31-4e77-ae06-ec5fabbc103a"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "60bf28f9-2b70-4522-96f7-335f5e06c941",
+  "appname": "Power Pages Internal User",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "60bf28f9-2b70-4522-96f7-335f5e06c941"
+}

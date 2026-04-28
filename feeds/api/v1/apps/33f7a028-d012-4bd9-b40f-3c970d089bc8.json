@@ -1,0 +1,12 @@
+{
+  "appid": "33f7a028-d012-4bd9-b40f-3c970d089bc8",
+  "appname": "TeamSettings.Edit.Group",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "33f7a028-d012-4bd9-b40f-3c970d089bc8"
+}

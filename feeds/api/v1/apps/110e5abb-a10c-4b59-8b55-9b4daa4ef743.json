@@ -1,0 +1,12 @@
+{
+  "appid": "110e5abb-a10c-4b59-8b55-9b4daa4ef743",
+  "appname": "OnlineMeetingArtifact.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "110e5abb-a10c-4b59-8b55-9b4daa4ef743"
+}

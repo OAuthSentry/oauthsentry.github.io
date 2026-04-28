@@ -1,0 +1,12 @@
+{
+  "appid": "0b939472-1861-45f1-ab6d-208f359c05cd",
+  "appname": "Flow for Virtual Agent for GCC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "0b939472-1861-45f1-ab6d-208f359c05cd"
+}

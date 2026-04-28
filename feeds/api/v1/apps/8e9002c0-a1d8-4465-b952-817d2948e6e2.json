@@ -1,0 +1,12 @@
+{
+  "appid": "8e9002c0-a1d8-4465-b952-817d2948e6e2",
+  "appname": "Dynamics 365 Business Central Premium_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "8e9002c0-a1d8-4465-b952-817d2948e6e2"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "f6934f16-83d3-4f3b-ad27-c6e9c187b260",
+  "appname": "Virtual Agent Base",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f6934f16-83d3-4f3b-ad27-c6e9c187b260"
+}

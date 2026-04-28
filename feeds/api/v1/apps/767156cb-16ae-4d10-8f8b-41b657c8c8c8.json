@@ -1,0 +1,12 @@
+{
+  "appid": "767156cb-16ae-4d10-8f8b-41b657c8c8c8",
+  "appname": "ChannelMessage.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "767156cb-16ae-4d10-8f8b-41b657c8c8c8"
+}

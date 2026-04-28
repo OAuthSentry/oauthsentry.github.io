@@ -1,0 +1,12 @@
+{
+  "appid": "a236cb34-7076-45a1-9381-22db8111a3d3",
+  "appname": "ChatMessageReadReceipt.Read.Chat",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a236cb34-7076-45a1-9381-22db8111a3d3"
+}

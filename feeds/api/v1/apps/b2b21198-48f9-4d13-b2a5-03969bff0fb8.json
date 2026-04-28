@@ -1,0 +1,12 @@
+{
+  "appid": "b2b21198-48f9-4d13-b2a5-03969bff0fb8",
+  "appname": "Purview/sit-defn-malta-passport-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b2b21198-48f9-4d13-b2a5-03969bff0fb8"
+}

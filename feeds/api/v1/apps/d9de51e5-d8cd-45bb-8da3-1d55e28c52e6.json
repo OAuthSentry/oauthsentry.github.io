@@ -1,0 +1,12 @@
+{
+  "appid": "d9de51e5-d8cd-45bb-8da3-1d55e28c52e6",
+  "appname": "Power Automate per flow plan for Government",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d9de51e5-d8cd-45bb-8da3-1d55e28c52e6"
+}

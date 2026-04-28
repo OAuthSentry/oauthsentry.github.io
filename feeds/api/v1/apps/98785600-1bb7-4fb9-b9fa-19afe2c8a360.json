@@ -1,0 +1,12 @@
+{
+  "appid": "98785600-1bb7-4fb9-b9fa-19afe2c8a360",
+  "appname": "Azure Security Insights",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "98785600-1bb7-4fb9-b9fa-19afe2c8a360"
+}

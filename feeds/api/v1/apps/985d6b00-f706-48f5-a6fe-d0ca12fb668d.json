@@ -1,0 +1,12 @@
+{
+  "appid": "985d6b00-f706-48f5-a6fe-d0ca12fb668d",
+  "appname": "Classic Storage Account Key Operator Service Role",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "985d6b00-f706-48f5-a6fe-d0ca12fb668d"
+}

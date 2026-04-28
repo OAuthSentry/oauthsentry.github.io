@@ -1,0 +1,12 @@
+{
+  "appid": "dd47d17a-3194-4d86-bfd5-c6ae6f5651e3",
+  "appname": "Microsoft Defender Endpoint on Android and iOS",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "dd47d17a-3194-4d86-bfd5-c6ae6f5651e3"
+}

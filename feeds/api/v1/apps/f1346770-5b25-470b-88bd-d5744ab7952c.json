@@ -1,0 +1,12 @@
+{
+  "appid": "f1346770-5b25-470b-88bd-d5744ab7952c",
+  "appname": "Intune Provisioning Client",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f1346770-5b25-470b-88bd-d5744ab7952c"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "2f105cc2-c2c1-435b-a955-c5e82156c05d",
+  "appname": "Office 365 GCC G5 without Power BI and Phone System",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2f105cc2-c2c1-435b-a955-c5e82156c05d"
+}

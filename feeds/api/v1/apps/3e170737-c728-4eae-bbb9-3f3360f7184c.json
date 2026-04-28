@@ -1,0 +1,12 @@
+{
+  "appid": "3e170737-c728-4eae-bbb9-3f3360f7184c",
+  "appname": "Microsoft Intune Plan 1_2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3e170737-c728-4eae-bbb9-3f3360f7184c"
+}

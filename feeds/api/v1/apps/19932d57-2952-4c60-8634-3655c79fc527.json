@@ -1,0 +1,12 @@
+{
+  "appid": "19932d57-2952-4c60-8634-3655c79fc527",
+  "appname": "BusinessScenarioData.ReadWrite.OwnedBy - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "19932d57-2952-4c60-8634-3655c79fc527"
+}

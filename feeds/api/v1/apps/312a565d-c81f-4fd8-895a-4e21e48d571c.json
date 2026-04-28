@@ -1,0 +1,12 @@
+{
+  "appid": "312a565d-c81f-4fd8-895a-4e21e48d571c",
+  "appname": "API Management Service Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "312a565d-c81f-4fd8-895a-4e21e48d571c"
+}

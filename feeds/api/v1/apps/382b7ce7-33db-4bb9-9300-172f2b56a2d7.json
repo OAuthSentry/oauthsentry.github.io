@@ -1,0 +1,12 @@
+{
+  "appid": "382b7ce7-33db-4bb9-9300-172f2b56a2d7",
+  "appname": "SharePoint eSignature PPE",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "382b7ce7-33db-4bb9-9300-172f2b56a2d7"
+}

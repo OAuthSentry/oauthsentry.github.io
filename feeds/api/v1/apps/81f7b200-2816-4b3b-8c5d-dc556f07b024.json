@@ -1,0 +1,12 @@
+{
+  "appid": "81f7b200-2816-4b3b-8c5d-dc556f07b024",
+  "appname": "Remove users from all teams",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "81f7b200-2816-4b3b-8c5d-dc556f07b024"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "113feb6c-3fe4-4440-bddc-54d774bf0318",
+  "appname": "Exchange Foundation",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "113feb6c-3fe4-4440-bddc-54d774bf0318"
+}

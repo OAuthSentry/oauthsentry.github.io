@@ -1,0 +1,12 @@
+{
+  "appid": "aaa2cd24-5519-450f-a1a0-160750710ca1",
+  "appname": "Windows Store for Business EDU Store",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "aaa2cd24-5519-450f-a1a0-160750710ca1"
+}

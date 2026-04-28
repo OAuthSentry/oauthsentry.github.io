@@ -1,0 +1,12 @@
+{
+  "appid": "38826093-1258-4dea-98f0-00003be2b8d0",
+  "appname": "Chat.Create - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "38826093-1258-4dea-98f0-00003be2b8d0"
+}

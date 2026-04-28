@@ -1,0 +1,12 @@
+{
+  "appid": "9b50c33d-700f-43b1-b2eb-87e89b703581",
+  "appname": "Synchronization.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9b50c33d-700f-43b1-b2eb-87e89b703581"
+}

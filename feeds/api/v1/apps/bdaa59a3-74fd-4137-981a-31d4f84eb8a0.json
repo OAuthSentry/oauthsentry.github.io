@@ -1,0 +1,12 @@
+{
+  "appid": "bdaa59a3-74fd-4137-981a-31d4f84eb8a0",
+  "appname": "Meeting Room Managed Services",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "bdaa59a3-74fd-4137-981a-31d4f84eb8a0"
+}

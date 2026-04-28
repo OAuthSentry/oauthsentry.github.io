@@ -1,0 +1,12 @@
+{
+  "appid": "897d51f1-2cfa-4848-9b30-469149f5e68e",
+  "appname": "Exchange Online Multi-Geo",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "897d51f1-2cfa-4848-9b30-469149f5e68e"
+}

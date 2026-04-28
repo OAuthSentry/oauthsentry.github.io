@@ -1,0 +1,12 @@
+{
+  "appid": "2c18b078-7c48-4d3a-af88-5a3a1b3f82b3",
+  "appname": "Managed HSM Crypto Auditor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2c18b078-7c48-4d3a-af88-5a3a1b3f82b3"
+}

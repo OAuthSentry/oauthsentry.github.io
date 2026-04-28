@@ -1,0 +1,12 @@
+{
+  "appid": "e485d696-4c87-4aac-bf4a-91b2fb6f0fa7",
+  "appname": "Dynamics 365 Operations - Sandbox Tier 2:Standard Acceptance Testing",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e485d696-4c87-4aac-bf4a-91b2fb6f0fa7"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "06879193-37cc-4976-8991-f8165c994ce7",
+  "appname": "Power Automate P2 for Dynamics 365 for Government",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "06879193-37cc-4976-8991-f8165c994ce7"
+}

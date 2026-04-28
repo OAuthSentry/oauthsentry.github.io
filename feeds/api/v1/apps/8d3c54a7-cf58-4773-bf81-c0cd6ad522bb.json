@@ -1,0 +1,12 @@
+{
+  "appid": "8d3c54a7-cf58-4773-bf81-c0cd6ad522bb",
+  "appname": "Presence.ReadWrite - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "8d3c54a7-cf58-4773-bf81-c0cd6ad522bb"
+}

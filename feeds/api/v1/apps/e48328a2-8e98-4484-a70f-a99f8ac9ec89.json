@@ -1,0 +1,12 @@
+{
+  "appid": "e48328a2-8e98-4484-a70f-a99f8ac9ec89",
+  "appname": "Dynamics 365 Remote Assist HoloLens",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e48328a2-8e98-4484-a70f-a99f8ac9ec89"
+}

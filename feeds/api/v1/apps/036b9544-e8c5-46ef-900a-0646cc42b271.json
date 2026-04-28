@@ -1,0 +1,12 @@
+{
+  "appid": "036b9544-e8c5-46ef-900a-0646cc42b271",
+  "appname": "PrintJob.ReadWrite.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "036b9544-e8c5-46ef-900a-0646cc42b271"
+}

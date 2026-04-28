@@ -1,0 +1,12 @@
+{
+  "appid": "4d6ac14f-3453-41d0-bef9-a3e0c569773a",
+  "appname": "License Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4d6ac14f-3453-41d0-bef9-a3e0c569773a"
+}

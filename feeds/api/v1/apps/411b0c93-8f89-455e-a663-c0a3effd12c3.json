@@ -1,0 +1,12 @@
+{
+  "appid": "411b0c93-8f89-455e-a663-c0a3effd12c3",
+  "appname": "Dynamics 365 for Customer Service Voice Add-in for Government",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "411b0c93-8f89-455e-a663-c0a3effd12c3"
+}

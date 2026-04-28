@@ -1,0 +1,12 @@
+{
+  "appid": "6a0f6da5-0b87-4190-a6ae-9bb5a2b9546a",
+  "appname": "Windows 10/11 Enterprise E3_2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6a0f6da5-0b87-4190-a6ae-9bb5a2b9546a"
+}

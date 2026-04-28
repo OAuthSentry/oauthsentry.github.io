@@ -1,0 +1,12 @@
+{
+  "appid": "ac29eb50-f2f9-4518-a117-4bef18e84c7d",
+  "appname": "HealthMonitoringAlert.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ac29eb50-f2f9-4518-a117-4bef18e84c7d"
+}

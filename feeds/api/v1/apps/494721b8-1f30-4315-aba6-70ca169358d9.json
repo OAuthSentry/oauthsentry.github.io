@@ -1,0 +1,12 @@
+{
+  "appid": "494721b8-1f30-4315-aba6-70ca169358d9",
+  "appname": "Dynamics 365 Sales, Field Service and Customer Service Partner Sandbox",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "494721b8-1f30-4315-aba6-70ca169358d9"
+}

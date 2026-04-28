@@ -1,0 +1,12 @@
+{
+  "appid": "00482a5a-887f-4fb3-b363-3b7fe8e74483",
+  "appname": "Key Vault Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "00482a5a-887f-4fb3-b363-3b7fe8e74483"
+}

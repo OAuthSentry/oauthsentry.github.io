@@ -1,0 +1,12 @@
+{
+  "appid": "8f0c5670-4e56-4892-b06d-91c085d7004f",
+  "appname": "App Connect IW",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "8f0c5670-4e56-4892-b06d-91c085d7004f"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "f72c8140-2111-481c-87ff-72b910f6e3f8",
+  "appname": "Cognitive Services LUIS Owner",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f72c8140-2111-481c-87ff-72b910f6e3f8"
+}

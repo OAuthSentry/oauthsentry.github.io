@@ -1,0 +1,12 @@
+{
+  "appid": "43d7b169-1d9e-4d32-8cd8-06c5974ed90c",
+  "appname": "Threat Intelligence Briefing Agent resource",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "43d7b169-1d9e-4d32-8cd8-06c5974ed90c"
+}

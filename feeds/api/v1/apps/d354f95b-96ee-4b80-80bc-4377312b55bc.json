@@ -1,0 +1,12 @@
+{
+  "appid": "d354f95b-96ee-4b80-80bc-4377312b55bc",
+  "appname": "Purview/sit-defn-japan-bank-account-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d354f95b-96ee-4b80-80bc-4377312b55bc"
+}

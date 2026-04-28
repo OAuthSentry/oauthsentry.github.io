@@ -1,0 +1,12 @@
+{
+  "appid": "019b39dd-8c25-4765-91a3-d9c6baf3c3b3",
+  "appname": "Purview/sit-defn-philippines-unified-multi-purpose-identification-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "019b39dd-8c25-4765-91a3-d9c6baf3c3b3"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "c769435f-f061-4d0b-8ff1-3d39870e5f85",
+  "appname": "RoleManagement.Read.Exchange - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c769435f-f061-4d0b-8ff1-3d39870e5f85"
+}

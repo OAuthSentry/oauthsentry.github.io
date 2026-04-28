@@ -1,0 +1,12 @@
+{
+  "appid": "98da8e66-7299-4ebd-9f82-c871ab37d3ef",
+  "appname": "Purview/sit-defn-japan-my-number-personal",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "98da8e66-7299-4ebd-9f82-c871ab37d3ef"
+}

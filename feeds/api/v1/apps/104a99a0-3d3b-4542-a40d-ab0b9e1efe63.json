@@ -1,0 +1,12 @@
+{
+  "appid": "104a99a0-3d3b-4542-a40d-ab0b9e1efe63",
+  "appname": "Purview/sit-defn-australia-medical-account-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "104a99a0-3d3b-4542-a40d-ab0b9e1efe63"
+}

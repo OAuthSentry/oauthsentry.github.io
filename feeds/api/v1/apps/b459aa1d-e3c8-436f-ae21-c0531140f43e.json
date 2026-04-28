@@ -1,0 +1,12 @@
+{
+  "appid": "b459aa1d-e3c8-436f-ae21-c0531140f43e",
+  "appname": "Azure Spring Apps Job Log Reader Role",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b459aa1d-e3c8-436f-ae21-c0531140f43e"
+}

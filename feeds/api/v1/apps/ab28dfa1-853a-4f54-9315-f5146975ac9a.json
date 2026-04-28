@@ -1,0 +1,12 @@
+{
+  "appid": "ab28dfa1-853a-4f54-9315-f5146975ac9a",
+  "appname": "Privacy Management - subject rights request (10) USGOV_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ab28dfa1-853a-4f54-9315-f5146975ac9a"
+}

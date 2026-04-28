@@ -1,0 +1,12 @@
+{
+  "appid": "24af5f65-d0f3-467b-9f78-ea798c4aeffc",
+  "appname": "Microsoft Forms for Government (Plan E3)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "24af5f65-d0f3-467b-9f78-ea798c4aeffc"
+}

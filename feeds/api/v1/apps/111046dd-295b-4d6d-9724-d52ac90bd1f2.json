@@ -1,0 +1,12 @@
+{
+  "appid": "111046dd-295b-4d6d-9724-d52ac90bd1f2",
+  "appname": "Microsoft Defender for Endpoint_2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "111046dd-295b-4d6d-9724-d52ac90bd1f2"
+}

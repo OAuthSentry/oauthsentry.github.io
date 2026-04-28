@@ -1,0 +1,12 @@
+{
+  "appid": "49f0cc30-024c-4dfd-ab3e-82e137ee5431",
+  "appname": "DeviceManagementRBAC.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "49f0cc30-024c-4dfd-ab3e-82e137ee5431"
+}

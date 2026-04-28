@@ -1,0 +1,12 @@
+{
+  "appid": "505e180f-f7e0-4b65-91d4-00d670bbd18c",
+  "appname": "COMMUNICATIONS CREDITS",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "505e180f-f7e0-4b65-91d4-00d670bbd18c"
+}

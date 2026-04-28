@@ -1,0 +1,12 @@
+{
+  "appid": "c63d4d19-e8cb-460e-b37c-4d6c34603745",
+  "appname": "OFFICEMOBILE",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c63d4d19-e8cb-460e-b37c-4d6c34603745"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "74820b05-a6c9-40f9-8fb0-9f86aca93998",
+  "appname": "SafeNet eToken Fusion",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "74820b05-a6c9-40f9-8fb0-9f86aca93998"
+}

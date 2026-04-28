@@ -1,0 +1,12 @@
+{
+  "appid": "a12b0b94-b317-4dcd-84a8-502ce99884c6",
+  "appname": "EventGrid TopicSpaces Publisher",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a12b0b94-b317-4dcd-84a8-502ce99884c6"
+}

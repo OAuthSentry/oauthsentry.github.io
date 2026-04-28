@@ -1,0 +1,12 @@
+{
+  "appid": "50180013-6191-4d1e-a373-e590ff4e66af",
+  "appname": "eDiscovery.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "50180013-6191-4d1e-a373-e590ff4e66af"
+}

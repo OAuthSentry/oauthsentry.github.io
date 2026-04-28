@@ -1,0 +1,12 @@
+{
+  "appid": "e42bc969-759a-4820-9283-6b73085b68e6",
+  "appname": "Privacy Management â risk",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e42bc969-759a-4820-9283-6b73085b68e6"
+}

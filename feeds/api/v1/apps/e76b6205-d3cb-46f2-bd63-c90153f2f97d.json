@@ -1,0 +1,12 @@
+{
+  "appid": "e76b6205-d3cb-46f2-bd63-c90153f2f97d",
+  "appname": "Purview/sit-defn-sql-server-connection-string",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e76b6205-d3cb-46f2-bd63-c90153f2f97d"
+}

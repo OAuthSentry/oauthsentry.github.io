@@ -1,0 +1,12 @@
+{
+  "appid": "6a76346d-5d6e-4051-9fe3-ed3f312b5597",
+  "appname": "Azure Rights Management_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6a76346d-5d6e-4051-9fe3-ed3f312b5597"
+}

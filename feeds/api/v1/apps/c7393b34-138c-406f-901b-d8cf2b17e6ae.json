@@ -1,0 +1,12 @@
+{
+  "appid": "c7393b34-138c-406f-901b-d8cf2b17e6ae",
+  "appname": "Managed Application Operator Role",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c7393b34-138c-406f-901b-d8cf2b17e6ae"
+}

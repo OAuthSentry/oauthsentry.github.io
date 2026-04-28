@@ -1,0 +1,12 @@
+{
+  "appid": "c1f9a0bc-1dd2-404a-b27f-8e29047a43fd",
+  "appname": "YubiKey 5 FIPS Series with NFC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c1f9a0bc-1dd2-404a-b27f-8e29047a43fd"
+}

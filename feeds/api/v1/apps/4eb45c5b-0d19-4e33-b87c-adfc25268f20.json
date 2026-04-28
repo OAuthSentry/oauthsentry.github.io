@@ -1,0 +1,12 @@
+{
+  "appid": "4eb45c5b-0d19-4e33-b87c-adfc25268f20",
+  "appname": "Microsoft 365 E5_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4eb45c5b-0d19-4e33-b87c-adfc25268f20"
+}

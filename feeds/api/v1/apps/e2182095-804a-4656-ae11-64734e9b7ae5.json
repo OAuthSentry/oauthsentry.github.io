@@ -1,0 +1,12 @@
+{
+  "appid": "e2182095-804a-4656-ae11-64734e9b7ae5",
+  "appname": "Access package assignment manager",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e2182095-804a-4656-ae11-64734e9b7ae5"
+}

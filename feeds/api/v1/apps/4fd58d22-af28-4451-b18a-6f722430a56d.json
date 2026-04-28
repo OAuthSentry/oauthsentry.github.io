@@ -1,0 +1,12 @@
+{
+  "appid": "4fd58d22-af28-4451-b18a-6f722430a56d",
+  "appname": "Purview/sit-defn-austria-tax-identification-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4fd58d22-af28-4451-b18a-6f722430a56d"
+}

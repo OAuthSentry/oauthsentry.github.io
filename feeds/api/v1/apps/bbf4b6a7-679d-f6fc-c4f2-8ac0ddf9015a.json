@@ -1,0 +1,12 @@
+{
+  "appid": "bbf4b6a7-679d-f6fc-c4f2-8ac0ddf9015a",
+  "appname": "Excelsecu eSecu FIDO2 PRO Security Key",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "bbf4b6a7-679d-f6fc-c4f2-8ac0ddf9015a"
+}

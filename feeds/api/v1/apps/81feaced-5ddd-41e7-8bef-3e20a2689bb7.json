@@ -1,0 +1,12 @@
+{
+  "appid": "81feaced-5ddd-41e7-8bef-3e20a2689bb7",
+  "appname": "AMC PROD [Community Contributed]",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=GitHub)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "81feaced-5ddd-41e7-8bef-3e20a2689bb7"
+}

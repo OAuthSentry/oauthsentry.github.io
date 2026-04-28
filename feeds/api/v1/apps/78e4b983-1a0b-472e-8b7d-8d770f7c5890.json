@@ -1,0 +1,12 @@
+{
+  "appid": "78e4b983-1a0b-472e-8b7d-8d770f7c5890",
+  "appname": "DeID Data Owner",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "78e4b983-1a0b-472e-8b7d-8d770f7c5890"
+}

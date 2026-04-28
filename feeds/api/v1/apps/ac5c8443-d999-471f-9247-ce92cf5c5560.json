@@ -1,0 +1,12 @@
+{
+  "appid": "ac5c8443-d999-471f-9247-ce92cf5c5560",
+  "appname": "DeviceManagementCloudCA.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ac5c8443-d999-471f-9247-ce92cf5c5560"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "23211fc1-f9d1-4e8e-8e9e-08a5d0a109bb",
+  "appname": "VirtualEventRegistration-Anon.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "23211fc1-f9d1-4e8e-8e9e-08a5d0a109bb"
+}

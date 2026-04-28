@@ -1,0 +1,12 @@
+{
+  "appid": "a4bfb28e-becc-41b0-a454-ac680dc258d3",
+  "appname": "Dynamics 365 Enterprise Edition - Additional Portal (Qualified Offer)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a4bfb28e-becc-41b0-a454-ac680dc258d3"
+}

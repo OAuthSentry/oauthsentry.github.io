@@ -1,0 +1,12 @@
+{
+  "appid": "3539d28c-6e35-4a30-b3a9-cd43d5d3e0e2",
+  "appname": "Power Automate unattended RPA add-on",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3539d28c-6e35-4a30-b3a9-cd43d5d3e0e2"
+}

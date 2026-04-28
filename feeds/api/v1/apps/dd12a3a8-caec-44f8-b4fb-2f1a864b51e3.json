@@ -1,0 +1,12 @@
+{
+  "appid": "dd12a3a8-caec-44f8-b4fb-2f1a864b51e3",
+  "appname": "Common Data Service for Apps File Capacity_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "dd12a3a8-caec-44f8-b4fb-2f1a864b51e3"
+}

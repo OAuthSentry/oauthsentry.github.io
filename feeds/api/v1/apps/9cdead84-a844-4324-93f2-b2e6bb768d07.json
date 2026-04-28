@@ -1,0 +1,12 @@
+{
+  "appid": "9cdead84-a844-4324-93f2-b2e6bb768d07",
+  "appname": "Azure Virtual Desktop",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9cdead84-a844-4324-93f2-b2e6bb768d07"
+}

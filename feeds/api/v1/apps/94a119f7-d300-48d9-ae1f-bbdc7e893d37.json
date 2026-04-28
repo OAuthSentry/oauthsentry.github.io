@@ -1,0 +1,12 @@
+{
+  "appid": "94a119f7-d300-48d9-ae1f-bbdc7e893d37",
+  "appname": "Walkie Talkie GCC App",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "94a119f7-d300-48d9-ae1f-bbdc7e893d37"
+}

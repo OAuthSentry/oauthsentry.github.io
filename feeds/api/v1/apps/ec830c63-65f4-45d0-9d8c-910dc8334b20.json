@@ -1,0 +1,12 @@
+{
+  "appid": "ec830c63-65f4-45d0-9d8c-910dc8334b20",
+  "appname": "Purview/sit-defn-malta-tax-identification-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ec830c63-65f4-45d0-9d8c-910dc8334b20"
+}

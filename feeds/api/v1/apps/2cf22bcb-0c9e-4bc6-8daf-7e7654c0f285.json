@@ -1,0 +1,12 @@
+{
+  "appid": "2cf22bcb-0c9e-4bc6-8daf-7e7654c0f285",
+  "appname": "Microsoft Teams Phone Resource Account for GCC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2cf22bcb-0c9e-4bc6-8daf-7e7654c0f285"
+}

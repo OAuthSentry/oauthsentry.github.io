@@ -1,0 +1,12 @@
+{
+  "appid": "ce34e7e5-485f-4d76-964f-b3d2b16d1e4f",
+  "appname": "Managed Grafana Resource ID",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ce34e7e5-485f-4d76-964f-b3d2b16d1e4f"
+}

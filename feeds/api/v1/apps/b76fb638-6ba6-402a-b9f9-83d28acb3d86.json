@@ -1,0 +1,12 @@
+{
+  "appid": "b76fb638-6ba6-402a-b9f9-83d28acb3d86",
+  "appname": "Viva Learning Seeded",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b76fb638-6ba6-402a-b9f9-83d28acb3d86"
+}

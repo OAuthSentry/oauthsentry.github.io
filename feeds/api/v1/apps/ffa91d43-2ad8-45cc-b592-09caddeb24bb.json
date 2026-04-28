@@ -1,0 +1,12 @@
+{
+  "appid": "ffa91d43-2ad8-45cc-b592-09caddeb24bb",
+  "appname": "Application-RemoteDesktopConfig.ReadWrite.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ffa91d43-2ad8-45cc-b592-09caddeb24bb"
+}

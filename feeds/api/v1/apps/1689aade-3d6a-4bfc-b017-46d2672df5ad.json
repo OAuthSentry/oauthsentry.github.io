@@ -1,0 +1,12 @@
+{
+  "appid": "1689aade-3d6a-4bfc-b017-46d2672df5ad",
+  "appname": "MDE",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1689aade-3d6a-4bfc-b017-46d2672df5ad"
+}

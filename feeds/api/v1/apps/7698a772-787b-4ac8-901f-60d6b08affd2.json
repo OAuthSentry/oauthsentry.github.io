@@ -1,0 +1,12 @@
+{
+  "appid": "7698a772-787b-4ac8-901f-60d6b08affd2",
+  "appname": "Cloud Device Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "7698a772-787b-4ac8-901f-60d6b08affd2"
+}

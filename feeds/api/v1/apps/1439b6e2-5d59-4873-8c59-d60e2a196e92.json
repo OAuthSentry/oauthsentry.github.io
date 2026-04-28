@@ -1,0 +1,12 @@
+{
+  "appid": "1439b6e2-5d59-4873-8c59-d60e2a196e92",
+  "appname": "Dynamics 365 Customer Service Professional",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1439b6e2-5d59-4873-8c59-d60e2a196e92"
+}

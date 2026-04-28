@@ -1,0 +1,12 @@
+{
+  "appid": "cce71173-f76d-446e-97ff-efb2d82e11b1",
+  "appname": "RoleManagementAlert.Read.Directory - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "cce71173-f76d-446e-97ff-efb2d82e11b1"
+}

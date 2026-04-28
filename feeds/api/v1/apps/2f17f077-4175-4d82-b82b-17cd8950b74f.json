@@ -1,0 +1,12 @@
+{
+  "appid": "2f17f077-4175-4d82-b82b-17cd8950b74f",
+  "appname": "Office 365 Groups",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2f17f077-4175-4d82-b82b-17cd8950b74f"
+}

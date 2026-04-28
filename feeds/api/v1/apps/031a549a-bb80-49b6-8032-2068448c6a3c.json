@@ -1,0 +1,12 @@
+{
+  "appid": "031a549a-bb80-49b6-8032-2068448c6a3c",
+  "appname": "RoleManagement.Read.CloudPC - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "031a549a-bb80-49b6-8032-2068448c6a3c"
+}

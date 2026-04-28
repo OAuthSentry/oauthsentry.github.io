@@ -1,0 +1,12 @@
+{
+  "appid": "55747057-9b5d-4bd4-b387-abf52a8bd489",
+  "appname": "App proxy service",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "55747057-9b5d-4bd4-b387-abf52a8bd489"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "6a0c2318-d59d-4c7d-bf2e-5f3902dc2593",
+  "appname": "EduCurricula.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6a0c2318-d59d-4c7d-bf2e-5f3902dc2593"
+}

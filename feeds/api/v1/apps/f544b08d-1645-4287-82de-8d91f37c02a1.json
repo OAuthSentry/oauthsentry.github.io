@@ -1,0 +1,12 @@
+{
+  "appid": "f544b08d-1645-4287-82de-8d91f37c02a1",
+  "appname": "MICROSOFT 365 AUDIO CONFERENCING FOR GOVERNMENT",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f544b08d-1645-4287-82de-8d91f37c02a1"
+}

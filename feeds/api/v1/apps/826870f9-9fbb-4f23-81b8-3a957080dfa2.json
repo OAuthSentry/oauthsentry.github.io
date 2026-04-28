@@ -1,0 +1,12 @@
+{
+  "appid": "826870f9-9fbb-4f23-81b8-3a957080dfa2",
+  "appname": "Medeina Service Dev [Community Contributed]",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=GitHub)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "826870f9-9fbb-4f23-81b8-3a957080dfa2"
+}

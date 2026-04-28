@@ -1,0 +1,12 @@
+{
+  "appid": "2457fe40-65be-48a1-935f-924ad6e62dba",
+  "appname": "Common Data Service Field service Part Time Contractors for Government",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2457fe40-65be-48a1-935f-924ad6e62dba"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "e5a17adf-8f0d-4b57-bc14-d331235f9307",
+  "appname": "Microsoft 365 Business Voice (UK",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e5a17adf-8f0d-4b57-bc14-d331235f9307"
+}

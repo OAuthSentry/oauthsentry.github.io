@@ -1,0 +1,12 @@
+{
+  "appid": "c2667967-7050-4e7e-b059-4cbbb3811d03",
+  "appname": "CustomAuthenticationExtension.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c2667967-7050-4e7e-b059-4cbbb3811d03"
+}

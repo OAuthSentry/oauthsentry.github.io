@@ -1,0 +1,12 @@
+{
+  "appid": "de377cbc-0019-4ec2-b77c-3f223947e102",
+  "appname": "Azure Active Directory",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "de377cbc-0019-4ec2-b77c-3f223947e102"
+}

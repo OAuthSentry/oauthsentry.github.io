@@ -1,0 +1,12 @@
+{
+  "appid": "c1ff6cc2-c111-46fe-8896-e0ef812ad9f3",
+  "appname": "Cognitive Services Custom Vision Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c1ff6cc2-c111-46fe-8896-e0ef812ad9f3"
+}

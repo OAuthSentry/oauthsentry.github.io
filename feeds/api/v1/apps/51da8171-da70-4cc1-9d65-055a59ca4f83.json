@@ -1,0 +1,12 @@
+{
+  "appid": "51da8171-da70-4cc1-9d65-055a59ca4f83",
+  "appname": "Purview/sit-defn-estonia-drivers-license-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "51da8171-da70-4cc1-9d65-055a59ca4f83"
+}

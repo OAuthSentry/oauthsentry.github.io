@@ -1,0 +1,12 @@
+{
+  "appid": "63038b2c-28d0-45f6-bc36-33062963b498",
+  "appname": "SharePoint (Plan 2) for Education",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "63038b2c-28d0-45f6-bc36-33062963b498"
+}

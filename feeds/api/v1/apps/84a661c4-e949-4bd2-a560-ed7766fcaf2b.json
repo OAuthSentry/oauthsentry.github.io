@@ -1,0 +1,12 @@
+{
+  "appid": "84a661c4-e949-4bd2-a560-ed7766fcaf2b",
+  "appname": "Microsoft Entra ID P2_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "84a661c4-e949-4bd2-a560-ed7766fcaf2b"
+}

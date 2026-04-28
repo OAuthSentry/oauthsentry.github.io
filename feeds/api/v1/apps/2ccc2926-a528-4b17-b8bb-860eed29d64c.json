@@ -1,0 +1,12 @@
+{
+  "appid": "2ccc2926-a528-4b17-b8bb-860eed29d64c",
+  "appname": "VirtualAppointment.ReadWrite - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2ccc2926-a528-4b17-b8bb-860eed29d64c"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "eb1cec80-a830-486e-b45b-f57094f163f9",
+  "appname": "Microsoft OneDrive",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "eb1cec80-a830-486e-b45b-f57094f163f9"
+}

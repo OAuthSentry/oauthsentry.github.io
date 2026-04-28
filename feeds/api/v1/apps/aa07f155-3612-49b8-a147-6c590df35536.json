@@ -1,0 +1,12 @@
+{
+  "appid": "aa07f155-3612-49b8-a147-6c590df35536",
+  "appname": "SharePointTenantSettings.ReadWrite.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "aa07f155-3612-49b8-a147-6c590df35536"
+}

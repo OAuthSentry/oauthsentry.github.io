@@ -1,0 +1,12 @@
+{
+  "appid": "b827a2af-24b2-4f61-9eb3-8788e66a0d86",
+  "appname": "Chat.ManageDeletion.Chat",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b827a2af-24b2-4f61-9eb3-8788e66a0d86"
+}

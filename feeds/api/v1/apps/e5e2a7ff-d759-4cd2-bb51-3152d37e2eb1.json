@@ -1,0 +1,12 @@
+{
+  "appid": "e5e2a7ff-d759-4cd2-bb51-3152d37e2eb1",
+  "appname": "Storage Account Backup Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e5e2a7ff-d759-4cd2-bb51-3152d37e2eb1"
+}

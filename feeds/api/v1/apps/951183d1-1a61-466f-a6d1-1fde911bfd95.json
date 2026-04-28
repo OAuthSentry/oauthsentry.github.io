@@ -1,0 +1,12 @@
+{
+  "appid": "951183d1-1a61-466f-a6d1-1fde911bfd95",
+  "appname": "Device.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "951183d1-1a61-466f-a6d1-1fde911bfd95"
+}

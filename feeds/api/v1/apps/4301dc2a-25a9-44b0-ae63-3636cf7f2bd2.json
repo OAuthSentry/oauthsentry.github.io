@@ -1,0 +1,12 @@
+{
+  "appid": "4301dc2a-25a9-44b0-ae63-3636cf7f2bd2",
+  "appname": "Azure Spring Apps Spring Cloud Gateway Log Reader Role",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4301dc2a-25a9-44b0-ae63-3636cf7f2bd2"
+}

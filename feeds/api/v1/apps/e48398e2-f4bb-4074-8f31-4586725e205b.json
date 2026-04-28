@@ -1,0 +1,12 @@
+{
+  "appid": "e48398e2-f4bb-4074-8f31-4586725e205b",
+  "appname": "Organizational Messages Approver",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e48398e2-f4bb-4074-8f31-4586725e205b"
+}

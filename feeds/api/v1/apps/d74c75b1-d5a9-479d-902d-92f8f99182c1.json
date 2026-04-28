@@ -1,0 +1,12 @@
+{
+  "appid": "d74c75b1-d5a9-479d-902d-92f8f99182c1",
+  "appname": "ServiceActivity-Microsoft365Web.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d74c75b1-d5a9-479d-902d-92f8f99182c1"
+}

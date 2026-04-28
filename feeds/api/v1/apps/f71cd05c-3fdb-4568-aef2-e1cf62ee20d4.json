@@ -1,0 +1,12 @@
+{
+  "appid": "f71cd05c-3fdb-4568-aef2-e1cf62ee20d4",
+  "appname": "RoleAssignmentSchedule.Remove.Directory - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f71cd05c-3fdb-4568-aef2-e1cf62ee20d4"
+}

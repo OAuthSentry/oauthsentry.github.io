@@ -1,0 +1,12 @@
+{
+  "appid": "6b616635-ae58-433a-a918-8c45e4f304dc",
+  "appname": "VirtualEvent.Read - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6b616635-ae58-433a-a918-8c45e4f304dc"
+}

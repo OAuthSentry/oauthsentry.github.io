@@ -1,0 +1,12 @@
+{
+  "appid": "aa6791d3-bb09-4bc2-afed-c30c3fe26032",
+  "appname": "Microsoft Teams Phone Standard for Small and Medium Business",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "aa6791d3-bb09-4bc2-afed-c30c3fe26032"
+}

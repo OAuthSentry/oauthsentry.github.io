@@ -1,0 +1,12 @@
+{
+  "appid": "440eaaa8-b3e0-484b-a8be-62870b9ba70a",
+  "appname": "Microsoft Teams Phone Resource Account_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "440eaaa8-b3e0-484b-a8be-62870b9ba70a"
+}

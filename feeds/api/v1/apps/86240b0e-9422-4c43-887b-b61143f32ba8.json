@@ -1,0 +1,12 @@
+{
+  "appid": "86240b0e-9422-4c43-887b-b61143f32ba8",
+  "appname": "Desktop Virtualization Application Group Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "86240b0e-9422-4c43-887b-b61143f32ba8"
+}

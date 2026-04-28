@@ -1,0 +1,12 @@
+{
+  "appid": "c5002c70-f725-4367-b409-f0eff4fee6c0",
+  "appname": "Flow per user plan",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c5002c70-f725-4367-b409-f0eff4fee6c0"
+}

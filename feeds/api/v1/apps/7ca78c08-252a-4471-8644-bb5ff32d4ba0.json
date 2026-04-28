@@ -1,0 +1,12 @@
+{
+  "appid": "7ca78c08-252a-4471-8644-bb5ff32d4ba0",
+  "appname": "Search Service Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "7ca78c08-252a-4471-8644-bb5ff32d4ba0"
+}

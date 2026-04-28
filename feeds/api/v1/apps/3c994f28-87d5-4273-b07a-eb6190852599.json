@@ -1,0 +1,12 @@
+{
+  "appid": "3c994f28-87d5-4273-b07a-eb6190852599",
+  "appname": "Microsoft 365 Apps for Enterprise (Device)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3c994f28-87d5-4273-b07a-eb6190852599"
+}

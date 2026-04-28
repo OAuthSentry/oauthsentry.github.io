@@ -1,0 +1,12 @@
+{
+  "appid": "f266d9c0-ccb9-4fb8-a228-01ac0d8d6627",
+  "appname": "ThreatIntelligence.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f266d9c0-ccb9-4fb8-a228-01ac0d8d6627"
+}

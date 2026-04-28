@@ -1,0 +1,12 @@
+{
+  "appid": "29869db6-602d-4853-ab93-3484f905df50",
+  "appname": "Purview/sit-defn-australia-passport-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "29869db6-602d-4853-ab93-3484f905df50"
+}

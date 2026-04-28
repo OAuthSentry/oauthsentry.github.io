@@ -1,0 +1,12 @@
+{
+  "appid": "4c8d0bbc-75d3-4935-991f-5f3c56d81508",
+  "appname": "FHIR Data Reader",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4c8d0bbc-75d3-4935-991f-5f3c56d81508"
+}

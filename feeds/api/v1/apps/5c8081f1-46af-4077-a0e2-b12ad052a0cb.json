@@ -1,0 +1,12 @@
+{
+  "appid": "5c8081f1-46af-4077-a0e2-b12ad052a0cb",
+  "appname": "Project Work Management_US Gov",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5c8081f1-46af-4077-a0e2-b12ad052a0cb"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "b3a539c9-59cb-4ad5-825a-041ddbdc2bdb",
+  "appname": "PrivilegedAccess.Read.AzureAD - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b3a539c9-59cb-4ad5-825a-041ddbdc2bdb"
+}

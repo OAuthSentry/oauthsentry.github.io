@@ -1,0 +1,12 @@
+{
+  "appid": "45a2423b-e884-448d-a831-d9e139c52d2f",
+  "appname": "Exchange Online Protection_2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "45a2423b-e884-448d-a831-d9e139c52d2f"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "6f0e9100-ff66-41ce-96fc-3d8b7ad26887",
+  "appname": "Dataverse for Power Apps per app",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6f0e9100-ff66-41ce-96fc-3d8b7ad26887"
+}

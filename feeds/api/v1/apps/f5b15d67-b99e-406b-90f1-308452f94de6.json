@@ -1,0 +1,12 @@
+{
+  "appid": "f5b15d67-b99e-406b-90f1-308452f94de6",
+  "appname": "Microsoft 365 E3 Extra Features",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f5b15d67-b99e-406b-90f1-308452f94de6"
+}

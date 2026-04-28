@@ -1,0 +1,12 @@
+{
+  "appid": "874fc546-6efe-4d22-90b8-5c4e7aa59f4b",
+  "appname": "PowerApps for Dynamics 365",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "874fc546-6efe-4d22-90b8-5c4e7aa59f4b"
+}

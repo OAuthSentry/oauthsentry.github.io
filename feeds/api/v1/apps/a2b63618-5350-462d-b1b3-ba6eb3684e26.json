@@ -1,0 +1,12 @@
+{
+  "appid": "a2b63618-5350-462d-b1b3-ba6eb3684e26",
+  "appname": "PublicKeyInfrastructure.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a2b63618-5350-462d-b1b3-ba6eb3684e26"
+}

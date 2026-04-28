@@ -1,0 +1,12 @@
+{
+  "appid": "6b77f0a0-0d89-41cc-acd1-579c22c17a67",
+  "appname": "AgFood Platform Sensor Partner Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6b77f0a0-0d89-41cc-acd1-579c22c17a67"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "9f265de7-8d5e-4e9a-a805-5e8bbc49656f",
+  "appname": "ApprovalSolution.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9f265de7-8d5e-4e9a-a805-5e8bbc49656f"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "7e3f3d30-3557-4442-bdae-139312178b39",
+  "appname": "RSA DS100",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "7e3f3d30-3557-4442-bdae-139312178b39"
+}

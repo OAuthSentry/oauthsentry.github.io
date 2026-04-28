@@ -1,0 +1,12 @@
+{
+  "appid": "db31e92a-b9ea-4d87-bf6a-75a37a9ca35a",
+  "appname": "SynchronizationData-User.Upload - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "db31e92a-b9ea-4d87-bf6a-75a37a9ca35a"
+}

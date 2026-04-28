@@ -1,0 +1,12 @@
+{
+  "appid": "bb6577c4-ea0a-40b2-8962-ea18cb8ecd4e",
+  "appname": "DeID Realtime Data User",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "bb6577c4-ea0a-40b2-8962-ea18cb8ecd4e"
+}

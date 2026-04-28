@@ -1,0 +1,12 @@
+{
+  "appid": "959f8984-c045-4866-89c7-12bf9737be2e",
+  "appname": "Data Operator for Managed Disks",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "959f8984-c045-4866-89c7-12bf9737be2e"
+}

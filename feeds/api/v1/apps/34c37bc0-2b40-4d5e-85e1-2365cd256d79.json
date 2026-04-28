@@ -1,0 +1,12 @@
+{
+  "appid": "34c37bc0-2b40-4d5e-85e1-2365cd256d79",
+  "appname": "ExternalConnection.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "34c37bc0-2b40-4d5e-85e1-2365cd256d79"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "eedb7fdd-7539-4345-a38b-4839e4a84cbd",
+  "appname": "ProgramControl.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "eedb7fdd-7539-4345-a38b-4839e4a84cbd"
+}

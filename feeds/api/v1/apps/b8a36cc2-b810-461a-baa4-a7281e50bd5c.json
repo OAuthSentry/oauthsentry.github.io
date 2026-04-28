@@ -1,0 +1,12 @@
+{
+  "appid": "b8a36cc2-b810-461a-baa4-a7281e50bd5c",
+  "appname": "NetworkAccessBranch.ReadWrite.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b8a36cc2-b810-461a-baa4-a7281e50bd5c"
+}

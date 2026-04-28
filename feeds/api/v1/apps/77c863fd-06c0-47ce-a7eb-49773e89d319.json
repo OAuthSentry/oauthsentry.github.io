@@ -1,0 +1,12 @@
+{
+  "appid": "77c863fd-06c0-47ce-a7eb-49773e89d319",
+  "appname": "Policy.ReadWrite.AccessReview - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "77c863fd-06c0-47ce-a7eb-49773e89d319"
+}

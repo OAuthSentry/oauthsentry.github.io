@@ -1,0 +1,12 @@
+{
+  "appid": "498770d9-bab7-4e4c-b73d-5ded82a1d0b3",
+  "appname": "Cancel all pending access package assignment requests for user",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "498770d9-bab7-4e4c-b73d-5ded82a1d0b3"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "35a253ca-e72e-4247-8b11-c5a76575a3b3",
+  "appname": "Service to Service authentication in AX7 link",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "35a253ca-e72e-4247-8b11-c5a76575a3b3"
+}

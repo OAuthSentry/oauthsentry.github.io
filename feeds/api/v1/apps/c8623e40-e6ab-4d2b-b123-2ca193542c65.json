@@ -1,0 +1,12 @@
+{
+  "appid": "c8623e40-e6ab-4d2b-b123-2ca193542c65",
+  "appname": "Azure API Management Data Plane",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c8623e40-e6ab-4d2b-b123-2ca193542c65"
+}

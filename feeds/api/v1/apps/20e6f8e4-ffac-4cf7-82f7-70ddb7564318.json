@@ -1,0 +1,12 @@
+{
+  "appid": "20e6f8e4-ffac-4cf7-82f7-70ddb7564318",
+  "appname": "AuditLogsQuery-CRM.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "20e6f8e4-ffac-4cf7-82f7-70ddb7564318"
+}

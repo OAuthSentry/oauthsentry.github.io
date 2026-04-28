@@ -1,0 +1,12 @@
+{
+  "appid": "420af87e-8177-4146-a780-3786adaffbca",
+  "appname": "Power BI Pro CE",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "420af87e-8177-4146-a780-3786adaffbca"
+}

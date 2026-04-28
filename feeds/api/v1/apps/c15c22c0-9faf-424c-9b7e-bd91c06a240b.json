@@ -1,0 +1,12 @@
+{
+  "appid": "c15c22c0-9faf-424c-9b7e-bd91c06a240b",
+  "appname": "Account Owner",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c15c22c0-9faf-424c-9b7e-bd91c06a240b"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "c3bd4fe2-1775-4013-b91d-35f16d377d13",
+  "appname": "Azure AD B2C TPEngine",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c3bd4fe2-1775-4013-b91d-35f16d377d13"
+}

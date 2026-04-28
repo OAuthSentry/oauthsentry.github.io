@@ -1,0 +1,12 @@
+{
+  "appid": "6cdf1fb1-b46f-424f-9493-07247caa22e2",
+  "appname": "OrgSettings-Microsoft365Install.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6cdf1fb1-b46f-424f-9493-07247caa22e2"
+}

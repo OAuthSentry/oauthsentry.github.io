@@ -1,0 +1,12 @@
+{
+  "appid": "03fcf763-27c2-49ed-9422-2641c6c895c9",
+  "appname": "Purview/sit-defn-latvia-personal-code",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "03fcf763-27c2-49ed-9422-2641c6c895c9"
+}

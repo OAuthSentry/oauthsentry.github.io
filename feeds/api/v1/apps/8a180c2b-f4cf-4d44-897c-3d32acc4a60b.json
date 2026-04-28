@@ -1,0 +1,12 @@
+{
+  "appid": "8a180c2b-f4cf-4d44-897c-3d32acc4a60b",
+  "appname": "Enterprise Mobility + Security G5 GCC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "8a180c2b-f4cf-4d44-897c-3d32acc4a60b"
+}

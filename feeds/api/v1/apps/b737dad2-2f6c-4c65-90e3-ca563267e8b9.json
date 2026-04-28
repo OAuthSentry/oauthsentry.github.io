@@ -1,0 +1,12 @@
+{
+  "appid": "b737dad2-2f6c-4c65-90e3-ca563267e8b9",
+  "appname": "MICROSOFT PLANNE",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b737dad2-2f6c-4c65-90e3-ca563267e8b9"
+}

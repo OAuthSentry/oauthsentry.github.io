@@ -1,0 +1,12 @@
+{
+  "appid": "87909ea6-7b07-42cf-b3a0-b8bd8e7072a8",
+  "appname": "TeamSettings.Read.Group",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "87909ea6-7b07-42cf-b3a0-b8bd8e7072a8"
+}

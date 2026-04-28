@@ -1,0 +1,12 @@
+{
+  "appid": "fa4345a4-a730-4230-84a8-7d9651b86739",
+  "appname": "Azure Virtual Desktop (classic) Client",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "fa4345a4-a730-4230-84a8-7d9651b86739"
+}

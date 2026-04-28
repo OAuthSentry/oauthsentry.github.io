@@ -1,0 +1,12 @@
+{
+  "appid": "c8f5141d-83e0-4e9a-84d0-bb6677e26f64",
+  "appname": "Azure Guest Container Update Manager [Community Contributed]",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=GitHub)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c8f5141d-83e0-4e9a-84d0-bb6677e26f64"
+}

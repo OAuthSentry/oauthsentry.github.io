@@ -1,0 +1,12 @@
+{
+  "appid": "acb8f680-0834-4146-b69e-4ab1b39745ad",
+  "appname": "eDiscovery.ReadWrite.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "acb8f680-0834-4146-b69e-4ab1b39745ad"
+}

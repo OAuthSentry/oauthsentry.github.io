@@ -1,0 +1,12 @@
+{
+  "appid": "6d99eb83-7b5f-4947-8e99-cc12f1adb399",
+  "appname": "Microsoft Dynamics CRM Online Additional Non-production Instance",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6d99eb83-7b5f-4947-8e99-cc12f1adb399"
+}

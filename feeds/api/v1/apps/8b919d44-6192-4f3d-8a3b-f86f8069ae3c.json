@@ -1,0 +1,12 @@
+{
+  "appid": "8b919d44-6192-4f3d-8a3b-f86f8069ae3c",
+  "appname": "CrossTenantUserProfileSharing.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "8b919d44-6192-4f3d-8a3b-f86f8069ae3c"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "e2bdea63-235e-44c6-9f5e-5b0e783f07dd",
+  "appname": "Dynamics 365 Customer Insights Engagement Insights Viral",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e2bdea63-235e-44c6-9f5e-5b0e783f07dd"
+}

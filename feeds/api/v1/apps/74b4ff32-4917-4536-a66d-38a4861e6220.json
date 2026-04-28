@@ -1,0 +1,12 @@
+{
+  "appid": "74b4ff32-4917-4536-a66d-38a4861e6220",
+  "appname": "HealthMonitoringAlert.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "74b4ff32-4917-4536-a66d-38a4861e6220"
+}

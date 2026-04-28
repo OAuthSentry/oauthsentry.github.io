@@ -1,0 +1,12 @@
+{
+  "appid": "b0f809d5-a662-4391-a5aa-136e9c565b9d",
+  "appname": "Microsoft 365 GCC G5 w/o WDATP/CAS Unified",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b0f809d5-a662-4391-a5aa-136e9c565b9d"
+}

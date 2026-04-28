@@ -1,0 +1,12 @@
+{
+  "appid": "50483e42-d915-4231-9639-7fdb7fd190e5",
+  "appname": "UserAuthenticationMethod.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "50483e42-d915-4231-9639-7fdb7fd190e5"
+}

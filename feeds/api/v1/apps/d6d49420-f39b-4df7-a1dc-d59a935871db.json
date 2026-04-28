@@ -1,0 +1,12 @@
+{
+  "appid": "d6d49420-f39b-4df7-a1dc-d59a935871db",
+  "appname": "DefaultChannelAuthTenant (botframework.com)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d6d49420-f39b-4df7-a1dc-d59a935871db"
+}

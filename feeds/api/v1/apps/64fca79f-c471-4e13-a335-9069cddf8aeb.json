@@ -1,0 +1,12 @@
+{
+  "appid": "64fca79f-c471-4e13-a335-9069cddf8aeb",
+  "appname": "Office Mobile Apps for Office 365 for GCC_2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "64fca79f-c471-4e13-a335-9069cddf8aeb"
+}

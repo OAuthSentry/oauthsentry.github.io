@@ -1,0 +1,12 @@
+{
+  "appid": "fbefdf68-fe86-0106-213e-4d5fa24cbe2e",
+  "appname": "Excelsecu eSecu FIDO2 NFC Security Key",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "fbefdf68-fe86-0106-213e-4d5fa24cbe2e"
+}

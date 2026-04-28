@@ -1,0 +1,12 @@
+{
+  "appid": "d6037e40-282c-493d-8f63-f255e36c6ef4",
+  "appname": "Microsoft Dynamics 365 Supply Chain Visibility [Community Contributed]",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=GitHub)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d6037e40-282c-493d-8f63-f255e36c6ef4"
+}

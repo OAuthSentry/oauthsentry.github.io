@@ -1,0 +1,12 @@
+{
+  "appid": "90847c2a-e29d-4d2f-9f54-c5b4d3f26471",
+  "appname": "ESTS",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "90847c2a-e29d-4d2f-9f54-c5b4d3f26471"
+}

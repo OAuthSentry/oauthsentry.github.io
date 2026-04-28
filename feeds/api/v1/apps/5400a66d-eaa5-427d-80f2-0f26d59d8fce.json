@@ -1,0 +1,12 @@
+{
+  "appid": "5400a66d-eaa5-427d-80f2-0f26d59d8fce",
+  "appname": "Azure Information Protection Premium P2 for GCC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5400a66d-eaa5-427d-80f2-0f26d59d8fce"
+}

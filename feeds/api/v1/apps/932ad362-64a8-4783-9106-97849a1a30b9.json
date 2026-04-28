@@ -1,0 +1,12 @@
+{
+  "appid": "932ad362-64a8-4783-9106-97849a1a30b9",
+  "appname": "CLOUD APP SECURITY DISCOVERY",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "932ad362-64a8-4783-9106-97849a1a30b9"
+}

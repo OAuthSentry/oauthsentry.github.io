@@ -1,0 +1,12 @@
+{
+  "appid": "bba890d4-7881-4584-8102-0c3fdfb739a7",
+  "appname": "Microsoft Defender for Endpoint P1 for EDU",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "bba890d4-7881-4584-8102-0c3fdfb739a7"
+}

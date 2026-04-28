@@ -1,0 +1,12 @@
+{
+  "appid": "9a5445ad-406e-43eb-8bd7-cac17ab6d0e4",
+  "appname": "Purview/sit-defn-drug-enforcement-agency-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9a5445ad-406e-43eb-8bd7-cac17ab6d0e4"
+}

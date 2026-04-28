@@ -1,0 +1,12 @@
+{
+  "appid": "ca7f3140-d88c-455b-9a1c-7f0679e31a76",
+  "appname": "Visio Plan 1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ca7f3140-d88c-455b-9a1c-7f0679e31a76"
+}

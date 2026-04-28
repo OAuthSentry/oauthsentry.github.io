@@ -1,0 +1,12 @@
+{
+  "appid": "22222222-2222-2222-2222-222222222222",
+  "appname": "Azure SDK single org default tenant ID",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "22222222-2222-2222-2222-222222222222"
+}

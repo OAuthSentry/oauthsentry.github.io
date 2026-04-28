@@ -1,0 +1,12 @@
+{
+  "appid": "c5703116-972b-4851-a3e7-ae1259843399",
+  "appname": "NEOWAVE Badgeo FIDO2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c5703116-972b-4851-a3e7-ae1259843399"
+}

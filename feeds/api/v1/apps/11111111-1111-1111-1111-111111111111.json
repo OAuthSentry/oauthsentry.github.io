@@ -1,0 +1,12 @@
+{
+  "appid": "11111111-1111-1111-1111-111111111111",
+  "appname": "Blazor Visual Studio project template default client Id",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "11111111-1111-1111-1111-111111111111"
+}

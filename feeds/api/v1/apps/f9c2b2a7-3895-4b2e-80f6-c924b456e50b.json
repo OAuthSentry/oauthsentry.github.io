@@ -1,0 +1,12 @@
+{
+  "appid": "f9c2b2a7-3895-4b2e-80f6-c924b456e50b",
+  "appname": "MultiTenantOrganization.ReadBasic.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f9c2b2a7-3895-4b2e-80f6-c924b456e50b"
+}

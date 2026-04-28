@@ -1,0 +1,12 @@
+{
+  "appid": "bb70e231-92dc-4729-aff5-697b3f04be95",
+  "appname": "OnPremDirectorySynchronization.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "bb70e231-92dc-4729-aff5-697b3f04be95"
+}

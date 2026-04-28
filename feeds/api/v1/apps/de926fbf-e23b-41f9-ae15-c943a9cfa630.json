@@ -1,0 +1,12 @@
+{
+  "appid": "de926fbf-e23b-41f9-ae15-c943a9cfa630",
+  "appname": "Microsoft Azure Authorization Private Link Provider [Community Contributed]",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=GitHub)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "de926fbf-e23b-41f9-ae15-c943a9cfa630"
+}

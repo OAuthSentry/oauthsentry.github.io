@@ -1,0 +1,12 @@
+{
+  "appid": "25df335f-86eb-4119-b717-0ff02de207e9",
+  "appname": "Insights Analyst",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "25df335f-86eb-4119-b717-0ff02de207e9"
+}

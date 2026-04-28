@@ -1,0 +1,12 @@
+{
+  "appid": "61902246-d7cb-453e-85cd-53ee28eec138",
+  "appname": "Microsoft Viva Suite",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "61902246-d7cb-453e-85cd-53ee28eec138"
+}

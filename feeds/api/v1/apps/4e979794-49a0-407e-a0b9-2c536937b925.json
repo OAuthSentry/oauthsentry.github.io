@@ -1,0 +1,12 @@
+{
+  "appid": "4e979794-49a0-407e-a0b9-2c536937b925",
+  "appname": "Purview/sit-defn-chile-identity-card-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4e979794-49a0-407e-a0b9-2c536937b925"
+}

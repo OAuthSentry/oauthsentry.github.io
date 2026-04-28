@@ -1,0 +1,12 @@
+{
+  "appid": "a8ead177-1889-4546-9387-f25e658e2a79",
+  "appname": "Policy.ReadWrite.MobilityManagement - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a8ead177-1889-4546-9387-f25e658e2a79"
+}

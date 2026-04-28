@@ -1,0 +1,12 @@
+{
+  "appid": "a8889054-8d42-49c9-bc1c-52486c10e7cd",
+  "appname": "Reservations Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a8889054-8d42-49c9-bc1c-52486c10e7cd"
+}

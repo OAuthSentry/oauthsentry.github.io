@@ -1,0 +1,12 @@
+{
+  "appid": "938fd547-d794-42a4-996c-1cc206619580",
+  "appname": "Windows 10/11 Enterprise E5 Commercial (GCC Compatible)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "938fd547-d794-42a4-996c-1cc206619580"
+}

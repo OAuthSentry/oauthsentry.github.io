@@ -1,0 +1,12 @@
+{
+  "appid": "f7b75c60-3036-4b75-91c3-6b41c27c1689",
+  "appname": "Reservation Purchaser",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f7b75c60-3036-4b75-91c3-6b41c27c1689"
+}

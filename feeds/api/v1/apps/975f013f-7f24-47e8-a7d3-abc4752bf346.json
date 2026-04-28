@@ -1,0 +1,12 @@
+{
+  "appid": "975f013f-7f24-47e8-a7d3-abc4752bf346",
+  "appname": "PME tenant ID",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "975f013f-7f24-47e8-a7d3-abc4752bf346"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "2e19bf46-9799-4acc-b64b-a2cd2f7a4ee1",
+  "appname": "Secondary Cluster",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2e19bf46-9799-4acc-b64b-a2cd2f7a4ee1"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "54b61386-c818-4634-8400-61c9e8f6acd3",
+  "appname": "Common Data Service for Power Automate per Business Process Plan for GCC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "54b61386-c818-4634-8400-61c9e8f6acd3"
+}

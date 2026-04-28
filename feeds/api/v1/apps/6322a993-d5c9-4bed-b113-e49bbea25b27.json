@@ -1,0 +1,12 @@
+{
+  "appid": "6322a993-d5c9-4bed-b113-e49bbea25b27",
+  "appname": "Cognitive Services LUIS Writer",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6322a993-d5c9-4bed-b113-e49bbea25b27"
+}

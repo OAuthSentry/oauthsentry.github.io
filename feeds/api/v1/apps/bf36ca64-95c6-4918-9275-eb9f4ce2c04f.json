@@ -1,0 +1,12 @@
+{
+  "appid": "bf36ca64-95c6-4918-9275-eb9f4ce2c04f",
+  "appname": "MICROSOFT DYNAMICS CRM ONLINE BASIC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "bf36ca64-95c6-4918-9275-eb9f4ce2c04f"
+}

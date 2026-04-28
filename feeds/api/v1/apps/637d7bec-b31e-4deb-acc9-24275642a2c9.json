@@ -1,0 +1,12 @@
+{
+  "appid": "637d7bec-b31e-4deb-acc9-24275642a2c9",
+  "appname": "User.ManageIdentities.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "637d7bec-b31e-4deb-acc9-24275642a2c9"
+}

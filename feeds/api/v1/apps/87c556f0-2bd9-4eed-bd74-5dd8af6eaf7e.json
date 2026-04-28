@@ -1,0 +1,12 @@
+{
+  "appid": "87c556f0-2bd9-4eed-bd74-5dd8af6eaf7e",
+  "appname": "TeamworkAppSettings.ReadWrite.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "87c556f0-2bd9-4eed-bd74-5dd8af6eaf7e"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "77fa9abd-0359-4d32-bd60-28f4e78f784b",
+  "appname": "EV_EFI_VARIABLE_DRIVER_CONFIG GUID 2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "77fa9abd-0359-4d32-bd60-28f4e78f784b"
+}

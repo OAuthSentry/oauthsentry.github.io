@@ -1,0 +1,12 @@
+{
+  "appid": "1abb026f-7572-49f6-9ddd-ad61cbba181e",
+  "appname": "CallEvents.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1abb026f-7572-49f6-9ddd-ad61cbba181e"
+}

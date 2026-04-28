@@ -1,0 +1,12 @@
+{
+  "appid": "fc47391d-ab2c-410f-9059-5600f7af660d",
+  "appname": "IndustryData-DataConnector.Upload - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "fc47391d-ab2c-410f-9059-5600f7af660d"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "0a5ae4ab-0d65-4eeb-be61-29fc9b54394b",
+  "appname": "Cognitive Services Custom Vision Trainer",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "0a5ae4ab-0d65-4eeb-be61-29fc9b54394b"
+}

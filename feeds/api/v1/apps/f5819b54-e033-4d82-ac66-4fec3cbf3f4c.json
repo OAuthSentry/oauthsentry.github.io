@@ -1,0 +1,12 @@
+{
+  "appid": "f5819b54-e033-4d82-ac66-4fec3cbf3f4c",
+  "appname": "Azure Connected Machine Resource Manager",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f5819b54-e033-4d82-ac66-4fec3cbf3f4c"
+}

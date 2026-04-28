@@ -1,0 +1,12 @@
+{
+  "appid": "6db7aeea-6c4a-475d-bbb0-7338bc73d646",
+  "appname": "Yammer",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6db7aeea-6c4a-475d-bbb0-7338bc73d646"
+}

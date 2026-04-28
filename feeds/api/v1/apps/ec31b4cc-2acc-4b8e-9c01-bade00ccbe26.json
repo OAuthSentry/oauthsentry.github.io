@@ -1,0 +1,12 @@
+{
+  "appid": "ec31b4cc-2acc-4b8e-9c01-bade00ccbe26",
+  "appname": "KeyXentic FIDO2 Secp256R1 FIDO2 CTAP2 Authenticator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ec31b4cc-2acc-4b8e-9c01-bade00ccbe26"
+}

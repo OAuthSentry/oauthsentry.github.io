@@ -1,0 +1,12 @@
+{
+  "appid": "119b5846-be45-44cd-87d7-bfc566330e11",
+  "appname": "TeamsActivity.Send.Chat",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "119b5846-be45-44cd-87d7-bfc566330e11"
+}

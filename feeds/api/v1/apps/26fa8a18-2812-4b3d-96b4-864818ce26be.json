@@ -1,0 +1,12 @@
+{
+  "appid": "26fa8a18-2812-4b3d-96b4-864818ce26be",
+  "appname": "Power Automate for Dynamics 365 Mixed Reality",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "26fa8a18-2812-4b3d-96b4-864818ce26be"
+}

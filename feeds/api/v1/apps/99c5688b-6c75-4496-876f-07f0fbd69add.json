@@ -1,0 +1,12 @@
+{
+  "appid": "99c5688b-6c75-4496-876f-07f0fbd69add",
+  "appname": "Dynamics 365 for Marketing Additional Application_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "99c5688b-6c75-4496-876f-07f0fbd69add"
+}

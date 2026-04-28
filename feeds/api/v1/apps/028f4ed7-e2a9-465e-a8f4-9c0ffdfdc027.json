@@ -1,0 +1,12 @@
+{
+  "appid": "028f4ed7-e2a9-465e-a8f4-9c0ffdfdc027",
+  "appname": "Data Box Reader",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "028f4ed7-e2a9-465e-a8f4-9c0ffdfdc027"
+}

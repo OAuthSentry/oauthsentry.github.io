@@ -1,0 +1,12 @@
+{
+  "appid": "507172c0-6001-4f4f-80e7-f350507af3e5",
+  "appname": "Microsoft Dynamics 365 Customer Voice for Relationship Sales",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "507172c0-6001-4f4f-80e7-f350507af3e5"
+}

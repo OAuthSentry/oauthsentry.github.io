@@ -1,0 +1,12 @@
+{
+  "appid": "d42ffc93-c136-491d-b4fd-6f18168c68fd",
+  "appname": "Microsoft Advertising app ID",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d42ffc93-c136-491d-b4fd-6f18168c68fd"
+}

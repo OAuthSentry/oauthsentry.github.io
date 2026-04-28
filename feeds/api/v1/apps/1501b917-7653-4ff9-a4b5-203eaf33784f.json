@@ -1,0 +1,12 @@
+{
+  "appid": "1501b917-7653-4ff9-a4b5-203eaf33784f",
+  "appname": "Microsoft Hardware Warranty Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1501b917-7653-4ff9-a4b5-203eaf33784f"
+}

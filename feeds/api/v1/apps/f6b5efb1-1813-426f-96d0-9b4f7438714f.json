@@ -1,0 +1,12 @@
+{
+  "appid": "f6b5efb1-1813-426f-96d0-9b4f7438714f",
+  "appname": "Dynamics 365 for Operations Enterprise Edition - Sandbox Tier 4:Standard Performance Testing",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f6b5efb1-1813-426f-96d0-9b4f7438714f"
+}

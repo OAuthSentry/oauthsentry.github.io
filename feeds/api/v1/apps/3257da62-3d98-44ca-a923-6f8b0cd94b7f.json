@@ -1,0 +1,12 @@
+{
+  "appid": "3257da62-3d98-44ca-a923-6f8b0cd94b7f",
+  "appname": "Purview/sit-defn-philippines-national-identification-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3257da62-3d98-44ca-a923-6f8b0cd94b7f"
+}

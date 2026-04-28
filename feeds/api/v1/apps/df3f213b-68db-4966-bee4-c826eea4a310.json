@@ -1,0 +1,12 @@
+{
+  "appid": "df3f213b-68db-4966-bee4-c826eea4a310",
+  "appname": "Datawiza Cloud Management Console (DCMC)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "df3f213b-68db-4966-bee4-c826eea4a310"
+}

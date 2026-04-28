@@ -1,0 +1,12 @@
+{
+  "appid": "1a97fc2b-dd2f-48f1-bc4e-2ddf25813956",
+  "appname": "Purview/sit-defn-new-zealand-bank-account-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1a97fc2b-dd2f-48f1-bc4e-2ddf25813956"
+}

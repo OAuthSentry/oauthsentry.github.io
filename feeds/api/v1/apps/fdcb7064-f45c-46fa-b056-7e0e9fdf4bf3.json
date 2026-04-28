@@ -1,0 +1,12 @@
+{
+  "appid": "fdcb7064-f45c-46fa-b056-7e0e9fdf4bf3",
+  "appname": "Project Online Essentials for Government",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "fdcb7064-f45c-46fa-b056-7e0e9fdf4bf3"
+}

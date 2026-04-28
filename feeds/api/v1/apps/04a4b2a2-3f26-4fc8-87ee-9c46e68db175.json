@@ -1,0 +1,12 @@
+{
+  "appid": "04a4b2a2-3f26-4fc8-87ee-9c46e68db175",
+  "appname": "PublicKeyInfrastructure.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "04a4b2a2-3f26-4fc8-87ee-9c46e68db175"
+}

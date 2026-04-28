@@ -1,0 +1,12 @@
+{
+  "appid": "5141c408-df3d-456a-9878-a65119b0a750",
+  "appname": "Common Data Service Unattended RPA for Government",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5141c408-df3d-456a-9878-a65119b0a750"
+}

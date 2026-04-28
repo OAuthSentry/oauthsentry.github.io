@@ -1,0 +1,12 @@
+{
+  "appid": "92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b",
+  "appname": "Block Win32 API calls from Office macros",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b"
+}

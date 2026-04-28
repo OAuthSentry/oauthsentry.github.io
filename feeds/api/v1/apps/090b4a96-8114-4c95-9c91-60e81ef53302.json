@@ -1,0 +1,12 @@
+{
+  "appid": "090b4a96-8114-4c95-9c91-60e81ef53302",
+  "appname": "Dynamics 365 for Supply Chain Management Attach to Qualifying Dynamics 365 Base Offer",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "090b4a96-8114-4c95-9c91-60e81ef53302"
+}

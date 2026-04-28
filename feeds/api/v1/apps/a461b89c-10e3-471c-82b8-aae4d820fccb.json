@@ -1,0 +1,12 @@
+{
+  "appid": "a461b89c-10e3-471c-82b8-aae4d820fccb",
+  "appname": "Enterprise Mobility + Security E5_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a461b89c-10e3-471c-82b8-aae4d820fccb"
+}

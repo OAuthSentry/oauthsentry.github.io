@@ -1,0 +1,12 @@
+{
+  "appid": "d24aef57-1500-4070-84db-2666f29cf966",
+  "appname": "Modern Commerce Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d24aef57-1500-4070-84db-2666f29cf966"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "93cc200d-a47f-4c56-aec1-83f8b0d0425a",
+  "appname": "Common Data Service for Dynamics 365 Retail",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "93cc200d-a47f-4c56-aec1-83f8b0d0425a"
+}

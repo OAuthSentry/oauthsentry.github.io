@@ -1,0 +1,12 @@
+{
+  "appid": "1215fb39-1d15-4c05-b2e3-d519ac3feab4",
+  "appname": "Azure Lighthouse monitoring appID 1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1215fb39-1d15-4c05-b2e3-d519ac3feab4"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "ceb28005-d758-4df7-bb97-87a617b93d6c",
+  "appname": "Dynamics 365 for Retail Device",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ceb28005-d758-4df7-bb97-87a617b93d6c"
+}

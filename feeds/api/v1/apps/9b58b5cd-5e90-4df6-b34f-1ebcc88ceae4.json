@@ -1,0 +1,12 @@
+{
+  "appid": "9b58b5cd-5e90-4df6-b34f-1ebcc88ceae4",
+  "appname": "Purview/sit-defn-brazil-legal-entity-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9b58b5cd-5e90-4df6-b34f-1ebcc88ceae4"
+}

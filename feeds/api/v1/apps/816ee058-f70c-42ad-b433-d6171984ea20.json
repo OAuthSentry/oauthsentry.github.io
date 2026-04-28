@@ -1,0 +1,12 @@
+{
+  "appid": "816ee058-f70c-42ad-b433-d6171984ea20",
+  "appname": "Power Apps per app plan (1 app or website) BD Only - GCC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "816ee058-f70c-42ad-b433-d6171984ea20"
+}

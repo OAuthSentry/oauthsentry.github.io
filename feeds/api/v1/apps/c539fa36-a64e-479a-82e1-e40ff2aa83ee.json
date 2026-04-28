@@ -1,0 +1,12 @@
+{
+  "appid": "c539fa36-a64e-479a-82e1-e40ff2aa83ee",
+  "appname": "Power Automate for Power Apps per App Plan",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c539fa36-a64e-479a-82e1-e40ff2aa83ee"
+}

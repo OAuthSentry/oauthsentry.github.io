@@ -1,0 +1,12 @@
+{
+  "appid": "4a72c235-a50d-4870-b598-fd88fd1fa074",
+  "appname": "AuditLogsQuery-OneDrive.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4a72c235-a50d-4870-b598-fd88fd1fa074"
+}

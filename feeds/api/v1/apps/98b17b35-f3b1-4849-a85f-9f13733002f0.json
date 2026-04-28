@@ -1,0 +1,12 @@
+{
+  "appid": "98b17b35-f3b1-4849-a85f-9f13733002f0",
+  "appname": "Bookmark.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "98b17b35-f3b1-4849-a85f-9f13733002f0"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "d91c5288-0ef0-49b7-b8ae-21ca0aa6b3f3",
+  "appname": "KEY-ID FIDO2 Authenticator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d91c5288-0ef0-49b7-b8ae-21ca0aa6b3f3"
+}

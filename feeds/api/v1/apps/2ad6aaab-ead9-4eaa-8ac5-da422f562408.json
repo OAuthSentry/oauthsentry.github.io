@@ -1,0 +1,12 @@
+{
+  "appid": "2ad6aaab-ead9-4eaa-8ac5-da422f562408",
+  "appname": "Desktop Virtualization Session Host Operator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "2ad6aaab-ead9-4eaa-8ac5-da422f562408"
+}

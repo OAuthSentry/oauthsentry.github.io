@@ -1,0 +1,12 @@
+{
+  "appid": "f07046bd-2a3c-4b96-b0be-dea79d7cbfb8",
+  "appname": "Microsoft Forms (Plan F1)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f07046bd-2a3c-4b96-b0be-dea79d7cbfb8"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "1817a540-221f-4459-9202-3bd78b81d803",
+  "appname": "Purview/sit-defn-ukraine-passport-domestic",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1817a540-221f-4459-9202-3bd78b81d803"
+}

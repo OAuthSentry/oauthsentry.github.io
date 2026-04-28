@@ -1,0 +1,12 @@
+{
+  "appid": "c088a766-074b-43ba-90d4-1fb21feae531",
+  "appname": "PostgreSQL Flexible Server Long Term Retention Backup Role",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c088a766-074b-43ba-90d4-1fb21feae531"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "aba4ae5f-2193-4029-9191-0cb91df5e314",
+  "appname": "Storage File Data SMB Share Reader",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "aba4ae5f-2193-4029-9191-0cb91df5e314"
+}

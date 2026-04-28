@@ -1,0 +1,12 @@
+{
+  "appid": "3c860712-2d37-42a4-928f-5c93935d26a1",
+  "appname": "Send onboarding reminder email",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "3c860712-2d37-42a4-928f-5c93935d26a1"
+}

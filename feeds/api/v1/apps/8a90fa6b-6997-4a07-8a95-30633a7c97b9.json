@@ -1,0 +1,12 @@
+{
+  "appid": "8a90fa6b-6997-4a07-8a95-30633a7c97b9",
+  "appname": "DeID Batch Data Owner",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "8a90fa6b-6997-4a07-8a95-30633a7c97b9"
+}

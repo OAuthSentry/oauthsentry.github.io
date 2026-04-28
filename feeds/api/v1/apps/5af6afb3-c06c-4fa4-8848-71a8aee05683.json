@@ -1,0 +1,12 @@
+{
+  "appid": "5af6afb3-c06c-4fa4-8848-71a8aee05683",
+  "appname": "Azure Kubernetes Fleet Manager RBAC Writer",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5af6afb3-c06c-4fa4-8848-71a8aee05683"
+}

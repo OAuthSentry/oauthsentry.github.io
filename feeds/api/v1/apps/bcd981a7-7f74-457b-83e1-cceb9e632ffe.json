@@ -1,0 +1,12 @@
+{
+  "appid": "bcd981a7-7f74-457b-83e1-cceb9e632ffe",
+  "appname": "Azure Digital Twins Data Owner",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "bcd981a7-7f74-457b-83e1-cceb9e632ffe"
+}

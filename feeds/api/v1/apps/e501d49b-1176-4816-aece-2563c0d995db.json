@@ -1,0 +1,12 @@
+{
+  "appid": "e501d49b-1176-4816-aece-2563c0d995db",
+  "appname": "Power Virtual Agents for Digital Messaging for Gov",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e501d49b-1176-4816-aece-2563c0d995db"
+}

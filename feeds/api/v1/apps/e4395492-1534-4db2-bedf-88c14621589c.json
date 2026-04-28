@@ -1,0 +1,12 @@
+{
+  "appid": "e4395492-1534-4db2-bedf-88c14621589c",
+  "appname": "Media Services Media Operator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e4395492-1534-4db2-bedf-88c14621589c"
+}

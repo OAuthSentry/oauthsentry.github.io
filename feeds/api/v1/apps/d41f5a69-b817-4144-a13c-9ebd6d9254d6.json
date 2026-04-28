@@ -1,0 +1,12 @@
+{
+  "appid": "d41f5a69-b817-4144-a13c-9ebd6d9254d6",
+  "appname": "ATKey.Card CTAP2.0",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d41f5a69-b817-4144-a13c-9ebd6d9254d6"
+}

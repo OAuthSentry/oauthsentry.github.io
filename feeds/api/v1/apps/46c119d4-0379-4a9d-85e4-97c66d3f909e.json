@@ -1,0 +1,12 @@
+{
+  "appid": "46c119d4-0379-4a9d-85e4-97c66d3f909e",
+  "appname": "Microsoft 365 A5 for Students",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "46c119d4-0379-4a9d-85e4-97c66d3f909e"
+}

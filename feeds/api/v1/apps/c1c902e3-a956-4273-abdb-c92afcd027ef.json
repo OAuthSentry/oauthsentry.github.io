@@ -1,0 +1,12 @@
+{
+  "appid": "c1c902e3-a956-4273-abdb-c92afcd027ef",
+  "appname": "MCS - BizApps",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c1c902e3-a956-4273-abdb-c92afcd027ef"
+}

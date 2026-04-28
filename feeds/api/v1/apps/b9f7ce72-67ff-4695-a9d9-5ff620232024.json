@@ -1,0 +1,12 @@
+{
+  "appid": "b9f7ce72-67ff-4695-a9d9-5ff620232024",
+  "appname": "Dynamics 365 Customer Service Chat Application Integration for Government",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b9f7ce72-67ff-4695-a9d9-5ff620232024"
+}

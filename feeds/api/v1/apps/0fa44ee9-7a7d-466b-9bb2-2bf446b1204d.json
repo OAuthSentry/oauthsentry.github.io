@@ -1,0 +1,12 @@
+{
+  "appid": "0fa44ee9-7a7d-466b-9bb2-2bf446b1204d",
+  "appname": "Desktop Virtualization Workspace Reader",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "0fa44ee9-7a7d-466b-9bb2-2bf446b1204d"
+}

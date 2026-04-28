@@ -1,0 +1,12 @@
+{
+  "appid": "27460883-1df1-4691-b032-3b79643e5e63",
+  "appname": "User Experience Success Manager",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "27460883-1df1-4691-b032-3b79643e5e63"
+}

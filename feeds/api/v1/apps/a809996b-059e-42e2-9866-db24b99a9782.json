@@ -1,0 +1,12 @@
+{
+  "appid": "a809996b-059e-42e2-9866-db24b99a9782",
+  "appname": "Microsoft Copilot for Microsoft 365_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a809996b-059e-42e2-9866-db24b99a9782"
+}

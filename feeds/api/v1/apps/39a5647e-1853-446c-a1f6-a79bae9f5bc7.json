@@ -1,0 +1,12 @@
+{
+  "appid": "39a5647e-1853-446c-a1f6-a79bae9f5bc7",
+  "appname": "IDmelon Android Authenticator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "39a5647e-1853-446c-a1f6-a79bae9f5bc7"
+}

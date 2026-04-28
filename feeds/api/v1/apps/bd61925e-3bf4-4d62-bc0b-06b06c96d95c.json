@@ -1,0 +1,12 @@
+{
+  "appid": "bd61925e-3bf4-4d62-bc0b-06b06c96d95c",
+  "appname": "Files.SelectedOperations.Selected - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "bd61925e-3bf4-4d62-bc0b-06b06c96d95c"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "ac5f4878-75e4-4b82-af2d-02e13ea9f411",
+  "appname": "Purview/sit-defn-russia-passport-number-international",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ac5f4878-75e4-4b82-af2d-02e13ea9f411"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "5ec06c3b-007e-4820-8343-7ff73b889735",
+  "appname": "Purview/sit-defn-austria-identity-card",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5ec06c3b-007e-4820-8343-7ff73b889735"
+}

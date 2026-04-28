@@ -1,0 +1,12 @@
+{
+  "appid": "b29efa5f-7782-4dc3-9537-4d5bc70a5e9f",
+  "appname": "Azure Kubernetes Service Arc Cluster Admin Role",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b29efa5f-7782-4dc3-9537-4d5bc70a5e9f"
+}

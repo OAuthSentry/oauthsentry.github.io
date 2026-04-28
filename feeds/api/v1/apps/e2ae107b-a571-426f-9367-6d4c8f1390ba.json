@@ -1,0 +1,12 @@
+{
+  "appid": "e2ae107b-a571-426f-9367-6d4c8f1390ba",
+  "appname": "Dynamics 365 Customer Voice USL",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "e2ae107b-a571-426f-9367-6d4c8f1390ba"
+}

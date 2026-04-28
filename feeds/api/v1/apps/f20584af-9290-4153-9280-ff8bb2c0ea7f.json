@@ -1,0 +1,12 @@
+{
+  "appid": "f20584af-9290-4153-9280-ff8bb2c0ea7f",
+  "appname": "Directory.Write.Restricted - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f20584af-9290-4153-9280-ff8bb2c0ea7f"
+}

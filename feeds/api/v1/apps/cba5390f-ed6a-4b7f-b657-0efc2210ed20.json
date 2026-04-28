@@ -1,0 +1,12 @@
+{
+  "appid": "cba5390f-ed6a-4b7f-b657-0efc2210ed20",
+  "appname": "Directory.Write.Restricted - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "cba5390f-ed6a-4b7f-b657-0efc2210ed20"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "62375ab9-6b52-47ed-826b-58e47e0e304b",
+  "appname": "Group.Unified",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "62375ab9-6b52-47ed-826b-58e47e0e304b"
+}

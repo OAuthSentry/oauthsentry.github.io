@@ -1,0 +1,12 @@
+{
+  "appid": "9d822255-d64d-4b7a-afdb-833b9a97ed02",
+  "appname": "Notes.Create - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9d822255-d64d-4b7a-afdb-833b9a97ed02"
+}

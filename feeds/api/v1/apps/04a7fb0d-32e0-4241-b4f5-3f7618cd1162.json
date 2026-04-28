@@ -1,0 +1,12 @@
+{
+  "appid": "04a7fb0d-32e0-4241-b4f5-3f7618cd1162",
+  "appname": "Office 365 Midsize Business",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "04a7fb0d-32e0-4241-b4f5-3f7618cd1162"
+}

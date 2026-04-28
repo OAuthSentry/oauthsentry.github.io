@@ -1,0 +1,12 @@
+{
+  "appid": "426e0c7f-0c7e-4658-b36f-ff54d6c29b45",
+  "appname": "CDN Endpoint Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "426e0c7f-0c7e-4658-b36f-ff54d6c29b45"
+}

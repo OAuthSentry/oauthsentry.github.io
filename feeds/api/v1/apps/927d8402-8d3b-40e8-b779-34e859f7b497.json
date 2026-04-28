@@ -1,0 +1,12 @@
+{
+  "appid": "927d8402-8d3b-40e8-b779-34e859f7b497",
+  "appname": "Power Apps Portals login capacity add-on Tier 3 (50 unit min)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "927d8402-8d3b-40e8-b779-34e859f7b497"
+}

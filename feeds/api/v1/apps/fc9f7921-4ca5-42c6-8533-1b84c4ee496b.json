@@ -1,0 +1,12 @@
+{
+  "appid": "fc9f7921-4ca5-42c6-8533-1b84c4ee496b",
+  "appname": "Microsoft Search for Arlington",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "fc9f7921-4ca5-42c6-8533-1b84c4ee496b"
+}

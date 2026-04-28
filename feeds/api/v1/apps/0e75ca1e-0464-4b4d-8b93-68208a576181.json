@@ -1,0 +1,12 @@
+{
+  "appid": "0e75ca1e-0464-4b4d-8b93-68208a576181",
+  "appname": "Cognitive Services Speech Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "0e75ca1e-0464-4b4d-8b93-68208a576181"
+}

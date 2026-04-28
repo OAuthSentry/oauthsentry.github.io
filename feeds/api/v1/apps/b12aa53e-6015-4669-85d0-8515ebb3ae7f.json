@@ -1,0 +1,12 @@
+{
+  "appid": "b12aa53e-6015-4669-85d0-8515ebb3ae7f",
+  "appname": "Private DNS Zone Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b12aa53e-6015-4669-85d0-8515ebb3ae7f"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "ab03ddd5-7ae4-4f2e-8af8-86654f7e0a27",
+  "appname": "SecurityIdentitiesHealth.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ab03ddd5-7ae4-4f2e-8af8-86654f7e0a27"
+}

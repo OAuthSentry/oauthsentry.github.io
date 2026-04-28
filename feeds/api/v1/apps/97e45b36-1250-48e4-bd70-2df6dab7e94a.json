@@ -1,0 +1,12 @@
+{
+  "appid": "97e45b36-1250-48e4-bd70-2df6dab7e94a",
+  "appname": "VirtualAppointmentNotification.Send - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "97e45b36-1250-48e4-bd70-2df6dab7e94a"
+}

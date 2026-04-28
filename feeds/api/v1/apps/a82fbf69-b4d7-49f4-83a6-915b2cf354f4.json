@@ -1,0 +1,12 @@
+{
+  "appid": "a82fbf69-b4d7-49f4-83a6-915b2cf354f4",
+  "appname": "Viva Engage Core",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "a82fbf69-b4d7-49f4-83a6-915b2cf354f4"
+}

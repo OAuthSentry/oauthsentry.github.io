@@ -1,0 +1,12 @@
+{
+  "appid": "7084e364-df71-4a4a-9e8f-d375b5529913",
+  "appname": "Messaging Async Media",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "7084e364-df71-4a4a-9e8f-d375b5529913"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "087fca6e-4606-4d41-b3f6-5ebdf75b8b4c",
+  "appname": "Azure Arc MetalLB extension",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "087fca6e-4606-4d41-b3f6-5ebdf75b8b4c"
+}

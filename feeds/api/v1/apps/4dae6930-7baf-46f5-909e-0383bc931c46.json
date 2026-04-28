@@ -1,0 +1,12 @@
+{
+  "appid": "4dae6930-7baf-46f5-909e-0383bc931c46",
+  "appname": "Azure Customer Lockbox Approver for Subscription",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4dae6930-7baf-46f5-909e-0383bc931c46"
+}

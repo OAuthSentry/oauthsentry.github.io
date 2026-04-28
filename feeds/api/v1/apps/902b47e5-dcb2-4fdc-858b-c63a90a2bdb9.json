@@ -1,0 +1,12 @@
+{
+  "appid": "902b47e5-dcb2-4fdc-858b-c63a90a2bdb9",
+  "appname": "SharePoint Online Kiosk",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "902b47e5-dcb2-4fdc-858b-c63a90a2bdb9"
+}

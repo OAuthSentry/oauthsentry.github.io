@@ -1,0 +1,12 @@
+{
+  "appid": "9e3f62cf-ca93-4989-b6ce-bf83c28f9fe8",
+  "appname": "RoleManagement.ReadWrite.Directory - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9e3f62cf-ca93-4989-b6ce-bf83c28f9fe8"
+}

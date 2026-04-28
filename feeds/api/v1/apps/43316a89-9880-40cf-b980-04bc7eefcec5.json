@@ -1,0 +1,12 @@
+{
+  "appid": "43316a89-9880-40cf-b980-04bc7eefcec5",
+  "appname": "Purview/sit-defn-germany-tax-identification-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "43316a89-9880-40cf-b980-04bc7eefcec5"
+}

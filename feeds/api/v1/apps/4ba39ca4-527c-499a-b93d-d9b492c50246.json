@@ -1,0 +1,12 @@
+{
+  "appid": "4ba39ca4-527c-499a-b93d-d9b492c50246",
+  "appname": "Partner Tier1 Support",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "4ba39ca4-527c-499a-b93d-d9b492c50246"
+}

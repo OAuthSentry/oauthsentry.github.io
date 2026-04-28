@@ -1,0 +1,12 @@
+{
+  "appid": "33f1466e-63a6-464c-bf6a-d1787928a56a",
+  "appname": "Dynamics 365 Customer Service Insights vTrial",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "33f1466e-63a6-464c-bf6a-d1787928a56a"
+}

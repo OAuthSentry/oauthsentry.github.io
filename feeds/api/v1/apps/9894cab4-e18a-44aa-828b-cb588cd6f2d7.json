@@ -1,0 +1,12 @@
+{
+  "appid": "9894cab4-e18a-44aa-828b-cb588cd6f2d7",
+  "appname": "Cognitive Services Face Recognizer",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9894cab4-e18a-44aa-828b-cb588cd6f2d7"
+}

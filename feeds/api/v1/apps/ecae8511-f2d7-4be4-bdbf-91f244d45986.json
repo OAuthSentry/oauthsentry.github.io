@@ -1,0 +1,12 @@
+{
+  "appid": "ecae8511-f2d7-4be4-bdbf-91f244d45986",
+  "appname": "BackupRestore-Monitor.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ecae8511-f2d7-4be4-bdbf-91f244d45986"
+}

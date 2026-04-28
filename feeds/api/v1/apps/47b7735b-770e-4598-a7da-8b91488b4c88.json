@@ -1,0 +1,12 @@
+{
+  "appid": "47b7735b-770e-4598-a7da-8b91488b4c88",
+  "appname": "Data Lake Analytics Developer",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "47b7735b-770e-4598-a7da-8b91488b4c88"
+}

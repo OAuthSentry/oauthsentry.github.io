@@ -1,0 +1,12 @@
+{
+  "appid": "966707d0-3269-4727-9be2-8c3a10f19b9d",
+  "appname": "Password Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "966707d0-3269-4727-9be2-8c3a10f19b9d"
+}

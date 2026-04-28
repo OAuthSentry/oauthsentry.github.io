@@ -1,0 +1,12 @@
+{
+  "appid": "33850b82-0a37-4ebb-a0b2-ee163facd716",
+  "appname": "Microsoft Dynamics 365 Customer Voice for Sales Enterprise for GCC",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "33850b82-0a37-4ebb-a0b2-ee163facd716"
+}

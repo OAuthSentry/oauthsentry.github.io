@@ -1,0 +1,12 @@
+{
+  "appid": "d736def0-1fde-43f0-a5be-e3f8b2de6e41",
+  "appname": "MS IMAGINE ACADEMY",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d736def0-1fde-43f0-a5be-e3f8b2de6e41"
+}

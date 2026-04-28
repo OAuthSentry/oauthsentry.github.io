@@ -1,0 +1,12 @@
+{
+  "appid": "0de78315-9537-47f5-95ab-b3e77eba3993",
+  "appname": "Purview/sit-defn-hungary-social-security-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "0de78315-9537-47f5-95ab-b3e77eba3993"
+}

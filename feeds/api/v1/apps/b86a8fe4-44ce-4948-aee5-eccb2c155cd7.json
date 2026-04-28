@@ -1,0 +1,12 @@
+{
+  "appid": "b86a8fe4-44ce-4948-aee5-eccb2c155cd7",
+  "appname": "Key Vault Secrets Officer",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "b86a8fe4-44ce-4948-aee5-eccb2c155cd7"
+}

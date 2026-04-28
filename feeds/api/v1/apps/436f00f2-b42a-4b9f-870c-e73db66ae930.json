@@ -1,0 +1,12 @@
+{
+  "appid": "436f00f2-b42a-4b9f-870c-e73db66ae930",
+  "appname": "ISOSDacInterface Interface",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "436f00f2-b42a-4b9f-870c-e73db66ae930"
+}

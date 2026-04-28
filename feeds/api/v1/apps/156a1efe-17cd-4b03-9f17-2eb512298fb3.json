@@ -1,0 +1,12 @@
+{
+  "appid": "156a1efe-17cd-4b03-9f17-2eb512298fb3",
+  "appname": "Microsoft Teams Calling Plan pay-as-you-go - country zone 1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "156a1efe-17cd-4b03-9f17-2eb512298fb3"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "bc167a60-39fe-4865-8b44-78400fc6ed03",
+  "appname": "IndustryData-SourceSystem.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "bc167a60-39fe-4865-8b44-78400fc6ed03"
+}

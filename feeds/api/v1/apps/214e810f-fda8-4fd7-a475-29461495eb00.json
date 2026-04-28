@@ -1,0 +1,12 @@
+{
+  "appid": "214e810f-fda8-4fd7-a475-29461495eb00",
+  "appname": "CustomAuthenticationExtension.Receive.Payload - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "214e810f-fda8-4fd7-a475-29461495eb00"
+}

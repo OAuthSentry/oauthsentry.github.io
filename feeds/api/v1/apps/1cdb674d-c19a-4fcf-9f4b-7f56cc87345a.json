@@ -1,0 +1,12 @@
+{
+  "appid": "1cdb674d-c19a-4fcf-9f4b-7f56cc87345a",
+  "appname": "Purview/sit-defn-ireland-personal-public-service-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1cdb674d-c19a-4fcf-9f4b-7f56cc87345a"
+}

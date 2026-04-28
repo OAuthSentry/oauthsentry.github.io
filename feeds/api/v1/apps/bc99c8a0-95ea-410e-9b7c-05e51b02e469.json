@@ -1,0 +1,12 @@
+{
+  "appid": "bc99c8a0-95ea-410e-9b7c-05e51b02e469",
+  "appname": "Purview/sit-defn-ecuador-unique-identification-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "bc99c8a0-95ea-410e-9b7c-05e51b02e469"
+}

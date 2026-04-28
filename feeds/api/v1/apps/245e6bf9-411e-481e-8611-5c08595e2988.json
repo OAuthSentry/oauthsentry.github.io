@@ -1,0 +1,12 @@
+{
+  "appid": "245e6bf9-411e-481e-8611-5c08595e2988",
+  "appname": "Dynamics 365 Sales Professional Attach to Qualifying Dynamics 365 Base Offer",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "245e6bf9-411e-481e-8611-5c08595e2988"
+}

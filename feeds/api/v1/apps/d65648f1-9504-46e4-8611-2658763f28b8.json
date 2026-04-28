@@ -1,0 +1,12 @@
+{
+  "appid": "d65648f1-9504-46e4-8611-2658763f28b8",
+  "appname": "Microsoft Stream for O365 for Government (F1)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d65648f1-9504-46e4-8611-2658763f28b8"
+}

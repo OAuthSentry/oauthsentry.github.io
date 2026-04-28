@@ -1,0 +1,12 @@
+{
+  "appid": "ebfcd32b-babb-40f4-a14b-42706e83bd28",
+  "appname": "AccessReview.Read.All - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ebfcd32b-babb-40f4-a14b-42706e83bd28"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "9f0e1b4e-9b33-4300-b451-b2c662cd4ff7",
+  "appname": "Microsoft Dynamics 365 for Finance",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9f0e1b4e-9b33-4300-b451-b2c662cd4ff7"
+}

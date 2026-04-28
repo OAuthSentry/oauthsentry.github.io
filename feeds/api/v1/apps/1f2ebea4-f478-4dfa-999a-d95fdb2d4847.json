@@ -1,0 +1,12 @@
+{
+  "appid": "1f2ebea4-f478-4dfa-999a-d95fdb2d4847",
+  "appname": "JIRA SAML SSO by Microsoft",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1f2ebea4-f478-4dfa-999a-d95fdb2d4847"
+}

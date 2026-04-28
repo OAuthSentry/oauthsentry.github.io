@@ -1,0 +1,12 @@
+{
+  "appid": "9ff7295e-131b-4d94-90e1-69fde507ac11",
+  "appname": "Chat.ReadWrite - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "9ff7295e-131b-4d94-90e1-69fde507ac11"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "7be44c8a-adaf-4e2a-84d6-ab2649e08a13",
+  "appname": "Privileged Authentication Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "7be44c8a-adaf-4e2a-84d6-ab2649e08a13"
+}

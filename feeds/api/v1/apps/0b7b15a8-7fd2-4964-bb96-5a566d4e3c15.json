@@ -1,0 +1,12 @@
+{
+  "appid": "0b7b15a8-7fd2-4964-bb96-5a566d4e3c15",
+  "appname": "Exchange Online (Plan 2) for Faculty",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "0b7b15a8-7fd2-4964-bb96-5a566d4e3c15"
+}

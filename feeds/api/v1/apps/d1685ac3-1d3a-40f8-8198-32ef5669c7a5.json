@@ -1,0 +1,12 @@
+{
+  "appid": "d1685ac3-1d3a-40f8-8198-32ef5669c7a5",
+  "appname": "Purview/sit-defn-finland-passport-number",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "d1685ac3-1d3a-40f8-8198-32ef5669c7a5"
+}

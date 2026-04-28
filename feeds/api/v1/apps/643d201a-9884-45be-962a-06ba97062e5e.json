@@ -1,0 +1,12 @@
+{
+  "appid": "643d201a-9884-45be-962a-06ba97062e5e",
+  "appname": "Dynamics 365 for Talent - Attract Experience Team Member",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "643d201a-9884-45be-962a-06ba97062e5e"
+}

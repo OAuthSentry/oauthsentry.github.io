@@ -1,0 +1,12 @@
+{
+  "appid": "5689bec4-755d-4753-8b61-40975025187c",
+  "appname": "AZURE INFORMATION PROTECTION PREMIUM P2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5689bec4-755d-4753-8b61-40975025187c"
+}

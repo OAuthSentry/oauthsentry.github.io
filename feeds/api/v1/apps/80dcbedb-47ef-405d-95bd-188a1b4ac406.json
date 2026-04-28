@@ -1,0 +1,12 @@
+{
+  "appid": "80dcbedb-47ef-405d-95bd-188a1b4ac406",
+  "appname": "Elastic SAN Owner",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "80dcbedb-47ef-405d-95bd-188a1b4ac406"
+}

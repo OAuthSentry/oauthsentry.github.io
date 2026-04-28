@@ -1,0 +1,12 @@
+{
+  "appid": "33413926-3206-4cdd-b39a-83574fe37a17",
+  "appname": "Managed HSM Crypto Service Encryption User",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "33413926-3206-4cdd-b39a-83574fe37a17"
+}

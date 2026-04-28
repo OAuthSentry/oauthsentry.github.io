@@ -1,0 +1,12 @@
+{
+  "appid": "ccbe468e-7973-442c-8ec4-5fbe16438711",
+  "appname": "Power Automate for Cloud for Sustainability USL",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ccbe468e-7973-442c-8ec4-5fbe16438711"
+}

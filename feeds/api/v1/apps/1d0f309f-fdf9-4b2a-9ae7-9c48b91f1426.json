@@ -1,0 +1,12 @@
+{
+  "appid": "1d0f309f-fdf9-4b2a-9ae7-9c48b91f1426",
+  "appname": "Microsoft Entra ID Basic for Education",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1d0f309f-fdf9-4b2a-9ae7-9c48b91f1426"
+}

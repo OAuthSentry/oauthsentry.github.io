@@ -1,0 +1,12 @@
+{
+  "appid": "aaf43236-0c0d-4d5f-883a-6955382ac081",
+  "appname": "B2C IEF Keyset Administrator",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "aaf43236-0c0d-4d5f-883a-6955382ac081"
+}

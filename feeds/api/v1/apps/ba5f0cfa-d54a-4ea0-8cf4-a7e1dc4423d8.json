@@ -1,0 +1,12 @@
+{
+  "appid": "ba5f0cfa-d54a-4ea0-8cf4-a7e1dc4423d8",
+  "appname": "EMPLOYEE",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ba5f0cfa-d54a-4ea0-8cf4-a7e1dc4423d8"
+}

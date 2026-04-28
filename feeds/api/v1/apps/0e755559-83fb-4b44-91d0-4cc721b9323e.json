@@ -1,0 +1,12 @@
+{
+  "appid": "0e755559-83fb-4b44-91d0-4cc721b9323e",
+  "appname": "TeamsActivity.Read - Delegated",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "0e755559-83fb-4b44-91d0-4cc721b9323e"
+}

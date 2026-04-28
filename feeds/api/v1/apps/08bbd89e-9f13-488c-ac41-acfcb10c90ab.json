@@ -1,0 +1,12 @@
+{
+  "appid": "08bbd89e-9f13-488c-ac41-acfcb10c90ab",
+  "appname": "Key Vault Crypto Service Release User",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "08bbd89e-9f13-488c-ac41-acfcb10c90ab"
+}

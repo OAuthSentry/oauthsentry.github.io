@@ -1,0 +1,12 @@
+{
+  "appid": "f944d685-f762-4371-806d-a1f48e5bea13",
+  "appname": "Project Online Essentials_2",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f944d685-f762-4371-806d-a1f48e5bea13"
+}

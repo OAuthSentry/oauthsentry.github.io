@@ -1,0 +1,12 @@
+{
+  "appid": "484d54fc-b481-4eee-9505-0258a1913020",
+  "appname": "Power BI Report Server and SSRS from Power BI mobile applications",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "484d54fc-b481-4eee-9505-0258a1913020"
+}

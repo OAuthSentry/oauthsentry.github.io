@@ -1,0 +1,12 @@
+{
+  "appid": "f2310ca1-dc64-4889-bb49-c8e0fa3d47a8",
+  "appname": "Cognitive Services Language Writer",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f2310ca1-dc64-4889-bb49-c8e0fa3d47a8"
+}

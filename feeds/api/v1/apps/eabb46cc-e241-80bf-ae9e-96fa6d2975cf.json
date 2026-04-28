@@ -1,0 +1,12 @@
+{
+  "appid": "eabb46cc-e241-80bf-ae9e-96fa6d2975cf",
+  "appname": "TOKEN2 PIN Plus Security Key Series",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "eabb46cc-e241-80bf-ae9e-96fa6d2975cf"
+}

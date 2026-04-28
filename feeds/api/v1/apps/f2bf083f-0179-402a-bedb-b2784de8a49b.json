@@ -1,0 +1,12 @@
+{
+  "appid": "f2bf083f-0179-402a-bedb-b2784de8a49b",
+  "appname": "SecurityActions.ReadWrite.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f2bf083f-0179-402a-bedb-b2784de8a49b"
+}

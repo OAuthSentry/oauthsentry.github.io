@@ -1,0 +1,12 @@
+{
+  "appid": "c52ea49f-fe5d-4e95-93ba-1de91d380f89",
+  "appname": "Azure Information Protection Plan 1_1",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "c52ea49f-fe5d-4e95-93ba-1de91d380f89"
+}

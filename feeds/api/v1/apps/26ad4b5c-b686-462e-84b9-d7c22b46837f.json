@@ -1,0 +1,12 @@
+{
+  "appid": "26ad4b5c-b686-462e-84b9-d7c22b46837f",
+  "appname": "Microsoft Defender for Office 365 (Plan 1) Faculty",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "26ad4b5c-b686-462e-84b9-d7c22b46837f"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "5b07b0dd-2377-4e44-a38d-703f09a0dc3c",
+  "appname": "DeviceManagementManagedDevices.PrivilegedOperations.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "5b07b0dd-2377-4e44-a38d-703f09a0dc3c"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "0a9a7e1f-b9d0-4cc4-a60d-0319b160aaa3",
+  "appname": "Storage Table Data Contributor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "0a9a7e1f-b9d0-4cc4-a60d-0319b160aaa3"
+}

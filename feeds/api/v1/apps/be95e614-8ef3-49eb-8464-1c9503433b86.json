@@ -1,0 +1,12 @@
+{
+  "appid": "be95e614-8ef3-49eb-8464-1c9503433b86",
+  "appname": "Bookmark.Read.All - Application",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "be95e614-8ef3-49eb-8464-1c9503433b86"
+}

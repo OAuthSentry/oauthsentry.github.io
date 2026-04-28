@@ -1,0 +1,12 @@
+{
+  "appid": "bb5ffd56-39eb-458c-a53a-775ba21277da",
+  "appname": "Security Copilot",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "bb5ffd56-39eb-458c-a53a-775ba21277da"
+}

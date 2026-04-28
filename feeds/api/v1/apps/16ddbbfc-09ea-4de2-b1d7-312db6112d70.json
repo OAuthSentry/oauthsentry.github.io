@@ -1,0 +1,12 @@
+{
+  "appid": "16ddbbfc-09ea-4de2-b1d7-312db6112d70",
+  "appname": "Microsoft Teams (Free)",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "16ddbbfc-09ea-4de2-b1d7-312db6112d70"
+}

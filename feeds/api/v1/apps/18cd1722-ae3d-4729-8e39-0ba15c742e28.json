@@ -1,0 +1,12 @@
+{
+  "appid": "18cd1722-ae3d-4729-8e39-0ba15c742e28",
+  "appname": "Microsoft Developer Sample Packs for SharePoint [Community Contributed]",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant 72f988bf-86f1-41af-91ab-2d7cd011db47; via merill/microsoft-info, source=GitHub)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "18cd1722-ae3d-4729-8e39-0ba15c742e28"
+}

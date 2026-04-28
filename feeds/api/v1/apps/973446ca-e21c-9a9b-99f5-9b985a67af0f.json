@@ -1,0 +1,12 @@
+{
+  "appid": "973446ca-e21c-9a9b-99f5-9b985a67af0f",
+  "appname": "ACS FIDO Authenticator Card",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "973446ca-e21c-9a9b-99f5-9b985a67af0f"
+}

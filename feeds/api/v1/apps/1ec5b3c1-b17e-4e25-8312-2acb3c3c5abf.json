@@ -1,0 +1,12 @@
+{
+  "appid": "1ec5b3c1-b17e-4e25-8312-2acb3c3c5abf",
+  "appname": "Stream Analytics Query Tester",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1ec5b3c1-b17e-4e25-8312-2acb3c3c5abf"
+}
