@@ -1158,3 +1158,191 @@ footer a { color: var(--text-dim); }
   color: var(--accent);
 }
 .api-callout p { color: var(--text-dim); font-size: 14px; }
+
+/* ============================================================
+   RESPONSIVE - mobile and tablet
+   Added in one block to consolidate. Three breakpoints:
+     - 1024px tablet: shell padding tightens
+     -  720px small tablet / large phone: nav wraps, hero stats reflow
+     -  560px phone: aggressive collapse - search rows stack, code blocks
+                    scroll horizontally cleanly, kv-tables go list-style
+   ============================================================ */
+
+/* === Tablet: 1024px and below ============================== */
+@media (max-width: 1024px) {
+  .shell { padding: 0 18px; }
+}
+
+/* === Small tablet / large phone: 720px and below =========== */
+@media (max-width: 720px) {
+  body { font-size: 14px; }
+  .shell { padding: 0 14px; }
+
+  /* Topbar wraps the nav under the brand on narrow screens. */
+  .topbar-inner {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px 0;
+  }
+  .nav {
+    flex-wrap: wrap;
+    gap: 2px;
+    width: 100%;
+    justify-content: flex-start;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .nav a {
+    padding: 6px 8px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  /* Investigation subtab nav scrolls horizontally on narrow screens. */
+  .subtabs {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    flex-wrap: nowrap;
+    padding-bottom: 6px;
+  }
+  .subtabs a {
+    flex: none;
+    white-space: nowrap;
+  }
+
+  /* Hero typography scales down to keep the lead readable. */
+  .hero h1 { font-size: clamp(26px, 7vw, 38px); }
+  .hero p.lede { font-size: 14px; }
+
+  /* Section headings tighten. */
+  .section h2 { font-size: 20px; }
+  h3 { font-size: 15px; }
+
+  /* Search filter chips wrap. */
+  #services-bar, #categories-bar, #severity-bar {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .chip {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+
+  /* Doc blocks lose their max-width constraint - already small. */
+  .doc-block { max-width: 100%; }
+
+  /* Code blocks scroll horizontally rather than overflow the page. */
+  .code-block pre {
+    font-size: 11px;
+    padding: 12px;
+    overflow-x: auto;
+    white-space: pre;
+    -webkit-overflow-scrolling: touch;
+  }
+  .code-block .code-header {
+    font-size: 9px;
+    padding: 8px 10px;
+  }
+
+  /* Detail panel takes full screen on phone. */
+  .detail-panel {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Triage and feed grids already collapse - tighten gap. */
+  .triage-grid, .feed-grid { gap: 12px; }
+  .triage-input-card, .triage-results-card, .feed-card { padding: 12px; }
+
+  /* Tables: reduce font and allow horizontal scroll for wide ones. */
+  .kv-table { font-size: 12px; }
+
+  /* API page tables can be wide - wrap them in a horizontal scroller. */
+  #page-api .kv-table,
+  #sub-google .kv-table,
+  #sub-github .kv-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* === Phone: 560px and below ================================ */
+@media (max-width: 560px) {
+  /* Hide brand tagline entirely; brand mark + name are enough. */
+  .brand .tag { display: none; }
+
+  /* Search result rows stack vertically: badge + body, with the right-side
+     metadata (service tag + severity) wrapping below. The original grid is
+     auto/1fr/auto - reflow to single column with the right-side as its own row. */
+  .row {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+  }
+  .row .right {
+    grid-column: 1 / -1;
+    justify-content: flex-start;
+    padding-left: 32px;
+  }
+  .row .name { font-size: 14px; }
+  .row .id   { font-size: 11px; word-break: break-all; }
+
+  /* Search bar input + button stack. */
+  .searchbar {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .searchbar input {
+    width: 100%;
+  }
+
+  /* Hero stats: 2x2 grid was fine at 720px; on phone reduce to single column
+     for wide stat tiles when content gets long. */
+  .hero-stats {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .hero-stat .num { font-size: 22px; }
+  .hero-stat .label { font-size: 9px; }
+
+  /* Investigation prose lists tighten. */
+  ul, ol { padding-left: 20px; }
+  li { margin-bottom: 6px; }
+
+  /* Triage rows (3-column grid) drop to 2-column with metadata wrapping. */
+  .triage-row {
+    grid-template-columns: 1fr;
+  }
+  .triage-row .triage-row-meta {
+    justify-self: start;
+  }
+
+  /* Feed card link grid stacks one per row on phone. */
+  .feed-links a {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+
+  /* Callouts and reference event blocks tighten. */
+  .callout, .api-callout {
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  /* The "(beta)" badge inside H2 wraps cleanly instead of forcing overflow. */
+  h2 { line-height: 1.3; }
+  h2 span[style*="background"] {
+    display: inline-block;
+    margin-top: 4px;
+  }
+}
+
+/* === Print: keep readable, drop chrome ===================== */
+@media print {
+  .topbar, .nav, .subtabs, .searchbar, .filters { display: none; }
+  .shell { max-width: 100%; padding: 0; }
+  body { background: white; color: black; }
+  .code-block pre { white-space: pre-wrap; word-break: break-word; }
+}
