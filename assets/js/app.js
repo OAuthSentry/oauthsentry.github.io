@@ -759,49 +759,129 @@ function detectTriageFormat(text) {
   const trimmed = text.trim();
   if (!trimmed) return { format: 'empty', label: 'paste input above' };
 
-  // Try JSON first
+  // Try JSON first - structured audit logs in known shapes get the precise extractor
   try {
     const data = JSON.parse(trimmed);
 
     // M365 unified audit log (array or { value: [] })
     const m365Events = Array.isArray(data) ? data : (data.value || data.records || []);
     if (Array.isArray(m365Events) && m365Events.some(e => e?.OperationName === 'Consent to application')) {
-      return { format: 'm365', label: 'M365 unified audit log' };
+      return { format: 'm365', label: 'M365 unified audit log (precise extract)' };
     }
 
     // Google Reports API (items[].events[].name == 'authorize')
     const googleItems = data.items || (Array.isArray(data) ? data : []);
     if (googleItems.some?.(i => i?.events?.some?.(e => e?.name === 'authorize' && e?.type === 'auth'))) {
-      return { format: 'google', label: 'Google Reports API' };
+      return { format: 'google', label: 'Google Reports API (precise extract)' };
     }
 
     // GitHub audit log (array of objects with action starting oauth_)
     if (Array.isArray(data) && data.some(e => typeof e?.action === 'string' && e.action.startsWith('oauth_'))) {
-      return { format: 'github', label: 'GitHub audit log' };
+      return { format: 'github', label: 'GitHub audit log (precise extract)' };
     }
 
-    // Generic JSON we don't recognize
-    return { format: 'json-unknown', label: 'JSON (unrecognized shape - will treat as plain list of strings)' };
+    // JSON we don't recognize - fall through to raw scan, which still works on the
+    // serialized text. The user might have pasted Graph activity logs, Sentinel
+    // alerts, raw Sigma matches, or any other JSON that contains app IDs in fields
+    // we don't have a precise extractor for.
   } catch {
-    // Not JSON - treat as plain list
+    // Not JSON
   }
 
-  return { format: 'list', label: 'plain list of identifiers' };
+  // If the input is a single line or contains commas/semicolons/newlines and no
+  // surrounding noise, treat it as a deliberate list. Otherwise it's a raw dump.
+  const lines = trimmed.split(/\r?\n/).filter(Boolean);
+  const looksLikeList = lines.every(l => l.trim().length < 200 && !l.includes('{') && !l.includes(':'));
+  if (looksLikeList && lines.length <= 200) {
+    return { format: 'list', label: `plain list (${lines.length} line${lines.length === 1 ? '' : 's'})` };
+  }
+  return { format: 'raw', label: 'raw text - scanning for known app id patterns' };
+}
+
+// Patterns that match each service's app id shape. Anchored carefully to avoid
+// matching parts of unrelated GUIDs / strings:
+//   - Entra: standard 8-4-4-4-12 GUID. Word boundaries on both sides.
+//   - Google: ^digits-alphanum.apps.googleusercontent.com$ (the full client_id).
+//   - GitHub: app names are not extractable by regex (any string can be an app
+//     name); only the JSON precise extractor covers GitHub. The raw scan reports
+//     this limitation in the UI.
+const RAW_PATTERNS = {
+  entra:  /\b[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\b/gi,
+  google: /\b\d{6,}-[a-z0-9]+\.apps\.googleusercontent\.com\b/gi,
+};
+
+// Field names whose values are likely to actually BE OAuth app ids, not just
+// look-alike GUIDs. Used by smart JSON walk to filter out tenantId, userId,
+// correlationId, deviceId, wids and other noise GUIDs that share the same shape.
+const APP_ID_FIELDS = new Set([
+  'appid', 'appId', 'AppId', 'APPID', 'ApplicationId', 'application_id', 'applicationId',
+  'clientid', 'clientId', 'client_id', 'ClientAppId',
+  'ObjectId',                       // M365 Consent-to-application puts AppId here
+  'ServicePrincipalAppId',
+  'oauth_application_name',         // GitHub
+  'TargetResourceAppId',            // some Sentinel exports
+]);
+
+function walkJsonForAppIds(node, out) {
+  if (node === null || node === undefined) return;
+  if (Array.isArray(node)) {
+    for (const v of node) walkJsonForAppIds(v, out);
+    return;
+  }
+  if (typeof node === 'object') {
+    for (const [k, v] of Object.entries(node)) {
+      if (APP_ID_FIELDS.has(k) && typeof v === 'string' && v) {
+        out.add(v);
+        continue;
+      }
+      walkJsonForAppIds(v, out);
+    }
+    return;
+  }
+  // primitives ignored
+}
+
+function scanRawText(text) {
+  // Step 1: if the text is parseable as JSON, walk its tree pulling only values
+  // from app-id-like fields. This eliminates false positives like tenantId,
+  // userId, correlationId, deviceId, wids on Graph activity logs.
+  let parsed = null;
+  try { parsed = JSON.parse(text); } catch {}
+  if (parsed !== null && typeof parsed === 'object') {
+    const out = new Set();
+    walkJsonForAppIds(parsed, out);
+    if (out.size > 0) return Array.from(out);
+    // JSON parsed but no app-id-like fields found - fall through to regex scan
+    // so the user still gets something rather than an empty result.
+  }
+
+  // Step 2: regex scan over the raw text. Used for non-JSON paste (shell output,
+  // chat threads, free-form notes) where the JSON walk doesn't apply.
+  const ids = new Set();
+  for (const re of Object.values(RAW_PATTERNS)) {
+    const matches = text.match(re) || [];
+    for (const m of matches) ids.add(m);
+  }
+  return Array.from(ids);
 }
 
 function extractTriageIds(text, format) {
   const trimmed = text.trim();
   if (!trimmed) return [];
 
-  if (format === 'list' || format === 'json-unknown') {
+  if (format === 'list') {
     return trimmed
       .split(/[\n,;]+/)
       .map(s => s.trim().replace(/^["']|["']$/g, ''))  // strip surrounding quotes
       .filter(Boolean);
   }
 
+  if (format === 'raw') {
+    return scanRawText(trimmed);
+  }
+
   let data;
-  try { data = JSON.parse(trimmed); } catch { return []; }
+  try { data = JSON.parse(trimmed); } catch { return scanRawText(trimmed); }
 
   if (format === 'm365') {
     const events = Array.isArray(data) ? data : (data.value || data.records || []);

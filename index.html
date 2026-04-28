@@ -2428,8 +2428,8 @@ gh api --paginate \
         <div class="section">
           <h2>Triage</h2>
           <p class="lead">
-            Paste a list of OAuth App IDs or a raw audit log dump. Each identifier is matched against OAuthSentry's catalog
-            and grouped by category - <span class="cat-malicious mono">malicious</span> first, then
+            Paste a list of OAuth App IDs, structured audit log JSON, or any raw log dump that mentions OAuth app IDs. Each identifier
+            is matched against OAuthSentry's catalog and grouped by category - <span class="cat-malicious mono">malicious</span> first, then
             <span class="cat-risky mono">risky</span>, then <span class="cat-unknown mono">unknown</span> (the bucket worth
             investigating because it's not in any list yet), then <span class="cat-compliance mono">compliance</span>
             (collapsed). Pure client-side; pasted content never leaves the browser.
@@ -2441,7 +2441,7 @@ gh api --paginate \
                 <label for="triage-input">Input</label>
                 <span class="triage-hint" id="triage-format-hint">auto-detecting...</span>
               </div>
-              <textarea id="triage-input" rows="12" spellcheck="false" placeholder="Paste here. Accepts:&#10;&#10;1. A plain list of App IDs - one per line, or comma/semicolon-separated&#10;   c5393580-f805-4401-95e8-94b7a6ef2fc2&#10;   1084253493764-ipb2ntp4...apps.googleusercontent.com&#10;   Heroku Dashboard&#10;&#10;2. Microsoft 365 unified audit log JSON (extracts ObjectId from 'Consent to application' events)&#10;3. Google Reports API JSON (extracts client_id from token authorize events)&#10;4. GitHub audit log JSON (extracts oauth_application_name from oauth_* events)"></textarea>
+              <textarea id="triage-input" rows="12" spellcheck="false" placeholder="Paste here. Three input modes, auto-detected:&#10;&#10;1. PRECISE EXTRACT - structured audit log JSON in a known shape&#10;   - M365 unified audit log: pulls ObjectId from 'Consent to application' events&#10;   - Google Reports API: pulls client_id from token authorize events&#10;   - GitHub audit log: pulls oauth_application_name from oauth_* events&#10;&#10;2. PLAIN LIST - one identifier per line, or comma/semicolon-separated&#10;   c5393580-f805-4401-95e8-94b7a6ef2fc2&#10;   1084253493764-ipb2ntp4...apps.googleusercontent.com&#10;   Heroku Dashboard&#10;&#10;3. RAW DUMP - anything else (Graph activity logs, Sentinel alerts, shell output)&#10;   Scans the text for Entra GUIDs and Google client_id patterns.&#10;   Note: GitHub app NAMES cannot be regex-extracted from raw text; use mode 1 or 2&#10;   for GitHub triage."></textarea>
               <div class="triage-actions">
                 <button id="triage-run" class="btn-primary">Triage</button>
                 <button id="triage-clear" class="btn-secondary">Clear</button>
