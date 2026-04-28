@@ -1,0 +1,2002 @@
+[
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "00000000-0000-0000-0000-000000000000",
+    "service": "entra",
+    "appname": "Designated empty GUID",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "00000000-0000-0000-0000-000000000001",
+    "service": "entra",
+    "appname": "Cosmos DB Built-in Data Reader",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "00000000-0000-0000-0000-000000000002",
+    "service": "entra",
+    "appname": "Cosmos DB Built-in Data Contributor",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "00283e6b-2bd8-440f-a2d5-87358e4c89a1",
+    "service": "entra",
+    "appname": "POWER AUTOMATE FOR PROJECT P1",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0029d2bb-fc98-4712-9310-69dd5fcc94d5",
+    "service": "entra",
+    "appname": "TeamsTab.Create.Chat",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "00482a5a-887f-4fb3-b363-3b7fe8e74483",
+    "service": "entra",
+    "appname": "Key Vault Administrator",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "00493d72-78f6-4148-b6c5-d3ce8e4799dd",
+    "service": "entra",
+    "appname": "Azure Arc Enabled Kubernetes Cluster User Role",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0049e2e2-fcea-4bc4-af90-bdb29a9bbe98",
+    "service": "entra",
+    "appname": "Azure AD Service Principal",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "00527d7f-d5bc-4c2a-8d1e-6c0de2410c81",
+    "service": "entra",
+    "appname": "Power Apps (Plan 2)",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "005b3ef1-47dd-4e68-bb02-c6db484d00f2",
+    "service": "entra",
+    "appname": "Purview/sit-defn-croatia-drivers-license-number",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0076631b-d4a0-427f-5773-0ec71c9e0279",
+    "service": "entra",
+    "appname": "HYPR FIDO2 Authenticator",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "00c29273-979b-4161-815c-10b084fb9324",
+    "service": "entra",
+    "appname": "Backup Operator",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0121dc95-1b9f-4aed-8bac-58c5ac466691",
+    "service": "entra",
+    "appname": "TeamMember.ReadWrite.All - Application",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "014b43d0-6ed4-4fc6-84dc-4b6f7bae7d85",
+    "service": "entra",
+    "appname": "Policy.ReadWrite.CrossTenantAccess - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "017fb6f8-00dd-4025-be2b-4eff067cae72",
+    "service": "entra",
+    "appname": "Privacy Management - subject rights request (1) GCC",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "01892c31-3b66-4bcf-b5f5-bf0a03d5ed9f",
+    "service": "entra",
+    "appname": "OnlineMeetingAiInsight.Read.Chat - Application",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "019b39dd-8c25-4765-91a3-d9c6baf3c3b3",
+    "service": "entra",
+    "appname": "Purview/sit-defn-philippines-unified-multi-purpose-identification-number",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "01c0a623-fc9b-48e9-b794-0756f8e8f067",
+    "service": "entra",
+    "appname": "Policy.ReadWrite.ConditionalAccess - Application",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "01c1209b-6389-4faf-a5f8-3f7e13899652",
+    "service": "entra",
+    "appname": "Purview/sit-defn-japan-resident-registration-number",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "01c8007a-57d2-41e0-a3c3-0b46ead16cc4",
+    "service": "entra",
+    "appname": "Career Coach for students",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "01d46c34-3525-47d5-bd1a-5f19979938a0",
+    "service": "entra",
+    "appname": "Power Pages authenticated users T3 min 1,000 units - 100 users/per site/month capacity pack_4",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "01d4889c-1287-42c6-ac1f-5d1e02578ef6",
+    "service": "entra",
+    "appname": "Files.Read.All - Application",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "01e37dc9-c035-40bd-b438-b2879c4870a6",
+    "service": "entra",
+    "appname": "PrivilegedAccess.Read.AzureADGroup - Application",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "01f42a64-eba7-4892-a67b-398237e4ade2",
+    "service": "entra",
+    "appname": "Purview/sit-defn-netherlands-tax-identification-number",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0210d5c8-49d2-4dd1-a01b-a91c7c14e0bf",
+    "service": "entra",
+    "appname": "CRM Hybrid Connector",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "024d486e-b451-40bb-833d-3e66d98c5c73",
+    "service": "entra",
+    "appname": "Mail.ReadWrite - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "025d3225-3f02-4882-b4c0-cd5b541a4e80",
+    "service": "entra",
+    "appname": "RoleManagement.ReadWrite.Exchange - Application",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "028f4ed7-e2a9-465e-a8f4-9c0ffdfdc027",
+    "service": "entra",
+    "appname": "Data Box Reader",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "02a32cc4-7ab5-4b58-879a-0586e0f7c495",
+    "service": "entra",
+    "appname": "PrivilegedAssignmentSchedule.Read.AzureADGroup - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "02a5a114-36a6-46ff-a102-954d89d9ab02",
+    "service": "entra",
+    "appname": "BookingsAppointment.ReadWrite.All - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "02ca0879-e8e4-47a5-a61e-5c618b76e64a",
+    "service": "entra",
+    "appname": "Device Update Administrator",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "02d2a314-8dbb-47d3-8a77-1677403097de",
+    "service": "entra",
+    "appname": "Microsoft SaaS Hub Resource Provider",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "02e97553-ed7b-43d0-ab3c-f8bace0d040c",
+    "service": "entra",
+    "appname": "Reports.Read.All - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "031a549a-bb80-49b6-8032-2068448c6a3c",
+    "service": "entra",
+    "appname": "RoleManagement.Read.CloudPC - Application",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "03300fea-7a88-45a6-b5bd-29653803c591",
+    "service": "entra",
+    "appname": "Power Pages Authenticated Users per site monthly capacity DoD",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "033b51ee-d6fa-4add-b627-ee680c7212b5",
+    "service": "entra",
+    "appname": "Lists.SelectedOperations.Selected - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0368fc9c-3721-437f-8b7d-3d0f888cdefc",
+    "service": "entra",
+    "appname": "Power Automate for Customer Service Pro",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "036b9544-e8c5-46ef-900a-0646cc42b271",
+    "service": "entra",
+    "appname": "PrintJob.ReadWrite.All - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "036c2481-aa8a-47cd-ab43-324f0c157c2d",
+    "service": "entra",
+    "appname": "Dynamics 365 Customer Insights vTrial",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0378884a-3af5-44ab-8323-f5b22f9f3c98",
+    "service": "entra",
+    "appname": "Device Update Content Administrator",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "03937fb5-d2b6-4487-b61f-0f8bff7c3517",
+    "service": "entra",
+    "appname": "Purview/sit-defn-poland-passport-number",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "03a6d094-3444-4b3d-88af-7477090a9e5e",
+    "service": "entra",
+    "appname": "Intelligent Systems Account Contributor",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "03acaee3-9492-4f40-aed4-bcb6b32981b6",
+    "service": "entra",
+    "appname": "Retired - Microsoft Social Engagement",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "03b39d0f-4213-4864-a245-b1476ec03169",
+    "service": "entra",
+    "appname": "Azure Spring Apps Domain-Management Service Principal",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "03cc4f92-788e-4ede-b93f-199424d144a5",
+    "service": "entra",
+    "appname": "Policy.ReadWrite.ExternalIdentities - Application",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "03fcf763-27c2-49ed-9422-2641c6c895c9",
+    "service": "entra",
+    "appname": "Purview/sit-defn-latvia-personal-code",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "040330d7-be7e-4130-b349-a6eb3a56e2f8",
+    "service": "entra",
+    "appname": "EduReports-Reading.ReadAnonymous.All - Application",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "04165923-9d83-45d5-8227-78b77b0a687e",
+    "service": "entra",
+    "appname": "SignalR AccessKey Reader",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "041fe683-03e4-45b6-b1af-c0cdc516daee",
+    "service": "entra",
+    "appname": "Power Virtual Agents for Office 365_2",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "04436913-cf0d-4d2a-9cc6-2ffe7f1d3d1c",
+    "service": "entra",
+    "appname": "Windows Notification Service [Community Contributed]",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "046f7d3b-9595-4685-a2e8-a2832d2b26aa",
+    "service": "entra",
+    "appname": "Privacy Management - risk GCC",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "048a552e-c849-4027-b54c-4c7ead26150a",
+    "service": "entra",
+    "appname": "DYNAMICS 365 FOR TALENT: ONBOARD_1",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "04a2c935-5b4b-474a-be42-11f53111f271",
+    "service": "entra",
+    "appname": "PartnerSecurity.ReadWrite.All - Application",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "04a4b2a2-3f26-4fc8-87ee-9c46e68db175",
+    "service": "entra",
+    "appname": "PublicKeyInfrastructure.Read.All - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "04a7fb0d-32e0-4241-b4f5-3f7618cd1162",
+    "service": "entra",
+    "appname": "Office 365 Midsize Business",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "04c55753-2244-4c25-87fc-704ab82a4f69",
+    "service": "entra",
+    "appname": "SecurityAnalyzedMessage.ReadWrite.All - Application",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "04ce8d60-72ce-4867-85cf-6d82f36922f3",
+    "service": "entra",
+    "appname": "PrintJob.ReadBasic.All - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "04dcc6ab-388a-4559-b527-fbec656300ea",
+    "service": "entra",
+    "appname": "Microsoft account guest resource tenant",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0504111f-feb8-4a3c-992a-70280f9a2869",
+    "service": "entra",
+    "appname": "Microsoft Teams Premium Intelligent",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0526716b-113d-4c15-b2c8-68e3c22b9f80",
+    "service": "entra",
+    "appname": "Authentication Policy Administrator",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "05352d14-a920-4328-a0de-4cbe7430e26b",
+    "service": "entra",
+    "appname": "Azure Center for SAP solutions reader",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "054126f8-9a2b-4f1c-a9ad-eca461f08466",
+    "service": "entra",
+    "appname": "Media Services Account Administrator",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "056a5f80-b4e0-4983-a8be-7ad254a113c9",
+    "service": "entra",
+    "appname": "DYNAMICS 365 P1 TRIAL FOR INFORMATION WORKERS",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "056cd41c-7e88-42e1-933e-88ba6a50c9c3",
+    "service": "entra",
+    "appname": "SQL Security Manager",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "057efbfe-a95d-4263-acb0-12b4a31fed8d",
+    "service": "entra",
+    "appname": "Windows 365 Shared Use 2 vCPU 8 GB 128 GB_1",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0591bafd-7c1c-4c30-a2a5-2b9aacb1dfe8",
+    "service": "entra",
+    "appname": "TeamworkDevice.Read.All - Application",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "059e5840-5353-4c68-b1da-666a033fc5e8",
+    "service": "entra",
+    "appname": "ThreatSubmissionPolicy.ReadWrite.All - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "05e9a617-0261-4cee-bb44-138d3ef5d965",
+    "service": "entra",
+    "appname": "Microsoft 365 E3_1",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "060d8061-f606-4e69-a4e7-e8fff75ea1f5",
+    "service": "entra",
+    "appname": "Power BI Premium Per User for Faculty",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "06162da2-ebf9-4954-99a0-00fee96f95cc",
+    "service": "entra",
+    "appname": "Common Data Service_8",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "061f9ace-7d42-4136-88ac-31dc755f143f",
+    "service": "entra",
+    "appname": "Intune",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0628a73f-3b4a-4989-bd7b-0f8823144313",
+    "service": "entra",
+    "appname": "Microsoft 365 Phone Standard Resource Account for Government",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "064a9707-9dba-4cc1-9902-38bfcfda6328",
+    "service": "entra",
+    "appname": "Digital Messaging for GCC Test SKU",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "065f3c64-0649-4ec7-9f47-ef5cf134c751",
+    "service": "entra",
+    "appname": "Dynamics 365 for Sales Pro Attach",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0666269f-b167-4c5b-a76f-fc574f2b1118",
+    "service": "entra",
+    "appname": "Microsoft 365 F1 EEA (no Teams)",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "066e2fd1-ba15-40e7-aa96-d6636b1cdf71",
+    "service": "entra",
+    "appname": "Power Apps for Dynamics 365 Mixed Reality",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0683001c-0492-4d59-9515-d9a6426b5813",
+    "service": "entra",
+    "appname": "Power Virtual Agents for Office 365_3",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "06879193-37cc-4976-8991-f8165c994ce7",
+    "service": "entra",
+    "appname": "Power Automate P2 for Dynamics 365 for Government",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "06a5fe6d-c49d-46a7-b082-56b1b14103c7",
+    "service": "entra",
+    "appname": "DeviceManagementServiceConfig.Read.All - Application",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "06aa7acb-01af-4824-8899-b14e5ed788d6",
+    "service": "entra",
+    "appname": "Remove User from Teams",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "06b48c5f-01d9-4b18-9015-03b52040f51a",
+    "service": "entra",
+    "appname": "Skype for Business PSTN Usage Calling Plan",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "06b708a9-e830-4db3-a914-8e69da51d44f",
+    "service": "entra",
+    "appname": "AppRoleAssignment.ReadWrite.All - Application",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "06ceea37-85e2-40d7-bec3-91337a46038f",
+    "service": "entra",
+    "appname": "PrinterShare.ReadWrite.All - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "06da0dbc-49e2-44d2-8312-53f166ab848a",
+    "service": "entra",
+    "appname": "Directory.Read.All - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "06dbc45d-6708-4ef0-a797-f797ee68bf4b",
+    "service": "entra",
+    "appname": "PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "06ebc4ee-1bb5-47dd-8120-11324bc54e06",
+    "service": "entra",
+    "appname": "Microsoft 365 E5_2",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "074c6829-b3a0-430a-ba3d-aca365e57065",
+    "service": "entra",
+    "appname": "Project Plan 3 for GCC",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "07699545-9485-468e-95b6-2fca3738be01",
+    "service": "entra",
+    "appname": "Power Automate for Office 365_2",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "077fde41-7e0b-4c5b-bcd1-e9d743a30c80",
+    "service": "entra",
+    "appname": "MailboxFolder.ReadWrite - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "078d2b04-f1bd-4111-bbd4-b4b1b354cef4",
+    "service": "entra",
+    "appname": "Microsoft Entra ID P1_1",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "07919803-6073-4cd8-bc55-28077db0ee10",
+    "service": "entra",
+    "appname": "SchedulePermissions.ReadWrite.All - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "07a4098c-3f2d-427f-bfe2-5889ed75dd7b",
+    "service": "entra",
+    "appname": "Privacy Management - Subject Rights Request (1)_2",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "07a9f89c-6407-4594-9d56-621d5f1e358b",
+    "service": "entra",
+    "appname": "NXP Semiconductros FIDO2 Conformance Testing CTAP2 Authenticator",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "07f995eb-fc67-4522-ad66-2b8ca8ea3efd",
+    "service": "entra",
+    "appname": "RecordsManagement.Read.All - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "080a52fd-a7bc-431e-b54d-51f08f59db11",
+    "service": "entra",
+    "appname": "Purview/sit-defn-portugal-passport-number",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "082f0a83-3be5-4ba1-904c-961cca79b387",
+    "service": "entra",
+    "appname": "Desktop Virtualization Contributor",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "08432d1b-5911-483c-86df-7980af5cdee0",
+    "service": "entra",
+    "appname": "OrgContact.Read.All - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "084747ad-b095-4a57-b41f-061d84d69f6f",
+    "service": "entra",
+    "appname": "Power Apps Portals Login Capacity Add-On",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0850ebb5-64ee-4d3a-a3e1-5a97213653b5",
+    "service": "entra",
+    "appname": "Common Data Service for Remote Assist",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "085ca537-6565-41c2-aca7-db852babc212",
+    "service": "entra",
+    "appname": "FileStorageContainer.Selected - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "086e9b70-4720-4442-ab6d-3ef32bfb4721",
+    "service": "entra",
+    "appname": "Power Automate unattended RPA add-on for Government",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "087502c2-5263-433e-abe3-8f77231a0627",
+    "service": "entra",
+    "appname": "OrgSettings-Todo.ReadWrite.All - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "087c3ad9-c2ca-4b82-9885-d5e25ce9e183",
+    "service": "entra",
+    "appname": "SecurityIdentitiesSensors.ReadWrite.All - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "087fca6e-4606-4d41-b3f6-5ebdf75b8b4c",
+    "service": "entra",
+    "appname": "Azure Arc MetalLB extension",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0883f392-0a7a-443d-8c76-16a6d39c7b63",
+    "service": "entra",
+    "appname": "DeviceManagementConfiguration.ReadWrite.All - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "088ab73d-1256-47ae-bea9-9de8e7131f31",
+    "service": "entra",
+    "appname": "Guest Configuration Resource Contributor",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "08954f03-6346-4c2e-81c0-ec3a5cfae23b",
+    "service": "entra",
+    "appname": "Application Insights Snapshot Debugger",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "08987058-cadc-4b81-b6e1-30de50dcbe96",
+    "service": "entra",
+    "appname": "Windows Hello for Business GUID 1",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0898bdbb-73b0-471a-81e5-20f1fe4dd66e",
+    "service": "entra",
+    "appname": "Microsoft Kaizala Pro_4",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "089fe4d0-434a-44c5-8827-41ba8a0b17f5",
+    "service": "entra",
+    "appname": "Contacts.Read - Application",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "08bbd89e-9f13-488c-ac41-acfcb10c90ab",
+    "service": "entra",
+    "appname": "Key Vault Crypto Service Release User",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "08c4b377-0d23-4a8b-be2a-23c1c1d88545",
+    "service": "entra",
+    "appname": "WorkforceIntegration.ReadWrite.All - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "08d4c71a-cc63-4ce4-a9c8-5dd251b4d619",
+    "service": "entra",
+    "appname": "Azure Container Storage Operator",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "08d542b9-071f-4e16-94b0-74abb372e3d9",
+    "service": "entra",
+    "appname": "Group.Unified.Guest",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "08d7bce8-6e16-490e-89db-1d508e5e9609",
+    "service": "entra",
+    "appname": "Microsoft 365 Business Voice (US)",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "08e18479-4483-4f70-8f17-6f92156d8ea9",
+    "service": "entra",
+    "appname": "Sensor Data Intelligence Additional Machines Add-in for Dynamics 365 Supply Chain Management",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "09015f9f-377f-4538-bbb5-f75ceb09358a",
+    "service": "entra",
+    "appname": "Project Online Premium",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "090b4a96-8114-4c95-9c91-60e81ef53302",
+    "service": "entra",
+    "appname": "Dynamics 365 for Supply Chain Management Attach to Qualifying Dynamics 365 Base Offer",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "090c5cfd-751d-490a-894a-3ce6f1109419",
+    "service": "entra",
+    "appname": "Azure Service Bus Data Owner",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "091460c9-9c4a-49b2-81ef-1f3d852acce2",
+    "service": "entra",
+    "appname": "EduAssignments.Read - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "091c98b0-a1c9-4b02-b62c-7753395ccabe",
+    "service": "entra",
+    "appname": "Electronic invoicing microservices",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "092211d9-ca1a-427b-813e-b79c7653fe71",
+    "service": "entra",
+    "appname": "Goals-Export.Read.All - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "092277e5-8437-46b5-b911-ea64b294acb7",
+    "service": "entra",
+    "appname": "Taglio CTAP2.1 CS",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0922ef46-e1b9-4f7e-9134-9ad00547eb41",
+    "service": "entra",
+    "appname": "New Loop App",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "093e8d14-a334-43d9-93e3-30589a8b47d0",
+    "service": "entra",
+    "appname": "Rights Management Service Basic Content Protection",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "093f8818-d05f-49b8-95bc-9d2a73e9a43c",
+    "service": "entra",
+    "appname": "TeamsAppInstallation.ReadWriteForUser - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "094e7854-93fc-4d55-b2c0-3ab5369ebdc1",
+    "service": "entra",
+    "appname": "OFFICE 365 BUSINESS",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "095a7e6c-efd8-46d5-af7b-5298d53a49fc",
+    "service": "entra",
+    "appname": "Purview/sit-defn-azure-redis-cache-connection-string",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0964bb5e-9bdb-4d7b-ac29-58e794862a40",
+    "service": "entra",
+    "appname": "Search Administrator",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "09850681-111b-4a89-9bed-3f2cae46d706",
+    "service": "entra",
+    "appname": "User.Invite.All - Application",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "09e68a6e-b7ef-eb11-bacb-000d3a373d11",
+    "service": "entra",
+    "appname": "Dynamics 365 customer service new tab",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0a05d977-a21a-45b2-91ce-61c240dbafa2",
+    "service": "entra",
+    "appname": "Project for Project Operations",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0a0a23fa-fea1-4195-bb89-b4789cb12f7f",
+    "service": "entra",
+    "appname": "Common Data Service for Virtual Agent Base",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0a20c815-5e81-4727-9bdc-2b5a117850c3",
+    "service": "entra",
+    "appname": "Power Apps for Office 365 for Government_1",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0a389a77-9850-4dc4-b600-bc66fdfefc60",
+    "service": "entra",
+    "appname": "Dynamics 365 Guides_2",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0a4983bb-d3e5-4a09-95d8-b2d0127b3df5",
+    "service": "entra",
+    "appname": "SharePoint (Plan 1) for Education",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0a5ae4ab-0d65-4eeb-be61-29fc9b54394b",
+    "service": "entra",
+    "appname": "Cognitive Services Custom Vision Trainer",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0a7b3084-8d18-46f5-8aef-b5b829292c6f",
+    "service": "entra",
+    "appname": "ChannelSettings.Read.Group",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0a8ce3c7-89dd-46cf-b2c3-5ef0064437a8",
+    "service": "entra",
+    "appname": "Member.Read.Group",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0a9a7e1f-b9d0-4cc4-a60d-0319b160aaa3",
+    "service": "entra",
+    "appname": "Storage Table Data Contributor",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0ab0b1a8-8aac-4efd-b8c2-3ee1fb270be8",
+    "service": "entra",
+    "appname": "Azure Kubernetes Service Cluster Admin Role",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0ab2bc2c-204d-4f69-9f50-1a530defffe4",
+    "service": "entra",
+    "appname": "Send & Track",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0ab34830-df19-4f8c-b84e-aa85b8afa6e8",
+    "service": "entra",
+    "appname": "Azure Front Door Domain Contributor",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0acf3011-bc60-f375-fb53-6f05f43154e0",
+    "service": "entra",
+    "appname": "Nymi FIDO2 Authenticator",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0af06dc6-e4b5-4f28-818e-e78e62d137a5",
+    "service": "entra",
+    "appname": "Windows 365 [Community Contributed]",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0b03f40b-c404-40c3-8651-2aceb74365fa",
+    "service": "entra",
+    "appname": "Power Apps for Dynamics 365_2",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0b07f429-9f4b-4714-9392-cc5e8e80c8b0",
+    "service": "entra",
+    "appname": "Azure Digital Twins service endpoint resource ID",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0b21c159-dbf4-4dbb-a6f6-490e412c716e",
+    "service": "entra",
+    "appname": "Schedule-WorkingTime.ReadWrite.All - Application",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0b2a744c-2abf-4f1e-ad7e-17a087e2be99",
+    "service": "entra",
+    "appname": "Policy.ReadWrite.SecurityDefaults - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0b2c029c-dca0-454a-a336-887285d6ef07",
+    "service": "entra",
+    "appname": "Dynamics 365 Guides_1",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0b34bec3-d5d6-4974-b7b0-dcdb5c90c29d",
+    "service": "entra",
+    "appname": "Purview/azure-iot-connection-string",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0b4346bb-8dc3-4079-9dfc-513696f56039",
+    "service": "entra",
+    "appname": "LOGIC FLOWS",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0b4dcf5f-e476-465b-8d46-538e19df4943",
+    "service": "entra",
+    "appname": "Marketo Sales Engage",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0b57845e-aa49-4e6f-8109-ce654fffa618",
+    "service": "entra",
+    "appname": "OnPremisesPublishingProfiles.ReadWrite.All - Application",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0b5d694c-a244-4bde-86e6-eb5cd07730fe",
+    "service": "entra",
+    "appname": "Domain.ReadWrite.All - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0b7643bb-5336-476f-80b5-18fbfbc91806",
+    "service": "entra",
+    "appname": "AgreementAcceptance.Read - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0b7b15a8-7fd2-4964-bb96-5a566d4e3c15",
+    "service": "entra",
+    "appname": "Exchange Online (Plan 2) for Faculty",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0b939472-1861-45f1-ab6d-208f359c05cd",
+    "service": "entra",
+    "appname": "Flow for Virtual Agent for GCC",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0b962ed2-6d56-471c-bd5f-3477d83a7ba4",
+    "service": "entra",
+    "appname": "Azure Resource Notifications System Topics Subscriber",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0bc85aed-7b0b-437a-bac8-3b29a1b84c99",
+    "service": "entra",
+    "appname": "AuditLogsQuery-Endpoint.Read.All - Application",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0bdd5466-65c3-470a-9fa6-f679b48286b0",
+    "service": "entra",
+    "appname": "Power Virtual Agent USL for GCC",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0bf3c642-7bb5-4ccc-884e-59d09df0266c",
+    "service": "entra",
+    "appname": "Power BI Premium Per User_2",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff",
+    "service": "entra",
+    "appname": "Dynamics 365 AI for Customer Insights",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0bfc98ed-1dbc-4a97-b246-701754e48b17",
+    "service": "entra",
+    "appname": "APP CONNECT",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0c0064ea-477b-4130-82a5-4c2cc4ff68aa",
+    "service": "entra",
+    "appname": "DelegatedAdminRelationship.Read.All - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0c0bf378-bf22-4481-8f81-9e89a9b4960a",
+    "service": "entra",
+    "appname": "Sites.Manage.All - Application",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0c21030a-7e60-4ec7-9a0f-0042e0e0211a",
+    "service": "entra",
+    "appname": "Microsoft 365 E3 (500 seats min)",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0c219d04-3abf-47f7-912d-5cca239e90e6",
+    "service": "entra",
+    "appname": "TeamsTab.ReadWriteSelfForChat - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0c250654-c7f7-461f-871a-7222f6592cf2",
+    "service": "entra",
+    "appname": "Dynamics 365 Customer Insights Standalone",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0c266dff-15dd-4b49-8397-2bb16070ed52",
+    "service": "entra",
+    "appname": "Microsoft 365 Audio Conferencing_3",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0c278af4-c9c1-45de-9f4b-cd929e747a2c",
+    "service": "entra",
+    "appname": "Windows 365 Enterprise 1 vCPU 2 GB 64 GB_1",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0c34c906-8d99-4cb7-8bb7-33f5b0a1a799",
+    "service": "entra",
+    "appname": "API Management Workspace Contributor",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0c3e411a-ce45-4cd1-8f30-f99a3efa7b11",
+    "service": "entra",
+    "appname": "ChannelMember.ReadWrite.All - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0c458cef-11f3-48c2-a568-c66751c238c0",
+    "service": "entra",
+    "appname": "Notes.ReadWrite.All - Application",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0c4b2d20-7919-468d-8668-c54b09d4dee8",
+    "service": "entra",
+    "appname": "Bookings.ReadWrite.All - Application",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0c5e8a55-87a6-4556-93ab-adc52c4d862d",
+    "service": "entra",
+    "appname": "DeviceManagementRBAC.ReadWrite.All - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0c7d31ec-31ca-4f58-b6ec-9950b6b0de69",
+    "service": "entra",
+    "appname": "ShortNotes.Read.All - Application",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0c867c2a-1d8c-454a-a3db-ab2ea1bdc8bb",
+    "service": "entra",
+    "appname": "Storage File Data SMB Share Contributor",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0cd2c1f6-94a1-4075-ab8c-0b1aff2e1ad5",
+    "service": "entra",
+    "appname": "PartnerSecurity.ReadWrite.All - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
+    "service": "entra",
+    "appname": "Microsoft Dynamics ERP Microservices",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0ce33576-30e8-43b7-99e5-62f8569a4002",
+    "service": "entra",
+    "appname": "TeamsAppInstallation.ReadWriteSelfForChat - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0d0c0d31-fae7-41f2-b909-eaf4d7f26dba",
+    "service": "entra",
+    "appname": "Commercial data protection for Microsoft Copilot",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0d143570-9b92-4f57-adb5-e4efcd23b3bb",
+    "service": "entra",
+    "appname": "Windows 365 Enterprise 2 vCPU 4 GB 256 GB_2",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0d22204b-6cad-4dd0-8362-3e3f2ae699d9",
+    "service": "entra",
+    "appname": "EduAssignments.ReadWrite.All - Application",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0d3366f3-266e-4117-b422-7cabbc165e7c",
+    "service": "entra",
+    "appname": "Power Pages Authenticated Users per site monthly capacity",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0d373a98-a27a-426f-8993-f9a425ae99c5",
+    "service": "entra",
+    "appname": "Power Automate Unattended RPA add-on",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0d412a8c-a06c-439f-b3ec-8abcf54d2f96",
+    "service": "entra",
+    "appname": "EduRoster.ReadBasic.All - Application",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0d9b2e56-566b-c393-2940-f821b7f15d6d",
+    "service": "entra",
+    "appname": "Excelsecu eSecu FIDO2 Pro Security Key",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0da165c7-3f15-4236-b733-c0b0f6abe41d",
+    "service": "entra",
+    "appname": "RoleManagementPolicy.ReadWrite.AzureADGroup - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0da63026-e422-4390-89e8-b14520d7e699",
+    "service": "entra",
+    "appname": "Windows 365 Enterprise 4 vCPU 16 GB 512 GB_1",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0dab259f-bf13-4952-b7f8-7db8f131b28d",
+    "service": "entra",
+    "appname": "Skype for Business PSTN Domestic Calling",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0db238c4-885e-4c4f-a933-aa2cef684fca",
+    "service": "entra",
+    "appname": "Azure Front Door Secret Reader",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0de78315-9537-47f5-95ab-b3e77eba3993",
+    "service": "entra",
+    "appname": "Purview/sit-defn-hungary-social-security-number",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0e0e6c4f-cbb6-eb11-8236-000d3a5ab8b9",
+    "service": "entra",
+    "appname": "Dynamics 365 customer service basic session template - not in focus",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0e142028-345e-45da-8d92-8bfd4093bbb9",
+    "service": "entra",
+    "appname": "Microsoft Teams Phone Resource Account for Faculty",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0e263e50-5827-48a4-b97c-d940288653c7",
+    "service": "entra",
+    "appname": "Directory.AccessAsUser.All - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0e5f05e5-9ab9-446b-b98d-1e2157c94125",
+    "service": "entra",
+    "appname": "Quota Request Operator",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0e755559-83fb-4b44-91d0-4cc721b9323e",
+    "service": "entra",
+    "appname": "TeamsActivity.Read - Delegated",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0e75ca1e-0464-4b4d-8b93-68208a576181",
+    "service": "entra",
+    "appname": "Cognitive Services Speech Contributor",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-04-28T16:33:38.232651+00:00",
+    "appid": "0e778b85-fefa-466d-9eec-750569d92122",
+    "service": "entra",
+    "appname": "SearchConfiguration.ReadWrite.All - Application",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  }
+]
