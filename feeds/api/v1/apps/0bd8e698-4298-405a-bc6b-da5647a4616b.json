@@ -1,0 +1,14 @@
+{
+  "appid": "0bd8e698-4298-405a-bc6b-da5647a4616b",
+  "appname": "ShaгеPoint Cloud | ShaгеPoint  Cloud",
+  "service": "entra",
+  "category": "malicious",
+  "severity": "critical",
+  "comment": "OwnerTenantId=a4afdac5-f28f-4161-87c4-b5f7625bc048; OwnerTenantDomains=epsilonservices.onmicrosoft.com; LastSeen=2019 | replyUrls=[   \"https://achilleshosting.website/login\",   \"https://achilleshosting.website\",   \"https://microzoftonline.com\",   \"https://sharepoint.microzoftonline.com\",   \"https://sharepoint.microzoftonline.com/index.php\" ]; homepage=https://www.office.com/apps?auth=2; appOwnerOrganizationId=a4afdac5-f28f-4161-87c4-b5f7625bc048",
+  "references": [
+    "https://www.wiz.io/blog/detecting-malicious-oauth-applications",
+    "https://github.com/Cyera-Research-Labs/m365-malicious-app-iocs",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "0bd8e698-4298-405a-bc6b-da5647a4616b"
+}

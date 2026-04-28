@@ -1,0 +1,13 @@
+{
+  "appid": "fc45d3d0-d870-4c83-b3f7-08ebca61d3a0",
+  "appname": "COZY BEAR OAuth Redirect App",
+  "service": "entra",
+  "category": "malicious",
+  "severity": "critical",
+  "comment": "ThreatActor: COZY BEAR/APT29; scopes: openid; offline_access; profile",
+  "references": [
+    "https://raw.githubusercontent.com/anak0ndah/EntraHunt/main/data/threats.json",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "fc45d3d0-d870-4c83-b3f7-08ebca61d3a0"
+}

@@ -1,0 +1,14 @@
+{
+  "appid": "bc59ab01-8403-45c6-8796-ac3ef710b3e3",
+  "appname": "Outlook Online Add-in App",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "bc59ab01-8403-45c6-8796-ac3ef710b3e3"
+}

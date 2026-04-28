@@ -1,0 +1,13 @@
+{
+  "appid": "62db40a4-2c7e-4373-a609-eda138798962",
+  "appname": "Edison Mail",
+  "service": "entra",
+  "category": "risky",
+  "severity": "medium",
+  "comment": "ByteIntoCyber lists this as Edison Mail with full mailbox synchronization capability seen in BEC investigation context. EntraHunt labels the same ID differently, so keep the ByteIntoCyber name and note the conflict in the review file.",
+  "references": [
+    "https://raw.githubusercontent.com/anak0ndah/EntraHunt/main/data/threats.json",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "62db40a4-2c7e-4373-a609-eda138798962"
+}

@@ -1,0 +1,14 @@
+{
+  "appid": "22d7579f-06c2-4baa-89d2-e844486adb9d",
+  "appname": "Cortana at Work Bing Services",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "22d7579f-06c2-4baa-89d2-e844486adb9d"
+}

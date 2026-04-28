@@ -1,0 +1,14 @@
+{
+  "appid": "50d8616b-fd4f-4fac-a1c9-a6a9440d7fe0",
+  "appname": "OMSAuthorizationServicePROD",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "50d8616b-fd4f-4fac-a1c9-a6a9440d7fe0"
+}

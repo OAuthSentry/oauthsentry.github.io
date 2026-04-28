@@ -1,0 +1,14 @@
+{
+  "appid": "69893ee3-dd10-4b1c-832d-4870354be3d8",
+  "appname": "AEM-DualAuth",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "69893ee3-dd10-4b1c-832d-4870354be3d8"
+}

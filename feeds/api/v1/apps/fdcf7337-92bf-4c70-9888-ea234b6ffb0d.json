@@ -1,0 +1,13 @@
+{
+  "appid": "fdcf7337-92bf-4c70-9888-ea234b6ffb0d",
+  "appname": "Docusign",
+  "service": "entra",
+  "category": "malicious",
+  "severity": "critical",
+  "comment": "OwnerTenantId=bb42fc45-200e-4b7b-a63b-70bbdf1c83ec; OwnerTenantDomains=ceyanos.info; ceyanos.onmicrosoft.com; LastSeen=2025",
+  "references": [
+    "https://www.wiz.io/blog/detecting-malicious-oauth-applications",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "fdcf7337-92bf-4c70-9888-ea234b6ffb0d"
+}

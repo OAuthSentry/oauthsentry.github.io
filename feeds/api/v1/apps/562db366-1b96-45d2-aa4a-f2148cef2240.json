@@ -1,0 +1,14 @@
+{
+  "appid": "562db366-1b96-45d2-aa4a-f2148cef2240",
+  "appname": "Diagnostic Services Trusted Storage Access",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "562db366-1b96-45d2-aa4a-f2148cef2240"
+}

@@ -1,0 +1,14 @@
+{
+  "appid": "3db474b9-6a0c-4840-96ac-1fceb342124f",
+  "appname": "Verifiable Credentials Service Request",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "3db474b9-6a0c-4840-96ac-1fceb342124f"
+}

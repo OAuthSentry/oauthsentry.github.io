@@ -1,0 +1,14 @@
+{
+  "appid": "161a339d-b9f5-41c5-8856-6a6669acac64",
+  "appname": "Microsoft Azure Alerts Management",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "161a339d-b9f5-41c5-8856-6a6669acac64"
+}

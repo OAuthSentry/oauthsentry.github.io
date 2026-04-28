@@ -1,0 +1,13 @@
+{
+  "appid": "f927b0f3-6fce-4d59-a246-904fa7317969",
+  "appname": "Adobe",
+  "service": "entra",
+  "category": "malicious",
+  "severity": "critical",
+  "comment": "replyUrls=[   \"https://accposteamworkspace.myclickfunnels.com/home\" ]; homepage=nan; appOwnerOrganizationId=7a481da3-712d-4973-8e61-41cf8ead92c8",
+  "references": [
+    "https://github.com/Cyera-Research-Labs/m365-malicious-app-iocs",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "f927b0f3-6fce-4d59-a246-904fa7317969"
+}

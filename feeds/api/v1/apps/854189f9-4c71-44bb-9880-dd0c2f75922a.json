@@ -1,0 +1,13 @@
+{
+  "appid": "854189f9-4c71-44bb-9880-dd0c2f75922a",
+  "appname": "iLSMART",
+  "service": "entra",
+  "category": "malicious",
+  "severity": "critical",
+  "comment": "AiTM reverse proxy; captures passwords MFA codes and session cookies; scopes include Mail.ReadWrite; Mail.Send; MailboxSettings.ReadWrite",
+  "references": [
+    "https://raw.githubusercontent.com/anak0ndah/EntraHunt/main/data/threats.json",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "854189f9-4c71-44bb-9880-dd0c2f75922a"
+}

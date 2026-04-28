@@ -1,0 +1,14 @@
+{
+  "appid": "b46c3ac5-9da6-418f-a849-0a07a10b3c6c",
+  "appname": "Cloud Infrastructure Entitlement Management",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "b46c3ac5-9da6-418f-a849-0a07a10b3c6c"
+}

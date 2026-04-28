@@ -1,0 +1,14 @@
+{
+  "appid": "8edd93e1-2103-40b4-bd70-6e34e586362d",
+  "appname": "Windows Azure Security Resource Provider",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "8edd93e1-2103-40b4-bd70-6e34e586362d"
+}

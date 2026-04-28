@@ -1,0 +1,14 @@
+{
+  "appid": "dfe74da8-9279-44ec-8fb2-2aed9e1c73d0",
+  "appname": "O365 SkypeSpaces Ingestion Service",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "dfe74da8-9279-44ec-8fb2-2aed9e1c73d0"
+}

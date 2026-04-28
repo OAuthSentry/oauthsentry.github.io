@@ -33,6 +33,7 @@
       <nav class="nav" id="topnav">
         <a href="#/search" data-route="/search">Search</a>
         <a href="#/investigation/tradecraft" data-route="/investigation">Investigation</a>
+        <a href="#/triage" data-route="/triage">Triage</a>
         <a href="#/feeds" data-route="/feeds">Feeds</a>
         <a href="#/methodology" data-route="/methodology">Methodology</a>
         <a href="https://github.com/oauthsentry/oauthsentry.github.io" target="_blank" rel="noopener">GitHub &#8599;</a>
@@ -754,7 +755,7 @@ iseval = 0
 [oauthsentry_malicious_lookup]
 # Decorate results with OAuthSentry malicious-feed metadata.
 # Assumes you have a lookup definition named oauthsentry_malicious whose lookup file is
-# refreshed from https://oauthsentry.github.io/feeds/all/malicious.csv (any cadence).
+# refreshed from https://oauthsentry.github.io/feeds/all/all_malicious.csv (any cadence).
 definition = lookup oauthsentry_malicious appid OUTPUT category as oas_category, severity as oas_severity, comment as oas_comment
 iseval = 0
 
@@ -1811,7 +1812,7 @@ Invoke-Maester -Tag App    # OAuth/app-related tests only
 
             <p>The four fields defenders pivot on, with paths confirmed against the shape above:</p>
             <ul>
-              <li><strong>OAuth client ID</strong> (the equivalent of Entra's AppId) - <code>events[].parameters[]</code> where <code>name=="client_id"</code>. Lower-case it and match against OAuthSentry's <code>feeds/google/malicious.txt</code>. Google client IDs are not GUIDs - they end in <code>.apps.googleusercontent.com</code> and the leading numeric segment is the project number.</li>
+              <li><strong>OAuth client ID</strong> (the equivalent of Entra's AppId) - <code>events[].parameters[]</code> where <code>name=="client_id"</code>. Lower-case it and match against OAuthSentry's <code>feeds/google/google_malicious.txt</code>. Google client IDs are not GUIDs - they end in <code>.apps.googleusercontent.com</code> and the leading numeric segment is the project number.</li>
               <li><strong>Granted scopes</strong> - <code>events[].parameters[]</code> where <code>name=="scope"</code>, <code>multiValue</code> field is the array. <code>https://mail.google.com/</code>, <code>https://www.googleapis.com/auth/gmail.send</code>, <code>https://www.googleapis.com/auth/drive</code> and <code>https://www.googleapis.com/auth/contacts</code> are the four high-impact reads/writes; the <code>.readonly</code> variants matter for exfil hunts.</li>
               <li><strong>Consenting user</strong> - top-level <code>actor.email</code> + <code>actor.profileId</code>. Pair with the <code>login</code> application events on the same <code>profileId</code> to recover the IP, device and 2SV factor used at consent time.</li>
               <li><strong>Client type</strong> - <code>events[].parameters[]</code> where <code>name=="client_type"</code>. Per Google's reference, possible values are <code>WEB</code> (browser-based OAuth flow with a consent prompt), <code>NATIVE_DESKTOP</code> (installed desktop client like Outlook, Thunderbird, eM Client), <code>NATIVE_ANDROID</code>, <code>NATIVE_IOS</code>, <code>NATIVE_CHROME_EXTENSION</code>, <code>NATIVE_APPLICATION</code>, <code>CONNECTED_DEVICE</code>, and a handful of platform-specific values plus <code>TYPE_UNSPECIFIED</code>. The full enum is in the <a href="https://developers.google.com/admin-sdk/reports/v1/appendix/activity/token">OAuth Token Audit Activity Events reference</a>. Domain-wide delegation impersonation does not appear here as a <code>client_type</code> value - it shows up separately in the Admin Console under API controls.</li>
@@ -1844,7 +1845,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" \
       ]
     | @csv
   ' \
-| awk -F',' 'BEGIN { while((getline l &lt; "/path/to/feeds/google/malicious.txt") > 0) bad[tolower(l)]=1 }
+| awk -F',' 'BEGIN { while((getline l &lt; "/path/to/feeds/google/google_malicious.txt") > 0) bad[tolower(l)]=1 }
              { id=tolower($4); gsub(/"/, "", id); if (bad[id]) print "MALICIOUS:", $0 }'</pre>
             </div>
 
@@ -1919,7 +1920,7 @@ gam all users print tokens clientid 1084253493764-ipb2ntp4jb4rmqc76jp7habdrhfdus
               <li><strong>Restrict access to the four high-impact services.</strong> Same screen, set <strong>Gmail</strong>, <strong>Drive and Docs</strong>, <strong>Contacts</strong> and <strong>Calendar</strong> to <em>"Restricted"</em> rather than <em>"Unrestricted"</em>. Restricted means only Trusted apps can request scopes for that service; everything else is blocked even if the user clicks accept.</li>
               <li><strong>Audit domain-wide delegation quarterly.</strong> Admin Console &rarr; Security &rarr; API controls &rarr; <strong>Domain-wide delegation</strong>. Every entry is an unconditional impersonation grant. The list should be short, named, and every entry should map to a documented service. Unknown client IDs here are an incident.</li>
               <li><strong>Forward Workspace audit logs out of Google.</strong> Workspace audit log retention varies by data type and edition (the OAuth Token Reports API is documented to expose 180 days; in-console audit log views may surface different windows). Forward the events out via Pub/Sub or a vendor add-on into a SIEM with longer retention so consent events from a year ago are still queryable when an attack surfaces. Confirm your edition's actual retention in the Admin Help center before relying on it.</li>
-              <li><strong>Subscribe to OAuthSentry's <code>feeds/google/malicious.txt</code></strong> and run the Detection 1 curl on a 15-minute cadence. The list is small today (two entries) but every new compromise lands here within a day of public disclosure.</li>
+              <li><strong>Subscribe to OAuthSentry's <code>feeds/google/google_malicious.txt</code></strong> and run the Detection 1 curl on a 15-minute cadence. The list is small today (two entries) but every new compromise lands here within a day of public disclosure.</li>
             </ul>
           </div>
         </div>
@@ -1952,7 +1953,7 @@ gam all users print tokens clientid 1084253493764-ipb2ntp4jb4rmqc76jp7habdrhfdus
               </tbody>
             </table>
             <div style="border-left: 3px solid var(--accent); padding: 12px 16px; margin: 16px 0; background: rgba(255,255,255,0.02); font-size: 14px; color: var(--text-dim);">
-              <strong style="color: var(--text);">Why the matchable IOC is the name, not the number.</strong> Unlike Entra (which surfaces an AppId GUID on every consent event) or Google (which surfaces a <code>client_id</code> string on every <code>authorize</code> event), GitHub's audit log emits <code>oauth_application_name</code> on the <code>oauth_authorization.*</code> and <code>oauth_access.*</code> action families - <strong>and does not include the numeric OAuth App ID on those events</strong>. The numeric IDs above are the canonical identifiers from GitHub's UI (Settings &rarr; Developer settings &rarr; OAuth Apps), which GitHub itself published as IOCs in their disclosure. They are useful for absolute identification but for audit-log hunting, you match on the name. OAuthSentry's <code>feeds/github/malicious.txt</code> ships the names for that reason.
+              <strong style="color: var(--text);">Why the matchable IOC is the name, not the number.</strong> Unlike Entra (which surfaces an AppId GUID on every consent event) or Google (which surfaces a <code>client_id</code> string on every <code>authorize</code> event), GitHub's audit log emits <code>oauth_application_name</code> on the <code>oauth_authorization.*</code> and <code>oauth_access.*</code> action families - <strong>and does not include the numeric OAuth App ID on those events</strong>. The numeric IDs above are the canonical identifiers from GitHub's UI (Settings &rarr; Developer settings &rarr; OAuth Apps), which GitHub itself published as IOCs in their disclosure. They are useful for absolute identification but for audit-log hunting, you match on the name. OAuthSentry's <code>feeds/github/github_malicious.txt</code> ships the names for that reason.
             </div>
 
             <h3><span class="num">2</span> Audit trail - the GitHub audit log REST API</h3>
@@ -2007,7 +2008,7 @@ gam all users print tokens clientid 1084253493764-ipb2ntp4jb4rmqc76jp7habdrhfdus
             </div>
             <p>The four fields defenders pivot on, with paths confirmed against the shape above:</p>
             <ul>
-              <li><strong>OAuth App identifier</strong> &rarr; <code>oauth_application_name</code> at the top level. <strong>Lower-case and match against OAuthSentry's <code>feeds/github/malicious.txt</code></strong>. As noted above, the numeric OAuth App ID is <em>not</em> emitted on these events - the name is the only matchable identifier.</li>
+              <li><strong>OAuth App identifier</strong> &rarr; <code>oauth_application_name</code> at the top level. <strong>Lower-case and match against OAuthSentry's <code>feeds/github/github_malicious.txt</code></strong>. As noted above, the numeric OAuth App ID is <em>not</em> emitted on these events - the name is the only matchable identifier.</li>
               <li><strong>Granted scopes</strong> &rarr; <code>token_scopes</code> as a comma-separated string (e.g. <code>read:org,user:email</code>). <code>repo</code>, <code>repo:write</code>, <code>workflow</code>, <code>admin:org</code>, <code>delete_repo</code> are the high-impact scopes; treat any new authorization that requests them as page-on-call.</li>
               <li><strong>Acting user and source</strong> &rarr; <code>user</code> + <code>user_id</code> (top-level), pair with <code>actor_ip</code> and <code>actor_location.country_code</code> for geo / VPN / hosting-provider checks. The <code>user_agent</code> is also informative - Go and Python HTTP clients on consent-prompt actions are unusual and worth investigating.</li>
               <li><strong>Token identity</strong> &rarr; <code>token_id</code> (numeric) and <code>hashed_token</code> (URL-safe base64 SHA-256 of the raw token). Both are stable across the lifetime of the same token and let you correlate one consent event with every subsequent <code>git.clone</code>, <code>git.fetch</code>, or repo-read action that used that token. To search for every event tied to a known-leaked token, use <a href="https://docs.github.com/en/enterprise-cloud@latest/admin/monitoring-activity-in-your-enterprise/reviewing-audit-logs-for-your-enterprise/identifying-audit-log-events-performed-by-an-access-token">GitHub's hashed-token search</a>.</li>
@@ -2037,7 +2038,7 @@ curl -s \
     .oauth_application_name,
     .token_scopes
   ] | @csv' \
-| awk -F',' 'BEGIN { while((getline n &lt; "/path/to/feeds/github/malicious.txt") &gt; 0) if (n !~ /^#/) bad[tolower(n)]=1 }
+| awk -F',' 'BEGIN { while((getline n &lt; "/path/to/feeds/github/github_malicious.txt") &gt; 0) if (n !~ /^#/) bad[tolower(n)]=1 }
              { name=tolower($5); gsub(/"/, "", name); if (bad[name]) print "MALICIOUS:", $0 }'</pre>
             </div>
             <p>The same query works against <code>/enterprises/{enterprise}/audit-log</code> if you have enterprise-level access - that gives one query that covers every org in the enterprise.</p>
@@ -2083,7 +2084,7 @@ gh api --paginate \
               <li><strong>Stream the audit log out of GitHub.</strong> Enterprise Cloud customers can stream to S3, Azure Blob, GCS, Splunk or Datadog. The native retention is 180 days for most events and 7 days for Git events; streaming is the only way to keep these queryable for a full year of incident response.</li>
               <li><strong>Require SAML SSO and SCIM.</strong> Tying every authorization to a verified IdP identity makes the <code>actor</code> field in audit log events a real identity instead of a username, which dramatically improves attribution after an incident.</li>
               <li><strong>Use fine-grained PATs and short token lifetimes.</strong> Where you have to use long-lived credentials, prefer <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens">fine-grained PATs</a> (per-resource scoping, mandatory expiry) over classic PATs with broad <code>repo</code> scope. The audit log surfaces these as <code>personal_access_token.*</code> actions with <code>token_id</code> and <code>token_scopes</code> fields.</li>
-              <li><strong>Subscribe to OAuthSentry's <code>feeds/github/malicious.txt</code></strong> and the human-readable name list to feed your audit-log hunts. The list is small today (five entries from one historical incident) but every publisher compromise added here lands within a day of public disclosure.</li>
+              <li><strong>Subscribe to OAuthSentry's <code>feeds/github/github_malicious.txt</code></strong> and the human-readable name list to feed your audit-log hunts. The list is small today (five entries from one historical incident) but every publisher compromise added here lands within a day of public disclosure.</li>
             </ul>
           </div>
         </div>
@@ -2104,9 +2105,14 @@ gh api --paginate \
               <h3>Compliance</h3>
               <p class="desc">Legitimate first-party and well-known third-party apps. Use as a known-good baseline for triage and allowlists.</p>
               <div class="feed-links">
-                <a href="feeds/entra/compliance.txt"><span>entra - txt</span><span class="fmt">app ids</span></a>
-                <a href="feeds/entra/compliance.csv"><span>entra - csv</span><span class="fmt">full</span></a>
-                <a href="feeds/all/compliance.txt"><span>all services - txt</span><span class="fmt">app ids</span></a>
+                <a href="feeds/entra/entra_compliance.txt"><span>entra - txt</span><span class="fmt">app ids</span></a>
+                <a href="feeds/entra/entra_compliance.csv"><span>entra - csv</span><span class="fmt">full</span></a>
+                <a href="feeds/google/google_compliance.txt"><span>google - txt</span><span class="fmt">app ids</span></a>
+                <a href="feeds/google/google_compliance.csv"><span>google - csv</span><span class="fmt">full</span></a>
+                <a href="feeds/github/github_compliance.txt"><span>github - txt</span><span class="fmt">app ids</span></a>
+                <a href="feeds/github/github_compliance.csv"><span>github - csv</span><span class="fmt">full</span></a>
+                <a href="feeds/all/all_compliance.txt"><span>all services - txt</span><span class="fmt">app ids</span></a>
+                <a href="feeds/all/all_compliance.csv"><span>all services - csv</span><span class="fmt">full</span></a>
               </div>
             </div>
 
@@ -2114,19 +2120,29 @@ gh api --paginate \
               <h3>Risky</h3>
               <p class="desc">Legitimate apps repeatedly observed in BEC, exfiltration tooling (rclone, eM Client), or first-party Microsoft apps abused via AADInternals / EvilProxy / UTA0352. Hunt context.</p>
               <div class="feed-links">
-                <a href="feeds/entra/risky.txt"><span>entra - txt</span><span class="fmt">app ids</span></a>
-                <a href="feeds/entra/risky.csv"><span>entra - csv</span><span class="fmt">full</span></a>
-                <a href="feeds/all/risky.txt"><span>all services - txt</span><span class="fmt">app ids</span></a>
+                <a href="feeds/entra/entra_risky.txt"><span>entra - txt</span><span class="fmt">app ids</span></a>
+                <a href="feeds/entra/entra_risky.csv"><span>entra - csv</span><span class="fmt">full</span></a>
+                <a href="feeds/google/google_risky.txt"><span>google - txt</span><span class="fmt">app ids</span></a>
+                <a href="feeds/google/google_risky.csv"><span>google - csv</span><span class="fmt">full</span></a>
+                <a href="feeds/github/github_risky.txt"><span>github - txt</span><span class="fmt">app ids</span></a>
+                <a href="feeds/github/github_risky.csv"><span>github - csv</span><span class="fmt">full</span></a>
+                <a href="feeds/all/all_risky.txt"><span>all services - txt</span><span class="fmt">app ids</span></a>
+                <a href="feeds/all/all_risky.csv"><span>all services - csv</span><span class="fmt">full</span></a>
               </div>
             </div>
 
             <div class="feed-card malicious">
               <h3>Malicious</h3>
-              <p class="desc">Confirmed malicious OAuth applications: APT29 redirect apps, EvilGinx/AiTM lures, RH-ISAC tracked impersonation campaigns, and homoglyph SharePoint/OneDrive impersonators.</p>
+              <p class="desc">Confirmed malicious OAuth applications: APT29 redirect apps, EvilGinx/AiTM lures, RH-ISAC tracked impersonation campaigns, homoglyph SharePoint/OneDrive impersonators, and disclosed publisher compromises (Salesloft Drift, Context.ai, Heroku Dashboard).</p>
               <div class="feed-links">
-                <a href="feeds/entra/malicious.txt"><span>entra - txt</span><span class="fmt">app ids</span></a>
-                <a href="feeds/entra/malicious.csv"><span>entra - csv</span><span class="fmt">full</span></a>
-                <a href="feeds/all/malicious.txt"><span>all services - txt</span><span class="fmt">app ids</span></a>
+                <a href="feeds/entra/entra_malicious.txt"><span>entra - txt</span><span class="fmt">app ids</span></a>
+                <a href="feeds/entra/entra_malicious.csv"><span>entra - csv</span><span class="fmt">full</span></a>
+                <a href="feeds/google/google_malicious.txt"><span>google - txt</span><span class="fmt">app ids</span></a>
+                <a href="feeds/google/google_malicious.csv"><span>google - csv</span><span class="fmt">full</span></a>
+                <a href="feeds/github/github_malicious.txt"><span>github - txt</span><span class="fmt">app names</span></a>
+                <a href="feeds/github/github_malicious.csv"><span>github - csv</span><span class="fmt">full</span></a>
+                <a href="feeds/all/all_malicious.txt"><span>all services - txt</span><span class="fmt">app ids</span></a>
+                <a href="feeds/all/all_malicious.csv"><span>all services - csv</span><span class="fmt">full</span></a>
               </div>
             </div>
           </div>
@@ -2134,17 +2150,102 @@ gh api --paginate \
 
         <div class="section">
           <h2>Combined feeds</h2>
-          <p class="lead">Cross-service exports. The <code>index.json</code> is what the search UI uses; use it for any custom integration that needs the full record per app.</p>
+          <p class="lead">Cross-service exports. The <code>all_index.json</code> is what the search UI uses; use it for any custom integration that needs the full record per app.</p>
           <div class="feed-grid">
             <div class="feed-card">
               <h3>JSON</h3>
               <p class="desc">Full schema, every service, ready for programmatic consumption.</p>
               <div class="feed-links">
-                <a href="feeds/all/index.json"><span>all/index.json</span><span class="fmt">json</span></a>
-                <a href="feeds/entra/all.json"><span>entra/all.json</span><span class="fmt">json</span></a>
+                <a href="feeds/all/all_index.json"><span>all/all_index.json</span><span class="fmt">json</span></a>
+                <a href="feeds/entra/entra_all.json"><span>entra/entra_all.json</span><span class="fmt">json</span></a>
+                <a href="feeds/google/google_all.json"><span>google/google_all.json</span><span class="fmt">json</span></a>
+                <a href="feeds/github/github_all.json"><span>github/github_all.json</span><span class="fmt">json</span></a>
                 <a href="feeds/summary.json"><span>summary.json</span><span class="fmt">counts</span></a>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRIAGE PAGE ============ -->
+    <section id="page-triage" hidden>
+      <div class="shell">
+        <div class="section">
+          <h2>Triage</h2>
+          <p class="lead">
+            Paste a list of OAuth App IDs or a raw audit log dump. Each identifier is matched against OAuthSentry's catalog
+            and grouped by category - <span class="cat-malicious mono">malicious</span> first, then
+            <span class="cat-risky mono">risky</span>, then <span class="cat-unknown mono">unknown</span> (the bucket worth
+            investigating because it's not in any list yet), then <span class="cat-compliance mono">compliance</span>
+            (collapsed). Pure client-side; pasted content never leaves the browser.
+          </p>
+
+          <div class="triage-grid">
+            <div class="triage-input-card">
+              <div class="triage-input-header">
+                <label for="triage-input">Input</label>
+                <span class="triage-hint" id="triage-format-hint">auto-detecting...</span>
+              </div>
+              <textarea id="triage-input" rows="12" spellcheck="false" placeholder="Paste here. Accepts:&#10;&#10;1. A plain list of App IDs - one per line, or comma/semicolon-separated&#10;   c5393580-f805-4401-95e8-94b7a6ef2fc2&#10;   1084253493764-ipb2ntp4...apps.googleusercontent.com&#10;   Heroku Dashboard&#10;&#10;2. Microsoft 365 unified audit log JSON (extracts ObjectId from 'Consent to application' events)&#10;3. Google Reports API JSON (extracts client_id from token authorize events)&#10;4. GitHub audit log JSON (extracts oauth_application_name from oauth_* events)"></textarea>
+              <div class="triage-actions">
+                <button id="triage-run" class="btn-primary">Triage</button>
+                <button id="triage-clear" class="btn-secondary">Clear</button>
+                <button id="triage-sample" class="btn-secondary">Load sample</button>
+              </div>
+            </div>
+
+            <div class="triage-results-card">
+              <div class="triage-results-header">
+                <span id="triage-summary">Paste input and click Triage to begin.</span>
+                <span class="triage-export" id="triage-export" hidden>
+                  <button id="triage-export-csv" class="btn-link">copy as CSV</button>
+                  <button id="triage-export-md" class="btn-link">copy as Markdown</button>
+                </span>
+              </div>
+              <div id="triage-results"></div>
+            </div>
+          </div>
+
+          <div class="api-callout">
+            <h3>Programmatic access - the static API</h3>
+            <p>The same lookup is available as a callable HTTP API hosted on GitHub Pages. No authentication required, CORS open, served as <code>application/json</code>. Useful for SOAR enrichment, alert pipelines, or any tooling that needs OAuthSentry's classification at runtime.</p>
+
+            <div class="code-block">
+              <div class="code-header">Single-app lookup<button class="copy-snippet" type="button">copy</button></div>
+              <pre>``` Slug rule: lower-case the appid, replace any non-[a-z0-9._-] run with one hyphen ```
+``` Entra GUID and Google client_id are already URL-safe; GitHub names need slugifying ```
+
+curl -s https://oauthsentry.github.io/feeds/api/v1/apps/c5393580-f805-4401-95e8-94b7a6ef2fc2.json
+curl -s https://oauthsentry.github.io/feeds/api/v1/apps/heroku-dashboard.json
+curl -s https://oauthsentry.github.io/feeds/api/v1/apps/1084253493764-ipb2ntp4jb4rmqc76jp7habdrhfdus3q.apps.googleusercontent.com.json
+
+``` 404 means the app is not in OAuthSentry's catalog (uncategorized) ```</pre>
+            </div>
+
+            <div class="code-block">
+              <div class="code-header">Bulk lookup (the whole catalog as one map)<button class="copy-snippet" type="button">copy</button></div>
+              <pre>``` Fetch once, query in memory - the right pattern for SIEM-side enrichment ```
+curl -s https://oauthsentry.github.io/feeds/api/v1/lookup_by_appid.json &gt; oauthsentry.json
+
+``` Then in your enrichment code, e.g. Python ```
+import json
+catalog = json.load(open('oauthsentry.json'))
+record = catalog.get(appid.lower())  # None means uncategorized
+if record and record['category'] == 'malicious':
+    page_oncall(record)</pre>
+            </div>
+
+            <div class="code-block">
+              <div class="code-header">Dataset metadata<button class="copy-snippet" type="button">copy</button></div>
+              <pre>curl -s https://oauthsentry.github.io/feeds/api/v1/meta.json</pre>
+            </div>
+
+            <p style="margin-top: 16px; font-size: 13px; color: var(--text-faint);">
+              See the full API documentation in the
+              <a href="#/methodology" data-route="/methodology">Methodology</a> page,
+              or read <code>feeds/api/v1/meta.json</code> for the live endpoint manifest.
+            </p>
           </div>
         </div>
       </div>

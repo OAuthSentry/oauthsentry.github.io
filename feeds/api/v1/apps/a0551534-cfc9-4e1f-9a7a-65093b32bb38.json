@@ -1,0 +1,14 @@
+{
+  "appid": "a0551534-cfc9-4e1f-9a7a-65093b32bb38",
+  "appname": "AzureLockbox",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "a0551534-cfc9-4e1f-9a7a-65093b32bb38"
+}

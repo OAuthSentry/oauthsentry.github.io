@@ -1,0 +1,13 @@
+{
+  "appid": "fc5d3843-d0e8-4c3f-b0ee-6d407f667751",
+  "appname": "0365 Access | Mail Client",
+  "service": "entra",
+  "category": "malicious",
+  "severity": "critical",
+  "comment": "OwnerTenantId=2c08ab0d-eed9-4034-bfb7-765c52eceef9; OwnerTenantDomains=; LastSeen=2019",
+  "references": [
+    "https://www.wiz.io/blog/detecting-malicious-oauth-applications",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "fc5d3843-d0e8-4c3f-b0ee-6d407f667751"
+}

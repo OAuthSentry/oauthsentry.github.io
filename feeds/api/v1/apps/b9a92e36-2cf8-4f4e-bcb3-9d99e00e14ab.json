@@ -1,0 +1,14 @@
+{
+  "appid": "b9a92e36-2cf8-4f4e-bcb3-9d99e00e14ab",
+  "appname": "Compute Recommendation Service",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "b9a92e36-2cf8-4f4e-bcb3-9d99e00e14ab"
+}

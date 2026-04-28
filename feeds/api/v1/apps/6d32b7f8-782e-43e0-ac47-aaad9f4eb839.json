@@ -1,0 +1,14 @@
+{
+  "appid": "6d32b7f8-782e-43e0-ac47-aaad9f4eb839",
+  "appname": "Permission Service O365",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "6d32b7f8-782e-43e0-ac47-aaad9f4eb839"
+}

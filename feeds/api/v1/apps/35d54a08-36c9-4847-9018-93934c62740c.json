@@ -1,0 +1,14 @@
+{
+  "appid": "35d54a08-36c9-4847-9018-93934c62740c",
+  "appname": "PeoplePredictions",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "35d54a08-36c9-4847-9018-93934c62740c"
+}

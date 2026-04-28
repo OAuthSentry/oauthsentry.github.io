@@ -1,0 +1,13 @@
+{
+  "appid": "27922004-5251-4030-b22d-91ecd9a37ea4",
+  "appname": "Outlook Mobile",
+  "service": "entra",
+  "category": "risky",
+  "severity": "low",
+  "comment": "Legitimate Outlook Mobile client; ByteIntoCyber marks as mailbox exfiltration risk if used by an attacker. Keep in risky legitimate for hunting only.",
+  "references": [
+    "https://byteintocyber.com/microsoft-365-application-ids-bec-investigation-resources/",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "27922004-5251-4030-b22d-91ecd9a37ea4"
+}

@@ -1,0 +1,14 @@
+{
+  "appid": "1c2909a7-6432-4263-a70d-929a3c1f9ee5",
+  "appname": "Common Data Service License Management",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "1c2909a7-6432-4263-a70d-929a3c1f9ee5"
+}

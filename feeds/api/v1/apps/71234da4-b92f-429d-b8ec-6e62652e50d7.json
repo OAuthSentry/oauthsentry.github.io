@@ -1,0 +1,14 @@
+{
+  "appid": "71234da4-b92f-429d-b8ec-6e62652e50d7",
+  "appname": "Microsoft Customer Engagement Portal",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "71234da4-b92f-429d-b8ec-6e62652e50d7"
+}

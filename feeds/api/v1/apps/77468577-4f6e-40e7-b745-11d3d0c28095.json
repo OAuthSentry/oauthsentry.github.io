@@ -1,0 +1,13 @@
+{
+  "appid": "77468577-4f6e-40e7-b745-11d3d0c28095",
+  "appname": "Fastmail",
+  "service": "entra",
+  "category": "risky",
+  "severity": "critical",
+  "comment": "",
+  "references": [
+    "https://github.com/randomaccess3/detections/blob/main/M365_Oauth_Apps/MaliciousOauthAppDetections.json",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "77468577-4f6e-40e7-b745-11d3d0c28095"
+}

@@ -1,0 +1,13 @@
+{
+  "appid": "72782ba9-4490-4f03-8d82-562370ea3566",
+  "appname": "Office 365 [Community Contributed]",
+  "service": "entra",
+  "category": "risky",
+  "severity": "low",
+  "comment": "legit app - used by EvilProxy",
+  "references": [
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/microsoft_apps_list.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "72782ba9-4490-4f03-8d82-562370ea3566"
+}

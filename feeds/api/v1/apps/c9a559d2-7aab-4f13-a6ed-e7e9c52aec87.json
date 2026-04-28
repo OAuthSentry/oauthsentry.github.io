@@ -1,0 +1,14 @@
+{
+  "appid": "c9a559d2-7aab-4f13-a6ed-e7e9c52aec87",
+  "appname": "Microsoft Forms",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "c9a559d2-7aab-4f13-a6ed-e7e9c52aec87"
+}

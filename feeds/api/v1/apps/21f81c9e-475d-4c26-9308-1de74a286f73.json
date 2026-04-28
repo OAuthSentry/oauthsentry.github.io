@@ -1,0 +1,13 @@
+{
+  "appid": "21f81c9e-475d-4c26-9308-1de74a286f73",
+  "appname": "Users",
+  "service": "entra",
+  "category": "malicious",
+  "severity": "critical",
+  "comment": "OwnerTenantId=69168d16-9597-47a2-a4eb-a81900185529; OwnerTenantDomains=fpwd.com; netorgft8261298.onmicrosoft.com; LastSeen=2025",
+  "references": [
+    "https://www.wiz.io/blog/detecting-malicious-oauth-applications",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "21f81c9e-475d-4c26-9308-1de74a286f73"
+}

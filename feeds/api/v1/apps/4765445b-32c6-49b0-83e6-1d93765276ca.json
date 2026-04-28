@@ -1,0 +1,13 @@
+{
+  "appid": "4765445b-32c6-49b0-83e6-1d93765276ca",
+  "appname": "OfficeHome",
+  "service": "entra",
+  "category": "risky",
+  "severity": "info",
+  "comment": "legit app - Observed used by Threat actors in multiple BEC cases",
+  "references": [
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/microsoft_apps_list.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "4765445b-32c6-49b0-83e6-1d93765276ca"
+}

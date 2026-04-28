@@ -1,0 +1,14 @@
+{
+  "appid": "ccf4d8df-75ce-4107-8ea5-7afd618d4d8a",
+  "appname": "Microsoft Intune AAD BitLocker Recovery Key Integration",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "ccf4d8df-75ce-4107-8ea5-7afd618d4d8a"
+}

@@ -1,0 +1,14 @@
+{
+  "appid": "e0ccf59d-5a20-4a87-a122-f42842cdb86a",
+  "appname": "Microsoft Defender for Cloud Scanner Resource Provider",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "e0ccf59d-5a20-4a87-a122-f42842cdb86a"
+}

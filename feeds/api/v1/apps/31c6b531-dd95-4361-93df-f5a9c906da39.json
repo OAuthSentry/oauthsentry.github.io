@@ -1,0 +1,13 @@
+{
+  "appid": "31c6b531-dd95-4361-93df-f5a9c906da39",
+  "appname": "OneDrive-2025",
+  "service": "entra",
+  "category": "malicious",
+  "severity": "critical",
+  "comment": "replyUrls=[   \"https://cleansbeauty.com/lost/apc.html\" ]; homepage=nan; appOwnerOrganizationId=9f0b1d59-fffb-4488-8f5a-76cec7e557b7",
+  "references": [
+    "https://github.com/Cyera-Research-Labs/m365-malicious-app-iocs",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "31c6b531-dd95-4361-93df-f5a9c906da39"
+}

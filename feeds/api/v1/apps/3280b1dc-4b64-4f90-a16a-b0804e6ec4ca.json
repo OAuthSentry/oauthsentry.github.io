@@ -1,0 +1,14 @@
+{
+  "appid": "3280b1dc-4b64-4f90-a16a-b0804e6ec4ca",
+  "appname": "ОпeDrive for Business",
+  "service": "entra",
+  "category": "malicious",
+  "severity": "critical",
+  "comment": "OwnerTenantId=a4afdac5-f28f-4161-87c4-b5f7625bc048; OwnerTenantDomains=epsilonservices.onmicrosoft.com; LastSeen=2019 | replyUrls=[   \"https://woolydogstore.com\",   \"https://woolydogstore.com/login\" ]; homepage=https://onedrive.live.com/about/en-us/business; appOwnerOrganizationId=a4afdac5-f28f-4161-87c4-b5f7625bc048",
+  "references": [
+    "https://www.wiz.io/blog/detecting-malicious-oauth-applications",
+    "https://github.com/Cyera-Research-Labs/m365-malicious-app-iocs",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "3280b1dc-4b64-4f90-a16a-b0804e6ec4ca"
+}

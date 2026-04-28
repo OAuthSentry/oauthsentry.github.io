@@ -1,0 +1,14 @@
+{
+  "appid": "844cca35-0656-46ce-b636-13f48b0eecbd",
+  "appname": "Microsoft Stream Mobile Native",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "844cca35-0656-46ce-b636-13f48b0eecbd"
+}

@@ -1,0 +1,13 @@
+{
+  "appid": "heroku dashboard - classic",
+  "appname": "Heroku Dashboard - Classic",
+  "service": "github",
+  "category": "malicious",
+  "severity": "critical",
+  "comment": "Historical IOC. April 2022 breach (numeric OAuth App ID 363831). Same incident and revocation as Heroku Dashboard. Match by oauth_application_name in audit logs.",
+  "references": [
+    "https://github.blog/news-insights/company-news/security-alert-stolen-oauth-user-tokens/",
+    "https://github.com/oauthsentry/oauthsentry.github.io/blob/main/data/github/curated_seed.csv"
+  ],
+  "slug": "heroku-dashboard---classic"
+}

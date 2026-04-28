@@ -1,0 +1,14 @@
+{
+  "appid": "55441455-2f54-42b5-bc99-93e21cd4ae28",
+  "appname": "Office Enterprise Protection Service",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "55441455-2f54-42b5-bc99-93e21cd4ae28"
+}

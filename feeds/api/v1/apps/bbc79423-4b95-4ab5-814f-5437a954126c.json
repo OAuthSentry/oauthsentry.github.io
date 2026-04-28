@@ -1,0 +1,13 @@
+{
+  "appid": "bbc79423-4b95-4ab5-814f-5437a954126c",
+  "appname": "Potentially malicious OAuth application",
+  "service": "entra",
+  "category": "malicious",
+  "severity": "high",
+  "comment": "Joe Sandbox report labels this client ID as a potentially malicious OAuth application in a malicious OAuth redirect.",
+  "references": [
+    "https://www.joesandbox.com/analysis/1887080/0/html",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "bbc79423-4b95-4ab5-814f-5437a954126c"
+}

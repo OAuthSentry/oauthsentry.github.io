@@ -1,0 +1,14 @@
+{
+  "appid": "cbfda01c-c883-45aa-aedc-e7a484615620",
+  "appname": "Microsoft Windows AutoPilot Service API",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "cbfda01c-c883-45aa-aedc-e7a484615620"
+}

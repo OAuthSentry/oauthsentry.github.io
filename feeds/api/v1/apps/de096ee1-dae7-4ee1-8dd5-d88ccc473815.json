@@ -1,0 +1,14 @@
+{
+  "appid": "de096ee1-dae7-4ee1-8dd5-d88ccc473815",
+  "appname": "MileIQ Admin Center",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "de096ee1-dae7-4ee1-8dd5-d88ccc473815"
+}

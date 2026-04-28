@@ -1,0 +1,14 @@
+{
+  "appid": "08e18876-6177-487e-b8b5-cf950c1e598c",
+  "appname": "SharePoint Online Web Client Extensibility",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "08e18876-6177-487e-b8b5-cf950c1e598c"
+}

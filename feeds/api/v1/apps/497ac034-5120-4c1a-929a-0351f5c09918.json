@@ -1,0 +1,13 @@
+{
+  "appid": "497ac034-5120-4c1a-929a-0351f5c09918",
+  "appname": "ZoomInfo Communitiez Login",
+  "service": "entra",
+  "category": "risky",
+  "severity": "critical",
+  "comment": "Zoominfo Login",
+  "references": [
+    "https://github.com/randomaccess3/detections/blob/main/M365_Oauth_Apps/MaliciousOauthAppDetections.json",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "497ac034-5120-4c1a-929a-0351f5c09918"
+}

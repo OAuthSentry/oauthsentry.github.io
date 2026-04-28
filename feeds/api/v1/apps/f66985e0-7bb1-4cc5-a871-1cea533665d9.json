@@ -1,0 +1,13 @@
+{
+  "appid": "f66985e0-7bb1-4cc5-a871-1cea533665d9",
+  "appname": "Excel4Enabler",
+  "service": "entra",
+  "category": "malicious",
+  "severity": "critical",
+  "comment": "replyUrls=[   \"https://iwljzmwhres67fh.com/office\" ]; homepage=nan; appOwnerOrganizationId=1d2e2b77-68f0-4396-873a-22900b02a553",
+  "references": [
+    "https://github.com/Cyera-Research-Labs/m365-malicious-app-iocs",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "f66985e0-7bb1-4cc5-a871-1cea533665d9"
+}

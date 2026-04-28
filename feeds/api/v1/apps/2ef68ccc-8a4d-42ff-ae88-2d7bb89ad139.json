@@ -1,0 +1,13 @@
+{
+  "appid": "2ef68ccc-8a4d-42ff-ae88-2d7bb89ad139",
+  "appname": "Mail_Backup",
+  "service": "entra",
+  "category": "malicious",
+  "severity": "critical",
+  "comment": "Scopes include Mail.Read; Mail.ReadWrite; Contacts.Read; Calendars.Read; offline_access",
+  "references": [
+    "https://raw.githubusercontent.com/anak0ndah/EntraHunt/main/data/threats.json",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "2ef68ccc-8a4d-42ff-ae88-2d7bb89ad139"
+}

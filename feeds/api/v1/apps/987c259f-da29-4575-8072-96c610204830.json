@@ -1,0 +1,13 @@
+{
+  "appid": "987c259f-da29-4575-8072-96c610204830",
+  "appname": "Unknown OAuth phishing app",
+  "service": "entra",
+  "category": "malicious",
+  "severity": "critical",
+  "comment": "Proofpoint/RH-ISAC Microsoft OAuth app impersonation campaign; malicious Microsoft OAuth Application ID; first seen 2025-03-18",
+  "references": [
+    "https://rhisac.org/threat-intelligence/microsoft-oauth-app-impersonation-leads-to-mfa-phishing/",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "987c259f-da29-4575-8072-96c610204830"
+}

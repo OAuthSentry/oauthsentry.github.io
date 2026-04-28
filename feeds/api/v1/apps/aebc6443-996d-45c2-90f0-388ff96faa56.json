@@ -1,0 +1,14 @@
+{
+  "appid": "aebc6443-996d-45c2-90f0-388ff96faa56",
+  "appname": "Visual Studio Code",
+  "service": "entra",
+  "category": "risky",
+  "severity": "high",
+  "comment": "First-party Microsoft app abused by Volexity-tracked UTA0352 cluster in 2025 OAuth phishing campaign against Ukraine-related NGOs (Visual Studio Code OAuth flow with insiders.vscode.dev redirect URI). Hunt for unusual sign-ins to this client_id paired with Microsoft Graph .default scope.",
+  "references": [
+    "https://www.volexity.com/blog/2025/04/22/phishing-for-codes-russian-threat-actors-target-microsoft-365-oauth-workflows/",
+    "https://www.elastic.co/security-labs/entra-id-oauth-phishing-detection",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "aebc6443-996d-45c2-90f0-388ff96faa56"
+}

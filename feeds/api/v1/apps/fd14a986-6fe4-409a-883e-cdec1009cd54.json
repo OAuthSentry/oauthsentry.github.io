@@ -1,0 +1,14 @@
+{
+  "appid": "fd14a986-6fe4-409a-883e-cdec1009cd54",
+  "appname": "Intune Grouping and Targeting Client Prod",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "fd14a986-6fe4-409a-883e-cdec1009cd54"
+}

@@ -1,0 +1,13 @@
+{
+  "appid": "110671459871-30f1spbu0hptbs60cb4vsmv79i7bbvqj.apps.googleusercontent.com",
+  "appname": "Context.ai / AI Office Suite OAuth app",
+  "service": "google",
+  "category": "malicious",
+  "severity": "critical",
+  "comment": "Vercel recommended Google Workspace administrators and Google Account owners check for usage immediately.",
+  "references": [
+    "https://www.wiz.io/blog/contextai-oauth-token-compromise",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/google_oauth_apps.csv"
+  ],
+  "slug": "110671459871-30f1spbu0hptbs60cb4vsmv79i7bbvqj.apps.googleusercontent.com"
+}

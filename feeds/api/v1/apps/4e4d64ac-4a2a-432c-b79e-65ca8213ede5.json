@@ -1,0 +1,14 @@
+{
+  "appid": "4e4d64ac-4a2a-432c-b79e-65ca8213ede5",
+  "appname": "ShaгePoint Online",
+  "service": "entra",
+  "category": "malicious",
+  "severity": "critical",
+  "comment": "OwnerTenantId=44383e2a-62c5-4d54-ae60-8cdbba60e3b7; OwnerTenantDomains=; LastSeen=2019 | replyUrls=[   \"https://privat-sparkasse.de/login\",   \"https://privat-sparkasse.de\" ]; homepage=https://products.office.com/en-us/sharepoint/collaboration; appOwnerOrganizationId=44383e2a-62c5-4d54-ae60-8cdbba60e3b7",
+  "references": [
+    "https://www.wiz.io/blog/detecting-malicious-oauth-applications",
+    "https://github.com/Cyera-Research-Labs/m365-malicious-app-iocs",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "4e4d64ac-4a2a-432c-b79e-65ca8213ede5"
+}

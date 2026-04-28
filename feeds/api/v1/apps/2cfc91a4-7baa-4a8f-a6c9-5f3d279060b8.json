@@ -1,0 +1,14 @@
+{
+  "appid": "2cfc91a4-7baa-4a8f-a6c9-5f3d279060b8",
+  "appname": "Azure Application Change Service",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "2cfc91a4-7baa-4a8f-a6c9-5f3d279060b8"
+}

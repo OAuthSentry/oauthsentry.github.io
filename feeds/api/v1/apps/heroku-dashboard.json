@@ -1,0 +1,13 @@
+{
+  "appid": "heroku dashboard",
+  "appname": "Heroku Dashboard",
+  "service": "github",
+  "category": "malicious",
+  "severity": "critical",
+  "comment": "Historical IOC. April 2022 breach: GitHub disclosed two OAuth App registrations under this exact name (numeric OAuth App IDs 145909 and 628778) had their user tokens stolen and used to download private repos from dozens of orgs including npm. Heroku/GitHub revoked all tokens April 13-16 2022; Heroku stopped issuing new tokens from this integration. GitHub audit logs surface the application name (oauth_application_name) for oauth_authorization.* and oauth_access.* events but not the numeric ID; match by name. Hunt historical org audit logs for any oauth_authorization.create or oauth_access.generate events tied to this app name to assess past exposure.",
+  "references": [
+    "https://github.blog/news-insights/company-news/security-alert-stolen-oauth-user-tokens/",
+    "https://github.com/oauthsentry/oauthsentry.github.io/blob/main/data/github/curated_seed.csv"
+  ],
+  "slug": "heroku-dashboard"
+}

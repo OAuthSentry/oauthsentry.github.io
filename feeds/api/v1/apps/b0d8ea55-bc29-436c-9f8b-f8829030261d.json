@@ -1,0 +1,13 @@
+{
+  "appid": "b0d8ea55-bc29-436c-9f8b-f8829030261d",
+  "appname": "adobe",
+  "service": "entra",
+  "category": "malicious",
+  "severity": "critical",
+  "comment": "OwnerTenantId=0648fcb2-de2a-4a11-bd97-872c9b1a452b; OwnerTenantDomains=damiongosamemorialfo.onmicrosoft.com; dgm-f.org; LastSeen=2025",
+  "references": [
+    "https://www.wiz.io/blog/detecting-malicious-oauth-applications",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "b0d8ea55-bc29-436c-9f8b-f8829030261d"
+}

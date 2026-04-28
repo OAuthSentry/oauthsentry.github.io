@@ -1,0 +1,14 @@
+{
+  "appid": "75efb5bc-18a1-4e7b-8a66-2ad2503d79c6",
+  "appname": "Microsoft Teams Retail Service",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "75efb5bc-18a1-4e7b-8a66-2ad2503d79c6"
+}

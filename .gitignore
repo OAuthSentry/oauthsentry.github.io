@@ -5,3 +5,10 @@ __pycache__/
 .vscode/
 node_modules/
 .env
+feeds/all/all_compliance.csv
+feeds/all/all_compliance.txt
+feeds/all/all_malicious.csv
+feeds/all/all_index.json
+feeds/all/all_risky.csv
+feeds/all/all_risky.txt
+feeds/all/all_malicious.txt

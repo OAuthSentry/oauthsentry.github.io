@@ -1,0 +1,14 @@
+{
+  "appid": "80dbdb39-4f33-4799-8b6f-711b5e3e61b6",
+  "appname": "Billing RP",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "80dbdb39-4f33-4799-8b6f-711b5e3e61b6"
+}

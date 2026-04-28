@@ -1,0 +1,14 @@
+{
+  "appid": "a0c73c16-a7e3-4564-9a95-2bdf47383716",
+  "appname": "EXO Remote PowerShell (from AADInternals)",
+  "service": "entra",
+  "category": "risky",
+  "severity": "low",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "a0c73c16-a7e3-4564-9a95-2bdf47383716"
+}

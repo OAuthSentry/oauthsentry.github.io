@@ -1,0 +1,13 @@
+{
+  "appid": "6628b5b8-55af-42b4-9797-5cd5c148313c",
+  "appname": "Docusign",
+  "service": "entra",
+  "category": "malicious",
+  "severity": "critical",
+  "comment": "OwnerTenantId=b25911e3-9339-4019-90ed-b263339449bc; OwnerTenantDomains=levenospenkozhotmail.onmicrosoft.com; LastSeen=2025",
+  "references": [
+    "https://www.wiz.io/blog/detecting-malicious-oauth-applications",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "6628b5b8-55af-42b4-9797-5cd5c148313c"
+}

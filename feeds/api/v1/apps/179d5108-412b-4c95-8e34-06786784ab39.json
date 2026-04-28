@@ -1,0 +1,13 @@
+{
+  "appid": "179d5108-412b-4c95-8e34-06786784ab39",
+  "appname": "PostBox",
+  "service": "entra",
+  "category": "risky",
+  "severity": "critical",
+  "comment": "",
+  "references": [
+    "https://github.com/randomaccess3/detections/blob/main/M365_Oauth_Apps/MaliciousOauthAppDetections.json",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "179d5108-412b-4c95-8e34-06786784ab39"
+}

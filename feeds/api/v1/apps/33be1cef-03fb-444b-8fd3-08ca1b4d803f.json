@@ -1,0 +1,14 @@
+{
+  "appid": "33be1cef-03fb-444b-8fd3-08ca1b4d803f",
+  "appname": "OneDrive Web",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "33be1cef-03fb-444b-8fd3-08ca1b4d803f"
+}

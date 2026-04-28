@@ -1,0 +1,14 @@
+{
+  "appid": "20a11fe0-faa8-4df5-baf2-f965f8f9972e",
+  "appname": "ContactsInferencingEmailProcessor",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "20a11fe0-faa8-4df5-baf2-f965f8f9972e"
+}

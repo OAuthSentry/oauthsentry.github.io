@@ -12,11 +12,11 @@ Reads data/sources.json, then for every service it:
 
 Output:
   - data/<service>/oauth_apps.csv                                (merged source of truth)
-  - feeds/<service>/{compliance,risky,malicious}.txt             (one app id per line)
-  - feeds/<service>/{compliance,risky,malicious}.csv             (full rows)
-  - feeds/<service>/all.json                                     (full data, one JSON file)
-  - feeds/all/{compliance,risky,malicious}.{txt,csv}             (combined across services)
-  - feeds/all/index.json                                         (combined index for the site)
+  - feeds/<service>/<service>_{compliance,risky,malicious}.txt   (one app id per line)
+  - feeds/<service>/<service>_{compliance,risky,malicious}.csv   (full rows)
+  - feeds/<service>/<service>_all.json                           (full data, one JSON file)
+  - feeds/all/all_{compliance,risky,malicious}.{txt,csv}         (combined across services)
+  - feeds/all/all_index.json                                     (combined index for the site)
   - feeds/summary.json                                           (run summary + per-source provenance)
 
 The curated source uses the label "legitimate" for non-malicious / non-abused apps;
@@ -26,6 +26,7 @@ reference inventory). The mapping is applied at load time.
 
 import csv
 import json
+import re
 import sys
 from pathlib import Path
 from datetime import datetime, timezone
@@ -166,6 +167,130 @@ def write_csv_feed(path: Path, rows, fields=None):
 
 
 def write_json_feed(path: Path, rows):
+    """Generic JSON feed writer for the existing service-level / all-services exports."""
+    payload = {
+        "generated": datetime.now(timezone.utc).isoformat(),
+        "count": len(rows),
+        "items": rows,
+    }
+    with path.open("w", encoding="utf-8") as fh:
+        json.dump(payload, fh, indent=2, ensure_ascii=False)
+
+
+# ----------------------------------------------------------------------
+# Static API generation
+# ----------------------------------------------------------------------
+#
+# We expose a "REST-shaped" API as static JSON files served by GitHub Pages.
+# The endpoint shape:
+#   GET /feeds/api/v1/apps/<slug>.json     -> single app record (404 = unknown)
+#   GET /feeds/api/v1/lookup.json          -> { slug: record }   - bulk by slug
+#   GET /feeds/api/v1/lookup_by_appid.json -> { appid: record }  - bulk by raw id
+#   GET /feeds/api/v1/meta.json            -> dataset metadata (counts, version, generated_at)
+#
+# The slug rule is documented and stable: lower-case the appid, then replace
+# any run of non-[a-z0-9._-] characters with a single hyphen.
+#
+# This approach works because GitHub Pages serves .json as application/json
+# and sets Access-Control-Allow-Origin: * by default, so the files are
+# callable as a real API from any environment (curl, Python, browser JS).
+
+SLUG_INVALID_RE = re.compile(r"[^a-z0-9._-]+")
+
+def make_slug(appid: str) -> str:
+    """Stable URL-safe slug for an OAuth App identifier.
+
+    Defenders compute the same transform client-side to find the right endpoint.
+    Lowercased; any run of characters outside [a-z0-9._-] becomes a single hyphen.
+    Leading/trailing hyphens are stripped.
+    """
+    slug = SLUG_INVALID_RE.sub("-", appid.lower()).strip("-")
+    return slug
+
+
+def parse_references(reference_field: str) -> list[str]:
+    """Split a metadata_reference string into a clean list of URLs."""
+    if not reference_field:
+        return []
+    parts = re.split(r"\s*\|\s*|\s+-\s+|\s*,\s*", reference_field)
+    return [p.strip() for p in parts if p.strip().startswith("http")]
+
+
+def to_api_record(row: dict) -> dict:
+    """Convert an internal row to a clean API response shape (no internal fields)."""
+    return {
+        "appid":      row["appid"],
+        "appname":    row.get("appname") or "",
+        "service":    row["service"],
+        "category":   row["metadata_category"],
+        "severity":   row.get("metadata_severity") or "info",
+        "comment":    row.get("metadata_comment") or "",
+        "references": parse_references(row.get("metadata_reference") or ""),
+        "slug":       make_slug(row["appid"]),
+    }
+
+
+def write_api(all_rows: list[dict], summary: dict) -> dict:
+    """Generate the static API tree under feeds/api/v1/. Returns API summary stats."""
+    api_root = FEEDS_DIR / "api" / "v1"
+    apps_dir = api_root / "apps"
+    api_root.mkdir(parents=True, exist_ok=True)
+    apps_dir.mkdir(parents=True, exist_ok=True)
+
+    # Wipe old per-app files so removed entries don't linger
+    for old in apps_dir.glob("*.json"):
+        old.unlink()
+
+    by_slug: dict[str, dict] = {}
+    by_appid: dict[str, dict] = {}
+    slug_collisions: list[tuple[str, str, str]] = []
+
+    for row in all_rows:
+        rec = to_api_record(row)
+        slug = rec["slug"]
+        appid = rec["appid"]
+
+        # Slug collision detection: two distinct appids producing the same slug
+        # (extremely unlikely but worth flagging in the build log)
+        if slug in by_slug and by_slug[slug]["appid"] != appid:
+            slug_collisions.append((slug, by_slug[slug]["appid"], appid))
+            # Disambiguate by suffixing with the service name
+            slug = f"{slug}--{rec['service']}"
+            rec["slug"] = slug
+
+        by_slug[slug]   = rec
+        by_appid[appid] = rec
+
+        # Per-app endpoint
+        with (apps_dir / f"{slug}.json").open("w", encoding="utf-8") as fh:
+            json.dump(rec, fh, indent=2, ensure_ascii=False)
+
+    # Bulk lookups
+    with (api_root / "lookup.json").open("w", encoding="utf-8") as fh:
+        json.dump(by_slug, fh, indent=2, ensure_ascii=False)
+    with (api_root / "lookup_by_appid.json").open("w", encoding="utf-8") as fh:
+        json.dump(by_appid, fh, indent=2, ensure_ascii=False)
+
+    # Dataset metadata
+    meta = {
+        "schema_version":  "1",
+        "generated":       datetime.now(timezone.utc).isoformat(),
+        "total_apps":      len(all_rows),
+        "by_service":      {svc: d["total"] for svc, d in summary["services"].items()},
+        "by_category":     summary["totals"],
+        "endpoints": {
+            "single_app":       "/feeds/api/v1/apps/{slug}.json",
+            "lookup_by_slug":   "/feeds/api/v1/lookup.json",
+            "lookup_by_appid":  "/feeds/api/v1/lookup_by_appid.json",
+            "meta":             "/feeds/api/v1/meta.json",
+        },
+        "slug_rule": "lower-case the appid, then replace any run of characters outside [a-z0-9._-] with a single hyphen, strip leading/trailing hyphens",
+        "license":   "see https://github.com/oauthsentry/oauthsentry.github.io/blob/main/LICENSE for project license; per-row references retain attribution to upstream curators (mthcht/awesome-lists, merill/microsoft-info, GitHub blog, etc.)",
+    }
+    with (api_root / "meta.json").open("w", encoding="utf-8") as fh:
+        json.dump(meta, fh, indent=2, ensure_ascii=False)
+
+    return {"apps_written": len(by_slug), "collisions": len(slug_collisions)}
     path.parent.mkdir(parents=True, exist_ok=True)
     payload = {
         "generated": datetime.now(timezone.utc).isoformat(),
@@ -222,13 +347,15 @@ def build():
         merged_csv = DATA_DIR / service / "oauth_apps.csv"
         write_csv_feed(merged_csv, merged)
 
-        # Per-service feeds (compliance / risky / malicious)
+        # Per-service feeds: filename includes the service name to avoid
+        # collisions when defenders download multiple feeds into the same dir.
+        # Pattern: feeds/<service>/<service>_<category>.{txt,csv}
         per_cat = {c: [r for r in merged if r["metadata_category"] == c] for c in CATEGORIES}
         for cat, rows in per_cat.items():
-            base = FEEDS_DIR / service / cat
+            base = FEEDS_DIR / service / f"{service}_{cat}"
             write_text_feed(base.with_suffix(".txt"), rows)
             write_csv_feed(base.with_suffix(".csv"), rows)
-        write_json_feed(FEEDS_DIR / service / "all.json", merged)
+        write_json_feed(FEEDS_DIR / service / f"{service}_all.json", merged)
 
         summary["services"][service] = {
             "total":      len(merged),
@@ -240,19 +367,24 @@ def build():
         }
         all_rows.extend(merged)
 
-    # Combined feeds across services
+    # Combined feeds across services - same naming convention: all_<category>.{txt,csv}
     for cat in CATEGORIES:
         rows = [r for r in all_rows if r["metadata_category"] == cat]
-        base = FEEDS_DIR / "all" / cat
+        base = FEEDS_DIR / "all" / f"all_{cat}"
         write_text_feed(base.with_suffix(".txt"), rows)
         write_csv_feed(base.with_suffix(".csv"), rows)
         summary["totals"][cat] = len(rows)
-    write_json_feed(FEEDS_DIR / "all" / "index.json", all_rows)
+    write_json_feed(FEEDS_DIR / "all" / "all_index.json", all_rows)
 
     summary["generated"]  = datetime.now(timezone.utc).isoformat()
     summary["total_apps"] = len(all_rows)
     with (FEEDS_DIR / "summary.json").open("w", encoding="utf-8") as fh:
         json.dump(summary, fh, indent=2)
+
+    # Generate the static REST-shaped API tree under feeds/api/v1/
+    api_stats = write_api(all_rows, summary)
+    print(f"[api] wrote {api_stats['apps_written']} per-app JSON files "
+          f"(slug collisions handled: {api_stats['collisions']})")
 
     print(json.dumps({k: v for k, v in summary.items() if k != "sources"}, indent=2))
 

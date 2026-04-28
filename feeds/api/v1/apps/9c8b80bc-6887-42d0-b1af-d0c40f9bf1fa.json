@@ -1,0 +1,14 @@
+{
+  "appid": "9c8b80bc-6887-42d0-b1af-d0c40f9bf1fa",
+  "appname": "Azure SQL Managed Instance to Azure AD Resource Provider",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "9c8b80bc-6887-42d0-b1af-d0c40f9bf1fa"
+}

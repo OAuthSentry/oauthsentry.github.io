@@ -82,7 +82,7 @@ function setActiveTab(routePrefix) {
 }
 
 function showPage(pageId) {
-  ['page-search', 'page-investigation', 'page-feeds', 'page-methodology'].forEach(id => {
+  ['page-search', 'page-investigation', 'page-feeds', 'page-triage', 'page-methodology'].forEach(id => {
     const el = document.getElementById(id);
     if (el) el.hidden = (id !== pageId);
   });
@@ -117,6 +117,12 @@ function applyHash() {
   if (top === 'feeds') {
     showPage('page-feeds');
     setActiveTab('/feeds');
+    closeDetail();
+    return;
+  }
+  if (top === 'triage') {
+    showPage('page-triage');
+    setActiveTab('/triage');
     closeDetail();
     return;
   }
@@ -740,6 +746,297 @@ async function init() {
         </div>`;
     }
   }
+
+  // Triage tool wiring (uses state.apps which is already loaded)
+  wireTriage();
+}
+
+// =====================================================================
+// TRIAGE TOOL
+// =====================================================================
+//
+// Defender pastes raw audit logs or a list of app IDs; the page extracts the
+// relevant identifiers, classifies them against state.apps, and renders the
+// result grouped by category.
+
+function detectTriageFormat(text) {
+  const trimmed = text.trim();
+  if (!trimmed) return { format: 'empty', label: 'paste input above' };
+
+  // Try JSON first
+  try {
+    const data = JSON.parse(trimmed);
+
+    // M365 unified audit log (array or { value: [] })
+    const m365Events = Array.isArray(data) ? data : (data.value || data.records || []);
+    if (Array.isArray(m365Events) && m365Events.some(e => e?.OperationName === 'Consent to application')) {
+      return { format: 'm365', label: 'M365 unified audit log' };
+    }
+
+    // Google Reports API (items[].events[].name == 'authorize')
+    const googleItems = data.items || (Array.isArray(data) ? data : []);
+    if (googleItems.some?.(i => i?.events?.some?.(e => e?.name === 'authorize' && e?.type === 'auth'))) {
+      return { format: 'google', label: 'Google Reports API' };
+    }
+
+    // GitHub audit log (array of objects with action starting oauth_)
+    if (Array.isArray(data) && data.some(e => typeof e?.action === 'string' && e.action.startsWith('oauth_'))) {
+      return { format: 'github', label: 'GitHub audit log' };
+    }
+
+    // Generic JSON we don't recognize
+    return { format: 'json-unknown', label: 'JSON (unrecognized shape - will treat as plain list of strings)' };
+  } catch {
+    // Not JSON - treat as plain list
+  }
+
+  return { format: 'list', label: 'plain list of identifiers' };
+}
+
+function extractTriageIds(text, format) {
+  const trimmed = text.trim();
+  if (!trimmed) return [];
+
+  if (format === 'list' || format === 'json-unknown') {
+    return trimmed
+      .split(/[\n,;]+/)
+      .map(s => s.trim().replace(/^["']|["']$/g, ''))  // strip surrounding quotes
+      .filter(Boolean);
+  }
+
+  let data;
+  try { data = JSON.parse(trimmed); } catch { return []; }
+
+  if (format === 'm365') {
+    const events = Array.isArray(data) ? data : (data.value || data.records || []);
+    return events
+      .filter(e => e?.OperationName === 'Consent to application')
+      .map(e => e.ObjectId)
+      .filter(Boolean);
+  }
+
+  if (format === 'google') {
+    const items = data.items || (Array.isArray(data) ? data : []);
+    const ids = [];
+    for (const item of items) {
+      for (const ev of item.events || []) {
+        if (ev.name !== 'authorize') continue;
+        for (const p of ev.parameters || []) {
+          if (p.name === 'client_id' && p.value) ids.push(p.value);
+        }
+      }
+    }
+    return ids;
+  }
+
+  if (format === 'github') {
+    return data
+      .filter(e => typeof e?.action === 'string' && (e.action.startsWith('oauth_authorization') || e.action.startsWith('oauth_access')))
+      .map(e => e.oauth_application_name)
+      .filter(Boolean);
+  }
+
+  return [];
+}
+
+function categorizeTriage(ids, allApps) {
+  // Build a fast lookup keyed by lower-case appid
+  const byId = new Map();
+  for (const a of allApps) byId.set((a.appid || '').toLowerCase(), a);
+
+  const buckets = { malicious: [], risky: [], compliance: [], unknown: [] };
+  const seen = new Set();
+  for (const raw of ids) {
+    const id = String(raw).trim();
+    if (!id) continue;
+    const key = id.toLowerCase();
+    if (seen.has(key)) continue;
+    seen.add(key);
+
+    const app = byId.get(key);
+    if (app && buckets[app.category]) {
+      buckets[app.category].push({ id, ...app });
+    } else {
+      buckets.unknown.push({ id });
+    }
+  }
+  return buckets;
+}
+
+function renderTriageBucket(category, items) {
+  if (!items.length) return '';
+  const labels = {
+    malicious:  'malicious - act now',
+    risky:      'risky - investigate',
+    unknown:    'unknown - not in catalog (often the most interesting bucket)',
+    compliance: 'compliance - known-good',
+  };
+  const collapsed = (category === 'compliance' && items.length > 5) ? ' triage-collapsed' : '';
+  const rows = items.map(it => {
+    const refs = (it.references || []).slice(0, 4).map(r => {
+      try { const u = new URL(r); return `<a href="${escapeHtml(r)}" target="_blank" rel="noopener">${escapeHtml(u.hostname.replace(/^www\./,''))}</a>`; }
+      catch { return ''; }
+    }).filter(Boolean).join('');
+    const refsBlock = refs ? `<div class="triage-row-refs">${refs}</div>` : '';
+    const commentBlock = it.comment ? `<span class="triage-row-comment">${escapeHtml(it.comment)}</span>` : '';
+    const meta = it.service ? `${escapeHtml(it.service)}${it.severity ? ' / ' + escapeHtml(it.severity) : ''}` : 'no match';
+    return `
+      <div class="triage-row">
+        <div class="triage-row-name">${escapeHtml(it.appname || it.id)}</div>
+        <div>
+          <div class="triage-row-id">${escapeHtml(it.id)}</div>
+          ${commentBlock}
+          ${refsBlock}
+        </div>
+        <div class="triage-row-meta">${meta}</div>
+      </div>`;
+  }).join('');
+  return `
+    <div class="triage-bucket ${category}${collapsed}" data-category="${category}">
+      <div class="triage-bucket-header">
+        <h4>${labels[category]}</h4>
+        <span class="triage-bucket-count">${items.length}</span>
+      </div>
+      <div class="triage-bucket-body">${rows}</div>
+    </div>`;
+}
+
+function buildTriageExportRows(buckets) {
+  const rows = [];
+  for (const cat of ['malicious', 'risky', 'unknown', 'compliance']) {
+    for (const it of buckets[cat]) {
+      rows.push({
+        category: cat,
+        appid:    it.id,
+        appname:  it.appname || '',
+        service:  it.service || '',
+        severity: it.severity || '',
+        comment:  it.comment || '',
+        refs:     (it.references || []).join(' | '),
+      });
+    }
+  }
+  return rows;
+}
+
+function exportTriageCsv(rows) {
+  const head = 'category,appid,appname,service,severity,comment,references';
+  const body = rows.map(r =>
+    [r.category, r.appid, r.appname, r.service, r.severity, r.comment, r.refs]
+      .map(v => `"${String(v).replace(/"/g, '""')}"`).join(',')
+  ).join('\n');
+  return head + '\n' + body;
+}
+
+function exportTriageMd(rows) {
+  if (!rows.length) return '_(no rows)_\n';
+  let out = '| category | appid | appname | service | severity | comment |\n';
+  out += '|---|---|---|---|---|---|\n';
+  for (const r of rows) {
+    out += `| ${r.category} | \`${r.appid}\` | ${r.appname} | ${r.service} | ${r.severity} | ${r.comment.replace(/\|/g, '\\|').slice(0, 200)} |\n`;
+  }
+  return out;
+}
+
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text).catch(() => {
+    // Fallback for older browsers
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+  });
+}
+
+function wireTriage() {
+  const input    = document.getElementById('triage-input');
+  const hint     = document.getElementById('triage-format-hint');
+  const summary  = document.getElementById('triage-summary');
+  const results  = document.getElementById('triage-results');
+  const exportEl = document.getElementById('triage-export');
+  if (!input) return;  // page not present
+
+  let lastBuckets = null;
+
+  function updateHint() {
+    const det = detectTriageFormat(input.value);
+    hint.textContent = det.label;
+    hint.classList.toggle('detected', det.format !== 'empty' && det.format !== 'list');
+  }
+
+  function runTriage() {
+    const det = detectTriageFormat(input.value);
+    const ids = extractTriageIds(input.value, det.format);
+    if (!ids.length) {
+      results.innerHTML = '';
+      summary.textContent = 'No identifiers found in input.';
+      exportEl.hidden = true;
+      lastBuckets = null;
+      return;
+    }
+    const buckets = categorizeTriage(ids, state.apps || []);
+    lastBuckets = buckets;
+    const counts = `${buckets.malicious.length} malicious / ${buckets.risky.length} risky / ${buckets.unknown.length} unknown / ${buckets.compliance.length} compliance`;
+    summary.innerHTML = `Triaged <strong>${ids.length}</strong> identifier${ids.length === 1 ? '' : 's'} (input: ${escapeHtml(det.label)}). ${counts}.`;
+    const order = ['malicious', 'risky', 'unknown', 'compliance'];
+    results.innerHTML = order.map(c => renderTriageBucket(c, buckets[c])).join('');
+    exportEl.hidden = false;
+    // Hook bucket header collapse toggles
+    results.querySelectorAll('.triage-bucket-header').forEach(h => {
+      h.addEventListener('click', () => h.parentElement.classList.toggle('triage-collapsed'));
+    });
+  }
+
+  input.addEventListener('input', updateHint);
+
+  document.getElementById('triage-run').addEventListener('click', runTriage);
+  document.getElementById('triage-clear').addEventListener('click', () => {
+    input.value = '';
+    updateHint();
+    results.innerHTML = '';
+    summary.textContent = 'Paste input and click Triage to begin.';
+    exportEl.hidden = true;
+    lastBuckets = null;
+  });
+  document.getElementById('triage-sample').addEventListener('click', () => {
+    input.value = [
+      '# A mix of real catalog entries (compliance + malicious) and made-up IDs (unknown)',
+      '00000003-0000-0000-c000-000000000000',           // Microsoft Graph - compliance
+      'c5393580-f805-4401-95e8-94b7a6ef2fc2',           // Office 365 Management APIs - compliance
+      '1084253493764-ipb2ntp4jb4rmqc76jp7habdrhfdus3q.apps.googleusercontent.com', // Drift Email - malicious
+      'Heroku Dashboard',                                // GitHub - malicious
+      '00000000-1111-2222-3333-444455556666',           // unknown - made up GUID
+    ].join('\n');
+    updateHint();
+    runTriage();
+  });
+
+  document.getElementById('triage-export-csv').addEventListener('click', () => {
+    if (!lastBuckets) return;
+    copyToClipboard(exportTriageCsv(buildTriageExportRows(lastBuckets)));
+    flashButton(document.getElementById('triage-export-csv'));
+  });
+  document.getElementById('triage-export-md').addEventListener('click', () => {
+    if (!lastBuckets) return;
+    copyToClipboard(exportTriageMd(buildTriageExportRows(lastBuckets)));
+    flashButton(document.getElementById('triage-export-md'));
+  });
+
+  // Add a small CSS rule for collapse via JS - keeps the css file tidy
+  const style = document.createElement('style');
+  style.textContent = '.triage-bucket.triage-collapsed .triage-bucket-body { display:none; }';
+  document.head.appendChild(style);
+
+  updateHint();
+}
+
+function flashButton(btn) {
+  const original = btn.textContent;
+  btn.textContent = 'copied';
+  btn.disabled = true;
+  setTimeout(() => { btn.textContent = original; btn.disabled = false; }, 1200);
 }
 
 document.addEventListener('DOMContentLoaded', init);

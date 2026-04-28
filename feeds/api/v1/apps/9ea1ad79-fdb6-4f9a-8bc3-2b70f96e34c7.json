@@ -1,0 +1,14 @@
+{
+  "appid": "9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7",
+  "appname": "Bing",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7"
+}

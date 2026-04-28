@@ -1,0 +1,14 @@
+{
+  "appid": "e406a681-f3d4-42a8-90b6-c2b029497af1",
+  "appname": "Azure Storage",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "e406a681-f3d4-42a8-90b6-c2b029497af1"
+}

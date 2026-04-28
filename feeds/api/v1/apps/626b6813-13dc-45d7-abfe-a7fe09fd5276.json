@@ -1,0 +1,14 @@
+{
+  "appid": "626b6813-13dc-45d7-abfe-a7fe09fd5276",
+  "appname": "Мicгoѕоft. Сloud App Ѕесuгity",
+  "service": "entra",
+  "category": "malicious",
+  "severity": "critical",
+  "comment": "OwnerTenantId=0c05c65c-d311-4821-aa22-46b8abec59d5; OwnerTenantDomains=generalimports.onmicrosoft.com; LastSeen=2019 | replyUrls=[   \"https://outpostportal.net\",   \"https://outpostportal.net/login\" ]; homepage=http://www.cloudappsecurity.com; appOwnerOrganizationId=0c05c65c-d311-4821-aa22-46b8abec59d5",
+  "references": [
+    "https://www.wiz.io/blog/detecting-malicious-oauth-applications",
+    "https://github.com/Cyera-Research-Labs/m365-malicious-app-iocs",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "626b6813-13dc-45d7-abfe-a7fe09fd5276"
+}

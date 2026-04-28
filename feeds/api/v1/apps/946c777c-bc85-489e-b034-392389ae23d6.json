@@ -1,0 +1,13 @@
+{
+  "appid": "946c777c-bc85-489e-b034-392389ae23d6",
+  "appname": "Spike",
+  "service": "entra",
+  "category": "risky",
+  "severity": "critical",
+  "comment": "",
+  "references": [
+    "https://github.com/randomaccess3/detections/blob/main/M365_Oauth_Apps/MaliciousOauthAppDetections.json",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "946c777c-bc85-489e-b034-392389ae23d6"
+}

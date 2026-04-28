@@ -1,0 +1,13 @@
+{
+  "appid": "19db86c3-b2b9-44cc-b339-36da233a3be2",
+  "appname": "My Signins",
+  "service": "entra",
+  "category": "risky",
+  "severity": "low",
+  "comment": "Legitimate Microsoft app observed in BEC investigations for MFA modification. EntraHunt labels this ID as Mailspring, so keep this as a name conflict to review.",
+  "references": [
+    "https://raw.githubusercontent.com/anak0ndah/EntraHunt/main/data/threats.json",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "19db86c3-b2b9-44cc-b339-36da233a3be2"
+}

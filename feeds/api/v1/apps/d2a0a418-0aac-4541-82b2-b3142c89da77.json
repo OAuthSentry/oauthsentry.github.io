@@ -1,0 +1,14 @@
+{
+  "appid": "d2a0a418-0aac-4541-82b2-b3142c89da77",
+  "appname": "Microsoft Operations Management Suite",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "d2a0a418-0aac-4541-82b2-b3142c89da77"
+}

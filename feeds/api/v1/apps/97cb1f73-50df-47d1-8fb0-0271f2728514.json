@@ -1,0 +1,14 @@
+{
+  "appid": "97cb1f73-50df-47d1-8fb0-0271f2728514",
+  "appname": "Transcript Ingestion",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "97cb1f73-50df-47d1-8fb0-0271f2728514"
+}

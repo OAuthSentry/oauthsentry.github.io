@@ -1,0 +1,14 @@
+{
+  "appid": "94c63fef-13a3-47bc-8074-75af8c65887a",
+  "appname": "Office Delve",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "94c63fef-13a3-47bc-8074-75af8c65887a"
+}

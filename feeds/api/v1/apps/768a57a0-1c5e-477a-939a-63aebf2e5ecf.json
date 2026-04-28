@@ -1,0 +1,13 @@
+{
+  "appid": "768a57a0-1c5e-477a-939a-63aebf2e5ecf",
+  "appname": "ShaгePoint Online",
+  "service": "entra",
+  "category": "malicious",
+  "severity": "critical",
+  "comment": "OwnerTenantId=cbe2bfff-e8d1-464d-bb32-a952e68be197; OwnerTenantDomains=aquaphalts.com; dustdevilbaseball.com; experienccolumbiasc.com; killlpack.com; ledconsultinglc.com; mediabrushmarketings.com; michaelselectrics.com; summitcountysco.com; wgarnett.com; wgarnettassociates.onmicrosoft.com; LastSeen=2019",
+  "references": [
+    "https://www.wiz.io/blog/detecting-malicious-oauth-applications",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "768a57a0-1c5e-477a-939a-63aebf2e5ecf"
+}

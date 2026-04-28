@@ -1,0 +1,13 @@
+{
+  "appid": "b15665d9-eda6-4092-8539-0eec376afd59",
+  "appname": "rclone",
+  "service": "entra",
+  "category": "risky",
+  "severity": "medium",
+  "comment": "Rclone public OneDrive OAuth client ID; Huntress RogueApps documents abuse for OneDrive/SharePoint file download and exfiltration. Keep as risky legitimate, not malicious.",
+  "references": [
+    "https://github.com/rclone/rclone/blob/master/backend/onedrive/onedrive.go",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "b15665d9-eda6-4092-8539-0eec376afd59"
+}

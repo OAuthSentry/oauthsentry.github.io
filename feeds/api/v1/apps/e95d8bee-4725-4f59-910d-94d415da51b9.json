@@ -1,0 +1,14 @@
+{
+  "appid": "e95d8bee-4725-4f59-910d-94d415da51b9",
+  "appname": "Skype for Business Name Dictionary Service",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "e95d8bee-4725-4f59-910d-94d415da51b9"
+}

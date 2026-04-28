@@ -1,0 +1,14 @@
+{
+  "appid": "39aaf054-81a5-48c7-a4f8-0293012095b9",
+  "appname": "IC3 Gateway",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "39aaf054-81a5-48c7-a4f8-0293012095b9"
+}

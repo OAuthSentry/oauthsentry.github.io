@@ -1,0 +1,14 @@
+{
+  "appid": "feff8b5b-97f3-4374-a16a-1911ae9e15e9",
+  "appname": "Cloud Hybrid Search",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "feff8b5b-97f3-4374-a16a-1911ae9e15e9"
+}

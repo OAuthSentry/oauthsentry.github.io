@@ -1,0 +1,14 @@
+{
+  "appid": "98db8bd6-0cc0-4e67-9de5-f187f1cd1b41",
+  "appname": "Microsoft Substrate Management",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "98db8bd6-0cc0-4e67-9de5-f187f1cd1b41"
+}

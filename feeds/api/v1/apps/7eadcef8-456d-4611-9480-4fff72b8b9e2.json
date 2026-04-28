@@ -1,0 +1,13 @@
+{
+  "appid": "7eadcef8-456d-4611-9480-4fff72b8b9e2",
+  "appname": "Microsoft Account Controls V2",
+  "service": "entra",
+  "category": "risky",
+  "severity": "low",
+  "comment": "Legitimate Microsoft app noted by ByteIntoCyber in suspicious Microsoft 365 applications during BEC investigations; hunt/context only.",
+  "references": [
+    "https://byteintocyber.com/microsoft-365-application-ids-bec-investigation-resources/",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "7eadcef8-456d-4611-9480-4fff72b8b9e2"
+}

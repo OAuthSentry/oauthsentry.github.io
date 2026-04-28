@@ -1,0 +1,14 @@
+{
+  "appid": "6bccf540-eb86-4037-af03-7fa058c2db75",
+  "appname": "Geneva Alert RP",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "6bccf540-eb86-4037-af03-7fa058c2db75"
+}

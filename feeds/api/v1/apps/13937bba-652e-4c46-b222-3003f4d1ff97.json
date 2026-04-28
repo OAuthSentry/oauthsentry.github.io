@@ -1,0 +1,14 @@
+{
+  "appid": "13937bba-652e-4c46-b222-3003f4d1ff97",
+  "appname": "Substrate Context Service",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "13937bba-652e-4c46-b222-3003f4d1ff97"
+}

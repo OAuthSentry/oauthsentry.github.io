@@ -1,0 +1,13 @@
+{
+  "appid": "c52517b0-46eb-4d61-975a-771d9978dac0",
+  "appname": "Adobe",
+  "service": "entra",
+  "category": "malicious",
+  "severity": "critical",
+  "comment": "OwnerTenantId=a205f03e-e6ab-412e-a1f9-360f848b3705; OwnerTenantDomains=anchorsgordon.com; anchorsgordon.onmicrosoft.com; LastSeen=2025",
+  "references": [
+    "https://www.wiz.io/blog/detecting-malicious-oauth-applications",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "c52517b0-46eb-4d61-975a-771d9978dac0"
+}

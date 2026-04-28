@@ -1,0 +1,14 @@
+{
+  "appid": "12743ff8-d3de-49d0-a4ce-6c91a4245ea0",
+  "appname": "Metrics Monitor API",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "12743ff8-d3de-49d0-a4ce-6c91a4245ea0"
+}

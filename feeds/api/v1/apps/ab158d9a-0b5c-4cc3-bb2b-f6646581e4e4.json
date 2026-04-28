@@ -1,0 +1,14 @@
+{
+  "appid": "ab158d9a-0b5c-4cc3-bb2b-f6646581e4e4",
+  "appname": "CAP Neptune Prod CM Prod",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "ab158d9a-0b5c-4cc3-bb2b-f6646581e4e4"
+}

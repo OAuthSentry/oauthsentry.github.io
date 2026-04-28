@@ -1,0 +1,14 @@
+{
+  "appid": "7b58f833-4438-494c-a724-234928795a67",
+  "appname": "Directory and Policy Cache",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "7b58f833-4438-494c-a724-234928795a67"
+}

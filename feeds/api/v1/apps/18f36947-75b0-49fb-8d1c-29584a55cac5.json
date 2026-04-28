@@ -1,0 +1,14 @@
+{
+  "appid": "18f36947-75b0-49fb-8d1c-29584a55cac5",
+  "appname": "Reply-At-Mention",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "18f36947-75b0-49fb-8d1c-29584a55cac5"
+}

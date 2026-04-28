@@ -1,0 +1,13 @@
+{
+  "appid": "a69a0f78-a77c-451c-b090-b766425caee2",
+  "appname": "PDF",
+  "service": "entra",
+  "category": "malicious",
+  "severity": "critical",
+  "comment": "OwnerTenantId=31aca3e6-069d-4baa-89b7-6502006fe99e; OwnerTenantDomains=lnsrc.org; lnsrclub.onmicrosoft.com; LastSeen=2025",
+  "references": [
+    "https://www.wiz.io/blog/detecting-malicious-oauth-applications",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "a69a0f78-a77c-451c-b090-b766425caee2"
+}

@@ -1,0 +1,14 @@
+{
+  "appid": "5572c4c0-d078-44ce-b81c-6cbf8d3ed39e",
+  "appname": "Vortex [wsfed enabled]",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "5572c4c0-d078-44ce-b81c-6cbf8d3ed39e"
+}

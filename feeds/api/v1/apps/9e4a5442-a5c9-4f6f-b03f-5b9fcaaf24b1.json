@@ -1,0 +1,14 @@
+{
+  "appid": "9e4a5442-a5c9-4f6f-b03f-5b9fcaaf24b1",
+  "appname": "OfficeServicesManager",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "9e4a5442-a5c9-4f6f-b03f-5b9fcaaf24b1"
+}

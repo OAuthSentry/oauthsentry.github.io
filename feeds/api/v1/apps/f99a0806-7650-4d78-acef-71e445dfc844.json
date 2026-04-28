@@ -1,0 +1,13 @@
+{
+  "appid": "f99a0806-7650-4d78-acef-71e445dfc844",
+  "appname": "DocuSign-2025",
+  "service": "entra",
+  "category": "malicious",
+  "severity": "critical",
+  "comment": "OwnerTenantId=3a4f221b-5c4b-4665-9f7d-2ee498224e66; OwnerTenantDomains=wallsofttech.com; wallsofttech.onmicrosoft.com; LastSeen=2025",
+  "references": [
+    "https://www.wiz.io/blog/detecting-malicious-oauth-applications",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "f99a0806-7650-4d78-acef-71e445dfc844"
+}

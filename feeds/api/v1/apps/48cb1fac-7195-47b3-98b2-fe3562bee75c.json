@@ -1,0 +1,14 @@
+{
+  "appid": "48cb1fac-7195-47b3-98b2-fe3562bee75c",
+  "appname": "sharedoc",
+  "service": "entra",
+  "category": "malicious",
+  "severity": "critical",
+  "comment": "OwnerTenantId=619849e9-5192-4c3f-b0f3-8469980c3958; OwnerTenantDomains=nceconomicresourcecouncil.onmicrosoft.com; ncerc.org; LastSeen=2025 | replyUrls=[   \"https://nmcunhasteamworkspace.myclickfunnels.com/secured-sharepoint-document\" ]; homepage=nan; appOwnerOrganizationId=619849e9-5192-4c3f-b0f3-8469980c3958",
+  "references": [
+    "https://www.wiz.io/blog/detecting-malicious-oauth-applications",
+    "https://github.com/Cyera-Research-Labs/m365-malicious-app-iocs",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "48cb1fac-7195-47b3-98b2-fe3562bee75c"
+}

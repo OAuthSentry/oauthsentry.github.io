@@ -1,0 +1,14 @@
+{
+  "appid": "2ddfbe71-ed12-4123-b99b-d5fc8a062a79",
+  "appname": "Microsoft Teams Admin Portal Service",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "2ddfbe71-ed12-4123-b99b-d5fc8a062a79"
+}

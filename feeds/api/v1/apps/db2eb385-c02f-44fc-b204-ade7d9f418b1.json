@@ -1,0 +1,13 @@
+{
+  "appid": "db2eb385-c02f-44fc-b204-ade7d9f418b1",
+  "appname": "Docusign",
+  "service": "entra",
+  "category": "malicious",
+  "severity": "critical",
+  "comment": "replyUrls=[   \"https://projectfilesteamworde93a.myclickfunnels.com/rfp\" ]; homepage=nan; appOwnerOrganizationId=01e5b161-25f2-4540-964b-1d432cc10031",
+  "references": [
+    "https://github.com/Cyera-Research-Labs/m365-malicious-app-iocs",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "db2eb385-c02f-44fc-b204-ade7d9f418b1"
+}

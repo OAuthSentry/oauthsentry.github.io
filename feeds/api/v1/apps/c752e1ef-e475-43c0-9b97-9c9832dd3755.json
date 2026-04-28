@@ -1,0 +1,13 @@
+{
+  "appid": "c752e1ef-e475-43c0-9b97-9c9832dd3755",
+  "appname": "Unknown threat-actor OAuth app",
+  "service": "entra",
+  "category": "malicious",
+  "severity": "critical",
+  "comment": "High-fidelity malicious Microsoft Entra OAuth client ID associated with threat actor OAuth apps.",
+  "references": [
+    "https://github.com/guardzcom/security-research-labs/blob/main/Threat-Intel/IOCs/OAuth-abuse/Microsoft-Intel-OAuth.md",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "c752e1ef-e475-43c0-9b97-9c9832dd3755"
+}

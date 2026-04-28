@@ -1,0 +1,14 @@
+{
+  "appid": "e3583ad2-c781-4224-9b91-ad15a8179ba0",
+  "appname": "Microsoft.ExtensibleRealUserMonitoring",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "e3583ad2-c781-4224-9b91-ad15a8179ba0"
+}

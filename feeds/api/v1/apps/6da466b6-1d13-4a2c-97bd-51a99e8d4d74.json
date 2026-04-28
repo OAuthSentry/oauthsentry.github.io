@@ -1,0 +1,14 @@
+{
+  "appid": "6da466b6-1d13-4a2c-97bd-51a99e8d4d74",
+  "appname": "Exchange Office Graph Client for AAD - Interactive",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "6da466b6-1d13-4a2c-97bd-51a99e8d4d74"
+}

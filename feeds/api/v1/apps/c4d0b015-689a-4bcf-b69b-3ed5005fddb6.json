@@ -1,0 +1,13 @@
+{
+  "appid": "c4d0b015-689a-4bcf-b69b-3ed5005fddb6",
+  "appname": "Adobe",
+  "service": "entra",
+  "category": "malicious",
+  "severity": "critical",
+  "comment": "OwnerTenantId=9c036328-3aba-4d35-aceb-6456f9420b31; OwnerTenantDomains=thermion.se; thermionse.mail.onmicrosoft.com; thermionse.onmicrosoft.com; LastSeen=2025",
+  "references": [
+    "https://www.wiz.io/blog/detecting-malicious-oauth-applications",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "c4d0b015-689a-4bcf-b69b-3ed5005fddb6"
+}

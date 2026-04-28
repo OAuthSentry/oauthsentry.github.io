@@ -1,0 +1,13 @@
+{
+  "appid": "caffae8c-0882-4c81-9a27-d1803af53a40",
+  "appname": "SigParser",
+  "service": "entra",
+  "category": "risky",
+  "severity": "high",
+  "comment": "SigParser scans emails - calendars - address books - spreadsheets and more to automatically generate profiles on the people and companies who have interacted with your business",
+  "references": [
+    "https://github.com/randomaccess3/detections/blob/main/M365_Oauth_Apps/MaliciousOauthAppDetections.json",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "caffae8c-0882-4c81-9a27-d1803af53a40"
+}

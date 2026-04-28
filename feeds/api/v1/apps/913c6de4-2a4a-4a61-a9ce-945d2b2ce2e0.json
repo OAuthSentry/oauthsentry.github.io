@@ -1,0 +1,14 @@
+{
+  "appid": "913c6de4-2a4a-4a61-a9ce-945d2b2ce2e0",
+  "appname": "Dynamics Lifecycle services",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "913c6de4-2a4a-4a61-a9ce-945d2b2ce2e0"
+}

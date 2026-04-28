@@ -1,0 +1,14 @@
+{
+  "appid": "d73f4b35-55c9-48c7-8b10-651f6f2acb2e",
+  "appname": "MCAPI Authorization Prod",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "d73f4b35-55c9-48c7-8b10-651f6f2acb2e"
+}

@@ -1,0 +1,14 @@
+{
+  "appid": "a43a3d51-c821-4b86-9a63-fbc775120fc2",
+  "appname": "ShaгePoint Online",
+  "service": "entra",
+  "category": "malicious",
+  "severity": "critical",
+  "comment": "OwnerTenantId=eac37962-c0fa-45a7-99cc-ba9d1c921e18; OwnerTenantDomains=bld.group; creiamc.com; creicapital.com; ekistruct.com; greenpole-ps.com; ieng-group.com; ieng.group; ienggroup.onmicrosoft.com; kkodd.co; noknok-inc.co; noknok.co; noknokgroceries.com; twothirtythree.co; LastSeen=2019 | replyUrls=[   \"https://achilleshosting.website/login\",   \"https://achilleshosting.website\" ]; homepage=https://products.office.com/en-us/sharepoint/collaboration; appOwnerOrganizationId=eac37962-c0fa-45a7-99cc-ba9d1c921e18",
+  "references": [
+    "https://www.wiz.io/blog/detecting-malicious-oauth-applications",
+    "https://github.com/Cyera-Research-Labs/m365-malicious-app-iocs",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "a43a3d51-c821-4b86-9a63-fbc775120fc2"
+}

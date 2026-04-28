@@ -1,0 +1,13 @@
+{
+  "appid": "a43e5392-f48b-46a4-a0f1-098b5eeb4757",
+  "appname": "CloudSponge",
+  "service": "entra",
+  "category": "risky",
+  "severity": "high",
+  "comment": "CloudSponge is a software-as-a-service product that imports all the major address books. Most websites use our product so that their users don't have to type email addresses into their referral forms when they want to send an invitation - greeting card or coupon to someone they know",
+  "references": [
+    "https://github.com/randomaccess3/detections/blob/main/M365_Oauth_Apps/MaliciousOauthAppDetections.json",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "a43e5392-f48b-46a4-a0f1-098b5eeb4757"
+}

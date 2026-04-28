@@ -1,0 +1,13 @@
+{
+  "appid": "85da47ec-2977-40ab-af03-f3d45aaab169",
+  "appname": "Adobe Drive X",
+  "service": "entra",
+  "category": "malicious",
+  "severity": "critical",
+  "comment": "OwnerTenantId=5fddfbb7-41a3-4bbe-b98c-29827d092e19; OwnerTenantDomains=; LastSeen=2025",
+  "references": [
+    "https://www.wiz.io/blog/detecting-malicious-oauth-applications",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "85da47ec-2977-40ab-af03-f3d45aaab169"
+}

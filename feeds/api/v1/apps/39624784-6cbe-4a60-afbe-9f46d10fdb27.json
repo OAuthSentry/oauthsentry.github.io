@@ -1,0 +1,14 @@
+{
+  "appid": "39624784-6cbe-4a60-afbe-9f46d10fdb27",
+  "appname": "Skype For Business Powershell Server Application | Teams and Skype for Business Administration",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "39624784-6cbe-4a60-afbe-9f46d10fdb27"
+}

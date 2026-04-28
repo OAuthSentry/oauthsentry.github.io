@@ -1,0 +1,14 @@
+{
+  "appid": "3cf6df92-2745-4f6f-bbcf-19b59bcdb62a",
+  "appname": "Office 365 Client Admin",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "3cf6df92-2745-4f6f-bbcf-19b59bcdb62a"
+}

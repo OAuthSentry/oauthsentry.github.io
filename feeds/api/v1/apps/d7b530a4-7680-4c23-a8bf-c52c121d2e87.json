@@ -1,0 +1,14 @@
+{
+  "appid": "d7b530a4-7680-4c23-a8bf-c52c121d2e87",
+  "appname": "Microsoft Edge Enterprise New Tab Page [Community Contributed]",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "d7b530a4-7680-4c23-a8bf-c52c121d2e87"
+}

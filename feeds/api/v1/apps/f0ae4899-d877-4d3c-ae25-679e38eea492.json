@@ -1,0 +1,14 @@
+{
+  "appid": "f0ae4899-d877-4d3c-ae25-679e38eea492",
+  "appname": "AAD App Management",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "f0ae4899-d877-4d3c-ae25-679e38eea492"
+}

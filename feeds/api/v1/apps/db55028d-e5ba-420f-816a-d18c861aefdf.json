@@ -1,0 +1,14 @@
+{
+  "appid": "db55028d-e5ba-420f-816a-d18c861aefdf",
+  "appname": "Microsoft Office Licensing Service vNext",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "db55028d-e5ba-420f-816a-d18c861aefdf"
+}

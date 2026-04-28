@@ -1,0 +1,14 @@
+{
+  "appid": "1b730954-1685-4b74-9bfd-dac224a7b894",
+  "appname": "MS Graph API (from AADInternals) | Azure Active Directory PowerShell",
+  "service": "entra",
+  "category": "risky",
+  "severity": "medium",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "1b730954-1685-4b74-9bfd-dac224a7b894"
+}

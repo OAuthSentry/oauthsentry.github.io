@@ -1,0 +1,13 @@
+{
+  "appid": "e9c51622-460d-4d3d-952d-966a5b1da34c",
+  "appname": "Microsoft Edge",
+  "service": "entra",
+  "category": "risky",
+  "severity": "medium",
+  "comment": "ByteIntoCyber notes this Microsoft Edge-related app ID in the context of synchronizing saved passwords in Microsoft Wallet; hunt/context only.",
+  "references": [
+    "https://byteintocyber.com/microsoft-365-application-ids-bec-investigation-resources/",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "e9c51622-460d-4d3d-952d-966a5b1da34c"
+}

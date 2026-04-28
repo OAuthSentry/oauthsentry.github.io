@@ -1,0 +1,13 @@
+{
+  "appid": "57b8c81f-1d9a-42fe-8ba5-2262822d7291",
+  "appname": "OAuth phishing app observed in EvilGinx/AiTM lure",
+  "service": "entra",
+  "category": "malicious",
+  "severity": "high",
+  "comment": "Joe Sandbox report labels this Azure AD client ID as abused to initiate a legitimate-looking OAuth2 flow in an EvilGinx/AiTM phishing lure.",
+  "references": [
+    "https://www.joesandbox.com/joereverser/analysis/download/8d0148db-3ef0-401f-ab09-60523df1531f?type=html",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "57b8c81f-1d9a-42fe-8ba5-2262822d7291"
+}

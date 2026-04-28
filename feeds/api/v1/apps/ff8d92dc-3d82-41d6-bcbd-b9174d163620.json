@@ -1,0 +1,13 @@
+{
+  "appid": "ff8d92dc-3d82-41d6-bcbd-b9174d163620",
+  "appname": "PERFECTDATA SOFTWARE",
+  "service": "entra",
+  "category": "malicious",
+  "severity": "critical",
+  "comment": "Scopes: Mail.Read; Contacts.Read; EWS.AccessAsUser.All",
+  "references": [
+    "https://raw.githubusercontent.com/anak0ndah/EntraHunt/main/data/threats.json",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "ff8d92dc-3d82-41d6-bcbd-b9174d163620"
+}

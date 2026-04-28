@@ -1,0 +1,13 @@
+{
+  "appid": "482fb03a-5218-43c2-8ce6-61956c7ca99b",
+  "appname": "Sharеpoiпt Cloud",
+  "service": "entra",
+  "category": "malicious",
+  "severity": "critical",
+  "comment": "OwnerTenantId=0c05c65c-d311-4821-aa22-46b8abec59d5; OwnerTenantDomains=generalimports.onmicrosoft.com; LastSeen=2019",
+  "references": [
+    "https://www.wiz.io/blog/detecting-malicious-oauth-applications",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "482fb03a-5218-43c2-8ce6-61956c7ca99b"
+}

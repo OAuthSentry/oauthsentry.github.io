@@ -1,0 +1,14 @@
+{
+  "appid": "ec245c98-4a90-40c2-955a-88b727d97151",
+  "appname": "Azure AD Identity Governance - Directory Management",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "ec245c98-4a90-40c2-955a-88b727d97151"
+}

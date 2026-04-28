@@ -1,0 +1,14 @@
+{
+  "appid": "6c7e8096-f593-4d72-807f-a5f86dcc9c77",
+  "appname": "Intune MAM client resource",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "6c7e8096-f593-4d72-807f-a5f86dcc9c77"
+}

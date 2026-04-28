@@ -1,0 +1,14 @@
+{
+  "appid": "ca0a114d-6fbc-46b3-90fa-2ec954794ddb",
+  "appname": "Microsoft Device Management Checkin",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "",
+  "references": [
+    "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in",
+    "https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "ca0a114d-6fbc-46b3-90fa-2ec954794ddb"
+}

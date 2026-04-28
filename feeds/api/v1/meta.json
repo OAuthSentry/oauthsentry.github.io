@@ -1,0 +1,23 @@
+{
+  "schema_version": "1",
+  "generated": "2026-04-27T18:59:48.511241+00:00",
+  "total_apps": 792,
+  "by_service": {
+    "entra": 786,
+    "github": 4,
+    "google": 2
+  },
+  "by_category": {
+    "compliance": 696,
+    "risky": 32,
+    "malicious": 64
+  },
+  "endpoints": {
+    "single_app": "/feeds/api/v1/apps/{slug}.json",
+    "lookup_by_slug": "/feeds/api/v1/lookup.json",
+    "lookup_by_appid": "/feeds/api/v1/lookup_by_appid.json",
+    "meta": "/feeds/api/v1/meta.json"
+  },
+  "slug_rule": "lower-case the appid, then replace any run of characters outside [a-z0-9._-] with a single hyphen, strip leading/trailing hyphens",
+  "license": "see https://github.com/oauthsentry/oauthsentry.github.io/blob/main/LICENSE for project license; per-row references retain attribution to upstream curators (mthcht/awesome-lists, merill/microsoft-info, GitHub blog, etc.)"
+}
