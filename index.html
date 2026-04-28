@@ -564,20 +564,80 @@ Update-MgPolicyAuthorizationPolicy `
               <code>SessionId</code> is an Entra ID construct that only exists when the user authenticates via modern auth (OAuth 2.0 / ADAL / MSAL). Legacy basic-auth sessions have no SessionId. If your tenant still permits legacy auth, the absence of a SessionId on a mailbox audit event is itself a signal worth investigating.
             </div>
 
-            <h3><span class="num">5</span> Microsoft Graph activity logs (separate stream, off by default)</h3>
-            <p>Graph activity logs are the only place that records every individual Graph API call the malicious app made. Without this, you can prove the app got a token but not what it did with it. Stream them via Azure Monitor diagnostic settings into the same destination as your Entra audit logs; in Splunk they land under the same <code>oauthsentry_aad_audit</code> macro (or a dedicated <code>oauthsentry_graph_activity</code> macro if you want to break them out, with sourcetype set to whatever your TA uses for the <code>MicrosoftGraphActivityLogs</code> category).</p>
+            <h3><span class="num">5</span> Microsoft Graph activity logs - the post-token-theft visibility layer</h3>
+            <p>Graph activity logs are the only place that records every individual Graph API call the malicious app made. Without this stream, you can prove the app got a token but not what it did with it - which is the difference between "we were targeted" and "this is the regulator-disclosable scope of the breach". Stream them via Azure Monitor diagnostic settings (category <code>MicrosoftGraphActivityLogs</code>); in Splunk they land under the dedicated <code>oauthsentry_graph_activity</code> macro defined in the Detections tab.</p>
+
+            <p>An anonymized reference event - what one Graph activity record actually looks like in a French-region tenant after a delegated GET against <code>/v1.0/users?$top=2000</code>:</p>
+            <div class="code-block">
+              <div class="code-header">Microsoft Graph activity log event (anonymized)<button class="copy-snippet" type="button">copy</button></div>
+              <pre>{
+  "time":             "2026-04-27T21:30:08.296Z",
+  "resourceId":       "/TENANTS/&lt;tenant-id&gt;/PROVIDERS/MICROSOFT.AADIAM",
+  "operationName":    "Microsoft Graph Activity",
+  "operationVersion": "v1.0",
+  "category":         "MicrosoftGraphActivityLogs",
+  "resultSignature":  "400",
+  "durationMs":       "488000",
+  "callerIpAddress":  "&lt;source-ip&gt;",
+  "correlationId":    "&lt;correlation-id&gt;",
+  "level":            "Informational",
+  "location":         "France Central",
+  "properties": {
+    "timeGenerated":      "2026-04-27T21:30:08.296Z",
+    "requestId":          "&lt;request-id&gt;",
+    "operationId":        "&lt;operation-id&gt;",
+    "clientRequestId":    "&lt;client-request-id&gt;",
+    "apiVersion":         "v1.0",
+    "requestMethod":      "GET",
+    "responseStatusCode": 400,
+    "tenantId":           "&lt;tenant-id&gt;",
+    "durationMs":         488000,
+    "responseSizeBytes":  286,
+    "signInActivityId":   "&lt;uti&gt;",
+    "appId":              "d3590ed6-52b3-4102-aeff-aad2292ab01c",     ``` Microsoft Office (FOCI app) ```
+    "UserPrincipalObjectID": "&lt;user-objectid&gt;",
+    "scopes":             "Mail.ReadWrite Mail.Send Files.ReadWrite.All Directory.Read.All Directory.AccessAsUser.All Group.ReadWrite.All User.ReadWrite ... (~45 scopes)",
+    "wids":               "b79fbf4d-3ef9-4689-8143-76b194e85509",     ``` default-user wid: regular non-admin user ```
+    "userId":             "&lt;user-objectid&gt;",
+    "userAgent":          "User-Agent: Mozilla/5.0 (compatible, MSIE 11, Windows NT 6.3; Trident/7.0;  rv:11.0) like Gecko",
+    "ipAddress":          "&lt;source-ip&gt;",
+    "requestUri":         "https://graph.microsoft.com/v1.0/users?$top=2000&amp;$select=id,displayName,mail,userPrincipalName,accountEnabled",
+    "policyEvaluated":    false,
+    "tokenIssuedAt":      "2026-04-27T13:19:23Z"
+  },
+  "tenantId": "&lt;tenant-id&gt;"
+}</pre>
+            </div>
+
+            <p>Five things this single event tells a defender, in order of fidelity:</p>
             <ul>
-              <li><code>RequestUri</code> - which Graph endpoint was called (<code>/v1.0/me/messages</code>, <code>/v1.0/me/drive/root/children</code>, etc).</li>
-              <li><code>RequestMethod</code> - GET for read, POST/PATCH/DELETE for modification.</li>
-              <li><code>ResponseStatusCode</code> - 200/204 = data returned, 401/403 = blocked by CA or scope.</li>
-              <li><code>UserId</code> - on whose behalf the call was made.</li>
-              <li><code>AppId</code> - the malicious application id.</li>
-              <li><code>SignInActivityId</code> - the UTI claim of the token, the link back to the originating sign-in.</li>
-              <li><code>ResponseSizeBytes</code> - large responses on <code>/messages</code> or <code>/drive/...</code> endpoints = bulk exfiltration.</li>
+              <li><strong>Token came from a FOCI client.</strong> <code>properties.appId == d3590ed6-52b3-4102-aeff-aad2292ab01c</code> is Microsoft Office, one of the eleven Family of Client IDs apps. Microsoft Office talking to <code>/users</code> is firmly outside its normal traffic shape - Office hits <code>/me/messages</code>, <code>/me/drive</code>, <code>/me/calendar</code>, <code>/me/joinedTeams</code>, never <code>/users</code> at scale. Off-pattern FOCI traffic is the post-token-theft signature TeamFiltration / UTA0352 / UNK_SneakyStrike rely on.</li>
+              <li><strong>Directory enumeration intent (T1087.004).</strong> <code>requestUri</code> contains <code>/v1.0/users?$top=2000&amp;$select=id,displayName,mail,userPrincipalName,accountEnabled</code> - a textbook recon query: pull every account, who's enabled, enough metadata to pivot. The request returned 400 because Graph caps <code>$top</code> at 999 for <code>/users</code> and high page sizes need <code>ConsistencyLevel: eventual</code>; the attacker's next attempt would be <code>$top=999</code> with the right header. <strong>Alert on the attempt, not the result.</strong></li>
+              <li><strong>Massive scope set on a delegated token.</strong> The <code>scopes</code> field carries ~45 distinct scopes including multiple <code>*.ReadWrite.All</code>. A normal Microsoft Office client doesn't ship this much surface area in a single token; this looks like custom developer tooling (or attacker tooling impersonating a FOCI client). Tokens with &gt;20 scopes including any <code>*.ReadWrite.All</code> against a FOCI app id are anomalous on their own.</li>
+              <li><strong>Acting user is a regular non-admin.</strong> <a href="https://learn.microsoft.com/en-us/answers/questions/678108/what-b79fbf4d-3ef9-4689-8143-76b194e85509-in-wids">The <code>wids</code> claim of <code>b79fbf4d-3ef9-4689-8143-76b194e85509</code> is the default-user wid; it appears on every non-guest account and indicates an ordinary user with no admin role</a>. A non-admin pulling 2000 users via Graph from an Office token is exactly the kind of "compromised account doing unusual recon" you should page on.</li>
+              <li><strong>User-agent is wrong twice.</strong> First, <code>Mozilla/5.0 (...; MSIE 11, Windows NT 6.3; Trident/7.0; ...)</code> is Internet Explorer 11 on Windows 8.1 - both end-of-life by 2023. Real Microsoft Office clients in 2026 don't ship that UA. Second, the literal value starts with the string <code>User-Agent: User-Agent:</code> (doubly-prefixed); this is a tooling bug where whatever made the request set the header value to <code>User-Agent: Mozilla/5.0...</code> instead of just <code>Mozilla/5.0...</code>. Both are weak signals on their own; doubly-prefixed UAs across a tenant are rare enough to hunt directly.</li>
             </ul>
+
+            <p>The full set of fields on every record:</p>
+            <ul>
+              <li><code>properties.requestUri</code> - which Graph endpoint was called (<code>/v1.0/users</code>, <code>/v1.0/me/messages</code>, <code>/v1.0/me/drive/root/children</code>, etc). The single most useful field for attack-class identification.</li>
+              <li><code>properties.requestMethod</code> - GET for read, POST/PATCH/DELETE for modification. Modification verbs against directory or app endpoints from a delegated user token are very rare in normal traffic.</li>
+              <li><code>properties.responseStatusCode</code> - 200/204 = data returned; 400 = malformed (often attacker first attempt); 401/403 = blocked by CA or scope; 429 = throttled (high-volume recon).</li>
+              <li><code>properties.appId</code> - the OAuth app id whose token authorized this call. Match against OAuthSentry's malicious or risky feeds, and check whether it's a FOCI app talking to off-pattern endpoints.</li>
+              <li><code>properties.userId</code> / <code>properties.UserPrincipalObjectID</code> - on whose behalf the call was made (delegated tokens) or null/empty for app-only flows.</li>
+              <li><code>properties.scopes</code> - the scopes carried by the token. Cross-reference against Merill's <a href="https://graphpermissions.merill.net/">graphpermissions.merill.net</a> to translate each scope into the exact list of endpoints it unlocks.</li>
+              <li><code>properties.wids</code> - well-known role IDs the user holds. Combined with <code>userId</code>, this tells you whether the actor is a regular user or a privileged admin - which dramatically changes what "this Graph call is normal" means.</li>
+              <li><code>properties.signInActivityId</code> - the <strong>UTI</strong> claim of the token, the same identifier surfaced as <code>uniqueTokenIdentifier</code> on Entra sign-in events. The link back to the originating sign-in. Pivot via the section 4 table.</li>
+              <li><code>properties.userAgent</code> - the HTTP User-Agent header. Real Microsoft client UAs are well-known and stable per-app; anything else (Trident, python-requests, curl, Go-http-client, Java, doubly-prefixed) is suspicious.</li>
+              <li><code>properties.ipAddress</code> / <code>callerIpAddress</code> - source. Cross-check against the user's normal sign-in pattern.</li>
+              <li><code>properties.tokenIssuedAt</code> - when the token was originally issued. Long deltas between <code>tokenIssuedAt</code> and the event time mean the call was made with a refresh-derived token; expected for normal use, but also exactly how attackers operate after token theft.</li>
+              <li><code>properties.responseSizeBytes</code> - large responses on <code>/messages</code> or <code>/drive/...</code> endpoints = bulk exfiltration.</li>
+              <li><code>properties.policyEvaluated</code> - whether Conditional Access evaluated this call. Many Graph operations don't trigger CA evaluation; this is normal but worth knowing during incident reconstruction.</li>
+            </ul>
+
             <div class="callout">
               <strong>Enable this now</strong>
-              Graph activity logs are off by default. Turn them on (Entra admin center &rarr; Monitoring &amp; health &rarr; Diagnostic settings &rarr; <code>MicrosoftGraphActivityLogs</code>) and route them to whatever destination feeds your Splunk index. Without retroactive logs, post-incident scope is largely guesswork.
+              Graph activity logs are off by default. Turn them on (Entra admin center &rarr; Monitoring &amp; health &rarr; Diagnostic settings &rarr; add <code>MicrosoftGraphActivityLogs</code>) and route them to whatever destination feeds your Splunk index. The <a href="#/investigation/detections" data-route="/investigation/detections">Detections tab</a> ships Detection 10 (FOCI-token directory enumeration) and the <a href="#/investigation/hunting" data-route="/investigation/hunting">Hunting tab</a> ships Hunts 9 and 10 specifically for this stream. Without retroactive logs, post-incident scope is largely guesswork.
             </div>
 
             <h3><span class="num">6</span> Mailbox &amp; artifact-level traces</h3>
@@ -766,6 +826,16 @@ iseval = 0
 
 [oauthsentry_compliance_lookup]
 definition = lookup oauthsentry_compliance appid OUTPUT category as oas_compliance_category
+iseval = 0
+
+[oauthsentry_graph_activity]
+# Microsoft Graph activity logs streamed via Azure Monitor diagnostic settings
+# (category=MicrosoftGraphActivityLogs). Sourcetype varies by add-on; common
+# values are mscs:azure:eventhub when streaming via Event Hub through the
+# Splunk Add-on for Microsoft Cloud Services, or a custom sourcetype like
+# azure:audit:graphactivity if you've added one. Filter by category= so the
+# macro is portable across add-on configurations.
+definition = (index=azure category=MicrosoftGraphActivityLogs)
 iseval = 0</pre>
             </div>
 
@@ -1069,11 +1139,94 @@ iseval = 0</pre>
 | sort - last_seen</pre>
             </div>
 
+            <h3><span class="num">10</span> FOCI-app token used to enumerate the directory via Graph</h3>
+            <p>The post-token-theft recon signature. Microsoft Office, Azure CLI, Teams and the rest of the FOCI family don't normally call <code>/users</code>, <code>/groups</code>, <code>/directoryRoles</code>, <code>/applications</code> or <code>/servicePrincipals</code> - those endpoints are admin tools, not Office tools. A delegated Graph call from a FOCI app id to one of those resources is the textbook TeamFiltration / UTA0352 / UNK_SneakyStrike pattern: attacker steals a family refresh token, redeems it for an Office (or other FOCI) access token, then uses that token's broad pre-consented permissions to enumerate the directory. <strong>Fires regardless of <code>responseStatusCode</code></strong> because the attempt is the IOC; attackers retry with corrected pagination headers on the next attempt.</p>
+
+            <p>This detection requires the Microsoft Graph activity log stream to be enabled (Entra admin center &rarr; Monitoring &amp; health &rarr; Diagnostic settings &rarr; <code>MicrosoftGraphActivityLogs</code>) and the <code>oauthsentry_graph_activity</code> macro defined at the top of this tab. See the anonymized reference event in <a href="#/investigation/forensics" data-route="/investigation/forensics">Forensic traces section 5</a> for the field layout.</p>
+
+            <div class="code-block">
+              <div class="code-header">SPL<button class="copy-snippet" type="button">copy</button></div>
+              <pre>`oauthsentry_graph_activity`
+
+``` Surface useful paths from properties.* in case the TA has not flattened them. ```
+``` All Graph activity log fields live under properties.* in the raw Azure schema. ```
+| eval req_uri    = coalesce('properties.requestUri',         requestUri)
+| eval req_method = coalesce('properties.requestMethod',      requestMethod)
+| eval req_appid  = coalesce('properties.appId',              appId)
+| eval req_userid = coalesce('properties.userId',             'properties.UserPrincipalObjectID', userId)
+| eval req_wids   = coalesce('properties.wids',               wids)
+| eval req_scopes = coalesce('properties.scopes',             scopes)
+| eval req_ua     = coalesce('properties.userAgent',          userAgent)
+| eval req_ip     = coalesce('properties.ipAddress',          ipAddress, callerIpAddress)
+| eval req_uti    = coalesce('properties.signInActivityId',   signInActivityId)
+| eval req_status = coalesce('properties.responseStatusCode', responseStatusCode)
+
+``` Filter 1: token came from a FOCI app id (Secureworks canonical list + variants). ```
+| where lower(req_appid) IN (
+    "04b07795-8ddb-461a-bbee-02f9e1bf7b46",   ``` Microsoft Azure CLI ```
+    "1950a258-227b-4e31-a9cf-717495945fc2",   ``` Microsoft Azure PowerShell ```
+    "1fec8e78-bce4-4aaf-ab1b-5451cc387264",   ``` Microsoft Teams ```
+    "d3590ed6-52b3-4102-aeff-aad2292ab01c",   ``` Microsoft Office ```
+    "ab9b8c07-8f02-4f72-87fa-80105867a763",   ``` OneDrive SyncEngine ```
+    "27922004-5251-4030-b22d-91ecd9a37ea4",   ``` Outlook Mobile ```
+    "4813382a-8fa7-425e-ab75-3b753aab3abb",   ``` Microsoft Authenticator App ```
+    "872cd9fa-d31f-45e0-9eab-6e460a02d1f1",   ``` Visual Studio ```
+    "00b41c95-dab0-4487-9791-b9d2c32c80f2",   ``` Office 365 Management ```
+    "af124e86-4e96-495a-b70a-90f90ab96707",   ``` OneDrive iOS App ```
+    "26a7ee05-5602-4d76-a7ba-eae8b7b67941"    ``` Windows Search ```
+  )
+
+``` Filter 2: directory-enumeration / app-inventory endpoints. ```
+``` Boundary characters anchor on the resource name to avoid /me/users-like false matches. ```
+| where match(req_uri, "(?i)/v1\.0/(users|groups|directoryRoles|servicePrincipals|applications|devices)(\?|/|$)")
+
+``` Enrichment: pull $top= so bulk-pull intent surfaces at triage time. ```
+| rex field=req_uri "(?i)\$top=(?&lt;top_value&gt;\d+)"
+| eval top_value = if(isnotnull(top_value), tonumber(top_value), 0)
+
+``` Enrichment: flag non-admin actors. b79fbf4d-... is the default-user wid and ```
+``` appears on every non-guest account. Presence of any other GUID in wids = user ```
+``` holds at least one Entra role. Non-admins enumerating the directory at scale ```
+``` is the high-fidelity slice of this detection.                              ```
+| eval wids_clean = lower(replace(req_wids, "[\"\s\[\]]", ""))
+| eval is_default_user_only = if(
+    match(wids_clean, "^b79fbf4d-3ef9-4689-8143-76b194e85509$"),
+    "yes-non-admin", "no-has-role")
+
+``` Enrichment: count scopes; > 20 on a delegated FOCI token is anomalous. ```
+| eval scope_count = if(isnotnull(req_scopes), 
+                         mvcount(split(req_scopes, " ")), 0)
+
+| stats count
+        earliest(_time) as first_seen
+        latest(_time)   as last_seen
+        values(req_uri)              as endpoints
+        values(req_appid)            as appids
+        values(req_method)           as methods
+        values(req_ip)               as src_ips
+        values(req_ua)               as user_agents
+        values(req_uti)              as token_utis
+        values(req_status)           as status_codes
+        max(top_value)               as max_top_requested
+        max(scope_count)             as max_scopes_in_token
+        values(is_default_user_only) as actor_role
+    by req_userid
+| convert ctime(first_seen) ctime(last_seen)
+| sort - count</pre>
+            </div>
+
+            <p>Tuning recommendations specific to this detection:</p>
+            <ul>
+              <li><strong>Page on-call</strong> when <code>actor_role = "yes-non-admin"</code> AND <code>max_top_requested &gt;= 50</code>. Non-admin + bulk pull is the cleanest possible signature.</li>
+              <li><strong>Daily hunting review</strong> for everything else - the detection will catch some legitimate edge cases (e.g. an admin debugging a Graph integration via Azure CLI) where context determines verdict.</li>
+              <li><strong>Suppress</strong> via a per-tenant lookup of trusted automation accounts that have a documented business reason to do directory enumeration via FOCI clients (rare but not zero).</li>
+            </ul>
+
             <h3>Tuning notes</h3>
             <ul>
               <li>The macros above reference three lookup definitions: <code>oauthsentry_malicious</code>, <code>oauthsentry_risky</code>, <code>oauthsentry_compliance</code>. Each one points at a CSV with at minimum an <code>appid</code> field; populate the lookup files from the OAuthSentry CSV feeds at <code>/feeds/all/{malicious,risky,compliance}.csv</code> on whatever cadence makes sense for your tenant. Splunk's built-in <em>Lookup Editor</em> app or a scheduled <code>| outputlookup</code> from a REST search are both fine.</li>
               <li>Detection 3 (newly observed OAuth app) is the noisiest but the most valuable. Tune by adding an extra anti-join against <code>oauthsentry_compliance</code> if you want to suppress already-vetted apps automatically.</li>
-              <li>Detections 1, 2, 8, 9 are high-fidelity enough to alert on. Detections 3, 4, 5, 6 work better as scheduled hunts with daily review. Detection 7 is investigator-driven, not an alert.</li>
+              <li>Detections 1, 2, 8, 9, 10 are high-fidelity enough to alert on (Detection 10 specifically when the actor is a non-admin and <code>$top</code> is &gt;= 50). Detections 3, 4, 5, 6 work better as scheduled hunts with daily review. Detection 7 is investigator-driven, not an alert.</li>
               <li>Apps in the <em>risky</em> bucket are legitimate. Trigger on context (unusual user, new IP, new geography) rather than on the app id alone - detections 2 and 5 demonstrate the pattern.</li>
               <li>Where the unified audit log surfaces both <code>SessionId</code> directly and <code>AppAccessContext.AADSessionId</code>, prefer the latter - it is consistently populated for OAuth-token-driven activity, while bare <code>SessionId</code> is only present on Exchange events.</li>
               <li>The M365 Management Activity API sometimes appends a trailing period to operation names (<code>"Consent to application."</code>); Azure Monitor's diagnostic stream does not. Every search above normalises with <code>eval Operation = replace(Operation, "\.$", "")</code> so the same SPL works across both pipelines.</li>
@@ -1437,6 +1590,106 @@ your_existing_downstream_search
 | sort _time</pre>
             </div>
 
+            <h3><span class="num">9</span> FOCI app token used outside the app's normal Graph traffic shape</h3>
+            <p>Each FOCI app has a stable set of resources it normally talks to: Microsoft Office hits <code>/me/messages</code>, <code>/me/drive</code>, <code>/me/calendar</code>, <code>/me/joinedTeams</code>; Teams hits <code>/chats</code>, <code>/teams</code>; OneDrive hits <code>/me/drive</code>; Authenticator hits <code>/me</code> and the device endpoints. Calls from any FOCI app to <code>/users</code>, <code>/groups</code>, <code>/directoryRoles</code>, <code>/applications</code>, <code>/servicePrincipals</code> or <code>/devices</code> are post-token-theft directory recon by definition. This hunt builds a 90-day baseline of the (FOCI app, resource family) pairs your tenant actually sees, then surfaces any pair that breaks out of it.</p>
+            <div class="code-block">
+              <div class="code-header">SPL<button class="copy-snippet" type="button">copy</button></div>
+              <pre>`oauthsentry_graph_activity` earliest=-7d
+| eval req_uri    = coalesce('properties.requestUri', requestUri)
+| eval req_appid  = coalesce('properties.appId',      appId)
+| eval req_userid = coalesce('properties.userId',     'properties.UserPrincipalObjectID', userId)
+| eval req_ip     = coalesce('properties.ipAddress',  ipAddress, callerIpAddress)
+
+``` Restrict to FOCI apps ```
+| where lower(req_appid) IN (
+    "04b07795-8ddb-461a-bbee-02f9e1bf7b46","1950a258-227b-4e31-a9cf-717495945fc2",
+    "1fec8e78-bce4-4aaf-ab1b-5451cc387264","d3590ed6-52b3-4102-aeff-aad2292ab01c",
+    "ab9b8c07-8f02-4f72-87fa-80105867a763","27922004-5251-4030-b22d-91ecd9a37ea4",
+    "4813382a-8fa7-425e-ab75-3b753aab3abb","872cd9fa-d31f-45e0-9eab-6e460a02d1f1",
+    "00b41c95-dab0-4487-9791-b9d2c32c80f2","af124e86-4e96-495a-b70a-90f90ab96707",
+    "26a7ee05-5602-4d76-a7ba-eae8b7b67941"
+  )
+
+``` Normalise the endpoint to its resource family - the first segment after /v1.0/ ```
+| rex field=req_uri "(?i)/v1\.0/(?&lt;resource&gt;[a-zA-Z]+)"
+| eval resource = lower(resource)
+
+``` Only the resources that have no business being touched by FOCI clients ```
+| where resource IN ("users","groups","directoryroles","applications","serviceprincipals","devices")
+
+``` Anti-join: drop (appid, resource) pairs that are commonplace in YOUR tenant ```
+``` over the prior 90 days. Tune by lowering the count threshold below if your    ```
+``` tenant has very low Graph volume; remove the join entirely to see raw hits.   ```
+| join type=leftanti req_appid, resource [
+    search `oauthsentry_graph_activity` earliest=-97d latest=-7d
+    | eval req_uri   = coalesce('properties.requestUri', requestUri)
+    | eval req_appid = coalesce('properties.appId',      appId)
+    | rex field=req_uri "(?i)/v1\.0/(?&lt;resource&gt;[a-zA-Z]+)"
+    | eval resource = lower(resource)
+    | stats count by req_appid, resource
+    | where count &gt; 100
+    | fields req_appid, resource
+  ]
+
+| stats count
+        values(resource)   as resources_hit
+        values(req_uri)    as endpoints
+        values(req_userid) as users
+        values(req_ip)     as src_ips
+        earliest(_time)    as first_seen
+        latest(_time)      as last_seen
+    by req_appid
+| convert ctime(first_seen) ctime(last_seen)
+| sort - count</pre>
+            </div>
+
+            <h3><span class="num">10</span> Anomalous user-agents on Graph calls from FOCI apps</h3>
+            <p>Real Microsoft Office, Teams, OneDrive and Authenticator clients set well-known UA strings that include the OS, the client version and the Microsoft client identifier. Graph calls from FOCI app ids carrying any of: <code>Trident</code> (Internet Explorer 11, end-of-life since 2022), <code>python-requests</code>, <code>Go-http-client</code>, <code>Java/</code>, <code>curl/</code>, ROADtools / MSAL-Python / aiohttp / OkHttp identifiers, or doubly-prefixed <code>User-Agent: User-Agent: ...</code> headers (a tooling artifact that surfaces in some attacker frameworks) are by-definition anomalous. The signal is fuzzy on its own - one or two false positives are normal - but the combination of FOCI app + tooling-style UA + non-routine resource (anti-correlate with Hunt 9) is high-confidence.</p>
+            <div class="code-block">
+              <div class="code-header">SPL<button class="copy-snippet" type="button">copy</button></div>
+              <pre>`oauthsentry_graph_activity` earliest=-7d
+| eval req_uri    = coalesce('properties.requestUri', requestUri)
+| eval req_appid  = coalesce('properties.appId',      appId)
+| eval req_ua     = coalesce('properties.userAgent',  userAgent)
+| eval req_userid = coalesce('properties.userId',     'properties.UserPrincipalObjectID', userId)
+| eval req_ip     = coalesce('properties.ipAddress',  ipAddress, callerIpAddress)
+| eval req_uti    = coalesce('properties.signInActivityId', signInActivityId)
+
+| where lower(req_appid) IN (
+    "04b07795-8ddb-461a-bbee-02f9e1bf7b46","1950a258-227b-4e31-a9cf-717495945fc2",
+    "1fec8e78-bce4-4aaf-ab1b-5451cc387264","d3590ed6-52b3-4102-aeff-aad2292ab01c",
+    "ab9b8c07-8f02-4f72-87fa-80105867a763","27922004-5251-4030-b22d-91ecd9a37ea4",
+    "4813382a-8fa7-425e-ab75-3b753aab3abb","872cd9fa-d31f-45e0-9eab-6e460a02d1f1",
+    "00b41c95-dab0-4487-9791-b9d2c32c80f2","af124e86-4e96-495a-b70a-90f90ab96707",
+    "26a7ee05-5602-4d76-a7ba-eae8b7b67941"
+  )
+
+``` Classify the UA. case() returns the first matching tag; ok = ignore. ```
+| eval ua_flag = case(
+    match(req_ua, "(?i)^User-Agent:\s*User-Agent:"),     "double-prefixed",
+    match(req_ua, "(?i)Trident/"),                       "ie11-trident",
+    match(req_ua, "(?i)python-requests"),                "python-requests",
+    match(req_ua, "(?i)Go-http-client"),                 "go-http-client",
+    match(req_ua, "(?i)Java/"),                          "java",
+    match(req_ua, "(?i)\bcurl/"),                        "curl",
+    match(req_ua, "(?i)ROADtools|MSAL.+Python|aiohttp|okhttp"), "known-recon-tooling",
+    1==1, "ok"
+  )
+| where ua_flag != "ok"
+
+| stats count
+        values(req_ua)     as user_agents
+        values(req_appid)  as appids
+        values(req_uri)    as endpoints
+        values(req_ip)     as src_ips
+        values(req_uti)    as token_utis
+        earliest(_time)    as first_seen
+        latest(_time)      as last_seen
+    by req_userid, ua_flag
+| convert ctime(first_seen) ctime(last_seen)
+| sort - count</pre>
+            </div>
+
             <div class="callout">
               <strong>Why these are hunts, not alerts</strong>
               Each query above will produce hits in a healthy tenant - new tools get adopted, legitimate admins do rotate secrets, business travel means new geographies. The value is review cadence, not auto-paging. A weekly hunting review with 20-50 candidate entries is normal; if you can't get through that volume, raise the threshold rather than ignore the queue. Anything that fires repeatedly with the same context can graduate into the Detections tab as a high-fidelity rule.
@@ -1444,7 +1697,7 @@ your_existing_downstream_search
 
             <div class="callout">
               <strong>Field-path tuning</strong>
-              Hunts 4, 5, 6, 7 use the Azure Monitor diagnostic-stream layout where audit-log properties are nested under <code>properties.</code> (e.g. <code>properties.targetResources{}.modifiedProperties{}</code>). If your TA aliases or flattens these to top-level fields, drop the <code>properties.</code> prefix in the <code>spath</code> calls. Hunts 1, 2, 3, 8 use top-level Azure sign-in fields (<code>appId</code>, <code>userPrincipalName</code>, <code>ipAddress</code>) which are stable across both the Splunk Add-on for Microsoft Cloud Services and the older Azure add-ons.
+              Hunts 4, 5, 6, 7 use the Azure Monitor diagnostic-stream layout where audit-log properties are nested under <code>properties.</code> (e.g. <code>properties.targetResources{}.modifiedProperties{}</code>). Hunts 9 and 10 do the same but for the Graph activity log stream (<code>properties.requestUri</code>, <code>properties.appId</code>, <code>properties.userAgent</code>, etc.) and use <code>coalesce()</code> on both nested and top-level paths so they work whether or not your add-on flattens the JSON. If your TA aliases or flattens these to top-level fields, you can drop the <code>properties.</code> prefix in the <code>spath</code> calls. Hunts 1, 2, 3, 8 use top-level Azure sign-in fields (<code>appId</code>, <code>userPrincipalName</code>, <code>ipAddress</code>) which are stable across both the Splunk Add-on for Microsoft Cloud Services and the older Azure add-ons.
             </div>
           </div>
         </div>
