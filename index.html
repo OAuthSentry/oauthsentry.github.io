@@ -1628,11 +1628,102 @@ iseval = 0</pre>
               <li><strong>Anti-correlate with Detection 11</strong>: a delegated token that fires both Detection 11 (directory enumeration) and Detection 12 (own-mailbox bulk read) within the same hour is the textbook stolen-token IR signature: attacker enumerates the tenant to find high-value targets, then reads their own mailbox to map internal communication while they're at it. Pages on-call regardless of individual severity tier.</li>
             </ul>
 
+            <h3><span class="num">13</span> Maintain a tenant directory lookup for username enrichment</h3>
+            <p>This isn't a detection by itself - it's the supporting infrastructure that turns every other detection's <code>userId</code> column from a useless GUID into a name a SOC analyst can act on. Every Graph activity log, sign-in event and Reports API record references principals by object id (<code>properties.userId</code>, <code>properties.servicePrincipalId</code>); without enrichment, your alerts read "user <code>6b579021-2931-4f1b-b523-d4ac40e50ed9</code> exfiltrated 47 MB" - true but not directly actionable. With a maintained directory lookup, the same alert reads "user alice.example@yourdomain.com (Senior Finance Analyst) exfiltrated 47 MB", which routes itself.</p>
+
+            <p>The lookup is a CSV (or KV-store collection) keyed on object id, refreshed on a schedule. Three options ranked by reliability - which one to pick depends on what you have available:</p>
+
+            <h4>Option A - Sign-in-log harvest (no extra plumbing required)</h4>
+            <p>Walk the Entra sign-in log over a sliding window and build the directory from observed users. Works the moment you have sign-in logs; the only gap is users who haven't signed in within the lookback window. Schedule this search to run daily:</p>
+            <div class="code-block">
+              <div class="code-header">SPL - daily build of the user directory from sign-in logs<button class="copy-snippet" type="button">copy</button></div>
+              <pre>``` Run on schedule. Sourcetype is whatever your environment uses for       ```
+``` SignInLogs - mscs:azure:signinlogs, azure:audit:signinlogs, or filtered ```
+``` from mscs:azure:eventhub by category=SignInLogs. Verify with:           ```
+```   index=o365 | stats count by sourcetype, category                      ```
+
+index=o365 sourcetype="mscs:azure:signinlogs" earliest=-30d
+| eval object_id = lower('properties.userId')
+| where isnotnull(object_id) AND object_id != ""
+| stats latest(properties.userPrincipalName) as upn
+        latest(properties.userDisplayName)   as display_name
+        latest(_time)                         as last_seen
+   by object_id
+| outputlookup oauthsentry_user_directory.csv</pre>
+            </div>
+
+            <h4>Option B - Service principal directory (separate stream, app-only flows)</h4>
+            <p>App-only Graph activity logs surface <code>servicePrincipalId</code> instead of <code>userId</code>. Service principals appear in the dedicated <code>ServicePrincipalSignInLogs</code> stream, not the regular sign-in log, so they need a separate harvest. The pattern is the same:</p>
+            <div class="code-block">
+              <div class="code-header">SPL - daily build of the service principal directory<button class="copy-snippet" type="button">copy</button></div>
+              <pre>index=o365 sourcetype="mscs:azure:signinlogs" category=ServicePrincipalSignInLogs earliest=-30d
+| eval sp_object_id = lower('properties.servicePrincipalId')
+| where isnotnull(sp_object_id) AND sp_object_id != ""
+| stats latest(properties.servicePrincipalName) as sp_name
+        latest(properties.appId)                as app_id
+        latest(properties.appDisplayName)       as app_display_name
+        latest(_time)                            as last_seen
+   by sp_object_id
+| outputlookup oauthsentry_sp_directory.csv</pre>
+            </div>
+
+            <h4>Option C - Authoritative pull from Microsoft Graph (most complete)</h4>
+            <p>The two harvests above only catch principals that have signed in within the lookback window. To get every user and SP in the tenant - including dormant accounts, freshly provisioned users that haven't signed in yet, and SPs that exist but haven't authenticated - pull directly from Graph. Requires a service principal in your tenant with <code>User.Read.All</code> + <code>Application.Read.All</code> application permissions, and either Splunk's REST modular input or a small scheduled cron that runs <code>curl</code> + <code>jq</code> and writes to the lookup file. Sample shell pipeline (run nightly under a service account):</p>
+            <div class="code-block">
+              <div class="code-header">bash - nightly pull of the full tenant directory<button class="copy-snippet" type="button">copy</button></div>
+              <pre>``` Set GRAPH_ACCESS_TOKEN out-of-band via your secrets store. ```
+TENANT_ID="your-tenant-id"
+TOKEN=$(curl -s -X POST "https://login.microsoftonline.com/$TENANT_ID/oauth2/v2.0/token" \
+  -d "client_id=$CLIENT_ID" \
+  -d "client_secret=$CLIENT_SECRET" \
+  -d "scope=https://graph.microsoft.com/.default" \
+  -d "grant_type=client_credentials" \
+  | jq -r '.access_token')
+
+``` Pull every user with paging until @odata.nextLink stops returning ```
+URL="https://graph.microsoft.com/v1.0/users?\$select=id,userPrincipalName,displayName&\$top=999"
+echo "object_id,upn,display_name" &gt; /tmp/oauthsentry_user_directory.csv
+while [ -n "$URL" ]; do
+  RESP=$(curl -s -H "Authorization: Bearer $TOKEN" "$URL")
+  echo "$RESP" | jq -r '.value[] | [.id, .userPrincipalName, .displayName] | @csv' \
+    &gt;&gt; /tmp/oauthsentry_user_directory.csv
+  URL=$(echo "$RESP" | jq -r '."@odata.nextLink" // empty')
+done
+
+``` Same approach for service principals; targets /servicePrincipals endpoint. ```
+
+``` Then push the CSV to your Splunk search head. Easiest path: REST POST to    ```
+``` services/data/lookup-table-files. Or write to a shared NFS mount that the   ```
+``` Splunk indexers / search heads already include in their lookup paths.       ```</pre>
+            </div>
+
+            <h4>Using the lookup in any other detection</h4>
+            <p>Once one of the three options above is populating the lookup file on a daily cadence, every other detection in this tab gets username enrichment with one extra line. Place this at the end of any search that produces a <code>req_userid</code> column:</p>
+            <div class="code-block">
+              <div class="code-header">SPL - one-line enrichment for any detection<button class="copy-snippet" type="button">copy</button></div>
+              <pre>| eval lookup_key = lower(req_userid)
+| lookup oauthsentry_user_directory.csv object_id as lookup_key OUTPUT upn, display_name
+
+``` For app-only flows, swap to the SP directory: ```
+| eval lookup_key = lower(req_spid)
+| lookup oauthsentry_sp_directory.csv sp_object_id as lookup_key OUTPUT sp_name, app_display_name</pre>
+            </div>
+
+            <p>Tuning recommendations specific to this directory:</p>
+            <ul>
+              <li><strong>Refresh cadence</strong>: daily is fine for username enrichment. New employees onboard in hours and the worst case is one alert with an unresolved object id - run an on-demand refresh if that happens during an active incident. Hourly refresh is overkill and costs CPU.</li>
+              <li><strong>Lookback window for Options A/B</strong>: 30 days is the right balance. Shorter windows miss occasional users; longer windows include departed employees whose UPN is now stale (Microsoft renames them to <code>UserName_yyyymmddT...#EXT#@tenant.onmicrosoft.com</code> after a soft-delete). For Option C the question doesn't apply since you pull the live directory.</li>
+              <li><strong>Combine all three</strong>: best practice is Option C as the source of truth (run weekly to keep the dormant-account coverage current), with daily Option A and Option B harvests filling in any sign-ins that happened since the last full pull. The merged lookup is more resilient than any single source.</li>
+              <li><strong>Don't put PII in the lookup beyond what you need</strong>: <code>object_id</code>, <code>upn</code>, <code>display_name</code> are sufficient for triage. Avoid pulling <code>jobTitle</code>, <code>department</code>, <code>officeLocation</code> etc. unless your IR team has a specific reason and your data classification allows it.</li>
+              <li><strong>Audit the SP that pulls the directory</strong>: if you implement Option C, the SP itself needs <code>User.Read.All</code> + <code>Application.Read.All</code> - those are powerful permissions. Add the SP's own object id to your <code>oauthsentry_compliance</code> lookup so detections don't false-positive on its own activity, and rotate its credential like any other long-lived secret.</li>
+            </ul>
+
             <h3>Tuning notes</h3>
             <ul>
-              <li>The macros above reference three lookup definitions: <code>oauthsentry_malicious</code>, <code>oauthsentry_risky</code>, <code>oauthsentry_compliance</code>. Each one points at a CSV with at minimum an <code>appid</code> field; populate the lookup files from the OAuthSentry CSV feeds at <code>/feeds/all/{malicious,risky,compliance}.csv</code> on whatever cadence makes sense for your tenant. Splunk's built-in <em>Lookup Editor</em> app or a scheduled <code>| outputlookup</code> from a REST search are both fine.</li>
+              <li>The macros above reference three OAuthSentry catalog lookups (<code>oauthsentry_malicious</code>, <code>oauthsentry_risky</code>, <code>oauthsentry_compliance</code>) plus two optional directory lookups (<code>oauthsentry_user_directory.csv</code> and <code>oauthsentry_sp_directory.csv</code>) that Detection 13 maintains. The catalog lookups identify which app id matters; the directory lookups translate object ids into human-readable names. Both classes are CSV with at minimum a key column; populate the catalog lookups from <code>/feeds/all/{malicious,risky,compliance}.csv</code> on whatever cadence makes sense for your tenant. Splunk's built-in <em>Lookup Editor</em> app or a scheduled <code>| outputlookup</code> from a REST search are both fine.</li>
+              <li>Detection 13 is not an alert in itself - it produces the <code>oauthsentry_user_directory</code> and <code>oauthsentry_sp_directory</code> lookups that every other detection above can use to enrich a bare object id into a name. Strongly recommended as a one-time setup; without it, every detection alert reads "user &lt;guid&gt;" instead of "user alice@yourdomain.com (Senior Finance Analyst)".</li>
               <li>Detection 3 (newly observed OAuth app) is the noisiest but the most valuable. Tune by adding an extra anti-join against <code>oauthsentry_compliance</code> if you want to suppress already-vetted apps automatically.</li>
-              <li>Detections 1, 2, 8, 9, 10, 11, 12 are high-fidelity enough to alert on (Detection 10 specifically when the actor is a non-admin and <code>$top</code> is &gt;= 50; Detection 11 at the critical 10,000-record/1h tier; Detection 12 at the critical 100 MB/1h tier). Detections 3, 4, 5, 6 work better as scheduled hunts with daily review. Detection 7 is investigator-driven, not an alert.</li>
+              <li>Detections 1, 2, 8, 9, 10, 11, 12 are high-fidelity enough to alert on (Detection 10 specifically when the actor is a non-admin and <code>$top</code> is &gt;= 50; Detection 11 at the critical 10,000-record/1h tier; Detection 12 at the critical 100 MB/1h tier). Detections 3, 4, 5, 6 work better as scheduled hunts with daily review. Detection 7 is investigator-driven, not an alert. Detection 13 is infrastructure - it doesn't fire alerts itself, it builds the directory lookups that the other detections enrich against.</li>
               <li>Apps in the <em>risky</em> bucket are legitimate. Trigger on context (unusual user, new IP, new geography) rather than on the app id alone - detections 2 and 5 demonstrate the pattern.</li>
               <li>Where the unified audit log surfaces both <code>SessionId</code> directly and <code>AppAccessContext.AADSessionId</code>, prefer the latter - it is consistently populated for OAuth-token-driven activity, while bare <code>SessionId</code> is only present on Exchange events.</li>
               <li>The M365 Management Activity API sometimes appends a trailing period to operation names (<code>"Consent to application."</code>); Azure Monitor's diagnostic stream does not. Every search above normalises with <code>eval Operation = replace(Operation, "\.$", "")</code> so the same SPL works across both pipelines.</li>
@@ -1640,7 +1731,7 @@ iseval = 0</pre>
             </ul>
 
             <h3>Integrating with your existing detection stack</h3>
-            <p>The nine detections above assume you're starting from scratch. If you already run an Entra/M365 detection stack - and most teams do - OAuthSentry's three feeds plug into rules you already have. Four patterns; each one is a small surgical change that takes a hand-maintained list off your plate or sharpens an alert tier you've already tuned.</p>
+            <p>The thirteen detections above assume you're starting from scratch. If you already run an Entra/M365 detection stack - and most teams do - OAuthSentry's three feeds plug into rules you already have. Four patterns; each one is a small surgical change that takes a hand-maintained list off your plate or sharpens an alert tier you've already tuned.</p>
 
             <h4>Pattern 1: replace a hand-maintained "suspicious app id" lookup</h4>
             <p>If you have a rule like "alert when a user signs in from an app id on our internal suspicious-apps lookup" or "alert on consent to an app on our blocklist", swap the lookup for the OAuthSentry malicious feed. Same logic, daily-refreshed list, community-curated rather than a spreadsheet someone updates when they remember to.</p>
