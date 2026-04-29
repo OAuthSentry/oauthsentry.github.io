@@ -3,7 +3,7 @@
 > OAuth application intelligence for defense teams.
 > Hosted at **[oauthsentry.github.io](https://oauthsentry.github.io)**.
 
-OAuthSentry is a static, search-first inventory of OAuth Application IDs across identity platforms (Microsoft Entra to start, with Google Workspace, Slack, GitHub, Salesforce and Okta planned). Every app is bucketed into one of three defender-oriented categories:
+OAuthSentry is a static, search-first inventory of OAuth Application IDs across identity platforms (Microsoft Entra to start, with Google Workspace and Github. Every app is bucketed into one of three defender-oriented categories:
 
 | Category       | Meaning |
 |----------------|---------|
