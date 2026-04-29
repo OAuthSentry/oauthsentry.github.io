@@ -1,0 +1,457 @@
+{
+  "application.read.all": {
+    "category": "apps",
+    "note": "Read all app registrations and SPs",
+    "risk": "high"
+  },
+  "application.readwrite.all": {
+    "category": "apps",
+    "note": "Manage all app registrations - the apex of OAuth persistence",
+    "risk": "critical"
+  },
+  "application.readwrite.ownedby": {
+    "category": "apps",
+    "note": "Manage app registrations the SP owns - scoped persistence",
+    "risk": "high"
+  },
+  "approleassignment.readwrite.all": {
+    "category": "apps",
+    "note": "Grant/revoke role assignments to apps. Privilege escalation.",
+    "risk": "critical"
+  },
+  "auditlog.read.all": {
+    "category": "audit",
+    "note": "Read tenant audit logs - covers tracks / monitors defenders",
+    "risk": "high"
+  },
+  "calendars.read": {
+    "category": "calendar",
+    "note": "Read user's calendar - meeting reconnaissance",
+    "risk": "medium"
+  },
+  "calendars.read.shared": {
+    "category": "calendar",
+    "note": "Read shared calendars - org-mapping recon",
+    "risk": "medium"
+  },
+  "calendars.readwrite": {
+    "category": "calendar",
+    "note": "Read/write calendar. Used to send AiTM phishing meeting invites",
+    "risk": "high"
+  },
+  "calendars.readwrite.shared": {
+    "category": "calendar",
+    "note": "Read/write shared calendars",
+    "risk": "high"
+  },
+  "channelmessage.read.all": {
+    "category": "teams",
+    "note": "Read all Teams channel messages tenant-wide",
+    "risk": "critical"
+  },
+  "channelmessage.send": {
+    "category": "teams",
+    "note": "Send channel messages as user - internal phishing",
+    "risk": "high"
+  },
+  "chat.read": {
+    "category": "teams",
+    "note": "Read user's 1:1 and group chats",
+    "risk": "high"
+  },
+  "chat.read.all": {
+    "category": "teams",
+    "note": "Read every chat in the tenant (app-only). Massive data exposure.",
+    "risk": "critical"
+  },
+  "chat.readwrite": {
+    "category": "teams",
+    "note": "Read/write user's chats. Internal phishing vector via Teams.",
+    "risk": "critical"
+  },
+  "compliancemanager.read.all": {
+    "category": "exchange",
+    "note": "Read compliance posture - recon",
+    "risk": "medium"
+  },
+  "contacts.read": {
+    "category": "contacts",
+    "note": "Read user's contacts - target list for follow-on phishing",
+    "risk": "medium"
+  },
+  "contacts.read.shared": {
+    "category": "contacts",
+    "note": "Read shared contacts",
+    "risk": "medium"
+  },
+  "contacts.readwrite": {
+    "category": "contacts",
+    "note": "Read/write contacts - persistence vector for impersonation",
+    "risk": "high"
+  },
+  "delegatedpermissiongrant.readwrite.all": {
+    "category": "apps",
+    "note": "Grant OAuth2 delegated permissions to any app. Consent-grant abuse vector.",
+    "risk": "critical"
+  },
+  "device.read.all": {
+    "category": "device",
+    "note": "Read all devices in directory",
+    "risk": "medium"
+  },
+  "device.readwrite.all": {
+    "category": "device",
+    "note": "Manage all devices - device-registration persistence vector",
+    "risk": "critical"
+  },
+  "devicemanagementconfiguration.readwrite.all": {
+    "category": "device",
+    "note": "Modify Intune configuration policies - disable controls",
+    "risk": "critical"
+  },
+  "devicemanagementmanageddevices.read.all": {
+    "category": "device",
+    "note": "Read all Intune-managed device data",
+    "risk": "high"
+  },
+  "devicemanagementmanageddevices.readwrite.all": {
+    "category": "device",
+    "note": "Manage Intune devices - mass device tampering",
+    "risk": "critical"
+  },
+  "directory.accessasuser.all": {
+    "category": "directory",
+    "note": "Act as the signed-in user against directory. Effectively unlimited.",
+    "risk": "critical"
+  },
+  "directory.read.all": {
+    "category": "directory",
+    "note": "Read directory data (users, groups, devices). Heavy recon scope.",
+    "risk": "high"
+  },
+  "directory.readwrite.all": {
+    "category": "directory",
+    "note": "Read/write directory. Persistence: can create users, modify groups.",
+    "risk": "critical"
+  },
+  "email": {
+    "category": "auth",
+    "note": "Standard OIDC scope",
+    "risk": "low"
+  },
+  "ews.accessasuser.all": {
+    "category": "mail",
+    "note": "Exchange Web Services delegated access - heavy in legacy stealer toolchains",
+    "risk": "high"
+  },
+  "exchange.manageasapp": {
+    "category": "exchange",
+    "note": "App-only Exchange management - granted by attackers in 2022 OAuth-spam abuse campaigns",
+    "risk": "critical"
+  },
+  "files.read": {
+    "category": "files",
+    "note": "Read user's files in OneDrive",
+    "risk": "medium"
+  },
+  "files.read.all": {
+    "category": "files",
+    "note": "Read all files user has access to (OneDrive + accessible SharePoint)",
+    "risk": "high"
+  },
+  "files.readwrite": {
+    "category": "files",
+    "note": "Read/write user's files",
+    "risk": "high"
+  },
+  "files.readwrite.all": {
+    "category": "files",
+    "note": "Read/write all files user can access. Bulk exfil + ransomware-prep signature",
+    "risk": "critical"
+  },
+  "files.readwrite.appfolder": {
+    "category": "files",
+    "note": "App-specific folder access - low scope",
+    "risk": "low"
+  },
+  "files.readwrite.selected": {
+    "category": "files",
+    "note": "Limited file access via picker",
+    "risk": "medium"
+  },
+  "fullcontrol.all": {
+    "category": "files",
+    "note": "SharePoint full control alias",
+    "risk": "critical"
+  },
+  "group.read.all": {
+    "category": "directory",
+    "note": "Read all groups",
+    "risk": "high"
+  },
+  "group.readwrite.all": {
+    "category": "directory",
+    "note": "Manage all groups. Persistence via group-based access.",
+    "risk": "critical"
+  },
+  "groupmember.read.all": {
+    "category": "directory",
+    "note": "Read group membership - org structure recon",
+    "risk": "medium"
+  },
+  "groupmember.readwrite.all": {
+    "category": "directory",
+    "note": "Manage group membership - lateral movement",
+    "risk": "critical"
+  },
+  "identityriskevent.read.all": {
+    "category": "audit",
+    "note": "Read identity risk events - tracking detection signals",
+    "risk": "high"
+  },
+  "identityriskyuser.read.all": {
+    "category": "audit",
+    "note": "Read which users are flagged risky by Entra ID Protection",
+    "risk": "high"
+  },
+  "imap.accessasuser.all": {
+    "category": "mail",
+    "note": "Legacy IMAP delegated access - bypasses modern auth controls",
+    "risk": "high"
+  },
+  "mail.read": {
+    "category": "mail",
+    "note": "Read all mail in user's mailbox (delegated) or any mailbox in tenant (app-only)",
+    "risk": "high"
+  },
+  "mail.read.shared": {
+    "category": "mail",
+    "note": "Read mail in shared mailboxes the user has access to",
+    "risk": "high"
+  },
+  "mail.readbasic": {
+    "category": "mail",
+    "note": "Read basic mail properties (no body) - reconnaissance scope",
+    "risk": "medium"
+  },
+  "mail.readwrite": {
+    "category": "mail",
+    "note": "Read/write/delete mail. BEC and stealer signature",
+    "risk": "critical"
+  },
+  "mail.readwrite.shared": {
+    "category": "mail",
+    "note": "Read/write mail in shared mailboxes",
+    "risk": "critical"
+  },
+  "mail.send": {
+    "category": "mail",
+    "note": "Send mail as user. Used for internal phishing / BEC follow-up",
+    "risk": "critical"
+  },
+  "mail.send.shared": {
+    "category": "mail",
+    "note": "Send mail from shared mailboxes the user has access to",
+    "risk": "critical"
+  },
+  "mailboxsettings.read": {
+    "category": "mail",
+    "note": "Read mailbox settings - rules, signatures, OOO. Recon for BEC.",
+    "risk": "medium"
+  },
+  "mailboxsettings.readwrite": {
+    "category": "mail",
+    "note": "Write mailbox settings. Used to create exfil/hide rules.",
+    "risk": "high"
+  },
+  "notes.read": {
+    "category": "notes",
+    "note": "Read user's OneNote notes",
+    "risk": "medium"
+  },
+  "notes.read.all": {
+    "category": "notes",
+    "note": "Read all OneNote notes user can access",
+    "risk": "high"
+  },
+  "notes.readwrite.all": {
+    "category": "notes",
+    "note": "Read/write all OneNote notes user can access",
+    "risk": "high"
+  },
+  "oauth2permissiongrant.readwrite.all": {
+    "category": "apps",
+    "note": "Manage OAuth2 permission grants tenant-wide",
+    "risk": "critical"
+  },
+  "offline_access": {
+    "category": "auth",
+    "note": "Returns a refresh token. Required for long-lived access. Commonly requested with high-risk scopes in phishing kits.",
+    "risk": "medium"
+  },
+  "openid": {
+    "category": "auth",
+    "note": "Standard OIDC scope",
+    "risk": "low"
+  },
+  "people.read": {
+    "category": "directory",
+    "note": "Read people relevant to user - org reconnaissance",
+    "risk": "medium"
+  },
+  "policy.read.all": {
+    "category": "policy",
+    "note": "Read all org policies",
+    "risk": "medium"
+  },
+  "policy.readwrite.applicationconfiguration": {
+    "category": "policy",
+    "note": "Modify app config policies",
+    "risk": "critical"
+  },
+  "policy.readwrite.authenticationflows": {
+    "category": "policy",
+    "note": "Modify authentication flow policies",
+    "risk": "critical"
+  },
+  "policy.readwrite.authenticationmethod": {
+    "category": "policy",
+    "note": "Modify authentication methods policy - disable MFA pre-attack",
+    "risk": "critical"
+  },
+  "policy.readwrite.conditionalaccess": {
+    "category": "policy",
+    "note": "Modify Conditional Access policies. Used to disable controls before exfil.",
+    "risk": "critical"
+  },
+  "policy.readwrite.permissiongrant": {
+    "category": "policy",
+    "note": "Modify the consent policy itself - meta-persistence",
+    "risk": "critical"
+  },
+  "pop.accessasuser.all": {
+    "category": "mail",
+    "note": "Legacy POP delegated access - bypasses modern auth controls",
+    "risk": "high"
+  },
+  "presence.read.all": {
+    "category": "directory",
+    "note": "Read presence info for all users",
+    "risk": "low"
+  },
+  "profile": {
+    "category": "auth",
+    "note": "Standard OIDC scope",
+    "risk": "low"
+  },
+  "reports.read.all": {
+    "category": "audit",
+    "note": "Read sign-in and audit reports",
+    "risk": "medium"
+  },
+  "rolemanagement.read.directory": {
+    "category": "policy",
+    "note": "Read role assignments",
+    "risk": "medium"
+  },
+  "rolemanagement.readwrite.directory": {
+    "category": "policy",
+    "note": "Modify Entra role assignments. Lateral movement to admin.",
+    "risk": "critical"
+  },
+  "securityevents.read.all": {
+    "category": "audit",
+    "note": "Read security alerts - useful for tracking own detection",
+    "risk": "high"
+  },
+  "securityevents.readwrite.all": {
+    "category": "audit",
+    "note": "Modify security alerts - cover-up vector",
+    "risk": "critical"
+  },
+  "sites.fullcontrol.all": {
+    "category": "files",
+    "note": "Full control over all SharePoint sites. Maximum file scope.",
+    "risk": "critical"
+  },
+  "sites.manage.all": {
+    "category": "files",
+    "note": "Manage SharePoint sites - persistence and permission tampering",
+    "risk": "critical"
+  },
+  "sites.read.all": {
+    "category": "files",
+    "note": "Read items in all SharePoint site collections",
+    "risk": "high"
+  },
+  "sites.readwrite.all": {
+    "category": "files",
+    "note": "Read/write items in all SharePoint sites",
+    "risk": "critical"
+  },
+  "sites.selected": {
+    "category": "files",
+    "note": "Access only specific SharePoint sites granted via API",
+    "risk": "low"
+  },
+  "smtp.send": {
+    "category": "mail",
+    "note": "Legacy SMTP send - bypasses modern auth controls",
+    "risk": "high"
+  },
+  "tasks.read": {
+    "category": "notes",
+    "note": "Read user's tasks",
+    "risk": "low"
+  },
+  "tasks.readwrite": {
+    "category": "notes",
+    "note": "Read/write user's tasks",
+    "risk": "medium"
+  },
+  "team.readbasic.all": {
+    "category": "teams",
+    "note": "Read basic Teams info - reconnaissance",
+    "risk": "medium"
+  },
+  "teamsappinstallation.readwriteforteam": {
+    "category": "teams",
+    "note": "Install Teams apps - persistence vector via malicious Teams app",
+    "risk": "high"
+  },
+  "user.export.all": {
+    "category": "directory",
+    "note": "Bulk-export user data. GDPR/privacy data-exfil vector.",
+    "risk": "high"
+  },
+  "user.invite.all": {
+    "category": "directory",
+    "note": "Invite guest users. Used for sustained external persistence.",
+    "risk": "high"
+  },
+  "user.read": {
+    "category": "directory",
+    "note": "Read signed-in user's profile. Standard scope.",
+    "risk": "low"
+  },
+  "user.read.all": {
+    "category": "directory",
+    "note": "Read all users' profiles in tenant. Recon scope (T1087.004)",
+    "risk": "high"
+  },
+  "user.readbasic.all": {
+    "category": "directory",
+    "note": "Read basic profiles of all users - target enumeration",
+    "risk": "medium"
+  },
+  "user.readwrite": {
+    "category": "directory",
+    "note": "Read/write signed-in user's profile",
+    "risk": "high"
+  },
+  "user.readwrite.all": {
+    "category": "directory",
+    "note": "Read/write all user profiles. Lateral movement / persistence.",
+    "risk": "critical"
+  }
+}

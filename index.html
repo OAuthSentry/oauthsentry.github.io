@@ -34,6 +34,8 @@
         <a href="#/search" data-route="/search">Search</a>
         <a href="#/investigation/tradecraft" data-route="/investigation">Investigation</a>
         <a href="#/triage" data-route="/triage">Triage</a>
+        <a href="#/tokens" data-route="/tokens">Token decoder</a>
+        <a href="#/submit" data-route="/submit">Submit</a>
         <a href="#/api" data-route="/api">API</a>
         <a href="#/feeds" data-route="/feeds">Feeds</a>
         <a href="#/methodology" data-route="/methodology">Methodology</a>
@@ -3173,6 +3175,215 @@ curl -s https://oauthsentry.github.io/feeds/changelog.json \
               Need this from a script, SOAR runbook, or alert pipeline? The same lookup is exposed as a static REST API - see the
               <a href="#/api" data-route="/api">API</a> tab for endpoints, the slug rule, and code samples.
             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TOKEN DECODER PAGE ============ -->
+    <section id="page-tokens" hidden>
+      <div class="shell">
+        <div class="section">
+          <h2>Entra access token decoder</h2>
+          <p class="lead">
+            Paste a Microsoft Entra JWT - from a phishing kit dump, a stealer log, an audit-log export, a captured <code>Bearer</code>
+            header, or a developer's <code>Get-MgContext</code> output - and get an annotated explanation of every claim, with the wids
+            decoded against the canonical Microsoft Entra built-in roles, the appid cross-referenced against OAuthSentry's catalog and
+            the FOCI / first-party app reference, the scopes flagged for risk, and a "what to do next" panel that prefills the SPL
+            queries from the Forensic Traces tab. <strong>Pure client-side</strong> - the token never leaves your browser. Signature
+            validation is intentionally not performed; this is for IR claim interpretation, not authentication.
+          </p>
+
+          <div class="tokens-input-card">
+            <label for="tokens-input" class="form-label">JWT</label>
+            <textarea id="tokens-input" rows="6" spellcheck="false" autocomplete="off"
+              placeholder="Paste the full JWT here. Three segments separated by dots. Example: eyJ0eXAi...A.eyJhdWQ...A.signature&#10;Or paste an Authorization header (Bearer ...) - the prefix will be stripped automatically."></textarea>
+            <div class="tokens-actions">
+              <button type="button" id="tokens-decode-btn" class="btn btn-primary">Decode</button>
+              <button type="button" id="tokens-clear-btn" class="btn">Clear</button>
+              <span class="tokens-privacy-note">Runs locally - the token never leaves your browser.</span>
+            </div>
+            <div id="tokens-error" class="form-error" hidden></div>
+          </div>
+
+          <div id="tokens-output" class="tokens-output" hidden>
+            <!-- Summary banner -->
+            <div id="tokens-summary" class="tokens-summary"></div>
+
+            <!-- Two columns: decoded claims (left), action panel (right) -->
+            <div class="tokens-grid">
+              <div class="tokens-claims-card">
+                <h3>Decoded claims</h3>
+                <div id="tokens-header-section">
+                  <h4>Header</h4>
+                  <div id="tokens-header-claims" class="tokens-claims-list"></div>
+                </div>
+                <div id="tokens-payload-section">
+                  <h4>Payload</h4>
+                  <div id="tokens-payload-claims" class="tokens-claims-list"></div>
+                </div>
+              </div>
+
+              <div class="tokens-actions-card">
+                <h3>What to do next</h3>
+                <div id="tokens-action-panel"></div>
+
+                <h3 style="margin-top: 20px;">Raw JSON</h3>
+                <details>
+                  <summary>Show full decoded JSON</summary>
+                  <pre id="tokens-raw-json" class="tokens-raw-json"></pre>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SUBMIT PAGE ============ -->
+    <section id="page-submit" hidden>
+      <div class="shell">
+        <div class="section">
+          <h2>Submit a new OAuth app to the catalog</h2>
+          <p class="lead">
+            Spotted a malicious OAuth app id in your audit logs, or read about one in a security disclosure that should be in OAuthSentry?
+            Fill the form below and submit as a GitHub issue, a downloadable CSV row you can attach to a PR, or an email - all three options
+            land the same data, pick whichever takes the least friction. The form validates field shapes locally so the most common bad
+            submissions (wrong-shape GUID, missing reference, severity mismatched to category) get caught before they reach the maintainer queue.
+          </p>
+
+          <div class="submit-grid">
+            <div class="submit-form-card">
+              <form id="submit-form" novalidate>
+                <div class="form-row">
+                  <label class="form-label">
+                    Service
+                    <span class="form-required">*</span>
+                  </label>
+                  <div class="radio-group">
+                    <label><input type="radio" name="service" value="entra" checked> Entra (Microsoft 365 / Azure)</label>
+                    <label><input type="radio" name="service" value="google"> Google Workspace</label>
+                    <label><input type="radio" name="service" value="github"> GitHub</label>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <label class="form-label" for="submit-appid">
+                    App ID
+                    <span class="form-required">*</span>
+                    <span class="form-hint" id="submit-appid-hint">36-char GUID like c5393580-f805-4401-95e8-94b7a6ef2fc2</span>
+                  </label>
+                  <input type="text" id="submit-appid" name="appid" spellcheck="false" autocomplete="off">
+                  <div class="form-error" id="submit-appid-error" hidden></div>
+                </div>
+
+                <div class="form-row">
+                  <label class="form-label" for="submit-appname">
+                    App name
+                    <span class="form-required">*</span>
+                    <span class="form-hint">As it appears to users in the consent prompt or audit log</span>
+                  </label>
+                  <input type="text" id="submit-appname" name="appname" spellcheck="false" autocomplete="off">
+                </div>
+
+                <div class="form-row">
+                  <label class="form-label">
+                    Category
+                    <span class="form-required">*</span>
+                    <span class="form-hint">Malicious = used in attacks; risky = legit but commonly abused; compliance = legit and pre-vetted</span>
+                  </label>
+                  <div class="radio-group">
+                    <label><input type="radio" name="category" value="malicious"> Malicious</label>
+                    <label><input type="radio" name="category" value="risky"> Risky</label>
+                    <label><input type="radio" name="category" value="compliance"> Compliance</label>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <label class="form-label">
+                    Severity
+                    <span class="form-required">*</span>
+                    <span class="form-hint">Match the operational impact, not just the category. Compliance is almost always info.</span>
+                  </label>
+                  <div class="radio-group radio-group-tight">
+                    <label><input type="radio" name="severity" value="info" checked> Info</label>
+                    <label><input type="radio" name="severity" value="low"> Low</label>
+                    <label><input type="radio" name="severity" value="medium"> Medium</label>
+                    <label><input type="radio" name="severity" value="high"> High</label>
+                    <label><input type="radio" name="severity" value="critical"> Critical</label>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <label class="form-label" for="submit-comment">
+                    Comment
+                    <span class="form-required">*</span>
+                    <span class="form-hint">What this app does and why it landed in the chosen category. Aim for 1-3 sentences with concrete details.</span>
+                  </label>
+                  <textarea id="submit-comment" name="comment" rows="4" spellcheck="true"></textarea>
+                  <div class="form-error" id="submit-comment-error" hidden></div>
+                </div>
+
+                <div class="form-row">
+                  <label class="form-label" for="submit-references">
+                    Reference URL(s)
+                    <span class="form-required">*</span>
+                    <span class="form-hint">Vendor blog, CVE, security advisory, etc. One per line. Public sources strongly preferred over internal links.</span>
+                  </label>
+                  <textarea id="submit-references" name="references" rows="3" spellcheck="false" placeholder="https://example.com/blog/post-about-this-app"></textarea>
+                  <div class="form-error" id="submit-references-error" hidden></div>
+                </div>
+
+                <div class="form-row">
+                  <label class="form-label" for="submit-source">
+                    Source <span class="form-hint">(optional)</span>
+                  </label>
+                  <select id="submit-source" name="source">
+                    <option value="">- select -</option>
+                    <option value="first-hand">First-hand observation in our tenant</option>
+                    <option value="vendor-disclosure">Vendor disclosure or security blog</option>
+                    <option value="researcher">Independent security researcher</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-row">
+                  <label class="form-label" for="submit-credit">
+                    Credit (optional)
+                    <span class="form-hint">Name or handle to credit in the catalog reference if accepted. Leave blank to stay anonymous.</span>
+                  </label>
+                  <input type="text" id="submit-credit" name="credit" spellcheck="false" autocomplete="off" placeholder="@yourname or your.email@example.com">
+                </div>
+
+                <div class="form-actions">
+                  <button type="button" id="submit-btn-issue" class="btn btn-primary">Open as GitHub issue</button>
+                  <button type="button" id="submit-btn-csv" class="btn">Download as CSV</button>
+                  <button type="button" id="submit-btn-mailto" class="btn">Send by email</button>
+                </div>
+
+                <div id="submit-status" class="submit-status" hidden></div>
+              </form>
+            </div>
+
+            <div class="submit-side-card">
+              <h3>What happens next</h3>
+              <ol class="submit-steps">
+                <li><strong>You submit.</strong> The GitHub-issue button opens an issue in <a href="https://github.com/oauthsentry/oauthsentry.github.io/issues" target="_blank" rel="noopener">our repo</a> with all fields prefilled - one click to send it. The CSV button gives you a downloadable file you can attach to your own PR. The email button opens your default mail client with the same content.</li>
+                <li><strong>Maintainers triage.</strong> A label of <code>submission</code> goes on the issue automatically; the queue is reviewed weekly. Submissions with strong public references are merged faster than ones without.</li>
+                <li><strong>Catalog updates.</strong> Accepted entries land in the per-service CSVs in <code>data/{entra,google,github}/</code> on the next build. The <a href="#/feeds" data-route="/feeds">changelog feed</a> announces them within 24 hours of merge.</li>
+              </ol>
+
+              <h3 style="margin-top: 24px;">Quality bar</h3>
+              <p>Submissions are accepted when they meet three tests:</p>
+              <ul class="submit-bar">
+                <li><strong>Verifiable</strong>: at least one public reference (security blog, CVE, advisory, news article) confirms the app id and the claim. First-hand audit-log observations are welcome but need a public corroborating source.</li>
+                <li><strong>Specific</strong>: the appid is real and unique, the comment names what the app actually does, and the severity matches the operational impact.</li>
+                <li><strong>Categorized correctly</strong>: <em>malicious</em> means actively used in attacks (vendor-impersonation, phishing kit, stealer, vendor-side breach with confirmed misuse); <em>risky</em> means legitimate but commonly abused or has a high blast radius if compromised; <em>compliance</em> means a known-good first-party or major-vendor app worth pre-vetting in the consent flow.</li>
+              </ul>
+
+              <h3 style="margin-top: 24px;">Privacy</h3>
+              <p>The form runs entirely in your browser. Field contents never leave your device until you click one of the three submit buttons - and even then, what gets sent is whatever the chosen channel does (GitHub issue, file download, mailto). OAuthSentry has no backend; there's nothing to leak.</p>
+            </div>
           </div>
         </div>
       </div>

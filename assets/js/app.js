@@ -82,7 +82,7 @@ function setActiveTab(routePrefix) {
 }
 
 function showPage(pageId) {
-  ['page-search', 'page-investigation', 'page-feeds', 'page-triage', 'page-api', 'page-methodology'].forEach(id => {
+  ['page-search', 'page-investigation', 'page-feeds', 'page-triage', 'page-tokens', 'page-submit', 'page-api', 'page-methodology'].forEach(id => {
     const el = document.getElementById(id);
     if (el) el.hidden = (id !== pageId);
   });
@@ -123,6 +123,18 @@ function applyHash() {
   if (top === 'triage') {
     showPage('page-triage');
     setActiveTab('/triage');
+    closeDetail();
+    return;
+  }
+  if (top === 'tokens') {
+    showPage('page-tokens');
+    setActiveTab('/tokens');
+    closeDetail();
+    return;
+  }
+  if (top === 'submit') {
+    showPage('page-submit');
+    setActiveTab('/submit');
     closeDetail();
     return;
   }
@@ -692,6 +704,8 @@ function wireUi() {
 
 async function init() {
   wireUi();
+  submitInit();
+  tokensInit();
 
   try {
     const cfg = await loadSources();
@@ -720,6 +734,14 @@ async function init() {
 
     const loaded = await Promise.all(services.map(loadService));
     state.apps = loaded.flat();
+
+    // Build appid -> app index for fast lookup. Used by the token decoder
+    // to cross-reference appid claims against the catalog without a linear scan.
+    state.byId = {};
+    for (const a of state.apps) {
+      const id = (a.appid || '').trim().toLowerCase();
+      if (id) state.byId[id] = a;
+    }
 
     renderHeroStats();
     renderSourceFilter();
@@ -1115,4 +1137,789 @@ function flashButton(btn) {
   setTimeout(() => { btn.textContent = original; btn.disabled = false; }, 1200);
 }
 
+// ============================================================
+// Submit page - form validation + three-channel submission
+// (GitHub issue, CSV download, mailto)
+// ============================================================
+
+const SUBMIT_REPO = 'oauthsentry/oauthsentry.github.io';
+const SUBMIT_EMAIL = 'submissions@oauthsentry.github.io';
+
+const APPID_PATTERNS = {
+  entra:  /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i,
+  google: /^\d{6,}-[a-z0-9]+\.apps\.googleusercontent\.com$/i,
+  // GitHub OAuth apps are matched by name, not numeric id - any non-empty
+  // string up to 100 chars is acceptable as a submission.
+  github: /^.{1,100}$/,
+};
+const APPID_HINTS = {
+  entra:  '36-char GUID like c5393580-f805-4401-95e8-94b7a6ef2fc2',
+  google: 'Format: digits-alphanum.apps.googleusercontent.com',
+  github: 'OAuth Application Name as shown in audit logs (e.g. "Heroku Dashboard")',
+};
+
+function submitGetForm() {
+  return {
+    service:    document.querySelector('#submit-form input[name="service"]:checked')?.value || 'entra',
+    appid:      (document.getElementById('submit-appid')?.value || '').trim(),
+    appname:    (document.getElementById('submit-appname')?.value || '').trim(),
+    category:   document.querySelector('#submit-form input[name="category"]:checked')?.value || '',
+    severity:   document.querySelector('#submit-form input[name="severity"]:checked')?.value || 'info',
+    comment:    (document.getElementById('submit-comment')?.value || '').trim(),
+    references: (document.getElementById('submit-references')?.value || '').trim(),
+    source:     document.getElementById('submit-source')?.value || '',
+    credit:     (document.getElementById('submit-credit')?.value || '').trim(),
+  };
+}
+
+function submitValidate(data) {
+  const errors = {};
+
+  if (!data.appid) {
+    errors.appid = 'App ID is required.';
+  } else {
+    const re = APPID_PATTERNS[data.service];
+    if (re && !re.test(data.appid)) {
+      errors.appid = `Doesn\u2019t match the expected ${data.service} format. ${APPID_HINTS[data.service]}`;
+    }
+  }
+
+  if (!data.appname) {
+    errors.appname = 'App name is required.';
+  }
+
+  if (!data.category) {
+    errors.category = 'Category is required.';
+  }
+
+  // Sanity: malicious + info severity is almost always wrong; nudge the user
+  if (data.category === 'malicious' && data.severity === 'info') {
+    errors.severity = 'Malicious entries should not be info severity. Pick at least medium - critical is most common.';
+  }
+  if (data.category === 'compliance' && (data.severity === 'high' || data.severity === 'critical')) {
+    errors.severity = 'Compliance entries are pre-vetted legitimate apps; severity is almost always info or low.';
+  }
+
+  if (!data.comment || data.comment.length < 30) {
+    errors.comment = 'Comment must be at least 30 characters and explain why the app is in this category.';
+  }
+
+  if (!data.references) {
+    errors.references = 'At least one public reference URL is required.';
+  } else {
+    const lines = data.references.split(/\r?\n/).map(s => s.trim()).filter(Boolean);
+    const bad = lines.filter(l => !/^https?:\/\/.+/.test(l));
+    if (bad.length > 0) {
+      errors.references = `${bad.length} entry${bad.length === 1 ? '' : 'ies'} doesn\u2019t look like a URL. Each line must start with http:// or https://`;
+    }
+  }
+
+  return errors;
+}
+
+function submitShowErrors(errors) {
+  for (const field of ['appid', 'appname', 'category', 'severity', 'comment', 'references']) {
+    const el = document.getElementById(`submit-${field}-error`);
+    if (!el) continue;
+    if (errors[field]) {
+      el.textContent = errors[field];
+      el.hidden = false;
+    } else {
+      el.textContent = '';
+      el.hidden = true;
+    }
+  }
+  // Surface category/severity errors in the comment-error slot since those
+  // radio groups don't have their own error placeholder
+  if (errors.category || errors.severity) {
+    const status = document.getElementById('submit-status');
+    if (status) {
+      status.className = 'submit-status error';
+      status.textContent = errors.category || errors.severity;
+      status.hidden = false;
+    }
+  } else {
+    const status = document.getElementById('submit-status');
+    if (status && status.classList.contains('error')) {
+      status.hidden = true;
+    }
+  }
+}
+
+function submitBuildIssueBody(data) {
+  const refs = data.references.split(/\r?\n/).map(s => s.trim()).filter(Boolean);
+  const lines = [
+    '## OAuth catalog submission',
+    '',
+    '**Service:** ' + data.service,
+    '**App ID:** `' + data.appid + '`',
+    '**App name:** ' + data.appname,
+    '**Category:** ' + data.category,
+    '**Severity:** ' + data.severity,
+    '',
+    '### Comment',
+    data.comment,
+    '',
+    '### References',
+    ...refs.map(r => '- ' + r),
+    '',
+  ];
+  if (data.source)  lines.push('**Source:** ' + data.source);
+  if (data.credit)  lines.push('**Credit:** ' + data.credit);
+  lines.push('');
+  lines.push('---');
+  lines.push('Submitted via the OAuthSentry submission form.');
+  return lines.join('\n');
+}
+
+function submitBuildIssueUrl(data) {
+  const title = `[submission] ${data.category}: ${data.appname || data.appid}`;
+  const body = submitBuildIssueBody(data);
+  const url = `https://github.com/${SUBMIT_REPO}/issues/new?` +
+    `title=${encodeURIComponent(title)}` +
+    `&body=${encodeURIComponent(body)}` +
+    `&labels=${encodeURIComponent('submission')}`;
+  return url;
+}
+
+function submitBuildCsvRow(data) {
+  // CSV-escape: wrap in quotes, double internal quotes
+  const esc = (s) => {
+    const v = String(s || '');
+    if (/[",\n]/.test(v)) return '"' + v.replace(/"/g, '""') + '"';
+    return v;
+  };
+  // Match the catalog schema: appname, appid, metadata_category,
+  // metadata_severity, metadata_comment, metadata_reference
+  const refs = data.references.split(/\r?\n/).map(s => s.trim()).filter(Boolean).join(' | ');
+  return [
+    esc(data.appname),
+    esc(data.appid),
+    esc(data.category),
+    esc(data.severity),
+    esc(data.comment),
+    esc(refs),
+  ].join(',');
+}
+
+function submitDownloadCsv(data) {
+  const header = 'appname,appid,metadata_category,metadata_severity,metadata_comment,metadata_reference';
+  const row = submitBuildCsvRow(data);
+  const content = header + '\n' + row + '\n';
+  const blob = new Blob([content], { type: 'text/csv;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const safeId = (data.appid || 'submission').replace(/[^a-z0-9-]/gi, '_').slice(0, 40);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `oauthsentry-submission-${safeId}.csv`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+function submitMailto(data) {
+  const subject = `[submission] ${data.category}: ${data.appname || data.appid}`;
+  const body = submitBuildIssueBody(data);
+  // mailto has practical length limits around 2000 chars across browsers/clients;
+  // truncate the body if needed and tell the user.
+  const MAX = 1800;
+  let truncated = body;
+  let note = '';
+  if (body.length > MAX) {
+    truncated = body.slice(0, MAX) + '\n\n[truncated for mailto length limit; please paste the full content into the email]';
+    note = ' (body truncated due to mailto length limits - please paste the full submission into the email body manually)';
+  }
+  const url = `mailto:${SUBMIT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(truncated)}`;
+  window.location.href = url;
+  return note;
+}
+
+function submitStatus(msg, kind) {
+  const status = document.getElementById('submit-status');
+  if (!status) return;
+  status.className = 'submit-status ' + (kind || '');
+  status.textContent = msg;
+  status.hidden = !msg;
+}
+
+function submitInit() {
+  // Update the appid hint when service changes
+  document.querySelectorAll('#submit-form input[name="service"]').forEach(radio => {
+    radio.addEventListener('change', () => {
+      const v = document.querySelector('#submit-form input[name="service"]:checked')?.value || 'entra';
+      const hint = document.getElementById('submit-appid-hint');
+      if (hint) hint.textContent = APPID_HINTS[v] || '';
+    });
+  });
+
+  const handleSubmit = (channel) => {
+    const data = submitGetForm();
+    const errors = submitValidate(data);
+    submitShowErrors(errors);
+    if (Object.keys(errors).length > 0) {
+      submitStatus('Please fix the validation errors above.', 'error');
+      return;
+    }
+    submitStatus('', '');
+
+    if (channel === 'issue') {
+      const url = submitBuildIssueUrl(data);
+      window.open(url, '_blank', 'noopener');
+      submitStatus('Opened GitHub in a new tab. Review the prefilled issue and click "Submit new issue" to send.', 'success');
+    } else if (channel === 'csv') {
+      submitDownloadCsv(data);
+      submitStatus('CSV downloaded. Append the row to the appropriate file in data/{entra,google,github}/ and open a pull request.', 'success');
+    } else if (channel === 'mailto') {
+      const note = submitMailto(data);
+      submitStatus('Opening your default email client...' + note, 'success');
+    }
+  };
+
+  document.getElementById('submit-btn-issue')?.addEventListener('click', () => handleSubmit('issue'));
+  document.getElementById('submit-btn-csv')?.addEventListener('click', () => handleSubmit('csv'));
+  document.getElementById('submit-btn-mailto')?.addEventListener('click', () => handleSubmit('mailto'));
+}
+
+// Hook submit init into the existing init flow - see init() above
 document.addEventListener('DOMContentLoaded', init);
+
+// ============================================================
+// Token decoder - parse + annotate Microsoft Entra JWTs
+// ============================================================
+
+const TOKENS = {
+  widsRef: null,        // entra_role_wids.json
+  appsRef: null,        // entra_known_apps.json
+  claimsRef: null,      // entra_claims_reference.json
+  scopesRef: null,      // entra_high_risk_scopes.json
+  loaded: false,
+};
+
+async function tokensLoadRefs() {
+  if (TOKENS.loaded) return;
+  try {
+    const [wids, apps, claims, scopes] = await Promise.all([
+      fetch('assets/data/entra_role_wids.json').then(r => r.json()),
+      fetch('assets/data/entra_known_apps.json').then(r => r.json()),
+      fetch('assets/data/entra_claims_reference.json').then(r => r.json()),
+      fetch('assets/data/entra_high_risk_scopes.json').then(r => r.json()),
+    ]);
+    TOKENS.widsRef = wids;
+    TOKENS.appsRef = apps;
+    TOKENS.claimsRef = claims;
+    TOKENS.scopesRef = scopes;
+    TOKENS.loaded = true;
+  } catch (e) {
+    console.error('Failed to load decoder reference data:', e);
+  }
+}
+
+// Base64URL -> string
+function tokensB64UrlDecode(seg) {
+  // Convert base64url to base64 + pad
+  let s = seg.replace(/-/g, '+').replace(/_/g, '/');
+  while (s.length % 4) s += '=';
+  // Use atob, then handle UTF-8
+  try {
+    const binary = atob(s);
+    // Convert binary string to UTF-8
+    const bytes = new Uint8Array(binary.length);
+    for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+    return new TextDecoder('utf-8').decode(bytes);
+  } catch (e) {
+    throw new Error('Base64 decode failed: ' + e.message);
+  }
+}
+
+function tokensParseInput(raw) {
+  let s = (raw || '').trim();
+  if (!s) throw new Error('Empty input. Paste a JWT in the box above.');
+  // Strip 'Authorization: Bearer ' or 'Bearer ' prefix
+  s = s.replace(/^(Authorization:\s*)?Bearer\s+/i, '').trim();
+  // Strip surrounding quotes (when copied from JSON or .NET output)
+  s = s.replace(/^["'`]+|["'`]+$/g, '').trim();
+  // Drop trailing semicolons / commas (when copied from a header line)
+  s = s.replace(/[;,]+$/g, '').trim();
+  // Drop any whitespace inside (some copies wrap across lines)
+  s = s.replace(/\s/g, '');
+  const parts = s.split('.');
+  if (parts.length < 2) {
+    throw new Error('Not a JWT. Expected three dot-separated segments (header.payload.signature). Got ' + parts.length + ' segment(s).');
+  }
+  if (parts.length > 5) {
+    throw new Error('Too many segments (' + parts.length + '). A JWT has 3; a JWE (encrypted token) has 5. Either way, this looks malformed.');
+  }
+  // JWE has 5 segments and uses different header alg/enc. We don't support JWE decryption.
+  if (parts.length === 5) {
+    throw new Error('This looks like a JWE (encrypted token, 5 segments). The decoder only handles JWS (3 segments). JWEs require the recipient private key to decrypt - decrypt elsewhere then paste the inner JWT.');
+  }
+  let headerStr, payloadStr;
+  try {
+    headerStr = tokensB64UrlDecode(parts[0]);
+  } catch (e) {
+    throw new Error('Header segment (segment 1) is not valid base64url. ' + e.message);
+  }
+  try {
+    payloadStr = tokensB64UrlDecode(parts[1]);
+  } catch (e) {
+    throw new Error('Payload segment (segment 2) is not valid base64url. ' + e.message);
+  }
+  let header, payload;
+  try { header = JSON.parse(headerStr); }
+  catch (e) { throw new Error('Header is not valid JSON: ' + e.message); }
+  try { payload = JSON.parse(payloadStr); }
+  catch (e) { throw new Error('Payload is not valid JSON: ' + e.message); }
+  return { header, payload, raw: s, segments: parts.length };
+}
+
+function tokensFmtTs(ts) {
+  if (typeof ts !== 'number' || !isFinite(ts)) return String(ts);
+  if (ts < 1000000000) return String(ts) + ' (not a unix timestamp?)';
+  const d = new Date(ts * 1000);
+  return d.toISOString().replace('T', ' ').replace('.000Z', 'Z');
+}
+function tokensFmtDuration(seconds) {
+  const abs = Math.abs(seconds);
+  if (abs < 60)         return seconds + 's';
+  if (abs < 3600)       return Math.round(seconds / 60) + 'm';
+  if (abs < 86400)      return (seconds / 3600).toFixed(1) + 'h';
+  return (seconds / 86400).toFixed(1) + 'd';
+}
+
+// Returns an annotation object for one claim:
+// { value, displayValue, severity: ok|info|warn|critical, note, html (optional) }
+function tokensAnnotateClaim(name, value, payload) {
+  const ref = TOKENS.claimsRef[name];
+  const baseDescription = ref?.description || null;
+  const defenderNote    = ref?.defender_note || null;
+
+  const annot = {
+    name,
+    value,
+    displayValue: typeof value === 'object' ? JSON.stringify(value) : String(value),
+    severity: 'ok',
+    description: baseDescription,
+    defenderNote: defenderNote,
+    extras: [],   // additional bullets / cross-references
+  };
+
+  // Per-claim deep enrichment
+  switch (name) {
+    case 'appid':
+    case 'azp': {
+      const v = String(value || '').toLowerCase();
+      const known   = TOKENS.appsRef[v];
+      const catalog = state.byId && state.byId[v];
+
+      // Priority order:
+      //   1. OAuthSentry catalog (curated, daily-refreshed) - if present, this is the
+      //      authoritative source. Show its name + category + severity.
+      //   2. Well-known first-party reference (FOCI list + adjacent) - shown as
+      //      supplementary info even when catalog matches (FOCI flag is useful).
+      //   3. Neither - flag as unknown for investigation.
+      if (catalog) {
+        const cat = catalog.metadata_category || 'unknown';
+        const sev = catalog.metadata_severity || 'info';
+        const appName = catalog.appname || v;
+        if (cat === 'malicious') {
+          annot.severity = 'critical';
+          annot.extras.push(`<strong style="color: var(--accent, #c44);">OAuthSentry catalog: <em>${escapeHtml(appName)}</em> &mdash; MALICIOUS (${escapeHtml(sev)})</strong>`);
+        } else if (cat === 'risky') {
+          annot.severity = annot.severity === 'critical' ? 'critical' : 'warn';
+          annot.extras.push(`<strong>OAuthSentry catalog: <em>${escapeHtml(appName)}</em> &mdash; risky (${escapeHtml(sev)})</strong>`);
+        } else if (cat === 'compliance') {
+          annot.extras.push(`OAuthSentry catalog: <em>${escapeHtml(appName)}</em> &mdash; compliance / pre-vetted (${escapeHtml(sev)})`);
+        } else {
+          annot.extras.push(`OAuthSentry catalog: <em>${escapeHtml(appName)}</em> (${escapeHtml(cat)}, ${escapeHtml(sev)})`);
+        }
+        if (catalog.metadata_comment) {
+          annot.extras.push(escapeHtml(String(catalog.metadata_comment).slice(0, 240)));
+        }
+        // Add the FOCI flag as supplementary if present in known-apps too
+        if (known?.foci) {
+          annot.extras.push('<strong>FOCI client</strong> &mdash; refresh tokens are family refresh tokens (FRTs) redeemable across all 11+ FOCI clients. See <a href="#/investigation/tradecraft" data-route="/investigation">Tradecraft tab</a>.');
+          if (annot.severity === 'ok') annot.severity = 'warn';
+        }
+      } else if (known) {
+        // Known Microsoft first-party but not in OAuthSentry catalog - typical for
+        // resource appids and the few first-party clients we curate explicitly.
+        annot.extras.push(`<strong>${escapeHtml(known.name)}</strong> (${escapeHtml(known.publisher)})${known.foci ? ' &mdash; <strong>FOCI client</strong>' : ''}`);
+        annot.extras.push(escapeHtml(known.notes));
+        if (known.foci) annot.severity = 'warn';
+      } else {
+        annot.severity = 'info';
+        annot.extras.push('Not in OAuthSentry catalog and not a known Microsoft first-party client. If unfamiliar, investigate the consent grant that created it. Search this id at <a href="#/search?q=' + encodeURIComponent(v) + '" data-route="/search">/search</a> or check the <a href="#/submit" data-route="/submit">Submit form</a> if you want to propose adding it to the catalog.');
+      }
+      break;
+    }
+    case 'wids': {
+      const arr = Array.isArray(value) ? value : (value ? [value] : []);
+      const decoded = [];
+      let hasPriv = false;
+      let hasNonDefault = false;
+      for (const w of arr) {
+        const wl = String(w).toLowerCase();
+        const role = TOKENS.widsRef[wl];
+        if (role) {
+          if (role.privileged) hasPriv = true;
+          if (!role.synthetic) hasNonDefault = true;
+          decoded.push(`<code>${escapeHtml(wl.slice(0, 8))}...</code> &rarr; <strong>${escapeHtml(role.name)}</strong>${role.privileged ? ' <em style="color: var(--accent);">[privileged]</em>' : ''}`);
+        } else {
+          decoded.push(`<code>${escapeHtml(wl)}</code> &rarr; (unknown role - may be custom or new built-in)`);
+        }
+      }
+      if (decoded.length) annot.extras.push(...decoded);
+      if (hasPriv) {
+        annot.severity = 'critical';
+        annot.extras.push('<strong>Token holder has at least one privileged Entra role.</strong> A stolen token from this user is high-impact - revoke immediately and force re-authentication.');
+      } else if (hasNonDefault) {
+        annot.severity = 'warn';
+      }
+      break;
+    }
+    case 'scp': {
+      const scopes = String(value || '').split(/\s+/).filter(Boolean);
+      let maxRisk = 'low';
+      const flagged = [];
+      for (const s of scopes) {
+        const sl = s.toLowerCase();
+        const sref = TOKENS.scopesRef[sl];
+        if (sref) {
+          flagged.push(`<code>${escapeHtml(s)}</code> &mdash; <strong>${escapeHtml(sref.risk)}</strong>: ${escapeHtml(sref.note)}`);
+          const risk = sref.risk;
+          if (risk === 'critical') maxRisk = 'critical';
+          else if (risk === 'high' && maxRisk !== 'critical') maxRisk = 'high';
+          else if (risk === 'medium' && maxRisk !== 'critical' && maxRisk !== 'high') maxRisk = 'medium';
+        }
+      }
+      annot.extras.push(`Scope count: <strong>${scopes.length}</strong>`);
+      if (scopes.length > 20) {
+        annot.extras.push('<strong>&gt;20 scopes is anomalous</strong> on a delegated FOCI token. See OAuthSentry Detection 10.');
+        annot.severity = 'warn';
+      }
+      if (flagged.length) annot.extras.push(...flagged);
+      if (maxRisk === 'critical') annot.severity = 'critical';
+      else if (maxRisk === 'high' && annot.severity === 'ok') annot.severity = 'warn';
+      annot.extras.push('Cross-reference each scope at <a href="https://graphpermissions.merill.net/" target="_blank" rel="noopener">graphpermissions.merill.net</a> for exact endpoint coverage.');
+      break;
+    }
+    case 'roles': {
+      const roles = String(value || '').split(/\s+/).filter(Boolean);
+      const flagged = [];
+      let maxRisk = 'low';
+      for (const r of roles) {
+        const rl = r.toLowerCase();
+        const sref = TOKENS.scopesRef[rl];
+        if (sref) {
+          flagged.push(`<code>${escapeHtml(r)}</code> &mdash; <strong>${escapeHtml(sref.risk)}</strong>: ${escapeHtml(sref.note)}`);
+          if (sref.risk === 'critical') maxRisk = 'critical';
+          else if (sref.risk === 'high' && maxRisk !== 'critical') maxRisk = 'high';
+        }
+      }
+      annot.extras.push(`Application permission count: <strong>${roles.length}</strong>`);
+      annot.extras.push('On <strong>app-only tokens</strong>, these are the application permissions the SP can exercise (no user gating). On delegated tokens, these are app-role assignments.');
+      if (flagged.length) annot.extras.push(...flagged);
+      if (maxRisk === 'critical') annot.severity = 'critical';
+      else if (maxRisk === 'high' && annot.severity === 'ok') annot.severity = 'warn';
+      break;
+    }
+    case 'idtyp': {
+      const v = String(value).toLowerCase();
+      if (v === 'app') {
+        annot.extras.push('<strong>App-only token</strong>. The principal is the service principal, not a user. Pivot on <code>servicePrincipalId</code>, not <code>userId</code>.');
+      } else if (v === 'user') {
+        annot.extras.push('<strong>Delegated token</strong>. Acting on behalf of a user. Pivot on <code>userId</code>.');
+      } else if (v === 'device') {
+        annot.extras.push('<strong>Device token</strong>. Issued to a registered device.');
+      }
+      break;
+    }
+    case 'iat':
+    case 'nbf':
+    case 'exp': {
+      annot.displayValue = `${value} &mdash; ${tokensFmtTs(value)}`;
+      if (name === 'exp' && payload.iat) {
+        const lifetime = value - payload.iat;
+        annot.extras.push(`Token lifetime: <strong>${tokensFmtDuration(lifetime)}</strong>`);
+        if (lifetime > 86400 - 3600) {
+          annot.severity = 'critical';
+          annot.extras.push('<strong>Lifetime &gt; 23h</strong> - at the Configurable Token Lifetime (CTL) maximum. This significantly extends post-compromise exposure. See Hardening Control 6.');
+        } else if (lifetime > 7200) {
+          annot.severity = 'warn';
+          annot.extras.push('<strong>Lifetime &gt; 2h</strong> - indicates a CTL policy. If this is a non-CAE token (no <code>xms_cc:cp1</code>) the long lifetime is worth a documented business reason.');
+        } else if (lifetime > 3600 + 1800) {
+          annot.extras.push('Lifetime is in the typical CAE-aware range (60-90 min for non-CAE; 24-28h for CAE). Check <code>xms_cc</code> for CAE capability.');
+        }
+      }
+      if (name === 'iat') {
+        const ageNow = Math.floor(Date.now()/1000) - value;
+        if (ageNow > 0) annot.extras.push(`Issued <strong>${tokensFmtDuration(ageNow)}</strong> ago.`);
+      }
+      if (name === 'exp') {
+        const remaining = value - Math.floor(Date.now()/1000);
+        if (remaining > 0) annot.extras.push(`Expires in <strong>${tokensFmtDuration(remaining)}</strong>.`);
+        else annot.extras.push(`<strong>EXPIRED</strong> ${tokensFmtDuration(-remaining)} ago.`);
+      }
+      break;
+    }
+    case 'amr': {
+      const arr = Array.isArray(value) ? value : [value];
+      const hasMfa = arr.some(a => a === 'mfa' || a === 'ngcmfa' || a === 'rsa');
+      const hasPwd = arr.includes('pwd');
+      if (!hasMfa && hasPwd) {
+        annot.severity = 'warn';
+        annot.extras.push('<strong>Password-only authentication, no MFA factor</strong>. Worth investigating whether the user should have been prompted for MFA.');
+      }
+      if (arr.includes('fed')) annot.extras.push('Federated authentication assertion - check <code>identityProvider</code> for the source IdP.');
+      break;
+    }
+    case 'acr': {
+      if (String(value) === '0') {
+        annot.severity = 'warn';
+        annot.extras.push('<strong>acr=0</strong> - no MFA-equivalent satisfied.');
+      } else if (String(value) === '1') {
+        annot.extras.push('acr=1 - MFA satisfied.');
+      }
+      break;
+    }
+    case 'iss': {
+      const v = String(value);
+      if (!/^https:\/\/(sts\.windows\.net|login\.microsoftonline\.com|login\.partner\.microsoftonline\.cn|login\.microsoftonline\.us|.*\.ciamlogin\.com)/i.test(v)) {
+        annot.severity = 'warn';
+        annot.extras.push('<strong>Unusual issuer</strong> - not a standard Entra STS endpoint. Verify the issuer is expected for this tenant (B2C or external configurations may use ciamlogin.com).');
+      }
+      break;
+    }
+    case 'xms_cc': {
+      const arr = Array.isArray(value) ? value : [value];
+      if (arr.includes('cp1')) {
+        annot.extras.push('<strong>CAE-aware client</strong> (cp1). This token gets the extended 24-28h CAE lifetime, but Continuous Access Evaluation can revoke it in near-real-time.');
+      }
+      break;
+    }
+    case 'acct': {
+      if (String(value) === '1') {
+        annot.severity = 'warn';
+        annot.extras.push('<strong>Guest account</strong> (acct=1) acting against this tenant. Verify the guest is from an expected B2B partner.');
+      }
+      break;
+    }
+    case 'tid': {
+      annot.extras.push('Cross-check this tid against your tenant id and your B2B partner list.');
+      break;
+    }
+    case 'oid': {
+      annot.extras.push('THE primary IR pivot. Use this to find every Graph call and audit-log event made by this principal.');
+      break;
+    }
+    case 'uti': {
+      annot.extras.push(`Pivot SPL: <code>\`oauthsentry_aad_signin\` uniqueTokenIdentifier="${escapeHtml(String(value))}"</code> &mdash; resolves the originating sign-in. Then <code>\`oauthsentry_graph_activity\` 'properties.signInActivityId'="${escapeHtml(String(value))}"</code> for every Graph call by this token.`);
+      break;
+    }
+    default: {
+      // No special enrichment - just description + defender_note from the reference
+    }
+  }
+
+  return annot;
+}
+
+function tokensRenderClaim(annot) {
+  const sevClass = `claim-sev-${annot.severity}`;
+  const extras = annot.extras.length
+    ? `<ul class="claim-extras">${annot.extras.map(e => `<li>${e}</li>`).join('')}</ul>`
+    : '';
+  return `
+    <div class="token-claim ${sevClass}">
+      <div class="claim-key"><code>${escapeHtml(annot.name)}</code></div>
+      <div class="claim-body">
+        <div class="claim-value">${annot.displayValue}</div>
+        ${annot.description ? `<div class="claim-desc">${escapeHtml(annot.description)}</div>` : ''}
+        ${annot.defenderNote ? `<div class="claim-note"><strong>Defender:</strong> ${escapeHtml(annot.defenderNote)}</div>` : ''}
+        ${extras}
+      </div>
+    </div>
+  `;
+}
+
+function escapeHtml(s) {
+  return String(s)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+}
+
+function tokensRenderSummary(decoded) {
+  const { payload } = decoded;
+  const flow = (payload.idtyp || '').toLowerCase();
+  let flowLabel = flow === 'app' ? 'App-only' : (flow === 'user' ? 'Delegated' : (flow === 'device' ? 'Device' : 'Unknown flow'));
+  // App lookup - catalog wins over the FOCI/known list (catalog has up-to-date names + risk)
+  const appid = (payload.appid || payload.azp || '').toLowerCase();
+  const known = TOKENS.appsRef[appid];
+  const catalog = state.byId && state.byId[appid];
+  const appLabel = (catalog && catalog.appname) || (known && known.name) || (appid || '(no appid)');
+  const isFoci = known?.foci;
+
+  // Detect privileged-role holder by checking wids against the role table
+  let hasPriv = false;
+  const wids = Array.isArray(payload.wids) ? payload.wids : (payload.wids ? [payload.wids] : []);
+  for (const w of wids) {
+    const role = TOKENS.widsRef[String(w).toLowerCase()];
+    if (role?.privileged) { hasPriv = true; break; }
+  }
+
+  // Lifetime + expiry
+  let lifetimeLabel = '';
+  let isExpired = false;
+  let isLongLifetime = false;
+  if (payload.iat && payload.exp) {
+    const lifetime = payload.exp - payload.iat;
+    lifetimeLabel = tokensFmtDuration(lifetime);
+    isLongLifetime = lifetime > 86400 - 3600;  // >23h
+  }
+  if (payload.exp) {
+    isExpired = (payload.exp < Math.floor(Date.now()/1000));
+  }
+
+  // Severity color
+  let badgeClass = 'badge-info';
+  if (catalog?.metadata_category === 'malicious') badgeClass = 'badge-critical';
+  else if (hasPriv) badgeClass = 'badge-critical';
+  else if (catalog?.metadata_category === 'risky') badgeClass = 'badge-warn';
+  else if (isFoci || isLongLifetime) badgeClass = 'badge-warn';
+
+  // Trim issuer URL display - cut after the tenant guid for readability
+  let issuerDisplay = '';
+  if (payload.iss) {
+    const issStr = String(payload.iss);
+    issuerDisplay = issStr.length > 60 ? issStr.slice(0, 57) + '...' : issStr;
+  }
+
+  return `
+    <div class="tokens-summary-row">
+      <span class="tokens-badge ${badgeClass}">${flowLabel}</span>
+      ${hasPriv ? '<span class="tokens-badge badge-critical">Privileged</span>' : ''}
+      ${isExpired ? '<span class="tokens-badge badge-info">Expired</span>' : ''}
+      <span><strong>App:</strong> ${escapeHtml(appLabel)}${isFoci ? ' <em>(FOCI)</em>' : ''}</span>
+      ${payload.upn ? `<span><strong>User:</strong> ${escapeHtml(payload.upn)}</span>` : ''}
+      ${lifetimeLabel ? `<span><strong>Lifetime:</strong> ${lifetimeLabel}</span>` : ''}
+      ${payload.aud ? `<span><strong>Audience:</strong> ${escapeHtml(String(payload.aud))}</span>` : ''}
+      ${issuerDisplay ? `<span><strong>Issuer:</strong> ${escapeHtml(issuerDisplay)}</span>` : ''}
+    </div>
+  `;
+}
+
+function tokensRenderActionPanel(decoded) {
+  const { payload } = decoded;
+  const items = [];
+  if (payload.uti) {
+    items.push(`<strong>Find every Graph call by this token (uti pivot)</strong><br><code class="action-spl">\`oauthsentry_graph_activity\` 'properties.signInActivityId'="${escapeHtml(String(payload.uti))}"</code>`);
+    items.push(`<strong>Find the originating sign-in</strong><br><code class="action-spl">\`oauthsentry_aad_signin\` uniqueTokenIdentifier="${escapeHtml(String(payload.uti))}"</code>`);
+  }
+  if (payload.sid) {
+    items.push(`<strong>Find every M365 audit event in this session</strong><br><code class="action-spl">\`oauthsentry_o365_audit\` 'AppAccessContext.AADSessionId'="${escapeHtml(String(payload.sid))}"</code>`);
+  }
+  if (payload.oid) {
+    items.push(`<strong>Resolve user/SP via Detection 13 directory lookup</strong><br><code class="action-spl">| lookup oauthsentry_user_directory.csv user_id as "${escapeHtml(String(payload.oid).toLowerCase())}" OUTPUT user_email, user_display_name, user_jobtitle</code>`);
+  }
+  const appid = (payload.appid || payload.azp || '').toLowerCase();
+  if (appid) {
+    items.push(`<strong>Investigate this app id</strong><br>Search the OAuthSentry catalog: <a href="#/search?q=${encodeURIComponent(appid)}" data-route="/search">${escapeHtml(appid)}</a>`);
+  }
+  // FOCI-specific guidance
+  if (TOKENS.appsRef[appid]?.foci) {
+    items.push(`<strong>FOCI client detected</strong><br>Refresh tokens issued to this app are family refresh tokens (FRTs). See the <a href="#/investigation/tradecraft" data-route="/investigation">Tradecraft tab</a> for the full FOCI list and the post-token-theft attack chain.`);
+  }
+  if (payload.deviceid) {
+    items.push(`<strong>This token came from a registered device</strong><br>Check the registration date - recently-registered devices are a UTA0355 / Storm-2372 PRT-phishing signature. See <a href="#/investigation/forensics" data-route="/investigation">Forensic Traces</a> section on token tracking.`);
+  }
+  // Privileged role -> escalation playbook
+  const wids = Array.isArray(payload.wids) ? payload.wids : (payload.wids ? [payload.wids] : []);
+  const hasPriv = wids.some(w => TOKENS.widsRef[String(w).toLowerCase()]?.privileged);
+  if (hasPriv) {
+    items.push(`<strong>Privileged role on this token</strong><br>Escalate immediately. See <a href="#/investigation/remediation" data-route="/investigation">Remediation</a> for the revoke-and-rotate playbook (revokeSignInSessions on the user, then rotate any client secrets and review consent grants).`);
+  }
+  if (!items.length) {
+    items.push('<em>No pivotable identifiers in this token.</em> The decoded payload above is informational only - check the appid against the catalog and the wids against the role table for context.');
+  }
+  return `<ol class="tokens-action-list">${items.map(i => `<li>${i}</li>`).join('')}</ol>`;
+}
+
+async function tokensDecode() {
+  await tokensLoadRefs();
+  const errEl = document.getElementById('tokens-error');
+  const out   = document.getElementById('tokens-output');
+  errEl.hidden = true;
+  errEl.textContent = '';
+
+  const raw = document.getElementById('tokens-input')?.value || '';
+  let decoded;
+  try {
+    decoded = tokensParseInput(raw);
+  } catch (e) {
+    errEl.textContent = e.message;
+    errEl.hidden = false;
+    out.hidden = true;
+    return;
+  }
+
+  // Render summary
+  document.getElementById('tokens-summary').innerHTML = tokensRenderSummary(decoded);
+
+  // Render header claims
+  const headerClaims = Object.entries(decoded.header)
+    .map(([k, v]) => tokensAnnotateClaim(k, v, decoded.header))
+    .map(tokensRenderClaim).join('');
+  document.getElementById('tokens-header-claims').innerHTML = headerClaims || '<em>(empty)</em>';
+
+  // Render payload claims, with a sensible ordering: identification > app > authorization > authn > lifetime > tracking > rest
+  const ORDER = ['idtyp', 'aud', 'iss', 'tid', 'oid', 'sub', 'upn', 'preferred_username', 'unique_name', 'name', 'email',
+    'appid', 'azp', 'app_displayname', 'appidacr', 'azpacr',
+    'scp', 'roles', 'wids', 'groups',
+    'amr', 'acr', 'auth_time', 'ipaddr', 'platf', 'deviceid', 'identityProvider',
+    'iat', 'nbf', 'exp',
+    'uti', 'sid', 'jti',
+    'tenant_region_scope', 'tenant_ctry', 'acct', 'ver',
+    'xms_cc', 'acrs',
+  ];
+  const seen = new Set();
+  const ordered = [];
+  for (const k of ORDER) {
+    if (k in decoded.payload) { ordered.push(k); seen.add(k); }
+  }
+  for (const k of Object.keys(decoded.payload)) {
+    if (!seen.has(k)) ordered.push(k);
+  }
+
+  const payloadClaims = ordered
+    .map(k => tokensAnnotateClaim(k, decoded.payload[k], decoded.payload))
+    .map(tokensRenderClaim).join('');
+  document.getElementById('tokens-payload-claims').innerHTML = payloadClaims;
+
+  // Action panel
+  document.getElementById('tokens-action-panel').innerHTML = tokensRenderActionPanel(decoded);
+
+  // Raw JSON
+  document.getElementById('tokens-raw-json').textContent =
+    'Header:\n' + JSON.stringify(decoded.header, null, 2) +
+    '\n\nPayload:\n' + JSON.stringify(decoded.payload, null, 2);
+
+  out.hidden = false;
+}
+
+function tokensInit() {
+  document.getElementById('tokens-decode-btn')?.addEventListener('click', tokensDecode);
+  document.getElementById('tokens-clear-btn')?.addEventListener('click', () => {
+    const el = document.getElementById('tokens-input');
+    if (el) el.value = '';
+    document.getElementById('tokens-output').hidden = true;
+    document.getElementById('tokens-error').hidden = true;
+  });
+  // Decode on Ctrl/Cmd-Enter when textarea has focus
+  document.getElementById('tokens-input')?.addEventListener('keydown', (e) => {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+      e.preventDefault();
+      tokensDecode();
+    }
+  });
+}

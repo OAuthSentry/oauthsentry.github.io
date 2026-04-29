@@ -1,0 +1,59 @@
+name: OAuth app submission
+description: Propose a new OAuth application for the OAuthSentry catalog
+title: "[submission] "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for proposing an addition to the OAuthSentry catalog! For the lowest-friction
+        submission path, use the [web form](https://oauthsentry.github.io/#/submit) which
+        validates field shapes and prefills this issue automatically. If you prefer to fill
+        the issue directly, use the fields below.
+  - type: dropdown
+    id: service
+    attributes:
+      label: Service
+      options: [entra, google, github]
+    validations: { required: true }
+  - type: input
+    id: appid
+    attributes:
+      label: App ID
+      description: GUID for Entra; client_id for Google; OAuth Application Name for GitHub
+    validations: { required: true }
+  - type: input
+    id: appname
+    attributes:
+      label: App name (as shown in audit log / consent prompt)
+    validations: { required: true }
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options: [malicious, risky, compliance]
+    validations: { required: true }
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options: [info, low, medium, high, critical]
+    validations: { required: true }
+  - type: textarea
+    id: comment
+    attributes:
+      label: Comment
+      description: 1-3 sentences explaining what the app does and why it's in this category
+    validations: { required: true }
+  - type: textarea
+    id: references
+    attributes:
+      label: Reference URL(s)
+      description: Public sources only. One URL per line.
+      placeholder: https://example.com/blog/post
+    validations: { required: true }
+  - type: input
+    id: credit
+    attributes:
+      label: Credit (optional)
+      description: Name or handle to credit if accepted

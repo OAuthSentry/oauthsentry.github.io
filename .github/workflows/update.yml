@@ -11,6 +11,7 @@ on:
       - 'data/sources.json'
       - 'data/**/oauth_apps.csv'
       - 'scripts/build_feeds.py'
+      - 'scripts/build_decoder_data.py'
       - '.github/workflows/update.yml'
 
 permissions:
@@ -72,12 +73,21 @@ jobs:
       - name: Rebuild feeds
         run: python3 scripts/build_feeds.py
 
+      - name: Refresh token-decoder reference data (wids + FOCI)
+        # Refreshes assets/data/entra_role_wids.json from MicrosoftDocs/entra-docs
+        # and assets/data/entra_known_apps.json from secureworks/family-of-client-ids-research.
+        # Hand-curated files (claims and high-risk scopes) are validated, not overwritten.
+        # Non-fatal: a 403 / outage on either upstream should not break the daily build of
+        # the OAuth catalog, which is the primary purpose of this workflow.
+        continue-on-error: true
+        run: python3 scripts/build_decoder_data.py
+
       - name: Commit & push if anything changed
         run: |
           git config user.name  "oauthsentry-bot"
           git config user.email "oauthsentry-bot@users.noreply.github.com"
           if [[ -n "$(git status --porcelain)" ]]; then
-            git add data feeds
+            git add data feeds assets/data
             git commit -m "chore: refresh upstream sources & rebuild feeds [skip ci]"
             git push
           else

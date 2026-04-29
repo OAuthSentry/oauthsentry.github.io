@@ -1,0 +1,272 @@
+{
+  "acct": {
+    "category": "metadata",
+    "defender_note": "acct=1 (guest) on a token operating against your tenant means a B2B guest is acting. Verify the guest is from an expected partner tenant.",
+    "description": "User account status. 0=member, 1=guest."
+  },
+  "acr": {
+    "category": "authn-context",
+    "defender_note": "acr=0 on a token granting access to sensitive resources is a red flag. acr=1 indicates MFA was performed.",
+    "description": "Authentication Context Class Reference. Single character: '0' = no MFA-or-equivalent, '1' = MFA satisfied."
+  },
+  "acrs": {
+    "category": "cae",
+    "defender_note": "Used to enforce authentication context (e.g. require MFA for specific operations).",
+    "description": "Authentication Context Class References (multiple). Used in claims-challenge / CAE scenarios."
+  },
+  "aio": {
+    "category": "tracking",
+    "defender_note": "Internal use only. Resources should not validate against it.",
+    "description": "Internal claim used by Entra for token revalidation. Opaque."
+  },
+  "alg": {
+    "category": "header",
+    "defender_note": "RS256 is normal. Anything else is suspicious - either a malformed/forged token or a non-Entra issuer.",
+    "description": "Signing algorithm. Microsoft Entra always uses RS256 for JWTs."
+  },
+  "amr": {
+    "category": "authn-context",
+    "defender_note": "amr=['pwd'] alone with no MFA is a legacy / weak-auth indicator. amr=['mfa','pwd'] is normal. amr=['fed'] with an unexpected federated source is worth investigating.",
+    "description": "Authentication Method References. Array of methods used to authenticate. pwd=password, mfa=MFA, rsa=RSA token (Authenticator app), pop=proof-of-possession, otp=one-time passcode (email/SMS), fed=federated assertion, wia=Windows Integrated Auth, ngcmfa=advanced credential MFA."
+  },
+  "app_displayname": {
+    "category": "app",
+    "defender_note": "Display-only. Real attackers often pick names that mimic legitimate apps - cross-check appid, not the displayname.",
+    "description": "Display name of the application that requested the token."
+  },
+  "appid": {
+    "category": "app",
+    "defender_note": "Cross-reference against the OAuthSentry catalog. If malicious or risky, escalate immediately. Combine with idtyp to know whether it's a delegated or app-only context.",
+    "description": "Application ID (v1.0 tokens). The OAuth client that initiated the token request."
+  },
+  "appidacr": {
+    "category": "app",
+    "defender_note": "appidacr=0 means a public client (typically delegated user flow). appidacr=2 (cert) is best practice for app-only flows; appidacr=1 (secret) is weaker.",
+    "description": "App ID Authentication Class Reference. Indicates how the client authenticated: 0=public client, 1=client secret, 2=client certificate."
+  },
+  "aud": {
+    "category": "identification",
+    "defender_note": "If aud is unfamiliar, look it up in the known-apps reference. A token with an unexpected audience is being passed somewhere it doesn't belong.",
+    "description": "Audience. The resource the token is intended for - either an appid (e.g. 00000003-0000-0000-c000-000000000000 = Microsoft Graph) or a URL (e.g. https://graph.microsoft.com)."
+  },
+  "auth_time": {
+    "category": "authn-context",
+    "defender_note": "Older auth_time + recent iat = token derived from a refresh-token or session cookie that's been alive a while. Long deltas + sensitive resource access = post-compromise behavior.",
+    "description": "Time at which the user authenticated (Unix epoch)."
+  },
+  "azp": {
+    "category": "app",
+    "defender_note": "Same as appid. v2.0 tokens use azp; v1.0 tokens use appid.",
+    "description": "Authorized Party (v2.0 tokens). The OAuth client that initiated the token request - v2.0 equivalent of appid."
+  },
+  "azpacr": {
+    "category": "app",
+    "defender_note": "Same interpretation as appidacr.",
+    "description": "v2.0 equivalent of appidacr. Same values: 0=public, 1=secret, 2=cert."
+  },
+  "deviceid": {
+    "category": "authn-context",
+    "defender_note": "Presence indicates the token came from a known device. Recently-registered devices (created in the last 7-30 days) are a UTA0355 / Storm-2372 PRT-phishing signature.",
+    "description": "Device ID from Entra-joined / Entra-registered device."
+  },
+  "email": {
+    "category": "identification",
+    "defender_note": "Display-only.",
+    "description": "Email claim, optional."
+  },
+  "exp": {
+    "category": "lifetime",
+    "defender_note": "Default access-token lifetime is 60-90 minutes (75 min average). Lifetimes >2 hours indicate a Configurable Token Lifetime (CTL) policy. Lifetimes near 24h (~86400s) are at the CTL maximum and significantly extend post-compromise exposure.",
+    "description": "Expiration time (Unix epoch)."
+  },
+  "groups": {
+    "category": "authorization",
+    "defender_note": "Limited to ~150 groups; otherwise an overage claim _claim_names points to Graph for the full list.",
+    "description": "Group memberships (object IDs)."
+  },
+  "iat": {
+    "category": "lifetime",
+    "defender_note": "Combine with exp to compute the token's lifetime window. Large iat-to-event-time deltas indicate refresh-derived tokens.",
+    "description": "Issued At time (Unix epoch)."
+  },
+  "identityProvider": {
+    "category": "authn-context",
+    "defender_note": "Multiple distinct identityProvider values across users in the same tenant indicates B2B / federation. An unexpected identityProvider on a workforce-user token is worth investigating.",
+    "description": "The identity provider that authenticated this user (e.g. an external IdP for federated users)."
+  },
+  "idtyp": {
+    "category": "app",
+    "defender_note": "THE single best one-field tell of token flow type. App-only tokens have empty userId / scopes, populated roles - completely different IR pivots. Required claim for security-aware applications.",
+    "description": "Identity Type. 'user' = delegated token (acting on behalf of a user); 'app' = app-only token (the SP is the principal); 'device' = device token."
+  },
+  "ipaddr": {
+    "category": "authn-context",
+    "defender_note": "Cross-check against the user's normal sign-in pattern. Hosting / VPN / Tor IPs on a token claim that issued mailbox-content reads = exfiltration candidate.",
+    "description": "Source IP address at the time of token issuance."
+  },
+  "ipaddr_v6": {
+    "category": "authn-context",
+    "defender_note": "Same triage as ipaddr.",
+    "description": "IPv6 source address (when applicable)."
+  },
+  "iss": {
+    "category": "identification",
+    "defender_note": "Normal: https://sts.windows.net/<tenant-id>/ (v1) or https://login.microsoftonline.com/<tenant-id>/v2.0 (v2). External tenants use ciamlogin.com. Anything else is suspicious.",
+    "description": "Issuer. The Entra STS endpoint that issued the token."
+  },
+  "jti": {
+    "category": "tracking",
+    "defender_note": "Treat like uti when present.",
+    "description": "JWT ID (RFC 7519). Token identifier; not always present on Entra tokens (Entra prefers uti)."
+  },
+  "kid": {
+    "category": "header",
+    "defender_note": "Cross-check against login.microsoftonline.com/<tid>/discovery/v2.0/keys if you suspect forgery. Mismatched kid against current Microsoft keys = high-confidence forgery indicator.",
+    "description": "Key ID. Identifies which Entra signing key was used; must match an entry in the tenant's JWKS."
+  },
+  "name": {
+    "category": "identification",
+    "defender_note": "Display-only. Not a security key.",
+    "description": "User's display name."
+  },
+  "nbf": {
+    "category": "lifetime",
+    "defender_note": "Almost always equal to iat for Entra tokens.",
+    "description": "Not Before time (Unix epoch). Token is invalid before this time."
+  },
+  "nonce": {
+    "category": "header",
+    "defender_note": "Most access tokens don't have this. Presence is unusual but not necessarily bad.",
+    "description": "Header-level nonce, used in some POP (Proof-of-Possession) and protected token scenarios."
+  },
+  "oid": {
+    "category": "identification",
+    "defender_note": "The PRIMARY pivot key for IR. Cross-references directly with sign-in logs, M365 audit logs, and the Detection 13 directory lookup.",
+    "description": "Object ID. The Microsoft Entra object id of the user (delegated tokens) or the service principal (app-only tokens)."
+  },
+  "platf": {
+    "category": "authn-context",
+    "defender_note": "Cross-check platf against the client's expected runtime. Tokens claiming to be 'Microsoft Office' (FOCI) but issuing from platf=5 (Linux) are suspicious.",
+    "description": "Platform identifier of the issuing client. 0/1/2/3/4=Windows variants, 5=Linux, 6=iOS, 8=macOS, 14=Android-compat."
+  },
+  "policyEvaluated": {
+    "category": "authn-context",
+    "defender_note": "Some Graph calls don't trigger CA evaluation; this is normal but worth knowing during incident reconstruction.",
+    "description": "Whether Conditional Access policy was evaluated for this token."
+  },
+  "preferred_username": {
+    "category": "identification",
+    "defender_note": "Same as upn - useful for triage, not a security key.",
+    "description": "v2.0 token equivalent of upn. The user's preferred username."
+  },
+  "puid": {
+    "category": "identification",
+    "defender_note": "Less commonly used than oid. Stable per-user-per-tenant.",
+    "description": "Tenant-specific user identifier (legacy v1.0)."
+  },
+  "rh": {
+    "category": "tracking",
+    "defender_note": "Don't rely on this. Internal claim - resources should not use it.",
+    "description": "Refresh hint. Internal Entra value used to revalidate tokens."
+  },
+  "roles": {
+    "category": "authorization",
+    "defender_note": "On app-only tokens, this is the equivalent of scp - the permissions the SP can exercise. Mail.Read / Mail.ReadWrite / Files.ReadWrite.All on app-only tokens are the post-vendor-compromise smoking guns (Salesloft Drift / Context.ai pattern).",
+    "description": "Application permissions (app-only tokens) OR app role assignments (delegated tokens). Space-separated."
+  },
+  "scp": {
+    "category": "authorization",
+    "defender_note": "On delegated tokens, scopes define the token's blast radius. Flag *.ReadWrite.All, *.Send, offline_access. Cross-reference against graphpermissions.merill.net for exact endpoint coverage. App-only tokens have empty scp; check roles instead.",
+    "description": "Scopes (delegated tokens only). Space-separated list of permissions the user consented to for this client. Examples: User.Read, Mail.ReadWrite, Files.ReadWrite.All."
+  },
+  "sid": {
+    "category": "tracking",
+    "defender_note": "Pivot key. Same value as Entra sign-in log SessionId and AppAccessContext.AADSessionId in M365 audit log entries. A session can mint many tokens with different uti values.",
+    "description": "Session ID. Identifies the Entra sign-in session this token was issued under."
+  },
+  "sub": {
+    "category": "identification",
+    "defender_note": "Don't use sub for IR pivots; use oid for cross-app identity correlation.",
+    "description": "Subject. Pairwise per-app identifier - the same user has different sub values per app, so sub alone doesn't tie to a specific human."
+  },
+  "tenant_ctry": {
+    "category": "tenant",
+    "defender_note": "Cross-reference with ipaddr country.",
+    "description": "Tenant country code."
+  },
+  "tenant_region_scope": {
+    "category": "tenant",
+    "defender_note": "Useful for cross-checking the user's region against the source IP region.",
+    "description": "Tenant region scope (e.g. NA, EU, AS, AF, OC, ME)."
+  },
+  "tid": {
+    "category": "identification",
+    "defender_note": "Cross-tenant tokens (where tid is not your tenant) are normal for guest accounts and B2B; verify the tid against your tenant's expected partner list. Unfamiliar tid + appearance in your tenant's logs = pivot to your B2B configuration.",
+    "description": "Tenant ID where the token was issued."
+  },
+  "typ": {
+    "category": "header",
+    "defender_note": "Anything other than 'JWT' is unusual.",
+    "description": "Token type. Almost always 'JWT'."
+  },
+  "unique_name": {
+    "category": "identification",
+    "defender_note": "Discrepancies between unique_name, upn, and preferred_username are unusual and worth investigating - documented APT29 technique.",
+    "description": "v1.0 token unique-name claim. Often equal to upn."
+  },
+  "upn": {
+    "category": "identification",
+    "defender_note": "Useful for human-readable triage but should NOT be used as a security key - upn can be changed/spoofed in some scenarios. Use oid instead.",
+    "description": "User Principal Name. The user's sign-in name (delegated tokens only)."
+  },
+  "uti": {
+    "category": "tracking",
+    "defender_note": "THE primary IR pivot. Use to find every Graph call and every audit-log event made with this specific token. See Forensic Traces section 4 for cross-stream pivot SPL.",
+    "description": "Unique Token Identifier. The opaque per-token identifier; same value as Graph activity log signInActivityId and Entra sign-in log uniqueTokenIdentifier."
+  },
+  "ver": {
+    "category": "metadata",
+    "defender_note": "v1 vs v2 changes which claim names you'll see (appid vs azp, unique_name vs preferred_username). Modern apps use v2.",
+    "description": "Token version. '1.0' = v1 endpoint, '2.0' = v2 endpoint."
+  },
+  "wids": {
+    "category": "authorization",
+    "defender_note": "The synthetic 'b79fbf4d-...' wid means 'no admin role'. Anything else is a real Entra admin role - look up each GUID against the role table. Privileged roles (Global Administrator, Privileged Role Administrator, etc.) on a stolen token = critical alert.",
+    "description": "Well-known IDs - tenant role assignments. Array of role template IDs the user holds."
+  },
+  "x5t": {
+    "category": "header",
+    "defender_note": "Present on v1.0 tokens, absent on v2.0. Used the same way as kid.",
+    "description": "X.509 certificate thumbprint (legacy). Equivalent to kid but uses SHA-1 thumbprint format."
+  },
+  "xms_cc": {
+    "category": "cae",
+    "defender_note": "CAE-aware tokens get extended lifetime (24-28h vs the default 60-90min) because revocation is real-time. A non-CAE token with 24h lifetime indicates a CTL policy override - audit it.",
+    "description": "Client Capabilities. Array indicating client capabilities. 'cp1' = client is CAE-aware (Continuous Access Evaluation)."
+  },
+  "xms_ftd": {
+    "category": "metadata",
+    "defender_note": "Internal Entra claim. Resources should not validate against xms_* claims.",
+    "description": "Internal claim, restricted (any xms_ prefix)."
+  },
+  "xms_idrel": {
+    "category": "metadata",
+    "defender_note": "Internal Entra claim.",
+    "description": "Internal claim, restricted."
+  },
+  "xms_ssm": {
+    "category": "cae",
+    "defender_note": "Internal Entra session-management claim.",
+    "description": "Smart Session Management indicator (internal)."
+  },
+  "xms_st": {
+    "category": "metadata",
+    "defender_note": "Internal Entra claim.",
+    "description": "Subject Token Information (internal)."
+  },
+  "xms_tcdt": {
+    "category": "metadata",
+    "defender_note": "Useful for distinguishing brand-new tenants (potentially attacker-created) from established ones.",
+    "description": "Tenant Creation Date (Unix epoch)."
+  }
+}
