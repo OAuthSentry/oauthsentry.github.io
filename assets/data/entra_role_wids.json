@@ -1,491 +1,491 @@
 {
   "024906de-61e5-49c8-8572-40335f1e0e10": {
-    "description": "Manage profile photos and people settings",
+    "description": "Manage profile photos of users and people settings for all users in the organization.",
     "name": "People Administrator",
     "privileged": false
   },
   "0526716b-113d-4c15-b2c8-68e3c22b9f80": {
-    "description": "Manage auth methods policy",
+    "description": "Can create and manage the authentication methods policy, tenant-wide MFA settings, password protection policy, and verifiable credentials.",
     "name": "Authentication Policy Administrator",
     "privileged": false
   },
   "0964bb5e-9bdb-4d7b-ac29-58e794862a40": {
-    "description": "Manage Microsoft Search settings",
+    "description": "Can create and manage all aspects of Microsoft Search settings.",
     "name": "Search Administrator",
     "privileged": false
   },
   "0b00bede-4072-4d22-b441-e7df02a1ef63": {
-    "description": "Trigger password submit events",
+    "description": "Trigger a password submit event for custom authentication.<br/>[!](privileged-roles-permissions.md)",
     "name": "Authentication Extensibility Password Administrator",
     "privileged": true
   },
   "0ec3f692-38d6-4d14-9e69-0377ca7797ad": {
-    "description": "Manage Viva Glint",
+    "description": "Manage and configure Microsoft Viva Glint settings in the Microsoft 365 admin center.",
     "name": "Viva Glint Tenant Administrator",
     "privileged": false
   },
   "0f971eea-41eb-4569-a71e-57bb8a3eff1e": {
-    "description": "Manage attribute schema for user flows",
+    "description": "Can create and manage the attribute schema available to all user flows.",
     "name": "External ID User Flow Attribute Administrator",
     "privileged": false
   },
   "1076ac91-f3d9-41a7-a339-dcdf5f480acc": {
-    "description": "Read Teams admin center",
+    "description": "Read everything in the Teams admin center, but not update anything.",
     "name": "Teams Reader",
     "privileged": false
   },
   "112ca1a2-15ad-4102-995e-45b0bc479a6a": {
-    "description": "Create new Microsoft Entra/B2C tenants",
+    "description": "Create new Microsoft Entra or Azure AD B2C tenants.",
     "name": "Tenant Creator",
     "privileged": false
   },
   "11451d60-acb2-45eb-a7d6-43d0f0125c13": {
-    "description": "Manage Cloud PCs",
+    "description": "Can provision and manage all aspects of Cloud PCs.",
     "name": "Windows 365 Administrator",
     "privileged": false
   },
   "11648597-926c-4cf3-9c36-bcebb0ba8dcc": {
-    "description": "Manage Dynamics 365/Power Apps/Power Automate",
+    "description": "Can create and manage all aspects of Microsoft Dynamics 365, Power Apps and Power Automate.",
     "name": "Power Platform Administrator",
     "privileged": false
   },
   "124577f8-48ed-456a-839f-13b419002e33": {
-    "description": "Read tenant governance relationships",
+    "description": "Can read tenant governance relationships and relevant objects.",
     "name": "Tenant Governance Relationship Reader",
     "privileged": false
   },
   "1501b917-7653-4ff9-a4b5-203eaf33784f": {
-    "description": "Manage warranty claims for Microsoft hardware",
+    "description": "Create and manage all aspects warranty claims and entitlements for Microsoft manufactured hardware, like Surface and HoloLens.",
     "name": "Microsoft Hardware Warranty Administrator",
     "privileged": false
   },
   "158c047a-c907-4556-b7ef-446551a6b5f7": {
-    "description": "Manage app registrations except App Proxy",
+    "description": "Can create and manage all aspects of app registrations and enterprise apps except App Proxy.<br/>[!](privileged-roles-permissions.md)",
     "name": "Cloud Application Administrator",
     "privileged": true
   },
   "1707125e-0aa2-4d4d-8655-a7c786c76a25": {
-    "description": "Backup/restore SP/OD/EXO in M365 Backup",
+    "description": "Back up and restore content across supported services (SharePoint, OneDrive, and Exchange Online) in Microsoft 365 Backup",
     "name": "Microsoft 365 Backup Administrator",
     "privileged": false
   },
   "17315797-102d-40b4-93e0-432062caca18": {
-    "description": "Manage compliance configuration",
+    "description": "Can read and manage compliance configuration and reports in Microsoft Entra ID and Microsoft 365.",
     "name": "Compliance Administrator",
     "privileged": false
   },
   "194ae4cb-b126-40b2-bd5b-6091b380977d": {
-    "description": "Read security info; manage configuration",
+    "description": "Can read security information and reports, and manage configuration in Microsoft Entra ID and Office 365.<br/>[!](privileged-roles-permissions.md)",
     "name": "Security Administrator",
     "privileged": true
   },
   "1981f584-96e9-4a6f-95b0-f522373f8fae": {
-    "description": "Manage Tenant Governance",
+    "description": "Manage all capabilities in the Microsoft Entra Tenant Governance service.",
     "name": "Tenant Governance Administrator",
     "privileged": false
   },
   "1a7d78b6-429f-476b-b8eb-35fb715fffd4": {
-    "description": "Manage SharePoint Embedded containers",
+    "description": "Manage all aspects of SharePoint Embedded containers.",
     "name": "SharePoint Embedded Administrator",
     "privileged": false
   },
   "1d336d2c-4ae8-42ef-9711-b3604ce3fc2c": {
-    "description": "Read custom security attribute definitions",
+    "description": "Read the definition of custom security attributes.",
     "name": "Attribute Definition Reader",
     "privileged": false
   },
   "25a516ed-2fa0-40ea-a2d0-12923a21473a": {
-    "description": "Customize sign-in/sign-up extensions",
+    "description": "Customize sign in and sign up experiences for users by creating and managing custom authentication extensions.<br/>[!](privileged-roles-permissions.md)",
     "name": "Authentication Extensibility Administrator",
     "privileged": true
   },
   "25df335f-86eb-4119-b717-0ff02de207e9": {
-    "description": "Run analytical queries in Viva Insights",
+    "description": "Access the analytical capabilities in Microsoft Viva Insights and run custom queries.",
     "name": "Insights Analyst",
     "privileged": false
   },
   "27460883-1df1-4691-b032-3b79643e5e63": {
-    "description": "View product feedback/surveys",
+    "description": "View product feedback, survey results, and reports to find training and communication opportunities.",
     "name": "User Experience Success Manager",
     "privileged": false
   },
   "281fe777-fb20-4fbb-b7a3-ccebce5b0d96": {
-    "description": "Read warranty claims for Microsoft hardware",
+    "description": "Create and read warranty claims for Microsoft manufactured hardware, like Surface and HoloLens.",
     "name": "Microsoft Hardware Warranty Specialist",
     "privileged": false
   },
   "29232cdf-9323-42fd-ade2-1d097af3e4de": {
-    "description": "Manage Exchange",
+    "description": "Can manage all aspects of the Exchange product.",
     "name": "Exchange Administrator",
     "privileged": false
   },
   "2b745bdf-0803-4d80-aa65-822c4493daac": {
-    "description": "Manage Office apps cloud services",
+    "description": "Can manage Office apps cloud services, including policy and settings management, and manage the ability to select, unselect and publish 'what's new' feature content to end-user's devices.",
     "name": "Office Apps Administrator",
     "privileged": false
   },
   "2ea5ce4c-b2d8-4668-bd81-3680bd2d227a": {
-    "description": "Provision/manage IoT devices",
+    "description": "Provision new IoT devices, manage their lifecycle, configure certificates, and manage device templates.",
     "name": "IoT Device Administrator",
     "privileged": false
   },
   "2fe872fb-daa8-4afc-8f6c-53c4565cfef4": {
-    "description": "Manage external collaboration policies",
+    "description": "Manage external collaboration policies and settings for Teams, including configuring external domains and controlling which groups and users can interact with the organization.",
     "name": "Teams External Collaboration Administrator",
     "privileged": false
   },
   "31392ffb-586c-42d1-9346-e59415a2cc4e": {
-    "description": "Manage Exchange recipients",
+    "description": "Can create or update Exchange Online recipients within the Exchange Online organization.",
     "name": "Exchange Recipient Administrator",
     "privileged": false
   },
   "31e939ad-9672-4796-9c2e-873181342d2d": {
-    "description": "View Insights dashboards",
+    "description": "Can view and share dashboards and insights via the Microsoft 365 Insights app.",
     "name": "Insights Business Leader",
     "privileged": false
   },
   "32696413-001a-46ae-978c-ce0f6b3620d2": {
-    "description": "Manage Windows Update deployments",
+    "description": "Can create and manage all aspects of Windows Update deployments through the Windows Update for Business deployment service.",
     "name": "Windows Update Deployment Administrator",
     "privileged": false
   },
   "38a96431-2bdf-4b4c-8b6e-5d3d8abac1a4": {
-    "description": "Manage Desktop tools/services",
+    "description": "Can access and manage Desktop management tools and services.",
     "name": "Desktop Analytics Administrator",
     "privileged": false
   },
   "3a2c62db-5318-420d-8d74-23affee5d9d5": {
-    "description": "Manage Intune",
+    "description": "Can manage all aspects of the Intune product.<br/>[!](privileged-roles-permissions.md)",
     "name": "Intune Administrator",
     "privileged": true
   },
   "3d762c5a-1b6c-493f-843e-55a3b42923d4": {
-    "description": "Manage Teams certified devices",
+    "description": "Can perform management related tasks on Teams certified devices.",
     "name": "Teams Devices Administrator",
     "privileged": false
   },
   "3edaf663-341e-4475-9f94-5c398ef6c070": {
-    "description": "Manage IEF trust framework policies",
+    "description": "Can create and manage trust framework policies in the Identity Experience Framework (IEF).",
     "name": "B2C IEF Policy Administrator",
     "privileged": false
   },
   "3f1acade-1e04-4fbc-9b69-f0302cd84aef": {
-    "description": "Manage Microsoft Edge",
+    "description": "Manage all aspects of Microsoft Edge.",
     "name": "Edge Administrator",
     "privileged": false
   },
   "422218e4-db15-4ef9-bbe0-8afb41546d79": {
-    "description": "Read provisioning configuration of attributes",
+    "description": "Read the provisioning configuration of all active custom security attributes for an application.<br/>[!](privileged-roles-permissions.md)",
     "name": "Attribute Provisioning Reader",
     "privileged": true
   },
   "44367163-eba1-44c3-98af-f5787879f96a": {
-    "description": "Manage Dynamics 365",
+    "description": "Can manage all aspects of the Dynamics 365 product.",
     "name": "Dynamics 365 Administrator",
     "privileged": false
   },
   "45d8d3c5-c802-45c6-b32a-1d70b5e1e86e": {
-    "description": "Manage identity governance",
+    "description": "Manage access using Microsoft Entra ID for identity governance scenarios.",
     "name": "Identity Governance Administrator",
     "privileged": false
   },
   "49eb8f75-97e9-4e37-9b2b-6c3ebfcffa31": {
-    "description": "Backup/restore Exchange in M365 Backup",
+    "description": "Back up and restore content (including granular restore) for Exchange in Microsoft 365 Backup",
     "name": "Exchange Backup Administrator",
     "privileged": false
   },
   "4a5d8f65-41da-4de4-8968-e035b65339cf": {
-    "description": "Read sign-in and audit reports",
+    "description": "Can read sign-in and audit reports.",
     "name": "Reports Reader",
     "privileged": false
   },
   "4ba39ca4-527c-499a-b93d-d9b492c50246": {
-    "description": "Do not use",
+    "description": "Do not use - not intended for general use.<br/>[!](privileged-roles-permissions.md)",
     "name": "Partner Tier1 Support",
     "privileged": true
   },
   "4d6ac14f-3453-41d0-bef9-a3e0c569773a": {
-    "description": "Manage licenses",
+    "description": "Can manage product licenses on users and groups.",
     "name": "License Administrator",
     "privileged": false
   },
   "507f53e4-4e52-4077-abd3-d2e1558b6ea2": {
-    "description": "Write organizational messages",
+    "description": "Write, publish, manage, and review the organizational messages for end-users through Microsoft product surfaces.",
     "name": "Organizational Messages Writer",
     "privileged": false
   },
   "58a13ea3-c632-46ae-9ee0-9c0d43cd7f3d": {
-    "description": "Assign custom security attributes",
+    "description": "Assign custom security attribute keys and values to supported Microsoft Entra objects.",
     "name": "Attribute Assignment Administrator",
     "privileged": false
   },
   "59d46f88-662b-457b-bceb-5c3809e5908f": {
-    "description": "Manage Lifecycle Workflows",
+    "description": "Create and manage all aspects of workflows and tasks associated with Lifecycle Workflows in Microsoft Entra ID.<br/>[!](privileged-roles-permissions.md)",
     "name": "Lifecycle Workflows Administrator",
     "privileged": true
   },
   "5b784334-f94b-471a-a387-e7219fc49ca2": {
-    "description": "Read audit logs and configure diagnostic settings for attributes",
+    "description": "Read audit logs and configure diagnostic settings for events related to custom security attributes.",
     "name": "Attribute Log Administrator",
     "privileged": false
   },
   "5c4f9dcd-47dc-4cf7-8c9a-9e4207cbfc91": {
-    "description": "Approve Microsoft support requests",
+    "description": "Can approve Microsoft support requests to access customer organizational data.",
     "name": "Customer Lockbox Access Approver",
     "privileged": false
   },
   "5d6b6bb7-de71-4623-b4af-96380a352509": {
-    "description": "Read security info",
+    "description": "Can read security information and reports in Microsoft Entra ID and Office 365.<br/>[!](privileged-roles-permissions.md)",
     "name": "Security Reader",
     "privileged": true
   },
   "5f2222b1-57c3-48ba-8ad5-d4759f1fde6f": {
-    "description": "Create/manage security events",
+    "description": "Creates and manages security events.<br/>[!](privileged-roles-permissions.md)",
     "name": "Security Operator",
     "privileged": true
   },
   "62e90394-69f5-4237-9190-012177145e10": {
-    "description": "Manage all aspects of Microsoft Entra ID",
+    "description": "Can manage all aspects of Microsoft Entra ID and Microsoft services that use Microsoft Entra identities.<br/>[!](privileged-roles-permissions.md)",
     "name": "Global Administrator",
     "privileged": true
   },
   "644ef478-e28f-4e28-b9dc-3fdde9aa0b1f": {
-    "description": "Manage printers",
+    "description": "Can manage all aspects of printers and printer connectors.",
     "name": "Printer Administrator",
     "privileged": false
   },
   "69091246-20e8-4a56-aa4d-066075b2a7a8": {
-    "description": "Manage Microsoft Teams",
+    "description": "Can manage the Microsoft Teams service.",
     "name": "Teams Administrator",
     "privileged": false
   },
   "6b942400-691f-4bf0-9d12-d8a254a2baf5": {
-    "description": "Manage the Agent Registry service",
+    "description": "Manage all aspects of the Agent Registry service in Microsoft Entra ID",
     "name": "Agent Registry Administrator",
     "privileged": false
   },
   "6e591065-9bad-43ed-90f3-e9424366d2f0": {
-    "description": "Manage user flows",
+    "description": "Can create and manage all aspects of user flows.",
     "name": "External ID User Flow Administrator",
     "privileged": false
   },
   "729827e3-9c14-49f7-bb1b-9608f156bbb8": {
-    "description": "Reset passwords for non-admins",
+    "description": "Can reset passwords for non-administrators and Helpdesk Administrators.<br/>[!](privileged-roles-permissions.md)",
     "name": "Helpdesk Administrator",
     "privileged": true
   },
   "744ec460-397e-42ad-a462-8b3f9747a02c": {
-    "description": "Manage topics/knowledge",
+    "description": "Can organize, create, manage, and promote topics and knowledge.",
     "name": "Knowledge Manager",
     "privileged": false
   },
   "7495fdc4-34c4-4d15-a289-98788ce399fd": {
-    "description": "Manage AIP",
+    "description": "Can manage all aspects of the Azure Information Protection product.",
     "name": "Azure Information Protection Administrator",
     "privileged": false
   },
   "74ef975b-6605-40af-a5d2-b9539d836353": {
-    "description": "Manage Kaizala",
+    "description": "Can manage settings for Microsoft Kaizala.",
     "name": "Kaizala Administrator",
     "privileged": false
   },
   "75934031-6c7e-415a-99d7-48dbd49e875e": {
-    "description": "Read Usage reports and Adoption Score",
+    "description": "Read Usage reports and Adoption Score, but can't access user details.",
     "name": "Usage Summary Reports Reader",
     "privileged": false
   },
   "75941009-915a-4869-abe7-691bff18279e": {
-    "description": "Manage Skype for Business",
+    "description": "Can manage all aspects of the Skype for Business product.",
     "name": "Skype for Business Administrator",
     "privileged": false
   },
   "7698a772-787b-4ac8-901f-60d6b08affd2": {
-    "description": "Manage devices in Microsoft Entra",
+    "description": "Limited access to manage devices in Microsoft Entra ID.<br/>[!](privileged-roles-permissions.md)",
     "name": "Cloud Device Administrator",
     "privileged": true
   },
   "78b0ccd1-afc2-4f92-9116-b41aedd09592": {
-    "description": "Manage Microsoft Places",
+    "description": "Manage all aspects of the Microsoft Places service.",
     "name": "Places Administrator",
     "privileged": false
   },
   "790c1fb9-7f7d-4f88-86a1-ef1f95c05c1b": {
-    "description": "Read M365 Message Center",
+    "description": "Can read messages and updates for their organization in Office 365 Message Center only.",
     "name": "Message Center Reader",
     "privileged": false
   },
   "7be44c8a-adaf-4e2a-84d6-ab2649e08a13": {
-    "description": "Manage auth methods for any user (admin or non-admin)",
+    "description": "Can access to view, set and reset authentication method information for any user (admin or non-admin).<br/>[!](privileged-roles-permissions.md)",
     "name": "Privileged Authentication Administrator",
     "privileged": true
   },
   "810a2642-a034-447f-a5e8-41beaa378541": {
-    "description": "Manage Yammer",
+    "description": "Manage all aspects of the Yammer service.",
     "name": "Yammer Administrator",
     "privileged": false
   },
   "8329153b-31d0-4727-b945-745eb3bc5f31": {
-    "description": "Manage domain names",
+    "description": "Can manage domain names in cloud and on-premises.<br/>[!](privileged-roles-permissions.md)",
     "name": "Domain Name Administrator",
     "privileged": true
   },
   "8424c6f0-a189-499e-bbd0-26c1753c96d4": {
-    "description": "Manage custom security attribute definitions",
+    "description": "Define and manage the definition of custom security attributes.",
     "name": "Attribute Definition Administrator",
     "privileged": false
   },
   "843318fb-79a6-4168-9e6f-aa9a07481cc4": {
-    "description": "Read network traffic logs",
+    "description": "Provides designated security personnel with read-only access to network traffic logs in Microsoft Entra Internet Access and Microsoft Entra Private Access for detailed analysis.",
     "name": "Global Secure Access Log Reader",
     "privileged": false
   },
   "87761b17-1ed2-4af3-9acd-92a150038160": {
-    "description": "Manage Viva Pulse",
+    "description": "Can manage all settings for Microsoft Viva Pulse app.",
     "name": "Viva Pulse Administrator",
     "privileged": false
   },
   "8835291a-918c-4fd7-a9ce-faa49f0cf7d9": {
-    "description": "Manage editorial content",
+    "description": "Can create and manage the editorial content such as bookmarks, Q and As, locations, floorplan.",
     "name": "Search Editor",
     "privileged": false
   },
   "88d8e3e3-8f55-4a1e-953a-9b9898b8876b": {
-    "description": "Read basic directory information (default for service principals/guests)",
+    "description": "Can read basic directory information. Commonly used to grant directory read access to applications and guests.",
     "name": "Directory Readers",
     "privileged": false
   },
   "892c5842-a9a6-463a-8041-72aa08ca3cf6": {
-    "description": "Manage Defender for Cloud Apps",
+    "description": "Can manage all aspects of the Defender for Cloud Apps product.",
     "name": "Cloud App Security Administrator",
     "privileged": false
   },
   "8ac3fc64-6eca-42ea-9e69-59f4c7b60eb2": {
-    "description": "Manage hybrid identity (Connect/PTA/PHS)",
+    "description": "Manage Active Directory to Microsoft Entra cloud provisioning, Microsoft Entra Connect, pass-through authentication (PTA), password hash synchronization (PHS), seamless single sign-on (seamless SSO), and federation settings. Does not have access to manage Microsoft Entra Connect Health.<br/>[!](privileged-roles-permissions.md)",
     "name": "Hybrid Identity Administrator",
     "privileged": true
   },
   "8c8b803f-96e1-4129-9349-20738d9f9652": {
-    "description": "Migrate content using Migration Manager",
+    "description": "Perform all migration functionality to migrate content to Microsoft 365 using Migration Manager.",
     "name": "Microsoft 365 Migration Administrator",
     "privileged": false
   },
   "92b086b3-e367-4ef2-b869-1de128fb986e": {
-    "description": "Manage Viva Goals",
+    "description": "Manage and configure all aspects of Microsoft Viva Goals.",
     "name": "Viva Goals Administrator",
     "privileged": false
   },
   "92ed04bf-c94a-4b82-9729-b799a7a4c178": {
-    "description": "Manage organizational branding",
+    "description": "Manage all aspects of organizational branding in a tenant.",
     "name": "Organizational Branding Administrator",
     "privileged": false
   },
   "9360feb5-f418-4baa-8175-e2a00bac4301": {
-    "description": "Read/write basic directory information (apps only)",
+    "description": "Can read and write basic directory information. For granting access to applications, not intended for users.<br/>[!](privileged-roles-permissions.md)",
     "name": "Directory Writers",
     "privileged": true
   },
   "95e79109-95c0-4d8e-aee3-d01accf2d47b": {
-    "description": "Invite guest users",
+    "description": "Can invite guest users independent of the 'members can invite guests' setting.",
     "name": "Guest Inviter",
     "privileged": false
   },
   "963797fb-eb3b-4cde-8ce3-5878b3f32a3f": {
-    "description": "Manage D365 Business Central",
+    "description": "Access and perform all administrative tasks on Dynamics 365 Business Central environments.",
     "name": "Dynamics 365 Business Central Administrator",
     "privileged": false
   },
   "966707d0-3269-4727-9be2-8c3a10f19b9d": {
-    "description": "Reset passwords for non-admins",
+    "description": "Can reset passwords for non-administrators and Password Administrators.<br/>[!](privileged-roles-permissions.md)",
     "name": "Password Administrator",
     "privileged": true
   },
   "99009c4a-3b3f-4957-82a9-9d35e12db77e": {
-    "description": "Manage SP Advanced Management",
+    "description": "Manage all aspects of SharePoint Advanced Management.",
     "name": "SharePoint Advanced Management Administrator",
     "privileged": false
   },
   "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3": {
-    "description": "Create/manage app registrations and enterprise apps",
+    "description": "Can create and manage all aspects of app registrations and enterprise apps.<br/>[!](privileged-roles-permissions.md)",
     "name": "Application Administrator",
     "privileged": true
   },
   "9c6df0f2-1e7c-4dc3-b195-66dfbd24aa8f": {
-    "description": "Create attack payloads",
+    "description": "Can create attack payloads that an administrator can initiate later.",
     "name": "Attack Payload Author",
     "privileged": false
   },
   "9c99539d-8186-4804-835f-fd51ef9e2dcd": {
-    "description": "Read audit logs related to custom security attributes",
+    "description": "Read audit logs related to custom security attributes.",
     "name": "Attribute Log Reader",
     "privileged": false
   },
   "9d3e04ba-3ee4-4d1b-a3a7-9aef423a09be": {
-    "description": "Backup/restore SP/OD in M365 Backup",
+    "description": "Back up and restore content (including granular restore) for SharePoint and OneDrive in Microsoft 365 Backup",
     "name": "SharePoint Backup Administrator",
     "privileged": false
   },
   "9d70768a-0cbc-4b4c-aea3-2e124b2477f4": {
-    "description": "Manage organizational data ingestion",
+    "description": "Set up and manage the ingestion of organizational data into Microsoft 365.",
     "name": "Organizational Data Source Administrator",
     "privileged": false
   },
   "9f06204d-73c1-4d4c-880a-6edb90606fd8": {
-    "description": "Local admin on Entra-joined devices",
+    "description": "Users assigned to this role are added to the local administrators group on Microsoft Entra joined devices.",
     "name": "Microsoft Entra Joined Device Local Administrator",
     "privileged": false
   },
   "a9ea8996-122f-4c74-9520-8edcd192826c": {
-    "description": "Manage Fabric and Power BI",
+    "description": "Can manage all aspects of the Fabric and Power BI products.",
     "name": "Fabric Administrator",
     "privileged": false
   },
   "aa38014f-0993-46e9-9b45-30501a20909d": {
-    "description": "Manage Teams voice/telephony",
+    "description": "Manage voice and telephony features and troubleshoot communication issues within the Microsoft Teams service.",
     "name": "Teams Telephony Administrator",
     "privileged": false
   },
   "aaf43236-0c0d-4d5f-883a-6955382ac081": {
-    "description": "Manage IEF secrets",
+    "description": "Can manage secrets for federation and encryption in the Identity Experience Framework (IEF).<br/>[!](privileged-roles-permissions.md)",
     "name": "B2C IEF Keyset Administrator",
     "privileged": true
   },
   "ac16e43d-7b2d-40e0-ac05-243ff356ab5b": {
-    "description": "Read security messages in M365 Message Center",
+    "description": "Can read security messages and updates in Office 365 Message Center only.",
     "name": "Message Center Privacy Reader",
     "privileged": false
   },
   "ac434307-12b9-4fa1-a708-88bf58caabc1": {
-    "description": "Manage Global Secure Access",
+    "description": "Create and manage all aspects of Global Secure Internet Access and Microsoft Global Secure Private Access, including managing access to public and private endpoints.",
     "name": "Global Secure Access Administrator",
     "privileged": false
   },
   "adb2368d-a9be-41b5-8667-d96778e081b0": {
-    "description": "Create an agent blueprint and its service principal",
+    "description": "Create an agent blueprint and its service principal in a tenant. User will be added as an owner of the agent blueprint and its service principal.",
     "name": "Agent ID Developer",
     "privileged": false
   },
   "af78dc32-cf4d-46f9-ba4e-4428526346b5": {
-    "description": "Manage Entra Permissions Management",
+    "description": "Manage all aspects of Microsoft Entra Permissions Management.",
     "name": "Permissions Management Administrator",
     "privileged": false
   },
   "b0f54661-2d74-4c50-afa3-1ec803f12efe": {
-    "description": "Update payment information",
+    "description": "Can perform common billing related tasks like updating payment information.",
     "name": "Billing Administrator",
     "privileged": false
   },
   "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9": {
-    "description": "Manage Conditional Access",
+    "description": "Can manage Conditional Access capabilities.<br/>[!](privileged-roles-permissions.md)",
     "name": "Conditional Access Administrator",
     "privileged": true
   },
   "b5a8dcf3-09d5-43a9-a639-8e29ef291470": {
-    "description": "Configure knowledge/learning",
+    "description": "Can configure knowledge, learning, and other intelligent features.",
     "name": "Knowledge Administrator",
     "privileged": false
   },
   "b6a27b2b-f905-4b2e-81b5-0d90e0ef1fdb": {
-    "description": "Manage Microsoft Entra Backup",
+    "description": "Manage all aspects of Microsoft Entra Backup, such as create recovery jobs and manage backup snapshots.",
     "name": "Entra Backup Administrator",
     "privileged": false
   },
@@ -496,162 +496,162 @@
     "synthetic": true
   },
   "b8e31d83-1534-480f-9b10-0338ded51b7e": {
-    "description": "Initiate/terminate governance relationships",
+    "description": "Can initiate governance relationships and terminate them.",
     "name": "Tenant Governance Relationship Administrator",
     "privileged": false
   },
   "baf37b3a-610e-45da-9e62-d9d1e5e8914b": {
-    "description": "Manage Teams calling/meetings",
+    "description": "Can manage calling and meetings features within the Microsoft Teams service.",
     "name": "Teams Communications Administrator",
     "privileged": false
   },
   "be2f45a1-457d-42af-a067-6ec1fa63bc45": {
-    "description": "Configure direct federation",
+    "description": "Can configure identity providers for use in direct federation.<br/>[!](privileged-roles-permissions.md)",
     "name": "External Identity Provider Administrator",
     "privileged": true
   },
   "c430b396-e693-46cc-96f3-db01bf8bb62a": {
-    "description": "Manage attack simulation campaigns",
+    "description": "Can create and manage all aspects of attack simulation campaigns.",
     "name": "Attack Simulation Administrator",
     "privileged": false
   },
   "c4e39bd9-1100-46d3-8c65-fb160da0071f": {
-    "description": "Manage auth methods for non-admin users",
+    "description": "Can access to view, set and reset authentication method information for any non-admin user.<br/>[!](privileged-roles-permissions.md)",
     "name": "Authentication Administrator",
     "privileged": true
   },
   "cf1c38e5-3621-4004-a7cb-879624dced7c": {
-    "description": "Create application registrations",
+    "description": "Can create application registrations independent of the 'Users can register applications' setting.<br/>[!](privileged-roles-permissions.md)",
     "name": "Application Developer",
     "privileged": true
   },
   "d2562ede-74db-457e-a7b6-544e236ebb61": {
-    "description": "Manage Microsoft 365 Copilot and AI services",
+    "description": "Manage all aspects of Microsoft 365 Copilot and AI-related enterprise services in Microsoft 365.<br/>[!](privileged-roles-permissions.md)",
     "name": "AI Administrator",
     "privileged": true
   },
   "d29b2b05-8046-44ba-8758-1e26182fcf32": {
-    "description": "Used by Microsoft Entra Connect service",
+    "description": "Only used by Microsoft Entra Connect service.",
     "name": "Directory Synchronization Accounts",
     "privileged": false
   },
   "d37c8bed-0711-4417-ba38-b4abe66ce4c2": {
-    "description": "Manage network locations",
+    "description": "Can manage network locations and review enterprise network design insights for Microsoft 365 Software as a Service applications.",
     "name": "Network Administrator",
     "privileged": false
   },
   "db506228-d27e-4b7d-95e5-295956d6615f": {
-    "description": "Manage all aspects of agents in a tenant",
+    "description": "Manage all aspects of agents in a tenant including identity lifecycle operations for agent blueprints, agent service principals, agent identities, and agentic users.<br/>[!](privileged-roles-permissions.md)",
     "name": "Agent ID Administrator",
     "privileged": true
   },
   "dd13091a-6207-4fc0-82ba-3641e056ab95": {
-    "description": "Manage external user profiles for Teams",
+    "description": "Manage all aspects of external user profiles in the extended directory for Teams.",
     "name": "Extended Directory User Administrator",
     "privileged": false
   },
   "e00e864a-17c5-4a4b-9c06-f5b95a8d5bd8": {
-    "description": "Do not use",
+    "description": "Do not use - not intended for general use.<br/>[!](privileged-roles-permissions.md)",
     "name": "Partner Tier2 Support",
     "privileged": true
   },
   "e0a4caa6-fe82-443f-b92f-d87341d17b2e": {
-    "description": "Read tenant governance data",
+    "description": "Can read all tenant governance data.",
     "name": "Tenant Governance Reader",
     "privileged": false
   },
   "e300d9e7-4a2b-4295-9eff-f1c78b36cc98": {
-    "description": "Manage Virtual Visits",
+    "description": "Manage and share Virtual Visits information and metrics from admin centers or the Virtual Visits app.",
     "name": "Virtual Visits Administrator",
     "privileged": false
   },
   "e3973bdf-4987-49ae-837a-ba8e231c7286": {
-    "description": "Manage Azure DevOps policies",
+    "description": "Can manage Azure DevOps policies and settings.",
     "name": "Azure DevOps Administrator",
     "privileged": false
   },
   "e48398e2-f4bb-4074-8f31-4586725e205b": {
-    "description": "Approve organizational messages",
+    "description": "Review, approve, or reject new organizational messages for delivery in the Microsoft 365 admin center before they are sent to users.",
     "name": "Organizational Messages Approver",
     "privileged": false
   },
   "e6d1a23a-da11-4be4-9570-befc86d067a7": {
-    "description": "Manage compliance content",
+    "description": "Creates and manages compliance content.",
     "name": "Compliance Data Administrator",
     "privileged": false
   },
   "e8611ab8-c189-46e8-94e1-60213ab1f814": {
-    "description": "Manage role assignments and PIM",
+    "description": "Can manage role assignments in Microsoft Entra ID, and all aspects of Privileged Identity Management.<br/>[!](privileged-roles-permissions.md)",
     "name": "Privileged Role Administrator",
     "privileged": true
   },
   "e8cef6f1-e4bd-4ea8-bc07-4b8d950f4477": {
-    "description": "Register printers",
+    "description": "Can register and unregister printers and update printer status.",
     "name": "Printer Technician",
     "privileged": false
   },
   "e93e3737-fa85-474a-aee4-7d3fb86510f3": {
-    "description": "Manage Microsoft Dragon admin center",
+    "description": "Manage all aspects of the Microsoft Dragon admin center.",
     "name": "Dragon Administrator",
     "privileged": false
   },
   "eb1f4a8d-243a-41f0-9fbd-c7cdf6c5ef7c": {
-    "description": "Manage Microsoft 365 Insights app",
+    "description": "Has administrative access in the Microsoft 365 Insights app.",
     "name": "Insights Administrator",
     "privileged": false
   },
   "ecb2c6bf-0ab6-418e-bd87-7986f8d63bbe": {
-    "description": "Edit provisioning configuration of attributes",
+    "description": "Read and edit the provisioning configuration of all active custom security attributes for an application.<br/>[!](privileged-roles-permissions.md)",
     "name": "Attribute Provisioning Administrator",
     "privileged": true
   },
   "ee67aa9c-e510-4759-b906-227085a7fd4d": {
-    "description": "Manage Graph Data Connect",
+    "description": "Manage aspects of Microsoft Graph Data Connect service in a tenant.",
     "name": "Microsoft Graph Data Connect Administrator",
     "privileged": false
   },
   "f023fd81-a637-4b56-95fd-791ac0226033": {
-    "description": "Read service health; manage support tickets",
+    "description": "Can read service health information and manage support tickets.",
     "name": "Service Support Administrator",
     "privileged": false
   },
   "f28a1f50-f6e7-4571-818b-6a12f2af6b6c": {
-    "description": "Manage SharePoint",
+    "description": "Can manage all aspects of the SharePoint service.",
     "name": "SharePoint Administrator",
     "privileged": false
   },
   "f2ef992c-3afb-46b9-b7cf-a126ee74c451": {
-    "description": "Read everything Global Admin can",
+    "description": "Can read everything that a Global Administrator can, but not update anything.<br/>[!](privileged-roles-permissions.md)",
     "name": "Global Reader",
     "privileged": true
   },
   "f42252d9-5400-4d7b-b9ef-cc582dbb8577": {
-    "description": "Read Microsoft Entra Backup",
+    "description": "Read all aspects of Microsoft Entra Backup, such as list all preview jobs, recovery jobs, backup snapshots, and create preview jobs.",
     "name": "Entra Backup Reader",
     "privileged": false
   },
   "f70938a0-fc10-4177-9e90-2178f8765737": {
-    "description": "Troubleshoot Teams comms (advanced)",
+    "description": "Can troubleshoot communications issues within Teams using advanced tools.",
     "name": "Teams Communications Support Engineer",
     "privileged": false
   },
   "fcf91098-03e3-41a9-b5ba-6f0ec8188a12": {
-    "description": "Troubleshoot Teams comms (basic)",
+    "description": "Can troubleshoot communications issues within Teams using basic tools.",
     "name": "Teams Communications Support Specialist",
     "privileged": false
   },
   "fdd7a751-b60b-444a-984c-02652fe8fa1c": {
-    "description": "Manage groups",
+    "description": "Members of this role can create/manage groups, create/manage groups settings like naming and expiration policies, and view groups activity and audit reports.",
     "name": "Groups Administrator",
     "privileged": false
   },
   "fe930be7-5e62-47db-91af-98c3a49a38b1": {
-    "description": "Manage all aspects of users and groups",
+    "description": "Can manage all aspects of users and groups, including resetting passwords for limited admins.<br/>[!](privileged-roles-permissions.md)",
     "name": "User Administrator",
     "privileged": true
   },
   "ffd52fa5-98dc-465c-991d-fc073eb59f8f": {
-    "description": "Read custom security attribute keys/values",
+    "description": "Read custom security attribute keys and values for supported Microsoft Entra objects.",
     "name": "Attribute Assignment Reader",
     "privileged": false
   }

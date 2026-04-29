@@ -1,6 +1,6 @@
 {
-  "generated": "2026-04-28T16:33:37.627094+00:00",
-  "count": 4502,
+  "generated": "2026-04-29T16:05:20.523529+00:00",
+  "count": 4503,
   "items": [
     {
       "appname": "",
@@ -10641,6 +10641,16 @@
       "metadata_reference": "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in - https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv | https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv",
       "service": "entra",
       "_provenance": "entra_curated_mthcht"
+    },
+    {
+      "appname": "Dunloe Dataplane Service",
+      "appid": "89e7f920-bdc3-4e71-99e5-30d84827b610",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
     },
     {
       "appname": "DWEngineV2",

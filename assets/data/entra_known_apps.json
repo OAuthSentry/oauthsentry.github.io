@@ -14,7 +14,7 @@
   "00000003-0000-0000-c000-000000000000": {
     "foci": false,
     "name": "Microsoft Graph",
-    "notes": "The Microsoft Graph API itself - often appears as the audience (aud) of access tokens, not the client. Seeing this as appid is rare and worth investigating.",
+    "notes": "The Microsoft Graph API itself - typically appears as the audience (aud) of access tokens, not the client. Seeing this as appid is rare and worth investigating.",
     "publisher": "Microsoft"
   },
   "00000003-0000-0ff1-ce00-000000000000": {
@@ -25,14 +25,14 @@
   },
   "00b41c95-dab0-4487-9791-b9d2c32c80f2": {
     "foci": true,
-    "name": "Office 365 Management",
-    "notes": "FOCI client.",
+    "name": "00b41c95-dab0-4487-9791-b9d2c32c80f2",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
     "publisher": "Microsoft"
   },
   "04b07795-8ddb-461a-bbee-02f9e1bf7b46": {
     "foci": true,
-    "name": "Microsoft Azure CLI",
-    "notes": "FOCI client. Public client, no client secret. Heavy abuse vector for token-theft scenarios; refresh tokens are family refresh tokens (FRTs) redeemable across all 11+ FOCI clients.",
+    "name": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
     "publisher": "Microsoft"
   },
   "04f0c124-f2bc-4f59-8241-bf6df9866bbd": {
@@ -41,10 +41,16 @@
     "notes": "First-party modern Visual Studio app id. Observed in Storm-2372 / APT29 device-code phishing waves (2025).",
     "publisher": "Microsoft"
   },
+  "0ec893e0-5785-4de6-99da-4ed124e5296c": {
+    "foci": true,
+    "name": "0ec893e0-5785-4de6-99da-4ed124e5296c",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
+    "publisher": "Microsoft"
+  },
   "1950a258-227b-4e31-a9cf-717495945fc2": {
     "foci": true,
-    "name": "Microsoft Azure PowerShell",
-    "notes": "FOCI client. The az/Connect-AzAccount cmdlet client. Frequently abused in red-team and stealer scenarios.",
+    "name": "1950a258-227b-4e31-a9cf-717495945fc2",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
     "publisher": "Microsoft"
   },
   "1aec7268-9e30-4bf6-9a17-3c64ef91c12b": {
@@ -61,38 +67,92 @@
   },
   "1fec8e78-bce4-4aaf-ab1b-5451cc387264": {
     "foci": true,
-    "name": "Microsoft Teams",
-    "notes": "FOCI client. Teams desktop and mobile.",
+    "name": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
+    "publisher": "Microsoft"
+  },
+  "22098786-6e16-43cc-a27d-191a01a1e3b5": {
+    "foci": true,
+    "name": "22098786-6e16-43cc-a27d-191a01a1e3b5",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
     "publisher": "Microsoft"
   },
   "26a7ee05-5602-4d76-a7ba-eae8b7b67941": {
     "foci": true,
-    "name": "Windows Search",
-    "notes": "FOCI client.",
+    "name": "26a7ee05-5602-4d76-a7ba-eae8b7b67941",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
     "publisher": "Microsoft"
   },
   "27922004-5251-4030-b22d-91ecd9a37ea4": {
     "foci": true,
-    "name": "Outlook Mobile",
-    "notes": "FOCI client. Outlook on iOS/Android.",
+    "name": "27922004-5251-4030-b22d-91ecd9a37ea4",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
     "publisher": "Microsoft"
   },
   "29d9ed98-a469-4536-ade2-f981bc1d605e": {
     "foci": false,
     "name": "Microsoft Authentication Broker",
-    "notes": "NOT on Secureworks' canonical FOCI list, but the standard Windows client for Entra device-join and Primary Refresh Token (PRT) issuance. The favourite vector for PRT phishing per Dirk-jan Mollema's research; UTA0355 and Storm-2372 both used MAB.",
+    "notes": "NOT on Secureworks' canonical FOCI list, but the standard Windows client for Entra device-join and Primary Refresh Token (PRT) issuance. Favourite vector for PRT phishing per Dirk-jan Mollema's research; UTA0355 and Storm-2372 both used MAB.",
+    "publisher": "Microsoft"
+  },
+  "2d7f3606-b07d-41d1-b9d2-0d0c9296a6e8": {
+    "foci": true,
+    "name": "2d7f3606-b07d-41d1-b9d2-0d0c9296a6e8",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
     "publisher": "Microsoft"
   },
   "4813382a-8fa7-425e-ab75-3b753aab3abb": {
     "foci": true,
-    "name": "Microsoft Authenticator App",
-    "notes": "FOCI client. Authenticator iOS/Android.",
+    "name": "4813382a-8fa7-425e-ab75-3b753aab3abb",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
+    "publisher": "Microsoft"
+  },
+  "4e291c71-d680-4d0e-9640-0a3358e31177": {
+    "foci": true,
+    "name": "4e291c71-d680-4d0e-9640-0a3358e31177",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
+    "publisher": "Microsoft"
+  },
+  "57336123-6e14-4acc-8dcf-287b6088aa28": {
+    "foci": true,
+    "name": "57336123-6e14-4acc-8dcf-287b6088aa28",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
+    "publisher": "Microsoft"
+  },
+  "57fcbcfa-7cee-4eb1-8b25-12d2030b4ee0": {
+    "foci": true,
+    "name": "57fcbcfa-7cee-4eb1-8b25-12d2030b4ee0",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
+    "publisher": "Microsoft"
+  },
+  "66375f6b-983f-4c2c-9701-d680650f588f": {
+    "foci": true,
+    "name": "66375f6b-983f-4c2c-9701-d680650f588f",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
+    "publisher": "Microsoft"
+  },
+  "844cca35-0656-46ce-b636-13f48b0eecbd": {
+    "foci": true,
+    "name": "844cca35-0656-46ce-b636-13f48b0eecbd",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
     "publisher": "Microsoft"
   },
   "872cd9fa-d31f-45e0-9eab-6e460a02d1f1": {
     "foci": true,
-    "name": "Visual Studio (legacy)",
-    "notes": "FOCI client. Legacy Visual Studio client id; abused in Storm-2372 / APT29 device-code phishing waves (2025).",
+    "name": "872cd9fa-d31f-45e0-9eab-6e460a02d1f1",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
+    "publisher": "Microsoft"
+  },
+  "87749df4-7ccf-48f8-aa87-704bad0e0e16": {
+    "foci": true,
+    "name": "87749df4-7ccf-48f8-aa87-704bad0e0e16",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
+    "publisher": "Microsoft"
+  },
+  "9ba1a5c7-f17a-4de9-a1f1-6178c8d51223": {
+    "foci": true,
+    "name": "9ba1a5c7-f17a-4de9-a1f1-6178c8d51223",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
     "publisher": "Microsoft"
   },
   "9bc3ab49-b65d-410a-85ad-de819febfddc": {
@@ -101,10 +161,22 @@
     "notes": "SPO PnP / Management Shell client. Abused by AADInternals tooling.",
     "publisher": "Microsoft"
   },
+  "a40d7d7d-59aa-447e-a655-679a4107e548": {
+    "foci": true,
+    "name": "a40d7d7d-59aa-447e-a655-679a4107e548",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
+    "publisher": "Microsoft"
+  },
+  "a569458c-7f2b-45cb-bab9-b7dee514d112": {
+    "foci": true,
+    "name": "a569458c-7f2b-45cb-bab9-b7dee514d112",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
+    "publisher": "Microsoft"
+  },
   "ab9b8c07-8f02-4f72-87fa-80105867a763": {
     "foci": true,
-    "name": "OneDrive SyncEngine",
-    "notes": "FOCI client. OneDrive desktop sync.",
+    "name": "ab9b8c07-8f02-4f72-87fa-80105867a763",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
     "publisher": "Microsoft"
   },
   "aebc6443-996d-45c2-90f0-388ff96faa56": {
@@ -115,20 +187,98 @@
   },
   "af124e86-4e96-495a-b70a-90f90ab96707": {
     "foci": true,
-    "name": "OneDrive iOS App",
-    "notes": "FOCI client.",
+    "name": "af124e86-4e96-495a-b70a-90f90ab96707",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
+    "publisher": "Microsoft"
+  },
+  "b26aadf8-566f-4478-926f-589f601d9c74": {
+    "foci": true,
+    "name": "b26aadf8-566f-4478-926f-589f601d9c74",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
+    "publisher": "Microsoft"
+  },
+  "be1918be-3fe3-4be9-b32b-b542fc27f02e": {
+    "foci": true,
+    "name": "be1918be-3fe3-4be9-b32b-b542fc27f02e",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
+    "publisher": "Microsoft"
+  },
+  "c0d2a505-13b8-4ae0-aa9e-cddd5eab0b12": {
+    "foci": true,
+    "name": "c0d2a505-13b8-4ae0-aa9e-cddd5eab0b12",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
+    "publisher": "Microsoft"
+  },
+  "cab96880-db5b-4e15-90a7-f3f1d62ffe39": {
+    "foci": true,
+    "name": "cab96880-db5b-4e15-90a7-f3f1d62ffe39",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
+    "publisher": "Microsoft"
+  },
+  "cf36b471-5b44-428c-9ce7-313bf84528de": {
+    "foci": true,
+    "name": "cf36b471-5b44-428c-9ce7-313bf84528de",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
+    "publisher": "Microsoft"
+  },
+  "d326c1ce-6cc6-4de2-bebc-4591e5e13ef0": {
+    "foci": true,
+    "name": "d326c1ce-6cc6-4de2-bebc-4591e5e13ef0",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
     "publisher": "Microsoft"
   },
   "d3590ed6-52b3-4102-aeff-aad2292ab01c": {
     "foci": true,
-    "name": "Microsoft Office",
-    "notes": "FOCI client. The Microsoft 365 / Office desktop client. Token-theft target: a stolen Office FRT redeems for Graph access tokens with broad pre-consented scopes.",
+    "name": "d3590ed6-52b3-4102-aeff-aad2292ab01c",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
     "publisher": "Microsoft"
   },
-  "de50c81f-5f80-4771-b66b-cebd28ccdfc1": {
-    "foci": false,
-    "name": "Windows Push Notification Services",
-    "notes": "WNS client.",
+  "d7b530a4-7680-4c23-a8bf-c52c121d2e87": {
+    "foci": true,
+    "name": "d7b530a4-7680-4c23-a8bf-c52c121d2e87",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
+    "publisher": "Microsoft"
+  },
+  "dd47d17a-3194-4d86-bfd5-c6ae6f5651e3": {
+    "foci": true,
+    "name": "dd47d17a-3194-4d86-bfd5-c6ae6f5651e3",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
+    "publisher": "Microsoft"
+  },
+  "e9b154d0-7658-433b-bb25-6b8e0a8a7c59": {
+    "foci": true,
+    "name": "e9b154d0-7658-433b-bb25-6b8e0a8a7c59",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
+    "publisher": "Microsoft"
+  },
+  "e9c51622-460d-4d3d-952d-966a5b1da34c": {
+    "foci": true,
+    "name": "e9c51622-460d-4d3d-952d-966a5b1da34c",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
+    "publisher": "Microsoft"
+  },
+  "eb539595-3fe1-474e-9c1d-feb3625d1be5": {
+    "foci": true,
+    "name": "eb539595-3fe1-474e-9c1d-feb3625d1be5",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
+    "publisher": "Microsoft"
+  },
+  "ecd6b820-32c2-49b6-98a6-444530e5a77a": {
+    "foci": true,
+    "name": "ecd6b820-32c2-49b6-98a6-444530e5a77a",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
+    "publisher": "Microsoft"
+  },
+  "f05ff7c9-f75a-4acd-a3b5-f4b6a870245d": {
+    "foci": true,
+    "name": "f05ff7c9-f75a-4acd-a3b5-f4b6a870245d",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
+    "publisher": "Microsoft"
+  },
+  "f44b1140-bc5e-48c6-8dc0-5cf5a53c0e34": {
+    "foci": true,
+    "name": "f44b1140-bc5e-48c6-8dc0-5cf5a53c0e34",
+    "notes": "FOCI client. Refresh tokens are family refresh tokens (FRTs) redeemable across all FOCI clients - a stolen FRT effectively grants the union of all FOCI scopes.",
     "publisher": "Microsoft"
   },
   "fb78d390-0c51-40cd-8e17-fdbfab77341b": {
