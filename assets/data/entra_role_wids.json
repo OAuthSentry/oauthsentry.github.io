@@ -45,7 +45,7 @@
     "privileged": false
   },
   "11648597-926c-4cf3-9c36-bcebb0ba8dcc": {
-    "description": "Can create and manage all aspects of Microsoft Dynamics 365, Power Apps and Power Automate.",
+    "description": "Manage all aspects of Microsoft Dynamics 365, Power Apps and Power Automate.",
     "name": "Power Platform Administrator",
     "privileged": false
   },
@@ -94,6 +94,11 @@
     "name": "Attribute Definition Reader",
     "privileged": false
   },
+  "1fe13547-53f6-408d-ac04-7f8eed167b38": {
+    "description": "Read all aspects of Microsoft 365 Copilot and AI-related enterprise services in Microsoft 365.<br/>[!](privileged-roles-permissions.md)",
+    "name": "AI Reader",
+    "privileged": true
+  },
   "25a516ed-2fa0-40ea-a2d0-12923a21473a": {
     "description": "Customize sign in and sign up experiences for users by creating and managing custom authentication extensions.<br/>[!](privileged-roles-permissions.md)",
     "name": "Authentication Extensibility Administrator",
@@ -140,7 +145,7 @@
     "privileged": false
   },
   "31e939ad-9672-4796-9c2e-873181342d2d": {
-    "description": "Can view and share dashboards and insights via the Microsoft 365 Insights app.",
+    "description": "View and share dashboards and insights via the Microsoft Viva Insights app.",
     "name": "Insights Business Leader",
     "privileged": false
   },
@@ -275,7 +280,7 @@
     "privileged": true
   },
   "744ec460-397e-42ad-a462-8b3f9747a02c": {
-    "description": "Can organize, create, manage, and promote topics and knowledge.",
+    "description": "Organize, create, manage, and promote topics and knowledge.",
     "name": "Knowledge Manager",
     "privileged": false
   },
@@ -355,7 +360,7 @@
     "privileged": false
   },
   "892c5842-a9a6-463a-8041-72aa08ca3cf6": {
-    "description": "Can manage all aspects of the Defender for Cloud Apps product.",
+    "description": "Manage all aspects of the Defender for Cloud Apps product.",
     "name": "Cloud App Security Administrator",
     "privileged": false
   },
@@ -435,7 +440,7 @@
     "privileged": false
   },
   "a9ea8996-122f-4c74-9520-8edcd192826c": {
-    "description": "Can manage all aspects of the Fabric and Power BI products.",
+    "description": "Manage all aspects of the Fabric and Power BI products.",
     "name": "Fabric Administrator",
     "privileged": false
   },
@@ -460,7 +465,7 @@
     "privileged": false
   },
   "adb2368d-a9be-41b5-8667-d96778e081b0": {
-    "description": "Create an agent blueprint and its service principal in a tenant. User will be added as an owner of the agent blueprint and its service principal.",
+    "description": "Create an agent identity blueprint and its agent identity blueprint principal in a tenant. User will be added as an owner of the created agent identity blueprint and its agent identity blueprint principal.",
     "name": "Agent ID Developer",
     "privileged": false
   },
@@ -566,7 +571,7 @@
     "privileged": false
   },
   "e3973bdf-4987-49ae-837a-ba8e231c7286": {
-    "description": "Can manage Azure DevOps policies and settings.",
+    "description": "Manage Azure DevOps policies and settings.",
     "name": "Azure DevOps Administrator",
     "privileged": false
   },
@@ -633,6 +638,11 @@
   "f70938a0-fc10-4177-9e90-2178f8765737": {
     "description": "Can troubleshoot communications issues within Teams using advanced tools.",
     "name": "Teams Communications Support Engineer",
+    "privileged": false
+  },
+  "fc8ad4e2-40e4-4724-8317-bcda7503ecbf": {
+    "description": "Manage all aspects of granular delegated admin privileges (GDAP) relationships in a customer tenant.",
+    "name": "Customer Delegated Admin Relationship Administrator",
     "privileged": false
   },
   "fcf91098-03e3-41a9-b5ba-6f0ec8188a12": {
