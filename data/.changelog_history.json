@@ -1,6 +1,16 @@
 [
   {
     "kind": "added",
+    "ts": "2026-05-01T06:44:11.074079+00:00",
+    "appid": "c89c853c-c6cc-4c84-bfd9-fcd7e1c50793",
+    "service": "entra",
+    "appname": "IPSPipelinesProd",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
     "ts": "2026-04-29T16:05:21.027819+00:00",
     "appid": "89e7f920-bdc3-4e71-99e5-30d84827b610",
     "service": "entra",
@@ -1985,16 +1995,6 @@
     "appid": "0e755559-83fb-4b44-91d0-4cc721b9323e",
     "service": "entra",
     "appname": "TeamsActivity.Read - Delegated",
-    "category": "compliance",
-    "severity": "info",
-    "summary": "Added to compliance (info)"
-  },
-  {
-    "kind": "added",
-    "ts": "2026-04-28T16:33:38.232651+00:00",
-    "appid": "0e75ca1e-0464-4b4d-8b93-68208a576181",
-    "service": "entra",
-    "appname": "Cognitive Services Speech Contributor",
     "category": "compliance",
     "severity": "info",
     "summary": "Added to compliance (info)"
