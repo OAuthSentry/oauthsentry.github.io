@@ -9554,6 +9554,13 @@
     "severity": "info",
     "ref_count": 1
   },
+  "c89c853c-c6cc-4c84-bfd9-fcd7e1c50793": {
+    "appname": "Entra Identity Protection",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "b9b0ac19-f710-429d-b58e-dc3f73a330a9": {
     "appname": "Environmental Credit Service (preview) app ID",
     "service": "entra",
@@ -12055,13 +12062,6 @@
   },
   "189cf920-d3d8-4133-9145-23adcc6824fa": {
     "appname": "IpLicensingService",
-    "service": "entra",
-    "category": "compliance",
-    "severity": "info",
-    "ref_count": 1
-  },
-  "c89c853c-c6cc-4c84-bfd9-fcd7e1c50793": {
-    "appname": "IPSPipelinesProd",
     "service": "entra",
     "category": "compliance",
     "severity": "info",

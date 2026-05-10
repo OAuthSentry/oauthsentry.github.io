@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-09T06:26:29.791652+00:00",
+  "generated": "2026-05-10T06:43:15.409622+00:00",
   "count": 4498,
   "items": [
     {
@@ -13653,6 +13653,16 @@
       "_provenance": "entra_compliance_fill_merill"
     },
     {
+      "appname": "Entra Identity Protection",
+      "appid": "c89c853c-c6cc-4c84-bfd9-fcd7e1c50793",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
       "appname": "Environmental Credit Service (preview) app ID",
       "appid": "b9b0ac19-f710-429d-b58e-dc3f73a330a9",
       "metadata_category": "compliance",
@@ -17225,16 +17235,6 @@
     {
       "appname": "IpLicensingService",
       "appid": "189cf920-d3d8-4133-9145-23adcc6824fa",
-      "metadata_category": "compliance",
-      "metadata_severity": "info",
-      "metadata_comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
-      "metadata_reference": "https://github.com/merill/microsoft-info",
-      "service": "entra",
-      "_provenance": "entra_compliance_fill_merill"
-    },
-    {
-      "appname": "IPSPipelinesProd",
-      "appid": "c89c853c-c6cc-4c84-bfd9-fcd7e1c50793",
       "metadata_category": "compliance",
       "metadata_severity": "info",
       "metadata_comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",

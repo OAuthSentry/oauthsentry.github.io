@@ -1,6 +1,6 @@
 {
   "appid": "c89c853c-c6cc-4c84-bfd9-fcd7e1c50793",
-  "appname": "IPSPipelinesProd",
+  "appname": "Entra Identity Protection",
   "service": "entra",
   "category": "compliance",
   "severity": "info",
