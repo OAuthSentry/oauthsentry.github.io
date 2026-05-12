@@ -3,11 +3,31 @@
   <id>tag:oauthsentry.github.io,2026:changelog</id>
   <title>OAuthSentry catalog changelog</title>
   <subtitle>Adds, removes, category and severity changes across the OAuth app catalog</subtitle>
-  <updated>2026-05-01T06:44:11.074079+00:00</updated>
+  <updated>2026-05-12T06:47:30.788883+00:00</updated>
   <link rel="self"      href="https://oauthsentry.github.io/feeds/changelog.atom"/>
   <link rel="alternate" href="https://oauthsentry.github.io/" type="text/html"/>
   <author><name>OAuthSentry</name></author>
   <generator uri="https://oauthsentry.github.io">OAuthSentry build_feeds</generator>
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:30e5659d-7a97-4c66-8863-497f329ac280:2026-05-12T06:47:30.788883+00:00</id>
+    <title>[added] entra / DataAssessments</title>
+    <updated>2026-05-12T06:47:30.788883+00:00</updated>
+    <published>2026-05-12T06:47:30.788883+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/30e5659d-7a97-4c66-8863-497f329ac280.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: DataAssessments
+App ID: 30e5659d-7a97-4c66-8863-497f329ac280
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/30e5659d-7a97-4c66-8863-497f329ac280.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
   <entry>
     <id>tag:oauthsentry.github.io,2026:added:c89c853c-c6cc-4c84-bfd9-fcd7e1c50793:2026-05-01T06:44:11.074079+00:00</id>
     <title>[added] entra / IPSPipelinesProd</title>
@@ -3985,26 +4005,6 @@ Category: compliance
 Severity: info
 Change: Added to compliance (info)
 Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0e5f05e5-9ab9-446b-b98d-1e2157c94125.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:0e755559-83fb-4b44-91d0-4cc721b9323e:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / TeamsActivity.Read - Delegated</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/0e755559-83fb-4b44-91d0-4cc721b9323e.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: TeamsActivity.Read - Delegated
-App ID: 0e755559-83fb-4b44-91d0-4cc721b9323e
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0e755559-83fb-4b44-91d0-4cc721b9323e.json</content>
     <author><name>OAuthSentry</name></author>
   </entry>
 

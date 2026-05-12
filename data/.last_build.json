@@ -6355,6 +6355,13 @@
     "severity": "info",
     "ref_count": 1
   },
+  "30e5659d-7a97-4c66-8863-497f329ac280": {
+    "appname": "DataAssessments",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "33976c19-1db5-4c02-810e-c243db79efde": {
     "appname": "Dataverse",
     "service": "entra",
