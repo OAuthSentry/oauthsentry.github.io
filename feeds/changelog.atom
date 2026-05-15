@@ -3,11 +3,31 @@
   <id>tag:oauthsentry.github.io,2026:changelog</id>
   <title>OAuthSentry catalog changelog</title>
   <subtitle>Adds, removes, category and severity changes across the OAuth app catalog</subtitle>
-  <updated>2026-05-12T06:47:30.788883+00:00</updated>
+  <updated>2026-05-15T07:32:49.063416+00:00</updated>
   <link rel="self"      href="https://oauthsentry.github.io/feeds/changelog.atom"/>
   <link rel="alternate" href="https://oauthsentry.github.io/" type="text/html"/>
   <author><name>OAuthSentry</name></author>
   <generator uri="https://oauthsentry.github.io">OAuthSentry build_feeds</generator>
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:7fe3d988-4f3b-4f33-83bd-1fb921a35ed2:2026-05-15T07:32:49.063416+00:00</id>
+    <title>[added] entra / PurviewRoleAssignmentMigrator</title>
+    <updated>2026-05-15T07:32:49.063416+00:00</updated>
+    <published>2026-05-15T07:32:49.063416+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/7fe3d988-4f3b-4f33-83bd-1fb921a35ed2.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: PurviewRoleAssignmentMigrator
+App ID: 7fe3d988-4f3b-4f33-83bd-1fb921a35ed2
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/7fe3d988-4f3b-4f33-83bd-1fb921a35ed2.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
   <entry>
     <id>tag:oauthsentry.github.io,2026:added:30e5659d-7a97-4c66-8863-497f329ac280:2026-05-12T06:47:30.788883+00:00</id>
     <title>[added] entra / DataAssessments</title>
@@ -3985,26 +4005,6 @@ Category: compliance
 Severity: info
 Change: Added to compliance (info)
 Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0e263e50-5827-48a4-b97c-d940288653c7.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:0e5f05e5-9ab9-446b-b98d-1e2157c94125:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / Quota Request Operator</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/0e5f05e5-9ab9-446b-b98d-1e2157c94125.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: Quota Request Operator
-App ID: 0e5f05e5-9ab9-446b-b98d-1e2157c94125
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0e5f05e5-9ab9-446b-b98d-1e2157c94125.json</content>
     <author><name>OAuthSentry</name></author>
   </entry>
 

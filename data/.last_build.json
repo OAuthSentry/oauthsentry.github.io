@@ -24625,6 +24625,13 @@
     "severity": "info",
     "ref_count": 1
   },
+  "7fe3d988-4f3b-4f33-83bd-1fb921a35ed2": {
+    "appname": "PurviewRoleAssignmentMigrator",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "4747d38e-36c5-4bc3-979b-b0ef74df54d1": {
     "appname": "PushChannel",
     "service": "entra",

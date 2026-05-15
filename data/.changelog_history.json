@@ -1,6 +1,16 @@
 [
   {
     "kind": "added",
+    "ts": "2026-05-15T07:32:49.063416+00:00",
+    "appid": "7fe3d988-4f3b-4f33-83bd-1fb921a35ed2",
+    "service": "entra",
+    "appname": "PurviewRoleAssignmentMigrator",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
     "ts": "2026-05-12T06:47:30.788883+00:00",
     "appid": "30e5659d-7a97-4c66-8863-497f329ac280",
     "service": "entra",
@@ -1985,16 +1995,6 @@
     "appid": "0e263e50-5827-48a4-b97c-d940288653c7",
     "service": "entra",
     "appname": "Directory.AccessAsUser.All - Delegated",
-    "category": "compliance",
-    "severity": "info",
-    "summary": "Added to compliance (info)"
-  },
-  {
-    "kind": "added",
-    "ts": "2026-04-28T16:33:38.232651+00:00",
-    "appid": "0e5f05e5-9ab9-446b-b98d-1e2157c94125",
-    "service": "entra",
-    "appname": "Quota Request Operator",
     "category": "compliance",
     "severity": "info",
     "summary": "Added to compliance (info)"

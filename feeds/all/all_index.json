@@ -1,6 +1,6 @@
 {
-  "generated": "2026-05-14T07:20:12.752974+00:00",
-  "count": 4505,
+  "generated": "2026-05-15T07:32:48.445220+00:00",
+  "count": 4506,
   "items": [
     {
       "appname": "",
@@ -35178,6 +35178,16 @@
       "metadata_category": "compliance",
       "metadata_severity": "info",
       "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
+      "appname": "PurviewRoleAssignmentMigrator",
+      "appid": "7fe3d988-4f3b-4f33-83bd-1fb921a35ed2",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
       "metadata_reference": "https://github.com/merill/microsoft-info",
       "service": "entra",
       "_provenance": "entra_compliance_fill_merill"
