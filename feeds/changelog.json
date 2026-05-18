@@ -1,8 +1,18 @@
 {
   "feed": "OAuthSentry catalog changelog",
-  "generated": "2026-05-18T08:14:50.420846+00:00",
+  "generated": "2026-05-18T12:14:24.757708+00:00",
   "count": 200,
   "entries": [
+    {
+      "kind": "added",
+      "ts": "2026-05-18T12:14:24.757708+00:00",
+      "appid": "6bbbd06f-c1ec-4c41-b021-cfd5affa3077",
+      "service": "entra",
+      "appname": "RocketReach",
+      "category": "compliance",
+      "severity": "low",
+      "summary": "Added to compliance (low)"
+    },
     {
       "kind": "added",
       "ts": "2026-05-18T08:14:50.420846+00:00",
@@ -1989,16 +1999,6 @@
       "appid": "0d22204b-6cad-4dd0-8362-3e3f2ae699d9",
       "service": "entra",
       "appname": "EduAssignments.ReadWrite.All - Application",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "0d3366f3-266e-4117-b422-7cabbc165e7c",
-      "service": "entra",
-      "appname": "Power Pages Authenticated Users per site monthly capacity",
       "category": "compliance",
       "severity": "info",
       "summary": "Added to compliance (info)"

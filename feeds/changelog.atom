@@ -3,11 +3,31 @@
   <id>tag:oauthsentry.github.io,2026:changelog</id>
   <title>OAuthSentry catalog changelog</title>
   <subtitle>Adds, removes, category and severity changes across the OAuth app catalog</subtitle>
-  <updated>2026-05-18T08:14:50.420846+00:00</updated>
+  <updated>2026-05-18T12:14:24.757708+00:00</updated>
   <link rel="self"      href="https://oauthsentry.github.io/feeds/changelog.atom"/>
   <link rel="alternate" href="https://oauthsentry.github.io/" type="text/html"/>
   <author><name>OAuthSentry</name></author>
   <generator uri="https://oauthsentry.github.io">OAuthSentry build_feeds</generator>
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:6bbbd06f-c1ec-4c41-b021-cfd5affa3077:2026-05-18T12:14:24.757708+00:00</id>
+    <title>[added] entra / RocketReach</title>
+    <updated>2026-05-18T12:14:24.757708+00:00</updated>
+    <published>2026-05-18T12:14:24.757708+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/6bbbd06f-c1ec-4c41-b021-cfd5affa3077.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (low)</summary>
+    <content type="text">App: RocketReach
+App ID: 6bbbd06f-c1ec-4c41-b021-cfd5affa3077
+Service: entra
+Category: compliance
+Severity: low
+Change: Added to compliance (low)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/6bbbd06f-c1ec-4c41-b021-cfd5affa3077.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
   <entry>
     <id>tag:oauthsentry.github.io,2026:added:147dc821-b413-44c0-8009-1a3098378012:2026-05-18T08:14:50.420846+00:00</id>
     <title>[added] entra / Work IQ User MCP</title>
@@ -3985,26 +4005,6 @@ Category: compliance
 Severity: info
 Change: Added to compliance (info)
 Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0d22204b-6cad-4dd0-8362-3e3f2ae699d9.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:0d3366f3-266e-4117-b422-7cabbc165e7c:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / Power Pages Authenticated Users per site monthly capacity</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/0d3366f3-266e-4117-b422-7cabbc165e7c.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: Power Pages Authenticated Users per site monthly capacity
-App ID: 0d3366f3-266e-4117-b422-7cabbc165e7c
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0d3366f3-266e-4117-b422-7cabbc165e7c.json</content>
     <author><name>OAuthSentry</name></author>
   </entry>
 

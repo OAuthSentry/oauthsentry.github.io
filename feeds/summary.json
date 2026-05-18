@@ -1,8 +1,8 @@
 {
   "services": {
     "entra": {
-      "total": 4511,
-      "compliance": 4423,
+      "total": 4512,
+      "compliance": 4424,
       "risky": 30,
       "malicious": 58,
       "curated_source": "entra_curated_mthcht",
@@ -26,7 +26,7 @@
     }
   },
   "totals": {
-    "compliance": 4423,
+    "compliance": 4424,
     "risky": 30,
     "malicious": 64
   },
@@ -42,7 +42,7 @@
       "schema": "appname,appid,metadata_category,metadata_severity,metadata_comment,metadata_reference",
       "credit": "mthcht/awesome-lists",
       "credit_url": "https://github.com/mthcht/awesome-lists/tree/main/Lists/OAuth",
-      "loaded_rows": 782
+      "loaded_rows": 784
     },
     {
       "id": "entra_compliance_fill_merill",
@@ -84,6 +84,6 @@
       "loaded_rows": 2
     }
   ],
-  "generated": "2026-05-18T08:14:49.749021+00:00",
-  "total_apps": 4517
+  "generated": "2026-05-18T12:14:24.288212+00:00",
+  "total_apps": 4518
 }

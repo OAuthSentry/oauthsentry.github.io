@@ -1,0 +1,13 @@
+{
+  "appid": "6bbbd06f-c1ec-4c41-b021-cfd5affa3077",
+  "appname": "RocketReach",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "low",
+  "comment": "provides contact informations for sales professionals and marketing teams",
+  "references": [
+    "https://rocketreach.co",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+  ],
+  "slug": "6bbbd06f-c1ec-4c41-b021-cfd5affa3077"
+}

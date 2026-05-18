@@ -25101,6 +25101,13 @@
     "severity": "info",
     "ref_count": 1
   },
+  "6bbbd06f-c1ec-4c41-b021-cfd5affa3077": {
+    "appname": "RocketReach",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "low",
+    "ref_count": 2
+  },
   "f58310d9-a9f6-439a-9e8d-f62e7b41a168": {
     "appname": "Role Based Access Control Administrator",
     "service": "entra",

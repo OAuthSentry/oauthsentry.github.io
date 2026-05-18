@@ -44225,6 +44225,19 @@
     ],
     "slug": "093e8d14-a334-43d9-93e3-30589a8b47d0"
   },
+  "6bbbd06f-c1ec-4c41-b021-cfd5affa3077": {
+    "appid": "6bbbd06f-c1ec-4c41-b021-cfd5affa3077",
+    "appname": "RocketReach",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "low",
+    "comment": "provides contact informations for sales professionals and marketing teams",
+    "references": [
+      "https://rocketreach.co",
+      "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
+    ],
+    "slug": "6bbbd06f-c1ec-4c41-b021-cfd5affa3077"
+  },
   "f58310d9-a9f6-439a-9e8d-f62e7b41a168": {
     "appid": "f58310d9-a9f6-439a-9e8d-f62e7b41a168",
     "appname": "Role Based Access Control Administrator",

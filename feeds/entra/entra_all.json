@@ -1,6 +1,6 @@
 {
-  "generated": "2026-05-18T08:14:49.647023+00:00",
-  "count": 4511,
+  "generated": "2026-05-18T12:14:24.188772+00:00",
+  "count": 4512,
   "items": [
     {
       "appname": "",
@@ -35861,6 +35861,16 @@
       "metadata_reference": "https://github.com/merill/microsoft-info",
       "service": "entra",
       "_provenance": "entra_compliance_fill_merill"
+    },
+    {
+      "appname": "RocketReach",
+      "appid": "6bbbd06f-c1ec-4c41-b021-cfd5affa3077",
+      "metadata_category": "compliance",
+      "metadata_severity": "low",
+      "metadata_comment": "provides contact informations for sales professionals and marketing teams",
+      "metadata_reference": "https://rocketreach.co | https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv",
+      "service": "entra",
+      "_provenance": "entra_curated_mthcht"
     },
     {
       "appname": "Role Based Access Control Administrator",
