@@ -789,6 +789,18 @@
     ],
     "slug": "92b61450-2139-4e4a-a0cc-898eced7a779"
   },
+  "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1": {
+    "appid": "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1",
+    "appname": "Agent Tools",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1"
+  },
   "6b77f0a0-0d89-41cc-acd1-579c22c17a67": {
     "appid": "6b77f0a0-0d89-41cc-acd1-579c22c17a67",
     "appname": "AgFood Platform Sensor Partner Contributor",
@@ -23746,6 +23758,18 @@
       "https://github.com/merill/microsoft-info"
     ],
     "slug": "81441ae1-0b31-4185-a6c0-32b6b84d419f"
+  },
+  "2dbeefeb-6462-48a4-abe6-1c4989699319": {
+    "appid": "2dbeefeb-6462-48a4-abe6-1c4989699319",
+    "appname": "Microsoft 365 Admin Center MCP",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "2dbeefeb-6462-48a4-abe6-1c4989699319"
   },
   "618dd325-23f6-4b6f-8380-4df78026e39b": {
     "appid": "618dd325-23f6-4b6f-8380-4df78026e39b",
@@ -53918,6 +53942,114 @@
       "https://github.com/merill/microsoft-info"
     ],
     "slug": "504d7149-4e4c-3841-4555-55445a677357"
+  },
+  "910333d2-47e9-43ca-981f-6df2f4531ef4": {
+    "appid": "910333d2-47e9-43ca-981f-6df2f4531ef4",
+    "appname": "Work IQ Calendar MCP",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "910333d2-47e9-43ca-981f-6df2f4531ef4"
+  },
+  "ba081686-5d24-4bc6-a0d6-d034ecffed87": {
+    "appid": "ba081686-5d24-4bc6-a0d6-d034ecffed87",
+    "appname": "Work IQ CLI",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant cdc5aeea-15c5-4db6-b079-fcadd2505dc2; via merill/microsoft-info, source=Graph)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "ba081686-5d24-4bc6-a0d6-d034ecffed87"
+  },
+  "ab7c82de-7946-4454-ac28-70249d17c95e": {
+    "appid": "ab7c82de-7946-4454-ac28-70249d17c95e",
+    "appname": "Work IQ Copilot MCP",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "ab7c82de-7946-4454-ac28-70249d17c95e"
+  },
+  "16b1878d-62c7-4009-aa25-68989d63bbad": {
+    "appid": "16b1878d-62c7-4009-aa25-68989d63bbad",
+    "appname": "Work IQ Mail MCP",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "16b1878d-62c7-4009-aa25-68989d63bbad"
+  },
+  "b0b2a2bb-6361-4549-a00c-a018417eb8e2": {
+    "appid": "b0b2a2bb-6361-4549-a00c-a018417eb8e2",
+    "appname": "Work IQ OneDrive MCP",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "b0b2a2bb-6361-4549-a00c-a018417eb8e2"
+  },
+  "292cff14-c0e8-4116-9e3b-99934ae05766": {
+    "appid": "292cff14-c0e8-4116-9e3b-99934ae05766",
+    "appname": "Work IQ SharePoint MCP",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "292cff14-c0e8-4116-9e3b-99934ae05766"
+  },
+  "ce5029ee-c1d3-45c0-bdcc-efb5a4245687": {
+    "appid": "ce5029ee-c1d3-45c0-bdcc-efb5a4245687",
+    "appname": "Work IQ Teams MCP",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "ce5029ee-c1d3-45c0-bdcc-efb5a4245687"
+  },
+  "147dc821-b413-44c0-8009-1a3098378012": {
+    "appid": "147dc821-b413-44c0-8009-1a3098378012",
+    "appname": "Work IQ User MCP",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "147dc821-b413-44c0-8009-1a3098378012"
+  },
+  "c2d0c2b6-8013-4346-9f8b-b81d3b754a29": {
+    "appid": "c2d0c2b6-8013-4346-9f8b-b81d3b754a29",
+    "appname": "Work IQ Word MCP",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "c2d0c2b6-8013-4346-9f8b-b81d3b754a29"
   },
   "e8ddcd69-c73f-4f9f-9844-4100522f16ad": {
     "appid": "e8ddcd69-c73f-4f9f-9844-4100522f16ad",

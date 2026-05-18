@@ -440,6 +440,13 @@
     "severity": "info",
     "ref_count": 1
   },
+  "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1": {
+    "appname": "Agent Tools",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "6b77f0a0-0d89-41cc-acd1-579c22c17a67": {
     "appname": "AgFood Platform Sensor Partner Contributor",
     "service": "entra",
@@ -13525,6 +13532,13 @@
   },
   "81441ae1-0b31-4185-a6c0-32b6b84d419f": {
     "appname": "Microsoft 365 A5 without Audio Conferencing for students use benefit",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "2dbeefeb-6462-48a4-abe6-1c4989699319": {
+    "appname": "Microsoft 365 Admin Center MCP",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
@@ -30647,6 +30661,69 @@
   },
   "504d7149-4e4c-3841-4555-55445a677357": {
     "appname": "WiSECURE AuthTron USB FIDO2 Authenticator",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "910333d2-47e9-43ca-981f-6df2f4531ef4": {
+    "appname": "Work IQ Calendar MCP",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "ba081686-5d24-4bc6-a0d6-d034ecffed87": {
+    "appname": "Work IQ CLI",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "ab7c82de-7946-4454-ac28-70249d17c95e": {
+    "appname": "Work IQ Copilot MCP",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "16b1878d-62c7-4009-aa25-68989d63bbad": {
+    "appname": "Work IQ Mail MCP",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "b0b2a2bb-6361-4549-a00c-a018417eb8e2": {
+    "appname": "Work IQ OneDrive MCP",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "292cff14-c0e8-4116-9e3b-99934ae05766": {
+    "appname": "Work IQ SharePoint MCP",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "ce5029ee-c1d3-45c0-bdcc-efb5a4245687": {
+    "appname": "Work IQ Teams MCP",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "147dc821-b413-44c0-8009-1a3098378012": {
+    "appname": "Work IQ User MCP",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "c2d0c2b6-8013-4346-9f8b-b81d3b754a29": {
+    "appname": "Work IQ Word MCP",
     "service": "entra",
     "category": "compliance",
     "severity": "info",

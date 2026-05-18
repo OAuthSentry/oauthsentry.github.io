@@ -1,0 +1,12 @@
+{
+  "appid": "ba081686-5d24-4bc6-a0d6-d034ecffed87",
+  "appname": "Work IQ CLI",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant cdc5aeea-15c5-4db6-b079-fcadd2505dc2; via merill/microsoft-info, source=Graph)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "ba081686-5d24-4bc6-a0d6-d034ecffed87"
+}
