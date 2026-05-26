@@ -1,8 +1,8 @@
 {
   "services": {
     "entra": {
-      "total": 4512,
-      "compliance": 4424,
+      "total": 4516,
+      "compliance": 4428,
       "risky": 30,
       "malicious": 58,
       "curated_source": "entra_curated_mthcht",
@@ -26,7 +26,7 @@
     }
   },
   "totals": {
-    "compliance": 4424,
+    "compliance": 4428,
     "risky": 30,
     "malicious": 64
   },
@@ -54,7 +54,7 @@
       "schema": "AppId,AppDisplayName,AppOwnerOrganizationId,Source",
       "credit": "Merill Fernando - microsoft-info",
       "credit_url": "https://github.com/merill/microsoft-info",
-      "loaded_rows": 4382
+      "loaded_rows": 4386
     },
     {
       "id": "github_curated_seed",
@@ -84,6 +84,6 @@
       "loaded_rows": 2
     }
   ],
-  "generated": "2026-05-25T08:39:30.841598+00:00",
-  "total_apps": 4518
+  "generated": "2026-05-26T08:00:02.129167+00:00",
+  "total_apps": 4522
 }

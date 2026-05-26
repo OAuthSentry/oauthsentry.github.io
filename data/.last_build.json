@@ -2848,6 +2848,20 @@
     "severity": "info",
     "ref_count": 1
   },
+  "11413461-f071-4513-802f-acbb00576ed3": {
+    "appname": "Azure Security Insights Content As Code",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "5f6aefe1-a8d4-4a7d-a461-6c70cb361014": {
+    "appname": "Azure Security Insights Management",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "090c5cfd-751d-490a-894a-3ce6f1109419": {
     "appname": "Azure Service Bus Data Owner",
     "service": "entra",
@@ -16484,6 +16498,13 @@
     "severity": "info",
     "ref_count": 1
   },
+  "949eebbd-6fe4-4eb5-a25e-a9bf12d6b96e": {
+    "appname": "Microsoft Sentinel Situational Awareness Workspace Access",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "d6fdaa33-e821-4211-83d0-cf74736489e1": {
     "appname": "Microsoft Service Trust",
     "service": "entra",
@@ -17904,6 +17925,13 @@
     "category": "compliance",
     "severity": "info",
     "ref_count": 3
+  },
+  "9abd8443-d92a-40e6-a9ec-e5b6d29bc724": {
+    "appname": "MTP Unified RBAC",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
   },
   "6682cfa5-2710-44c9-adb8-5ac9d76e394a": {
     "appname": "MTS [Community Contributed]",

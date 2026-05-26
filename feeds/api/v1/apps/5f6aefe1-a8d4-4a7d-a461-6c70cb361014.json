@@ -1,6 +1,6 @@
 {
-  "appid": "98785600-1bb7-4fb9-b9fa-19afe2c8a360",
-  "appname": "Azure Security Insights",
+  "appid": "5f6aefe1-a8d4-4a7d-a461-6c70cb361014",
+  "appname": "Azure Security Insights Management",
   "service": "entra",
   "category": "compliance",
   "severity": "info",
@@ -8,5 +8,5 @@
   "references": [
     "https://github.com/merill/microsoft-info"
   ],
-  "slug": "98785600-1bb7-4fb9-b9fa-19afe2c8a360"
+  "slug": "5f6aefe1-a8d4-4a7d-a461-6c70cb361014"
 }
