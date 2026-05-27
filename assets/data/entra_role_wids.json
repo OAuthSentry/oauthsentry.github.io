@@ -190,9 +190,9 @@
     "privileged": false
   },
   "45d8d3c5-c802-45c6-b32a-1d70b5e1e86e": {
-    "description": "Manage access using Microsoft Entra ID for identity governance scenarios.",
+    "description": "Manage access using Microsoft Entra ID for identity governance scenarios.<br/>[!](privileged-roles-permissions.md)",
     "name": "Identity Governance Administrator",
-    "privileged": false
+    "privileged": true
   },
   "49eb8f75-97e9-4e37-9b2b-6c3ebfcffa31": {
     "description": "Back up and restore content (including granular restore) for Exchange in Microsoft 365 Backup",
@@ -546,7 +546,7 @@
     "privileged": false
   },
   "db506228-d27e-4b7d-95e5-295956d6615f": {
-    "description": "Manage all aspects of agents in a tenant including identity lifecycle operations for agent blueprints, agent service principals, agent identities, and agentic users.<br/>[!](privileged-roles-permissions.md)",
+    "description": "Manage all aspects of agents in a tenant including identity lifecycle operations for agent blueprints, agent identity blueprint principals, agent identities, and agentic users.<br/>[!](privileged-roles-permissions.md)",
     "name": "Agent ID Administrator",
     "privileged": true
   },
