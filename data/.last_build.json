@@ -19361,6 +19361,13 @@
     "severity": "info",
     "ref_count": 3
   },
+  "3471ca03-f150-4759-88e6-0bfc97daf723": {
+    "appname": "OneCert-AzureDns-Prod",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "4495894f-534f-41ca-9d3b-0ebf1220a423": {
     "appname": "OneDrive for Business (Basic 2)",
     "service": "entra",

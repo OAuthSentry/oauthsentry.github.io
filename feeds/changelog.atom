@@ -3,11 +3,31 @@
   <id>tag:oauthsentry.github.io,2026:changelog</id>
   <title>OAuthSentry catalog changelog</title>
   <subtitle>Adds, removes, category and severity changes across the OAuth app catalog</subtitle>
-  <updated>2026-05-26T08:00:02.814337+00:00</updated>
+  <updated>2026-05-28T08:11:25.586123+00:00</updated>
   <link rel="self"      href="https://oauthsentry.github.io/feeds/changelog.atom"/>
   <link rel="alternate" href="https://oauthsentry.github.io/" type="text/html"/>
   <author><name>OAuthSentry</name></author>
   <generator uri="https://oauthsentry.github.io">OAuthSentry build_feeds</generator>
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:3471ca03-f150-4759-88e6-0bfc97daf723:2026-05-28T08:11:25.586123+00:00</id>
+    <title>[added] entra / OneCert-AzureDns-Prod</title>
+    <updated>2026-05-28T08:11:25.586123+00:00</updated>
+    <published>2026-05-28T08:11:25.586123+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/3471ca03-f150-4759-88e6-0bfc97daf723.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: OneCert-AzureDns-Prod
+App ID: 3471ca03-f150-4759-88e6-0bfc97daf723
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/3471ca03-f150-4759-88e6-0bfc97daf723.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
   <entry>
     <id>tag:oauthsentry.github.io,2026:added:11413461-f071-4513-802f-acbb00576ed3:2026-05-26T08:00:02.814337+00:00</id>
     <title>[added] entra / Azure Security Insights Content As Code</title>
@@ -3985,26 +4005,6 @@ Category: compliance
 Severity: info
 Change: Added to compliance (info)
 Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0cd2c1f6-94a1-4075-ab8c-0b1aff2e1ad5.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:0cdb527f-a8d1-4bf8-9436-b352c68682b2:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / Microsoft Dynamics ERP Microservices</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/0cdb527f-a8d1-4bf8-9436-b352c68682b2.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: Microsoft Dynamics ERP Microservices
-App ID: 0cdb527f-a8d1-4bf8-9436-b352c68682b2
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0cdb527f-a8d1-4bf8-9436-b352c68682b2.json</content>
     <author><name>OAuthSentry</name></author>
   </entry>
 
