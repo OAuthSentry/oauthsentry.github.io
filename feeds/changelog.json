@@ -1,8 +1,18 @@
 {
   "feed": "OAuthSentry catalog changelog",
-  "generated": "2026-05-28T08:11:25.586123+00:00",
+  "generated": "2026-06-03T09:03:32.291366+00:00",
   "count": 200,
   "entries": [
+    {
+      "kind": "added",
+      "ts": "2026-06-03T09:03:32.291366+00:00",
+      "appid": "992136bc-5b57-425f-8d95-ac65975722cd",
+      "service": "entra",
+      "appname": "Microsoft Defender Hunting",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
     {
       "kind": "added",
       "ts": "2026-05-28T08:11:25.586123+00:00",
@@ -1989,16 +1999,6 @@
       "appid": "0c867c2a-1d8c-454a-a3db-ab2ea1bdc8bb",
       "service": "entra",
       "appname": "Storage File Data SMB Share Contributor",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "0cd2c1f6-94a1-4075-ab8c-0b1aff2e1ad5",
-      "service": "entra",
-      "appname": "PartnerSecurity.ReadWrite.All - Delegated",
       "category": "compliance",
       "severity": "info",
       "summary": "Added to compliance (info)"

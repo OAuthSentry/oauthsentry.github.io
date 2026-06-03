@@ -15035,6 +15035,13 @@
     "severity": "info",
     "ref_count": 1
   },
+  "992136bc-5b57-425f-8d95-ac65975722cd": {
+    "appname": "Microsoft Defender Hunting",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "ad7a56e0-6903-4d13-94f3-5ad491e78960": {
     "appname": "Microsoft Defender Vulnerability Management Add-on",
     "service": "entra",
