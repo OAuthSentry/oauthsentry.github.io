@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "description": "OAuthSentry data sources. Curated lists are pulled by the GitHub Actions workflow on a daily cadence; the build script (scripts/build_feeds.py) merges them into the per-service CSVs that drive the feeds. The merge is opinion-aware: a curated source (mthcht's awesome-lists) wins on every AppId conflict; the merill MicrosoftApps catalogue is used as a compliance fill - it adds Microsoft first-party AppIds that the curated source has not classified, defaulting them to compliance/info. Add a new service by dropping a curated source row with role='curated' and (optionally) a compliance fill row with role='compliance_fill'.",
+  "description": "OAuthSentry data sources. Curated lists are pulled by the GitHub Actions workflow on a daily cadence; the build script (scripts/build_feeds.py) merges them into the per-service CSVs that drive the feeds. The merge is priority-aware: mthcht/awesome-lists sources have priority 1000 and must always win on AppId conflicts. Other curated sources can enrich the catalogue but must not override mthcht entries. Compliance fill sources have lower priority and are only used to add missing AppIds, defaulting them to compliance/info. Add a new service by dropping a curated source row with role='curated' and optionally a compliance fill row with role='compliance_fill'.",
   "sources": [
     {
       "id": "entra_curated_mthcht",
       "service": "entra",
       "role": "curated",
+      "priority": 1000,
+      "conflict_policy": "wins",
       "label": "mthcht/awesome-lists - Entra OAuth apps",
       "remote": "https://raw.githubusercontent.com/mthcht/awesome-lists/main/Lists/OAuth/entra_oauth_apps.csv",
       "local": "data/entra/curated_mthcht.csv",
@@ -18,6 +20,8 @@
       "id": "entra_compliance_fill_merill",
       "service": "entra",
       "role": "compliance_fill",
+      "priority": 100,
+      "conflict_policy": "fill_only",
       "label": "merill/microsoft-info - Microsoft first-party catalogue",
       "remote": "https://raw.githubusercontent.com/merill/microsoft-info/main/_info/MicrosoftApps.csv",
       "local": "data/entra/compliance_fill_merill.csv",
@@ -29,6 +33,8 @@
       "id": "google_curated_mthcht",
       "service": "google",
       "role": "curated",
+      "priority": 1000,
+      "conflict_policy": "wins",
       "label": "mthcht/awesome-lists - Google OAuth apps",
       "remote": "https://raw.githubusercontent.com/mthcht/awesome-lists/main/Lists/OAuth/google_oauth_apps.csv",
       "local": "data/google/curated_mthcht.csv",
@@ -41,6 +47,7 @@
       "id": "slack",
       "service": "slack",
       "role": "planned",
+      "priority": 0,
       "label": "Slack",
       "note": "Awaiting curated source. Contributions welcome - see CONTRIBUTING.md."
     },
@@ -48,6 +55,8 @@
       "id": "github_curated_seed",
       "service": "github",
       "role": "curated",
+      "priority": 500,
+      "conflict_policy": "priority",
       "label": "OAuthSentry seed - GitHub OAuth apps",
       "remote": null,
       "local": "data/github/curated_seed.csv",
@@ -55,18 +64,20 @@
       "schema": "appname,appid,metadata_category,metadata_severity,metadata_comment,metadata_reference",
       "credit": "OAuthSentry contributors",
       "credit_url": "https://github.com/oauthsentry/oauthsentry.github.io",
-      "note": "Self-maintained seed list. No upstream curator (mthcht/awesome-lists does not yet ship a github_oauth_apps.csv). Contributions welcome - see CONTRIBUTING.md."
+      "note": "Self-maintained seed list. No upstream curator mthcht/awesome-lists does not yet ship a github_oauth_apps.csv. Contributions welcome - see CONTRIBUTING.md."
     },
     {
       "id": "salesforce",
       "service": "salesforce",
       "role": "planned",
+      "priority": 0,
       "label": "Salesforce"
     },
     {
       "id": "okta",
       "service": "okta",
       "role": "planned",
+      "priority": 0,
       "label": "Okta"
     }
   ]
