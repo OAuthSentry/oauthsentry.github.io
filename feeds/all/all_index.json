@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-11T08:54:07.197998+00:00",
+  "generated": "2026-06-11T09:32:25.360246+00:00",
   "count": 4524,
   "items": [
     {
@@ -23243,6 +23243,16 @@
       "_provenance": "entra_curated_mthcht"
     },
     {
+      "appname": "Microsoft Photos",
+      "appid": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "https://github.com/OAuthSentry/oauthsentry.github.io/issues/3#issuecomment-4632699967",
+      "metadata_reference": "https://www.microsoft.com/windows/photo-movie-editor | https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv",
+      "service": "entra",
+      "_provenance": "entra_curated_mthcht"
+    },
+    {
       "appname": "MICROSOFT PLANNE",
       "appid": "b737dad2-2f6c-4c65-90e3-ca563267e8b9",
       "metadata_category": "compliance",
@@ -24745,16 +24755,6 @@
     {
       "appname": "Microsoft Teams_2",
       "appid": "42a3ec34-28ba-46b6-992f-db53a675ac5b",
-      "metadata_category": "compliance",
-      "metadata_severity": "info",
-      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
-      "metadata_reference": "https://github.com/merill/microsoft-info",
-      "service": "entra",
-      "_provenance": "entra_compliance_fill_merill"
-    },
-    {
-      "appname": "Microsoft tenant ID",
-      "appid": "72f988bf-86f1-41af-91ab-2d7cd011db47",
       "metadata_category": "compliance",
       "metadata_severity": "info",
       "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",

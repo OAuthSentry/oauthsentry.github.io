@@ -16267,6 +16267,13 @@
     "severity": "info",
     "ref_count": 3
   },
+  "72f988bf-86f1-41af-91ab-2d7cd011db47": {
+    "appname": "Microsoft Photos",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 2
+  },
   "b737dad2-2f6c-4c65-90e3-ca563267e8b9": {
     "appname": "MICROSOFT PLANNE",
     "service": "entra",
@@ -17319,13 +17326,6 @@
   },
   "42a3ec34-28ba-46b6-992f-db53a675ac5b": {
     "appname": "Microsoft Teams_2",
-    "service": "entra",
-    "category": "compliance",
-    "severity": "info",
-    "ref_count": 1
-  },
-  "72f988bf-86f1-41af-91ab-2d7cd011db47": {
-    "appname": "Microsoft tenant ID",
     "service": "entra",
     "category": "compliance",
     "severity": "info",

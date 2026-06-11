@@ -1,12 +1,13 @@
 {
   "appid": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-  "appname": "Microsoft tenant ID",
+  "appname": "Microsoft Photos",
   "service": "entra",
   "category": "compliance",
   "severity": "info",
-  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "comment": "https://github.com/OAuthSentry/oauthsentry.github.io/issues/3#issuecomment-4632699967",
   "references": [
-    "https://github.com/merill/microsoft-info"
+    "https://www.microsoft.com/windows/photo-movie-editor",
+    "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
   ],
   "slug": "72f988bf-86f1-41af-91ab-2d7cd011db47"
 }
