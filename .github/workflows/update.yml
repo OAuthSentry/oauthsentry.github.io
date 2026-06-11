@@ -20,6 +20,7 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -29,41 +30,112 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Validate source priority model
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json
+          from collections import defaultdict
+
+          cfg = json.load(open("data/sources.json", encoding="utf-8"))
+
+          by_service = defaultdict(list)
+          for src in cfg.get("sources", []):
+              if src.get("role") in ("curated", "compliance_fill"):
+                  by_service[src.get("service", "unknown")].append(src)
+
+          for service, sources in by_service.items():
+              mthcht_sources = [s for s in sources if "mthcht" in s.get("id", "").lower()]
+              if not mthcht_sources:
+                  continue
+
+              max_other_priority = max(
+                  [int(s.get("priority", 0)) for s in sources if "mthcht" not in s.get("id", "").lower()],
+                  default=-1
+              )
+
+              for src in mthcht_sources:
+                  priority = int(src.get("priority", 0))
+                  if priority <= max_other_priority:
+                      raise SystemExit(
+                          f"Invalid priority for {src['id']}: {priority} must be higher than {max_other_priority}"
+                      )
+
+          print("source priority model OK")
+          PY
+
       - name: Pull every curated and compliance_fill source listed in data/sources.json
         run: |
           set -euo pipefail
           python3 - <<'PY'
-          import json, sys, urllib.request, pathlib
+          import json
+          import pathlib
+          import sys
+          import urllib.request
 
-          cfg = json.load(open('data/sources.json'))
+          def priority(src):
+              return int(src.get("priority", 0))
+
+          cfg = json.load(open("data/sources.json", encoding="utf-8"))
           changed, skipped, failed = [], [], []
 
-          for src in cfg.get('sources', []):
-              role = src.get('role')
-              if role not in ('curated', 'compliance_fill'):
-                  skipped.append(src.get('id'))
+          sources = sorted(
+              cfg.get("sources", []),
+              key=lambda s: (
+                  s.get("service", ""),
+                  -priority(s),
+                  0 if "mthcht" in s.get("id", "").lower() else 1,
+                  s.get("id", "")
+              )
+          )
+
+          for src in sources:
+              role = src.get("role")
+
+              if role not in ("curated", "compliance_fill"):
+                  skipped.append(src.get("id"))
                   continue
-              remote = src.get('remote')
-              local  = src.get('local')
+
+              remote = src.get("remote")
+              local = src.get("local")
+
               if not remote or not local:
-                  skipped.append(src.get('id'))
+                  skipped.append(src.get("id"))
                   continue
+
               dest = pathlib.Path(local)
               dest.parent.mkdir(parents=True, exist_ok=True)
+
               try:
-                  req = urllib.request.Request(remote, headers={'User-Agent': 'OAuthSentry-Updater/2.0'})
+                  req = urllib.request.Request(
+                      remote,
+                      headers={"User-Agent": "OAuthSentry-Updater/2.0"}
+                  )
+
                   with urllib.request.urlopen(req, timeout=60) as r:
                       body = r.read()
-                  prev = dest.read_bytes() if dest.exists() else b''
+
+                  prev = dest.read_bytes() if dest.exists() else b""
+
                   if body != prev:
                       dest.write_bytes(body)
-                      changed.append(src['id'])
-                      print(f"updated: {src['id']:36s} -> {dest} ({len(body):,} bytes)")
+                      changed.append(src["id"])
+                      print(
+                          f"updated: {src['id']:36s} "
+                          f"priority={priority(src):4d} "
+                          f"policy={src.get('conflict_policy', 'priority'):10s} "
+                          f"-> {dest} ({len(body):,} bytes)"
+                      )
                   else:
-                      print(f"unchanged: {src['id']}")
+                      print(
+                          f"unchanged: {src['id']:36s} "
+                          f"priority={priority(src):4d} "
+                          f"policy={src.get('conflict_policy', 'priority')}"
+                      )
+
               except Exception as e:
-                  failed.append(src.get('id'))
-                  print(f"WARN: {src['id']} fetch failed: {e}", file=sys.stderr)
+                  failed.append(src.get("id"))
+                  print(f"WARN: {src.get('id')} fetch failed: {e}", file=sys.stderr)
 
           print(f"\nchanged   = {changed}")
           print(f"skipped   = {skipped}")
@@ -73,12 +145,7 @@ jobs:
       - name: Rebuild feeds
         run: python3 scripts/build_feeds.py
 
-      - name: Refresh token-decoder reference data (wids + FOCI)
-        # Refreshes assets/data/entra_role_wids.json from MicrosoftDocs/entra-docs
-        # and assets/data/entra_known_apps.json from secureworks/family-of-client-ids-research.
-        # Hand-curated files (claims and high-risk scopes) are validated, not overwritten.
-        # Non-fatal: a 403 / outage on either upstream should not break the daily build of
-        # the OAuth catalog, which is the primary purpose of this workflow.
+      - name: Refresh token-decoder reference data
         continue-on-error: true
         run: python3 scripts/build_decoder_data.py
 
@@ -86,6 +153,7 @@ jobs:
         run: |
           git config user.name  "oauthsentry-bot"
           git config user.email "oauthsentry-bot@users.noreply.github.com"
+
           if [[ -n "$(git status --porcelain)" ]]; then
             git add data feeds assets/data
             git commit -m "chore: refresh upstream sources & rebuild feeds [skip ci]"
