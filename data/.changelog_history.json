@@ -1,5 +1,15 @@
 [
   {
+    "kind": "added",
+    "ts": "2026-06-13T07:55:40.656141+00:00",
+    "appid": "2d4e7d66-4baf-4714-bf99-7e03dc377fdb",
+    "service": "entra",
+    "appname": "Workload Identity Control Plane",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
     "kind": "reference-added",
     "ts": "2026-06-11T09:32:25.658541+00:00",
     "appid": "72f988bf-86f1-41af-91ab-2d7cd011db47",
@@ -1985,16 +1995,6 @@
     "appid": "0c5e8a55-87a6-4556-93ab-adc52c4d862d",
     "service": "entra",
     "appname": "DeviceManagementRBAC.ReadWrite.All - Delegated",
-    "category": "compliance",
-    "severity": "info",
-    "summary": "Added to compliance (info)"
-  },
-  {
-    "kind": "added",
-    "ts": "2026-04-28T16:33:38.232651+00:00",
-    "appid": "0c7d31ec-31ca-4f58-b6ec-9950b6b0de69",
-    "service": "entra",
-    "appname": "ShortNotes.Read.All - Application",
     "category": "compliance",
     "severity": "info",
     "summary": "Added to compliance (info)"

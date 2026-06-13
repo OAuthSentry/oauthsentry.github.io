@@ -30820,6 +30820,13 @@
     "severity": "info",
     "ref_count": 1
   },
+  "2d4e7d66-4baf-4714-bf99-7e03dc377fdb": {
+    "appname": "Workload Identity Control Plane",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "c34f683f-4d5a-4403-affd-6615e00e3a7f": {
     "appname": "Workplace Device Join",
     "service": "entra",
