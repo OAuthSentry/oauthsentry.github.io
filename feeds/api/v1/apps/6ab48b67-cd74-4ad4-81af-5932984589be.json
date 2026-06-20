@@ -1,6 +1,6 @@
 {
-  "appid": "f9be0c49-aa22-4ec6-911a-c5da515226ff",
-  "appname": "Dynamics 365 Human Resources",
+  "appid": "6ab48b67-cd74-4ad4-81af-5932984589be",
+  "appname": "Cowork client app ID",
   "service": "entra",
   "category": "compliance",
   "severity": "info",
@@ -8,5 +8,5 @@
   "references": [
     "https://github.com/merill/microsoft-info"
   ],
-  "slug": "f9be0c49-aa22-4ec6-911a-c5da515226ff"
+  "slug": "6ab48b67-cd74-4ad4-81af-5932984589be"
 }

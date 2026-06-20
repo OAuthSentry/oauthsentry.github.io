@@ -1,6 +1,6 @@
 {
   "appid": "ecd93392-c922-4f48-9ddf-10741e4a9b65",
-  "appname": "e-Invoicing Service service principal",
+  "appname": "Dynamics 365 Electronic Invoicing service",
   "service": "entra",
   "category": "compliance",
   "severity": "info",

@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-19T09:14:38.662606+00:00",
-  "count": 4519,
+  "generated": "2026-06-20T07:57:15.833462+00:00",
+  "count": 4522,
   "items": [
     {
       "appname": "",
@@ -8423,6 +8423,16 @@
       "_provenance": "entra_compliance_fill_merill"
     },
     {
+      "appname": "Cowork client app ID",
+      "appid": "6ab48b67-cd74-4ad4-81af-5932984589be",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
       "appname": "CPIM Service",
       "appid": "bb2a2e3a-c5e7-4f0a-88e0-8e01fd3fc1f4",
       "metadata_category": "compliance",
@@ -11433,6 +11443,16 @@
       "_provenance": "entra_compliance_fill_merill"
     },
     {
+      "appname": "Dynamics 365 Electronic Invoicing service",
+      "appid": "ecd93392-c922-4f48-9ddf-10741e4a9b65",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
       "appname": "Dynamics 365 Enterprise Edition - Additional Database Storage for Government",
       "appid": "4aed5dd6-eb9c-4143-8f14-368d70287121",
       "metadata_category": "compliance",
@@ -12533,7 +12553,7 @@
       "_provenance": "entra_compliance_fill_merill"
     },
     {
-      "appname": "Dynamics 365 HR Virtual Table",
+      "appname": "Dynamics 365 Human Resources",
       "appid": "f9be0c49-aa22-4ec6-911a-c5da515226ff",
       "metadata_category": "compliance",
       "metadata_severity": "info",
@@ -12985,16 +13005,6 @@
     {
       "appname": "Dynamics365 for Operations Activity",
       "appid": "6bddf93e-d6f4-4991-b9fc-30cfdf07ee7b",
-      "metadata_category": "compliance",
-      "metadata_severity": "info",
-      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
-      "metadata_reference": "https://github.com/merill/microsoft-info",
-      "service": "entra",
-      "_provenance": "entra_compliance_fill_merill"
-    },
-    {
-      "appname": "e-Invoicing Service service principal",
-      "appid": "ecd93392-c922-4f48-9ddf-10741e4a9b65",
       "metadata_category": "compliance",
       "metadata_severity": "info",
       "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
@@ -14975,6 +14985,16 @@
     {
       "appname": "FileStorageContainer.Selected - Delegated",
       "appid": "085ca537-6565-41c2-aca7-db852babc212",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
+      "appname": "Finance Agent",
+      "appid": "8c1a9936-578e-4d13-9bd9-9afe53ef7de8",
       "metadata_category": "compliance",
       "metadata_severity": "info",
       "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
@@ -21993,11 +22013,11 @@
       "_provenance": "entra_compliance_fill_merill"
     },
     {
-      "appname": "Microsoft Dynamics ERP Microservices CDS [Community Contributed]",
+      "appname": "Microsoft Dynamics ERP Microservices CDS",
       "appid": "703e2651-d3fc-48f5-942c-74274233dba8",
       "metadata_category": "compliance",
       "metadata_severity": "info",
-      "metadata_comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=GitHub)",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
       "metadata_reference": "https://github.com/merill/microsoft-info",
       "service": "entra",
       "_provenance": "entra_compliance_fill_merill"
@@ -39541,6 +39561,16 @@
       "metadata_reference": "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in - https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv | https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv",
       "service": "entra",
       "_provenance": "entra_curated_mthcht"
+    },
+    {
+      "appname": "Teams channel group ID",
+      "appid": "b781f78d-32f2-432f-b1fa-265d8259f9be",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
     },
     {
       "appname": "Teams CMD Services Artifacts",

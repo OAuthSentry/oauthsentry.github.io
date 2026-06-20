@@ -5893,6 +5893,13 @@
     "severity": "info",
     "ref_count": 1
   },
+  "6ab48b67-cd74-4ad4-81af-5932984589be": {
+    "appname": "Cowork client app ID",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "bb2a2e3a-c5e7-4f0a-88e0-8e01fd3fc1f4": {
     "appname": "CPIM Service",
     "service": "entra",
@@ -8000,6 +8007,13 @@
     "severity": "info",
     "ref_count": 1
   },
+  "ecd93392-c922-4f48-9ddf-10741e4a9b65": {
+    "appname": "Dynamics 365 Electronic Invoicing service",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "4aed5dd6-eb9c-4143-8f14-368d70287121": {
     "appname": "Dynamics 365 Enterprise Edition - Additional Database Storage for Government",
     "service": "entra",
@@ -8771,7 +8785,7 @@
     "ref_count": 1
   },
   "f9be0c49-aa22-4ec6-911a-c5da515226ff": {
-    "appname": "Dynamics 365 HR Virtual Table",
+    "appname": "Dynamics 365 Human Resources",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
@@ -9087,13 +9101,6 @@
   },
   "6bddf93e-d6f4-4991-b9fc-30cfdf07ee7b": {
     "appname": "Dynamics365 for Operations Activity",
-    "service": "entra",
-    "category": "compliance",
-    "severity": "info",
-    "ref_count": 1
-  },
-  "ecd93392-c922-4f48-9ddf-10741e4a9b65": {
-    "appname": "e-Invoicing Service service principal",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
@@ -10480,6 +10487,13 @@
   },
   "085ca537-6565-41c2-aca7-db852babc212": {
     "appname": "FileStorageContainer.Selected - Delegated",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "8c1a9936-578e-4d13-9bd9-9afe53ef7de8": {
+    "appname": "Finance Agent",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
@@ -15393,7 +15407,7 @@
     "ref_count": 1
   },
   "703e2651-d3fc-48f5-942c-74274233dba8": {
-    "appname": "Microsoft Dynamics ERP Microservices CDS [Community Contributed]",
+    "appname": "Microsoft Dynamics ERP Microservices CDS",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
@@ -27676,6 +27690,13 @@
     "category": "compliance",
     "severity": "info",
     "ref_count": 3
+  },
+  "b781f78d-32f2-432f-b1fa-265d8259f9be": {
+    "appname": "Teams channel group ID",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
   },
   "6bc3b958-689b-49f5-9006-36d165f30e00": {
     "appname": "Teams CMD Services Artifacts",
