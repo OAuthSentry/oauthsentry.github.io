@@ -25563,6 +25563,13 @@
     "severity": "info",
     "ref_count": 1
   },
+  "45164d96-544d-4a64-a1ca-3fb4bbb6eb18": {
+    "appname": "ScheduledActions",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "7239b71d-b402-4150-b13d-78ecfe8df441": {
     "appname": "SchedulePermissions.ReadWrite.All - Application",
     "service": "entra",
