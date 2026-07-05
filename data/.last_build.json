@@ -2057,6 +2057,13 @@
     "severity": "info",
     "ref_count": 1
   },
+  "89b757f8-1e01-4f41-8c72-75e191b11b8c": {
+    "appname": "Azure Context Cache RP Prod Identity",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "a232010e-820c-4083-83bb-3ace5fc29d0b": {
     "appname": "Azure Cosmos DB",
     "service": "entra",

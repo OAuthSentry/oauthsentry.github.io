@@ -1,6 +1,16 @@
 [
   {
     "kind": "added",
+    "ts": "2026-07-05T07:36:04.359276+00:00",
+    "appid": "89b757f8-1e01-4f41-8c72-75e191b11b8c",
+    "service": "entra",
+    "appname": "Azure Context Cache RP Prod Identity",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
     "ts": "2026-06-21T08:40:40.576756+00:00",
     "appid": "45164d96-544d-4a64-a1ca-3fb4bbb6eb18",
     "service": "entra",
@@ -1985,16 +1995,6 @@
     "appid": "0c278af4-c9c1-45de-9f4b-cd929e747a2c",
     "service": "entra",
     "appname": "Windows 365 Enterprise 1 vCPU 2 GB 64 GB_1",
-    "category": "compliance",
-    "severity": "info",
-    "summary": "Added to compliance (info)"
-  },
-  {
-    "kind": "added",
-    "ts": "2026-04-28T16:33:38.232651+00:00",
-    "appid": "0c34c906-8d99-4cb7-8bb7-33f5b0a1a799",
-    "service": "entra",
-    "appname": "API Management Workspace Contributor",
     "category": "compliance",
     "severity": "info",
     "summary": "Added to compliance (info)"

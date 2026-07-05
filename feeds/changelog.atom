@@ -3,11 +3,31 @@
   <id>tag:oauthsentry.github.io,2026:changelog</id>
   <title>OAuthSentry catalog changelog</title>
   <subtitle>Adds, removes, category and severity changes across the OAuth app catalog</subtitle>
-  <updated>2026-06-21T08:40:40.576756+00:00</updated>
+  <updated>2026-07-05T07:36:04.359276+00:00</updated>
   <link rel="self"      href="https://oauthsentry.github.io/feeds/changelog.atom"/>
   <link rel="alternate" href="https://oauthsentry.github.io/" type="text/html"/>
   <author><name>OAuthSentry</name></author>
   <generator uri="https://oauthsentry.github.io">OAuthSentry build_feeds</generator>
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:89b757f8-1e01-4f41-8c72-75e191b11b8c:2026-07-05T07:36:04.359276+00:00</id>
+    <title>[added] entra / Azure Context Cache RP Prod Identity</title>
+    <updated>2026-07-05T07:36:04.359276+00:00</updated>
+    <published>2026-07-05T07:36:04.359276+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/89b757f8-1e01-4f41-8c72-75e191b11b8c.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: Azure Context Cache RP Prod Identity
+App ID: 89b757f8-1e01-4f41-8c72-75e191b11b8c
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/89b757f8-1e01-4f41-8c72-75e191b11b8c.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
   <entry>
     <id>tag:oauthsentry.github.io,2026:added:45164d96-544d-4a64-a1ca-3fb4bbb6eb18:2026-06-21T08:40:40.576756+00:00</id>
     <title>[added] entra / ScheduledActions</title>
@@ -3985,26 +4005,6 @@ Category: compliance
 Severity: info
 Change: Added to compliance (info)
 Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0c278af4-c9c1-45de-9f4b-cd929e747a2c.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:0c34c906-8d99-4cb7-8bb7-33f5b0a1a799:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / API Management Workspace Contributor</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/0c34c906-8d99-4cb7-8bb7-33f5b0a1a799.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: API Management Workspace Contributor
-App ID: 0c34c906-8d99-4cb7-8bb7-33f5b0a1a799
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0c34c906-8d99-4cb7-8bb7-33f5b0a1a799.json</content>
     <author><name>OAuthSentry</name></author>
   </entry>
 
