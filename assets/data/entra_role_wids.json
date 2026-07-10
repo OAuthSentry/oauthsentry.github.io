@@ -255,7 +255,7 @@
     "privileged": true
   },
   "5f2222b1-57c3-48ba-8ad5-d4759f1fde6f": {
-    "description": "Creates and manages security events.<br/>[!](privileged-roles-permissions.md)",
+    "description": "Creates and manages security events and performs identity containment actions during security incidents.<br/>[!](privileged-roles-permissions.md)",
     "name": "Security Operator",
     "privileged": true
   },
