@@ -17751,6 +17751,18 @@
     ],
     "slug": "31392ffb-586c-42d1-9346-e59415a2cc4e"
   },
+  "db44d869-9bce-4198-809b-a806756b0d31": {
+    "appid": "db44d869-9bce-4198-809b-a806756b0d31",
+    "appname": "ExchangeRevocationSync",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "db44d869-9bce-4198-809b-a806756b0d31"
+  },
   "7f15f9d9-cad0-44f1-bbba-d36650e07765": {
     "appid": "7f15f9d9-cad0-44f1-bbba-d36650e07765",
     "appname": "Export to data lake | Azure Synapse Link for Dataverse",

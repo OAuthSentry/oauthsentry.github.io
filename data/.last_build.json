@@ -10107,6 +10107,13 @@
     "severity": "info",
     "ref_count": 1
   },
+  "db44d869-9bce-4198-809b-a806756b0d31": {
+    "appname": "ExchangeRevocationSync",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "7f15f9d9-cad0-44f1-bbba-d36650e07765": {
     "appname": "Export to data lake | Azure Synapse Link for Dataverse",
     "service": "entra",

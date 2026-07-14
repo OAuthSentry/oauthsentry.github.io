@@ -3,11 +3,31 @@
   <id>tag:oauthsentry.github.io,2026:changelog</id>
   <title>OAuthSentry catalog changelog</title>
   <subtitle>Adds, removes, category and severity changes across the OAuth app catalog</subtitle>
-  <updated>2026-07-05T07:36:04.359276+00:00</updated>
+  <updated>2026-07-14T06:22:51.998805+00:00</updated>
   <link rel="self"      href="https://oauthsentry.github.io/feeds/changelog.atom"/>
   <link rel="alternate" href="https://oauthsentry.github.io/" type="text/html"/>
   <author><name>OAuthSentry</name></author>
   <generator uri="https://oauthsentry.github.io">OAuthSentry build_feeds</generator>
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:db44d869-9bce-4198-809b-a806756b0d31:2026-07-14T06:22:51.998805+00:00</id>
+    <title>[added] entra / ExchangeRevocationSync</title>
+    <updated>2026-07-14T06:22:51.998805+00:00</updated>
+    <published>2026-07-14T06:22:51.998805+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/db44d869-9bce-4198-809b-a806756b0d31.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: ExchangeRevocationSync
+App ID: db44d869-9bce-4198-809b-a806756b0d31
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/db44d869-9bce-4198-809b-a806756b0d31.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
   <entry>
     <id>tag:oauthsentry.github.io,2026:added:89b757f8-1e01-4f41-8c72-75e191b11b8c:2026-07-05T07:36:04.359276+00:00</id>
     <title>[added] entra / Azure Context Cache RP Prod Identity</title>
@@ -3985,26 +4005,6 @@ Category: compliance
 Severity: info
 Change: Added to compliance (info)
 Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0c266dff-15dd-4b49-8397-2bb16070ed52.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:0c278af4-c9c1-45de-9f4b-cd929e747a2c:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / Windows 365 Enterprise 1 vCPU 2 GB 64 GB_1</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/0c278af4-c9c1-45de-9f4b-cd929e747a2c.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: Windows 365 Enterprise 1 vCPU 2 GB 64 GB_1
-App ID: 0c278af4-c9c1-45de-9f4b-cd929e747a2c
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0c278af4-c9c1-45de-9f4b-cd929e747a2c.json</content>
     <author><name>OAuthSentry</name></author>
   </entry>
 

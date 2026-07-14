@@ -1,8 +1,18 @@
 {
   "feed": "OAuthSentry catalog changelog",
-  "generated": "2026-07-05T07:36:04.359276+00:00",
+  "generated": "2026-07-14T06:22:51.998805+00:00",
   "count": 200,
   "entries": [
+    {
+      "kind": "added",
+      "ts": "2026-07-14T06:22:51.998805+00:00",
+      "appid": "db44d869-9bce-4198-809b-a806756b0d31",
+      "service": "entra",
+      "appname": "ExchangeRevocationSync",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
     {
       "kind": "added",
       "ts": "2026-07-05T07:36:04.359276+00:00",
@@ -1989,16 +1999,6 @@
       "appid": "0c266dff-15dd-4b49-8397-2bb16070ed52",
       "service": "entra",
       "appname": "Microsoft 365 Audio Conferencing_3",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "0c278af4-c9c1-45de-9f4b-cd929e747a2c",
-      "service": "entra",
-      "appname": "Windows 365 Enterprise 1 vCPU 2 GB 64 GB_1",
       "category": "compliance",
       "severity": "info",
       "summary": "Added to compliance (info)"
