@@ -1,6 +1,6 @@
 {
-  "appid": "90636e1f-ef82-43bf-bdcf-5255f139d12f",
-  "appname": "YubiKey Bio Series - Multi-protocol Edition (additional)",
+  "appid": "e563cff8-1af6-4e6f-a655-7571ca482e71",
+  "appname": "OpenSpecsWindowsProtocolsMSWCCE",
   "service": "entra",
   "category": "compliance",
   "severity": "info",
@@ -8,5 +8,5 @@
   "references": [
     "https://github.com/merill/microsoft-info"
   ],
-  "slug": "90636e1f-ef82-43bf-bdcf-5255f139d12f"
+  "slug": "e563cff8-1af6-4e6f-a655-7571ca482e71"
 }

@@ -5717,6 +5717,30 @@
     ],
     "slug": "372140e0-b3b7-4226-8ef9-d57986796201"
   },
+  "7347eb49-7a1a-43c5-8eac-a5cd1d1c7cf0": {
+    "appid": "7347eb49-7a1a-43c5-8eac-a5cd1d1c7cf0",
+    "appname": "AzureAISearchMicrosoftRightsMgmntService",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "7347eb49-7a1a-43c5-8eac-a5cd1d1c7cf0"
+  },
+  "8b2071cd-015a-4025-8052-1c0dba2d3f64": {
+    "appid": "8b2071cd-015a-4025-8052-1c0dba2d3f64",
+    "appname": "AzureAISearchSensitivityLabelMetaData",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "8b2071cd-015a-4025-8052-1c0dba2d3f64"
+  },
   "fc75330b-179d-49af-87dd-3b1acf6827fa": {
     "appid": "fc75330b-179d-49af-87dd-3b1acf6827fa",
     "appname": "AzureAutomation",
@@ -17143,9 +17167,21 @@
     ],
     "slug": "6002f033-3c07-ce3e-d0f7-0ffe5ed42543"
   },
+  "20f0be98-9af9-986a-4b42-8eca4acb28e4": {
+    "appid": "20f0be98-9af9-986a-4b42-8eca4acb28e4",
+    "appname": "Excelsecu eSecu FIDO2 Fingerprint Security Key",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "20f0be98-9af9-986a-4b42-8eca4acb28e4"
+  },
   "d384db22-4d50-ebde-2eac-5765cf1e2a44": {
     "appid": "d384db22-4d50-ebde-2eac-5765cf1e2a44",
-    "appname": "Excelsecu eSecu FIDO2 Fingerprint Security Key",
+    "appname": "Excelsecu eSecu FIDO2 Fingerprint Security Key (other)",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
@@ -17155,9 +17191,21 @@
     ],
     "slug": "d384db22-4d50-ebde-2eac-5765cf1e2a44"
   },
+  "a3975549-b191-fd67-b8fb-017e2917fdb3": {
+    "appid": "a3975549-b191-fd67-b8fb-017e2917fdb3",
+    "appname": "Excelsecu eSecu FIDO2 NFC Security Key",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "a3975549-b191-fd67-b8fb-017e2917fdb3"
+  },
   "fbefdf68-fe86-0106-213e-4d5fa24cbe2e": {
     "appid": "fbefdf68-fe86-0106-213e-4d5fa24cbe2e",
-    "appname": "Excelsecu eSecu FIDO2 NFC Security Key",
+    "appname": "Excelsecu eSecu FIDO2 NFC Security Key (other)",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
@@ -18660,6 +18708,18 @@
       "https://github.com/merill/microsoft-info"
     ],
     "slug": "bfd4133a-bbf3-4212-972b-60412137c428"
+  },
+  "fcdfa2de-b65b-4b54-9a1c-81c8a18282d9": {
+    "appid": "fcdfa2de-b65b-4b54-9a1c-81c8a18282d9",
+    "appname": "FoundryMCPServer (additional)",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "fcdfa2de-b65b-4b54-9a1c-81c8a18282d9"
   },
   "b24835c0-6b13-41e7-822c-94c9effb98ee": {
     "appid": "b24835c0-6b13-41e7-822c-94c9effb98ee",
@@ -21611,9 +21671,21 @@
     ],
     "slug": "d91c5288-0ef0-49b7-b8ae-21ca0aa6b3f3"
   },
+  "4b3f8944-d4f2-4d21-bb19-764a986ec160": {
+    "appid": "4b3f8944-d4f2-4d21-bb19-764a986ec160",
+    "appname": "KeyXentic FIDO2 Secp256R1 FIDO2 CTAP2 Authenticator",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "4b3f8944-d4f2-4d21-bb19-764a986ec160"
+  },
   "ec31b4cc-2acc-4b8e-9c01-bade00ccbe26": {
     "appid": "ec31b4cc-2acc-4b8e-9c01-bade00ccbe26",
-    "appname": "KeyXentic FIDO2 Secp256R1 FIDO2 CTAP2 Authenticator",
+    "appname": "KeyXentic FIDO2 Secp256R1 FIDO2 CTAP2 Authenticator (other)",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
@@ -27193,18 +27265,6 @@
     ],
     "slug": "195e7f27-02f9-4045-9a91-cd2fa1c2af2f"
   },
-  "6bf85cfa-ac8a-4be5-b5de-425a0d0dc016": {
-    "appid": "6bf85cfa-ac8a-4be5-b5de-425a0d0dc016",
-    "appname": "Microsoft Entra AD Synchronization Service [Community Contributed]",
-    "service": "entra",
-    "category": "compliance",
-    "severity": "info",
-    "comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=GitHub)",
-    "references": [
-      "https://github.com/merill/microsoft-info"
-    ],
-    "slug": "6bf85cfa-ac8a-4be5-b5de-425a0d0dc016"
-  },
   "c4da7f8a-5ee2-4c99-a7e1-87d2df57f6fe": {
     "appid": "c4da7f8a-5ee2-4c99-a7e1-87d2df57f6fe",
     "appname": "Microsoft Entra BASIC",
@@ -28718,18 +28778,6 @@
     ],
     "slug": "72f988bf-86f1-41af-91ab-2d7cd011db47"
   },
-  "b737dad2-2f6c-4c65-90e3-ca563267e8b9": {
-    "appid": "b737dad2-2f6c-4c65-90e3-ca563267e8b9",
-    "appname": "MICROSOFT PLANNE",
-    "service": "entra",
-    "category": "compliance",
-    "severity": "info",
-    "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
-    "references": [
-      "https://github.com/merill/microsoft-info"
-    ],
-    "slug": "b737dad2-2f6c-4c65-90e3-ca563267e8b9"
-  },
   "66375f6b-983f-4c2c-9701-d680650f588f": {
     "appid": "66375f6b-983f-4c2c-9701-d680650f588f",
     "appname": "Microsoft Planner",
@@ -28743,6 +28791,18 @@
       "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
     ],
     "slug": "66375f6b-983f-4c2c-9701-d680650f588f"
+  },
+  "b737dad2-2f6c-4c65-90e3-ca563267e8b9": {
+    "appid": "b737dad2-2f6c-4c65-90e3-ca563267e8b9",
+    "appname": "Microsoft Planner",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "b737dad2-2f6c-4c65-90e3-ca563267e8b9"
   },
   "75f31797-37c9-498e-8dc9-53c16a36afca": {
     "appid": "75f31797-37c9-498e-8dc9-53c16a36afca",
@@ -32502,7 +32562,7 @@
   },
   "4dca1d4f-adcf-4dd2-a0a0-d2fa9d86b752": {
     "appid": "4dca1d4f-adcf-4dd2-a0a0-d2fa9d86b752",
-    "appname": "O365 Suite UX",
+    "appname": "O365 Suite UX (additional)",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
@@ -33458,18 +33518,6 @@
     ],
     "slug": "601d4e27-7bb3-4dee-8199-90d47d527e1c"
   },
-  "915d9449-5b40-4b44-97ee-5080a1f3e759": {
-    "appid": "915d9449-5b40-4b44-97ee-5080a1f3e759",
-    "appname": "Office Delve",
-    "service": "entra",
-    "category": "compliance",
-    "severity": "info",
-    "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
-    "references": [
-      "https://github.com/merill/microsoft-info"
-    ],
-    "slug": "915d9449-5b40-4b44-97ee-5080a1f3e759"
-  },
   "94c63fef-13a3-47bc-8074-75af8c65887a": {
     "appid": "94c63fef-13a3-47bc-8074-75af8c65887a",
     "appname": "Office Delve",
@@ -33483,6 +33531,18 @@
       "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
     ],
     "slug": "94c63fef-13a3-47bc-8074-75af8c65887a"
+  },
+  "915d9449-5b40-4b44-97ee-5080a1f3e759": {
+    "appid": "915d9449-5b40-4b44-97ee-5080a1f3e759",
+    "appname": "Office Delve (additional)",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "915d9449-5b40-4b44-97ee-5080a1f3e759"
   },
   "55441455-2f54-42b5-bc99-93e21cd4ae28": {
     "appid": "55441455-2f54-42b5-bc99-93e21cd4ae28",
@@ -34932,6 +34992,18 @@
     ],
     "slug": "664d9f67-84a2-412a-9ff7-b4f7d8ee6d05"
   },
+  "e563cff8-1af6-4e6f-a655-7571ca482e71": {
+    "appid": "e563cff8-1af6-4e6f-a655-7571ca482e71",
+    "appname": "OpenSpecsWindowsProtocolsMSWCCE",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "e563cff8-1af6-4e6f-a655-7571ca482e71"
+  },
   "498476ce-e0fe-48b0-b801-37ba7e2685c6": {
     "appid": "498476ce-e0fe-48b0-b801-37ba7e2685c6",
     "appname": "Organization.Read.All - Application",
@@ -35637,6 +35709,18 @@
       "https://github.com/merill/microsoft-info"
     ],
     "slug": "5cf42378-d67d-4f36-ba46-e8b86229381d"
+  },
+  "2e5ecfc8-ea79-48bd-8140-c19324acb278": {
+    "appid": "2e5ecfc8-ea79-48bd-8140-c19324acb278",
+    "appname": "PasswordResetServiceArlingtonCloudAppId",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "2e5ecfc8-ea79-48bd-8140-c19324acb278"
   },
   "bdfb26d9-bb36-49be-9b4c-b8cbf4b05808": {
     "appid": "bdfb26d9-bb36-49be-9b4c-b8cbf4b05808",
@@ -40908,7 +40992,7 @@
   },
   "9ac8c0b3-2c30-497c-b4bc-cadfe9bd6eed": {
     "appid": "9ac8c0b3-2c30-497c-b4bc-cadfe9bd6eed",
-    "appname": "Project Work Management",
+    "appname": "Project Work Management (additional)",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
@@ -45383,9 +45467,21 @@
     ],
     "slug": "bb5ffd56-39eb-458c-a53a-775ba21277da"
   },
+  "b92c3f9a-c014-4056-887f-140a2501163b": {
+    "appid": "b92c3f9a-c014-4056-887f-140a2501163b",
+    "appname": "Security Key by Yubico",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "b92c3f9a-c014-4056-887f-140a2501163b"
+  },
   "f8a011f3-8c0a-4d15-8006-17111f9edc7d": {
     "appid": "f8a011f3-8c0a-4d15-8006-17111f9edc7d",
-    "appname": "Security Key by Yubico",
+    "appname": "Security Key by Yubico (additional)",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
@@ -45395,9 +45491,21 @@
     ],
     "slug": "f8a011f3-8c0a-4d15-8006-17111f9edc7d"
   },
+  "149a2021-8ef6-4133-96b8-81f8d5b7f1f5": {
+    "appid": "149a2021-8ef6-4133-96b8-81f8d5b7f1f5",
+    "appname": "Security Key by Yubico with NFC",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "149a2021-8ef6-4133-96b8-81f8d5b7f1f5"
+  },
   "6d44ba9b-f6ec-2e49-b930-0c8fe920cb73": {
     "appid": "6d44ba9b-f6ec-2e49-b930-0c8fe920cb73",
-    "appname": "Security Key by Yubico with NFC",
+    "appname": "Security Key by Yubico with NFC (additional)",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
@@ -45407,9 +45515,21 @@
     ],
     "slug": "6d44ba9b-f6ec-2e49-b930-0c8fe920cb73"
   },
+  "a4e9fc6d-4cbe-4758-b8ba-37598bb5bbaa": {
+    "appid": "a4e9fc6d-4cbe-4758-b8ba-37598bb5bbaa",
+    "appname": "Security Key NFC by Yubico",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "a4e9fc6d-4cbe-4758-b8ba-37598bb5bbaa"
+  },
   "e77e3c64-05e3-428b-8824-0cbeb04b829d": {
     "appid": "e77e3c64-05e3-428b-8824-0cbeb04b829d",
-    "appname": "Security Key NFC by Yubico",
+    "appname": "Security Key NFC by Yubico (additional)",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
@@ -45419,9 +45539,21 @@
     ],
     "slug": "e77e3c64-05e3-428b-8824-0cbeb04b829d"
   },
+  "0bb43545-fd2c-4185-87dd-feb0b2916ace": {
+    "appid": "0bb43545-fd2c-4185-87dd-feb0b2916ace",
+    "appname": "Security Key NFC by Yubico - Enterprise Edition",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "0bb43545-fd2c-4185-87dd-feb0b2916ace"
+  },
   "47ab2fb4-66ac-4184-9ae1-86be814012d5": {
     "appid": "47ab2fb4-66ac-4184-9ae1-86be814012d5",
-    "appname": "Security Key NFC by Yubico - Enterprise Edition",
+    "appname": "Security Key NFC by Yubico - Enterprise Edition (additional)",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
@@ -46238,6 +46370,18 @@
       "https://github.com/merill/microsoft-info"
     ],
     "slug": "82200a5b-e217-47a5-b665-6d8765ee745b"
+  },
+  "7adf2d9e-d7b5-4e71-bad8-713e6a183cf3": {
+    "appid": "7adf2d9e-d7b5-4e71-bad8-713e6a183cf3",
+    "appname": "ServiceTrustDocumentPageLinkUri",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "7adf2d9e-d7b5-4e71-bad8-713e6a183cf3"
   },
   "ffcb16e8-f789-467c-8ce9-f826a080d987": {
     "appid": "ffcb16e8-f789-467c-8ce9-f826a080d987",
@@ -48452,6 +48596,18 @@
       "https://github.com/merill/microsoft-info"
     ],
     "slug": "1a2e7420-4e92-4d2b-94cb-fb2952e9ddf7"
+  },
+  "6bf85cfa-ac8a-4be5-b5de-425a0d0dc016": {
+    "appid": "6bf85cfa-ac8a-4be5-b5de-425a0d0dc016",
+    "appname": "SynchronizationServiceAppId",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "6bf85cfa-ac8a-4be5-b5de-425a0d0dc016"
   },
   "886b3ae5-8ee1-4bb4-a312-b35341a95909": {
     "appid": "886b3ae5-8ee1-4bb4-a312-b35341a95909",
@@ -54457,9 +54613,21 @@
     ],
     "slug": "c1f9a0bc-1dd2-404a-b27f-8e29047a43fd"
   },
+  "19083c3d-8383-4b18-bc03-8f1c9ab2fd1b": {
+    "appid": "19083c3d-8383-4b18-bc03-8f1c9ab2fd1b",
+    "appname": "YubiKey 5 Series",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "19083c3d-8383-4b18-bc03-8f1c9ab2fd1b"
+  },
   "ee882879-721c-4913-9775-3dfcce97072a": {
     "appid": "ee882879-721c-4913-9775-3dfcce97072a",
-    "appname": "YubiKey 5 Series",
+    "appname": "YubiKey 5 Series (2nd additional)",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
@@ -54469,9 +54637,33 @@
     ],
     "slug": "ee882879-721c-4913-9775-3dfcce97072a"
   },
+  "cb69481e-8ff7-4039-93ec-0a2729a154a8": {
+    "appid": "cb69481e-8ff7-4039-93ec-0a2729a154a8",
+    "appname": "YubiKey 5 Series (additional)",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "cb69481e-8ff7-4039-93ec-0a2729a154a8"
+  },
+  "a02167b9-ae71-4ac7-9a07-06432ebb6f1c": {
+    "appid": "a02167b9-ae71-4ac7-9a07-06432ebb6f1c",
+    "appname": "YubiKey 5 Series with Lightning",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "a02167b9-ae71-4ac7-9a07-06432ebb6f1c"
+  },
   "c5ef55ff-ad9a-4b9f-b580-adebafe026d0": {
     "appid": "c5ef55ff-ad9a-4b9f-b580-adebafe026d0",
-    "appname": "YubiKey 5 Series with Lightning",
+    "appname": "YubiKey 5 Series with Lightning (additional)",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
@@ -54481,8 +54673,8 @@
     ],
     "slug": "c5ef55ff-ad9a-4b9f-b580-adebafe026d0"
   },
-  "fa2b99dc-9e39-4257-8f92-4a30d23c4118": {
-    "appid": "fa2b99dc-9e39-4257-8f92-4a30d23c4118",
+  "2fc0579f-8113-47ea-b116-bb5a8db9202a": {
+    "appid": "2fc0579f-8113-47ea-b116-bb5a8db9202a",
     "appname": "YubiKey 5 Series with NFC",
     "service": "entra",
     "category": "compliance",
@@ -54491,7 +54683,31 @@
     "references": [
       "https://github.com/merill/microsoft-info"
     ],
+    "slug": "2fc0579f-8113-47ea-b116-bb5a8db9202a"
+  },
+  "fa2b99dc-9e39-4257-8f92-4a30d23c4118": {
+    "appid": "fa2b99dc-9e39-4257-8f92-4a30d23c4118",
+    "appname": "YubiKey 5 Series with NFC (2nd additional)",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
     "slug": "fa2b99dc-9e39-4257-8f92-4a30d23c4118"
+  },
+  "a25342c0-3cdc-4414-8e46-f4807fca511c": {
+    "appid": "a25342c0-3cdc-4414-8e46-f4807fca511c",
+    "appname": "YubiKey 5 Series with NFC (additional)",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "a25342c0-3cdc-4414-8e46-f4807fca511c"
   },
   "dd86a2da-86a0-4cbe-b462-4bd31f57bc6f": {
     "appid": "dd86a2da-86a0-4cbe-b462-4bd31f57bc6f",
@@ -54529,9 +54745,21 @@
     ],
     "slug": "83c47309-aabb-4108-8470-8be838b573cb"
   },
+  "7d1351a6-e097-4852-b8bf-c9ac5c9ce4a3": {
+    "appid": "7d1351a6-e097-4852-b8bf-c9ac5c9ce4a3",
+    "appname": "YubiKey Bio Series - Multi-protocol Edition",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "7d1351a6-e097-4852-b8bf-c9ac5c9ce4a3"
+  },
   "90636e1f-ef82-43bf-bdcf-5255f139d12f": {
     "appid": "90636e1f-ef82-43bf-bdcf-5255f139d12f",
-    "appname": "YubiKey Bio Series - Multi-protocol Edition",
+    "appname": "YubiKey Bio Series - Multi-protocol Edition (additional)",
     "service": "entra",
     "category": "compliance",
     "severity": "info",

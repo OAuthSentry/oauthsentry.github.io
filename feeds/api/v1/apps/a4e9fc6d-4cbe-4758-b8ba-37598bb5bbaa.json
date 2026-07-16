@@ -1,6 +1,6 @@
 {
-  "appid": "90636e1f-ef82-43bf-bdcf-5255f139d12f",
-  "appname": "YubiKey Bio Series - Multi-protocol Edition (additional)",
+  "appid": "a4e9fc6d-4cbe-4758-b8ba-37598bb5bbaa",
+  "appname": "Security Key NFC by Yubico",
   "service": "entra",
   "category": "compliance",
   "severity": "info",
@@ -8,5 +8,5 @@
   "references": [
     "https://github.com/merill/microsoft-info"
   ],
-  "slug": "90636e1f-ef82-43bf-bdcf-5255f139d12f"
+  "slug": "a4e9fc6d-4cbe-4758-b8ba-37598bb5bbaa"
 }

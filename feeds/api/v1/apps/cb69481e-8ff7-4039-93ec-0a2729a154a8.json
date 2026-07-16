@@ -1,6 +1,6 @@
 {
-  "appid": "90636e1f-ef82-43bf-bdcf-5255f139d12f",
-  "appname": "YubiKey Bio Series - Multi-protocol Edition (additional)",
+  "appid": "cb69481e-8ff7-4039-93ec-0a2729a154a8",
+  "appname": "YubiKey 5 Series (additional)",
   "service": "entra",
   "category": "compliance",
   "severity": "info",
@@ -8,5 +8,5 @@
   "references": [
     "https://github.com/merill/microsoft-info"
   ],
-  "slug": "90636e1f-ef82-43bf-bdcf-5255f139d12f"
+  "slug": "cb69481e-8ff7-4039-93ec-0a2729a154a8"
 }

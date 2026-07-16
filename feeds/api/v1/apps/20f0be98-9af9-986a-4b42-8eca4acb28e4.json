@@ -1,6 +1,6 @@
 {
-  "appid": "90636e1f-ef82-43bf-bdcf-5255f139d12f",
-  "appname": "YubiKey Bio Series - Multi-protocol Edition (additional)",
+  "appid": "20f0be98-9af9-986a-4b42-8eca4acb28e4",
+  "appname": "Excelsecu eSecu FIDO2 Fingerprint Security Key",
   "service": "entra",
   "category": "compliance",
   "severity": "info",
@@ -8,5 +8,5 @@
   "references": [
     "https://github.com/merill/microsoft-info"
   ],
-  "slug": "90636e1f-ef82-43bf-bdcf-5255f139d12f"
+  "slug": "20f0be98-9af9-986a-4b42-8eca4acb28e4"
 }

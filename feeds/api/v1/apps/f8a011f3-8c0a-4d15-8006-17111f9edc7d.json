@@ -1,6 +1,6 @@
 {
   "appid": "f8a011f3-8c0a-4d15-8006-17111f9edc7d",
-  "appname": "Security Key by Yubico",
+  "appname": "Security Key by Yubico (additional)",
   "service": "entra",
   "category": "compliance",
   "severity": "info",

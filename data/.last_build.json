@@ -3198,6 +3198,20 @@
     "severity": "info",
     "ref_count": 3
   },
+  "7347eb49-7a1a-43c5-8eac-a5cd1d1c7cf0": {
+    "appname": "AzureAISearchMicrosoftRightsMgmntService",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "8b2071cd-015a-4025-8052-1c0dba2d3f64": {
+    "appname": "AzureAISearchSensitivityLabelMetaData",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "fc75330b-179d-49af-87dd-3b1acf6827fa": {
     "appname": "AzureAutomation",
     "service": "entra",
@@ -9764,15 +9778,29 @@
     "severity": "info",
     "ref_count": 1
   },
-  "d384db22-4d50-ebde-2eac-5765cf1e2a44": {
+  "20f0be98-9af9-986a-4b42-8eca4acb28e4": {
     "appname": "Excelsecu eSecu FIDO2 Fingerprint Security Key",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
     "ref_count": 1
   },
-  "fbefdf68-fe86-0106-213e-4d5fa24cbe2e": {
+  "d384db22-4d50-ebde-2eac-5765cf1e2a44": {
+    "appname": "Excelsecu eSecu FIDO2 Fingerprint Security Key (other)",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "a3975549-b191-fd67-b8fb-017e2917fdb3": {
     "appname": "Excelsecu eSecu FIDO2 NFC Security Key",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "fbefdf68-fe86-0106-213e-4d5fa24cbe2e": {
+    "appname": "Excelsecu eSecu FIDO2 NFC Security Key (other)",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
@@ -10627,6 +10655,13 @@
   },
   "bfd4133a-bbf3-4212-972b-60412137c428": {
     "appname": "Forms for Government (Plan F1)",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "fcdfa2de-b65b-4b54-9a1c-81c8a18282d9": {
+    "appname": "FoundryMCPServer (additional)",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
@@ -12319,8 +12354,15 @@
     "severity": "info",
     "ref_count": 1
   },
-  "ec31b4cc-2acc-4b8e-9c01-bade00ccbe26": {
+  "4b3f8944-d4f2-4d21-bb19-764a986ec160": {
     "appname": "KeyXentic FIDO2 Secp256R1 FIDO2 CTAP2 Authenticator",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "ec31b4cc-2acc-4b8e-9c01-bade00ccbe26": {
+    "appname": "KeyXentic FIDO2 Secp256R1 FIDO2 CTAP2 Authenticator (other)",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
@@ -15476,13 +15518,6 @@
     "severity": "info",
     "ref_count": 1
   },
-  "6bf85cfa-ac8a-4be5-b5de-425a0d0dc016": {
-    "appname": "Microsoft Entra AD Synchronization Service [Community Contributed]",
-    "service": "entra",
-    "category": "compliance",
-    "severity": "info",
-    "ref_count": 1
-  },
   "c4da7f8a-5ee2-4c99-a7e1-87d2df57f6fe": {
     "appname": "Microsoft Entra BASIC",
     "service": "entra",
@@ -16302,19 +16337,19 @@
     "severity": "info",
     "ref_count": 2
   },
-  "b737dad2-2f6c-4c65-90e3-ca563267e8b9": {
-    "appname": "MICROSOFT PLANNE",
-    "service": "entra",
-    "category": "compliance",
-    "severity": "info",
-    "ref_count": 1
-  },
   "66375f6b-983f-4c2c-9701-d680650f588f": {
     "appname": "Microsoft Planner",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
     "ref_count": 3
+  },
+  "b737dad2-2f6c-4c65-90e3-ca563267e8b9": {
+    "appname": "Microsoft Planner",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
   },
   "75f31797-37c9-498e-8dc9-53c16a36afca": {
     "appname": "Microsoft Planner Client",
@@ -18389,7 +18424,7 @@
     "ref_count": 3
   },
   "4dca1d4f-adcf-4dd2-a0a0-d2fa9d86b752": {
-    "appname": "O365 Suite UX",
+    "appname": "O365 Suite UX (additional)",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
@@ -18920,19 +18955,19 @@
     "severity": "info",
     "ref_count": 3
   },
-  "915d9449-5b40-4b44-97ee-5080a1f3e759": {
-    "appname": "Office Delve",
-    "service": "entra",
-    "category": "compliance",
-    "severity": "info",
-    "ref_count": 1
-  },
   "94c63fef-13a3-47bc-8074-75af8c65887a": {
     "appname": "Office Delve",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
     "ref_count": 3
+  },
+  "915d9449-5b40-4b44-97ee-5080a1f3e759": {
+    "appname": "Office Delve (additional)",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
   },
   "55441455-2f54-42b5-bc99-93e21cd4ae28": {
     "appname": "Office Enterprise Protection Service",
@@ -19732,6 +19767,13 @@
     "severity": "info",
     "ref_count": 1
   },
+  "e563cff8-1af6-4e6f-a655-7571ca482e71": {
+    "appname": "OpenSpecsWindowsProtocolsMSWCCE",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "498476ce-e0fe-48b0-b801-37ba7e2685c6": {
     "appname": "Organization.Read.All - Application",
     "service": "entra",
@@ -20133,6 +20175,13 @@
   },
   "5cf42378-d67d-4f36-ba46-e8b86229381d": {
     "appname": "Password Rule Settings",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "2e5ecfc8-ea79-48bd-8140-c19324acb278": {
+    "appname": "PasswordResetServiceArlingtonCloudAppId",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
@@ -23177,7 +23226,7 @@
     "ref_count": 1
   },
   "9ac8c0b3-2c30-497c-b4bc-cadfe9bd6eed": {
-    "appname": "Project Work Management",
+    "appname": "Project Work Management (additional)",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
@@ -25766,29 +25815,57 @@
     "severity": "info",
     "ref_count": 1
   },
-  "f8a011f3-8c0a-4d15-8006-17111f9edc7d": {
+  "b92c3f9a-c014-4056-887f-140a2501163b": {
     "appname": "Security Key by Yubico",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
     "ref_count": 1
   },
-  "6d44ba9b-f6ec-2e49-b930-0c8fe920cb73": {
+  "f8a011f3-8c0a-4d15-8006-17111f9edc7d": {
+    "appname": "Security Key by Yubico (additional)",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "149a2021-8ef6-4133-96b8-81f8d5b7f1f5": {
     "appname": "Security Key by Yubico with NFC",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
     "ref_count": 1
   },
-  "e77e3c64-05e3-428b-8824-0cbeb04b829d": {
+  "6d44ba9b-f6ec-2e49-b930-0c8fe920cb73": {
+    "appname": "Security Key by Yubico with NFC (additional)",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "a4e9fc6d-4cbe-4758-b8ba-37598bb5bbaa": {
     "appname": "Security Key NFC by Yubico",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
     "ref_count": 1
   },
-  "47ab2fb4-66ac-4184-9ae1-86be814012d5": {
+  "e77e3c64-05e3-428b-8824-0cbeb04b829d": {
+    "appname": "Security Key NFC by Yubico (additional)",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "0bb43545-fd2c-4185-87dd-feb0b2916ace": {
     "appname": "Security Key NFC by Yubico - Enterprise Edition",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "47ab2fb4-66ac-4184-9ae1-86be814012d5": {
+    "appname": "Security Key NFC by Yubico - Enterprise Edition (additional)",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
@@ -26258,6 +26335,13 @@
   },
   "82200a5b-e217-47a5-b665-6d8765ee745b": {
     "appname": "Services Hub Operator",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "7adf2d9e-d7b5-4e71-bad8-713e6a183cf3": {
+    "appname": "ServiceTrustDocumentPageLinkUri",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
@@ -27497,6 +27581,13 @@
   },
   "1a2e7420-4e92-4d2b-94cb-fb2952e9ddf7": {
     "appname": "SynchronizationData-User.Upload - Delegated",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "6bf85cfa-ac8a-4be5-b5de-425a0d0dc016": {
+    "appname": "SynchronizationServiceAppId",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
@@ -30960,22 +31051,57 @@
     "severity": "info",
     "ref_count": 1
   },
-  "ee882879-721c-4913-9775-3dfcce97072a": {
+  "19083c3d-8383-4b18-bc03-8f1c9ab2fd1b": {
     "appname": "YubiKey 5 Series",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
     "ref_count": 1
   },
-  "c5ef55ff-ad9a-4b9f-b580-adebafe026d0": {
+  "ee882879-721c-4913-9775-3dfcce97072a": {
+    "appname": "YubiKey 5 Series (2nd additional)",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "cb69481e-8ff7-4039-93ec-0a2729a154a8": {
+    "appname": "YubiKey 5 Series (additional)",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "a02167b9-ae71-4ac7-9a07-06432ebb6f1c": {
     "appname": "YubiKey 5 Series with Lightning",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
     "ref_count": 1
   },
-  "fa2b99dc-9e39-4257-8f92-4a30d23c4118": {
+  "c5ef55ff-ad9a-4b9f-b580-adebafe026d0": {
+    "appname": "YubiKey 5 Series with Lightning (additional)",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "2fc0579f-8113-47ea-b116-bb5a8db9202a": {
     "appname": "YubiKey 5 Series with NFC",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "fa2b99dc-9e39-4257-8f92-4a30d23c4118": {
+    "appname": "YubiKey 5 Series with NFC (2nd additional)",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "a25342c0-3cdc-4414-8e46-f4807fca511c": {
+    "appname": "YubiKey 5 Series with NFC (additional)",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
@@ -31002,8 +31128,15 @@
     "severity": "info",
     "ref_count": 1
   },
-  "90636e1f-ef82-43bf-bdcf-5255f139d12f": {
+  "7d1351a6-e097-4852-b8bf-c9ac5c9ce4a3": {
     "appname": "YubiKey Bio Series - Multi-protocol Edition",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "90636e1f-ef82-43bf-bdcf-5255f139d12f": {
+    "appname": "YubiKey Bio Series - Multi-protocol Edition (additional)",
     "service": "entra",
     "category": "compliance",
     "severity": "info",

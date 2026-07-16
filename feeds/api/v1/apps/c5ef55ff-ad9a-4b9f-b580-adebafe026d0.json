@@ -1,6 +1,6 @@
 {
   "appid": "c5ef55ff-ad9a-4b9f-b580-adebafe026d0",
-  "appname": "YubiKey 5 Series with Lightning",
+  "appname": "YubiKey 5 Series with Lightning (additional)",
   "service": "entra",
   "category": "compliance",
   "severity": "info",

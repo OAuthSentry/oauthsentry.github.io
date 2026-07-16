@@ -3,11 +3,391 @@
   <id>tag:oauthsentry.github.io,2026:changelog</id>
   <title>OAuthSentry catalog changelog</title>
   <subtitle>Adds, removes, category and severity changes across the OAuth app catalog</subtitle>
-  <updated>2026-07-14T06:22:51.998805+00:00</updated>
+  <updated>2026-07-16T06:29:48.198527+00:00</updated>
   <link rel="self"      href="https://oauthsentry.github.io/feeds/changelog.atom"/>
   <link rel="alternate" href="https://oauthsentry.github.io/" type="text/html"/>
   <author><name>OAuthSentry</name></author>
   <generator uri="https://oauthsentry.github.io">OAuthSentry build_feeds</generator>
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:0bb43545-fd2c-4185-87dd-feb0b2916ace:2026-07-16T06:29:48.198527+00:00</id>
+    <title>[added] entra / Security Key NFC by Yubico - Enterprise Edition</title>
+    <updated>2026-07-16T06:29:48.198527+00:00</updated>
+    <published>2026-07-16T06:29:48.198527+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/0bb43545-fd2c-4185-87dd-feb0b2916ace.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: Security Key NFC by Yubico - Enterprise Edition
+App ID: 0bb43545-fd2c-4185-87dd-feb0b2916ace
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0bb43545-fd2c-4185-87dd-feb0b2916ace.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:149a2021-8ef6-4133-96b8-81f8d5b7f1f5:2026-07-16T06:29:48.198527+00:00</id>
+    <title>[added] entra / Security Key by Yubico with NFC</title>
+    <updated>2026-07-16T06:29:48.198527+00:00</updated>
+    <published>2026-07-16T06:29:48.198527+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/149a2021-8ef6-4133-96b8-81f8d5b7f1f5.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: Security Key by Yubico with NFC
+App ID: 149a2021-8ef6-4133-96b8-81f8d5b7f1f5
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/149a2021-8ef6-4133-96b8-81f8d5b7f1f5.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:19083c3d-8383-4b18-bc03-8f1c9ab2fd1b:2026-07-16T06:29:48.198527+00:00</id>
+    <title>[added] entra / YubiKey 5 Series</title>
+    <updated>2026-07-16T06:29:48.198527+00:00</updated>
+    <published>2026-07-16T06:29:48.198527+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/19083c3d-8383-4b18-bc03-8f1c9ab2fd1b.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: YubiKey 5 Series
+App ID: 19083c3d-8383-4b18-bc03-8f1c9ab2fd1b
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/19083c3d-8383-4b18-bc03-8f1c9ab2fd1b.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:20f0be98-9af9-986a-4b42-8eca4acb28e4:2026-07-16T06:29:48.198527+00:00</id>
+    <title>[added] entra / Excelsecu eSecu FIDO2 Fingerprint Security Key</title>
+    <updated>2026-07-16T06:29:48.198527+00:00</updated>
+    <published>2026-07-16T06:29:48.198527+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/20f0be98-9af9-986a-4b42-8eca4acb28e4.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: Excelsecu eSecu FIDO2 Fingerprint Security Key
+App ID: 20f0be98-9af9-986a-4b42-8eca4acb28e4
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/20f0be98-9af9-986a-4b42-8eca4acb28e4.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:2e5ecfc8-ea79-48bd-8140-c19324acb278:2026-07-16T06:29:48.198527+00:00</id>
+    <title>[added] entra / PasswordResetServiceArlingtonCloudAppId</title>
+    <updated>2026-07-16T06:29:48.198527+00:00</updated>
+    <published>2026-07-16T06:29:48.198527+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/2e5ecfc8-ea79-48bd-8140-c19324acb278.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: PasswordResetServiceArlingtonCloudAppId
+App ID: 2e5ecfc8-ea79-48bd-8140-c19324acb278
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/2e5ecfc8-ea79-48bd-8140-c19324acb278.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:2fc0579f-8113-47ea-b116-bb5a8db9202a:2026-07-16T06:29:48.198527+00:00</id>
+    <title>[added] entra / YubiKey 5 Series with NFC</title>
+    <updated>2026-07-16T06:29:48.198527+00:00</updated>
+    <published>2026-07-16T06:29:48.198527+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/2fc0579f-8113-47ea-b116-bb5a8db9202a.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: YubiKey 5 Series with NFC
+App ID: 2fc0579f-8113-47ea-b116-bb5a8db9202a
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/2fc0579f-8113-47ea-b116-bb5a8db9202a.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:4b3f8944-d4f2-4d21-bb19-764a986ec160:2026-07-16T06:29:48.198527+00:00</id>
+    <title>[added] entra / KeyXentic FIDO2 Secp256R1 FIDO2 CTAP2 Authenticator</title>
+    <updated>2026-07-16T06:29:48.198527+00:00</updated>
+    <published>2026-07-16T06:29:48.198527+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/4b3f8944-d4f2-4d21-bb19-764a986ec160.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: KeyXentic FIDO2 Secp256R1 FIDO2 CTAP2 Authenticator
+App ID: 4b3f8944-d4f2-4d21-bb19-764a986ec160
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/4b3f8944-d4f2-4d21-bb19-764a986ec160.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:7347eb49-7a1a-43c5-8eac-a5cd1d1c7cf0:2026-07-16T06:29:48.198527+00:00</id>
+    <title>[added] entra / AzureAISearchMicrosoftRightsMgmntService</title>
+    <updated>2026-07-16T06:29:48.198527+00:00</updated>
+    <published>2026-07-16T06:29:48.198527+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/7347eb49-7a1a-43c5-8eac-a5cd1d1c7cf0.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: AzureAISearchMicrosoftRightsMgmntService
+App ID: 7347eb49-7a1a-43c5-8eac-a5cd1d1c7cf0
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/7347eb49-7a1a-43c5-8eac-a5cd1d1c7cf0.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:7adf2d9e-d7b5-4e71-bad8-713e6a183cf3:2026-07-16T06:29:48.198527+00:00</id>
+    <title>[added] entra / ServiceTrustDocumentPageLinkUri</title>
+    <updated>2026-07-16T06:29:48.198527+00:00</updated>
+    <published>2026-07-16T06:29:48.198527+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/7adf2d9e-d7b5-4e71-bad8-713e6a183cf3.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: ServiceTrustDocumentPageLinkUri
+App ID: 7adf2d9e-d7b5-4e71-bad8-713e6a183cf3
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/7adf2d9e-d7b5-4e71-bad8-713e6a183cf3.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:7d1351a6-e097-4852-b8bf-c9ac5c9ce4a3:2026-07-16T06:29:48.198527+00:00</id>
+    <title>[added] entra / YubiKey Bio Series - Multi-protocol Edition</title>
+    <updated>2026-07-16T06:29:48.198527+00:00</updated>
+    <published>2026-07-16T06:29:48.198527+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/7d1351a6-e097-4852-b8bf-c9ac5c9ce4a3.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: YubiKey Bio Series - Multi-protocol Edition
+App ID: 7d1351a6-e097-4852-b8bf-c9ac5c9ce4a3
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/7d1351a6-e097-4852-b8bf-c9ac5c9ce4a3.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:8b2071cd-015a-4025-8052-1c0dba2d3f64:2026-07-16T06:29:48.198527+00:00</id>
+    <title>[added] entra / AzureAISearchSensitivityLabelMetaData</title>
+    <updated>2026-07-16T06:29:48.198527+00:00</updated>
+    <published>2026-07-16T06:29:48.198527+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/8b2071cd-015a-4025-8052-1c0dba2d3f64.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: AzureAISearchSensitivityLabelMetaData
+App ID: 8b2071cd-015a-4025-8052-1c0dba2d3f64
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/8b2071cd-015a-4025-8052-1c0dba2d3f64.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:a02167b9-ae71-4ac7-9a07-06432ebb6f1c:2026-07-16T06:29:48.198527+00:00</id>
+    <title>[added] entra / YubiKey 5 Series with Lightning</title>
+    <updated>2026-07-16T06:29:48.198527+00:00</updated>
+    <published>2026-07-16T06:29:48.198527+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/a02167b9-ae71-4ac7-9a07-06432ebb6f1c.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: YubiKey 5 Series with Lightning
+App ID: a02167b9-ae71-4ac7-9a07-06432ebb6f1c
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/a02167b9-ae71-4ac7-9a07-06432ebb6f1c.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:a25342c0-3cdc-4414-8e46-f4807fca511c:2026-07-16T06:29:48.198527+00:00</id>
+    <title>[added] entra / YubiKey 5 Series with NFC (additional)</title>
+    <updated>2026-07-16T06:29:48.198527+00:00</updated>
+    <published>2026-07-16T06:29:48.198527+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/a25342c0-3cdc-4414-8e46-f4807fca511c.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: YubiKey 5 Series with NFC (additional)
+App ID: a25342c0-3cdc-4414-8e46-f4807fca511c
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/a25342c0-3cdc-4414-8e46-f4807fca511c.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:a3975549-b191-fd67-b8fb-017e2917fdb3:2026-07-16T06:29:48.198527+00:00</id>
+    <title>[added] entra / Excelsecu eSecu FIDO2 NFC Security Key</title>
+    <updated>2026-07-16T06:29:48.198527+00:00</updated>
+    <published>2026-07-16T06:29:48.198527+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/a3975549-b191-fd67-b8fb-017e2917fdb3.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: Excelsecu eSecu FIDO2 NFC Security Key
+App ID: a3975549-b191-fd67-b8fb-017e2917fdb3
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/a3975549-b191-fd67-b8fb-017e2917fdb3.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:a4e9fc6d-4cbe-4758-b8ba-37598bb5bbaa:2026-07-16T06:29:48.198527+00:00</id>
+    <title>[added] entra / Security Key NFC by Yubico</title>
+    <updated>2026-07-16T06:29:48.198527+00:00</updated>
+    <published>2026-07-16T06:29:48.198527+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/a4e9fc6d-4cbe-4758-b8ba-37598bb5bbaa.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: Security Key NFC by Yubico
+App ID: a4e9fc6d-4cbe-4758-b8ba-37598bb5bbaa
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/a4e9fc6d-4cbe-4758-b8ba-37598bb5bbaa.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:b92c3f9a-c014-4056-887f-140a2501163b:2026-07-16T06:29:48.198527+00:00</id>
+    <title>[added] entra / Security Key by Yubico</title>
+    <updated>2026-07-16T06:29:48.198527+00:00</updated>
+    <published>2026-07-16T06:29:48.198527+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/b92c3f9a-c014-4056-887f-140a2501163b.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: Security Key by Yubico
+App ID: b92c3f9a-c014-4056-887f-140a2501163b
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/b92c3f9a-c014-4056-887f-140a2501163b.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:cb69481e-8ff7-4039-93ec-0a2729a154a8:2026-07-16T06:29:48.198527+00:00</id>
+    <title>[added] entra / YubiKey 5 Series (additional)</title>
+    <updated>2026-07-16T06:29:48.198527+00:00</updated>
+    <published>2026-07-16T06:29:48.198527+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/cb69481e-8ff7-4039-93ec-0a2729a154a8.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: YubiKey 5 Series (additional)
+App ID: cb69481e-8ff7-4039-93ec-0a2729a154a8
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/cb69481e-8ff7-4039-93ec-0a2729a154a8.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:e563cff8-1af6-4e6f-a655-7571ca482e71:2026-07-16T06:29:48.198527+00:00</id>
+    <title>[added] entra / OpenSpecsWindowsProtocolsMSWCCE</title>
+    <updated>2026-07-16T06:29:48.198527+00:00</updated>
+    <published>2026-07-16T06:29:48.198527+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/e563cff8-1af6-4e6f-a655-7571ca482e71.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: OpenSpecsWindowsProtocolsMSWCCE
+App ID: e563cff8-1af6-4e6f-a655-7571ca482e71
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/e563cff8-1af6-4e6f-a655-7571ca482e71.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:fcdfa2de-b65b-4b54-9a1c-81c8a18282d9:2026-07-16T06:29:48.198527+00:00</id>
+    <title>[added] entra / FoundryMCPServer (additional)</title>
+    <updated>2026-07-16T06:29:48.198527+00:00</updated>
+    <published>2026-07-16T06:29:48.198527+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/fcdfa2de-b65b-4b54-9a1c-81c8a18282d9.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: FoundryMCPServer (additional)
+App ID: fcdfa2de-b65b-4b54-9a1c-81c8a18282d9
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/fcdfa2de-b65b-4b54-9a1c-81c8a18282d9.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
   <entry>
     <id>tag:oauthsentry.github.io,2026:added:db44d869-9bce-4198-809b-a806756b0d31:2026-07-14T06:22:51.998805+00:00</id>
     <title>[added] entra / ExchangeRevocationSync</title>
@@ -3625,386 +4005,6 @@ Category: compliance
 Severity: info
 Change: Added to compliance (info)
 Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0b34bec3-d5d6-4974-b7b0-dcdb5c90c29d.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:0b4346bb-8dc3-4079-9dfc-513696f56039:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / LOGIC FLOWS</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/0b4346bb-8dc3-4079-9dfc-513696f56039.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: LOGIC FLOWS
-App ID: 0b4346bb-8dc3-4079-9dfc-513696f56039
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0b4346bb-8dc3-4079-9dfc-513696f56039.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:0b4dcf5f-e476-465b-8d46-538e19df4943:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / Marketo Sales Engage</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/0b4dcf5f-e476-465b-8d46-538e19df4943.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: Marketo Sales Engage
-App ID: 0b4dcf5f-e476-465b-8d46-538e19df4943
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0b4dcf5f-e476-465b-8d46-538e19df4943.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:0b57845e-aa49-4e6f-8109-ce654fffa618:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / OnPremisesPublishingProfiles.ReadWrite.All - Application</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/0b57845e-aa49-4e6f-8109-ce654fffa618.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: OnPremisesPublishingProfiles.ReadWrite.All - Application
-App ID: 0b57845e-aa49-4e6f-8109-ce654fffa618
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0b57845e-aa49-4e6f-8109-ce654fffa618.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:0b5d694c-a244-4bde-86e6-eb5cd07730fe:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / Domain.ReadWrite.All - Delegated</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/0b5d694c-a244-4bde-86e6-eb5cd07730fe.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: Domain.ReadWrite.All - Delegated
-App ID: 0b5d694c-a244-4bde-86e6-eb5cd07730fe
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0b5d694c-a244-4bde-86e6-eb5cd07730fe.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:0b7643bb-5336-476f-80b5-18fbfbc91806:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / AgreementAcceptance.Read - Delegated</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/0b7643bb-5336-476f-80b5-18fbfbc91806.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: AgreementAcceptance.Read - Delegated
-App ID: 0b7643bb-5336-476f-80b5-18fbfbc91806
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0b7643bb-5336-476f-80b5-18fbfbc91806.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:0b7b15a8-7fd2-4964-bb96-5a566d4e3c15:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / Exchange Online (Plan 2) for Faculty</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/0b7b15a8-7fd2-4964-bb96-5a566d4e3c15.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: Exchange Online (Plan 2) for Faculty
-App ID: 0b7b15a8-7fd2-4964-bb96-5a566d4e3c15
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0b7b15a8-7fd2-4964-bb96-5a566d4e3c15.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:0b939472-1861-45f1-ab6d-208f359c05cd:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / Flow for Virtual Agent for GCC</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/0b939472-1861-45f1-ab6d-208f359c05cd.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: Flow for Virtual Agent for GCC
-App ID: 0b939472-1861-45f1-ab6d-208f359c05cd
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0b939472-1861-45f1-ab6d-208f359c05cd.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:0b962ed2-6d56-471c-bd5f-3477d83a7ba4:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / Azure Resource Notifications System Topics Subscriber</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/0b962ed2-6d56-471c-bd5f-3477d83a7ba4.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: Azure Resource Notifications System Topics Subscriber
-App ID: 0b962ed2-6d56-471c-bd5f-3477d83a7ba4
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0b962ed2-6d56-471c-bd5f-3477d83a7ba4.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:0bc85aed-7b0b-437a-bac8-3b29a1b84c99:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / AuditLogsQuery-Endpoint.Read.All - Application</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/0bc85aed-7b0b-437a-bac8-3b29a1b84c99.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: AuditLogsQuery-Endpoint.Read.All - Application
-App ID: 0bc85aed-7b0b-437a-bac8-3b29a1b84c99
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0bc85aed-7b0b-437a-bac8-3b29a1b84c99.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:0bdd5466-65c3-470a-9fa6-f679b48286b0:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / Power Virtual Agent USL for GCC</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/0bdd5466-65c3-470a-9fa6-f679b48286b0.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: Power Virtual Agent USL for GCC
-App ID: 0bdd5466-65c3-470a-9fa6-f679b48286b0
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0bdd5466-65c3-470a-9fa6-f679b48286b0.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:0bf3c642-7bb5-4ccc-884e-59d09df0266c:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / Power BI Premium Per User_2</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/0bf3c642-7bb5-4ccc-884e-59d09df0266c.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: Power BI Premium Per User_2
-App ID: 0bf3c642-7bb5-4ccc-884e-59d09df0266c
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0bf3c642-7bb5-4ccc-884e-59d09df0266c.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / Dynamics 365 AI for Customer Insights</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: Dynamics 365 AI for Customer Insights
-App ID: 0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:0bfc98ed-1dbc-4a97-b246-701754e48b17:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / APP CONNECT</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/0bfc98ed-1dbc-4a97-b246-701754e48b17.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: APP CONNECT
-App ID: 0bfc98ed-1dbc-4a97-b246-701754e48b17
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0bfc98ed-1dbc-4a97-b246-701754e48b17.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:0c0064ea-477b-4130-82a5-4c2cc4ff68aa:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / DelegatedAdminRelationship.Read.All - Delegated</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/0c0064ea-477b-4130-82a5-4c2cc4ff68aa.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: DelegatedAdminRelationship.Read.All - Delegated
-App ID: 0c0064ea-477b-4130-82a5-4c2cc4ff68aa
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0c0064ea-477b-4130-82a5-4c2cc4ff68aa.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:0c0bf378-bf22-4481-8f81-9e89a9b4960a:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / Sites.Manage.All - Application</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/0c0bf378-bf22-4481-8f81-9e89a9b4960a.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: Sites.Manage.All - Application
-App ID: 0c0bf378-bf22-4481-8f81-9e89a9b4960a
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0c0bf378-bf22-4481-8f81-9e89a9b4960a.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:0c21030a-7e60-4ec7-9a0f-0042e0e0211a:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / Microsoft 365 E3 (500 seats min)</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/0c21030a-7e60-4ec7-9a0f-0042e0e0211a.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: Microsoft 365 E3 (500 seats min)
-App ID: 0c21030a-7e60-4ec7-9a0f-0042e0e0211a
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0c21030a-7e60-4ec7-9a0f-0042e0e0211a.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:0c219d04-3abf-47f7-912d-5cca239e90e6:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / TeamsTab.ReadWriteSelfForChat - Delegated</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/0c219d04-3abf-47f7-912d-5cca239e90e6.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: TeamsTab.ReadWriteSelfForChat - Delegated
-App ID: 0c219d04-3abf-47f7-912d-5cca239e90e6
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0c219d04-3abf-47f7-912d-5cca239e90e6.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:0c250654-c7f7-461f-871a-7222f6592cf2:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / Dynamics 365 Customer Insights Standalone</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/0c250654-c7f7-461f-871a-7222f6592cf2.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: Dynamics 365 Customer Insights Standalone
-App ID: 0c250654-c7f7-461f-871a-7222f6592cf2
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0c250654-c7f7-461f-871a-7222f6592cf2.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:0c266dff-15dd-4b49-8397-2bb16070ed52:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / Microsoft 365 Audio Conferencing_3</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/0c266dff-15dd-4b49-8397-2bb16070ed52.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: Microsoft 365 Audio Conferencing_3
-App ID: 0c266dff-15dd-4b49-8397-2bb16070ed52
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0c266dff-15dd-4b49-8397-2bb16070ed52.json</content>
     <author><name>OAuthSentry</name></author>
   </entry>
 

@@ -1,8 +1,198 @@
 {
   "feed": "OAuthSentry catalog changelog",
-  "generated": "2026-07-14T06:22:51.998805+00:00",
+  "generated": "2026-07-16T06:29:48.198527+00:00",
   "count": 200,
   "entries": [
+    {
+      "kind": "added",
+      "ts": "2026-07-16T06:29:48.198527+00:00",
+      "appid": "0bb43545-fd2c-4185-87dd-feb0b2916ace",
+      "service": "entra",
+      "appname": "Security Key NFC by Yubico - Enterprise Edition",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
+    {
+      "kind": "added",
+      "ts": "2026-07-16T06:29:48.198527+00:00",
+      "appid": "149a2021-8ef6-4133-96b8-81f8d5b7f1f5",
+      "service": "entra",
+      "appname": "Security Key by Yubico with NFC",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
+    {
+      "kind": "added",
+      "ts": "2026-07-16T06:29:48.198527+00:00",
+      "appid": "19083c3d-8383-4b18-bc03-8f1c9ab2fd1b",
+      "service": "entra",
+      "appname": "YubiKey 5 Series",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
+    {
+      "kind": "added",
+      "ts": "2026-07-16T06:29:48.198527+00:00",
+      "appid": "20f0be98-9af9-986a-4b42-8eca4acb28e4",
+      "service": "entra",
+      "appname": "Excelsecu eSecu FIDO2 Fingerprint Security Key",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
+    {
+      "kind": "added",
+      "ts": "2026-07-16T06:29:48.198527+00:00",
+      "appid": "2e5ecfc8-ea79-48bd-8140-c19324acb278",
+      "service": "entra",
+      "appname": "PasswordResetServiceArlingtonCloudAppId",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
+    {
+      "kind": "added",
+      "ts": "2026-07-16T06:29:48.198527+00:00",
+      "appid": "2fc0579f-8113-47ea-b116-bb5a8db9202a",
+      "service": "entra",
+      "appname": "YubiKey 5 Series with NFC",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
+    {
+      "kind": "added",
+      "ts": "2026-07-16T06:29:48.198527+00:00",
+      "appid": "4b3f8944-d4f2-4d21-bb19-764a986ec160",
+      "service": "entra",
+      "appname": "KeyXentic FIDO2 Secp256R1 FIDO2 CTAP2 Authenticator",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
+    {
+      "kind": "added",
+      "ts": "2026-07-16T06:29:48.198527+00:00",
+      "appid": "7347eb49-7a1a-43c5-8eac-a5cd1d1c7cf0",
+      "service": "entra",
+      "appname": "AzureAISearchMicrosoftRightsMgmntService",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
+    {
+      "kind": "added",
+      "ts": "2026-07-16T06:29:48.198527+00:00",
+      "appid": "7adf2d9e-d7b5-4e71-bad8-713e6a183cf3",
+      "service": "entra",
+      "appname": "ServiceTrustDocumentPageLinkUri",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
+    {
+      "kind": "added",
+      "ts": "2026-07-16T06:29:48.198527+00:00",
+      "appid": "7d1351a6-e097-4852-b8bf-c9ac5c9ce4a3",
+      "service": "entra",
+      "appname": "YubiKey Bio Series - Multi-protocol Edition",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
+    {
+      "kind": "added",
+      "ts": "2026-07-16T06:29:48.198527+00:00",
+      "appid": "8b2071cd-015a-4025-8052-1c0dba2d3f64",
+      "service": "entra",
+      "appname": "AzureAISearchSensitivityLabelMetaData",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
+    {
+      "kind": "added",
+      "ts": "2026-07-16T06:29:48.198527+00:00",
+      "appid": "a02167b9-ae71-4ac7-9a07-06432ebb6f1c",
+      "service": "entra",
+      "appname": "YubiKey 5 Series with Lightning",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
+    {
+      "kind": "added",
+      "ts": "2026-07-16T06:29:48.198527+00:00",
+      "appid": "a25342c0-3cdc-4414-8e46-f4807fca511c",
+      "service": "entra",
+      "appname": "YubiKey 5 Series with NFC (additional)",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
+    {
+      "kind": "added",
+      "ts": "2026-07-16T06:29:48.198527+00:00",
+      "appid": "a3975549-b191-fd67-b8fb-017e2917fdb3",
+      "service": "entra",
+      "appname": "Excelsecu eSecu FIDO2 NFC Security Key",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
+    {
+      "kind": "added",
+      "ts": "2026-07-16T06:29:48.198527+00:00",
+      "appid": "a4e9fc6d-4cbe-4758-b8ba-37598bb5bbaa",
+      "service": "entra",
+      "appname": "Security Key NFC by Yubico",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
+    {
+      "kind": "added",
+      "ts": "2026-07-16T06:29:48.198527+00:00",
+      "appid": "b92c3f9a-c014-4056-887f-140a2501163b",
+      "service": "entra",
+      "appname": "Security Key by Yubico",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
+    {
+      "kind": "added",
+      "ts": "2026-07-16T06:29:48.198527+00:00",
+      "appid": "cb69481e-8ff7-4039-93ec-0a2729a154a8",
+      "service": "entra",
+      "appname": "YubiKey 5 Series (additional)",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
+    {
+      "kind": "added",
+      "ts": "2026-07-16T06:29:48.198527+00:00",
+      "appid": "e563cff8-1af6-4e6f-a655-7571ca482e71",
+      "service": "entra",
+      "appname": "OpenSpecsWindowsProtocolsMSWCCE",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
+    {
+      "kind": "added",
+      "ts": "2026-07-16T06:29:48.198527+00:00",
+      "appid": "fcdfa2de-b65b-4b54-9a1c-81c8a18282d9",
+      "service": "entra",
+      "appname": "FoundryMCPServer (additional)",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
     {
       "kind": "added",
       "ts": "2026-07-14T06:22:51.998805+00:00",
@@ -1809,196 +1999,6 @@
       "appid": "0b34bec3-d5d6-4974-b7b0-dcdb5c90c29d",
       "service": "entra",
       "appname": "Purview/azure-iot-connection-string",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "0b4346bb-8dc3-4079-9dfc-513696f56039",
-      "service": "entra",
-      "appname": "LOGIC FLOWS",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "0b4dcf5f-e476-465b-8d46-538e19df4943",
-      "service": "entra",
-      "appname": "Marketo Sales Engage",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "0b57845e-aa49-4e6f-8109-ce654fffa618",
-      "service": "entra",
-      "appname": "OnPremisesPublishingProfiles.ReadWrite.All - Application",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "0b5d694c-a244-4bde-86e6-eb5cd07730fe",
-      "service": "entra",
-      "appname": "Domain.ReadWrite.All - Delegated",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "0b7643bb-5336-476f-80b5-18fbfbc91806",
-      "service": "entra",
-      "appname": "AgreementAcceptance.Read - Delegated",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "0b7b15a8-7fd2-4964-bb96-5a566d4e3c15",
-      "service": "entra",
-      "appname": "Exchange Online (Plan 2) for Faculty",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "0b939472-1861-45f1-ab6d-208f359c05cd",
-      "service": "entra",
-      "appname": "Flow for Virtual Agent for GCC",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "0b962ed2-6d56-471c-bd5f-3477d83a7ba4",
-      "service": "entra",
-      "appname": "Azure Resource Notifications System Topics Subscriber",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "0bc85aed-7b0b-437a-bac8-3b29a1b84c99",
-      "service": "entra",
-      "appname": "AuditLogsQuery-Endpoint.Read.All - Application",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "0bdd5466-65c3-470a-9fa6-f679b48286b0",
-      "service": "entra",
-      "appname": "Power Virtual Agent USL for GCC",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "0bf3c642-7bb5-4ccc-884e-59d09df0266c",
-      "service": "entra",
-      "appname": "Power BI Premium Per User_2",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff",
-      "service": "entra",
-      "appname": "Dynamics 365 AI for Customer Insights",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "0bfc98ed-1dbc-4a97-b246-701754e48b17",
-      "service": "entra",
-      "appname": "APP CONNECT",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "0c0064ea-477b-4130-82a5-4c2cc4ff68aa",
-      "service": "entra",
-      "appname": "DelegatedAdminRelationship.Read.All - Delegated",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "0c0bf378-bf22-4481-8f81-9e89a9b4960a",
-      "service": "entra",
-      "appname": "Sites.Manage.All - Application",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "0c21030a-7e60-4ec7-9a0f-0042e0e0211a",
-      "service": "entra",
-      "appname": "Microsoft 365 E3 (500 seats min)",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "0c219d04-3abf-47f7-912d-5cca239e90e6",
-      "service": "entra",
-      "appname": "TeamsTab.ReadWriteSelfForChat - Delegated",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "0c250654-c7f7-461f-871a-7222f6592cf2",
-      "service": "entra",
-      "appname": "Dynamics 365 Customer Insights Standalone",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "0c266dff-15dd-4b49-8397-2bb16070ed52",
-      "service": "entra",
-      "appname": "Microsoft 365 Audio Conferencing_3",
       "category": "compliance",
       "severity": "info",
       "summary": "Added to compliance (info)"

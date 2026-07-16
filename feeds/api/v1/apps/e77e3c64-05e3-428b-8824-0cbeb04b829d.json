@@ -1,6 +1,6 @@
 {
   "appid": "e77e3c64-05e3-428b-8824-0cbeb04b829d",
-  "appname": "Security Key NFC by Yubico",
+  "appname": "Security Key NFC by Yubico (additional)",
   "service": "entra",
   "category": "compliance",
   "severity": "info",

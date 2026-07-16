@@ -1,6 +1,6 @@
 {
-  "appid": "90636e1f-ef82-43bf-bdcf-5255f139d12f",
-  "appname": "YubiKey Bio Series - Multi-protocol Edition (additional)",
+  "appid": "7347eb49-7a1a-43c5-8eac-a5cd1d1c7cf0",
+  "appname": "AzureAISearchMicrosoftRightsMgmntService",
   "service": "entra",
   "category": "compliance",
   "severity": "info",
@@ -8,5 +8,5 @@
   "references": [
     "https://github.com/merill/microsoft-info"
   ],
-  "slug": "90636e1f-ef82-43bf-bdcf-5255f139d12f"
+  "slug": "7347eb49-7a1a-43c5-8eac-a5cd1d1c7cf0"
 }

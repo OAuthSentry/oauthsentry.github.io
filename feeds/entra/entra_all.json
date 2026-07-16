@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-15T06:26:32.415319+00:00",
-  "count": 4525,
+  "generated": "2026-07-16T06:29:47.403853+00:00",
+  "count": 4544,
   "items": [
     {
       "appname": "",
@@ -4571,6 +4571,26 @@
       "metadata_reference": "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in - https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv | https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv",
       "service": "entra",
       "_provenance": "entra_curated_mthcht"
+    },
+    {
+      "appname": "AzureAISearchMicrosoftRightsMgmntService",
+      "appid": "7347eb49-7a1a-43c5-8eac-a5cd1d1c7cf0",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
+      "appname": "AzureAISearchSensitivityLabelMetaData",
+      "appid": "8b2071cd-015a-4025-8052-1c0dba2d3f64",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
     },
     {
       "appname": "AzureAutomation",
@@ -13954,6 +13974,16 @@
     },
     {
       "appname": "Excelsecu eSecu FIDO2 Fingerprint Security Key",
+      "appid": "20f0be98-9af9-986a-4b42-8eca4acb28e4",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
+      "appname": "Excelsecu eSecu FIDO2 Fingerprint Security Key (other)",
       "appid": "d384db22-4d50-ebde-2eac-5765cf1e2a44",
       "metadata_category": "compliance",
       "metadata_severity": "info",
@@ -13964,6 +13994,16 @@
     },
     {
       "appname": "Excelsecu eSecu FIDO2 NFC Security Key",
+      "appid": "a3975549-b191-fd67-b8fb-017e2917fdb3",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
+      "appname": "Excelsecu eSecu FIDO2 NFC Security Key (other)",
       "appid": "fbefdf68-fe86-0106-213e-4d5fa24cbe2e",
       "metadata_category": "compliance",
       "metadata_severity": "info",
@@ -15185,6 +15225,16 @@
     {
       "appname": "Forms for Government (Plan F1)",
       "appid": "bfd4133a-bbf3-4212-972b-60412137c428",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
+      "appname": "FoundryMCPServer (additional)",
+      "appid": "fcdfa2de-b65b-4b54-9a1c-81c8a18282d9",
       "metadata_category": "compliance",
       "metadata_severity": "info",
       "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
@@ -17604,6 +17654,16 @@
     },
     {
       "appname": "KeyXentic FIDO2 Secp256R1 FIDO2 CTAP2 Authenticator",
+      "appid": "4b3f8944-d4f2-4d21-bb19-764a986ec160",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
+      "appname": "KeyXentic FIDO2 Secp256R1 FIDO2 CTAP2 Authenticator (other)",
       "appid": "ec31b4cc-2acc-4b8e-9c01-bade00ccbe26",
       "metadata_category": "compliance",
       "metadata_severity": "info",
@@ -22113,16 +22173,6 @@
       "_provenance": "entra_compliance_fill_merill"
     },
     {
-      "appname": "Microsoft Entra AD Synchronization Service [Community Contributed]",
-      "appid": "6bf85cfa-ac8a-4be5-b5de-425a0d0dc016",
-      "metadata_category": "compliance",
-      "metadata_severity": "info",
-      "metadata_comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=GitHub)",
-      "metadata_reference": "https://github.com/merill/microsoft-info",
-      "service": "entra",
-      "_provenance": "entra_compliance_fill_merill"
-    },
-    {
       "appname": "Microsoft Entra BASIC",
       "appid": "c4da7f8a-5ee2-4c99-a7e1-87d2df57f6fe",
       "metadata_category": "compliance",
@@ -23293,16 +23343,6 @@
       "_provenance": "entra_curated_mthcht"
     },
     {
-      "appname": "MICROSOFT PLANNE",
-      "appid": "b737dad2-2f6c-4c65-90e3-ca563267e8b9",
-      "metadata_category": "compliance",
-      "metadata_severity": "info",
-      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
-      "metadata_reference": "https://github.com/merill/microsoft-info",
-      "service": "entra",
-      "_provenance": "entra_compliance_fill_merill"
-    },
-    {
       "appname": "Microsoft Planner",
       "appid": "66375f6b-983f-4c2c-9701-d680650f588f",
       "metadata_category": "compliance",
@@ -23311,6 +23351,16 @@
       "metadata_reference": "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in - https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv | https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv",
       "service": "entra",
       "_provenance": "entra_curated_mthcht"
+    },
+    {
+      "appname": "Microsoft Planner",
+      "appid": "b737dad2-2f6c-4c65-90e3-ca563267e8b9",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
     },
     {
       "appname": "Microsoft Planner Client",
@@ -26273,7 +26323,7 @@
       "_provenance": "entra_curated_mthcht"
     },
     {
-      "appname": "O365 Suite UX",
+      "appname": "O365 Suite UX (additional)",
       "appid": "4dca1d4f-adcf-4dd2-a0a0-d2fa9d86b752",
       "metadata_category": "compliance",
       "metadata_severity": "info",
@@ -27034,16 +27084,6 @@
     },
     {
       "appname": "Office Delve",
-      "appid": "915d9449-5b40-4b44-97ee-5080a1f3e759",
-      "metadata_category": "compliance",
-      "metadata_severity": "info",
-      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
-      "metadata_reference": "https://github.com/merill/microsoft-info",
-      "service": "entra",
-      "_provenance": "entra_compliance_fill_merill"
-    },
-    {
-      "appname": "Office Delve",
       "appid": "94c63fef-13a3-47bc-8074-75af8c65887a",
       "metadata_category": "compliance",
       "metadata_severity": "info",
@@ -27051,6 +27091,16 @@
       "metadata_reference": "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in - https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv | https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv",
       "service": "entra",
       "_provenance": "entra_curated_mthcht"
+    },
+    {
+      "appname": "Office Delve (additional)",
+      "appid": "915d9449-5b40-4b44-97ee-5080a1f3e759",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
     },
     {
       "appname": "Office Enterprise Protection Service",
@@ -28193,6 +28243,16 @@
       "_provenance": "entra_compliance_fill_merill"
     },
     {
+      "appname": "OpenSpecsWindowsProtocolsMSWCCE",
+      "appid": "e563cff8-1af6-4e6f-a655-7571ca482e71",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
       "appname": "Organization.Read.All - Application",
       "appid": "498476ce-e0fe-48b0-b801-37ba7e2685c6",
       "metadata_category": "compliance",
@@ -28765,6 +28825,16 @@
     {
       "appname": "Password Rule Settings",
       "appid": "5cf42378-d67d-4f36-ba46-e8b86229381d",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
+      "appname": "PasswordResetServiceArlingtonCloudAppId",
+      "appid": "2e5ecfc8-ea79-48bd-8140-c19324acb278",
       "metadata_category": "compliance",
       "metadata_severity": "info",
       "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
@@ -33113,7 +33183,7 @@
       "_provenance": "entra_compliance_fill_merill"
     },
     {
-      "appname": "Project Work Management",
+      "appname": "Project Work Management (additional)",
       "appid": "9ac8c0b3-2c30-497c-b4bc-cadfe9bd6eed",
       "metadata_category": "compliance",
       "metadata_severity": "info",
@@ -36814,6 +36884,16 @@
     },
     {
       "appname": "Security Key by Yubico",
+      "appid": "b92c3f9a-c014-4056-887f-140a2501163b",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
+      "appname": "Security Key by Yubico (additional)",
       "appid": "f8a011f3-8c0a-4d15-8006-17111f9edc7d",
       "metadata_category": "compliance",
       "metadata_severity": "info",
@@ -36824,6 +36904,16 @@
     },
     {
       "appname": "Security Key by Yubico with NFC",
+      "appid": "149a2021-8ef6-4133-96b8-81f8d5b7f1f5",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
+      "appname": "Security Key by Yubico with NFC (additional)",
       "appid": "6d44ba9b-f6ec-2e49-b930-0c8fe920cb73",
       "metadata_category": "compliance",
       "metadata_severity": "info",
@@ -36834,6 +36924,16 @@
     },
     {
       "appname": "Security Key NFC by Yubico",
+      "appid": "a4e9fc6d-4cbe-4758-b8ba-37598bb5bbaa",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
+      "appname": "Security Key NFC by Yubico (additional)",
       "appid": "e77e3c64-05e3-428b-8824-0cbeb04b829d",
       "metadata_category": "compliance",
       "metadata_severity": "info",
@@ -36844,6 +36944,16 @@
     },
     {
       "appname": "Security Key NFC by Yubico - Enterprise Edition",
+      "appid": "0bb43545-fd2c-4185-87dd-feb0b2916ace",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
+      "appname": "Security Key NFC by Yubico - Enterprise Edition (additional)",
       "appid": "47ab2fb4-66ac-4184-9ae1-86be814012d5",
       "metadata_category": "compliance",
       "metadata_severity": "info",
@@ -37515,6 +37625,16 @@
     {
       "appname": "Services Hub Operator",
       "appid": "82200a5b-e217-47a5-b665-6d8765ee745b",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
+      "appname": "ServiceTrustDocumentPageLinkUri",
+      "appid": "7adf2d9e-d7b5-4e71-bad8-713e6a183cf3",
       "metadata_category": "compliance",
       "metadata_severity": "info",
       "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
@@ -39285,6 +39405,16 @@
     {
       "appname": "SynchronizationData-User.Upload - Delegated",
       "appid": "1a2e7420-4e92-4d2b-94cb-fb2952e9ddf7",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
+      "appname": "SynchronizationServiceAppId",
+      "appid": "6bf85cfa-ac8a-4be5-b5de-425a0d0dc016",
       "metadata_category": "compliance",
       "metadata_severity": "info",
       "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
@@ -44234,6 +44364,16 @@
     },
     {
       "appname": "YubiKey 5 Series",
+      "appid": "19083c3d-8383-4b18-bc03-8f1c9ab2fd1b",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
+      "appname": "YubiKey 5 Series (2nd additional)",
       "appid": "ee882879-721c-4913-9775-3dfcce97072a",
       "metadata_category": "compliance",
       "metadata_severity": "info",
@@ -44243,7 +44383,27 @@
       "_provenance": "entra_compliance_fill_merill"
     },
     {
+      "appname": "YubiKey 5 Series (additional)",
+      "appid": "cb69481e-8ff7-4039-93ec-0a2729a154a8",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
       "appname": "YubiKey 5 Series with Lightning",
+      "appid": "a02167b9-ae71-4ac7-9a07-06432ebb6f1c",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
+      "appname": "YubiKey 5 Series with Lightning (additional)",
       "appid": "c5ef55ff-ad9a-4b9f-b580-adebafe026d0",
       "metadata_category": "compliance",
       "metadata_severity": "info",
@@ -44254,7 +44414,27 @@
     },
     {
       "appname": "YubiKey 5 Series with NFC",
+      "appid": "2fc0579f-8113-47ea-b116-bb5a8db9202a",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
+      "appname": "YubiKey 5 Series with NFC (2nd additional)",
       "appid": "fa2b99dc-9e39-4257-8f92-4a30d23c4118",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
+      "appname": "YubiKey 5 Series with NFC (additional)",
+      "appid": "a25342c0-3cdc-4414-8e46-f4807fca511c",
       "metadata_category": "compliance",
       "metadata_severity": "info",
       "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
@@ -44294,6 +44474,16 @@
     },
     {
       "appname": "YubiKey Bio Series - Multi-protocol Edition",
+      "appid": "7d1351a6-e097-4852-b8bf-c9ac5c9ce4a3",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
+      "appname": "YubiKey Bio Series - Multi-protocol Edition (additional)",
       "appid": "90636e1f-ef82-43bf-bdcf-5255f139d12f",
       "metadata_category": "compliance",
       "metadata_severity": "info",

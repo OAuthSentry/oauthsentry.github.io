@@ -1,6 +1,6 @@
 {
-  "appid": "90636e1f-ef82-43bf-bdcf-5255f139d12f",
-  "appname": "YubiKey Bio Series - Multi-protocol Edition (additional)",
+  "appid": "4b3f8944-d4f2-4d21-bb19-764a986ec160",
+  "appname": "KeyXentic FIDO2 Secp256R1 FIDO2 CTAP2 Authenticator",
   "service": "entra",
   "category": "compliance",
   "severity": "info",
@@ -8,5 +8,5 @@
   "references": [
     "https://github.com/merill/microsoft-info"
   ],
-  "slug": "90636e1f-ef82-43bf-bdcf-5255f139d12f"
+  "slug": "4b3f8944-d4f2-4d21-bb19-764a986ec160"
 }
