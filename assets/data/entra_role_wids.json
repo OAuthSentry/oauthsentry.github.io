@@ -85,9 +85,9 @@
     "privileged": true
   },
   "1981f584-96e9-4a6f-95b0-f522373f8fae": {
-    "description": "Manage all capabilities in the Microsoft Entra Tenant Governance service.",
+    "description": "Manage all capabilities in the Microsoft Entra Tenant Governance service.<br/>[!](privileged-roles-permissions.md)",
     "name": "Tenant Governance Administrator",
-    "privileged": false
+    "privileged": true
   },
   "1a7d78b6-429f-476b-b8eb-35fb715fffd4": {
     "description": "Manage all aspects of SharePoint Embedded containers.",
