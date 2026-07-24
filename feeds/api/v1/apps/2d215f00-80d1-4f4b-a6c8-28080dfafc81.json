@@ -1,6 +1,6 @@
 {
-  "appid": "de926fbf-e23b-41f9-ae15-c943a9cfa630",
-  "appname": "Microsoft Azure Authorization Private Link Provider",
+  "appid": "2d215f00-80d1-4f4b-a6c8-28080dfafc81",
+  "appname": "Microsoft Authorization System Policy",
   "service": "entra",
   "category": "compliance",
   "severity": "info",
@@ -8,5 +8,5 @@
   "references": [
     "https://github.com/merill/microsoft-info"
   ],
-  "slug": "de926fbf-e23b-41f9-ae15-c943a9cfa630"
+  "slug": "2d215f00-80d1-4f4b-a6c8-28080dfafc81"
 }

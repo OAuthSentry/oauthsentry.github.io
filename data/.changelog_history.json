@@ -1,6 +1,26 @@
 [
   {
     "kind": "added",
+    "ts": "2026-07-24T06:37:56.854978+00:00",
+    "appid": "2d215f00-80d1-4f4b-a6c8-28080dfafc81",
+    "service": "entra",
+    "appname": "Microsoft Authorization System Policy",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-07-24T06:37:56.854978+00:00",
+    "appid": "4eaceb75-fe6c-4953-b873-0fd565ecd334",
+    "service": "entra",
+    "appname": "Request Approvals Write Platform",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
     "ts": "2026-07-16T06:29:48.198527+00:00",
     "appid": "0bb43545-fd2c-4185-87dd-feb0b2916ace",
     "service": "entra",
@@ -1975,26 +1995,6 @@
     "appid": "0b2a744c-2abf-4f1e-ad7e-17a087e2be99",
     "service": "entra",
     "appname": "Policy.ReadWrite.SecurityDefaults - Delegated",
-    "category": "compliance",
-    "severity": "info",
-    "summary": "Added to compliance (info)"
-  },
-  {
-    "kind": "added",
-    "ts": "2026-04-28T16:33:38.232651+00:00",
-    "appid": "0b2c029c-dca0-454a-a336-887285d6ef07",
-    "service": "entra",
-    "appname": "Dynamics 365 Guides_1",
-    "category": "compliance",
-    "severity": "info",
-    "summary": "Added to compliance (info)"
-  },
-  {
-    "kind": "added",
-    "ts": "2026-04-28T16:33:38.232651+00:00",
-    "appid": "0b34bec3-d5d6-4974-b7b0-dcdb5c90c29d",
-    "service": "entra",
-    "appname": "Purview/azure-iot-connection-string",
     "category": "compliance",
     "severity": "info",
     "summary": "Added to compliance (info)"

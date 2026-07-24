@@ -1,6 +1,6 @@
 {
-  "appid": "de926fbf-e23b-41f9-ae15-c943a9cfa630",
-  "appname": "Microsoft Azure Authorization Private Link Provider",
+  "appid": "4eaceb75-fe6c-4953-b873-0fd565ecd334",
+  "appname": "Request Approvals Write Platform",
   "service": "entra",
   "category": "compliance",
   "severity": "info",
@@ -8,5 +8,5 @@
   "references": [
     "https://github.com/merill/microsoft-info"
   ],
-  "slug": "de926fbf-e23b-41f9-ae15-c943a9cfa630"
+  "slug": "4eaceb75-fe6c-4953-b873-0fd565ecd334"
 }
