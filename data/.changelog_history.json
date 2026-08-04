@@ -1,6 +1,46 @@
 [
   {
     "kind": "added",
+    "ts": "2026-08-04T06:38:52.491148+00:00",
+    "appid": "0f80e901-8f4c-449a-bf90-13d5d082f187",
+    "service": "entra",
+    "appname": "IAppHostPathMapper2MapPathMethod",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-08-04T06:38:52.491148+00:00",
+    "appid": "89d10474-74af-4874-99a7-c23c2f643083",
+    "service": "entra",
+    "appname": "EntraIdAuthenticationFirstPartyResourceExample",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-08-04T06:38:52.491148+00:00",
+    "appid": "cbd93bc2-71e5-4566-b3a7-595d8eeca6e8",
+    "service": "entra",
+    "appname": "Microsoft-ServiceFabricETW",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-08-04T06:38:52.491148+00:00",
+    "appid": "d209f6fa-3839-4d70-b83f-60b1c64d0e8f",
+    "service": "entra",
+    "appname": "MicrosoftEntraSecurityGroupEnableMIPLabels",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
     "ts": "2026-07-24T06:37:56.854978+00:00",
     "appid": "2d215f00-80d1-4f4b-a6c8-28080dfafc81",
     "service": "entra",
@@ -1955,46 +1995,6 @@
     "appid": "0af06dc6-e4b5-4f28-818e-e78e62d137a5",
     "service": "entra",
     "appname": "Windows 365 [Community Contributed]",
-    "category": "compliance",
-    "severity": "info",
-    "summary": "Added to compliance (info)"
-  },
-  {
-    "kind": "added",
-    "ts": "2026-04-28T16:33:38.232651+00:00",
-    "appid": "0b03f40b-c404-40c3-8651-2aceb74365fa",
-    "service": "entra",
-    "appname": "Power Apps for Dynamics 365_2",
-    "category": "compliance",
-    "severity": "info",
-    "summary": "Added to compliance (info)"
-  },
-  {
-    "kind": "added",
-    "ts": "2026-04-28T16:33:38.232651+00:00",
-    "appid": "0b07f429-9f4b-4714-9392-cc5e8e80c8b0",
-    "service": "entra",
-    "appname": "Azure Digital Twins service endpoint resource ID",
-    "category": "compliance",
-    "severity": "info",
-    "summary": "Added to compliance (info)"
-  },
-  {
-    "kind": "added",
-    "ts": "2026-04-28T16:33:38.232651+00:00",
-    "appid": "0b21c159-dbf4-4dbb-a6f6-490e412c716e",
-    "service": "entra",
-    "appname": "Schedule-WorkingTime.ReadWrite.All - Application",
-    "category": "compliance",
-    "severity": "info",
-    "summary": "Added to compliance (info)"
-  },
-  {
-    "kind": "added",
-    "ts": "2026-04-28T16:33:38.232651+00:00",
-    "appid": "0b2a744c-2abf-4f1e-ad7e-17a087e2be99",
-    "service": "entra",
-    "appname": "Policy.ReadWrite.SecurityDefaults - Delegated",
     "category": "compliance",
     "severity": "info",
     "summary": "Added to compliance (info)"

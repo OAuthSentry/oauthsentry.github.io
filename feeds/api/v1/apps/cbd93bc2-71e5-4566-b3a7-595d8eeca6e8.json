@@ -1,6 +1,6 @@
 {
-  "appid": "0af06dc6-e4b5-4f28-818e-e78e62d137a5",
-  "appname": "Windows365AppId",
+  "appid": "cbd93bc2-71e5-4566-b3a7-595d8eeca6e8",
+  "appname": "Microsoft-ServiceFabricETW",
   "service": "entra",
   "category": "compliance",
   "severity": "info",
@@ -8,5 +8,5 @@
   "references": [
     "https://github.com/merill/microsoft-info"
   ],
-  "slug": "0af06dc6-e4b5-4f28-818e-e78e62d137a5"
+  "slug": "cbd93bc2-71e5-4566-b3a7-595d8eeca6e8"
 }

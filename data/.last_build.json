@@ -9617,6 +9617,13 @@
     "severity": "info",
     "ref_count": 1
   },
+  "89d10474-74af-4874-99a7-c23c2f643083": {
+    "appname": "EntraIdAuthenticationFirstPartyResourceExample",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "b9b0ac19-f710-429d-b58e-dc3f73a330a9": {
     "appname": "Environmental Credit Service (preview) app ID",
     "service": "entra",
@@ -11282,6 +11289,13 @@
     "category": "compliance",
     "severity": "info",
     "ref_count": 3
+  },
+  "0f80e901-8f4c-449a-bf90-13d5d082f187": {
+    "appname": "IAppHostPathMapper2MapPathMethod",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
   },
   "39aaf054-81a5-48c7-a4f8-0293012095b9": {
     "appname": "IC3 Gateway",
@@ -17583,6 +17597,13 @@
     "severity": "info",
     "ref_count": 1
   },
+  "cbd93bc2-71e5-4566-b3a7-595d8eeca6e8": {
+    "appname": "Microsoft-ServiceFabricETW",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "6f7e0f60-9401-4f5b-98e2-cf15bd5fd5e3": {
     "appname": "Microsoft.AAD.BrokerPlugin | Microsoft Application Command Service [Community Contributed]",
     "service": "entra",
@@ -17781,6 +17802,13 @@
   },
   "81ca2f57-06b8-4597-9eee-ad8f700c5106": {
     "appname": "MicrosoftEntraIDReputationManagementServices",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "d209f6fa-3839-4d70-b83f-60b1c64d0e8f": {
+    "appname": "MicrosoftEntraSecurityGroupEnableMIPLabels",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
@@ -30071,13 +30099,6 @@
     "severity": "info",
     "ref_count": 1
   },
-  "0af06dc6-e4b5-4f28-818e-e78e62d137a5": {
-    "appname": "Windows 365 [Community Contributed]",
-    "service": "entra",
-    "category": "compliance",
-    "severity": "info",
-    "ref_count": 1
-  },
   "11451d60-acb2-45eb-a7d6-43d0f0125c13": {
     "appname": "Windows 365 Administrator",
     "service": "entra",
@@ -30815,6 +30836,13 @@
   },
   "61ae9cd9-7bca-458c-affc-861e2f24ba3b": {
     "appname": "Windows Update for Business Deployment Service [Community Contributed]",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "0af06dc6-e4b5-4f28-818e-e78e62d137a5": {
+    "appname": "Windows365AppId",
     "service": "entra",
     "category": "compliance",
     "severity": "info",

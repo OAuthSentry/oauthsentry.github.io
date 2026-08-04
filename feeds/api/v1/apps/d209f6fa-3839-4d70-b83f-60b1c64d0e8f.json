@@ -1,6 +1,6 @@
 {
-  "appid": "0af06dc6-e4b5-4f28-818e-e78e62d137a5",
-  "appname": "Windows365AppId",
+  "appid": "d209f6fa-3839-4d70-b83f-60b1c64d0e8f",
+  "appname": "MicrosoftEntraSecurityGroupEnableMIPLabels",
   "service": "entra",
   "category": "compliance",
   "severity": "info",
@@ -8,5 +8,5 @@
   "references": [
     "https://github.com/merill/microsoft-info"
   ],
-  "slug": "0af06dc6-e4b5-4f28-818e-e78e62d137a5"
+  "slug": "d209f6fa-3839-4d70-b83f-60b1c64d0e8f"
 }

@@ -1,6 +1,6 @@
 {
-  "appid": "0af06dc6-e4b5-4f28-818e-e78e62d137a5",
-  "appname": "Windows365AppId",
+  "appid": "0f80e901-8f4c-449a-bf90-13d5d082f187",
+  "appname": "IAppHostPathMapper2MapPathMethod",
   "service": "entra",
   "category": "compliance",
   "severity": "info",
@@ -8,5 +8,5 @@
   "references": [
     "https://github.com/merill/microsoft-info"
   ],
-  "slug": "0af06dc6-e4b5-4f28-818e-e78e62d137a5"
+  "slug": "0f80e901-8f4c-449a-bf90-13d5d082f187"
 }

@@ -16887,6 +16887,18 @@
     ],
     "slug": "c89c853c-c6cc-4c84-bfd9-fcd7e1c50793"
   },
+  "89d10474-74af-4874-99a7-c23c2f643083": {
+    "appid": "89d10474-74af-4874-99a7-c23c2f643083",
+    "appname": "EntraIdAuthenticationFirstPartyResourceExample",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "89d10474-74af-4874-99a7-c23c2f643083"
+  },
   "b9b0ac19-f710-429d-b58e-dc3f73a330a9": {
     "appid": "b9b0ac19-f710-429d-b58e-dc3f73a330a9",
     "appname": "Environmental Credit Service (preview) app ID",
@@ -19798,6 +19810,18 @@
       "https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv"
     ],
     "slug": "66244124-575c-4284-92bc-fdd00e669cea"
+  },
+  "0f80e901-8f4c-449a-bf90-13d5d082f187": {
+    "appid": "0f80e901-8f4c-449a-bf90-13d5d082f187",
+    "appname": "IAppHostPathMapper2MapPathMethod",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "0f80e901-8f4c-449a-bf90-13d5d082f187"
   },
   "39aaf054-81a5-48c7-a4f8-0293012095b9": {
     "appid": "39aaf054-81a5-48c7-a4f8-0293012095b9",
@@ -31028,6 +31052,18 @@
     ],
     "slug": "7e97dcfb-bcdd-426e-8f0a-96439602627a"
   },
+  "cbd93bc2-71e5-4566-b3a7-595d8eeca6e8": {
+    "appid": "cbd93bc2-71e5-4566-b3a7-595d8eeca6e8",
+    "appname": "Microsoft-ServiceFabricETW",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "cbd93bc2-71e5-4566-b3a7-595d8eeca6e8"
+  },
   "6f7e0f60-9401-4f5b-98e2-cf15bd5fd5e3": {
     "appid": "6f7e0f60-9401-4f5b-98e2-cf15bd5fd5e3",
     "appname": "Microsoft.AAD.BrokerPlugin | Microsoft Application Command Service [Community Contributed]",
@@ -31417,6 +31453,18 @@
       "https://github.com/merill/microsoft-info"
     ],
     "slug": "81ca2f57-06b8-4597-9eee-ad8f700c5106"
+  },
+  "d209f6fa-3839-4d70-b83f-60b1c64d0e8f": {
+    "appid": "d209f6fa-3839-4d70-b83f-60b1c64d0e8f",
+    "appname": "MicrosoftEntraSecurityGroupEnableMIPLabels",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "d209f6fa-3839-4d70-b83f-60b1c64d0e8f"
   },
   "e935b4a5-8968-416d-8414-caed51c782a9": {
     "appid": "e935b4a5-8968-416d-8414-caed51c782a9",
@@ -52903,18 +52951,6 @@
     ],
     "slug": "938fd547-d794-42a4-996c-1cc206619580"
   },
-  "0af06dc6-e4b5-4f28-818e-e78e62d137a5": {
-    "appid": "0af06dc6-e4b5-4f28-818e-e78e62d137a5",
-    "appname": "Windows 365 [Community Contributed]",
-    "service": "entra",
-    "category": "compliance",
-    "severity": "info",
-    "comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=GitHub)",
-    "references": [
-      "https://github.com/merill/microsoft-info"
-    ],
-    "slug": "0af06dc6-e4b5-4f28-818e-e78e62d137a5"
-  },
   "11451d60-acb2-45eb-a7d6-43d0f0125c13": {
     "appid": "11451d60-acb2-45eb-a7d6-43d0f0125c13",
     "appname": "Windows 365 Administrator",
@@ -54202,6 +54238,18 @@
       "https://github.com/merill/microsoft-info"
     ],
     "slug": "61ae9cd9-7bca-458c-affc-861e2f24ba3b"
+  },
+  "0af06dc6-e4b5-4f28-818e-e78e62d137a5": {
+    "appid": "0af06dc6-e4b5-4f28-818e-e78e62d137a5",
+    "appname": "Windows365AppId",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "0af06dc6-e4b5-4f28-818e-e78e62d137a5"
   },
   "fc780465-2017-40d4-a0c5-307022471b92": {
     "appid": "fc780465-2017-40d4-a0c5-307022471b92",
