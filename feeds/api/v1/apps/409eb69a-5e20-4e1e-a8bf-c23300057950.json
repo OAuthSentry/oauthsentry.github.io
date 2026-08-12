@@ -1,0 +1,12 @@
+{
+  "appid": "409eb69a-5e20-4e1e-a8bf-c23300057950",
+  "appname": "Azure Container Apps Arc - Data Plane",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "409eb69a-5e20-4e1e-a8bf-c23300057950"
+}

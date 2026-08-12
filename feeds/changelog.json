@@ -1,8 +1,68 @@
 {
   "feed": "OAuthSentry catalog changelog",
-  "generated": "2026-08-04T06:38:52.491148+00:00",
+  "generated": "2026-08-12T05:44:20.029626+00:00",
   "count": 200,
   "entries": [
+    {
+      "kind": "added",
+      "ts": "2026-08-12T05:44:20.029626+00:00",
+      "appid": "1459b1f6-7a5b-4300-93a2-44b4a651759f",
+      "service": "entra",
+      "appname": "Azure Container Apps Arc - Control Plane",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
+    {
+      "kind": "added",
+      "ts": "2026-08-12T05:44:20.029626+00:00",
+      "appid": "2c7dd73f-7a21-485b-b97d-a2508fa152c3",
+      "service": "entra",
+      "appname": "Azure ContainerApps Sessions",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
+    {
+      "kind": "added",
+      "ts": "2026-08-12T05:44:20.029626+00:00",
+      "appid": "409eb69a-5e20-4e1e-a8bf-c23300057950",
+      "service": "entra",
+      "appname": "Azure Container Apps Arc - Data Plane",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
+    {
+      "kind": "added",
+      "ts": "2026-08-12T05:44:20.029626+00:00",
+      "appid": "55ebbb62-3b9c-49fd-9b87-9595226dd4ac",
+      "service": "entra",
+      "appname": "Microsoft Azure Legion",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
+    {
+      "kind": "added",
+      "ts": "2026-08-12T05:44:20.029626+00:00",
+      "appid": "59f0a04a-b322-4310-adc9-39ac41e9631e",
+      "service": "entra",
+      "appname": "Azure SRE Agent",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
+    {
+      "kind": "added",
+      "ts": "2026-08-12T05:44:20.029626+00:00",
+      "appid": "6104ad52-755e-428b-9fb5-5fdf4d2c4d53",
+      "service": "entra",
+      "appname": "Azure ContainerApps Auth",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
     {
       "kind": "added",
       "ts": "2026-08-04T06:38:52.491148+00:00",
@@ -1939,66 +1999,6 @@
       "appid": "0a8ce3c7-89dd-46cf-b2c3-5ef0064437a8",
       "service": "entra",
       "appname": "Member.Read.Group",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "0a9a7e1f-b9d0-4cc4-a60d-0319b160aaa3",
-      "service": "entra",
-      "appname": "Storage Table Data Contributor",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "0ab0b1a8-8aac-4efd-b8c2-3ee1fb270be8",
-      "service": "entra",
-      "appname": "Azure Kubernetes Service Cluster Admin Role",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "0ab2bc2c-204d-4f69-9f50-1a530defffe4",
-      "service": "entra",
-      "appname": "Send & Track",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "0ab34830-df19-4f8c-b84e-aa85b8afa6e8",
-      "service": "entra",
-      "appname": "Azure Front Door Domain Contributor",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "0acf3011-bc60-f375-fb53-6f05f43154e0",
-      "service": "entra",
-      "appname": "Nymi FIDO2 Authenticator",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "0af06dc6-e4b5-4f28-818e-e78e62d137a5",
-      "service": "entra",
-      "appname": "Windows 365 [Community Contributed]",
       "category": "compliance",
       "severity": "info",
       "summary": "Added to compliance (info)"
