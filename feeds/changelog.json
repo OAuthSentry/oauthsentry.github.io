@@ -1,8 +1,18 @@
 {
   "feed": "OAuthSentry catalog changelog",
-  "generated": "2026-08-12T05:44:20.029626+00:00",
+  "generated": "2026-08-21T04:52:46.565691+00:00",
   "count": 200,
   "entries": [
+    {
+      "kind": "added",
+      "ts": "2026-08-21T04:52:46.565691+00:00",
+      "appid": "59eca866-2f46-40b8-96ff-63f663121ef9",
+      "service": "entra",
+      "appname": "Agent 365",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
     {
       "kind": "added",
       "ts": "2026-08-12T05:44:20.029626+00:00",
@@ -1989,16 +1999,6 @@
       "appid": "0a7b3084-8d18-46f5-8aef-b5b829292c6f",
       "service": "entra",
       "appname": "ChannelSettings.Read.Group",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "0a8ce3c7-89dd-46cf-b2c3-5ef0064437a8",
-      "service": "entra",
-      "appname": "Member.Read.Group",
       "category": "compliance",
       "severity": "info",
       "summary": "Added to compliance (info)"

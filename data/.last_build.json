@@ -440,6 +440,13 @@
     "severity": "info",
     "ref_count": 1
   },
+  "59eca866-2f46-40b8-96ff-63f663121ef9": {
+    "appname": "Agent 365",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1": {
     "appname": "Agent Tools",
     "service": "entra",
