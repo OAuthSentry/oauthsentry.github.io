@@ -1,6 +1,6 @@
 {
   "appid": "89e7f920-bdc3-4e71-99e5-30d84827b610",
-  "appname": "Dunloe Dataplane Service",
+  "appname": "Microsoft Authorization Service Dataplane",
   "service": "entra",
   "category": "compliance",
   "severity": "info",

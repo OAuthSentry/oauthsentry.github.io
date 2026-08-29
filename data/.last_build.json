@@ -7545,13 +7545,6 @@
     "severity": "info",
     "ref_count": 3
   },
-  "89e7f920-bdc3-4e71-99e5-30d84827b610": {
-    "appname": "Dunloe Dataplane Service",
-    "service": "entra",
-    "category": "compliance",
-    "severity": "info",
-    "ref_count": 1
-  },
   "441509e5-a165-4363-8ee7-bcf0b7d26739": {
     "appname": "DWEngineV2",
     "service": "entra",
@@ -14523,6 +14516,13 @@
     "category": "compliance",
     "severity": "info",
     "ref_count": 3
+  },
+  "89e7f920-bdc3-4e71-99e5-30d84827b610": {
+    "appname": "Microsoft Authorization Service Dataplane",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
   },
   "2d215f00-80d1-4f4b-a6c8-28080dfafc81": {
     "appname": "Microsoft Authorization System Policy",
