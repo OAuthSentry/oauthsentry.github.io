@@ -12130,6 +12130,13 @@
     "severity": "info",
     "ref_count": 1
   },
+  "b8566c1c-2b37-4f6b-97ad-9aaf1fc20560": {
+    "appname": "Intune MonoDeviceService ConfidentialClient",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "d9923fe3-a2de-4d29-a5be-e3e83bb786be": {
     "appname": "Intune Plan 2",
     "service": "entra",

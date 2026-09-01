@@ -3,11 +3,31 @@
   <id>tag:oauthsentry.github.io,2026:changelog</id>
   <title>OAuthSentry catalog changelog</title>
   <subtitle>Adds, removes, category and severity changes across the OAuth app catalog</subtitle>
-  <updated>2026-08-21T04:52:46.565691+00:00</updated>
+  <updated>2026-09-01T09:23:10.105085+00:00</updated>
   <link rel="self"      href="https://oauthsentry.github.io/feeds/changelog.atom"/>
   <link rel="alternate" href="https://oauthsentry.github.io/" type="text/html"/>
   <author><name>OAuthSentry</name></author>
   <generator uri="https://oauthsentry.github.io">OAuthSentry build_feeds</generator>
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:b8566c1c-2b37-4f6b-97ad-9aaf1fc20560:2026-09-01T09:23:10.105085+00:00</id>
+    <title>[added] entra / Intune MonoDeviceService ConfidentialClient</title>
+    <updated>2026-09-01T09:23:10.105085+00:00</updated>
+    <published>2026-09-01T09:23:10.105085+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/b8566c1c-2b37-4f6b-97ad-9aaf1fc20560.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: Intune MonoDeviceService ConfidentialClient
+App ID: b8566c1c-2b37-4f6b-97ad-9aaf1fc20560
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/b8566c1c-2b37-4f6b-97ad-9aaf1fc20560.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
   <entry>
     <id>tag:oauthsentry.github.io,2026:added:59eca866-2f46-40b8-96ff-63f663121ef9:2026-08-21T04:52:46.565691+00:00</id>
     <title>[added] entra / Agent 365</title>
@@ -3985,26 +4005,6 @@ Category: compliance
 Severity: info
 Change: Added to compliance (info)
 Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0a5ae4ab-0d65-4eeb-be61-29fc9b54394b.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:0a7b3084-8d18-46f5-8aef-b5b829292c6f:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / ChannelSettings.Read.Group</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/0a7b3084-8d18-46f5-8aef-b5b829292c6f.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: ChannelSettings.Read.Group
-App ID: 0a7b3084-8d18-46f5-8aef-b5b829292c6f
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0a7b3084-8d18-46f5-8aef-b5b829292c6f.json</content>
     <author><name>OAuthSentry</name></author>
   </entry>
 
