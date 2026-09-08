@@ -1,6 +1,6 @@
 # OAuthSentry feed - one application id per line
-# generated: 2026-09-07T09:18:56.637707+00:00
-# count: 4470
+# generated: 2026-09-08T08:50:50.461880+00:00
+# count: 4471
 0ec2d138-5a70-4a33-b2c7-7d296c996ace
 a1cffbc6-1cb3-44e4-a1d2-cee9cce700f1
 c2e41e49-e2a2-4c55-832a-cf13ffba1d6a
@@ -2149,6 +2149,7 @@ ee45196f-bd15-4010-9a66-c8497a97a873
 cbff9545-769a-4b41-b76e-fbb069e8727e
 e0ccf59d-5a20-4a87-a122-f42842cdb86a
 0c7668b5-3260-4ad0-9f53-34ed54fa19b2
+4bf1d72f-eee1-495f-b12c-2e60a0cc3a5a
 e430a580-c37b-4d16-adba-d881d7cd0364
 16a55f2f-ff35-4cd5-9146-fb784e3761a5
 bba890d4-7881-4584-8102-0c3fdfb739a7

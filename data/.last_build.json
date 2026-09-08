@@ -15035,6 +15035,13 @@
     "severity": "info",
     "ref_count": 3
   },
+  "4bf1d72f-eee1-495f-b12c-2e60a0cc3a5a": {
+    "appname": "Microsoft Defender for Databases",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "e430a580-c37b-4d16-adba-d881d7cd0364": {
     "appname": "Microsoft Defender for Endpoint F2",
     "service": "entra",
