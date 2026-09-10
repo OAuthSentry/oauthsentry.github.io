@@ -1,6 +1,16 @@
 [
   {
     "kind": "added",
+    "ts": "2026-09-10T08:55:58.389129+00:00",
+    "appid": "1412d89f-b8a8-4111-b4fd-e82905cbd85d",
+    "service": "entra",
+    "appname": "Microsoft.AzureStackHCI Provider",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
     "ts": "2026-09-08T08:50:51.182263+00:00",
     "appid": "4bf1d72f-eee1-495f-b12c-2e60a0cc3a5a",
     "service": "entra",
@@ -1985,16 +1995,6 @@
     "appid": "0a389a77-9850-4dc4-b600-bc66fdfefc60",
     "service": "entra",
     "appname": "Dynamics 365 Guides_2",
-    "category": "compliance",
-    "severity": "info",
-    "summary": "Added to compliance (info)"
-  },
-  {
-    "kind": "added",
-    "ts": "2026-04-28T16:33:38.232651+00:00",
-    "appid": "0a4983bb-d3e5-4a09-95d8-b2d0127b3df5",
-    "service": "entra",
-    "appname": "SharePoint (Plan 1) for Education",
     "category": "compliance",
     "severity": "info",
     "summary": "Added to compliance (info)"

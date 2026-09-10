@@ -1,0 +1,12 @@
+{
+  "appid": "1412d89f-b8a8-4111-b4fd-e82905cbd85d",
+  "appname": "Microsoft.AzureStackHCI Provider",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1412d89f-b8a8-4111-b4fd-e82905cbd85d"
+}

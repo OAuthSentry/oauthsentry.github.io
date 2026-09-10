@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-09T08:57:07.214928+00:00",
-  "count": 4559,
+  "generated": "2026-09-10T08:55:57.569933+00:00",
+  "count": 4560,
   "items": [
     {
       "appname": "",
@@ -25291,6 +25291,16 @@
       "metadata_reference": "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in - https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv | https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv",
       "service": "entra",
       "_provenance": "entra_curated_mthcht"
+    },
+    {
+      "appname": "Microsoft.AzureStackHCI Provider",
+      "appid": "1412d89f-b8a8-4111-b4fd-e82905cbd85d",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
     },
     {
       "appname": "Microsoft.Blockchain",

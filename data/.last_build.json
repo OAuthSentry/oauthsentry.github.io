@@ -17702,6 +17702,13 @@
     "severity": "info",
     "ref_count": 3
   },
+  "1412d89f-b8a8-4111-b4fd-e82905cbd85d": {
+    "appname": "Microsoft.AzureStackHCI Provider",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "049d4938-2ef2-4274-aa8f-630fc9bc33d1": {
     "appname": "Microsoft.Blockchain",
     "service": "entra",
