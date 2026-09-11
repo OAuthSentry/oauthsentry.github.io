@@ -100,7 +100,7 @@
     "privileged": false
   },
   "1fe13547-53f6-408d-ac04-7f8eed167b38": {
-    "description": "Read all aspects of Microsoft 365 Copilot and AI-related enterprise services in Microsoft 365.<br/>[!](privileged-roles-permissions.md)",
+    "description": "Read all aspects of Microsoft Copilot and AI-related enterprise services in Microsoft 365.<br/>[!](privileged-roles-permissions.md)",
     "name": "AI Reader",
     "privileged": true
   },
@@ -546,7 +546,7 @@
     "privileged": true
   },
   "d2562ede-74db-457e-a7b6-544e236ebb61": {
-    "description": "Manage all aspects of Microsoft 365 Copilot and AI-related enterprise services in Microsoft 365.<br/>[!](privileged-roles-permissions.md)",
+    "description": "Manage all aspects of Microsoft Copilot and AI-related enterprise services in Microsoft 365.<br/>[!](privileged-roles-permissions.md)",
     "name": "AI Administrator",
     "privileged": true
   },
