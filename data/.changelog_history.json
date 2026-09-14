@@ -1,6 +1,36 @@
 [
   {
     "kind": "added",
+    "ts": "2026-09-14T09:49:44.242341+00:00",
+    "appid": "1387301c-59b7-4204-84b8-1b7559500626",
+    "service": "entra",
+    "appname": "ptm-cp-prod",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-09-14T09:49:44.242341+00:00",
+    "appid": "9bc4cc98-c5f0-4916-b2ef-b55848ef0f48",
+    "service": "entra",
+    "appname": "ptm-prod",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-09-14T09:49:44.242341+00:00",
+    "appid": "f77c2a8f-8a0a-4776-8e0a-bcb2549610ca",
+    "service": "entra",
+    "appname": "RPSaaS Meta RP",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
     "ts": "2026-09-10T08:55:58.389129+00:00",
     "appid": "1412d89f-b8a8-4111-b4fd-e82905cbd85d",
     "service": "entra",
@@ -1965,36 +1995,6 @@
     "appid": "0a05d977-a21a-45b2-91ce-61c240dbafa2",
     "service": "entra",
     "appname": "Project for Project Operations",
-    "category": "compliance",
-    "severity": "info",
-    "summary": "Added to compliance (info)"
-  },
-  {
-    "kind": "added",
-    "ts": "2026-04-28T16:33:38.232651+00:00",
-    "appid": "0a0a23fa-fea1-4195-bb89-b4789cb12f7f",
-    "service": "entra",
-    "appname": "Common Data Service for Virtual Agent Base",
-    "category": "compliance",
-    "severity": "info",
-    "summary": "Added to compliance (info)"
-  },
-  {
-    "kind": "added",
-    "ts": "2026-04-28T16:33:38.232651+00:00",
-    "appid": "0a20c815-5e81-4727-9bdc-2b5a117850c3",
-    "service": "entra",
-    "appname": "Power Apps for Office 365 for Government_1",
-    "category": "compliance",
-    "severity": "info",
-    "summary": "Added to compliance (info)"
-  },
-  {
-    "kind": "added",
-    "ts": "2026-04-28T16:33:38.232651+00:00",
-    "appid": "0a389a77-9850-4dc4-b600-bc66fdfefc60",
-    "service": "entra",
-    "appname": "Dynamics 365 Guides_2",
     "category": "compliance",
     "severity": "info",
     "summary": "Added to compliance (info)"

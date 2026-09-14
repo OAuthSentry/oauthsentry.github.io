@@ -23351,6 +23351,20 @@
     "severity": "info",
     "ref_count": 3
   },
+  "1387301c-59b7-4204-84b8-1b7559500626": {
+    "appname": "ptm-cp-prod",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "9bc4cc98-c5f0-4916-b2ef-b55848ef0f48": {
+    "appname": "ptm-prod",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "9f6c88b7-0272-4581-a75a-ec0340824ed1": {
     "appname": "PTSS",
     "service": "entra",
@@ -25625,6 +25639,13 @@
     "category": "compliance",
     "severity": "info",
     "ref_count": 3
+  },
+  "f77c2a8f-8a0a-4776-8e0a-bcb2549610ca": {
+    "appname": "RPSaaS Meta RP",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
   },
   "7e3f3d30-3557-4442-bdae-139312178b39": {
     "appname": "RSA DS100",
