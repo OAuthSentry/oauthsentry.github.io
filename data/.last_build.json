@@ -405,6 +405,13 @@
     "severity": "info",
     "ref_count": 1
   },
+  "e64ac7a3-442c-4edb-8f5b-ed1360760258": {
+    "appname": "Advisor Insights",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "6b534d80-e337-47c4-864f-140f5c7f593d": {
     "appname": "Advisor Recommendations Contributor (Assessments and Reviews)",
     "service": "entra",
@@ -421,6 +428,13 @@
   },
   "c64499e0-74c3-47ad-921c-13865957895c": {
     "appname": "Advisor Reviews Reader",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "8e008c98-2bef-4413-95e4-f65d71b27276": {
+    "appname": "Advisor SG Intelligence",
     "service": "entra",
     "category": "compliance",
     "severity": "info",

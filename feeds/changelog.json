@@ -1,8 +1,28 @@
 {
   "feed": "OAuthSentry catalog changelog",
-  "generated": "2026-09-14T09:49:44.242341+00:00",
+  "generated": "2026-09-22T09:16:56.718033+00:00",
   "count": 200,
   "entries": [
+    {
+      "kind": "added",
+      "ts": "2026-09-22T09:16:56.718033+00:00",
+      "appid": "8e008c98-2bef-4413-95e4-f65d71b27276",
+      "service": "entra",
+      "appname": "Advisor SG Intelligence",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
+    {
+      "kind": "added",
+      "ts": "2026-09-22T09:16:56.718033+00:00",
+      "appid": "e64ac7a3-442c-4edb-8f5b-ed1360760258",
+      "service": "entra",
+      "appname": "Advisor Insights",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
     {
       "kind": "added",
       "ts": "2026-09-14T09:49:44.242341+00:00",
@@ -1979,26 +1999,6 @@
       "appid": "09850681-111b-4a89-9bed-3f2cae46d706",
       "service": "entra",
       "appname": "User.Invite.All - Application",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "09e68a6e-b7ef-eb11-bacb-000d3a373d11",
-      "service": "entra",
-      "appname": "Dynamics 365 customer service new tab",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "0a05d977-a21a-45b2-91ce-61c240dbafa2",
-      "service": "entra",
-      "appname": "Project for Project Operations",
       "category": "compliance",
       "severity": "info",
       "summary": "Added to compliance (info)"

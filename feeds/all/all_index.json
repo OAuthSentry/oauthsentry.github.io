@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-21T09:54:12.628405+00:00",
-  "count": 4569,
+  "generated": "2026-09-22T09:16:55.979948+00:00",
+  "count": 4571,
   "items": [
     {
       "appname": "",
@@ -583,6 +583,16 @@
       "_provenance": "entra_compliance_fill_merill"
     },
     {
+      "appname": "Advisor Insights",
+      "appid": "e64ac7a3-442c-4edb-8f5b-ed1360760258",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
       "appname": "Advisor Recommendations Contributor (Assessments and Reviews)",
       "appid": "6b534d80-e337-47c4-864f-140f5c7f593d",
       "metadata_category": "compliance",
@@ -608,6 +618,16 @@
       "metadata_category": "compliance",
       "metadata_severity": "info",
       "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
+      "appname": "Advisor SG Intelligence",
+      "appid": "8e008c98-2bef-4413-95e4-f65d71b27276",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
       "metadata_reference": "https://github.com/merill/microsoft-info",
       "service": "entra",
       "_provenance": "entra_compliance_fill_merill"

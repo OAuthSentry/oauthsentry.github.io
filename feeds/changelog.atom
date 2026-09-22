@@ -3,11 +3,51 @@
   <id>tag:oauthsentry.github.io,2026:changelog</id>
   <title>OAuthSentry catalog changelog</title>
   <subtitle>Adds, removes, category and severity changes across the OAuth app catalog</subtitle>
-  <updated>2026-09-14T09:49:44.242341+00:00</updated>
+  <updated>2026-09-22T09:16:56.718033+00:00</updated>
   <link rel="self"      href="https://oauthsentry.github.io/feeds/changelog.atom"/>
   <link rel="alternate" href="https://oauthsentry.github.io/" type="text/html"/>
   <author><name>OAuthSentry</name></author>
   <generator uri="https://oauthsentry.github.io">OAuthSentry build_feeds</generator>
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:8e008c98-2bef-4413-95e4-f65d71b27276:2026-09-22T09:16:56.718033+00:00</id>
+    <title>[added] entra / Advisor SG Intelligence</title>
+    <updated>2026-09-22T09:16:56.718033+00:00</updated>
+    <published>2026-09-22T09:16:56.718033+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/8e008c98-2bef-4413-95e4-f65d71b27276.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: Advisor SG Intelligence
+App ID: 8e008c98-2bef-4413-95e4-f65d71b27276
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/8e008c98-2bef-4413-95e4-f65d71b27276.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:e64ac7a3-442c-4edb-8f5b-ed1360760258:2026-09-22T09:16:56.718033+00:00</id>
+    <title>[added] entra / Advisor Insights</title>
+    <updated>2026-09-22T09:16:56.718033+00:00</updated>
+    <published>2026-09-22T09:16:56.718033+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/e64ac7a3-442c-4edb-8f5b-ed1360760258.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: Advisor Insights
+App ID: e64ac7a3-442c-4edb-8f5b-ed1360760258
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/e64ac7a3-442c-4edb-8f5b-ed1360760258.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
   <entry>
     <id>tag:oauthsentry.github.io,2026:added:1387301c-59b7-4204-84b8-1b7559500626:2026-09-14T09:49:44.242341+00:00</id>
     <title>[added] entra / ptm-cp-prod</title>
@@ -3965,46 +4005,6 @@ Category: compliance
 Severity: info
 Change: Added to compliance (info)
 Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/09850681-111b-4a89-9bed-3f2cae46d706.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:09e68a6e-b7ef-eb11-bacb-000d3a373d11:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / Dynamics 365 customer service new tab</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/09e68a6e-b7ef-eb11-bacb-000d3a373d11.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: Dynamics 365 customer service new tab
-App ID: 09e68a6e-b7ef-eb11-bacb-000d3a373d11
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/09e68a6e-b7ef-eb11-bacb-000d3a373d11.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:0a05d977-a21a-45b2-91ce-61c240dbafa2:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / Project for Project Operations</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/0a05d977-a21a-45b2-91ce-61c240dbafa2.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: Project for Project Operations
-App ID: 0a05d977-a21a-45b2-91ce-61c240dbafa2
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0a05d977-a21a-45b2-91ce-61c240dbafa2.json</content>
     <author><name>OAuthSentry</name></author>
   </entry>
 
