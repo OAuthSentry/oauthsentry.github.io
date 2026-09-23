@@ -28905,6 +28905,18 @@
     ],
     "slug": "4990cffe-04e8-4e8b-808a-1175604b879f"
   },
+  "fa3d9a0c-3fb0-42cc-9193-47c7ecd2edbd": {
+    "appid": "fa3d9a0c-3fb0-42cc-9193-47c7ecd2edbd",
+    "appname": "Microsoft Partner Center",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "fa3d9a0c-3fb0-42cc-9193-47c7ecd2edbd"
+  },
   "93625bc8-bfe2-437a-97e0-3d0060024faa": {
     "appid": "93625bc8-bfe2-437a-97e0-3d0060024faa",
     "appname": "Microsoft password reset service",

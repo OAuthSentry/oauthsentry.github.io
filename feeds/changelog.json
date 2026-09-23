@@ -1,8 +1,18 @@
 {
   "feed": "OAuthSentry catalog changelog",
-  "generated": "2026-09-22T09:16:56.718033+00:00",
+  "generated": "2026-09-23T09:17:25.496644+00:00",
   "count": 200,
   "entries": [
+    {
+      "kind": "added",
+      "ts": "2026-09-23T09:17:25.496644+00:00",
+      "appid": "fa3d9a0c-3fb0-42cc-9193-47c7ecd2edbd",
+      "service": "entra",
+      "appname": "Microsoft Partner Center",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
     {
       "kind": "added",
       "ts": "2026-09-22T09:16:56.718033+00:00",
@@ -1989,16 +1999,6 @@
       "appid": "0964bb5e-9bdb-4d7b-ac29-58e794862a40",
       "service": "entra",
       "appname": "Search Administrator",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "09850681-111b-4a89-9bed-3f2cae46d706",
-      "service": "entra",
-      "appname": "User.Invite.All - Application",
       "category": "compliance",
       "severity": "info",
       "summary": "Added to compliance (info)"

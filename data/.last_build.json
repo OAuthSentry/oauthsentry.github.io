@@ -16414,6 +16414,13 @@
     "severity": "info",
     "ref_count": 3
   },
+  "fa3d9a0c-3fb0-42cc-9193-47c7ecd2edbd": {
+    "appname": "Microsoft Partner Center",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "93625bc8-bfe2-437a-97e0-3d0060024faa": {
     "appname": "Microsoft password reset service",
     "service": "entra",
