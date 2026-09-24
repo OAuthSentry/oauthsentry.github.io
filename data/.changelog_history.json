@@ -1,6 +1,56 @@
 [
   {
     "kind": "added",
+    "ts": "2026-09-24T09:16:58.572282+00:00",
+    "appid": "3829f069-1c33-45dd-84ab-2465f4282677",
+    "service": "entra",
+    "appname": "Azure Signup Api",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-09-24T09:16:58.572282+00:00",
+    "appid": "3e36f539-fc2c-479c-90fb-3cfa21da3a4b",
+    "service": "entra",
+    "appname": "Power Platform Environment Discovery Service",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-09-24T09:16:58.572282+00:00",
+    "appid": "4200f961-ba28-4b7b-84f5-090d974ca00c",
+    "service": "entra",
+    "appname": "Azure Billing Benefits application Prod",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-09-24T09:16:58.572282+00:00",
+    "appid": "a80a6f8b-55ed-4040-941e-b47c0acb4d4e",
+    "service": "entra",
+    "appname": "Azure Billing Benefits application",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
+    "ts": "2026-09-24T09:16:58.572282+00:00",
+    "appid": "b54eec68-9e1d-444e-832d-46e3e43ed899",
+    "service": "entra",
+    "appname": "Universal DevCenter",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
     "ts": "2026-09-23T09:17:25.496644+00:00",
     "appid": "fa3d9a0c-3fb0-42cc-9193-47c7ecd2edbd",
     "service": "entra",
@@ -1945,56 +1995,6 @@
     "appid": "0922ef46-e1b9-4f7e-9134-9ad00547eb41",
     "service": "entra",
     "appname": "New Loop App",
-    "category": "compliance",
-    "severity": "info",
-    "summary": "Added to compliance (info)"
-  },
-  {
-    "kind": "added",
-    "ts": "2026-04-28T16:33:38.232651+00:00",
-    "appid": "093e8d14-a334-43d9-93e3-30589a8b47d0",
-    "service": "entra",
-    "appname": "Rights Management Service Basic Content Protection",
-    "category": "compliance",
-    "severity": "info",
-    "summary": "Added to compliance (info)"
-  },
-  {
-    "kind": "added",
-    "ts": "2026-04-28T16:33:38.232651+00:00",
-    "appid": "093f8818-d05f-49b8-95bc-9d2a73e9a43c",
-    "service": "entra",
-    "appname": "TeamsAppInstallation.ReadWriteForUser - Delegated",
-    "category": "compliance",
-    "severity": "info",
-    "summary": "Added to compliance (info)"
-  },
-  {
-    "kind": "added",
-    "ts": "2026-04-28T16:33:38.232651+00:00",
-    "appid": "094e7854-93fc-4d55-b2c0-3ab5369ebdc1",
-    "service": "entra",
-    "appname": "OFFICE 365 BUSINESS",
-    "category": "compliance",
-    "severity": "info",
-    "summary": "Added to compliance (info)"
-  },
-  {
-    "kind": "added",
-    "ts": "2026-04-28T16:33:38.232651+00:00",
-    "appid": "095a7e6c-efd8-46d5-af7b-5298d53a49fc",
-    "service": "entra",
-    "appname": "Purview/sit-defn-azure-redis-cache-connection-string",
-    "category": "compliance",
-    "severity": "info",
-    "summary": "Added to compliance (info)"
-  },
-  {
-    "kind": "added",
-    "ts": "2026-04-28T16:33:38.232651+00:00",
-    "appid": "0964bb5e-9bdb-4d7b-ac29-58e794862a40",
-    "service": "entra",
-    "appname": "Search Administrator",
     "category": "compliance",
     "severity": "info",
     "summary": "Added to compliance (info)"

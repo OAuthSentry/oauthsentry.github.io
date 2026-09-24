@@ -1,6 +1,6 @@
 {
-  "appid": "20e940b3-4c77-4b0b-9a53-9e16a1b010a7",
-  "appname": "MarketplaceAPI ISV",
+  "appid": "3e36f539-fc2c-479c-90fb-3cfa21da3a4b",
+  "appname": "Power Platform Environment Discovery Service",
   "service": "entra",
   "category": "compliance",
   "severity": "info",
@@ -8,5 +8,5 @@
   "references": [
     "https://github.com/merill/microsoft-info"
   ],
-  "slug": "20e940b3-4c77-4b0b-9a53-9e16a1b010a7"
+  "slug": "3e36f539-fc2c-479c-90fb-3cfa21da3a4b"
 }

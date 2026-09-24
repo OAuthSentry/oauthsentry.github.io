@@ -1,6 +1,6 @@
 {
-  "appid": "20e940b3-4c77-4b0b-9a53-9e16a1b010a7",
-  "appname": "MarketplaceAPI ISV",
+  "appid": "3829f069-1c33-45dd-84ab-2465f4282677",
+  "appname": "Azure Signup Api",
   "service": "entra",
   "category": "compliance",
   "severity": "info",
@@ -8,5 +8,5 @@
   "references": [
     "https://github.com/merill/microsoft-info"
   ],
-  "slug": "20e940b3-4c77-4b0b-9a53-9e16a1b010a7"
+  "slug": "3829f069-1c33-45dd-84ab-2465f4282677"
 }

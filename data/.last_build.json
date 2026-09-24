@@ -1931,6 +1931,20 @@
     "severity": "info",
     "ref_count": 3
   },
+  "a80a6f8b-55ed-4040-941e-b47c0acb4d4e": {
+    "appname": "Azure Billing Benefits application",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "4200f961-ba28-4b7b-84f5-090d974ca00c": {
+    "appname": "Azure Billing Benefits application Prod",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "911e905a-a50e-4c94-9f7c-48bb12f549ed": {
     "appname": "Azure Blockchain Service",
     "service": "entra",
@@ -2948,6 +2962,13 @@
   },
   "d37b07e8-dd1c-4514-835d-8b918e6f9727": {
     "appname": "Azure Service Fabric",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "3829f069-1c33-45dd-84ab-2465f4282677": {
+    "appname": "Azure Signup Api",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
@@ -13314,7 +13335,7 @@
     "ref_count": 1
   },
   "f738ef14-47dc-4564-b53b-45069484ccc7": {
-    "appname": "Marketplace Api [Community Contributed]",
+    "appname": "Marketplace Api",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
@@ -13335,14 +13356,14 @@
     "ref_count": 3
   },
   "5b712e99-51a3-41ce-86ff-046e0081c5c0": {
-    "appname": "Marketplace SaaS v2 [Community Contributed]",
+    "appname": "Marketplace SaaS v2",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
     "ref_count": 1
   },
   "20e940b3-4c77-4b0b-9a53-9e16a1b010a7": {
-    "appname": "MarketplaceAPI ISV [Community Contributed]",
+    "appname": "MarketplaceAPI ISV",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
@@ -21958,6 +21979,13 @@
     "severity": "info",
     "ref_count": 3
   },
+  "3e36f539-fc2c-479c-90fb-3cfa21da3a4b": {
+    "appname": "Power Platform Environment Discovery Service",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "93bd1aa4-c66b-4587-838c-ffc3174b5f13": {
     "appname": "Power Platform Global Discovery Service",
     "service": "entra",
@@ -29156,6 +29184,13 @@
   },
   "73e75199-7c3e-41bb-9357-167164dbb415": {
     "appname": "UnifiedGroupMember.Read.AsGuest - Delegated",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "b54eec68-9e1d-444e-832d-46e3e43ed899": {
+    "appname": "Universal DevCenter",
     "service": "entra",
     "category": "compliance",
     "severity": "info",

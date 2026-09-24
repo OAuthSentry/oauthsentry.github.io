@@ -1,6 +1,6 @@
 {
-  "appid": "20e940b3-4c77-4b0b-9a53-9e16a1b010a7",
-  "appname": "MarketplaceAPI ISV",
+  "appid": "b54eec68-9e1d-444e-832d-46e3e43ed899",
+  "appname": "Universal DevCenter",
   "service": "entra",
   "category": "compliance",
   "severity": "info",
@@ -8,5 +8,5 @@
   "references": [
     "https://github.com/merill/microsoft-info"
   ],
-  "slug": "20e940b3-4c77-4b0b-9a53-9e16a1b010a7"
+  "slug": "b54eec68-9e1d-444e-832d-46e3e43ed899"
 }

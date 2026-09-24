@@ -1,14 +1,14 @@
 {
   "schema_version": "1",
-  "generated": "2026-09-23T09:17:25.461609+00:00",
-  "total_apps": 4572,
+  "generated": "2026-09-24T09:16:58.540904+00:00",
+  "total_apps": 4577,
   "by_service": {
-    "entra": 4566,
+    "entra": 4571,
     "github": 4,
     "google": 2
   },
   "by_category": {
-    "compliance": 4478,
+    "compliance": 4483,
     "risky": 30,
     "malicious": 64
   },

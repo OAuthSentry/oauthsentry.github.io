@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-23T09:17:24.749303+00:00",
-  "count": 4572,
+  "generated": "2026-09-24T09:16:57.996232+00:00",
+  "count": 4577,
   "items": [
     {
       "appname": "",
@@ -2763,6 +2763,26 @@
       "_provenance": "entra_curated_mthcht"
     },
     {
+      "appname": "Azure Billing Benefits application",
+      "appid": "a80a6f8b-55ed-4040-941e-b47c0acb4d4e",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
+      "appname": "Azure Billing Benefits application Prod",
+      "appid": "4200f961-ba28-4b7b-84f5-090d974ca00c",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
       "appname": "Azure Blockchain Service",
       "appid": "911e905a-a50e-4c94-9f7c-48bb12f549ed",
       "metadata_category": "compliance",
@@ -4218,6 +4238,16 @@
       "metadata_category": "compliance",
       "metadata_severity": "info",
       "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
+      "appname": "Azure Signup Api",
+      "appid": "3829f069-1c33-45dd-84ab-2465f4282677",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
       "metadata_reference": "https://github.com/merill/microsoft-info",
       "service": "entra",
       "_provenance": "entra_compliance_fill_merill"
@@ -19023,11 +19053,11 @@
       "_provenance": "entra_compliance_fill_merill"
     },
     {
-      "appname": "Marketplace Api [Community Contributed]",
+      "appname": "Marketplace Api",
       "appid": "f738ef14-47dc-4564-b53b-45069484ccc7",
       "metadata_category": "compliance",
       "metadata_severity": "info",
-      "metadata_comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=GitHub)",
+      "metadata_comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
       "metadata_reference": "https://github.com/merill/microsoft-info",
       "service": "entra",
       "_provenance": "entra_compliance_fill_merill"
@@ -19053,21 +19083,21 @@
       "_provenance": "entra_curated_mthcht"
     },
     {
-      "appname": "Marketplace SaaS v2 [Community Contributed]",
+      "appname": "Marketplace SaaS v2",
       "appid": "5b712e99-51a3-41ce-86ff-046e0081c5c0",
       "metadata_category": "compliance",
       "metadata_severity": "info",
-      "metadata_comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=GitHub)",
+      "metadata_comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
       "metadata_reference": "https://github.com/merill/microsoft-info",
       "service": "entra",
       "_provenance": "entra_compliance_fill_merill"
     },
     {
-      "appname": "MarketplaceAPI ISV [Community Contributed]",
+      "appname": "MarketplaceAPI ISV",
       "appid": "20e940b3-4c77-4b0b-9a53-9e16a1b010a7",
       "metadata_category": "compliance",
       "metadata_severity": "info",
-      "metadata_comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=GitHub)",
+      "metadata_comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
       "metadata_reference": "https://github.com/merill/microsoft-info",
       "service": "entra",
       "_provenance": "entra_compliance_fill_merill"
@@ -31373,6 +31403,16 @@
       "_provenance": "entra_curated_mthcht"
     },
     {
+      "appname": "Power Platform Environment Discovery Service",
+      "appid": "3e36f539-fc2c-479c-90fb-3cfa21da3a4b",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
       "appname": "Power Platform Global Discovery Service",
       "appid": "93bd1aa4-c66b-4587-838c-ffc3174b5f13",
       "metadata_category": "compliance",
@@ -41658,6 +41698,16 @@
       "metadata_category": "compliance",
       "metadata_severity": "info",
       "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
+      "appname": "Universal DevCenter",
+      "appid": "b54eec68-9e1d-444e-832d-46e3e43ed899",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
       "metadata_reference": "https://github.com/merill/microsoft-info",
       "service": "entra",
       "_provenance": "entra_compliance_fill_merill"

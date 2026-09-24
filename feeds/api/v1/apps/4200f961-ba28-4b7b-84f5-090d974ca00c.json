@@ -1,6 +1,6 @@
 {
-  "appid": "20e940b3-4c77-4b0b-9a53-9e16a1b010a7",
-  "appname": "MarketplaceAPI ISV",
+  "appid": "4200f961-ba28-4b7b-84f5-090d974ca00c",
+  "appname": "Azure Billing Benefits application Prod",
   "service": "entra",
   "category": "compliance",
   "severity": "info",
@@ -8,5 +8,5 @@
   "references": [
     "https://github.com/merill/microsoft-info"
   ],
-  "slug": "20e940b3-4c77-4b0b-9a53-9e16a1b010a7"
+  "slug": "4200f961-ba28-4b7b-84f5-090d974ca00c"
 }

@@ -3,11 +3,111 @@
   <id>tag:oauthsentry.github.io,2026:changelog</id>
   <title>OAuthSentry catalog changelog</title>
   <subtitle>Adds, removes, category and severity changes across the OAuth app catalog</subtitle>
-  <updated>2026-09-23T09:17:25.496644+00:00</updated>
+  <updated>2026-09-24T09:16:58.572282+00:00</updated>
   <link rel="self"      href="https://oauthsentry.github.io/feeds/changelog.atom"/>
   <link rel="alternate" href="https://oauthsentry.github.io/" type="text/html"/>
   <author><name>OAuthSentry</name></author>
   <generator uri="https://oauthsentry.github.io">OAuthSentry build_feeds</generator>
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:3829f069-1c33-45dd-84ab-2465f4282677:2026-09-24T09:16:58.572282+00:00</id>
+    <title>[added] entra / Azure Signup Api</title>
+    <updated>2026-09-24T09:16:58.572282+00:00</updated>
+    <published>2026-09-24T09:16:58.572282+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/3829f069-1c33-45dd-84ab-2465f4282677.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: Azure Signup Api
+App ID: 3829f069-1c33-45dd-84ab-2465f4282677
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/3829f069-1c33-45dd-84ab-2465f4282677.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:3e36f539-fc2c-479c-90fb-3cfa21da3a4b:2026-09-24T09:16:58.572282+00:00</id>
+    <title>[added] entra / Power Platform Environment Discovery Service</title>
+    <updated>2026-09-24T09:16:58.572282+00:00</updated>
+    <published>2026-09-24T09:16:58.572282+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/3e36f539-fc2c-479c-90fb-3cfa21da3a4b.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: Power Platform Environment Discovery Service
+App ID: 3e36f539-fc2c-479c-90fb-3cfa21da3a4b
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/3e36f539-fc2c-479c-90fb-3cfa21da3a4b.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:4200f961-ba28-4b7b-84f5-090d974ca00c:2026-09-24T09:16:58.572282+00:00</id>
+    <title>[added] entra / Azure Billing Benefits application Prod</title>
+    <updated>2026-09-24T09:16:58.572282+00:00</updated>
+    <published>2026-09-24T09:16:58.572282+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/4200f961-ba28-4b7b-84f5-090d974ca00c.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: Azure Billing Benefits application Prod
+App ID: 4200f961-ba28-4b7b-84f5-090d974ca00c
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/4200f961-ba28-4b7b-84f5-090d974ca00c.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:a80a6f8b-55ed-4040-941e-b47c0acb4d4e:2026-09-24T09:16:58.572282+00:00</id>
+    <title>[added] entra / Azure Billing Benefits application</title>
+    <updated>2026-09-24T09:16:58.572282+00:00</updated>
+    <published>2026-09-24T09:16:58.572282+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/a80a6f8b-55ed-4040-941e-b47c0acb4d4e.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: Azure Billing Benefits application
+App ID: a80a6f8b-55ed-4040-941e-b47c0acb4d4e
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/a80a6f8b-55ed-4040-941e-b47c0acb4d4e.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:b54eec68-9e1d-444e-832d-46e3e43ed899:2026-09-24T09:16:58.572282+00:00</id>
+    <title>[added] entra / Universal DevCenter</title>
+    <updated>2026-09-24T09:16:58.572282+00:00</updated>
+    <published>2026-09-24T09:16:58.572282+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/b54eec68-9e1d-444e-832d-46e3e43ed899.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: Universal DevCenter
+App ID: b54eec68-9e1d-444e-832d-46e3e43ed899
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/b54eec68-9e1d-444e-832d-46e3e43ed899.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
   <entry>
     <id>tag:oauthsentry.github.io,2026:added:fa3d9a0c-3fb0-42cc-9193-47c7ecd2edbd:2026-09-23T09:17:25.496644+00:00</id>
     <title>[added] entra / Microsoft Partner Center</title>
@@ -3905,106 +4005,6 @@ Category: compliance
 Severity: info
 Change: Added to compliance (info)
 Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0922ef46-e1b9-4f7e-9134-9ad00547eb41.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:093e8d14-a334-43d9-93e3-30589a8b47d0:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / Rights Management Service Basic Content Protection</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/093e8d14-a334-43d9-93e3-30589a8b47d0.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: Rights Management Service Basic Content Protection
-App ID: 093e8d14-a334-43d9-93e3-30589a8b47d0
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/093e8d14-a334-43d9-93e3-30589a8b47d0.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:093f8818-d05f-49b8-95bc-9d2a73e9a43c:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / TeamsAppInstallation.ReadWriteForUser - Delegated</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/093f8818-d05f-49b8-95bc-9d2a73e9a43c.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: TeamsAppInstallation.ReadWriteForUser - Delegated
-App ID: 093f8818-d05f-49b8-95bc-9d2a73e9a43c
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/093f8818-d05f-49b8-95bc-9d2a73e9a43c.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:094e7854-93fc-4d55-b2c0-3ab5369ebdc1:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / OFFICE 365 BUSINESS</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/094e7854-93fc-4d55-b2c0-3ab5369ebdc1.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: OFFICE 365 BUSINESS
-App ID: 094e7854-93fc-4d55-b2c0-3ab5369ebdc1
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/094e7854-93fc-4d55-b2c0-3ab5369ebdc1.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:095a7e6c-efd8-46d5-af7b-5298d53a49fc:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / Purview/sit-defn-azure-redis-cache-connection-string</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/095a7e6c-efd8-46d5-af7b-5298d53a49fc.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: Purview/sit-defn-azure-redis-cache-connection-string
-App ID: 095a7e6c-efd8-46d5-af7b-5298d53a49fc
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/095a7e6c-efd8-46d5-af7b-5298d53a49fc.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:0964bb5e-9bdb-4d7b-ac29-58e794862a40:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / Search Administrator</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/0964bb5e-9bdb-4d7b-ac29-58e794862a40.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: Search Administrator
-App ID: 0964bb5e-9bdb-4d7b-ac29-58e794862a40
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0964bb5e-9bdb-4d7b-ac29-58e794862a40.json</content>
     <author><name>OAuthSentry</name></author>
   </entry>
 
