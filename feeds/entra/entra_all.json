@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-26T09:19:46.719891+00:00",
-  "count": 4571,
+  "generated": "2026-09-27T09:59:19.667065+00:00",
+  "count": 4572,
   "items": [
     {
       "appname": "",
@@ -14825,6 +14825,16 @@
     {
       "appname": "Fabric Client for Workloads",
       "appid": "d2450708-699c-41e3-8077-b0c8341509aa",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
+      "appname": "Fabric Platform CMK",
+      "appid": "61d6811f-7544-4e75-a1e6-1c59c0383311",
       "metadata_category": "compliance",
       "metadata_severity": "info",
       "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",

@@ -18221,6 +18221,18 @@
     ],
     "slug": "d2450708-699c-41e3-8077-b0c8341509aa"
   },
+  "61d6811f-7544-4e75-a1e6-1c59c0383311": {
+    "appid": "61d6811f-7544-4e75-a1e6-1c59c0383311",
+    "appname": "Fabric Platform CMK",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "61d6811f-7544-4e75-a1e6-1c59c0383311"
+  },
   "518e5f48-1fc8-4c48-9387-9fdf28b0dfe7": {
     "appid": "518e5f48-1fc8-4c48-9387-9fdf28b0dfe7",
     "appname": "Fabrikam Template ID",

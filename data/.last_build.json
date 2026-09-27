@@ -10380,6 +10380,13 @@
     "severity": "info",
     "ref_count": 1
   },
+  "61d6811f-7544-4e75-a1e6-1c59c0383311": {
+    "appname": "Fabric Platform CMK",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "518e5f48-1fc8-4c48-9387-9fdf28b0dfe7": {
     "appname": "Fabrikam Template ID",
     "service": "entra",
