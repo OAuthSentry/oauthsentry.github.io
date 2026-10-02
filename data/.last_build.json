@@ -447,6 +447,13 @@
     "severity": "info",
     "ref_count": 3
   },
+  "56177bc2-12ea-4456-9de3-510ae6f0fcc3": {
+    "appname": "AfcControlPlane",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "92b61450-2139-4e4a-a0cc-898eced7a779": {
     "appname": "Afdx Resource Provider [Community Contributed]",
     "service": "entra",
