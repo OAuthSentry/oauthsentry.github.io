@@ -48195,6 +48195,18 @@
     ],
     "slug": "61109738-7d2b-4a0b-9fe3-660b1ff83505"
   },
+  "9324e81a-10cf-4694-a355-4dae0905638c": {
+    "appid": "9324e81a-10cf-4694-a355-4dae0905638c",
+    "appname": "SQL ADX Proxy",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "9324e81a-10cf-4694-a355-4dae0905638c"
+  },
   "0fc12b9a-5463-4b87-8f10-765fecb39990": {
     "appid": "0fc12b9a-5463-4b87-8f10-765fecb39990",
     "appname": "SQL Copilot PPE",

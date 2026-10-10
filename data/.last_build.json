@@ -27369,6 +27369,13 @@
     "severity": "info",
     "ref_count": 3
   },
+  "9324e81a-10cf-4694-a355-4dae0905638c": {
+    "appname": "SQL ADX Proxy",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "0fc12b9a-5463-4b87-8f10-765fecb39990": {
     "appname": "SQL Copilot PPE",
     "service": "entra",

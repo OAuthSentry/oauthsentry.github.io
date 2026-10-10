@@ -1,8 +1,18 @@
 {
   "feed": "OAuthSentry catalog changelog",
-  "generated": "2026-10-02T10:28:59.803560+00:00",
+  "generated": "2026-10-10T10:35:01.688173+00:00",
   "count": 200,
   "entries": [
+    {
+      "kind": "added",
+      "ts": "2026-10-10T10:35:01.688173+00:00",
+      "appid": "9324e81a-10cf-4694-a355-4dae0905638c",
+      "service": "entra",
+      "appname": "SQL ADX Proxy",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
     {
       "kind": "added",
       "ts": "2026-10-02T10:28:59.803560+00:00",
@@ -1989,16 +1999,6 @@
       "appid": "091c98b0-a1c9-4b02-b62c-7753395ccabe",
       "service": "entra",
       "appname": "Electronic invoicing microservices",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "092211d9-ca1a-427b-813e-b79c7653fe71",
-      "service": "entra",
-      "appname": "Goals-Export.Read.All - Delegated",
       "category": "compliance",
       "severity": "info",
       "summary": "Added to compliance (info)"
