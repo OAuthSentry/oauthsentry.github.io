@@ -541,7 +541,7 @@
     "privileged": true
   },
   "cf1c38e5-3621-4004-a7cb-879624dced7c": {
-    "description": "Can create application registrations independent of the 'Users can register applications' setting.<br/>[!](privileged-roles-permissions.md)",
+    "description": "Can create application registrations independent of the 'Users can register applications' setting and update applications they own.<br/>[!](privileged-roles-permissions.md)",
     "name": "Application Developer",
     "privileged": true
   },
