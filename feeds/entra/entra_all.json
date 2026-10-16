@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-15T09:07:16.085540+00:00",
-  "count": 4574,
+  "generated": "2026-10-16T08:59:41.116238+00:00",
+  "count": 4575,
   "items": [
     {
       "appname": "",
@@ -4455,6 +4455,16 @@
     {
       "appname": "Azure SRE Agent",
       "appid": "59f0a04a-b322-4310-adc9-39ac41e9631e",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
+      "appname": "Azure SRE Agent Id Application",
+      "appid": "a1c42e17-82a8-41a5-906d-3eaca8b54607",
       "metadata_category": "compliance",
       "metadata_severity": "info",
       "metadata_comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",

@@ -3121,6 +3121,13 @@
     "severity": "info",
     "ref_count": 1
   },
+  "a1c42e17-82a8-41a5-906d-3eaca8b54607": {
+    "appname": "Azure SRE Agent Id Application",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "bda0d508-adf1-4af0-9c28-88919fc3ae06": {
     "appname": "Azure Stack HCI Administrator",
     "service": "entra",
