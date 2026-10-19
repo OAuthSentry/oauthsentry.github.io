@@ -3,11 +3,31 @@
   <id>tag:oauthsentry.github.io,2026:changelog</id>
   <title>OAuthSentry catalog changelog</title>
   <subtitle>Adds, removes, category and severity changes across the OAuth app catalog</subtitle>
-  <updated>2026-10-16T08:59:41.948216+00:00</updated>
+  <updated>2026-10-19T09:51:20.591408+00:00</updated>
   <link rel="self"      href="https://oauthsentry.github.io/feeds/changelog.atom"/>
   <link rel="alternate" href="https://oauthsentry.github.io/" type="text/html"/>
   <author><name>OAuthSentry</name></author>
   <generator uri="https://oauthsentry.github.io">OAuthSentry build_feeds</generator>
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:427ebe87-64e9-467b-9c5d-fc88b087e227:2026-10-19T09:51:20.591408+00:00</id>
+    <title>[added] entra / Benefit Experiences</title>
+    <updated>2026-10-19T09:51:20.591408+00:00</updated>
+    <published>2026-10-19T09:51:20.591408+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/427ebe87-64e9-467b-9c5d-fc88b087e227.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: Benefit Experiences
+App ID: 427ebe87-64e9-467b-9c5d-fc88b087e227
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/427ebe87-64e9-467b-9c5d-fc88b087e227.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
   <entry>
     <id>tag:oauthsentry.github.io,2026:added:a1c42e17-82a8-41a5-906d-3eaca8b54607:2026-10-16T08:59:41.948216+00:00</id>
     <title>[added] entra / Azure SRE Agent Id Application</title>
@@ -3985,26 +4005,6 @@ Category: compliance
 Severity: info
 Change: Added to compliance (info)
 Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/090c5cfd-751d-490a-894a-3ce6f1109419.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:091460c9-9c4a-49b2-81ef-1f3d852acce2:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / EduAssignments.Read - Delegated</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/091460c9-9c4a-49b2-81ef-1f3d852acce2.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: EduAssignments.Read - Delegated
-App ID: 091460c9-9c4a-49b2-81ef-1f3d852acce2
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/091460c9-9c4a-49b2-81ef-1f3d852acce2.json</content>
     <author><name>OAuthSentry</name></author>
   </entry>
 

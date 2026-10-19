@@ -1,8 +1,18 @@
 {
   "feed": "OAuthSentry catalog changelog",
-  "generated": "2026-10-16T08:59:41.948216+00:00",
+  "generated": "2026-10-19T09:51:20.591408+00:00",
   "count": 200,
   "entries": [
+    {
+      "kind": "added",
+      "ts": "2026-10-19T09:51:20.591408+00:00",
+      "appid": "427ebe87-64e9-467b-9c5d-fc88b087e227",
+      "service": "entra",
+      "appname": "Benefit Experiences",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
     {
       "kind": "added",
       "ts": "2026-10-16T08:59:41.948216+00:00",
@@ -1989,16 +1999,6 @@
       "appid": "090c5cfd-751d-490a-894a-3ce6f1109419",
       "service": "entra",
       "appname": "Azure Service Bus Data Owner",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "091460c9-9c4a-49b2-81ef-1f3d852acce2",
-      "service": "entra",
-      "appname": "EduAssignments.Read - Delegated",
       "category": "compliance",
       "severity": "info",
       "summary": "Added to compliance (info)"
