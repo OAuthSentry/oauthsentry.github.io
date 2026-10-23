@@ -1,0 +1,12 @@
+{
+  "appid": "af574c75-b014-4e96-b98b-8b51aeb20dad",
+  "appname": "UebaFPAProd",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "af574c75-b014-4e96-b98b-8b51aeb20dad"
+}

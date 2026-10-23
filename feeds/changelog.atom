@@ -3,11 +3,31 @@
   <id>tag:oauthsentry.github.io,2026:changelog</id>
   <title>OAuthSentry catalog changelog</title>
   <subtitle>Adds, removes, category and severity changes across the OAuth app catalog</subtitle>
-  <updated>2026-10-19T09:51:20.591408+00:00</updated>
+  <updated>2026-10-23T09:19:02.868796+00:00</updated>
   <link rel="self"      href="https://oauthsentry.github.io/feeds/changelog.atom"/>
   <link rel="alternate" href="https://oauthsentry.github.io/" type="text/html"/>
   <author><name>OAuthSentry</name></author>
   <generator uri="https://oauthsentry.github.io">OAuthSentry build_feeds</generator>
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:af574c75-b014-4e96-b98b-8b51aeb20dad:2026-10-23T09:19:02.868796+00:00</id>
+    <title>[added] entra / UebaFPAProd</title>
+    <updated>2026-10-23T09:19:02.868796+00:00</updated>
+    <published>2026-10-23T09:19:02.868796+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/af574c75-b014-4e96-b98b-8b51aeb20dad.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: UebaFPAProd
+App ID: af574c75-b014-4e96-b98b-8b51aeb20dad
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/af574c75-b014-4e96-b98b-8b51aeb20dad.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
   <entry>
     <id>tag:oauthsentry.github.io,2026:added:427ebe87-64e9-467b-9c5d-fc88b087e227:2026-10-19T09:51:20.591408+00:00</id>
     <title>[added] entra / Benefit Experiences</title>
@@ -3985,26 +4005,6 @@ Category: compliance
 Severity: info
 Change: Added to compliance (info)
 Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/090b4a96-8114-4c95-9c91-60e81ef53302.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:090c5cfd-751d-490a-894a-3ce6f1109419:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / Azure Service Bus Data Owner</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/090c5cfd-751d-490a-894a-3ce6f1109419.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: Azure Service Bus Data Owner
-App ID: 090c5cfd-751d-490a-894a-3ce6f1109419
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/090c5cfd-751d-490a-894a-3ce6f1109419.json</content>
     <author><name>OAuthSentry</name></author>
   </entry>
 

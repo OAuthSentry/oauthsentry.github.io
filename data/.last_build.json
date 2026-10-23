@@ -29217,6 +29217,13 @@
     "severity": "info",
     "ref_count": 3
   },
+  "af574c75-b014-4e96-b98b-8b51aeb20dad": {
+    "appname": "UebaFPAProd",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "73e75199-7c3e-41bb-9357-167164dbb415": {
     "appname": "UnifiedGroupMember.Read.AsGuest - Delegated",
     "service": "entra",
