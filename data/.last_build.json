@@ -3338,6 +3338,13 @@
     "severity": "info",
     "ref_count": 3
   },
+  "a0765532-5bd5-4891-8a81-49ddbd0242e2": {
+    "appname": "AzureFirewallDLPPurview",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "a0551534-cfc9-4e1f-9a7a-65093b32bb38": {
     "appname": "AzureLockbox",
     "service": "entra",

@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-24T08:51:01.743418+00:00",
-  "count": 4577,
+  "generated": "2026-10-25T09:07:35.250423+00:00",
+  "count": 4578,
   "items": [
     {
       "appname": "",
@@ -4771,6 +4771,16 @@
       "metadata_reference": "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in - https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv | https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv",
       "service": "entra",
       "_provenance": "entra_curated_mthcht"
+    },
+    {
+      "appname": "AzureFirewallDLPPurview",
+      "appid": "a0765532-5bd5-4891-8a81-49ddbd0242e2",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
     },
     {
       "appname": "AzureLockbox",
