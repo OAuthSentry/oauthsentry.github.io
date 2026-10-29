@@ -1,0 +1,12 @@
+{
+  "appid": "6388acc4-795e-43a9-a320-33075c1eb83b",
+  "appname": "Azure Orbital Microsoft Planetary Computer Pro",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "6388acc4-795e-43a9-a320-33075c1eb83b"
+}

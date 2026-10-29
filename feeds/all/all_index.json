@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-28T10:32:40.464145+00:00",
-  "count": 4584,
+  "generated": "2026-10-29T10:52:05.800097+00:00",
+  "count": 4592,
   "items": [
     {
       "appname": "",
@@ -2253,6 +2253,16 @@
       "_provenance": "entra_compliance_fill_merill"
     },
     {
+      "appname": "Avs Fleet Rp",
+      "appid": "1a5e141d-70dd-4594-8442-9fc46fa48686",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
       "appname": "AzNet Security Guard",
       "appid": "38808189-fa7a-4d8a-807f-eba01edacca6",
       "metadata_category": "compliance",
@@ -2753,6 +2763,16 @@
       "_provenance": "entra_compliance_fill_merill"
     },
     {
+      "appname": "Azure Automanage Account",
+      "appid": "d828acde-4b48-47f5-a6e8-52460104a052",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
       "appname": "Azure Backup NRP Application",
       "appid": "9bdab391-7bbe-42e8-8132-e4491dc29cc0",
       "metadata_category": "compliance",
@@ -3241,6 +3261,16 @@
       "metadata_reference": "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in - https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv | https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv",
       "service": "entra",
       "_provenance": "entra_curated_mthcht"
+    },
+    {
+      "appname": "Azure Durable task scheduler App ID",
+      "appid": "887c6b43-ba92-4adb-a82b-73670fc48dac",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
     },
     {
       "appname": "Azure Edge Zones storage",
@@ -4011,6 +4041,16 @@
       "metadata_reference": "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in - https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv | https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv",
       "service": "entra",
       "_provenance": "entra_curated_mthcht"
+    },
+    {
+      "appname": "Azure Orbital Microsoft Planetary Computer Pro",
+      "appid": "6388acc4-795e-43a9-a320-33075c1eb83b",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
     },
     {
       "appname": "Azure Portal RP",
@@ -9433,6 +9473,16 @@
       "_provenance": "entra_compliance_fill_merill"
     },
     {
+      "appname": "Davis Instruments WeatherLink FarmBeats Connector",
+      "appid": "30b00405-3b4e-4003-933c-0d96ce47d670",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
       "appname": "Dayforce People Connector",
       "appid": "6817703f-e5b3-4eec-b11f-ba6367f1b156",
       "metadata_category": "compliance",
@@ -10675,6 +10725,16 @@
     {
       "appname": "Disable user account",
       "appid": "1dfdfcc7-52fa-4c2e-bf3a-e3919cc12950",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
+      "appname": "Discovery control-plane service App",
+      "appid": "92c174ac-8e41-4815-a1b7-d81b19ab03ce",
       "metadata_category": "compliance",
       "metadata_severity": "info",
       "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
@@ -25373,6 +25433,16 @@
       "_provenance": "entra_curated_mthcht"
     },
     {
+      "appname": "Microsoft.Azure.CertificateRegistration",
+      "appid": "f3c21649-0979-4721-ac85-b0216b2cf413",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
       "appname": "Microsoft.Azure.DataMarket",
       "appid": "00000008-0000-0000-c000-000000000000",
       "metadata_category": "compliance",
@@ -28915,6 +28985,16 @@
     {
       "appname": "PAD for Windows",
       "appid": "2d589a15-b171-4e61-9b5f-31d15eeb2872",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
+      "appname": "Partner Admin Reader",
+      "appid": "4f6144c0-a809-4c55-b3c8-7f9b7b15a1bf",
       "metadata_category": "compliance",
       "metadata_severity": "info",
       "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",

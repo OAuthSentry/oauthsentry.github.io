@@ -1,0 +1,12 @@
+{
+  "appid": "1a5e141d-70dd-4594-8442-9fc46fa48686",
+  "appname": "Avs Fleet Rp",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "1a5e141d-70dd-4594-8442-9fc46fa48686"
+}

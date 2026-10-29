@@ -1,0 +1,12 @@
+{
+  "appid": "f3c21649-0979-4721-ac85-b0216b2cf413",
+  "appname": "Microsoft.Azure.CertificateRegistration",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "f3c21649-0979-4721-ac85-b0216b2cf413"
+}

@@ -1,0 +1,12 @@
+{
+  "appid": "30b00405-3b4e-4003-933c-0d96ce47d670",
+  "appname": "Davis Instruments WeatherLink FarmBeats Connector",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "30b00405-3b4e-4003-933c-0d96ce47d670"
+}

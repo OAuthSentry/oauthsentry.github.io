@@ -1574,6 +1574,13 @@
     "severity": "info",
     "ref_count": 1
   },
+  "1a5e141d-70dd-4594-8442-9fc46fa48686": {
+    "appname": "Avs Fleet Rp",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "38808189-fa7a-4d8a-807f-eba01edacca6": {
     "appname": "AzNet Security Guard",
     "service": "entra",
@@ -1924,6 +1931,13 @@
     "severity": "info",
     "ref_count": 1
   },
+  "d828acde-4b48-47f5-a6e8-52460104a052": {
+    "appname": "Azure Automanage Account",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "9bdab391-7bbe-42e8-8132-e4491dc29cc0": {
     "appname": "Azure Backup NRP Application",
     "service": "entra",
@@ -2266,6 +2280,13 @@
     "category": "compliance",
     "severity": "info",
     "ref_count": 3
+  },
+  "887c6b43-ba92-4adb-a82b-73670fc48dac": {
+    "appname": "Azure Durable task scheduler App ID",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
   },
   "1609d3a1-0db2-4818-b854-fe1614f0718a": {
     "appname": "Azure Edge Zones storage",
@@ -2805,6 +2826,13 @@
     "category": "compliance",
     "severity": "info",
     "ref_count": 3
+  },
+  "6388acc4-795e-43a9-a320-33075c1eb83b": {
+    "appname": "Azure Orbital Microsoft Planetary Computer Pro",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
   },
   "5b3b270a-b9ad-46e7-9bbb-a866897c4dc7": {
     "appname": "Azure Portal RP",
@@ -6600,6 +6628,13 @@
     "severity": "info",
     "ref_count": 1
   },
+  "30b00405-3b4e-4003-933c-0d96ce47d670": {
+    "appname": "Davis Instruments WeatherLink FarmBeats Connector",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "6817703f-e5b3-4eec-b11f-ba6367f1b156": {
     "appname": "Dayforce People Connector",
     "service": "entra",
@@ -7470,6 +7505,13 @@
   },
   "1dfdfcc7-52fa-4c2e-bf3a-e3919cc12950": {
     "appname": "Disable user account",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "92c174ac-8e41-4815-a1b7-d81b19ab03ce": {
+    "appname": "Discovery control-plane service App",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
@@ -17758,6 +17800,13 @@
     "severity": "info",
     "ref_count": 3
   },
+  "f3c21649-0979-4721-ac85-b0216b2cf413": {
+    "appname": "Microsoft.Azure.CertificateRegistration",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "00000008-0000-0000-c000-000000000000": {
     "appname": "Microsoft.Azure.DataMarket",
     "service": "entra",
@@ -20238,6 +20287,13 @@
   },
   "2d589a15-b171-4e61-9b5f-31d15eeb2872": {
     "appname": "PAD for Windows",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "4f6144c0-a809-4c55-b3c8-7f9b7b15a1bf": {
+    "appname": "Partner Admin Reader",
     "service": "entra",
     "category": "compliance",
     "severity": "info",

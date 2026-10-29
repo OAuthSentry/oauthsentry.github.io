@@ -1,0 +1,12 @@
+{
+  "appid": "92c174ac-8e41-4815-a1b7-d81b19ab03ce",
+  "appname": "Discovery control-plane service App",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "92c174ac-8e41-4815-a1b7-d81b19ab03ce"
+}
