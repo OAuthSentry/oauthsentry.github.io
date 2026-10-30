@@ -3,11 +3,31 @@
   <id>tag:oauthsentry.github.io,2026:changelog</id>
   <title>OAuthSentry catalog changelog</title>
   <subtitle>Adds, removes, category and severity changes across the OAuth app catalog</subtitle>
-  <updated>2026-10-29T10:52:06.555633+00:00</updated>
+  <updated>2026-10-30T10:50:36.794383+00:00</updated>
   <link rel="self"      href="https://oauthsentry.github.io/feeds/changelog.atom"/>
   <link rel="alternate" href="https://oauthsentry.github.io/" type="text/html"/>
   <author><name>OAuthSentry</name></author>
   <generator uri="https://oauthsentry.github.io">OAuthSentry build_feeds</generator>
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:361b0294-195a-49f2-9218-65defd6a988f:2026-10-30T10:50:36.794383+00:00</id>
+    <title>[added] entra / IntuneAuthZService</title>
+    <updated>2026-10-30T10:50:36.794383+00:00</updated>
+    <published>2026-10-30T10:50:36.794383+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/361b0294-195a-49f2-9218-65defd6a988f.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: IntuneAuthZService
+App ID: 361b0294-195a-49f2-9218-65defd6a988f
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/361b0294-195a-49f2-9218-65defd6a988f.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
   <entry>
     <id>tag:oauthsentry.github.io,2026:added:1a5e141d-70dd-4594-8442-9fc46fa48686:2026-10-29T10:52:06.555633+00:00</id>
     <title>[added] entra / Avs Fleet Rp</title>
@@ -3985,26 +4005,6 @@ Category: compliance
 Severity: info
 Change: Added to compliance (info)
 Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/08987058-cadc-4b81-b6e1-30de50dcbe96.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:0898bdbb-73b0-471a-81e5-20f1fe4dd66e:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / Microsoft Kaizala Pro_4</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/0898bdbb-73b0-471a-81e5-20f1fe4dd66e.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: Microsoft Kaizala Pro_4
-App ID: 0898bdbb-73b0-471a-81e5-20f1fe4dd66e
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0898bdbb-73b0-471a-81e5-20f1fe4dd66e.json</content>
     <author><name>OAuthSentry</name></author>
   </entry>
 

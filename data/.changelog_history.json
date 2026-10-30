@@ -1,6 +1,16 @@
 [
   {
     "kind": "added",
+    "ts": "2026-10-30T10:50:36.794383+00:00",
+    "appid": "361b0294-195a-49f2-9218-65defd6a988f",
+    "service": "entra",
+    "appname": "IntuneAuthZService",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
     "ts": "2026-10-29T10:52:06.555633+00:00",
     "appid": "1a5e141d-70dd-4594-8442-9fc46fa48686",
     "service": "entra",
@@ -1985,16 +1995,6 @@
     "appid": "08987058-cadc-4b81-b6e1-30de50dcbe96",
     "service": "entra",
     "appname": "Windows Hello for Business GUID 1",
-    "category": "compliance",
-    "severity": "info",
-    "summary": "Added to compliance (info)"
-  },
-  {
-    "kind": "added",
-    "ts": "2026-04-28T16:33:38.232651+00:00",
-    "appid": "0898bdbb-73b0-471a-81e5-20f1fe4dd66e",
-    "service": "entra",
-    "appname": "Microsoft Kaizala Pro_4",
     "category": "compliance",
     "severity": "info",
     "summary": "Added to compliance (info)"

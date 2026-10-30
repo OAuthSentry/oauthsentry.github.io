@@ -12277,6 +12277,13 @@
     "severity": "info",
     "ref_count": 1
   },
+  "361b0294-195a-49f2-9218-65defd6a988f": {
+    "appname": "IntuneAuthZService",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "4fc6c259-987e-4a07-842e-c321cc9d413f": {
     "appname": "IoT Hub Data Contributor",
     "service": "entra",
