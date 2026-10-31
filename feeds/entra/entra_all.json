@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-30T10:50:36.230758+00:00",
-  "count": 4587,
+  "generated": "2026-10-31T10:21:47.797628+00:00",
+  "count": 4588,
   "items": [
     {
       "appname": "",
@@ -5931,6 +5931,16 @@
       "metadata_reference": "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in - https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv | https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv",
       "service": "entra",
       "_provenance": "entra_curated_mthcht"
+    },
+    {
+      "appname": "CAP-Neptune-ODSP-Migration",
+      "appid": "6c151b6e-283f-48c3-b860-e8697b1c2b5a",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant f8cdef31-a31e-4b4a-93e4-5f571e91255a; via merill/microsoft-info, source=Graph)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
     },
     {
       "appname": "CapacityPolicyAssignmentApp",
