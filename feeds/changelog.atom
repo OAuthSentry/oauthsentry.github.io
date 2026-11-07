@@ -3,11 +3,71 @@
   <id>tag:oauthsentry.github.io,2026:changelog</id>
   <title>OAuthSentry catalog changelog</title>
   <subtitle>Adds, removes, category and severity changes across the OAuth app catalog</subtitle>
-  <updated>2026-10-31T10:21:48.203155+00:00</updated>
+  <updated>2026-11-07T11:01:09.373213+00:00</updated>
   <link rel="self"      href="https://oauthsentry.github.io/feeds/changelog.atom"/>
   <link rel="alternate" href="https://oauthsentry.github.io/" type="text/html"/>
   <author><name>OAuthSentry</name></author>
   <generator uri="https://oauthsentry.github.io">OAuthSentry build_feeds</generator>
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:344138e9-8de4-4497-8c54-5237e96d6aaf:2026-11-07T11:01:09.373213+00:00</id>
+    <title>[added] entra / Azure IoT Central Builder Role</title>
+    <updated>2026-11-07T11:01:09.373213+00:00</updated>
+    <published>2026-11-07T11:01:09.373213+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/344138e9-8de4-4497-8c54-5237e96d6aaf.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: Azure IoT Central Builder Role
+App ID: 344138e9-8de4-4497-8c54-5237e96d6aaf
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/344138e9-8de4-4497-8c54-5237e96d6aaf.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:ae2c9854-393b-4f97-8c42-479d70ce626e:2026-11-07T11:01:09.373213+00:00</id>
+    <title>[added] entra / Azure IoT Central Operator Role</title>
+    <updated>2026-11-07T11:01:09.373213+00:00</updated>
+    <published>2026-11-07T11:01:09.373213+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/ae2c9854-393b-4f97-8c42-479d70ce626e.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: Azure IoT Central Operator Role
+App ID: ae2c9854-393b-4f97-8c42-479d70ce626e
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/ae2c9854-393b-4f97-8c42-479d70ce626e.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
+  <entry>
+    <id>tag:oauthsentry.github.io,2026:added:ca310b8d-2f4a-44e0-a36e-957c202cd8d4:2026-11-07T11:01:09.373213+00:00</id>
+    <title>[added] entra / Azure IoT Central Admin Role</title>
+    <updated>2026-11-07T11:01:09.373213+00:00</updated>
+    <published>2026-11-07T11:01:09.373213+00:00</published>
+    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/ca310b8d-2f4a-44e0-a36e-957c202cd8d4.json"/>
+    <category term="added"/>
+    <category term="entra"/>
+    <category term="compliance"/>
+    <summary type="text">Added to compliance (info)</summary>
+    <content type="text">App: Azure IoT Central Admin Role
+App ID: ca310b8d-2f4a-44e0-a36e-957c202cd8d4
+Service: entra
+Category: compliance
+Severity: info
+Change: Added to compliance (info)
+Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/ca310b8d-2f4a-44e0-a36e-957c202cd8d4.json</content>
+    <author><name>OAuthSentry</name></author>
+  </entry>
+
   <entry>
     <id>tag:oauthsentry.github.io,2026:added:6c151b6e-283f-48c3-b860-e8697b1c2b5a:2026-10-31T10:21:48.203155+00:00</id>
     <title>[added] entra / CAP-Neptune-ODSP-Migration</title>
@@ -3945,66 +4005,6 @@ Category: compliance
 Severity: info
 Change: Added to compliance (info)
 Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/087fca6e-4606-4d41-b3f6-5ebdf75b8b4c.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:0883f392-0a7a-443d-8c76-16a6d39c7b63:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / DeviceManagementConfiguration.ReadWrite.All - Delegated</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/0883f392-0a7a-443d-8c76-16a6d39c7b63.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: DeviceManagementConfiguration.ReadWrite.All - Delegated
-App ID: 0883f392-0a7a-443d-8c76-16a6d39c7b63
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/0883f392-0a7a-443d-8c76-16a6d39c7b63.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:088ab73d-1256-47ae-bea9-9de8e7131f31:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / Guest Configuration Resource Contributor</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/088ab73d-1256-47ae-bea9-9de8e7131f31.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: Guest Configuration Resource Contributor
-App ID: 088ab73d-1256-47ae-bea9-9de8e7131f31
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/088ab73d-1256-47ae-bea9-9de8e7131f31.json</content>
-    <author><name>OAuthSentry</name></author>
-  </entry>
-
-  <entry>
-    <id>tag:oauthsentry.github.io,2026:added:08954f03-6346-4c2e-81c0-ec3a5cfae23b:2026-04-28T16:33:38.232651+00:00</id>
-    <title>[added] entra / Application Insights Snapshot Debugger</title>
-    <updated>2026-04-28T16:33:38.232651+00:00</updated>
-    <published>2026-04-28T16:33:38.232651+00:00</published>
-    <link rel="alternate" href="https://oauthsentry.github.io/feeds/api/v1/apps/08954f03-6346-4c2e-81c0-ec3a5cfae23b.json"/>
-    <category term="added"/>
-    <category term="entra"/>
-    <category term="compliance"/>
-    <summary type="text">Added to compliance (info)</summary>
-    <content type="text">App: Application Insights Snapshot Debugger
-App ID: 08954f03-6346-4c2e-81c0-ec3a5cfae23b
-Service: entra
-Category: compliance
-Severity: info
-Change: Added to compliance (info)
-Lookup: https://oauthsentry.github.io/feeds/api/v1/apps/08954f03-6346-4c2e-81c0-ec3a5cfae23b.json</content>
     <author><name>OAuthSentry</name></author>
   </entry>
 

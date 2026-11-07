@@ -1,0 +1,12 @@
+{
+  "appid": "344138e9-8de4-4497-8c54-5237e96d6aaf",
+  "appname": "Azure IoT Central Builder Role",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "344138e9-8de4-4497-8c54-5237e96d6aaf"
+}

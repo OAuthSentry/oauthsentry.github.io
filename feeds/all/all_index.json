@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-06T12:03:31.350272+00:00",
-  "count": 4594,
+  "generated": "2026-11-07T11:01:08.636187+00:00",
+  "count": 4597,
   "items": [
     {
       "appname": "",
@@ -3555,6 +3555,36 @@
     {
       "appname": "Azure Information Protection Premium P2 for GCC",
       "appid": "5400a66d-eaa5-427d-80f2-0f26d59d8fce",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
+      "appname": "Azure IoT Central Admin Role",
+      "appid": "ca310b8d-2f4a-44e0-a36e-957c202cd8d4",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
+      "appname": "Azure IoT Central Builder Role",
+      "appid": "344138e9-8de4-4497-8c54-5237e96d6aaf",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
+      "appname": "Azure IoT Central Operator Role",
+      "appid": "ae2c9854-393b-4f97-8c42-479d70ce626e",
       "metadata_category": "compliance",
       "metadata_severity": "info",
       "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",

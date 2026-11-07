@@ -2491,6 +2491,27 @@
     "severity": "info",
     "ref_count": 1
   },
+  "ca310b8d-2f4a-44e0-a36e-957c202cd8d4": {
+    "appname": "Azure IoT Central Admin Role",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "344138e9-8de4-4497-8c54-5237e96d6aaf": {
+    "appname": "Azure IoT Central Builder Role",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "ae2c9854-393b-4f97-8c42-479d70ce626e": {
+    "appname": "Azure IoT Central Operator Role",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "cfa8b339-82a2-471a-a3c9-0fc0be7a4093": {
     "appname": "Azure Key Vault",
     "service": "entra",

@@ -1,8 +1,38 @@
 {
   "feed": "OAuthSentry catalog changelog",
-  "generated": "2026-10-31T10:21:48.203155+00:00",
+  "generated": "2026-11-07T11:01:09.373213+00:00",
   "count": 200,
   "entries": [
+    {
+      "kind": "added",
+      "ts": "2026-11-07T11:01:09.373213+00:00",
+      "appid": "344138e9-8de4-4497-8c54-5237e96d6aaf",
+      "service": "entra",
+      "appname": "Azure IoT Central Builder Role",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
+    {
+      "kind": "added",
+      "ts": "2026-11-07T11:01:09.373213+00:00",
+      "appid": "ae2c9854-393b-4f97-8c42-479d70ce626e",
+      "service": "entra",
+      "appname": "Azure IoT Central Operator Role",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
+    {
+      "kind": "added",
+      "ts": "2026-11-07T11:01:09.373213+00:00",
+      "appid": "ca310b8d-2f4a-44e0-a36e-957c202cd8d4",
+      "service": "entra",
+      "appname": "Azure IoT Central Admin Role",
+      "category": "compliance",
+      "severity": "info",
+      "summary": "Added to compliance (info)"
+    },
     {
       "kind": "added",
       "ts": "2026-10-31T10:21:48.203155+00:00",
@@ -1969,36 +1999,6 @@
       "appid": "087fca6e-4606-4d41-b3f6-5ebdf75b8b4c",
       "service": "entra",
       "appname": "Azure Arc MetalLB extension",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "0883f392-0a7a-443d-8c76-16a6d39c7b63",
-      "service": "entra",
-      "appname": "DeviceManagementConfiguration.ReadWrite.All - Delegated",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "088ab73d-1256-47ae-bea9-9de8e7131f31",
-      "service": "entra",
-      "appname": "Guest Configuration Resource Contributor",
-      "category": "compliance",
-      "severity": "info",
-      "summary": "Added to compliance (info)"
-    },
-    {
-      "kind": "added",
-      "ts": "2026-04-28T16:33:38.232651+00:00",
-      "appid": "08954f03-6346-4c2e-81c0-ec3a5cfae23b",
-      "service": "entra",
-      "appname": "Application Insights Snapshot Debugger",
       "category": "compliance",
       "severity": "info",
       "summary": "Added to compliance (info)"
