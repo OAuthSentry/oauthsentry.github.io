@@ -1,0 +1,12 @@
+{
+  "appid": "09041fae-0b25-ec11-b6e6-000d3a4f0858",
+  "appname": "AI Services community forum",
+  "service": "entra",
+  "category": "compliance",
+  "severity": "info",
+  "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+  "references": [
+    "https://github.com/merill/microsoft-info"
+  ],
+  "slug": "09041fae-0b25-ec11-b6e6-000d3a4f0858"
+}

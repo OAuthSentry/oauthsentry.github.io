@@ -1057,6 +1057,18 @@
     ],
     "slug": "be5f0473-6b57-40f8-b0a9-b3054b41b99e"
   },
+  "09041fae-0b25-ec11-b6e6-000d3a4f0858": {
+    "appid": "09041fae-0b25-ec11-b6e6-000d3a4f0858",
+    "appname": "AI Services community forum",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "09041fae-0b25-ec11-b6e6-000d3a4f0858"
+  },
   "839c90ab-5771-41ee-aef8-a562e8487c1e": {
     "appid": "839c90ab-5771-41ee-aef8-a562e8487c1e",
     "appname": "AiEnterpriseInteraction.Read.All - Application",
@@ -3588,6 +3600,18 @@
       "https://github.com/merill/microsoft-info"
     ],
     "slug": "c880d6fb-5c66-49ef-9cf5-e53e31900be5"
+  },
+  "2a04943b-b6a7-4f65-8786-2bb6131b59f6": {
+    "appid": "2a04943b-b6a7-4f65-8786-2bb6131b59f6",
+    "appname": "Azure Communication Services Clients",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "2a04943b-b6a7-4f65-8786-2bb6131b59f6"
   },
   "579d9c9d-4c83-4efc-8124-7eba65ed3356": {
     "appid": "579d9c9d-4c83-4efc-8124-7eba65ed3356",
@@ -54808,6 +54832,18 @@
       "https://github.com/merill/microsoft-info"
     ],
     "slug": "504d7149-4e4c-3841-4555-55445a677357"
+  },
+  "fdcc1f02-fc51-4226-8753-f668596af7f7": {
+    "appid": "fdcc1f02-fc51-4226-8753-f668596af7f7",
+    "appname": "Work IQ",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+    "references": [
+      "https://github.com/merill/microsoft-info"
+    ],
+    "slug": "fdcc1f02-fc51-4226-8753-f668596af7f7"
   },
   "910333d2-47e9-43ca-981f-6df2f4531ef4": {
     "appid": "910333d2-47e9-43ca-981f-6df2f4531ef4",

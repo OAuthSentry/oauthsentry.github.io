@@ -594,6 +594,13 @@
     "severity": "info",
     "ref_count": 3
   },
+  "09041fae-0b25-ec11-b6e6-000d3a4f0858": {
+    "appname": "AI Services community forum",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "839c90ab-5771-41ee-aef8-a562e8487c1e": {
     "appname": "AiEnterpriseInteraction.Read.All - Application",
     "service": "entra",
@@ -2024,6 +2031,13 @@
   },
   "c880d6fb-5c66-49ef-9cf5-e53e31900be5": {
     "appname": "Azure Communication Services app ID",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "2a04943b-b6a7-4f65-8786-2bb6131b59f6": {
+    "appname": "Azure Communication Services Clients",
     "service": "entra",
     "category": "compliance",
     "severity": "info",
@@ -31165,6 +31179,13 @@
   },
   "504d7149-4e4c-3841-4555-55445a677357": {
     "appname": "WiSECURE AuthTron USB FIDO2 Authenticator",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
+  "fdcc1f02-fc51-4226-8753-f668596af7f7": {
+    "appname": "Work IQ",
     "service": "entra",
     "category": "compliance",
     "severity": "info",

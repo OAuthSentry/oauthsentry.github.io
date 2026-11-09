@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-08T11:14:51.399985+00:00",
-  "count": 4591,
+  "generated": "2026-11-09T12:48:50.857889+00:00",
+  "count": 4594,
   "items": [
     {
       "appname": "",
@@ -851,6 +851,16 @@
       "metadata_reference": "https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/governance/verify-first-party-apps-sign-in - https://github.com/merill/microsoft-info/blob/main/_info/MicrosoftApps.csv | https://github.com/mthcht/awesome-lists/blob/main/Lists/OAuth/entra_oauth_apps.csv",
       "service": "entra",
       "_provenance": "entra_curated_mthcht"
+    },
+    {
+      "appname": "AI Services community forum",
+      "appid": "09041fae-0b25-ec11-b6e6-000d3a4f0858",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
     },
     {
       "appname": "AiEnterpriseInteraction.Read.All - Application",
@@ -2895,6 +2905,16 @@
     {
       "appname": "Azure Communication Services app ID",
       "appid": "c880d6fb-5c66-49ef-9cf5-e53e31900be5",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
+      "appname": "Azure Communication Services Clients",
+      "appid": "2a04943b-b6a7-4f65-8786-2bb6131b59f6",
       "metadata_category": "compliance",
       "metadata_severity": "info",
       "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
@@ -44525,6 +44545,16 @@
     {
       "appname": "WiSECURE AuthTron USB FIDO2 Authenticator",
       "appid": "504d7149-4e4c-3841-4555-55445a677357",
+      "metadata_category": "compliance",
+      "metadata_severity": "info",
+      "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
+      "metadata_reference": "https://github.com/merill/microsoft-info",
+      "service": "entra",
+      "_provenance": "entra_compliance_fill_merill"
+    },
+    {
+      "appname": "Work IQ",
+      "appid": "fdcc1f02-fc51-4226-8753-f668596af7f7",
       "metadata_category": "compliance",
       "metadata_severity": "info",
       "metadata_comment": "Microsoft first-party app (owner tenant ; via merill/microsoft-info, source=EntraDocs)",
