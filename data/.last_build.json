@@ -27866,6 +27866,13 @@
     "severity": "info",
     "ref_count": 1
   },
+  "cb1d50fe-8ed0-4944-9e7d-5981aad3bc4b": {
+    "appname": "SyncFabric Workload Identity ISV Integration Client",
+    "service": "entra",
+    "category": "compliance",
+    "severity": "info",
+    "ref_count": 1
+  },
   "5ba43d2f-fa88-4db2-bd1c-a67c5f0fb1ce": {
     "appname": "Synchronization.Read.All - Application",
     "service": "entra",

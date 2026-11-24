@@ -1,6 +1,16 @@
 [
   {
     "kind": "added",
+    "ts": "2026-11-24T14:49:56.952775+00:00",
+    "appid": "cb1d50fe-8ed0-4944-9e7d-5981aad3bc4b",
+    "service": "entra",
+    "appname": "SyncFabric Workload Identity ISV Integration Client",
+    "category": "compliance",
+    "severity": "info",
+    "summary": "Added to compliance (info)"
+  },
+  {
+    "kind": "added",
     "ts": "2026-11-09T12:48:51.650966+00:00",
     "appid": "09041fae-0b25-ec11-b6e6-000d3a4f0858",
     "service": "entra",
@@ -1985,16 +1995,6 @@
     "appid": "085ca537-6565-41c2-aca7-db852babc212",
     "service": "entra",
     "appname": "FileStorageContainer.Selected - Delegated",
-    "category": "compliance",
-    "severity": "info",
-    "summary": "Added to compliance (info)"
-  },
-  {
-    "kind": "added",
-    "ts": "2026-04-28T16:33:38.232651+00:00",
-    "appid": "086e9b70-4720-4442-ab6d-3ef32bfb4721",
-    "service": "entra",
-    "appname": "Power Automate unattended RPA add-on for Government",
     "category": "compliance",
     "severity": "info",
     "summary": "Added to compliance (info)"
